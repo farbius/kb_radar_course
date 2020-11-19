@@ -1,0 +1,3 @@
+design_1_dds_compiler_0_0.vhd,vhdl,xil_defaultlib,../../../bd/design_1/ip/design_1_dds_compiler_0_0/sim/design_1_dds_compiler_0_0.vhd,
+design_1.v,verilog,xil_defaultlib,../../../bd/design_1/sim/design_1.v,
+glbl.v,Verilog,xil_defaultlib,glbl.v

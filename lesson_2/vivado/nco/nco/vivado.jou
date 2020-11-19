@@ -1,0 +1,22 @@
+#-----------------------------------------------------------
+# Vivado v2019.1.2 (64-bit)
+# SW Build 2615518 on Fri Aug  9 15:55:25 MDT 2019
+# IP Build 2614745 on Fri Aug  9 20:55:02 MDT 2019
+# Start of session at: Thu Nov 19 20:43:23 2020
+# Process ID: 22872
+# Current directory: D:/radar_git/lesson_2/vivado/nco/nco
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent20836 D:\radar_git\lesson_2\vivado\nco\nco\nco.xpr
+# Log file: D:/radar_git/lesson_2/vivado/nco/nco/vivado.log
+# Journal file: D:/radar_git/lesson_2/vivado/nco/nco\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/radar_git/lesson_2/vivado/nco/nco/nco.xpr
+update_compile_order -fileset sources_1
+generate_target Simulation [get_files D:/radar_git/lesson_2/vivado/nco/nco/nco.srcs/sources_1/bd/design_1/design_1.bd]
+export_ip_user_files -of_objects [get_files D:/radar_git/lesson_2/vivado/nco/nco/nco.srcs/sources_1/bd/design_1/design_1.bd] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files D:/radar_git/lesson_2/vivado/nco/nco/nco.srcs/sources_1/bd/design_1/design_1.bd] -directory D:/radar_git/lesson_2/vivado/nco/nco/nco.ip_user_files/sim_scripts -ip_user_files_dir D:/radar_git/lesson_2/vivado/nco/nco/nco.ip_user_files -ipstatic_source_dir D:/radar_git/lesson_2/vivado/nco/nco/nco.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/radar_git/lesson_2/vivado/nco/nco/nco.cache/compile_simlib/modelsim} {questa=D:/radar_git/lesson_2/vivado/nco/nco/nco.cache/compile_simlib/questa} {riviera=D:/radar_git/lesson_2/vivado/nco/nco/nco.cache/compile_simlib/riviera} {activehdl=D:/radar_git/lesson_2/vivado/nco/nco/nco.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+launch_simulation
+open_wave_config D:/radar_git/lesson_2/vivado/nco/nco/nco_tb_behav.wcfg
+source nco_tb.tcl
+run all
+close_sim
