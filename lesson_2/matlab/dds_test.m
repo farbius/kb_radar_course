@@ -4,136 +4,119 @@ clc
 clear
 close all
 
-Fs   = 100e6; % sample rate
-Nfft = 8192;
-N    = 2^10;
+LFM = 0; % '1' - LFM signal, 0 - sin signal
 
+Fs       = 100e6;  % sample rate
+PH_w     = 16;     % width of accumulator
+Nfft     = 10000;   % FFT size
+N        = 2^PH_w; % length of generated signal
+f0       = 2e6;    % desired frequency
+
+%% vectors for frequency domain
 df   = Fs/Nfft; % fft step
-f    = linspace(-Nfft/2, Nfft/2, Nfft).*df;
+f    = (0:Nfft-1)./(Nfft-1)*Fs;
+f    = f(1:Nfft/2)./1e6; % half of frequncy scale
 
-% time domain
+%% time domain
 sin_table = sin(2*pi*(0:N-1)/N);
-
 dds_out = zeros(1, N);
-Phi = 1; dPhi = 16;
-for i = 1 : N-1
-    dds_out(i) = sin_table( mod(Phi, N) + 1);
-    Phi = Phi + dPhi;
+
+
+if LFM == 0
+
+        % dds
+        Phi = 0;
+        f0 = 2e6;
+        for i = 1 : N-1
+            dds_out(i) = sin_table( mod(Phi, N) + 1);
+            Phi = Phi + freq2phase(f0, Fs, PH_w);
+        end
+
+        % figures
+        figure
+        plot(1:N, sin_table, 'ob', 1:N, dds_out, '.-r')
+        ylabel('Amplitude')
+        xlabel('time bins')
+        grid on
+
+
+        % frequency domain  
+        [dds_outF,dds_outF_dB] = abs_fft(dds_out, Nfft);
+
+        figure
+        subplot(2,1,1)
+        plot(f, dds_outF, '.-b')
+        title('dds out: frequency domain')
+        xlabel('f, MHz')
+        ylabel('FFT module: linear scale')
+        grid on
+        subplot(2,1,2)
+        plot(f, dds_outF_dB, '.-b')
+        title('dds out: frequency domain')
+        xlabel('f, MHz')
+        ylabel('FFT module: dB scale')
+        grid on
+
+else % LFM signal
+    
+        % dds
+        Tlfm = 100e-6; % modulation period
+        F0   = 0;      % start freq
+        F1   = 10e6;   % end freq
+        Ncycl= ceil(Tlfm * Fs );
+        df   = ceil(F1 / Ncycl );
+        
+        Phi  = 0;
+        f0   = 0;
+        for i = 1 : N-1
+            dds_out(i) = sin_table( mod(Phi, N) + 1);
+            Phi = Phi + freq2phase(f0, Fs, PH_w);
+            if(mod(i, Ncycl) == 0)
+               f0 = 0;
+            else
+               f0 = f0 + df;
+            end
+        end
+
+        % figures
+        figure
+        plot(1:N, sin_table, 'ob', 1:N, dds_out, '.-r')
+        ylabel('Amplitude')
+        xlabel('time bins')
+        grid on
+        
+         % frequency domain  
+        [dds_outF,dds_outF_dB] = abs_fft(dds_out, Nfft);
+
+        figure
+        subplot(2,1,1)
+        plot(f, dds_outF, '.-b')
+        title('dds out: frequency domain')
+        xlabel('f, MHz')
+        ylabel('FFT module: linear scale')
+        grid on
+        subplot(2,1,2)
+        plot(f, dds_outF_dB, '.-b')
+        title('dds out: frequency domain')
+        xlabel('f, MHz')
+        ylabel('FFT module: dB scale')
+        grid on
+    
+    
 end
 
-figure
-plot(sin_table, 'ob')
-hold on
-plot(dds_out, '.-r')
-xlabel(sprintf('dPhi = %d', dPhi))
-grid on
 
+%% function
+% datasheet dds compiler Xilinx
+function dPHI = freq2phase(f0, Fs, PH_w)
+dPHI = ceil(f0 * 2^PH_w / Fs);
+end
 
-% frequency domain  
-dds_outF = abs(fftshift(fft(dds_out, Nfft)));
+function [xfft, xfft_dB] = abs_fft(x_in, Nfft)
+as_fft  = abs(fft(x_in, Nfft))./Nfft*2;
+xfft    = as_fft(1:Nfft/2);
+xfft_dB = log(xfft);
+end
 
-figure
-plot(f./1e6, dds_outF)
-grid on
-title('dds out: frequency domain')
-xlabel('f, MHz')
-ylabel('Amplitude')
-xlim([0 Fs/2/1e6])
-
-% 
-% 
-% 
-% 
-% SIMPLE = 1;
-% DDS    = 0; 
-% HLS    = 0;
-% 
-% if HLS == 1
-%     fileID = fopen('dds.txt', 'r');
-%     A = fscanf(fileID, '%f');
-%     fclose(fileID);
-%     
-%     figure
-%     plot(A, '.-b')
-%     grid on
-%     
-% end
-% 
-% if DDS == 1
-%     
-%     N    = 2^10;
-%     Fs   = 100e6;
-%     Nfft = 8192; % fft points
-%     df   = Fs/Nfft; % fft step
-%     f    = linspace(-Nfft/2, Nfft/2, Nfft).*df;
-%     
-%     
-%     % time domain
-%     sin_table = sin(2*pi*(0:N-1)/N);
-%     
-%     dds_out = zeros(1, N);
-%     Phi = 1; dPhi = 1;
-%     for i = 1 : N-1
-%         dds_out(i) = sin_table( mod(Phi, N) + 1);
-%         Phi = Phi + dPhi;
-%     end
-%     
-%     figure
-%     plot(sin_table, 'ob')
-%     hold on
-%     plot(dds_out, '.-r')
-%     xlabel(sprintf('dPhi = %d', dPhi))
-%     grid on
-%     
-%     % frequency domain  
-%     dds_outF = abs(fftshift(fft(dds_out, Nfft)));
-%     
-%     figure
-%     plot(f./1e6, dds_outF)
-%     grid on
-%     title('dds out: frequency domain')
-%     xlabel('f, MHz')
-%     ylabel('Amplitude')
-%     xlim([0 Fs/2/1e6])
-%     
-%     
-%     
-% end
-% 
-% if SIMPLE == 1
-%     Fs = 100e6;  % sample rate 100 MHz
-%     f0 = 5e6;    % signal frequency 
-%     N  = 2046;   % samples
-% 
-%     t   = [0:N-1]/Fs; % time vector
-% 
-%     phi = pi*10e6/(N/Fs).*t.^2;
-%     
-%     f1   = 10e6;
-%     phi2 = 2*pi*f1.*t;
-%     
-%     d1 = diff(phi);
-%     d2 = diff(phi2);
-%     
-%     figure
-%     plot(0:N-1, phi, '.-r', 0:N-1, phi2, '.-b')
-%     legend('5 MHz', '10 MHz')
-%     grid on
-%     
-%     sRe = cos(phi);
-%     sIm = sin(phi);
-% 
-%     figure
-%     plot(t,sRe, '.-b', t, sIm, '.-r')
-%     legend('real', 'image')
-%     ylim([-1.5 1.5])
-%     grid on
-% 
-%     phase = angle(sRe + 1i.*sIm);
-% 
-%     figure
-%     plot(t,phase, '.-r')
-%     grid on
-% end
 
 
