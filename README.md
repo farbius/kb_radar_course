@@ -23,7 +23,3 @@ Clone this repository to local folder
 ```
 git clone https://github.com/farbius/kb_radar_course.git
 ```
-Update folder from git after lesson
-```
-git pull
-```
