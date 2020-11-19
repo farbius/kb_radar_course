@@ -10,6 +10,11 @@
  * psk_mod.v (psk_mod_tb.v, psk_m.m)     - phase shift key modulator/demodulator with m-script (matlab model)
 
 ### Git using
+Download and install Git
+```
+https://desktop.github.com/
+```
+Launch PowerShell (Windows 10)
 Choose local folder and init git:
 ```
 git init
