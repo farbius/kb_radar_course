@@ -15,11 +15,13 @@ Download and install Git
 https://desktop.github.com/
 ```
 Launch PowerShell (Windows 10)
-Choose local folder and init git:
-```
-git init
-```
-Clone this repository to local folder
+
+
+Choose local folder and clone this repository to local folder
 ```
 git clone https://github.com/farbius/kb_radar_course.git
+```
+Update from repository
+```
+git pull
 ```
