@@ -4,7 +4,7 @@ clc
 clear
 close all
 
-LFM = 0; % '1' - LFM signal, 0 - sin signal
+LFM = 1; % '1' - LFM signal, 0 - sin signal
 
 Fs       = 100e6;  % sample rate
 PH_w     = 16;     % width of accumulator
