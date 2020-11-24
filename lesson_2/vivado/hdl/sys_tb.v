@@ -27,7 +27,7 @@ reg sys_clock = 0;
 always #4 sys_clock = !sys_clock;
 
 
-dds_hw_wrapper dut
+dds_sys_wrapper dut
        (.sys_clock(sys_clock));
        
        

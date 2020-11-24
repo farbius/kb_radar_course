@@ -1,0 +1,3 @@
+dds_test_dds_compiler_0_0.vhd,vhdl,xil_defaultlib,../../../bd/dds_test/ip/dds_test_dds_compiler_0_0/sim/dds_test_dds_compiler_0_0.vhd,
+dds_test.v,verilog,xil_defaultlib,../../../bd/dds_test/sim/dds_test.v,
+glbl.v,Verilog,xil_defaultlib,glbl.v

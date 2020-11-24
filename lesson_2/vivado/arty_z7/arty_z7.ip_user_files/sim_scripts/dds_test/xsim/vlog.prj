@@ -1,0 +1,6 @@
+verilog xil_defaultlib  \
+"../../../bd/dds_test/sim/dds_test.v" \
+
+verilog xil_defaultlib "glbl.v"
+
+nosort

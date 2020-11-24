@@ -1,11 +1,11 @@
-set project_name "arty_z7"
+set project_name "arty_hw"
 
 # create project
 
 #  arty-z7-20
 create_project $project_name [pwd]/$project_name -part xc7z020clg400-1
 set_property board_part digilentinc.com:arty-z7-20:part0:1.0 [current_project]
-create_bd_design "dds_test"
+create_bd_design "dds_sys"
 
 # dds compiler
 startgroup
@@ -28,7 +28,15 @@ import_files -fileset sim_1 -norecurse [pwd]/hdl/dds_tb.v
 
 #########################################################################################
 #########################################################################################
+set project_name "arty_hw"
+
+# create project
+
+#  arty-z7-20
+create_project $project_name [pwd]/$project_name -part xc7z020clg400-1
+set_property board_part digilentinc.com:arty-z7-20:part0:1.0 [current_project]
 create_bd_design "dds_sys"
+
 
 # dds compiler
 startgroup
@@ -48,6 +56,8 @@ startgroup
 create_bd_cell -type ip -vlnv xilinx.com:ip:vio:3.0 vio_0
 endgroup
 set_property -dict [list CONFIG.C_PROBE_OUT2_WIDTH {32} CONFIG.C_PROBE_OUT1_WIDTH {32} CONFIG.C_PROBE_OUT0_WIDTH {32} CONFIG.C_NUM_PROBE_OUT {5} CONFIG.C_EN_PROBE_IN_ACTIVITY {0} CONFIG.C_NUM_PROBE_IN {0}] [get_bd_cells vio_0]
+set_property -dict [list CONFIG.C_PROBE_OUT3_INIT_VAL {0x1} CONFIG.C_PROBE_OUT2_INIT_VAL {0xFA0} CONFIG.C_PROBE_OUT0_INIT_VAL {0x1E8480}] [get_bd_cells vio_0]
+
 
 # system ila
 startgroup

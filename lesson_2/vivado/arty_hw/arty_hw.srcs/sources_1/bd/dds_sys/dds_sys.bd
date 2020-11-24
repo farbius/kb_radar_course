@@ -1,0 +1,374 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0xABEFD9E64EC5C80E",
+      "device": "xc7z020clg400-1",
+      "name": "dds_sys",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2019.1.2",
+      "validated": "true"
+    },
+    "design_tree": {
+      "dds_compiler_0": "",
+      "controller_dds_0": "",
+      "vio_0": "",
+      "system_ila_0": "",
+      "clk_wiz_0": ""
+    },
+    "ports": {
+      "sys_clock": {
+        "type": "clk",
+        "direction": "I",
+        "parameters": {
+          "CLK_DOMAIN": {
+            "value": "dds_sys_sys_clock",
+            "value_src": "default"
+          },
+          "FREQ_HZ": {
+            "value": "125000000"
+          },
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "PHASE": {
+            "value": "0.000"
+          }
+        }
+      }
+    },
+    "components": {
+      "dds_compiler_0": {
+        "vlnv": "xilinx.com:ip:dds_compiler:6.0",
+        "xci_name": "dds_sys_dds_compiler_0_0",
+        "parameters": {
+          "DATA_Has_TLAST": {
+            "value": "Not_Required"
+          },
+          "Has_ARESETn": {
+            "value": "true"
+          },
+          "Noise_Shaping": {
+            "value": "None"
+          },
+          "Output_Frequency1": {
+            "value": "0"
+          },
+          "Output_Width": {
+            "value": "8"
+          },
+          "PINC1": {
+            "value": "0"
+          },
+          "Parameter_Entry": {
+            "value": "Hardware_Parameters"
+          },
+          "Phase_Increment": {
+            "value": "Streaming"
+          },
+          "Phase_Width": {
+            "value": "16"
+          },
+          "S_PHASE_Has_TUSER": {
+            "value": "Not_Required"
+          }
+        }
+      },
+      "controller_dds_0": {
+        "vlnv": "xilinx.com:module_ref:controller_dds:1.0",
+        "xci_name": "dds_sys_controller_dds_0_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "controller_dds",
+          "boundary_crc": "0x0"
+        },
+        "interface_ports": {
+          "m_axis_phase": {
+            "mode": "Master",
+            "vlnv": "xilinx.com:interface:axis_rtl:1.0",
+            "parameters": {
+              "CLK_DOMAIN": {
+                "value": "/clk_wiz_0_clk_out1",
+                "value_src": "ip_prop"
+              },
+              "FREQ_HZ": {
+                "value": "100000000",
+                "value_src": "ip_prop"
+              },
+              "HAS_TKEEP": {
+                "value": "0",
+                "value_src": "constant"
+              },
+              "HAS_TLAST": {
+                "value": "0",
+                "value_src": "constant"
+              },
+              "HAS_TREADY": {
+                "value": "0",
+                "value_src": "constant"
+              },
+              "HAS_TSTRB": {
+                "value": "0",
+                "value_src": "constant"
+              },
+              "PHASE": {
+                "value": "0.0",
+                "value_src": "ip_prop"
+              },
+              "TDATA_NUM_BYTES": {
+                "value": "2",
+                "value_src": "constant"
+              },
+              "TDEST_WIDTH": {
+                "value": "0",
+                "value_src": "constant"
+              },
+              "TID_WIDTH": {
+                "value": "0",
+                "value_src": "constant"
+              },
+              "TUSER_WIDTH": {
+                "value": "0",
+                "value_src": "constant"
+              }
+            },
+            "port_maps": {
+              "TDATA": {
+                "physical_name": "m_axis_phase_tdata",
+                "direction": "O",
+                "left": "15",
+                "right": "0"
+              },
+              "TVALID": {
+                "physical_name": "m_axis_phase_tvalid",
+                "direction": "O"
+              }
+            }
+          }
+        },
+        "ports": {
+          "clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "ASSOCIATED_BUSIF": {
+                "value": "m_axis_phase",
+                "value_src": "constant"
+              },
+              "ASSOCIATED_RESET": {
+                "value": "rstn",
+                "value_src": "constant"
+              },
+              "CLK_DOMAIN": {
+                "value": "/clk_wiz_0_clk_out1",
+                "value_src": "ip_prop"
+              },
+              "FREQ_HZ": {
+                "value": "100000000",
+                "value_src": "ip_prop"
+              },
+              "PHASE": {
+                "value": "0.0",
+                "value_src": "ip_prop"
+              }
+            }
+          },
+          "rstn": {
+            "type": "rst",
+            "direction": "I",
+            "parameters": {
+              "POLARITY": {
+                "value": "ACTIVE_LOW",
+                "value_src": "constant"
+              }
+            }
+          },
+          "freq_0": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "dfreq": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "t_pulse": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "turn_on": {
+            "direction": "I"
+          },
+          "sin2lfm_flag": {
+            "direction": "I"
+          },
+          "sync": {
+            "direction": "O"
+          }
+        }
+      },
+      "vio_0": {
+        "vlnv": "xilinx.com:ip:vio:3.0",
+        "xci_name": "dds_sys_vio_0_0",
+        "parameters": {
+          "C_NUM_PROBE_IN": {
+            "value": "0"
+          },
+          "C_NUM_PROBE_OUT": {
+            "value": "5"
+          },
+          "C_PROBE_OUT0_INIT_VAL": {
+            "value": "0x001E8480"
+          },
+          "C_PROBE_OUT0_WIDTH": {
+            "value": "32"
+          },
+          "C_PROBE_OUT1_WIDTH": {
+            "value": "32"
+          },
+          "C_PROBE_OUT2_INIT_VAL": {
+            "value": "0x00000FA0"
+          },
+          "C_PROBE_OUT2_WIDTH": {
+            "value": "32"
+          },
+          "C_PROBE_OUT3_INIT_VAL": {
+            "value": "0x1"
+          }
+        }
+      },
+      "system_ila_0": {
+        "vlnv": "xilinx.com:ip:system_ila:1.1",
+        "xci_name": "dds_sys_system_ila_0_0",
+        "parameters": {
+          "C_DATA_DEPTH": {
+            "value": "4096"
+          },
+          "C_MON_TYPE": {
+            "value": "MIX"
+          },
+          "C_NUM_MONITOR_SLOTS": {
+            "value": "2"
+          },
+          "C_SLOT": {
+            "value": "1"
+          },
+          "C_SLOT_0_INTF_TYPE": {
+            "value": "xilinx.com:interface:axis_rtl:1.0"
+          },
+          "C_SLOT_1_INTF_TYPE": {
+            "value": "xilinx.com:interface:axis_rtl:1.0"
+          }
+        },
+        "interface_ports": {
+          "SLOT_0_AXIS": {
+            "mode": "Monitor",
+            "vlnv": "xilinx.com:interface:axis_rtl:1.0"
+          },
+          "SLOT_1_AXIS": {
+            "mode": "Monitor",
+            "vlnv": "xilinx.com:interface:axis_rtl:1.0"
+          }
+        }
+      },
+      "clk_wiz_0": {
+        "vlnv": "xilinx.com:ip:clk_wiz:6.0",
+        "xci_name": "dds_sys_clk_wiz_0_0",
+        "parameters": {
+          "CLK_IN1_BOARD_INTERFACE": {
+            "value": "sys_clock"
+          },
+          "USE_BOARD_FLOW": {
+            "value": "true"
+          },
+          "USE_RESET": {
+            "value": "false"
+          }
+        }
+      }
+    },
+    "interface_nets": {
+      "dds_compiler_0_M_AXIS_PHASE": {
+        "interface_ports": [
+          "dds_compiler_0/M_AXIS_PHASE",
+          "system_ila_0/SLOT_1_AXIS"
+        ]
+      },
+      "controller_dds_0_m_axis_phase": {
+        "interface_ports": [
+          "controller_dds_0/m_axis_phase",
+          "dds_compiler_0/S_AXIS_PHASE"
+        ]
+      },
+      "dds_compiler_0_M_AXIS_DATA": {
+        "interface_ports": [
+          "dds_compiler_0/M_AXIS_DATA",
+          "system_ila_0/SLOT_0_AXIS"
+        ]
+      }
+    },
+    "nets": {
+      "sys_clock_1": {
+        "ports": [
+          "sys_clock",
+          "clk_wiz_0/clk_in1"
+        ]
+      },
+      "clk_wiz_0_clk_out1": {
+        "ports": [
+          "clk_wiz_0/clk_out1",
+          "vio_0/clk",
+          "dds_compiler_0/aclk",
+          "controller_dds_0/clk",
+          "system_ila_0/clk"
+        ]
+      },
+      "Net": {
+        "ports": [
+          "clk_wiz_0/locked",
+          "system_ila_0/resetn",
+          "dds_compiler_0/aresetn",
+          "controller_dds_0/rstn"
+        ]
+      },
+      "vio_0_probe_out0": {
+        "ports": [
+          "vio_0/probe_out0",
+          "controller_dds_0/freq_0"
+        ]
+      },
+      "vio_0_probe_out1": {
+        "ports": [
+          "vio_0/probe_out1",
+          "controller_dds_0/dfreq"
+        ]
+      },
+      "vio_0_probe_out2": {
+        "ports": [
+          "vio_0/probe_out2",
+          "controller_dds_0/t_pulse"
+        ]
+      },
+      "vio_0_probe_out3": {
+        "ports": [
+          "vio_0/probe_out3",
+          "controller_dds_0/turn_on"
+        ]
+      },
+      "vio_0_probe_out4": {
+        "ports": [
+          "vio_0/probe_out4",
+          "controller_dds_0/sin2lfm_flag"
+        ]
+      },
+      "controller_dds_0_sync": {
+        "ports": [
+          "controller_dds_0/sync",
+          "system_ila_0/probe0"
+        ]
+      }
+    }
+  }
+}

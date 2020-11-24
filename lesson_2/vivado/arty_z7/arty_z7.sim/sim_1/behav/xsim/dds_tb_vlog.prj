@@ -1,0 +1,11 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../arty_z7.ip_user_files/bd/dds_test/sim/dds_test.v" \
+"../../../../arty_z7.srcs/sources_1/bd/dds_test/hdl/dds_test_wrapper.v" \
+"../../../../arty_z7.srcs/sim_1/imports/hdl/dds_tb.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
