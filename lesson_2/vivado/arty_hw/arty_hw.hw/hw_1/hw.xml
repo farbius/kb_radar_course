@@ -16,8 +16,17 @@
   <ObjectList object_type="hw_ila" gui_info="">
     <Object name="dds_sys_i/system_ila_0/inst/ila_lib" gui_info="">
       <Properties Property="CONTROL.TRIGGER_CONDITION" value="AND"/>
+      <Properties Property="CONTROL.TRIGGER_POSITION" value="8"/>
       <Properties Property="CORE_REFRESH_RATE_MS" value="500"/>
     </Object>
+  </ObjectList>
+  <ObjectList object_type="hw_probe" gui_info="">
+    <Object name="dds_sys_i/system_ila_0/inst/probe0_1" gui_info="Trigger Setup=0"/>
+    <Object name="dds_sys_i/vio_0_probe_out0[31:0]" gui_info="hw_vios/hw_vio_1=0"/>
+    <Object name="dds_sys_i/vio_0_probe_out1[31:0]" gui_info="hw_vios/hw_vio_1=1"/>
+    <Object name="dds_sys_i/vio_0_probe_out2[31:0]" gui_info="hw_vios/hw_vio_1=2"/>
+    <Object name="dds_sys_i/vio_0_probe_out3" gui_info="hw_vios/hw_vio_1=3"/>
+    <Object name="dds_sys_i/vio_0_probe_out4" gui_info="hw_vios/hw_vio_1=4"/>
   </ObjectList>
   <probeset name="hw project" active="false">
     <probe type="ila" busType="bus" source="netlist" spec="ILA_V2_RT">
@@ -26,7 +35,7 @@
         <Option Id="COMPARE_VALUE.0" value="eq16&apos;hXXXX"/>
         <Option Id="DISPLAY_AS_ENUM" value="1"/>
         <Option Id="DISPLAY_HINT" value=""/>
-        <Option Id="DISPLAY_RADIX" value="HEX"/>
+        <Option Id="DISPLAY_RADIX" value="SIGNED"/>
         <Option Id="DISPLAY_VISIBILITY" value=""/>
         <Option Id="HW_ILA" value="hw_ila_1"/>
         <Option Id="LINK_TO_WAVEFORM" value="1"/>
@@ -104,7 +113,7 @@
         <Option Id="COMPARE_VALUE.0" value="eq16&apos;hXXXX"/>
         <Option Id="DISPLAY_AS_ENUM" value="1"/>
         <Option Id="DISPLAY_HINT" value=""/>
-        <Option Id="DISPLAY_RADIX" value="HEX"/>
+        <Option Id="DISPLAY_RADIX" value="SIGNED"/>
         <Option Id="DISPLAY_VISIBILITY" value=""/>
         <Option Id="HW_ILA" value="hw_ila_1"/>
         <Option Id="LINK_TO_WAVEFORM" value="1"/>
@@ -113,7 +122,7 @@
         <Option Id="NAME.SELECT" value="Custom"/>
         <Option Id="SOURCE" value="netlist"/>
         <Option Id="TRIGGER_COMPARE_VALUE" value="eq16&apos;hXXXX"/>
-        <Option Id="WAVEFORM_STYLE" value="Digital"/>
+        <Option Id="WAVEFORM_STYLE" value="Analog"/>
       </probeOptions>
       <nets>
         <net name="dds_sys_i/system_ila_0/inst/net_slot_1_axis_tdata[15]"/>
@@ -179,7 +188,7 @@
     <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
       <probeOptions Id="DebugProbeParams">
         <Option Id="CAPTURE_COMPARE_VALUE" value="eq1&apos;bX"/>
-        <Option Id="COMPARE_VALUE.0" value="eq1&apos;bX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq1&apos;bR"/>
         <Option Id="DISPLAY_AS_ENUM" value="1"/>
         <Option Id="DISPLAY_HINT" value=""/>
         <Option Id="DISPLAY_RADIX" value="HEX"/>
@@ -190,7 +199,7 @@
         <Option Id="NAME.CUSTOM" value="controller_dds_0_sync"/>
         <Option Id="NAME.SELECT" value="Custom"/>
         <Option Id="SOURCE" value="netlist"/>
-        <Option Id="TRIGGER_COMPARE_VALUE" value="eq1&apos;bX"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq1&apos;bR"/>
         <Option Id="WAVEFORM_STYLE" value="Digital"/>
       </probeOptions>
       <nets>
@@ -204,8 +213,8 @@
         <Option Id="HW_VIO" value="hw_vio_1"/>
         <Option Id="NAME.CUSTOM" value=""/>
         <Option Id="NAME.SELECT" value="Long"/>
-        <Option Id="OUTPUT_VALUE" value="001e8480"/>
-        <Option Id="OUTPUT_VALUE_RADIX" value="HEX"/>
+        <Option Id="OUTPUT_VALUE" value="5000000"/>
+        <Option Id="OUTPUT_VALUE_RADIX" value="UNSIGNED"/>
         <Option Id="SOURCE" value="netlist"/>
       </probeOptions>
       <nets>
@@ -250,8 +259,8 @@
         <Option Id="HW_VIO" value="hw_vio_1"/>
         <Option Id="NAME.CUSTOM" value=""/>
         <Option Id="NAME.SELECT" value="Long"/>
-        <Option Id="OUTPUT_VALUE" value="00000000"/>
-        <Option Id="OUTPUT_VALUE_RADIX" value="HEX"/>
+        <Option Id="OUTPUT_VALUE" value="1000"/>
+        <Option Id="OUTPUT_VALUE_RADIX" value="UNSIGNED"/>
         <Option Id="SOURCE" value="netlist"/>
       </probeOptions>
       <nets>

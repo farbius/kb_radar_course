@@ -1,0 +1,6 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../zc702_dds.ip_user_files/bd/dds_sys/ip/dds_sys_dds_compiler_0_0/sim/dds_sys_dds_compiler_0_0.vhd" \
+
+# Do not sort compile order
+nosort

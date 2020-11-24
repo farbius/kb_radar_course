@@ -5,8 +5,7 @@
       "device": "xc7z020clg400-1",
       "name": "dds_sys",
       "synth_flow_mode": "Hierarchical",
-      "tool_version": "2019.1.2",
-      "validated": "true"
+      "tool_version": "2019.1.2"
     },
     "design_tree": {
       "dds_compiler_0": "",
@@ -20,16 +19,8 @@
         "type": "clk",
         "direction": "I",
         "parameters": {
-          "CLK_DOMAIN": {
-            "value": "dds_sys_sys_clock",
-            "value_src": "default"
-          },
           "FREQ_HZ": {
             "value": "125000000"
-          },
-          "INSERT_VIP": {
-            "value": "0",
-            "value_src": "default"
           },
           "PHASE": {
             "value": "0.000"
@@ -149,39 +140,11 @@
         "ports": {
           "clk": {
             "type": "clk",
-            "direction": "I",
-            "parameters": {
-              "ASSOCIATED_BUSIF": {
-                "value": "m_axis_phase",
-                "value_src": "constant"
-              },
-              "ASSOCIATED_RESET": {
-                "value": "rstn",
-                "value_src": "constant"
-              },
-              "CLK_DOMAIN": {
-                "value": "/clk_wiz_0_clk_out1",
-                "value_src": "ip_prop"
-              },
-              "FREQ_HZ": {
-                "value": "100000000",
-                "value_src": "ip_prop"
-              },
-              "PHASE": {
-                "value": "0.0",
-                "value_src": "ip_prop"
-              }
-            }
+            "direction": "I"
           },
           "rstn": {
             "type": "rst",
-            "direction": "I",
-            "parameters": {
-              "POLARITY": {
-                "value": "ACTIVE_LOW",
-                "value_src": "constant"
-              }
-            }
+            "direction": "I"
           },
           "freq_0": {
             "direction": "I",
@@ -253,7 +216,7 @@
             "value": "2"
           },
           "C_SLOT": {
-            "value": "1"
+            "value": "0"
           },
           "C_SLOT_0_INTF_TYPE": {
             "value": "xilinx.com:interface:axis_rtl:1.0"
@@ -290,12 +253,6 @@
       }
     },
     "interface_nets": {
-      "dds_compiler_0_M_AXIS_PHASE": {
-        "interface_ports": [
-          "dds_compiler_0/M_AXIS_PHASE",
-          "system_ila_0/SLOT_1_AXIS"
-        ]
-      },
       "controller_dds_0_m_axis_phase": {
         "interface_ports": [
           "controller_dds_0/m_axis_phase",
@@ -306,6 +263,12 @@
         "interface_ports": [
           "dds_compiler_0/M_AXIS_DATA",
           "system_ila_0/SLOT_0_AXIS"
+        ]
+      },
+      "dds_compiler_0_M_AXIS_PHASE": {
+        "interface_ports": [
+          "dds_compiler_0/M_AXIS_PHASE",
+          "system_ila_0/SLOT_1_AXIS"
         ]
       }
     },

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="sys_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="sys_tb" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="152928000001fs"></ZoomEndTime>
+      <Cursor1Time time="240000000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="416"></NameColumnWidth>
+      <ValueColumnWidth column_width="58"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="7" />
+   <wvobject fp_name="/sys_tb/sys_diff_clock_clk_n" type="logic">
+      <obj_property name="ElementShortName">sys_diff_clock_clk_n</obj_property>
+      <obj_property name="ObjectShortName">sys_diff_clock_clk_n</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sys_tb/sys_diff_clock_clk_p" type="logic">
+      <obj_property name="ElementShortName">sys_diff_clock_clk_p</obj_property>
+      <obj_property name="ObjectShortName">sys_diff_clock_clk_p</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sys_tb/dut/dds_sys_i/clk_wiz_0/clk_out1" type="logic">
+      <obj_property name="ElementShortName">clk_out1</obj_property>
+      <obj_property name="ObjectShortName">clk_out1</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sys_tb/dut/dds_sys_i/clk_wiz_0/locked" type="logic">
+      <obj_property name="ElementShortName">locked</obj_property>
+      <obj_property name="ObjectShortName">locked</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sys_tb/dut/dds_sys_i/dds_compiler_0_M_AXIS_DATA_TDATA" type="array">
+      <obj_property name="ElementShortName">dds_compiler_0_M_AXIS_DATA_TDATA[15:0]</obj_property>
+      <obj_property name="ObjectShortName">dds_compiler_0_M_AXIS_DATA_TDATA[15:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="vbus32" type="vbus">
+      <obj_property name="label">iq_q</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      <obj_property name="WaveformStyle">STYLE_ANALOG</obj_property>
+      <obj_property name="CellHeight">100</obj_property>
+      <wvobject fp_name="/sys_tb/dut/dds_sys_i/dds_compiler_0_M_AXIS_DATA_TDATA[7]" type="logic">
+         <obj_property name="ElementShortName">[7]</obj_property>
+         <obj_property name="ObjectShortName">[7]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/sys_tb/dut/dds_sys_i/dds_compiler_0_M_AXIS_DATA_TDATA[6]" type="logic">
+         <obj_property name="ElementShortName">[6]</obj_property>
+         <obj_property name="ObjectShortName">[6]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/sys_tb/dut/dds_sys_i/dds_compiler_0_M_AXIS_DATA_TDATA[5]" type="logic">
+         <obj_property name="ElementShortName">[5]</obj_property>
+         <obj_property name="ObjectShortName">[5]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/sys_tb/dut/dds_sys_i/dds_compiler_0_M_AXIS_DATA_TDATA[4]" type="logic">
+         <obj_property name="ElementShortName">[4]</obj_property>
+         <obj_property name="ObjectShortName">[4]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/sys_tb/dut/dds_sys_i/dds_compiler_0_M_AXIS_DATA_TDATA[3]" type="logic">
+         <obj_property name="ElementShortName">[3]</obj_property>
+         <obj_property name="ObjectShortName">[3]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/sys_tb/dut/dds_sys_i/dds_compiler_0_M_AXIS_DATA_TDATA[2]" type="logic">
+         <obj_property name="ElementShortName">[2]</obj_property>
+         <obj_property name="ObjectShortName">[2]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/sys_tb/dut/dds_sys_i/dds_compiler_0_M_AXIS_DATA_TDATA[1]" type="logic">
+         <obj_property name="ElementShortName">[1]</obj_property>
+         <obj_property name="ObjectShortName">[1]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/sys_tb/dut/dds_sys_i/dds_compiler_0_M_AXIS_DATA_TDATA[0]" type="logic">
+         <obj_property name="ElementShortName">[0]</obj_property>
+         <obj_property name="ObjectShortName">[0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="vbus23" type="vbus">
+      <obj_property name="label">iq_i</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      <obj_property name="WaveformStyle">STYLE_ANALOG</obj_property>
+      <obj_property name="CellHeight">100</obj_property>
+      <wvobject fp_name="/sys_tb/dut/dds_sys_i/dds_compiler_0_M_AXIS_DATA_TDATA[15]" type="logic">
+         <obj_property name="ElementShortName">[15]</obj_property>
+         <obj_property name="ObjectShortName">[15]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/sys_tb/dut/dds_sys_i/dds_compiler_0_M_AXIS_DATA_TDATA[14]" type="logic">
+         <obj_property name="ElementShortName">[14]</obj_property>
+         <obj_property name="ObjectShortName">[14]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/sys_tb/dut/dds_sys_i/dds_compiler_0_M_AXIS_DATA_TDATA[13]" type="logic">
+         <obj_property name="ElementShortName">[13]</obj_property>
+         <obj_property name="ObjectShortName">[13]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/sys_tb/dut/dds_sys_i/dds_compiler_0_M_AXIS_DATA_TDATA[12]" type="logic">
+         <obj_property name="ElementShortName">[12]</obj_property>
+         <obj_property name="ObjectShortName">[12]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/sys_tb/dut/dds_sys_i/dds_compiler_0_M_AXIS_DATA_TDATA[11]" type="logic">
+         <obj_property name="ElementShortName">[11]</obj_property>
+         <obj_property name="ObjectShortName">[11]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/sys_tb/dut/dds_sys_i/dds_compiler_0_M_AXIS_DATA_TDATA[10]" type="logic">
+         <obj_property name="ElementShortName">[10]</obj_property>
+         <obj_property name="ObjectShortName">[10]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/sys_tb/dut/dds_sys_i/dds_compiler_0_M_AXIS_DATA_TDATA[9]" type="logic">
+         <obj_property name="ElementShortName">[9]</obj_property>
+         <obj_property name="ObjectShortName">[9]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/sys_tb/dut/dds_sys_i/dds_compiler_0_M_AXIS_DATA_TDATA[8]" type="logic">
+         <obj_property name="ElementShortName">[8]</obj_property>
+         <obj_property name="ObjectShortName">[8]</obj_property>
+      </wvobject>
+   </wvobject>
+</wave_config>

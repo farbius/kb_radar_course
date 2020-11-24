@@ -1,0 +1,21 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../zc702_dds.srcs/sources_1/bd/dds_sys/ipshared/c923" \
+"../../../../zc702_dds.srcs/sources_1/imports/hdl/controller_dds.v" \
+"../../../../zc702_dds.ip_user_files/bd/dds_sys/ip/dds_sys_controller_dds_0_0/sim/dds_sys_controller_dds_0_0.v" \
+"../../../../zc702_dds.ip_user_files/bd/dds_sys/ip/dds_sys_vio_0_0/sim/dds_sys_vio_0_0.v" \
+"../../../../zc702_dds.ip_user_files/bd/dds_sys/ip/dds_sys_system_ila_0_0/bd_0/ip/ip_0/sim/bd_080f_ila_lib_0.v" \
+"../../../../zc702_dds.ip_user_files/bd/dds_sys/ip/dds_sys_system_ila_0_0/bd_0/ip/ip_1/bd_080f_g_inst_0_gigantic_mux.v" \
+"../../../../zc702_dds.ip_user_files/bd/dds_sys/ip/dds_sys_system_ila_0_0/bd_0/ip/ip_1/sim/bd_080f_g_inst_0.v" \
+"../../../../zc702_dds.ip_user_files/bd/dds_sys/ip/dds_sys_system_ila_0_0/bd_0/sim/bd_080f.v" \
+"../../../../zc702_dds.ip_user_files/bd/dds_sys/ip/dds_sys_system_ila_0_0/sim/dds_sys_system_ila_0_0.v" \
+"../../../../zc702_dds.ip_user_files/bd/dds_sys/ip/dds_sys_clk_wiz_0_0/dds_sys_clk_wiz_0_0_clk_wiz.v" \
+"../../../../zc702_dds.ip_user_files/bd/dds_sys/ip/dds_sys_clk_wiz_0_0/dds_sys_clk_wiz_0_0.v" \
+"../../../../zc702_dds.ip_user_files/bd/dds_sys/sim/dds_sys.v" \
+"../../../../zc702_dds.srcs/sources_1/bd/dds_sys/hdl/dds_sys_wrapper.v" \
+"../../../../zc702_dds.srcs/sim_1/imports/hdl/sys_tb.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

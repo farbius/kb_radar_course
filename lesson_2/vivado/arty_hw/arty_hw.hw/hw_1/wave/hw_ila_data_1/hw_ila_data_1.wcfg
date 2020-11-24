@@ -10,15 +10,16 @@
    </db_ref_list>
    <zoom_setting>
       <ZoomStartTime time="0fs"></ZoomStartTime>
-      <ZoomEndTime time="4096001fs"></ZoomEndTime>
-      <Cursor1Time time="0fs"></Cursor1Time>
+      <ZoomEndTime time="4096000fs"></ZoomEndTime>
+      <Cursor1Time time="732000fs"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
-      <NameColumnWidth column_width="175"></NameColumnWidth>
-      <ValueColumnWidth column_width="146"></ValueColumnWidth>
+      <NameColumnWidth column_width="416"></NameColumnWidth>
+      <ValueColumnWidth column_width="58"></ValueColumnWidth>
    </column_width_setting>
    <WVObjectSize size="3" />
    <wave_markers>
+      <marker time="1322000" label="" />
    </wave_markers>
    <wvobject fp_name="dds_sys_i/system_ila_0/inst/probe0_1" type="logic">
       <obj_property name="DisplayName">label</obj_property>
@@ -70,9 +71,87 @@
             <obj_property name="ElementShortName">dds_sys_i/system_ila_0/inst/net_slot_0_axis_tdata[15:0]</obj_property>
             <obj_property name="ObjectShortName">net_slot_0_axis_tdata[15:0]</obj_property>
             <obj_property name="label">slot_0 : dds_compiler_0_M_AXIS_DATA : TDATA</obj_property>
-            <obj_property name="Radix">HEXRADIX</obj_property>
+            <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
             <obj_property name="LABELRADIX">true</obj_property>
             <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+         </wvobject>
+         <wvobject fp_name="vbus37" type="vbus">
+            <obj_property name="label">iq_q</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+            <obj_property name="WaveformStyle">STYLE_ANALOG</obj_property>
+            <obj_property name="CellHeight">100</obj_property>
+            <wvobject fp_name="dds_sys_i/system_ila_0/inst/net_slot_0_axis_tdata[7]" type="logic">
+               <obj_property name="ElementShortName">[7]</obj_property>
+               <obj_property name="ObjectShortName">[7]</obj_property>
+            </wvobject>
+            <wvobject fp_name="dds_sys_i/system_ila_0/inst/net_slot_0_axis_tdata[6]" type="logic">
+               <obj_property name="ElementShortName">[6]</obj_property>
+               <obj_property name="ObjectShortName">[6]</obj_property>
+            </wvobject>
+            <wvobject fp_name="dds_sys_i/system_ila_0/inst/net_slot_0_axis_tdata[5]" type="logic">
+               <obj_property name="ElementShortName">[5]</obj_property>
+               <obj_property name="ObjectShortName">[5]</obj_property>
+            </wvobject>
+            <wvobject fp_name="dds_sys_i/system_ila_0/inst/net_slot_0_axis_tdata[4]" type="logic">
+               <obj_property name="ElementShortName">[4]</obj_property>
+               <obj_property name="ObjectShortName">[4]</obj_property>
+            </wvobject>
+            <wvobject fp_name="dds_sys_i/system_ila_0/inst/net_slot_0_axis_tdata[3]" type="logic">
+               <obj_property name="ElementShortName">[3]</obj_property>
+               <obj_property name="ObjectShortName">[3]</obj_property>
+            </wvobject>
+            <wvobject fp_name="dds_sys_i/system_ila_0/inst/net_slot_0_axis_tdata[2]" type="logic">
+               <obj_property name="ElementShortName">[2]</obj_property>
+               <obj_property name="ObjectShortName">[2]</obj_property>
+            </wvobject>
+            <wvobject fp_name="dds_sys_i/system_ila_0/inst/net_slot_0_axis_tdata[1]" type="logic">
+               <obj_property name="ElementShortName">[1]</obj_property>
+               <obj_property name="ObjectShortName">[1]</obj_property>
+            </wvobject>
+            <wvobject fp_name="dds_sys_i/system_ila_0/inst/net_slot_0_axis_tdata[0]" type="logic">
+               <obj_property name="ElementShortName">[0]</obj_property>
+               <obj_property name="ObjectShortName">[0]</obj_property>
+            </wvobject>
+         </wvobject>
+         <wvobject fp_name="vbus28" type="vbus">
+            <obj_property name="label">iq_i</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+            <obj_property name="WaveformStyle">STYLE_ANALOG</obj_property>
+            <obj_property name="CellHeight">100</obj_property>
+            <wvobject fp_name="dds_sys_i/system_ila_0/inst/net_slot_0_axis_tdata[15]" type="logic">
+               <obj_property name="ElementShortName">[15]</obj_property>
+               <obj_property name="ObjectShortName">[15]</obj_property>
+            </wvobject>
+            <wvobject fp_name="dds_sys_i/system_ila_0/inst/net_slot_0_axis_tdata[14]" type="logic">
+               <obj_property name="ElementShortName">[14]</obj_property>
+               <obj_property name="ObjectShortName">[14]</obj_property>
+            </wvobject>
+            <wvobject fp_name="dds_sys_i/system_ila_0/inst/net_slot_0_axis_tdata[13]" type="logic">
+               <obj_property name="ElementShortName">[13]</obj_property>
+               <obj_property name="ObjectShortName">[13]</obj_property>
+            </wvobject>
+            <wvobject fp_name="dds_sys_i/system_ila_0/inst/net_slot_0_axis_tdata[12]" type="logic">
+               <obj_property name="ElementShortName">[12]</obj_property>
+               <obj_property name="ObjectShortName">[12]</obj_property>
+            </wvobject>
+            <wvobject fp_name="dds_sys_i/system_ila_0/inst/net_slot_0_axis_tdata[11]" type="logic">
+               <obj_property name="ElementShortName">[11]</obj_property>
+               <obj_property name="ObjectShortName">[11]</obj_property>
+            </wvobject>
+            <wvobject fp_name="dds_sys_i/system_ila_0/inst/net_slot_0_axis_tdata[10]" type="logic">
+               <obj_property name="ElementShortName">[10]</obj_property>
+               <obj_property name="ObjectShortName">[10]</obj_property>
+            </wvobject>
+            <wvobject fp_name="dds_sys_i/system_ila_0/inst/net_slot_0_axis_tdata[9]" type="logic">
+               <obj_property name="ElementShortName">[9]</obj_property>
+               <obj_property name="ObjectShortName">[9]</obj_property>
+            </wvobject>
+            <wvobject fp_name="dds_sys_i/system_ila_0/inst/net_slot_0_axis_tdata[8]" type="logic">
+               <obj_property name="ElementShortName">[8]</obj_property>
+               <obj_property name="ObjectShortName">[8]</obj_property>
+            </wvobject>
          </wvobject>
       </wvobject>
    </wvobject>
@@ -85,6 +164,7 @@
       <obj_property name="CustomSignalColor">OliveDrab</obj_property>
       <obj_property name="UseCustomSignalColor">true</obj_property>
       <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+      <obj_property name="isExpanded"></obj_property>
       <wvobject fp_name="group8" type="group">
          <obj_property name="label">slot_1 : dds_compiler_0_M_AXIS_PHASE : T Channel</obj_property>
          <obj_property name="DisplayName">label</obj_property>
@@ -94,6 +174,7 @@
          <obj_property name="CustomSignalColor">Purple</obj_property>
          <obj_property name="UseCustomSignalColor">true</obj_property>
          <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+         <obj_property name="isExpanded"></obj_property>
          <wvobject fp_name="dds_sys_i/system_ila_0/inst/net_slot_1_axis_tvalid" type="logic">
             <obj_property name="DisplayName">label</obj_property>
             <obj_property name="ElementShortName">dds_sys_i/system_ila_0/inst/net_slot_1_axis_tvalid</obj_property>
@@ -115,9 +196,10 @@
             <obj_property name="ElementShortName">dds_sys_i/system_ila_0/inst/net_slot_1_axis_tdata[15:0]</obj_property>
             <obj_property name="ObjectShortName">net_slot_1_axis_tdata[15:0]</obj_property>
             <obj_property name="label">slot_1 : dds_compiler_0_M_AXIS_PHASE : TDATA</obj_property>
-            <obj_property name="Radix">HEXRADIX</obj_property>
+            <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
             <obj_property name="LABELRADIX">true</obj_property>
-            <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+            <obj_property name="WaveformStyle">STYLE_ANALOG</obj_property>
+            <obj_property name="CellHeight">100</obj_property>
          </wvobject>
       </wvobject>
    </wvobject>

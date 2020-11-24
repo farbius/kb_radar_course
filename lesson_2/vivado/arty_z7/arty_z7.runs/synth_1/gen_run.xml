@@ -3,8 +3,6 @@
   <File Type="PA-TCL" Name="dds_sys_wrapper.tcl"/>
   <File Type="REPORTS-TCL" Name="dds_sys_wrapper_reports.tcl"/>
   <File Type="RDS-RDS" Name="dds_sys_wrapper.vds"/>
-  <File Type="RDS-UTIL" Name="dds_sys_wrapper_utilization_synth.rpt"/>
-  <File Type="RDS-UTIL-PB" Name="dds_sys_wrapper_utilization_synth.pb"/>
   <File Type="RDS-DCP" Name="dds_sys_wrapper.dcp"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
@@ -12,13 +10,6 @@
       <FileInfo>
         <Attr Name="ImportPath" Val="$PPRDIR/../hdl/controller_dds.v"/>
         <Attr Name="ImportTime" Val="1606199963"/>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="implementation"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PSRCDIR/sources_1/bd/dds_sys/dds_sys.bd">
-      <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -69,8 +60,8 @@
     <Step Id="synth_design"/>
   </Strategy>
   <BlockFileSet Type="BlockSrcs" Name="dds_sys_dds_compiler_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="dds_sys_controller_dds_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="dds_sys_vio_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="dds_sys_controller_dds_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="dds_sys_system_ila_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="dds_sys_clk_wiz_0_0"/>
 </GenRun>

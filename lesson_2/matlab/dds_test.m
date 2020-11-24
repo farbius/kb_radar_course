@@ -8,9 +8,9 @@ LFM = 1; % '1' - LFM signal, 0 - sin signal
 
 Fs       = 100e6;  % sample rate
 PH_w     = 16;     % width of accumulator
-Nfft     = 10000;   % FFT size
+Nfft     = 10000;  % FFT size
 N        = 2^PH_w; % length of generated signal
-f0       = 2e6;    % desired frequency
+
 
 %% vectors for frequency domain
 df   = Fs/Nfft; % fft step
@@ -26,7 +26,7 @@ if LFM == 0
 
         % dds
         Phi = 0;
-        f0 = 2e6;
+        f0 = 13e6;
         for i = 1 : N-1
             dds_out(i) = sin_table( mod(Phi, N) + 1);
             Phi = Phi + freq2phase(f0, Fs, PH_w);
@@ -61,18 +61,18 @@ else % LFM signal
     
         % dds
         Tlfm = 100e-6; % modulation period
-        F0   = 0;      % start freq
+        F0   = 0e6;      % start freq
         F1   = 10e6;   % end freq
         Ncycl= ceil(Tlfm * Fs );
         df   = ceil(F1 / Ncycl );
         
         Phi  = 0;
-        f0   = 0;
+        f0   = F0;
         for i = 1 : N-1
             dds_out(i) = sin_table( mod(Phi, N) + 1);
             Phi = Phi + freq2phase(f0, Fs, PH_w);
             if(mod(i, Ncycl) == 0)
-               f0 = 0;
+               f0 = F0;
             else
                f0 = f0 + df;
             end

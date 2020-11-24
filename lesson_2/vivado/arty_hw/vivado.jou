@@ -1,0 +1,21 @@
+#-----------------------------------------------------------
+# Vivado v2019.1.2 (64-bit)
+# SW Build 2615518 on Fri Aug  9 15:55:25 MDT 2019
+# IP Build 2614745 on Fri Aug  9 20:55:02 MDT 2019
+# Start of session at: Tue Nov 24 13:04:04 2020
+# Process ID: 10788
+# Current directory: D:/work/radar_course/lesson_2/vivado/arty_hw
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent11192 D:\work\radar_course\lesson_2\vivado\arty_hw\arty_hw.xpr
+# Log file: D:/work/radar_course/lesson_2/vivado/arty_hw/vivado.log
+# Journal file: D:/work/radar_course/lesson_2/vivado/arty_hw\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/work/radar_course/lesson_2/vivado/arty_hw/arty_hw.xpr
+update_compile_order -fileset sources_1
+set_property needs_refresh false [get_runs synth_1]
+set_property needs_refresh false [get_runs impl_1]
+set_property needs_refresh false [get_runs dds_sys_vio_0_0_synth_1]
+set_property needs_refresh false [get_runs dds_sys_system_ila_0_0_synth_1]
+set_property needs_refresh false [get_runs dds_sys_dds_compiler_0_0_synth_1]
+set_property needs_refresh false [get_runs dds_sys_controller_dds_0_0_synth_1]
+set_property needs_refresh false [get_runs dds_sys_clk_wiz_0_0_synth_1]

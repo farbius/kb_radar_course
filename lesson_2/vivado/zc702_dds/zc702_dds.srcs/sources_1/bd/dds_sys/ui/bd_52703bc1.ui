@@ -1,0 +1,27 @@
+{
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.0.19  2019-03-26 bk=1.5019 VDI=41 GEI=35 GUI=JA:9.0 non-TLS
+#  -string -flagsOSRD
+preplace port sys_diff_clock -pg 1 -lvl 0 -x 0 -y 70 -defaultsOSRD
+preplace inst dds_compiler_0 -pg 1 -lvl 4 -x 940 -y 170 -defaultsOSRD
+preplace inst controller_dds_0 -pg 1 -lvl 3 -x 610 -y 160 -defaultsOSRD
+preplace inst vio_0 -pg 1 -lvl 2 -x 350 -y 180 -defaultsOSRD
+preplace inst system_ila_0 -pg 1 -lvl 5 -x 1220 -y 200 -defaultsOSRD
+preplace inst clk_wiz_0 -pg 1 -lvl 1 -x 130 -y 70 -defaultsOSRD
+preplace netloc clk_wiz_0_clk_out1 1 1 4 240 60 460 40 770 260 1100J
+preplace netloc Net 1 1 4 N 80 450 30 780 250 1110
+preplace netloc vio_0_probe_out0 1 2 1 N 140
+preplace netloc vio_0_probe_out1 1 2 1 N 160
+preplace netloc vio_0_probe_out2 1 2 1 N 180
+preplace netloc vio_0_probe_out3 1 2 1 N 200
+preplace netloc vio_0_probe_out4 1 2 1 N 220
+preplace netloc controller_dds_0_sync 1 3 2 760 270 1120J
+preplace netloc sys_diff_clock_1 1 0 1 N 70
+preplace netloc controller_dds_0_m_axis_phase 1 3 1 N 150
+preplace netloc dds_compiler_0_M_AXIS_DATA 1 4 1 N 160
+preplace netloc dds_compiler_0_M_AXIS_PHASE 1 4 1 N 180
+levelinfo -pg 1 0 130 350 610 940 1220 1330
+pagesize -pg 1 -db -bbox -sgen -140 0 1330 300
+"
+}
+

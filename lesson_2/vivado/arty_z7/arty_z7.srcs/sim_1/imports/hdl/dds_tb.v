@@ -77,7 +77,7 @@ $display($time, " << Starting the Simulation >>");
             */
             f0 = 0;
             Ncycles = 10000;
-            df0     = 16'd1000;
+            df0     = 16'd500;
             @(posedge aclk_0);
             repeat(2)begin // repeat 2 - הגא Ë×Ì
                 for (i = 0; i < Ncycles; i = i + 1) begin
@@ -89,7 +89,7 @@ $display($time, " << Starting the Simulation >>");
             end
         
         `else
-            f0 = 10000000; // f0 = 10 MHz
+            f0 = 32'd5000000; // f0 = 2 MHz
             S_AXIS_PHASE_0_tdata = freq2phase(f0);
             repeat(10000)@(posedge aclk_0);
         `endif
