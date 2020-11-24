@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.1.2 (64-bit)
+# SW Build 2615518 on Fri Aug  9 15:55:25 MDT 2019
+# IP Build 2614745 on Fri Aug  9 20:55:02 MDT 2019
+# Start of session at: Tue Nov 24 10:37:40 2020
+# Process ID: 5092
+# Current directory: D:/work/radar_course/lesson_2/vivado/arty_z7/arty_z7.runs/impl_1
+# Command line: vivado.exe -log dds_sys_wrapper.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source dds_sys_wrapper.tcl -notrace
+# Log file: D:/work/radar_course/lesson_2/vivado/arty_z7/arty_z7.runs/impl_1/dds_sys_wrapper.vdi
+# Journal file: D:/work/radar_course/lesson_2/vivado/arty_z7/arty_z7.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source dds_sys_wrapper.tcl -notrace

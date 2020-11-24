@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="dds_sys_dds_compiler_0_0_synth_1" LaunchDir="D:/work/radar_course/lesson_2/vivado/arty_z7/arty_z7.runs/dds_sys_dds_compiler_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="dds_sys_controller_dds_0_0_synth_1" LaunchDir="D:/work/radar_course/lesson_2/vivado/arty_z7/arty_z7.runs/dds_sys_controller_dds_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="dds_sys_vio_0_0_synth_1" LaunchDir="D:/work/radar_course/lesson_2/vivado/arty_z7/arty_z7.runs/dds_sys_vio_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="dds_sys_system_ila_0_0_synth_1" LaunchDir="D:/work/radar_course/lesson_2/vivado/arty_z7/arty_z7.runs/dds_sys_system_ila_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="dds_sys_clk_wiz_0_0_synth_1" LaunchDir="D:/work/radar_course/lesson_2/vivado/arty_z7/arty_z7.runs/dds_sys_clk_wiz_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Parameters>
+		<Parameter Name="runs.monitorLSFJobs" Val="true" Type="bool"/>
+	</Parameters>
+</Runs>
+

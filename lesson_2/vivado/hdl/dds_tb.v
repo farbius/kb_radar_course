@@ -109,7 +109,7 @@ $display($time, " << Starting the Simulation >>");
 
 
 
-dds_sys_wrapper dut // dut -- design under test
+dds_test_wrapper dut // dut -- design under test
        (.M_AXIS_DATA_0_tdata(M_AXIS_DATA_0_tdata),
         .M_AXIS_DATA_0_tvalid(M_AXIS_DATA_0_tvalid),
         .M_AXIS_PHASE_0_tdata(M_AXIS_PHASE_0_tdata),

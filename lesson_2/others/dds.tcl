@@ -1,11 +1,11 @@
-set project_name "artyz7_tb"
+set project_name "arty_z7"
 
 # create project
 
 #  arty-z7-20
 create_project $project_name [pwd]/$project_name -part xc7z020clg400-1
 set_property board_part digilentinc.com:arty-z7-20:part0:1.0 [current_project]
-create_bd_design "dds_sys"
+create_bd_design "dds_test"
 
 # dds compiler
 startgroup
@@ -19,6 +19,12 @@ make_bd_pins_external  [get_bd_pins dds_compiler_0/aclk]
 make_bd_pins_external  [get_bd_pins dds_compiler_0/aresetn]
 make_bd_intf_pins_external  [get_bd_intf_pins dds_compiler_0/M_AXIS_DATA]
 make_bd_intf_pins_external  [get_bd_intf_pins dds_compiler_0/M_AXIS_PHASE]
+save_bd_design
+
+make_wrapper -files [get_files [pwd]/$project_name/$project_name.srcs/sources_1/bd/dds_test/dds_test.bd] -top
+add_files -norecurse [pwd]/$project_name/$project_name.srcs/sources_1/bd/dds_test/hdl/dds_test_wrapper.v
+
+import_files -fileset sim_1 -norecurse [pwd]/hdl/dds_tb.v
 
 #########################################################################################
 #########################################################################################
@@ -34,10 +40,8 @@ set_property -dict [list CONFIG.Output_Selection {Cosine} CONFIG.Has_Phase_Out {
 
 
 # dds controller
-add_files C:/Users/arost/AppData/Roaming/Xilinx/Vivado/artyz7_tb/artyz7_tb.srcs/sources_1/new/controller_dds.v
-update_compile_order -fileset sources_1
+import_files -norecurse [pwd]/hdl/controller_dds.v
 create_bd_cell -type module -reference controller_dds controller_dds_0
-
 
 #  vio
 startgroup
@@ -49,7 +53,9 @@ set_property -dict [list CONFIG.C_PROBE_OUT2_WIDTH {32} CONFIG.C_PROBE_OUT1_WIDT
 startgroup
 create_bd_cell -type ip -vlnv xilinx.com:ip:system_ila:1.1 system_ila_0
 endgroup
-set_property -dict [list CONFIG.C_SLOT {1} CONFIG.C_BRAM_CNT {49.5} CONFIG.C_DATA_DEPTH {8192} CONFIG.C_NUM_MONITOR_SLOTS {2} CONFIG.C_SLOT_0_INTF_TYPE {xilinx.com:interface:axis_rtl:1.0} CONFIG.C_SLOT_1_INTF_TYPE {xilinx.com:interface:axis_rtl:1.0} CONFIG.C_MON_TYPE {MIX}] [get_bd_cells system_ila_0]
+set_property -dict [list CONFIG.C_SLOT {1} CONFIG.C_BRAM_CNT {25} CONFIG.C_DATA_DEPTH {4096} CONFIG.C_NUM_MONITOR_SLOTS {2} CONFIG.C_SLOT_0_INTF_TYPE {xilinx.com:interface:axis_rtl:1.0} CONFIG.C_SLOT_1_INTF_TYPE {xilinx.com:interface:axis_rtl:1.0}] [get_bd_cells system_ila_0]
+set_property -dict [list CONFIG.C_BRAM_CNT {3} CONFIG.C_MON_TYPE {MIX}] [get_bd_cells system_ila_0]
+
 
 connect_bd_net [get_bd_pins clk_wiz_0/clk_out1] [get_bd_pins vio_0/clk]
 connect_bd_net [get_bd_pins dds_compiler_0/aclk] [get_bd_pins clk_wiz_0/clk_out1]
@@ -73,9 +79,8 @@ connect_bd_net [get_bd_pins controller_dds_0/sync] [get_bd_pins system_ila_0/pro
 
 save_bd_design
 
-make_wrapper -files [get_files C:/Users/arost/AppData/Roaming/Xilinx/Vivado/artyz7_tb/artyz7_tb.srcs/sources_1/bd/dds_hw/dds_hw.bd] -top
-add_files -norecurse C:/Users/arost/AppData/Roaming/Xilinx/Vivado/artyz7_tb/artyz7_tb.srcs/sources_1/bd/dds_hw/hdl/dds_hw_wrapper.v
+make_wrapper -files [get_files [pwd]/$project_name/$project_name.srcs/sources_1/bd/dds_sys/dds_sys.bd] -top
+add_files -norecurse [pwd]/$project_name/$project_name.srcs/sources_1/bd/dds_sys/hdl/dds_sys_wrapper.v
 
 
-
-
+import_files -fileset sim_1 -norecurse [pwd]/hdl/sys_tb.v
