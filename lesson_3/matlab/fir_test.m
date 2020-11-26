@@ -8,7 +8,7 @@ Fs       = 100e6;  % sample rate
 N        = 2^16;   % length of generated signal
 
 F0       = 0e6;    % start frequency of LFM
-F1       = 20e6;   % stop  frequency of LFM
+F1       = 25e6;   % stop  frequency of LFM
 
 
 

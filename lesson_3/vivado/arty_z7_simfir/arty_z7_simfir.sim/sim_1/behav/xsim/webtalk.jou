@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2019.1.2 (64-bit)
+# SW Build 2615518 on Fri Aug  9 15:55:25 MDT 2019
+# IP Build 2614745 on Fri Aug  9 20:55:02 MDT 2019
+# Start of session at: Thu Nov 26 11:43:53 2020
+# Process ID: 10536
+# Current directory: D:/work/radar_course/lesson_3/vivado/arty_z7_simfir/arty_z7_simfir.sim/sim_1/behav/xsim
+# Command line: wbtcv.exe -mode batch -source D:/work/radar_course/lesson_3/vivado/arty_z7_simfir/arty_z7_simfir.sim/sim_1/behav/xsim/xsim.dir/sys_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+# Log file: D:/work/radar_course/lesson_3/vivado/arty_z7_simfir/arty_z7_simfir.sim/sim_1/behav/xsim/webtalk.log
+# Journal file: D:/work/radar_course/lesson_3/vivado/arty_z7_simfir/arty_z7_simfir.sim/sim_1/behav/xsim\webtalk.jou
+#-----------------------------------------------------------
+source D:/work/radar_course/lesson_3/vivado/arty_z7_simfir/arty_z7_simfir.sim/sim_1/behav/xsim/xsim.dir/sys_tb_behav/webtalk/xsim_webtalk.tcl -notrace
