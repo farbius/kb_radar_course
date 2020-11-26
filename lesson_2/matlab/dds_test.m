@@ -61,10 +61,10 @@ else % LFM signal
     
         % dds
         Tlfm = 100e-6; % modulation period
-        F0   = 0e6;      % start freq
-        F1   = 10e6;   % end freq
+        F0   = 5e6;      % start freq
+        F1   = 15e6;   % end freq
         Ncycl= ceil(Tlfm * Fs );
-        df   = ceil(F1 / Ncycl );
+        df   = ceil((F1 - F0) / Ncycl );
         
         Phi  = 0;
         f0   = F0;
