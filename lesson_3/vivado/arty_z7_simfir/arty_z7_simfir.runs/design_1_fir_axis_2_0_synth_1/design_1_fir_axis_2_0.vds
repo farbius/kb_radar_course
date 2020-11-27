@@ -2,8 +2,8 @@
 # Vivado v2019.1.2 (64-bit)
 # SW Build 2615518 on Fri Aug  9 15:55:25 MDT 2019
 # IP Build 2614745 on Fri Aug  9 20:55:02 MDT 2019
-# Start of session at: Thu Nov 26 00:25:04 2020
-# Process ID: 16444
+# Start of session at: Fri Nov 27 11:16:36 2020
+# Process ID: 4132
 # Current directory: D:/work/radar_course/lesson_3/vivado/arty_z7_simfir/arty_z7_simfir.runs/design_1_fir_axis_2_0_synth_1
 # Command line: vivado.exe -log design_1_fir_axis_2_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_fir_axis_2_0.tcl
 # Log file: D:/work/radar_course/lesson_3/vivado/arty_z7_simfir/arty_z7_simfir.runs/design_1_fir_axis_2_0_synth_1/design_1_fir_axis_2_0.vds
@@ -15,30 +15,31 @@ INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/work/radar_course/lesson_3
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.1/data/ip'.
 Command: synth_design -top design_1_fir_axis_2_0 -part xc7z020clg400-1 -mode out_of_context
 Starting synth_design
-WARNING: [Vivado_Tcl 4-393] The 'Synthesis' target of the following IPs are stale, please generate the output products using the generate_target or synth_ip command before running synth_design.
-d:/work/radar_course/lesson_3/vivado/arty_z7_simfir/arty_z7_simfir.srcs/sources_1/bd/design_1/ip/design_1_fir_axis_2_0/design_1_fir_axis_2_0.xci
-
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
 INFO: [Device 21-403] Loading part xc7z020clg400-1
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 10976 
+INFO: Helper process launched with PID 15780 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 755.793 ; gain = 178.332
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 755.973 ; gain = 178.594
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'design_1_fir_axis_2_0' [d:/work/radar_course/lesson_3/vivado/arty_z7_simfir/arty_z7_simfir.srcs/sources_1/bd/design_1/ip/design_1_fir_axis_2_0/synth/design_1_fir_axis_2_0.v:57]
-INFO: [Synth 8-6157] synthesizing module 'fir_axis_v1_0' [d:/work/radar_course/lesson_3/vivado/arty_z7_simfir/arty_z7_simfir.srcs/sources_1/bd/design_1/ipshared/b1ef/hdl/fir_axis_v1_0.v:4]
-	Parameter MEM_FILE bound to: D:/work/radar_course/lesson_3/vivado/arty_z7_simfir/arty_z7_simfir.srcs/sources_1/imports/hdl/coef_hp.mem - type: string 
+INFO: [Synth 8-6157] synthesizing module 'fir_axis_v1_0' [d:/work/radar_course/lesson_3/vivado/arty_z7_simfir/arty_z7_simfir.srcs/sources_1/bd/design_1/ipshared/28ff/hdl/fir_axis_v1_0.v:4]
+	Parameter MEM_FILE bound to: d:/work/radar_course/lesson_3/vivado/arty_z7_simfir/arty_z7_simfir.srcs/sources_1/imports/hdl/coef_hp.mem - type: string 
+	Parameter DECIMATE bound to: 1 - type: integer 
 	Parameter TAPS bound to: 32 - type: integer 
 	Parameter INPUT_DATA_WIDTH bound to: 8 - type: integer 
 	Parameter COEF_DATA_WIDTH bound to: 16 - type: integer 
-INFO: [Synth 8-5534] Detected attribute (* rom_style = "block" *) [d:/work/radar_course/lesson_3/vivado/arty_z7_simfir/arty_z7_simfir.srcs/sources_1/bd/design_1/ipshared/b1ef/hdl/fir_axis_v1_0.v:28]
-INFO: [Synth 8-3876] $readmem data file 'D:/work/radar_course/lesson_3/vivado/arty_z7_simfir/arty_z7_simfir.srcs/sources_1/imports/hdl/coef_hp.mem' is read successfully [d:/work/radar_course/lesson_3/vivado/arty_z7_simfir/arty_z7_simfir.srcs/sources_1/bd/design_1/ipshared/b1ef/hdl/fir_axis_v1_0.v:32]
-INFO: [Synth 8-5534] Detected attribute (* use_dsp = "yes" *) [d:/work/radar_course/lesson_3/vivado/arty_z7_simfir/arty_z7_simfir.srcs/sources_1/bd/design_1/ipshared/b1ef/hdl/fir_axis_v1_0.v:65]
-INFO: [Synth 8-6155] done synthesizing module 'fir_axis_v1_0' (1#1) [d:/work/radar_course/lesson_3/vivado/arty_z7_simfir/arty_z7_simfir.srcs/sources_1/bd/design_1/ipshared/b1ef/hdl/fir_axis_v1_0.v:4]
+	Parameter Nlog2 bound to: 5 - type: integer 
+	Parameter Dlog2 bound to: 0 - type: integer 
+INFO: [Synth 8-5534] Detected attribute (* rom_style = "block" *) [d:/work/radar_course/lesson_3/vivado/arty_z7_simfir/arty_z7_simfir.srcs/sources_1/bd/design_1/ipshared/28ff/hdl/fir_axis_v1_0.v:33]
+INFO: [Synth 8-3876] $readmem data file 'd:/work/radar_course/lesson_3/vivado/arty_z7_simfir/arty_z7_simfir.srcs/sources_1/imports/hdl/coef_hp.mem' is read successfully [d:/work/radar_course/lesson_3/vivado/arty_z7_simfir/arty_z7_simfir.srcs/sources_1/bd/design_1/ipshared/28ff/hdl/fir_axis_v1_0.v:36]
+WARNING: [Synth 8-324] index 31 out of range [d:/work/radar_course/lesson_3/vivado/arty_z7_simfir/arty_z7_simfir.srcs/sources_1/bd/design_1/ipshared/28ff/hdl/fir_axis_v1_0.v:85]
+WARNING: [Synth 8-324] index 31 out of range [d:/work/radar_course/lesson_3/vivado/arty_z7_simfir/arty_z7_simfir.srcs/sources_1/bd/design_1/ipshared/28ff/hdl/fir_axis_v1_0.v:85]
+INFO: [Synth 8-6155] done synthesizing module 'fir_axis_v1_0' (1#1) [d:/work/radar_course/lesson_3/vivado/arty_z7_simfir/arty_z7_simfir.srcs/sources_1/bd/design_1/ipshared/28ff/hdl/fir_axis_v1_0.v:4]
 INFO: [Synth 8-6155] done synthesizing module 'design_1_fir_axis_2_0' (2#1) [d:/work/radar_course/lesson_3/vivado/arty_z7_simfir/arty_z7_simfir.srcs/sources_1/bd/design_1/ip/design_1_fir_axis_2_0/synth/design_1_fir_axis_2_0.v:57]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 822.355 ; gain = 244.895
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 822.000 ; gain = 244.621
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -51,10 +52,10 @@ Report Check Netlist:
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 822.355 ; gain = 244.895
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 822.000 ; gain = 244.621
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 822.355 ; gain = 244.895
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 822.000 ; gain = 244.621
 ---------------------------------------------------------------------------------
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
@@ -62,32 +63,63 @@ Processing XDC Constraints
 Initializing timing engine
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 942.863 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 940.137 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.087 . Memory (MB): peak = 943.891 ; gain = 1.027
+Constraint Validation Runtime : Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.163 . Memory (MB): peak = 943.117 ; gain = 2.980
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 943.891 ; gain = 366.430
+Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 943.117 ; gain = 365.738
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z020clg400-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 943.891 ; gain = 366.430
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 943.117 ; gain = 365.738
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 943.891 ; gain = 366.430
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 943.117 ; gain = 365.738
 ---------------------------------------------------------------------------------
-WARNING: [Synth 8-3936] Found unconnected internal register 'result_reg' and it is trimmed from '56' to '24' bits. [d:/work/radar_course/lesson_3/vivado/arty_z7_simfir/arty_z7_simfir.srcs/sources_1/bd/design_1/ipshared/b1ef/hdl/fir_axis_v1_0.v:90]
+WARNING: [Synth 8-3936] Found unconnected internal register 'result_reg' and it is trimmed from '56' to '24' bits. [d:/work/radar_course/lesson_3/vivado/arty_z7_simfir/arty_z7_simfir.srcs/sources_1/bd/design_1/ipshared/28ff/hdl/fir_axis_v1_0.v:103]
+WARNING: [Synth 8-3936] Found unconnected internal register 'tap[30].acc_reg[30]' and it is trimmed from '56' to '24' bits. [d:/work/radar_course/lesson_3/vivado/arty_z7_simfir/arty_z7_simfir.srcs/sources_1/bd/design_1/ipshared/28ff/hdl/fir_axis_v1_0.v:85]
+WARNING: [Synth 8-3936] Found unconnected internal register 'tap[29].acc_reg[29]' and it is trimmed from '56' to '24' bits. [d:/work/radar_course/lesson_3/vivado/arty_z7_simfir/arty_z7_simfir.srcs/sources_1/bd/design_1/ipshared/28ff/hdl/fir_axis_v1_0.v:85]
+WARNING: [Synth 8-3936] Found unconnected internal register 'tap[27].acc_reg[27]' and it is trimmed from '56' to '24' bits. [d:/work/radar_course/lesson_3/vivado/arty_z7_simfir/arty_z7_simfir.srcs/sources_1/bd/design_1/ipshared/28ff/hdl/fir_axis_v1_0.v:85]
+WARNING: [Synth 8-3936] Found unconnected internal register 'tap[23].acc_reg[23]' and it is trimmed from '56' to '24' bits. [d:/work/radar_course/lesson_3/vivado/arty_z7_simfir/arty_z7_simfir.srcs/sources_1/bd/design_1/ipshared/28ff/hdl/fir_axis_v1_0.v:85]
+WARNING: [Synth 8-3936] Found unconnected internal register 'tap[15].acc_reg[15]' and it is trimmed from '56' to '24' bits. [d:/work/radar_course/lesson_3/vivado/arty_z7_simfir/arty_z7_simfir.srcs/sources_1/bd/design_1/ipshared/28ff/hdl/fir_axis_v1_0.v:83]
+WARNING: [Synth 8-3936] Found unconnected internal register 'tap[14].acc_reg[14]' and it is trimmed from '56' to '24' bits. [d:/work/radar_course/lesson_3/vivado/arty_z7_simfir/arty_z7_simfir.srcs/sources_1/bd/design_1/ipshared/28ff/hdl/fir_axis_v1_0.v:83]
+WARNING: [Synth 8-3936] Found unconnected internal register 'tap[22].acc_reg[22]' and it is trimmed from '56' to '24' bits. [d:/work/radar_course/lesson_3/vivado/arty_z7_simfir/arty_z7_simfir.srcs/sources_1/bd/design_1/ipshared/28ff/hdl/fir_axis_v1_0.v:85]
+WARNING: [Synth 8-3936] Found unconnected internal register 'tap[13].acc_reg[13]' and it is trimmed from '56' to '24' bits. [d:/work/radar_course/lesson_3/vivado/arty_z7_simfir/arty_z7_simfir.srcs/sources_1/bd/design_1/ipshared/28ff/hdl/fir_axis_v1_0.v:83]
+WARNING: [Synth 8-3936] Found unconnected internal register 'tap[12].acc_reg[12]' and it is trimmed from '56' to '24' bits. [d:/work/radar_course/lesson_3/vivado/arty_z7_simfir/arty_z7_simfir.srcs/sources_1/bd/design_1/ipshared/28ff/hdl/fir_axis_v1_0.v:83]
+WARNING: [Synth 8-3936] Found unconnected internal register 'tap[26].acc_reg[26]' and it is trimmed from '56' to '24' bits. [d:/work/radar_course/lesson_3/vivado/arty_z7_simfir/arty_z7_simfir.srcs/sources_1/bd/design_1/ipshared/28ff/hdl/fir_axis_v1_0.v:85]
+WARNING: [Synth 8-3936] Found unconnected internal register 'tap[21].acc_reg[21]' and it is trimmed from '56' to '24' bits. [d:/work/radar_course/lesson_3/vivado/arty_z7_simfir/arty_z7_simfir.srcs/sources_1/bd/design_1/ipshared/28ff/hdl/fir_axis_v1_0.v:85]
+WARNING: [Synth 8-3936] Found unconnected internal register 'tap[11].acc_reg[11]' and it is trimmed from '56' to '24' bits. [d:/work/radar_course/lesson_3/vivado/arty_z7_simfir/arty_z7_simfir.srcs/sources_1/bd/design_1/ipshared/28ff/hdl/fir_axis_v1_0.v:83]
+WARNING: [Synth 8-3936] Found unconnected internal register 'tap[10].acc_reg[10]' and it is trimmed from '56' to '24' bits. [d:/work/radar_course/lesson_3/vivado/arty_z7_simfir/arty_z7_simfir.srcs/sources_1/bd/design_1/ipshared/28ff/hdl/fir_axis_v1_0.v:83]
+WARNING: [Synth 8-3936] Found unconnected internal register 'tap[20].acc_reg[20]' and it is trimmed from '56' to '24' bits. [d:/work/radar_course/lesson_3/vivado/arty_z7_simfir/arty_z7_simfir.srcs/sources_1/bd/design_1/ipshared/28ff/hdl/fir_axis_v1_0.v:85]
+WARNING: [Synth 8-3936] Found unconnected internal register 'tap[9].acc_reg[9]' and it is trimmed from '56' to '24' bits. [d:/work/radar_course/lesson_3/vivado/arty_z7_simfir/arty_z7_simfir.srcs/sources_1/bd/design_1/ipshared/28ff/hdl/fir_axis_v1_0.v:83]
+WARNING: [Synth 8-3936] Found unconnected internal register 'tap[8].acc_reg[8]' and it is trimmed from '56' to '24' bits. [d:/work/radar_course/lesson_3/vivado/arty_z7_simfir/arty_z7_simfir.srcs/sources_1/bd/design_1/ipshared/28ff/hdl/fir_axis_v1_0.v:83]
+WARNING: [Synth 8-3936] Found unconnected internal register 'tap[28].acc_reg[28]' and it is trimmed from '56' to '24' bits. [d:/work/radar_course/lesson_3/vivado/arty_z7_simfir/arty_z7_simfir.srcs/sources_1/bd/design_1/ipshared/28ff/hdl/fir_axis_v1_0.v:85]
+WARNING: [Synth 8-3936] Found unconnected internal register 'tap[25].acc_reg[25]' and it is trimmed from '56' to '24' bits. [d:/work/radar_course/lesson_3/vivado/arty_z7_simfir/arty_z7_simfir.srcs/sources_1/bd/design_1/ipshared/28ff/hdl/fir_axis_v1_0.v:85]
+WARNING: [Synth 8-3936] Found unconnected internal register 'tap[19].acc_reg[19]' and it is trimmed from '56' to '24' bits. [d:/work/radar_course/lesson_3/vivado/arty_z7_simfir/arty_z7_simfir.srcs/sources_1/bd/design_1/ipshared/28ff/hdl/fir_axis_v1_0.v:85]
+WARNING: [Synth 8-3936] Found unconnected internal register 'tap[7].acc_reg[7]' and it is trimmed from '56' to '24' bits. [d:/work/radar_course/lesson_3/vivado/arty_z7_simfir/arty_z7_simfir.srcs/sources_1/bd/design_1/ipshared/28ff/hdl/fir_axis_v1_0.v:83]
+WARNING: [Synth 8-3936] Found unconnected internal register 'tap[6].acc_reg[6]' and it is trimmed from '56' to '24' bits. [d:/work/radar_course/lesson_3/vivado/arty_z7_simfir/arty_z7_simfir.srcs/sources_1/bd/design_1/ipshared/28ff/hdl/fir_axis_v1_0.v:83]
+WARNING: [Synth 8-3936] Found unconnected internal register 'tap[18].acc_reg[18]' and it is trimmed from '56' to '24' bits. [d:/work/radar_course/lesson_3/vivado/arty_z7_simfir/arty_z7_simfir.srcs/sources_1/bd/design_1/ipshared/28ff/hdl/fir_axis_v1_0.v:85]
+WARNING: [Synth 8-3936] Found unconnected internal register 'tap[5].acc_reg[5]' and it is trimmed from '56' to '24' bits. [d:/work/radar_course/lesson_3/vivado/arty_z7_simfir/arty_z7_simfir.srcs/sources_1/bd/design_1/ipshared/28ff/hdl/fir_axis_v1_0.v:83]
+WARNING: [Synth 8-3936] Found unconnected internal register 'tap[4].acc_reg[4]' and it is trimmed from '56' to '24' bits. [d:/work/radar_course/lesson_3/vivado/arty_z7_simfir/arty_z7_simfir.srcs/sources_1/bd/design_1/ipshared/28ff/hdl/fir_axis_v1_0.v:83]
+WARNING: [Synth 8-3936] Found unconnected internal register 'tap[24].acc_reg[24]' and it is trimmed from '56' to '24' bits. [d:/work/radar_course/lesson_3/vivado/arty_z7_simfir/arty_z7_simfir.srcs/sources_1/bd/design_1/ipshared/28ff/hdl/fir_axis_v1_0.v:85]
+WARNING: [Synth 8-3936] Found unconnected internal register 'tap[17].acc_reg[17]' and it is trimmed from '56' to '24' bits. [d:/work/radar_course/lesson_3/vivado/arty_z7_simfir/arty_z7_simfir.srcs/sources_1/bd/design_1/ipshared/28ff/hdl/fir_axis_v1_0.v:85]
+WARNING: [Synth 8-3936] Found unconnected internal register 'tap[3].acc_reg[3]' and it is trimmed from '56' to '24' bits. [d:/work/radar_course/lesson_3/vivado/arty_z7_simfir/arty_z7_simfir.srcs/sources_1/bd/design_1/ipshared/28ff/hdl/fir_axis_v1_0.v:83]
+WARNING: [Synth 8-3936] Found unconnected internal register 'tap[2].acc_reg[2]' and it is trimmed from '56' to '24' bits. [d:/work/radar_course/lesson_3/vivado/arty_z7_simfir/arty_z7_simfir.srcs/sources_1/bd/design_1/ipshared/28ff/hdl/fir_axis_v1_0.v:83]
+WARNING: [Synth 8-3936] Found unconnected internal register 'tap[16].acc_reg[16]' and it is trimmed from '56' to '24' bits. [d:/work/radar_course/lesson_3/vivado/arty_z7_simfir/arty_z7_simfir.srcs/sources_1/bd/design_1/ipshared/28ff/hdl/fir_axis_v1_0.v:85]
+WARNING: [Synth 8-3936] Found unconnected internal register 'tap[1].acc_reg[1]' and it is trimmed from '56' to '24' bits. [d:/work/radar_course/lesson_3/vivado/arty_z7_simfir/arty_z7_simfir.srcs/sources_1/bd/design_1/ipshared/28ff/hdl/fir_axis_v1_0.v:83]
+WARNING: [Synth 8-3936] Found unconnected internal register 'tap[0].acc_reg[0]' and it is trimmed from '56' to '24' bits. [d:/work/radar_course/lesson_3/vivado/arty_z7_simfir/arty_z7_simfir.srcs/sources_1/bd/design_1/ipshared/28ff/hdl/fir_axis_v1_0.v:83]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 943.891 ; gain = 366.430
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 943.117 ; gain = 365.738
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -100,11 +132,14 @@ Start RTL Component Statistics
 ---------------------------------------------------------------------------------
 Detailed RTL Component Info : 
 +---Adders : 
-	  32 Input     24 Bit       Adders := 1     
+	   2 Input     24 Bit       Adders := 31    
+	   2 Input      2 Bit       Adders := 1     
 +---Registers : 
-	               24 Bit    Registers := 33    
-	                8 Bit    Registers := 2     
-	                4 Bit    Registers := 1     
+	               24 Bit    Registers := 64    
+	                8 Bit    Registers := 3     
+	                2 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      2 Bit        Muxes := 1     
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
 ---------------------------------------------------------------------------------
@@ -115,11 +150,14 @@ Hierarchical RTL Component report
 Module fir_axis_v1_0 
 Detailed RTL Component Info : 
 +---Adders : 
-	  32 Input     24 Bit       Adders := 1     
+	   2 Input     24 Bit       Adders := 31    
+	   2 Input      2 Bit       Adders := 1     
 +---Registers : 
-	               24 Bit    Registers := 33    
-	                8 Bit    Registers := 2     
-	                4 Bit    Registers := 1     
+	               24 Bit    Registers := 64    
+	                8 Bit    Registers := 3     
+	                2 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      2 Bit        Muxes := 1     
 ---------------------------------------------------------------------------------
 Finished RTL Hierarchical Component Statistics
 ---------------------------------------------------------------------------------
@@ -136,218 +174,261 @@ Finished Part Resource Summary
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 Warning: Parallel synthesis criteria is not met 
-INFO: [Synth 8-4471] merging register 'tap[0].shift_reg_reg[7:0]' into 'tap[0].shift_reg_reg[7:0]' [d:/work/radar_course/lesson_3/vivado/arty_z7_simfir/arty_z7_simfir.srcs/sources_1/bd/design_1/ipshared/b1ef/hdl/fir_axis_v1_0.v:53]
-INFO: [Synth 8-4471] merging register 'tap[1].shift_reg_reg[7:0]' into 'tap[1].shift_reg_reg[7:0]' [d:/work/radar_course/lesson_3/vivado/arty_z7_simfir/arty_z7_simfir.srcs/sources_1/bd/design_1/ipshared/b1ef/hdl/fir_axis_v1_0.v:59]
-DSP Report: Generating DSP p_0_out, operation Mode is: A2*(B:0x47).
-DSP Report: register tap[0].shift_reg_reg is absorbed into DSP p_0_out.
+INFO: [Synth 8-4471] merging register 'inst/tap[0].shift_reg_reg[7:0]' into 'inst/tap[0].shift_reg_reg[7:0]' [d:/work/radar_course/lesson_3/vivado/arty_z7_simfir/arty_z7_simfir.srcs/sources_1/bd/design_1/ipshared/28ff/hdl/fir_axis_v1_0.v:59]
+INFO: [Synth 8-4471] merging register 'inst/tap[1].shift_reg_reg[7:0]' into 'inst/tap[1].shift_reg_reg[7:0]' [d:/work/radar_course/lesson_3/vivado/arty_z7_simfir/arty_z7_simfir.srcs/sources_1/bd/design_1/ipshared/28ff/hdl/fir_axis_v1_0.v:65]
+INFO: [Synth 8-4471] merging register 'inst/tap[2].shift_reg_reg[7:0]' into 'inst/tap[2].shift_reg_reg[7:0]' [d:/work/radar_course/lesson_3/vivado/arty_z7_simfir/arty_z7_simfir.srcs/sources_1/bd/design_1/ipshared/28ff/hdl/fir_axis_v1_0.v:65]
+INFO: [Synth 8-4471] merging register 'inst/tap[3].shift_reg_reg[7:0]' into 'inst/tap[3].shift_reg_reg[7:0]' [d:/work/radar_course/lesson_3/vivado/arty_z7_simfir/arty_z7_simfir.srcs/sources_1/bd/design_1/ipshared/28ff/hdl/fir_axis_v1_0.v:65]
+INFO: [Synth 8-4471] merging register 'inst/tap[4].shift_reg_reg[7:0]' into 'inst/tap[4].shift_reg_reg[7:0]' [d:/work/radar_course/lesson_3/vivado/arty_z7_simfir/arty_z7_simfir.srcs/sources_1/bd/design_1/ipshared/28ff/hdl/fir_axis_v1_0.v:65]
+INFO: [Synth 8-4471] merging register 'inst/tap[5].shift_reg_reg[7:0]' into 'inst/tap[5].shift_reg_reg[7:0]' [d:/work/radar_course/lesson_3/vivado/arty_z7_simfir/arty_z7_simfir.srcs/sources_1/bd/design_1/ipshared/28ff/hdl/fir_axis_v1_0.v:65]
+INFO: [Synth 8-4471] merging register 'inst/tap[6].shift_reg_reg[7:0]' into 'inst/tap[6].shift_reg_reg[7:0]' [d:/work/radar_course/lesson_3/vivado/arty_z7_simfir/arty_z7_simfir.srcs/sources_1/bd/design_1/ipshared/28ff/hdl/fir_axis_v1_0.v:65]
+INFO: [Synth 8-4471] merging register 'inst/tap[7].shift_reg_reg[7:0]' into 'inst/tap[7].shift_reg_reg[7:0]' [d:/work/radar_course/lesson_3/vivado/arty_z7_simfir/arty_z7_simfir.srcs/sources_1/bd/design_1/ipshared/28ff/hdl/fir_axis_v1_0.v:65]
+INFO: [Synth 8-4471] merging register 'inst/tap[8].shift_reg_reg[7:0]' into 'inst/tap[8].shift_reg_reg[7:0]' [d:/work/radar_course/lesson_3/vivado/arty_z7_simfir/arty_z7_simfir.srcs/sources_1/bd/design_1/ipshared/28ff/hdl/fir_axis_v1_0.v:65]
+INFO: [Synth 8-4471] merging register 'inst/tap[9].shift_reg_reg[7:0]' into 'inst/tap[9].shift_reg_reg[7:0]' [d:/work/radar_course/lesson_3/vivado/arty_z7_simfir/arty_z7_simfir.srcs/sources_1/bd/design_1/ipshared/28ff/hdl/fir_axis_v1_0.v:65]
+INFO: [Synth 8-4471] merging register 'inst/tap[10].shift_reg_reg[7:0]' into 'inst/tap[10].shift_reg_reg[7:0]' [d:/work/radar_course/lesson_3/vivado/arty_z7_simfir/arty_z7_simfir.srcs/sources_1/bd/design_1/ipshared/28ff/hdl/fir_axis_v1_0.v:65]
+INFO: [Synth 8-4471] merging register 'inst/tap[11].shift_reg_reg[7:0]' into 'inst/tap[11].shift_reg_reg[7:0]' [d:/work/radar_course/lesson_3/vivado/arty_z7_simfir/arty_z7_simfir.srcs/sources_1/bd/design_1/ipshared/28ff/hdl/fir_axis_v1_0.v:65]
+INFO: [Synth 8-4471] merging register 'inst/tap[12].shift_reg_reg[7:0]' into 'inst/tap[12].shift_reg_reg[7:0]' [d:/work/radar_course/lesson_3/vivado/arty_z7_simfir/arty_z7_simfir.srcs/sources_1/bd/design_1/ipshared/28ff/hdl/fir_axis_v1_0.v:65]
+INFO: [Synth 8-4471] merging register 'inst/tap[13].shift_reg_reg[7:0]' into 'inst/tap[13].shift_reg_reg[7:0]' [d:/work/radar_course/lesson_3/vivado/arty_z7_simfir/arty_z7_simfir.srcs/sources_1/bd/design_1/ipshared/28ff/hdl/fir_axis_v1_0.v:65]
+INFO: [Synth 8-4471] merging register 'inst/tap[14].shift_reg_reg[7:0]' into 'inst/tap[14].shift_reg_reg[7:0]' [d:/work/radar_course/lesson_3/vivado/arty_z7_simfir/arty_z7_simfir.srcs/sources_1/bd/design_1/ipshared/28ff/hdl/fir_axis_v1_0.v:65]
+INFO: [Synth 8-4471] merging register 'inst/tap[15].shift_reg_reg[7:0]' into 'inst/tap[15].shift_reg_reg[7:0]' [d:/work/radar_course/lesson_3/vivado/arty_z7_simfir/arty_z7_simfir.srcs/sources_1/bd/design_1/ipshared/28ff/hdl/fir_axis_v1_0.v:65]
+INFO: [Synth 8-4471] merging register 'inst/tap[16].shift_reg_reg[7:0]' into 'inst/tap[16].shift_reg_reg[7:0]' [d:/work/radar_course/lesson_3/vivado/arty_z7_simfir/arty_z7_simfir.srcs/sources_1/bd/design_1/ipshared/28ff/hdl/fir_axis_v1_0.v:65]
+INFO: [Synth 8-4471] merging register 'inst/tap[17].shift_reg_reg[7:0]' into 'inst/tap[17].shift_reg_reg[7:0]' [d:/work/radar_course/lesson_3/vivado/arty_z7_simfir/arty_z7_simfir.srcs/sources_1/bd/design_1/ipshared/28ff/hdl/fir_axis_v1_0.v:65]
+INFO: [Synth 8-4471] merging register 'inst/tap[18].shift_reg_reg[7:0]' into 'inst/tap[18].shift_reg_reg[7:0]' [d:/work/radar_course/lesson_3/vivado/arty_z7_simfir/arty_z7_simfir.srcs/sources_1/bd/design_1/ipshared/28ff/hdl/fir_axis_v1_0.v:65]
+INFO: [Synth 8-4471] merging register 'inst/tap[19].shift_reg_reg[7:0]' into 'inst/tap[19].shift_reg_reg[7:0]' [d:/work/radar_course/lesson_3/vivado/arty_z7_simfir/arty_z7_simfir.srcs/sources_1/bd/design_1/ipshared/28ff/hdl/fir_axis_v1_0.v:65]
+INFO: [Synth 8-4471] merging register 'inst/tap[20].shift_reg_reg[7:0]' into 'inst/tap[20].shift_reg_reg[7:0]' [d:/work/radar_course/lesson_3/vivado/arty_z7_simfir/arty_z7_simfir.srcs/sources_1/bd/design_1/ipshared/28ff/hdl/fir_axis_v1_0.v:65]
+INFO: [Synth 8-4471] merging register 'inst/tap[21].shift_reg_reg[7:0]' into 'inst/tap[21].shift_reg_reg[7:0]' [d:/work/radar_course/lesson_3/vivado/arty_z7_simfir/arty_z7_simfir.srcs/sources_1/bd/design_1/ipshared/28ff/hdl/fir_axis_v1_0.v:65]
+INFO: [Synth 8-4471] merging register 'inst/tap[22].shift_reg_reg[7:0]' into 'inst/tap[22].shift_reg_reg[7:0]' [d:/work/radar_course/lesson_3/vivado/arty_z7_simfir/arty_z7_simfir.srcs/sources_1/bd/design_1/ipshared/28ff/hdl/fir_axis_v1_0.v:65]
+INFO: [Synth 8-4471] merging register 'inst/tap[23].shift_reg_reg[7:0]' into 'inst/tap[23].shift_reg_reg[7:0]' [d:/work/radar_course/lesson_3/vivado/arty_z7_simfir/arty_z7_simfir.srcs/sources_1/bd/design_1/ipshared/28ff/hdl/fir_axis_v1_0.v:65]
+INFO: [Synth 8-4471] merging register 'inst/tap[24].shift_reg_reg[7:0]' into 'inst/tap[24].shift_reg_reg[7:0]' [d:/work/radar_course/lesson_3/vivado/arty_z7_simfir/arty_z7_simfir.srcs/sources_1/bd/design_1/ipshared/28ff/hdl/fir_axis_v1_0.v:65]
+INFO: [Synth 8-4471] merging register 'inst/tap[25].shift_reg_reg[7:0]' into 'inst/tap[25].shift_reg_reg[7:0]' [d:/work/radar_course/lesson_3/vivado/arty_z7_simfir/arty_z7_simfir.srcs/sources_1/bd/design_1/ipshared/28ff/hdl/fir_axis_v1_0.v:65]
+INFO: [Synth 8-4471] merging register 'inst/tap[26].shift_reg_reg[7:0]' into 'inst/tap[26].shift_reg_reg[7:0]' [d:/work/radar_course/lesson_3/vivado/arty_z7_simfir/arty_z7_simfir.srcs/sources_1/bd/design_1/ipshared/28ff/hdl/fir_axis_v1_0.v:65]
+INFO: [Synth 8-4471] merging register 'inst/tap[27].shift_reg_reg[7:0]' into 'inst/tap[27].shift_reg_reg[7:0]' [d:/work/radar_course/lesson_3/vivado/arty_z7_simfir/arty_z7_simfir.srcs/sources_1/bd/design_1/ipshared/28ff/hdl/fir_axis_v1_0.v:65]
+INFO: [Synth 8-4471] merging register 'inst/tap[28].shift_reg_reg[7:0]' into 'inst/tap[28].shift_reg_reg[7:0]' [d:/work/radar_course/lesson_3/vivado/arty_z7_simfir/arty_z7_simfir.srcs/sources_1/bd/design_1/ipshared/28ff/hdl/fir_axis_v1_0.v:65]
+INFO: [Synth 8-4471] merging register 'inst/tap[29].shift_reg_reg[7:0]' into 'inst/tap[29].shift_reg_reg[7:0]' [d:/work/radar_course/lesson_3/vivado/arty_z7_simfir/arty_z7_simfir.srcs/sources_1/bd/design_1/ipshared/28ff/hdl/fir_axis_v1_0.v:65]
+INFO: [Synth 8-4471] merging register 'inst/tap[30].shift_reg_reg[7:0]' into 'inst/tap[30].shift_reg_reg[7:0]' [d:/work/radar_course/lesson_3/vivado/arty_z7_simfir/arty_z7_simfir.srcs/sources_1/bd/design_1/ipshared/28ff/hdl/fir_axis_v1_0.v:65]
+DSP Report: Generating DSP p_0_out, operation Mode is: (A:0x97)*B''.
+DSP Report: register inst/tap[2].shift_reg_reg is absorbed into DSP p_0_out.
+DSP Report: register inst/tap[3].shift_reg_reg is absorbed into DSP p_0_out.
 DSP Report: operator p_0_out is absorbed into DSP p_0_out.
-DSP Report: Generating DSP p_0_out, operation Mode is: (A:0x3fffff53)*B''.
-DSP Report: register tap[0].shift_reg_reg is absorbed into DSP p_0_out.
-DSP Report: register tap[1].shift_reg_reg is absorbed into DSP p_0_out.
+DSP Report: Generating DSP p_0_out, operation Mode is: (A:0x34)*BCIN''.
+DSP Report: register inst/tap[4].shift_reg_reg is absorbed into DSP p_0_out.
+DSP Report: register inst/tap[5].shift_reg_reg is absorbed into DSP p_0_out.
 DSP Report: operator p_0_out is absorbed into DSP p_0_out.
-DSP Report: Generating DSP p_0_out, operation Mode is: (A:0x3ffffefd)*BCIN''.
-DSP Report: register tap[1].shift_reg_reg is absorbed into DSP p_0_out.
-DSP Report: register tap[2].shift_reg_reg is absorbed into DSP p_0_out.
+DSP Report: Generating DSP p_0_out, operation Mode is: (A:0x3ffffd6b)*BCIN''.
+DSP Report: register inst/tap[6].shift_reg_reg is absorbed into DSP p_0_out.
+DSP Report: register inst/tap[7].shift_reg_reg is absorbed into DSP p_0_out.
 DSP Report: operator p_0_out is absorbed into DSP p_0_out.
-DSP Report: Generating DSP p_0_out, operation Mode is: (A:0x97)*BCIN2.
-DSP Report: register tap[3].shift_reg_reg is absorbed into DSP p_0_out.
+DSP Report: Generating DSP p_0_out, operation Mode is: (A:0x747)*BCIN''.
+DSP Report: register inst/tap[8].shift_reg_reg is absorbed into DSP p_0_out.
+DSP Report: register inst/tap[9].shift_reg_reg is absorbed into DSP p_0_out.
 DSP Report: operator p_0_out is absorbed into DSP p_0_out.
-DSP Report: Generating DSP p_0_out, operation Mode is: (A:0x249)*BCIN2.
-DSP Report: register tap[4].shift_reg_reg is absorbed into DSP p_0_out.
+DSP Report: Generating DSP p_0_out, operation Mode is: (A:0x3ffff0c8)*BCIN''.
+DSP Report: register inst/tap[10].shift_reg_reg is absorbed into DSP p_0_out.
+DSP Report: register inst/tap[11].shift_reg_reg is absorbed into DSP p_0_out.
 DSP Report: operator p_0_out is absorbed into DSP p_0_out.
-DSP Report: Generating DSP p_0_out, operation Mode is: A''*(B:0x34).
-DSP Report: register tap[4].shift_reg_reg is absorbed into DSP p_0_out.
-DSP Report: register tap[5].shift_reg_reg is absorbed into DSP p_0_out.
+DSP Report: Generating DSP p_0_out, operation Mode is: (A:0x1e38)*BCIN''.
+DSP Report: register inst/tap[12].shift_reg_reg is absorbed into DSP p_0_out.
+DSP Report: register inst/tap[13].shift_reg_reg is absorbed into DSP p_0_out.
 DSP Report: operator p_0_out is absorbed into DSP p_0_out.
-DSP Report: Generating DSP p_0_out, operation Mode is: (A:0x3ffffc08)*B''.
-DSP Report: register tap[5].shift_reg_reg is absorbed into DSP p_0_out.
-DSP Report: register tap[6].shift_reg_reg is absorbed into DSP p_0_out.
+DSP Report: Generating DSP p_0_out, operation Mode is: (A:0x3fff811d)*BCIN''.
+DSP Report: register inst/tap[14].shift_reg_reg is absorbed into DSP p_0_out.
+DSP Report: register inst/tap[15].shift_reg_reg is absorbed into DSP p_0_out.
 DSP Report: operator p_0_out is absorbed into DSP p_0_out.
-DSP Report: Generating DSP p_0_out, operation Mode is: (A:0x3ffffd6b)*BCIN2.
-DSP Report: register tap[7].shift_reg_reg is absorbed into DSP p_0_out.
+DSP Report: Generating DSP p_0_out, operation Mode is: (A:0x3fffe86a)*BCIN''.
+DSP Report: register inst/tap[16].shift_reg_reg is absorbed into DSP p_0_out.
+DSP Report: register inst/tap[17].shift_reg_reg is absorbed into DSP p_0_out.
 DSP Report: operator p_0_out is absorbed into DSP p_0_out.
-DSP Report: Generating DSP p_0_out, operation Mode is: (A:0x546)*BCIN2.
-DSP Report: register tap[8].shift_reg_reg is absorbed into DSP p_0_out.
+DSP Report: Generating DSP p_0_out, operation Mode is: (A:0x6d)*BCIN''.
+DSP Report: register inst/tap[18].shift_reg_reg is absorbed into DSP p_0_out.
+DSP Report: register inst/tap[19].shift_reg_reg is absorbed into DSP p_0_out.
 DSP Report: operator p_0_out is absorbed into DSP p_0_out.
-DSP Report: Generating DSP p_0_out, operation Mode is: (A:0x747)*BCIN2.
-DSP Report: register tap[9].shift_reg_reg is absorbed into DSP p_0_out.
+DSP Report: Generating DSP p_0_out, operation Mode is: (A:0x4c3)*BCIN''.
+DSP Report: register inst/tap[20].shift_reg_reg is absorbed into DSP p_0_out.
+DSP Report: register inst/tap[21].shift_reg_reg is absorbed into DSP p_0_out.
 DSP Report: operator p_0_out is absorbed into DSP p_0_out.
-DSP Report: Generating DSP p_0_out, operation Mode is: (A:0x3ffffb3e)*BCIN2.
-DSP Report: register tap[10].shift_reg_reg is absorbed into DSP p_0_out.
+DSP Report: Generating DSP p_0_out, operation Mode is: (A:0x3ffffabb)*BCIN''.
+DSP Report: register inst/tap[22].shift_reg_reg is absorbed into DSP p_0_out.
+DSP Report: register inst/tap[23].shift_reg_reg is absorbed into DSP p_0_out.
 DSP Report: operator p_0_out is absorbed into DSP p_0_out.
-DSP Report: Generating DSP p_0_out, operation Mode is: (A:0x3ffff0c8)*BCIN2.
-DSP Report: register tap[11].shift_reg_reg is absorbed into DSP p_0_out.
+DSP Report: Generating DSP p_0_out, operation Mode is: (A:0x3f9)*BCIN''.
+DSP Report: register inst/tap[24].shift_reg_reg is absorbed into DSP p_0_out.
+DSP Report: register inst/tap[25].shift_reg_reg is absorbed into DSP p_0_out.
 DSP Report: operator p_0_out is absorbed into DSP p_0_out.
-DSP Report: Generating DSP p_0_out, operation Mode is: A''*(B:0x3ff94).
-DSP Report: register tap[11].shift_reg_reg is absorbed into DSP p_0_out.
-DSP Report: register tap[12].shift_reg_reg is absorbed into DSP p_0_out.
+DSP Report: Generating DSP p_0_out, operation Mode is: (A:0x3ffffdb8)*BCIN''.
+DSP Report: register inst/tap[26].shift_reg_reg is absorbed into DSP p_0_out.
+DSP Report: register inst/tap[27].shift_reg_reg is absorbed into DSP p_0_out.
 DSP Report: operator p_0_out is absorbed into DSP p_0_out.
-DSP Report: Generating DSP p_0_out, operation Mode is: (A:0x1e38)*B''.
-DSP Report: register tap[12].shift_reg_reg is absorbed into DSP p_0_out.
-DSP Report: register tap[13].shift_reg_reg is absorbed into DSP p_0_out.
+DSP Report: Generating DSP p_0_out, operation Mode is: (A:0x104)*BCIN''.
+DSP Report: register inst/tap[28].shift_reg_reg is absorbed into DSP p_0_out.
+DSP Report: register inst/tap[29].shift_reg_reg is absorbed into DSP p_0_out.
 DSP Report: operator p_0_out is absorbed into DSP p_0_out.
-DSP Report: Generating DSP p_0_out, operation Mode is: (A:0x1797)*BCIN2.
-DSP Report: register tap[14].shift_reg_reg is absorbed into DSP p_0_out.
+DSP Report: Generating DSP p_0_out, operation Mode is: (A:0x3fffffba)*BCIN''.
+DSP Report: register inst/tap[30].shift_reg_reg is absorbed into DSP p_0_out.
+DSP Report: register inst/tap[31].shift_reg_reg is absorbed into DSP p_0_out.
 DSP Report: operator p_0_out is absorbed into DSP p_0_out.
-DSP Report: Generating DSP p_0_out, operation Mode is: (A:0x3fff811d)*BCIN2.
-DSP Report: register tap[15].shift_reg_reg is absorbed into DSP p_0_out.
+DSP Report: Generating DSP p_0_out, operation Mode is: (A:0x3ffffefd)*B''.
+DSP Report: register inst/tap[1].shift_reg_reg is absorbed into DSP p_0_out.
+DSP Report: register inst/tap[2].shift_reg_reg is absorbed into DSP p_0_out.
 DSP Report: operator p_0_out is absorbed into DSP p_0_out.
-DSP Report: Generating DSP p_0_out, operation Mode is: (A:0x7ee4)*BCIN2.
-DSP Report: register tap[16].shift_reg_reg is absorbed into DSP p_0_out.
+DSP Report: Generating DSP p_0_out, operation Mode is: (A:0x249)*BCIN''.
+DSP Report: register inst/tap[3].shift_reg_reg is absorbed into DSP p_0_out.
+DSP Report: register inst/tap[4].shift_reg_reg is absorbed into DSP p_0_out.
 DSP Report: operator p_0_out is absorbed into DSP p_0_out.
-DSP Report: Generating DSP p_0_out, operation Mode is: (A:0x3fffe86a)*BCIN2.
-DSP Report: register tap[17].shift_reg_reg is absorbed into DSP p_0_out.
+DSP Report: Generating DSP p_0_out, operation Mode is: (A:0x3ffffc08)*BCIN''.
+DSP Report: register inst/tap[5].shift_reg_reg is absorbed into DSP p_0_out.
+DSP Report: register inst/tap[6].shift_reg_reg is absorbed into DSP p_0_out.
 DSP Report: operator p_0_out is absorbed into DSP p_0_out.
-DSP Report: Generating DSP p_0_out, operation Mode is: (A:0x3fffe1c9)*BCIN2.
-DSP Report: register tap[18].shift_reg_reg is absorbed into DSP p_0_out.
+DSP Report: Generating DSP p_0_out, operation Mode is: (A:0x546)*BCIN''.
+DSP Report: register inst/tap[7].shift_reg_reg is absorbed into DSP p_0_out.
+DSP Report: register inst/tap[8].shift_reg_reg is absorbed into DSP p_0_out.
 DSP Report: operator p_0_out is absorbed into DSP p_0_out.
-DSP Report: Generating DSP p_0_out, operation Mode is: A''*(B:0x6d).
-DSP Report: register tap[18].shift_reg_reg is absorbed into DSP p_0_out.
-DSP Report: register tap[19].shift_reg_reg is absorbed into DSP p_0_out.
+DSP Report: Generating DSP p_0_out, operation Mode is: (A:0x3ffffb3e)*BCIN''.
+DSP Report: register inst/tap[9].shift_reg_reg is absorbed into DSP p_0_out.
+DSP Report: register inst/tap[10].shift_reg_reg is absorbed into DSP p_0_out.
 DSP Report: operator p_0_out is absorbed into DSP p_0_out.
-DSP Report: Generating DSP p_0_out, operation Mode is: (A:0xf39)*B''.
-DSP Report: register tap[19].shift_reg_reg is absorbed into DSP p_0_out.
-DSP Report: register tap[20].shift_reg_reg is absorbed into DSP p_0_out.
+DSP Report: Generating DSP p_0_out, operation Mode is: (A:0x3fffff94)*BCIN''.
+DSP Report: register inst/tap[11].shift_reg_reg is absorbed into DSP p_0_out.
+DSP Report: register inst/tap[12].shift_reg_reg is absorbed into DSP p_0_out.
 DSP Report: operator p_0_out is absorbed into DSP p_0_out.
-DSP Report: Generating DSP p_0_out, operation Mode is: (A:0x4c3)*BCIN2.
-DSP Report: register tap[21].shift_reg_reg is absorbed into DSP p_0_out.
+DSP Report: Generating DSP p_0_out, operation Mode is: (A:0x1797)*BCIN''.
+DSP Report: register inst/tap[13].shift_reg_reg is absorbed into DSP p_0_out.
+DSP Report: register inst/tap[14].shift_reg_reg is absorbed into DSP p_0_out.
 DSP Report: operator p_0_out is absorbed into DSP p_0_out.
-DSP Report: Generating DSP p_0_out, operation Mode is: (A:0x3ffff8ba)*BCIN2.
-DSP Report: register tap[22].shift_reg_reg is absorbed into DSP p_0_out.
+DSP Report: Generating DSP p_0_out, operation Mode is: (A:0x7ee4)*BCIN''.
+DSP Report: register inst/tap[15].shift_reg_reg is absorbed into DSP p_0_out.
+DSP Report: register inst/tap[16].shift_reg_reg is absorbed into DSP p_0_out.
 DSP Report: operator p_0_out is absorbed into DSP p_0_out.
-DSP Report: Generating DSP p_0_out, operation Mode is: (A:0x3ffffabb)*BCIN2.
-DSP Report: register tap[23].shift_reg_reg is absorbed into DSP p_0_out.
+DSP Report: Generating DSP p_0_out, operation Mode is: (A:0x3fffe1c9)*BCIN''.
+DSP Report: register inst/tap[17].shift_reg_reg is absorbed into DSP p_0_out.
+DSP Report: register inst/tap[18].shift_reg_reg is absorbed into DSP p_0_out.
 DSP Report: operator p_0_out is absorbed into DSP p_0_out.
-DSP Report: Generating DSP p_0_out, operation Mode is: (A:0x296)*BCIN2.
-DSP Report: register tap[24].shift_reg_reg is absorbed into DSP p_0_out.
+DSP Report: Generating DSP p_0_out, operation Mode is: (A:0xf39)*BCIN''.
+DSP Report: register inst/tap[19].shift_reg_reg is absorbed into DSP p_0_out.
+DSP Report: register inst/tap[20].shift_reg_reg is absorbed into DSP p_0_out.
 DSP Report: operator p_0_out is absorbed into DSP p_0_out.
-DSP Report: Generating DSP p_0_out, operation Mode is: (A:0x3f9)*BCIN2.
-DSP Report: register tap[25].shift_reg_reg is absorbed into DSP p_0_out.
+DSP Report: Generating DSP p_0_out, operation Mode is: (A:0x3ffff8ba)*BCIN''.
+DSP Report: register inst/tap[21].shift_reg_reg is absorbed into DSP p_0_out.
+DSP Report: register inst/tap[22].shift_reg_reg is absorbed into DSP p_0_out.
 DSP Report: operator p_0_out is absorbed into DSP p_0_out.
-DSP Report: Generating DSP p_0_out, operation Mode is: A''*(B:0x3ffcd).
-DSP Report: register tap[25].shift_reg_reg is absorbed into DSP p_0_out.
-DSP Report: register tap[26].shift_reg_reg is absorbed into DSP p_0_out.
+DSP Report: Generating DSP p_0_out, operation Mode is: (A:0x296)*BCIN''.
+DSP Report: register inst/tap[23].shift_reg_reg is absorbed into DSP p_0_out.
+DSP Report: register inst/tap[24].shift_reg_reg is absorbed into DSP p_0_out.
 DSP Report: operator p_0_out is absorbed into DSP p_0_out.
-DSP Report: Generating DSP p_0_out, operation Mode is: (A:0x3ffffdb8)*B''.
-DSP Report: register tap[26].shift_reg_reg is absorbed into DSP p_0_out.
-DSP Report: register tap[27].shift_reg_reg is absorbed into DSP p_0_out.
+DSP Report: Generating DSP p_0_out, operation Mode is: (A:0x3fffffcd)*BCIN''.
+DSP Report: register inst/tap[25].shift_reg_reg is absorbed into DSP p_0_out.
+DSP Report: register inst/tap[26].shift_reg_reg is absorbed into DSP p_0_out.
 DSP Report: operator p_0_out is absorbed into DSP p_0_out.
-DSP Report: Generating DSP p_0_out, operation Mode is: (A:0x3fffff6a)*BCIN2.
-DSP Report: register tap[28].shift_reg_reg is absorbed into DSP p_0_out.
+DSP Report: Generating DSP p_0_out, operation Mode is: (A:0x3fffff6a)*BCIN''.
+DSP Report: register inst/tap[27].shift_reg_reg is absorbed into DSP p_0_out.
+DSP Report: register inst/tap[28].shift_reg_reg is absorbed into DSP p_0_out.
 DSP Report: operator p_0_out is absorbed into DSP p_0_out.
-DSP Report: Generating DSP p_0_out, operation Mode is: (A:0x104)*BCIN2.
-DSP Report: register tap[29].shift_reg_reg is absorbed into DSP p_0_out.
+DSP Report: Generating DSP p_0_out, operation Mode is: (A:0xae)*BCIN''.
+DSP Report: register inst/tap[29].shift_reg_reg is absorbed into DSP p_0_out.
+DSP Report: register inst/tap[30].shift_reg_reg is absorbed into DSP p_0_out.
 DSP Report: operator p_0_out is absorbed into DSP p_0_out.
-DSP Report: Generating DSP p_0_out, operation Mode is: (A:0xae)*BCIN2.
-DSP Report: register tap[30].shift_reg_reg is absorbed into DSP p_0_out.
-DSP Report: operator p_0_out is absorbed into DSP p_0_out.
-DSP Report: Generating DSP p_0_out, operation Mode is: A''*(B:0x3ffba).
-DSP Report: register tap[30].shift_reg_reg is absorbed into DSP p_0_out.
-DSP Report: register tap[31].shift_reg_reg is absorbed into DSP p_0_out.
-DSP Report: operator p_0_out is absorbed into DSP p_0_out.
-INFO: [Synth 8-3886] merging instance 'inst/tap[26].mult_reg[14]' (FDC) to 'inst/tap[26].mult_reg[23]'
-INFO: [Synth 8-3886] merging instance 'inst/tap[26].mult_reg[15]' (FDC) to 'inst/tap[26].mult_reg[23]'
-INFO: [Synth 8-3886] merging instance 'inst/tap[28].mult_reg[16]' (FDC) to 'inst/tap[28].mult_reg[23]'
-INFO: [Synth 8-3886] merging instance 'inst/tap[26].mult_reg[16]' (FDC) to 'inst/tap[26].mult_reg[23]'
-INFO: [Synth 8-3886] merging instance 'inst/tap[28].mult_reg[17]' (FDC) to 'inst/tap[28].mult_reg[23]'
-INFO: [Synth 8-3886] merging instance 'inst/tap[26].mult_reg[17]' (FDC) to 'inst/tap[26].mult_reg[23]'
-INFO: [Synth 8-3886] merging instance 'inst/tap[28].mult_reg[18]' (FDC) to 'inst/tap[28].mult_reg[23]'
-INFO: [Synth 8-3886] merging instance 'inst/tap[26].mult_reg[18]' (FDC) to 'inst/tap[26].mult_reg[23]'
-INFO: [Synth 8-3886] merging instance 'inst/tap[27].mult_reg[18]' (FDC) to 'inst/tap[27].mult_reg[23]'
-INFO: [Synth 8-3886] merging instance 'inst/tap[28].mult_reg[19]' (FDC) to 'inst/tap[28].mult_reg[23]'
-INFO: [Synth 8-3886] merging instance 'inst/tap[26].mult_reg[19]' (FDC) to 'inst/tap[26].mult_reg[23]'
-INFO: [Synth 8-3886] merging instance 'inst/tap[27].mult_reg[19]' (FDC) to 'inst/tap[27].mult_reg[23]'
-INFO: [Synth 8-3886] merging instance 'inst/tap[28].mult_reg[20]' (FDC) to 'inst/tap[28].mult_reg[23]'
-INFO: [Synth 8-3886] merging instance 'inst/tap[26].mult_reg[20]' (FDC) to 'inst/tap[26].mult_reg[23]'
-INFO: [Synth 8-3886] merging instance 'inst/tap[27].mult_reg[20]' (FDC) to 'inst/tap[27].mult_reg[23]'
-INFO: [Synth 8-3886] merging instance 'inst/tap[28].mult_reg[21]' (FDC) to 'inst/tap[28].mult_reg[23]'
-INFO: [Synth 8-3886] merging instance 'inst/tap[26].mult_reg[21]' (FDC) to 'inst/tap[26].mult_reg[23]'
-INFO: [Synth 8-3886] merging instance 'inst/tap[27].mult_reg[21]' (FDC) to 'inst/tap[27].mult_reg[23]'
-INFO: [Synth 8-3886] merging instance 'inst/tap[28].mult_reg[22]' (FDC) to 'inst/tap[28].mult_reg[23]'
-INFO: [Synth 8-3886] merging instance 'inst/tap[26].mult_reg[22]' (FDC) to 'inst/tap[26].mult_reg[23]'
-INFO: [Synth 8-3886] merging instance 'inst/tap[27].mult_reg[22]' (FDC) to 'inst/tap[27].mult_reg[23]'
-INFO: [Synth 8-3886] merging instance 'inst/tap[25].mult_reg[18]' (FDC) to 'inst/tap[25].mult_reg[23]'
-INFO: [Synth 8-3886] merging instance 'inst/tap[24].mult_reg[18]' (FDC) to 'inst/tap[24].mult_reg[23]'
-INFO: [Synth 8-3886] merging instance 'inst/tap[25].mult_reg[19]' (FDC) to 'inst/tap[25].mult_reg[23]'
-INFO: [Synth 8-3886] merging instance 'inst/tap[23].mult_reg[19]' (FDC) to 'inst/tap[23].mult_reg[23]'
-INFO: [Synth 8-3886] merging instance 'inst/tap[24].mult_reg[19]' (FDC) to 'inst/tap[24].mult_reg[23]'
-INFO: [Synth 8-3886] merging instance 'inst/tap[25].mult_reg[20]' (FDC) to 'inst/tap[25].mult_reg[23]'
-INFO: [Synth 8-3886] merging instance 'inst/tap[23].mult_reg[20]' (FDC) to 'inst/tap[23].mult_reg[23]'
-INFO: [Synth 8-3886] merging instance 'inst/tap[24].mult_reg[20]' (FDC) to 'inst/tap[24].mult_reg[23]'
-INFO: [Synth 8-3886] merging instance 'inst/tap[25].mult_reg[21]' (FDC) to 'inst/tap[25].mult_reg[23]'
-INFO: [Synth 8-3886] merging instance 'inst/tap[23].mult_reg[21]' (FDC) to 'inst/tap[23].mult_reg[23]'
-INFO: [Synth 8-3886] merging instance 'inst/tap[24].mult_reg[21]' (FDC) to 'inst/tap[24].mult_reg[23]'
-INFO: [Synth 8-3886] merging instance 'inst/tap[25].mult_reg[22]' (FDC) to 'inst/tap[25].mult_reg[23]'
-INFO: [Synth 8-3886] merging instance 'inst/tap[23].mult_reg[22]' (FDC) to 'inst/tap[23].mult_reg[23]'
-INFO: [Synth 8-3886] merging instance 'inst/tap[24].mult_reg[22]' (FDC) to 'inst/tap[24].mult_reg[23]'
-INFO: [Synth 8-3886] merging instance 'inst/tap[22].mult_reg[19]' (FDC) to 'inst/tap[22].mult_reg[23]'
-INFO: [Synth 8-3886] merging instance 'inst/tap[21].mult_reg[19]' (FDC) to 'inst/tap[21].mult_reg[23]'
-INFO: [Synth 8-3886] merging instance 'inst/tap[22].mult_reg[20]' (FDC) to 'inst/tap[22].mult_reg[23]'
-INFO: [Synth 8-3886] merging instance 'inst/tap[20].mult_reg[20]' (FDC) to 'inst/tap[20].mult_reg[23]'
-INFO: [Synth 8-3886] merging instance 'inst/tap[21].mult_reg[20]' (FDC) to 'inst/tap[21].mult_reg[23]'
-INFO: [Synth 8-3886] merging instance 'inst/tap[22].mult_reg[21]' (FDC) to 'inst/tap[22].mult_reg[23]'
-INFO: [Synth 8-3886] merging instance 'inst/tap[20].mult_reg[21]' (FDC) to 'inst/tap[20].mult_reg[23]'
-INFO: [Synth 8-3886] merging instance 'inst/tap[21].mult_reg[21]' (FDC) to 'inst/tap[21].mult_reg[23]'
-INFO: [Synth 8-3886] merging instance 'inst/tap[22].mult_reg[22]' (FDC) to 'inst/tap[22].mult_reg[23]'
-INFO: [Synth 8-3886] merging instance 'inst/tap[20].mult_reg[22]' (FDC) to 'inst/tap[20].mult_reg[23]'
-INFO: [Synth 8-3886] merging instance 'inst/tap[21].mult_reg[22]' (FDC) to 'inst/tap[21].mult_reg[23]'
-INFO: [Synth 8-3886] merging instance 'inst/tap[19].mult_reg[15]' (FDC) to 'inst/tap[19].mult_reg[23]'
-INFO: [Synth 8-3886] merging instance 'inst/tap[19].mult_reg[16]' (FDC) to 'inst/tap[19].mult_reg[23]'
-INFO: [Synth 8-3886] merging instance 'inst/tap[19].mult_reg[17]' (FDC) to 'inst/tap[19].mult_reg[23]'
-INFO: [Synth 8-3886] merging instance 'inst/tap[19].mult_reg[18]' (FDC) to 'inst/tap[19].mult_reg[23]'
-INFO: [Synth 8-3886] merging instance 'inst/tap[19].mult_reg[19]' (FDC) to 'inst/tap[19].mult_reg[23]'
-INFO: [Synth 8-3886] merging instance 'inst/tap[19].mult_reg[20]' (FDC) to 'inst/tap[19].mult_reg[23]'
-INFO: [Synth 8-3886] merging instance 'inst/tap[19].mult_reg[21]' (FDC) to 'inst/tap[19].mult_reg[23]'
-INFO: [Synth 8-3886] merging instance 'inst/tap[17].mult_reg[21]' (FDC) to 'inst/tap[17].mult_reg[23]'
-INFO: [Synth 8-3886] merging instance 'inst/tap[18].mult_reg[21]' (FDC) to 'inst/tap[18].mult_reg[23]'
-INFO: [Synth 8-3886] merging instance 'inst/tap[19].mult_reg[22]' (FDC) to 'inst/tap[19].mult_reg[23]'
-INFO: [Synth 8-3886] merging instance 'inst/tap[17].mult_reg[22]' (FDC) to 'inst/tap[17].mult_reg[23]'
-INFO: [Synth 8-3886] merging instance 'inst/tap[18].mult_reg[22]' (FDC) to 'inst/tap[18].mult_reg[23]'
-INFO: [Synth 8-3886] merging instance 'inst/tap[14].mult_reg[21]' (FDC) to 'inst/tap[14].mult_reg[23]'
-INFO: [Synth 8-3886] merging instance 'inst/tap[14].mult_reg[22]' (FDC) to 'inst/tap[14].mult_reg[23]'
-INFO: [Synth 8-3886] merging instance 'inst/tap[12].mult_reg[15]' (FDC) to 'inst/tap[12].mult_reg[23]'
-INFO: [Synth 8-3886] merging instance 'inst/tap[12].mult_reg[16]' (FDC) to 'inst/tap[12].mult_reg[23]'
-INFO: [Synth 8-3886] merging instance 'inst/tap[12].mult_reg[17]' (FDC) to 'inst/tap[12].mult_reg[23]'
-INFO: [Synth 8-3886] merging instance 'inst/tap[12].mult_reg[18]' (FDC) to 'inst/tap[12].mult_reg[23]'
-INFO: [Synth 8-3886] merging instance 'inst/tap[12].mult_reg[19]' (FDC) to 'inst/tap[12].mult_reg[23]'
-INFO: [Synth 8-3886] merging instance 'inst/tap[11].mult_reg[20]' (FDC) to 'inst/tap[11].mult_reg[23]'
-INFO: [Synth 8-3886] merging instance 'inst/tap[12].mult_reg[20]' (FDC) to 'inst/tap[12].mult_reg[23]'
-INFO: [Synth 8-3886] merging instance 'inst/tap[13].mult_reg[21]' (FDC) to 'inst/tap[13].mult_reg[23]'
-INFO: [Synth 8-3886] merging instance 'inst/tap[11].mult_reg[21]' (FDC) to 'inst/tap[11].mult_reg[23]'
-INFO: [Synth 8-3886] merging instance 'inst/tap[12].mult_reg[21]' (FDC) to 'inst/tap[12].mult_reg[23]'
-INFO: [Synth 8-3886] merging instance 'inst/tap[13].mult_reg[22]' (FDC) to 'inst/tap[13].mult_reg[23]'
-INFO: [Synth 8-3886] merging instance 'inst/tap[11].mult_reg[22]' (FDC) to 'inst/tap[11].mult_reg[23]'
-INFO: [Synth 8-3886] merging instance 'inst/tap[12].mult_reg[22]' (FDC) to 'inst/tap[12].mult_reg[23]'
-INFO: [Synth 8-3886] merging instance 'inst/tap[10].mult_reg[19]' (FDC) to 'inst/tap[10].mult_reg[23]'
-INFO: [Synth 8-3886] merging instance 'inst/tap[8].mult_reg[19]' (FDC) to 'inst/tap[8].mult_reg[23]'
-INFO: [Synth 8-3886] merging instance 'inst/tap[9].mult_reg[19]' (FDC) to 'inst/tap[9].mult_reg[23]'
-INFO: [Synth 8-3886] merging instance 'inst/tap[10].mult_reg[20]' (FDC) to 'inst/tap[10].mult_reg[23]'
-INFO: [Synth 8-3886] merging instance 'inst/tap[8].mult_reg[20]' (FDC) to 'inst/tap[8].mult_reg[23]'
-INFO: [Synth 8-3886] merging instance 'inst/tap[9].mult_reg[20]' (FDC) to 'inst/tap[9].mult_reg[23]'
-INFO: [Synth 8-3886] merging instance 'inst/tap[10].mult_reg[21]' (FDC) to 'inst/tap[10].mult_reg[23]'
-INFO: [Synth 8-3886] merging instance 'inst/tap[8].mult_reg[21]' (FDC) to 'inst/tap[8].mult_reg[23]'
-INFO: [Synth 8-3886] merging instance 'inst/tap[9].mult_reg[21]' (FDC) to 'inst/tap[9].mult_reg[23]'
-INFO: [Synth 8-3886] merging instance 'inst/tap[10].mult_reg[22]' (FDC) to 'inst/tap[10].mult_reg[23]'
-INFO: [Synth 8-3886] merging instance 'inst/tap[8].mult_reg[22]' (FDC) to 'inst/tap[8].mult_reg[23]'
-INFO: [Synth 8-3886] merging instance 'inst/tap[9].mult_reg[22]' (FDC) to 'inst/tap[9].mult_reg[23]'
-INFO: [Synth 8-3886] merging instance 'inst/tap[5].mult_reg[14]' (FDC) to 'inst/tap[5].mult_reg[23]'
-INFO: [Synth 8-3886] merging instance 'inst/tap[5].mult_reg[15]' (FDC) to 'inst/tap[5].mult_reg[23]'
-INFO: [Synth 8-3886] merging instance 'inst/tap[5].mult_reg[16]' (FDC) to 'inst/tap[5].mult_reg[23]'
-INFO: [Synth 8-3886] merging instance 'inst/tap[5].mult_reg[17]' (FDC) to 'inst/tap[5].mult_reg[23]'
-INFO: [Synth 8-3886] merging instance 'inst/tap[7].mult_reg[18]' (FDC) to 'inst/tap[7].mult_reg[23]'
-INFO: [Synth 8-3886] merging instance 'inst/tap[5].mult_reg[18]' (FDC) to 'inst/tap[5].mult_reg[23]'
-INFO: [Synth 8-3886] merging instance 'inst/tap[6].mult_reg[18]' (FDC) to 'inst/tap[6].mult_reg[23]'
-INFO: [Synth 8-3886] merging instance 'inst/tap[7].mult_reg[19]' (FDC) to 'inst/tap[7].mult_reg[23]'
-INFO: [Synth 8-3886] merging instance 'inst/tap[5].mult_reg[19]' (FDC) to 'inst/tap[5].mult_reg[23]'
-INFO: [Synth 8-3886] merging instance 'inst/tap[6].mult_reg[19]' (FDC) to 'inst/tap[6].mult_reg[23]'
-INFO: [Synth 8-3886] merging instance 'inst/tap[7].mult_reg[20]' (FDC) to 'inst/tap[7].mult_reg[23]'
-INFO: [Synth 8-3886] merging instance 'inst/tap[5].mult_reg[20]' (FDC) to 'inst/tap[5].mult_reg[23]'
-INFO: [Synth 8-3886] merging instance 'inst/tap[6].mult_reg[20]' (FDC) to 'inst/tap[6].mult_reg[23]'
-INFO: [Synth 8-3886] merging instance 'inst/tap[7].mult_reg[21]' (FDC) to 'inst/tap[7].mult_reg[23]'
-INFO: [Synth 8-3886] merging instance 'inst/tap[5].mult_reg[21]' (FDC) to 'inst/tap[5].mult_reg[23]'
+INFO: [Synth 8-3886] merging instance 'inst/tap[0].mult_reg[0][15]' (FDC) to 'inst/tap[0].mult_reg[0][23]'
+INFO: [Synth 8-3886] merging instance 'inst/tap[0].mult_reg[0][16]' (FDC) to 'inst/tap[0].mult_reg[0][23]'
+INFO: [Synth 8-3886] merging instance 'inst/tap[1].mult_reg[1][16]' (FDC) to 'inst/tap[1].mult_reg[1][17]'
+INFO: [Synth 8-3886] merging instance 'inst/tap[0].mult_reg[0][17]' (FDC) to 'inst/tap[0].mult_reg[0][23]'
+INFO: [Synth 8-3886] merging instance 'inst/tap[1].mult_reg[1][17]' (FDC) to 'inst/tap[1].mult_reg[1][18]'
+INFO: [Synth 8-3886] merging instance 'inst/tap[0].mult_reg[0][18]' (FDC) to 'inst/tap[0].mult_reg[0][23]'
+INFO: [Synth 8-3886] merging instance 'inst/tap[1].mult_reg[1][18]' (FDC) to 'inst/tap[1].mult_reg[1][19]'
+INFO: [Synth 8-3886] merging instance 'inst/tap[0].mult_reg[0][19]' (FDC) to 'inst/tap[0].mult_reg[0][23]'
+INFO: [Synth 8-3886] merging instance 'inst/tap[1].mult_reg[1][19]' (FDC) to 'inst/tap[1].mult_reg[1][20]'
+INFO: [Synth 8-3886] merging instance 'inst/tap[0].mult_reg[0][20]' (FDC) to 'inst/tap[0].mult_reg[0][23]'
+INFO: [Synth 8-3886] merging instance 'inst/tap[1].mult_reg[1][20]' (FDC) to 'inst/tap[1].mult_reg[1][21]'
+INFO: [Synth 8-3886] merging instance 'inst/tap[0].mult_reg[0][21]' (FDC) to 'inst/tap[0].mult_reg[0][23]'
+INFO: [Synth 8-3886] merging instance 'inst/tap[1].mult_reg[1][21]' (FDC) to 'inst/tap[1].mult_reg[1][22]'
+INFO: [Synth 8-3886] merging instance 'inst/tap[0].mult_reg[0][22]' (FDC) to 'inst/tap[0].mult_reg[0][23]'
+INFO: [Synth 8-3886] merging instance 'inst/tap[1].mult_reg[1][22]' (FDC) to 'inst/tap[1].mult_reg[1][23]'
+INFO: [Synth 8-3886] merging instance 'inst/tap[3].mult_reg[3][16]' (FDC) to 'inst/tap[3].mult_reg[3][23]'
+INFO: [Synth 8-3886] merging instance 'inst/tap[2].mult_reg[2][17]' (FDC) to 'inst/tap[2].mult_reg[2][23]'
+INFO: [Synth 8-3886] merging instance 'inst/tap[3].mult_reg[3][17]' (FDC) to 'inst/tap[3].mult_reg[3][23]'
+INFO: [Synth 8-3886] merging instance 'inst/tap[2].mult_reg[2][18]' (FDC) to 'inst/tap[2].mult_reg[2][23]'
+INFO: [Synth 8-3886] merging instance 'inst/tap[3].mult_reg[3][18]' (FDC) to 'inst/tap[3].mult_reg[3][23]'
+INFO: [Synth 8-3886] merging instance 'inst/tap[2].mult_reg[2][19]' (FDC) to 'inst/tap[2].mult_reg[2][23]'
+INFO: [Synth 8-3886] merging instance 'inst/tap[3].mult_reg[3][19]' (FDC) to 'inst/tap[3].mult_reg[3][23]'
+INFO: [Synth 8-3886] merging instance 'inst/tap[2].mult_reg[2][20]' (FDC) to 'inst/tap[2].mult_reg[2][23]'
+INFO: [Synth 8-3886] merging instance 'inst/tap[3].mult_reg[3][20]' (FDC) to 'inst/tap[3].mult_reg[3][23]'
+INFO: [Synth 8-3886] merging instance 'inst/tap[2].mult_reg[2][21]' (FDC) to 'inst/tap[2].mult_reg[2][23]'
+INFO: [Synth 8-3886] merging instance 'inst/tap[3].mult_reg[3][21]' (FDC) to 'inst/tap[3].mult_reg[3][23]'
+INFO: [Synth 8-3886] merging instance 'inst/tap[2].mult_reg[2][22]' (FDC) to 'inst/tap[2].mult_reg[2][23]'
+INFO: [Synth 8-3886] merging instance 'inst/tap[3].mult_reg[3][22]' (FDC) to 'inst/tap[3].mult_reg[3][23]'
+INFO: [Synth 8-3886] merging instance 'inst/tap[5].mult_reg[5][14]' (FDC) to 'inst/tap[5].mult_reg[5][23]'
+INFO: [Synth 8-3886] merging instance 'inst/tap[5].mult_reg[5][15]' (FDC) to 'inst/tap[5].mult_reg[5][23]'
+INFO: [Synth 8-3886] merging instance 'inst/tap[5].mult_reg[5][16]' (FDC) to 'inst/tap[5].mult_reg[5][23]'
+INFO: [Synth 8-3886] merging instance 'inst/tap[5].mult_reg[5][17]' (FDC) to 'inst/tap[5].mult_reg[5][23]'
+INFO: [Synth 8-3886] merging instance 'inst/tap[4].mult_reg[4][18]' (FDC) to 'inst/tap[4].mult_reg[4][23]'
+INFO: [Synth 8-3886] merging instance 'inst/tap[5].mult_reg[5][18]' (FDC) to 'inst/tap[5].mult_reg[5][23]'
+INFO: [Synth 8-3886] merging instance 'inst/tap[4].mult_reg[4][19]' (FDC) to 'inst/tap[4].mult_reg[4][23]'
+INFO: [Synth 8-3886] merging instance 'inst/tap[5].mult_reg[5][19]' (FDC) to 'inst/tap[5].mult_reg[5][23]'
+INFO: [Synth 8-3886] merging instance 'inst/tap[4].mult_reg[4][20]' (FDC) to 'inst/tap[4].mult_reg[4][23]'
+INFO: [Synth 8-3886] merging instance 'inst/tap[5].mult_reg[5][20]' (FDC) to 'inst/tap[5].mult_reg[5][23]'
+INFO: [Synth 8-3886] merging instance 'inst/tap[4].mult_reg[4][21]' (FDC) to 'inst/tap[4].mult_reg[4][23]'
+INFO: [Synth 8-3886] merging instance 'inst/tap[5].mult_reg[5][21]' (FDC) to 'inst/tap[5].mult_reg[5][23]'
+INFO: [Synth 8-3886] merging instance 'inst/tap[4].mult_reg[4][22]' (FDC) to 'inst/tap[4].mult_reg[4][23]'
+INFO: [Synth 8-3886] merging instance 'inst/tap[5].mult_reg[5][22]' (FDC) to 'inst/tap[5].mult_reg[5][23]'
+INFO: [Synth 8-3886] merging instance 'inst/tap[6].mult_reg[6][18]' (FDC) to 'inst/tap[6].mult_reg[6][23]'
+INFO: [Synth 8-3886] merging instance 'inst/tap[7].mult_reg[7][18]' (FDC) to 'inst/tap[7].mult_reg[7][23]'
+INFO: [Synth 8-3886] merging instance 'inst/tap[6].mult_reg[6][19]' (FDC) to 'inst/tap[6].mult_reg[6][23]'
+INFO: [Synth 8-3886] merging instance 'inst/tap[7].mult_reg[7][19]' (FDC) to 'inst/tap[7].mult_reg[7][23]'
+INFO: [Synth 8-3886] merging instance 'inst/tap[6].mult_reg[6][20]' (FDC) to 'inst/tap[6].mult_reg[6][23]'
+INFO: [Synth 8-3886] merging instance 'inst/tap[7].mult_reg[7][20]' (FDC) to 'inst/tap[7].mult_reg[7][23]'
+INFO: [Synth 8-3886] merging instance 'inst/tap[6].mult_reg[6][21]' (FDC) to 'inst/tap[6].mult_reg[6][23]'
+INFO: [Synth 8-3886] merging instance 'inst/tap[7].mult_reg[7][21]' (FDC) to 'inst/tap[7].mult_reg[7][23]'
+INFO: [Synth 8-3886] merging instance 'inst/tap[6].mult_reg[6][22]' (FDC) to 'inst/tap[6].mult_reg[6][23]'
+INFO: [Synth 8-3886] merging instance 'inst/tap[7].mult_reg[7][22]' (FDC) to 'inst/tap[7].mult_reg[7][23]'
+INFO: [Synth 8-3886] merging instance 'inst/tap[8].mult_reg[8][19]' (FDC) to 'inst/tap[8].mult_reg[8][23]'
+INFO: [Synth 8-3886] merging instance 'inst/tap[9].mult_reg[9][19]' (FDC) to 'inst/tap[9].mult_reg[9][23]'
+INFO: [Synth 8-3886] merging instance 'inst/tap[8].mult_reg[8][20]' (FDC) to 'inst/tap[8].mult_reg[8][23]'
+INFO: [Synth 8-3886] merging instance 'inst/tap[9].mult_reg[9][20]' (FDC) to 'inst/tap[9].mult_reg[9][23]'
+INFO: [Synth 8-3886] merging instance 'inst/tap[8].mult_reg[8][21]' (FDC) to 'inst/tap[8].mult_reg[8][23]'
+INFO: [Synth 8-3886] merging instance 'inst/tap[9].mult_reg[9][21]' (FDC) to 'inst/tap[9].mult_reg[9][23]'
+INFO: [Synth 8-3886] merging instance 'inst/tap[8].mult_reg[8][22]' (FDC) to 'inst/tap[8].mult_reg[8][23]'
+INFO: [Synth 8-3886] merging instance 'inst/tap[9].mult_reg[9][22]' (FDC) to 'inst/tap[9].mult_reg[9][23]'
+INFO: [Synth 8-3886] merging instance 'inst/tap[10].mult_reg[10][19]' (FDC) to 'inst/tap[10].mult_reg[10][23]'
+INFO: [Synth 8-3886] merging instance 'inst/tap[10].mult_reg[10][20]' (FDC) to 'inst/tap[10].mult_reg[10][23]'
+INFO: [Synth 8-3886] merging instance 'inst/tap[11].mult_reg[11][20]' (FDC) to 'inst/tap[11].mult_reg[11][23]'
+INFO: [Synth 8-3886] merging instance 'inst/tap[10].mult_reg[10][21]' (FDC) to 'inst/tap[10].mult_reg[10][23]'
+INFO: [Synth 8-3886] merging instance 'inst/tap[11].mult_reg[11][21]' (FDC) to 'inst/tap[11].mult_reg[11][23]'
+INFO: [Synth 8-3886] merging instance 'inst/tap[10].mult_reg[10][22]' (FDC) to 'inst/tap[10].mult_reg[10][23]'
+INFO: [Synth 8-3886] merging instance 'inst/tap[11].mult_reg[11][22]' (FDC) to 'inst/tap[11].mult_reg[11][23]'
+INFO: [Synth 8-3886] merging instance 'inst/tap[12].mult_reg[12][15]' (FDC) to 'inst/tap[12].mult_reg[12][23]'
+INFO: [Synth 8-3886] merging instance 'inst/tap[12].mult_reg[12][16]' (FDC) to 'inst/tap[12].mult_reg[12][23]'
+INFO: [Synth 8-3886] merging instance 'inst/tap[12].mult_reg[12][17]' (FDC) to 'inst/tap[12].mult_reg[12][23]'
+INFO: [Synth 8-3886] merging instance 'inst/tap[12].mult_reg[12][18]' (FDC) to 'inst/tap[12].mult_reg[12][23]'
+INFO: [Synth 8-3886] merging instance 'inst/tap[12].mult_reg[12][19]' (FDC) to 'inst/tap[12].mult_reg[12][23]'
+INFO: [Synth 8-3886] merging instance 'inst/tap[12].mult_reg[12][20]' (FDC) to 'inst/tap[12].mult_reg[12][23]'
+INFO: [Synth 8-3886] merging instance 'inst/tap[12].mult_reg[12][21]' (FDC) to 'inst/tap[12].mult_reg[12][23]'
+INFO: [Synth 8-3886] merging instance 'inst/tap[13].mult_reg[13][21]' (FDC) to 'inst/tap[13].mult_reg[13][23]'
+INFO: [Synth 8-3886] merging instance 'inst/tap[12].mult_reg[12][22]' (FDC) to 'inst/tap[12].mult_reg[12][23]'
+INFO: [Synth 8-3886] merging instance 'inst/tap[13].mult_reg[13][22]' (FDC) to 'inst/tap[13].mult_reg[13][23]'
+INFO: [Synth 8-3886] merging instance 'inst/tap[14].mult_reg[14][21]' (FDC) to 'inst/tap[14].mult_reg[14][23]'
+INFO: [Synth 8-3886] merging instance 'inst/tap[14].mult_reg[14][22]' (FDC) to 'inst/tap[14].mult_reg[14][23]'
+INFO: [Synth 8-3886] merging instance 'inst/tap[17].mult_reg[17][21]' (FDC) to 'inst/tap[17].mult_reg[17][23]'
+INFO: [Synth 8-3886] merging instance 'inst/tap[17].mult_reg[17][22]' (FDC) to 'inst/tap[17].mult_reg[17][23]'
+INFO: [Synth 8-3886] merging instance 'inst/tap[19].mult_reg[19][15]' (FDC) to 'inst/tap[19].mult_reg[19][23]'
+INFO: [Synth 8-3886] merging instance 'inst/tap[19].mult_reg[19][16]' (FDC) to 'inst/tap[19].mult_reg[19][23]'
+INFO: [Synth 8-3886] merging instance 'inst/tap[19].mult_reg[19][17]' (FDC) to 'inst/tap[19].mult_reg[19][23]'
+INFO: [Synth 8-3886] merging instance 'inst/tap[19].mult_reg[19][18]' (FDC) to 'inst/tap[19].mult_reg[19][23]'
+INFO: [Synth 8-3886] merging instance 'inst/tap[19].mult_reg[19][19]' (FDC) to 'inst/tap[19].mult_reg[19][23]'
+INFO: [Synth 8-3886] merging instance 'inst/tap[19].mult_reg[19][20]' (FDC) to 'inst/tap[19].mult_reg[19][23]'
+INFO: [Synth 8-3886] merging instance 'inst/tap[18].mult_reg[18][21]' (FDC) to 'inst/tap[18].mult_reg[18][23]'
+INFO: [Synth 8-3886] merging instance 'inst/tap[19].mult_reg[19][21]' (FDC) to 'inst/tap[19].mult_reg[19][23]'
+INFO: [Synth 8-3886] merging instance 'inst/tap[18].mult_reg[18][22]' (FDC) to 'inst/tap[18].mult_reg[18][23]'
+INFO: [Synth 8-3886] merging instance 'inst/tap[19].mult_reg[19][22]' (FDC) to 'inst/tap[19].mult_reg[19][23]'
+INFO: [Synth 8-3886] merging instance 'inst/tap[21].mult_reg[21][19]' (FDC) to 'inst/tap[21].mult_reg[21][23]'
+INFO: [Synth 8-3886] merging instance 'inst/tap[20].mult_reg[20][20]' (FDC) to 'inst/tap[20].mult_reg[20][23]'
+INFO: [Synth 8-3886] merging instance 'inst/tap[21].mult_reg[21][20]' (FDC) to 'inst/tap[21].mult_reg[21][23]'
+INFO: [Synth 8-3886] merging instance 'inst/tap[20].mult_reg[20][21]' (FDC) to 'inst/tap[20].mult_reg[20][23]'
+INFO: [Synth 8-3886] merging instance 'inst/tap[21].mult_reg[21][21]' (FDC) to 'inst/tap[21].mult_reg[21][23]'
+INFO: [Synth 8-3886] merging instance 'inst/tap[20].mult_reg[20][22]' (FDC) to 'inst/tap[20].mult_reg[20][23]'
+INFO: [Synth 8-3886] merging instance 'inst/tap[21].mult_reg[21][22]' (FDC) to 'inst/tap[21].mult_reg[21][23]'
+INFO: [Synth 8-3886] merging instance 'inst/tap[22].mult_reg[22][19]' (FDC) to 'inst/tap[22].mult_reg[22][23]'
+INFO: [Synth 8-3886] merging instance 'inst/tap[23].mult_reg[23][19]' (FDC) to 'inst/tap[23].mult_reg[23][23]'
 INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/dec_counter_reg[0] )
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 943.891 ; gain = 366.430
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 943.117 ; gain = 365.738
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -357,38 +438,36 @@ DSP: Preliminary Mapping  Report (see note below)
 +--------------+-----------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
 |Module Name   | DSP Mapping           | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
 +--------------+-----------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
-|fir_axis_v1_0 | A2*(B:0x47)           | 8      | 8      | -      | -      | 16     | 1    | 0    | -    | -    | -     | 0    | 0    | 
-|fir_axis_v1_0 | (A:0x3fffff53)*B''    | 9      | 8      | -      | -      | 17     | 0    | 2    | -    | -    | -     | 0    | 0    | 
-|fir_axis_v1_0 | (A:0x3ffffefd)*BCIN'' | 10     | 8      | -      | -      | 18     | 0    | 2    | -    | -    | -     | 0    | 0    | 
-|fir_axis_v1_0 | (A:0x97)*BCIN2        | 9      | 8      | -      | -      | 17     | 0    | 1    | -    | -    | -     | 0    | 0    | 
-|fir_axis_v1_0 | (A:0x249)*BCIN2       | 11     | 8      | -      | -      | 19     | 0    | 1    | -    | -    | -     | 0    | 0    | 
-|fir_axis_v1_0 | A''*(B:0x34)          | 8      | 7      | -      | -      | 15     | 2    | 0    | -    | -    | -     | 0    | 0    | 
-|fir_axis_v1_0 | (A:0x3ffffc08)*B''    | 11     | 8      | -      | -      | 19     | 0    | 2    | -    | -    | -     | 0    | 0    | 
-|fir_axis_v1_0 | (A:0x3ffffd6b)*BCIN2  | 11     | 8      | -      | -      | 19     | 0    | 1    | -    | -    | -     | 0    | 0    | 
-|fir_axis_v1_0 | (A:0x546)*BCIN2       | 12     | 8      | -      | -      | 20     | 0    | 1    | -    | -    | -     | 0    | 0    | 
-|fir_axis_v1_0 | (A:0x747)*BCIN2       | 12     | 8      | -      | -      | 20     | 0    | 1    | -    | -    | -     | 0    | 0    | 
-|fir_axis_v1_0 | (A:0x3ffffb3e)*BCIN2  | 12     | 8      | -      | -      | 20     | 0    | 1    | -    | -    | -     | 0    | 0    | 
-|fir_axis_v1_0 | (A:0x3ffff0c8)*BCIN2  | 13     | 8      | -      | -      | 21     | 0    | 1    | -    | -    | -     | 0    | 0    | 
-|fir_axis_v1_0 | A''*(B:0x3ff94)       | 8      | 8      | -      | -      | 16     | 2    | 0    | -    | -    | -     | 0    | 0    | 
-|fir_axis_v1_0 | (A:0x1e38)*B''        | 14     | 8      | -      | -      | 22     | 0    | 2    | -    | -    | -     | 0    | 0    | 
-|fir_axis_v1_0 | (A:0x1797)*BCIN2      | 14     | 8      | -      | -      | 22     | 0    | 1    | -    | -    | -     | 0    | 0    | 
-|fir_axis_v1_0 | (A:0x3fff811d)*BCIN2  | 16     | 8      | -      | -      | 24     | 0    | 1    | -    | -    | -     | 0    | 0    | 
-|fir_axis_v1_0 | (A:0x7ee4)*BCIN2      | 16     | 8      | -      | -      | 24     | 0    | 1    | -    | -    | -     | 0    | 0    | 
-|fir_axis_v1_0 | (A:0x3fffe86a)*BCIN2  | 14     | 8      | -      | -      | 22     | 0    | 1    | -    | -    | -     | 0    | 0    | 
-|fir_axis_v1_0 | (A:0x3fffe1c9)*BCIN2  | 14     | 8      | -      | -      | 22     | 0    | 1    | -    | -    | -     | 0    | 0    | 
-|fir_axis_v1_0 | A''*(B:0x6d)          | 8      | 8      | -      | -      | 16     | 2    | 0    | -    | -    | -     | 0    | 0    | 
-|fir_axis_v1_0 | (A:0xf39)*B''         | 13     | 8      | -      | -      | 21     | 0    | 2    | -    | -    | -     | 0    | 0    | 
-|fir_axis_v1_0 | (A:0x4c3)*BCIN2       | 12     | 8      | -      | -      | 20     | 0    | 1    | -    | -    | -     | 0    | 0    | 
-|fir_axis_v1_0 | (A:0x3ffff8ba)*BCIN2  | 12     | 8      | -      | -      | 20     | 0    | 1    | -    | -    | -     | 0    | 0    | 
-|fir_axis_v1_0 | (A:0x3ffffabb)*BCIN2  | 12     | 8      | -      | -      | 20     | 0    | 1    | -    | -    | -     | 0    | 0    | 
-|fir_axis_v1_0 | (A:0x296)*BCIN2       | 11     | 8      | -      | -      | 19     | 0    | 1    | -    | -    | -     | 0    | 0    | 
-|fir_axis_v1_0 | (A:0x3f9)*BCIN2       | 11     | 8      | -      | -      | 19     | 0    | 1    | -    | -    | -     | 0    | 0    | 
-|fir_axis_v1_0 | A''*(B:0x3ffcd)       | 8      | 7      | -      | -      | 15     | 2    | 0    | -    | -    | -     | 0    | 0    | 
-|fir_axis_v1_0 | (A:0x3ffffdb8)*B''    | 11     | 8      | -      | -      | 19     | 0    | 2    | -    | -    | -     | 0    | 0    | 
-|fir_axis_v1_0 | (A:0x3fffff6a)*BCIN2  | 9      | 8      | -      | -      | 17     | 0    | 1    | -    | -    | -     | 0    | 0    | 
-|fir_axis_v1_0 | (A:0x104)*BCIN2       | 10     | 8      | -      | -      | 18     | 0    | 1    | -    | -    | -     | 0    | 0    | 
-|fir_axis_v1_0 | (A:0xae)*BCIN2        | 9      | 8      | -      | -      | 17     | 0    | 1    | -    | -    | -     | 0    | 0    | 
-|fir_axis_v1_0 | A''*(B:0x3ffba)       | 8      | 8      | -      | -      | 16     | 2    | 0    | -    | -    | -     | 0    | 0    | 
+|fir_axis_v1_0 | (A:0x97)*B''          | 9      | 8      | -      | -      | 17     | 0    | 2    | -    | -    | -     | 0    | 0    | 
+|fir_axis_v1_0 | (A:0x34)*BCIN''       | 7      | 8      | -      | -      | 15     | 0    | 2    | -    | -    | -     | 0    | 0    | 
+|fir_axis_v1_0 | (A:0x3ffffd6b)*BCIN'' | 11     | 8      | -      | -      | 19     | 0    | 2    | -    | -    | -     | 0    | 0    | 
+|fir_axis_v1_0 | (A:0x747)*BCIN''      | 12     | 8      | -      | -      | 20     | 0    | 2    | -    | -    | -     | 0    | 0    | 
+|fir_axis_v1_0 | (A:0x3ffff0c8)*BCIN'' | 13     | 8      | -      | -      | 21     | 0    | 2    | -    | -    | -     | 0    | 0    | 
+|fir_axis_v1_0 | (A:0x1e38)*BCIN''     | 14     | 8      | -      | -      | 22     | 0    | 2    | -    | -    | -     | 0    | 0    | 
+|fir_axis_v1_0 | (A:0x3fff811d)*BCIN'' | 16     | 8      | -      | -      | 24     | 0    | 2    | -    | -    | -     | 0    | 0    | 
+|fir_axis_v1_0 | (A:0x3fffe86a)*BCIN'' | 14     | 8      | -      | -      | 22     | 0    | 2    | -    | -    | -     | 0    | 0    | 
+|fir_axis_v1_0 | (A:0x6d)*BCIN''       | 8      | 8      | -      | -      | 16     | 0    | 2    | -    | -    | -     | 0    | 0    | 
+|fir_axis_v1_0 | (A:0x4c3)*BCIN''      | 12     | 8      | -      | -      | 20     | 0    | 2    | -    | -    | -     | 0    | 0    | 
+|fir_axis_v1_0 | (A:0x3ffffabb)*BCIN'' | 12     | 8      | -      | -      | 20     | 0    | 2    | -    | -    | -     | 0    | 0    | 
+|fir_axis_v1_0 | (A:0x3f9)*BCIN''      | 11     | 8      | -      | -      | 19     | 0    | 2    | -    | -    | -     | 0    | 0    | 
+|fir_axis_v1_0 | (A:0x3ffffdb8)*BCIN'' | 11     | 8      | -      | -      | 19     | 0    | 2    | -    | -    | -     | 0    | 0    | 
+|fir_axis_v1_0 | (A:0x104)*BCIN''      | 10     | 8      | -      | -      | 18     | 0    | 2    | -    | -    | -     | 0    | 0    | 
+|fir_axis_v1_0 | (A:0x3fffffba)*BCIN'' | 8      | 8      | -      | -      | 16     | 0    | 2    | -    | -    | -     | 0    | 0    | 
+|fir_axis_v1_0 | (A:0x3ffffefd)*B''    | 10     | 8      | -      | -      | 18     | 0    | 2    | -    | -    | -     | 0    | 0    | 
+|fir_axis_v1_0 | (A:0x249)*BCIN''      | 11     | 8      | -      | -      | 19     | 0    | 2    | -    | -    | -     | 0    | 0    | 
+|fir_axis_v1_0 | (A:0x3ffffc08)*BCIN'' | 11     | 8      | -      | -      | 19     | 0    | 2    | -    | -    | -     | 0    | 0    | 
+|fir_axis_v1_0 | (A:0x546)*BCIN''      | 12     | 8      | -      | -      | 20     | 0    | 2    | -    | -    | -     | 0    | 0    | 
+|fir_axis_v1_0 | (A:0x3ffffb3e)*BCIN'' | 12     | 8      | -      | -      | 20     | 0    | 2    | -    | -    | -     | 0    | 0    | 
+|fir_axis_v1_0 | (A:0x3fffff94)*BCIN'' | 8      | 8      | -      | -      | 16     | 0    | 2    | -    | -    | -     | 0    | 0    | 
+|fir_axis_v1_0 | (A:0x1797)*BCIN''     | 14     | 8      | -      | -      | 22     | 0    | 2    | -    | -    | -     | 0    | 0    | 
+|fir_axis_v1_0 | (A:0x7ee4)*BCIN''     | 16     | 8      | -      | -      | 24     | 0    | 2    | -    | -    | -     | 0    | 0    | 
+|fir_axis_v1_0 | (A:0x3fffe1c9)*BCIN'' | 14     | 8      | -      | -      | 22     | 0    | 2    | -    | -    | -     | 0    | 0    | 
+|fir_axis_v1_0 | (A:0xf39)*BCIN''      | 13     | 8      | -      | -      | 21     | 0    | 2    | -    | -    | -     | 0    | 0    | 
+|fir_axis_v1_0 | (A:0x3ffff8ba)*BCIN'' | 12     | 8      | -      | -      | 20     | 0    | 2    | -    | -    | -     | 0    | 0    | 
+|fir_axis_v1_0 | (A:0x296)*BCIN''      | 11     | 8      | -      | -      | 19     | 0    | 2    | -    | -    | -     | 0    | 0    | 
+|fir_axis_v1_0 | (A:0x3fffffcd)*BCIN'' | 7      | 8      | -      | -      | 15     | 0    | 2    | -    | -    | -     | 0    | 0    | 
+|fir_axis_v1_0 | (A:0x3fffff6a)*BCIN'' | 9      | 8      | -      | -      | 17     | 0    | 2    | -    | -    | -     | 0    | 0    | 
+|fir_axis_v1_0 | (A:0xae)*BCIN''       | 9      | 8      | -      | -      | 17     | 0    | 2    | -    | -    | -     | 0    | 0    | 
 +--------------+-----------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
 
 Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
@@ -405,13 +484,13 @@ Report RTL Partitions:
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 1000.484 ; gain = 423.023
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 970.551 ; gain = 393.172
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 1001.926 ; gain = 424.465
+Finished Timing Optimization : Time (s): cpu = 00:00:29 ; elapsed = 00:00:29 . Memory (MB): peak = 972.434 ; gain = 395.055
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -422,40 +501,38 @@ Report RTL Partitions:
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [d:/work/radar_course/lesson_3/vivado/arty_z7_simfir/arty_z7_simfir.srcs/sources_1/bd/design_1/ipshared/b1ef/hdl/fir_axis_v1_0.v:68]
-INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [d:/work/radar_course/lesson_3/vivado/arty_z7_simfir/arty_z7_simfir.srcs/sources_1/bd/design_1/ipshared/b1ef/hdl/fir_axis_v1_0.v:68]
-INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [d:/work/radar_course/lesson_3/vivado/arty_z7_simfir/arty_z7_simfir.srcs/sources_1/bd/design_1/ipshared/b1ef/hdl/fir_axis_v1_0.v:68]
-INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [d:/work/radar_course/lesson_3/vivado/arty_z7_simfir/arty_z7_simfir.srcs/sources_1/bd/design_1/ipshared/b1ef/hdl/fir_axis_v1_0.v:68]
-INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [d:/work/radar_course/lesson_3/vivado/arty_z7_simfir/arty_z7_simfir.srcs/sources_1/bd/design_1/ipshared/b1ef/hdl/fir_axis_v1_0.v:68]
-INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [d:/work/radar_course/lesson_3/vivado/arty_z7_simfir/arty_z7_simfir.srcs/sources_1/bd/design_1/ipshared/b1ef/hdl/fir_axis_v1_0.v:68]
-INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [d:/work/radar_course/lesson_3/vivado/arty_z7_simfir/arty_z7_simfir.srcs/sources_1/bd/design_1/ipshared/b1ef/hdl/fir_axis_v1_0.v:68]
-INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [d:/work/radar_course/lesson_3/vivado/arty_z7_simfir/arty_z7_simfir.srcs/sources_1/bd/design_1/ipshared/b1ef/hdl/fir_axis_v1_0.v:68]
-INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [d:/work/radar_course/lesson_3/vivado/arty_z7_simfir/arty_z7_simfir.srcs/sources_1/bd/design_1/ipshared/b1ef/hdl/fir_axis_v1_0.v:68]
-INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [d:/work/radar_course/lesson_3/vivado/arty_z7_simfir/arty_z7_simfir.srcs/sources_1/bd/design_1/ipshared/b1ef/hdl/fir_axis_v1_0.v:68]
-INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [d:/work/radar_course/lesson_3/vivado/arty_z7_simfir/arty_z7_simfir.srcs/sources_1/bd/design_1/ipshared/b1ef/hdl/fir_axis_v1_0.v:68]
-INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [d:/work/radar_course/lesson_3/vivado/arty_z7_simfir/arty_z7_simfir.srcs/sources_1/bd/design_1/ipshared/b1ef/hdl/fir_axis_v1_0.v:68]
-INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [d:/work/radar_course/lesson_3/vivado/arty_z7_simfir/arty_z7_simfir.srcs/sources_1/bd/design_1/ipshared/b1ef/hdl/fir_axis_v1_0.v:68]
-INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [d:/work/radar_course/lesson_3/vivado/arty_z7_simfir/arty_z7_simfir.srcs/sources_1/bd/design_1/ipshared/b1ef/hdl/fir_axis_v1_0.v:68]
-INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [d:/work/radar_course/lesson_3/vivado/arty_z7_simfir/arty_z7_simfir.srcs/sources_1/bd/design_1/ipshared/b1ef/hdl/fir_axis_v1_0.v:68]
-INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [d:/work/radar_course/lesson_3/vivado/arty_z7_simfir/arty_z7_simfir.srcs/sources_1/bd/design_1/ipshared/b1ef/hdl/fir_axis_v1_0.v:68]
-INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [d:/work/radar_course/lesson_3/vivado/arty_z7_simfir/arty_z7_simfir.srcs/sources_1/bd/design_1/ipshared/b1ef/hdl/fir_axis_v1_0.v:68]
-INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [d:/work/radar_course/lesson_3/vivado/arty_z7_simfir/arty_z7_simfir.srcs/sources_1/bd/design_1/ipshared/b1ef/hdl/fir_axis_v1_0.v:68]
-INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [d:/work/radar_course/lesson_3/vivado/arty_z7_simfir/arty_z7_simfir.srcs/sources_1/bd/design_1/ipshared/b1ef/hdl/fir_axis_v1_0.v:68]
-INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [d:/work/radar_course/lesson_3/vivado/arty_z7_simfir/arty_z7_simfir.srcs/sources_1/bd/design_1/ipshared/b1ef/hdl/fir_axis_v1_0.v:68]
-INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [d:/work/radar_course/lesson_3/vivado/arty_z7_simfir/arty_z7_simfir.srcs/sources_1/bd/design_1/ipshared/b1ef/hdl/fir_axis_v1_0.v:68]
-INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [d:/work/radar_course/lesson_3/vivado/arty_z7_simfir/arty_z7_simfir.srcs/sources_1/bd/design_1/ipshared/b1ef/hdl/fir_axis_v1_0.v:68]
-INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [d:/work/radar_course/lesson_3/vivado/arty_z7_simfir/arty_z7_simfir.srcs/sources_1/bd/design_1/ipshared/b1ef/hdl/fir_axis_v1_0.v:68]
-INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [d:/work/radar_course/lesson_3/vivado/arty_z7_simfir/arty_z7_simfir.srcs/sources_1/bd/design_1/ipshared/b1ef/hdl/fir_axis_v1_0.v:68]
-INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [d:/work/radar_course/lesson_3/vivado/arty_z7_simfir/arty_z7_simfir.srcs/sources_1/bd/design_1/ipshared/b1ef/hdl/fir_axis_v1_0.v:68]
-INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [d:/work/radar_course/lesson_3/vivado/arty_z7_simfir/arty_z7_simfir.srcs/sources_1/bd/design_1/ipshared/b1ef/hdl/fir_axis_v1_0.v:68]
-INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [d:/work/radar_course/lesson_3/vivado/arty_z7_simfir/arty_z7_simfir.srcs/sources_1/bd/design_1/ipshared/b1ef/hdl/fir_axis_v1_0.v:68]
-INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [d:/work/radar_course/lesson_3/vivado/arty_z7_simfir/arty_z7_simfir.srcs/sources_1/bd/design_1/ipshared/b1ef/hdl/fir_axis_v1_0.v:68]
-INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [d:/work/radar_course/lesson_3/vivado/arty_z7_simfir/arty_z7_simfir.srcs/sources_1/bd/design_1/ipshared/b1ef/hdl/fir_axis_v1_0.v:68]
-INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [d:/work/radar_course/lesson_3/vivado/arty_z7_simfir/arty_z7_simfir.srcs/sources_1/bd/design_1/ipshared/b1ef/hdl/fir_axis_v1_0.v:68]
-INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [d:/work/radar_course/lesson_3/vivado/arty_z7_simfir/arty_z7_simfir.srcs/sources_1/bd/design_1/ipshared/b1ef/hdl/fir_axis_v1_0.v:68]
-INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [d:/work/radar_course/lesson_3/vivado/arty_z7_simfir/arty_z7_simfir.srcs/sources_1/bd/design_1/ipshared/b1ef/hdl/fir_axis_v1_0.v:68]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [d:/work/radar_course/lesson_3/vivado/arty_z7_simfir/arty_z7_simfir.srcs/sources_1/bd/design_1/ipshared/28ff/hdl/fir_axis_v1_0.v:74]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [d:/work/radar_course/lesson_3/vivado/arty_z7_simfir/arty_z7_simfir.srcs/sources_1/bd/design_1/ipshared/28ff/hdl/fir_axis_v1_0.v:74]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [d:/work/radar_course/lesson_3/vivado/arty_z7_simfir/arty_z7_simfir.srcs/sources_1/bd/design_1/ipshared/28ff/hdl/fir_axis_v1_0.v:74]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [d:/work/radar_course/lesson_3/vivado/arty_z7_simfir/arty_z7_simfir.srcs/sources_1/bd/design_1/ipshared/28ff/hdl/fir_axis_v1_0.v:74]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [d:/work/radar_course/lesson_3/vivado/arty_z7_simfir/arty_z7_simfir.srcs/sources_1/bd/design_1/ipshared/28ff/hdl/fir_axis_v1_0.v:74]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [d:/work/radar_course/lesson_3/vivado/arty_z7_simfir/arty_z7_simfir.srcs/sources_1/bd/design_1/ipshared/28ff/hdl/fir_axis_v1_0.v:74]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [d:/work/radar_course/lesson_3/vivado/arty_z7_simfir/arty_z7_simfir.srcs/sources_1/bd/design_1/ipshared/28ff/hdl/fir_axis_v1_0.v:74]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [d:/work/radar_course/lesson_3/vivado/arty_z7_simfir/arty_z7_simfir.srcs/sources_1/bd/design_1/ipshared/28ff/hdl/fir_axis_v1_0.v:74]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [d:/work/radar_course/lesson_3/vivado/arty_z7_simfir/arty_z7_simfir.srcs/sources_1/bd/design_1/ipshared/28ff/hdl/fir_axis_v1_0.v:74]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [d:/work/radar_course/lesson_3/vivado/arty_z7_simfir/arty_z7_simfir.srcs/sources_1/bd/design_1/ipshared/28ff/hdl/fir_axis_v1_0.v:74]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [d:/work/radar_course/lesson_3/vivado/arty_z7_simfir/arty_z7_simfir.srcs/sources_1/bd/design_1/ipshared/28ff/hdl/fir_axis_v1_0.v:74]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [d:/work/radar_course/lesson_3/vivado/arty_z7_simfir/arty_z7_simfir.srcs/sources_1/bd/design_1/ipshared/28ff/hdl/fir_axis_v1_0.v:74]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [d:/work/radar_course/lesson_3/vivado/arty_z7_simfir/arty_z7_simfir.srcs/sources_1/bd/design_1/ipshared/28ff/hdl/fir_axis_v1_0.v:74]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [d:/work/radar_course/lesson_3/vivado/arty_z7_simfir/arty_z7_simfir.srcs/sources_1/bd/design_1/ipshared/28ff/hdl/fir_axis_v1_0.v:74]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [d:/work/radar_course/lesson_3/vivado/arty_z7_simfir/arty_z7_simfir.srcs/sources_1/bd/design_1/ipshared/28ff/hdl/fir_axis_v1_0.v:74]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [d:/work/radar_course/lesson_3/vivado/arty_z7_simfir/arty_z7_simfir.srcs/sources_1/bd/design_1/ipshared/28ff/hdl/fir_axis_v1_0.v:74]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [d:/work/radar_course/lesson_3/vivado/arty_z7_simfir/arty_z7_simfir.srcs/sources_1/bd/design_1/ipshared/28ff/hdl/fir_axis_v1_0.v:74]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [d:/work/radar_course/lesson_3/vivado/arty_z7_simfir/arty_z7_simfir.srcs/sources_1/bd/design_1/ipshared/28ff/hdl/fir_axis_v1_0.v:74]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [d:/work/radar_course/lesson_3/vivado/arty_z7_simfir/arty_z7_simfir.srcs/sources_1/bd/design_1/ipshared/28ff/hdl/fir_axis_v1_0.v:74]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [d:/work/radar_course/lesson_3/vivado/arty_z7_simfir/arty_z7_simfir.srcs/sources_1/bd/design_1/ipshared/28ff/hdl/fir_axis_v1_0.v:74]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [d:/work/radar_course/lesson_3/vivado/arty_z7_simfir/arty_z7_simfir.srcs/sources_1/bd/design_1/ipshared/28ff/hdl/fir_axis_v1_0.v:74]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [d:/work/radar_course/lesson_3/vivado/arty_z7_simfir/arty_z7_simfir.srcs/sources_1/bd/design_1/ipshared/28ff/hdl/fir_axis_v1_0.v:74]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [d:/work/radar_course/lesson_3/vivado/arty_z7_simfir/arty_z7_simfir.srcs/sources_1/bd/design_1/ipshared/28ff/hdl/fir_axis_v1_0.v:74]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [d:/work/radar_course/lesson_3/vivado/arty_z7_simfir/arty_z7_simfir.srcs/sources_1/bd/design_1/ipshared/28ff/hdl/fir_axis_v1_0.v:74]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [d:/work/radar_course/lesson_3/vivado/arty_z7_simfir/arty_z7_simfir.srcs/sources_1/bd/design_1/ipshared/28ff/hdl/fir_axis_v1_0.v:74]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [d:/work/radar_course/lesson_3/vivado/arty_z7_simfir/arty_z7_simfir.srcs/sources_1/bd/design_1/ipshared/28ff/hdl/fir_axis_v1_0.v:74]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [d:/work/radar_course/lesson_3/vivado/arty_z7_simfir/arty_z7_simfir.srcs/sources_1/bd/design_1/ipshared/28ff/hdl/fir_axis_v1_0.v:74]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [d:/work/radar_course/lesson_3/vivado/arty_z7_simfir/arty_z7_simfir.srcs/sources_1/bd/design_1/ipshared/28ff/hdl/fir_axis_v1_0.v:74]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [d:/work/radar_course/lesson_3/vivado/arty_z7_simfir/arty_z7_simfir.srcs/sources_1/bd/design_1/ipshared/28ff/hdl/fir_axis_v1_0.v:74]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [d:/work/radar_course/lesson_3/vivado/arty_z7_simfir/arty_z7_simfir.srcs/sources_1/bd/design_1/ipshared/28ff/hdl/fir_axis_v1_0.v:74]
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 1025.918 ; gain = 448.457
+Finished Technology Mapping : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 986.824 ; gain = 409.445
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -479,7 +556,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 1039.742 ; gain = 462.281
+Finished IO Insertion : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 1000.641 ; gain = 423.262
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -492,7 +569,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 1039.742 ; gain = 462.281
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 1000.641 ; gain = 423.262
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -504,41 +581,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 1039.742 ; gain = 462.281
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 1000.641 ; gain = 423.262
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 1039.742 ; gain = 462.281
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 1000.641 ; gain = 423.262
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 1039.742 ; gain = 462.281
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 1000.641 ; gain = 423.262
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 1039.742 ; gain = 462.281
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Start ROM, RAM, DSP and Shift Register Reporting
----------------------------------------------------------------------------------
-
-Static Shift Register Report:
-+----------------------+-------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
-|Module Name           | RTL Name                      | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
-+----------------------+-------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
-|design_1_fir_axis_2_0 | inst/tap[3].shift_reg_reg[7]  | 3      | 8     | NO           | NO                 | YES               | 8      | 0       | 
-|design_1_fir_axis_2_0 | inst/tap[10].shift_reg_reg[7] | 6      | 24    | NO           | NO                 | YES               | 24     | 0       | 
-|design_1_fir_axis_2_0 | inst/tap[29].shift_reg_reg[7] | 4      | 8     | NO           | NO                 | YES               | 8      | 0       | 
-+----------------------+-------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
-
----------------------------------------------------------------------------------
-Finished ROM, RAM, DSP and Shift Register Reporting
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 1000.641 ; gain = 423.262
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -554,58 +615,55 @@ Report Cell Usage:
 +------+----------+------+
 |      |Cell      |Count |
 +------+----------+------+
-|1     |CARRY4    |    90|
-|2     |DSP48E1   |     1|
-|3     |DSP48E1_1 |     1|
-|4     |DSP48E1_2 |     1|
-|5     |DSP48E1_3 |    20|
-|6     |DSP48E1_4 |     5|
-|7     |DSP48E1_5 |     4|
-|8     |LUT1      |     1|
-|9     |LUT3      |    91|
-|10    |LUT4      |   305|
-|11    |LUT5      |   273|
-|12    |LUT6      |    26|
-|13    |SRL16E    |    40|
-|14    |FDCE      |     7|
-|15    |FDRE      |   104|
+|1     |CARRY4    |   202|
+|2     |DSP48E1   |     2|
+|3     |DSP48E1_1 |    28|
+|4     |LUT1      |     9|
+|5     |LUT2      |   753|
+|6     |LUT3      |   363|
+|7     |LUT4      |     6|
+|8     |LUT5      |    15|
+|9     |LUT6      |     8|
+|10    |FDCE      |    49|
+|11    |FDRE      |   784|
 +------+----------+------+
 
 Report Instance Areas: 
 +------+---------+--------------+------+
 |      |Instance |Module        |Cells |
 +------+---------+--------------+------+
-|1     |top      |              |   969|
-|2     |  inst   |fir_axis_v1_0 |   965|
+|1     |top      |              |  2219|
+|2     |  inst   |fir_axis_v1_0 |  2181|
 +------+---------+--------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 1039.742 ; gain = 462.281
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 1000.641 ; gain = 423.262
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:24 ; elapsed = 00:00:31 . Memory (MB): peak = 1039.742 ; gain = 340.746
-Synthesis Optimization Complete : Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 1039.742 ; gain = 462.281
+Synthesis finished with 0 errors, 0 critical warnings and 32 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:23 ; elapsed = 00:00:29 . Memory (MB): peak = 1000.641 ; gain = 302.145
+Synthesis Optimization Complete : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 1000.641 ; gain = 423.262
 INFO: [Project 1-571] Translating synthesized netlist
-INFO: [Netlist 29-17] Analyzing 122 Unisim elements for replacement
+INFO: [Netlist 29-17] Analyzing 232 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+WARNING: [Netlist 29-101] Netlist 'design_1_fir_axis_2_0' is not ideal for floorplanning, since the cellview 'fir_axis_v1_0' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1039.742 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1000.641 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
-156 Infos, 3 Warnings, 0 Critical Warnings and 0 Errors encountered.
+183 Infos, 36 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:39 ; elapsed = 00:00:41 . Memory (MB): peak = 1039.742 ; gain = 733.930
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1039.742 ; gain = 0.000
+synth_design: Time (s): cpu = 00:00:37 ; elapsed = 00:00:39 . Memory (MB): peak = 1000.641 ; gain = 694.094
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1000.641 ; gain = 0.000
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
 INFO: [Common 17-1381] The checkpoint 'D:/work/radar_course/lesson_3/vivado/arty_z7_simfir/arty_z7_simfir.runs/design_1_fir_axis_2_0_synth_1/design_1_fir_axis_2_0.dcp' has been generated.
 WARNING: [Common 17-576] 'use_project_ipc' is deprecated. This option is deprecated and no longer used.
-INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP design_1_fir_axis_2_0, cache-ID = f31d8dbf5a8477b2
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1039.742 ; gain = 0.000
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP design_1_fir_axis_2_0, cache-ID = 71d230b738ba8414
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1000.641 ; gain = 0.000
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
 INFO: [Common 17-1381] The checkpoint 'D:/work/radar_course/lesson_3/vivado/arty_z7_simfir/arty_z7_simfir.runs/design_1_fir_axis_2_0_synth_1/design_1_fir_axis_2_0.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file design_1_fir_axis_2_0_utilization_synth.rpt -pb design_1_fir_axis_2_0_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Thu Nov 26 00:25:52 2020...
+INFO: [Common 17-206] Exiting Vivado at Fri Nov 27 11:17:23 2020...

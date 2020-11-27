@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="fir_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="fir_tb" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="11000000001fs"></ZoomEndTime>
+      <Cursor1Time time="1665000000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="175"></NameColumnWidth>
+      <ValueColumnWidth column_width="146"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="7" />
+   <wvobject fp_name="/fir_tb/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fir_tb/rstn" type="logic">
+      <obj_property name="ElementShortName">rstn</obj_property>
+      <obj_property name="ObjectShortName">rstn</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fir_tb/s00_axis_tdata" type="array">
+      <obj_property name="ElementShortName">s00_axis_tdata[7:0]</obj_property>
+      <obj_property name="ObjectShortName">s00_axis_tdata[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fir_tb/s00_axis_tvalid" type="logic">
+      <obj_property name="ElementShortName">s00_axis_tvalid</obj_property>
+      <obj_property name="ObjectShortName">s00_axis_tvalid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fir_tb/m00_axis_tdata" type="array">
+      <obj_property name="ElementShortName">m00_axis_tdata[23:0]</obj_property>
+      <obj_property name="ObjectShortName">m00_axis_tdata[23:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fir_tb/m00_axis_tvalid" type="logic">
+      <obj_property name="ElementShortName">m00_axis_tvalid</obj_property>
+      <obj_property name="ObjectShortName">m00_axis_tvalid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fir_tb/dut/acc" type="array">
+      <obj_property name="ElementShortName">acc[14:0][39:0]</obj_property>
+      <obj_property name="ObjectShortName">acc[14:0][39:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+</wave_config>

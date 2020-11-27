@@ -1,10 +1,10 @@
 // Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2019.1.2 (win64) Build 2615518 Fri Aug  9 15:55:25 MDT 2019
-// Date        : Thu Nov 26 00:17:58 2020
+// Date        : Fri Nov 27 11:16:23 2020
 // Host        : LAPTOP-KSVOJTV9 running 64-bit major release  (build 9200)
 // Command     : write_verilog -force -mode synth_stub
-//               d:/work/radar_course/lesson_3/vivado/arty_z7_simfir/arty_z7_simfir.srcs/sources_1/bd/design_1/ip/design_1_controller_dds_0_0/design_1_controller_dds_0_0_stub.v
+//               D:/work/radar_course/lesson_3/vivado/arty_z7_simfir/arty_z7_simfir.srcs/sources_1/bd/design_1/ip/design_1_controller_dds_0_0/design_1_controller_dds_0_0_stub.v
 // Design      : design_1_controller_dds_0_0
 // Purpose     : Stub declaration of top-level module interface
 // Device      : xc7z020clg400-1

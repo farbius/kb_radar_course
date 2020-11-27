@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2019.1.2 (win64) Build 2615518 Fri Aug  9 15:55:25 MDT 2019
-| Date         : Thu Nov 26 00:34:07 2020
+| Date         : Fri Nov 27 11:20:43 2020
 | Host         : LAPTOP-KSVOJTV9 running 64-bit major release  (build 9200)
 | Command      : report_methodology -file design_1_wrapper_methodology_drc_routed.rpt -pb design_1_wrapper_methodology_drc_routed.pb -rpx design_1_wrapper_methodology_drc_routed.rpx
 | Design       : design_1_wrapper
@@ -60,72 +60,72 @@ Related violations: <none>
 
 LUTAR-1#6 Warning
 LUT drives async reset alert  
-LUT cell design_1_i/fir_axis_1/inst/result[11]_i_10, with 2 or more inputs, drives asynchronous preset/clear pin(s) design_1_i/fir_axis_0/result_reg[23]_i_326/CLR, design_1_i/fir_axis_0/result_reg[23]_i_327/CLR, design_1_i/fir_axis_0/result_reg[23]_i_328/CLR, design_1_i/fir_axis_0/result_reg[3]_i_19/CLR, design_1_i/fir_axis_0/inst/tmp_tvalid_reg[0]/CLR, design_1_i/fir_axis_0/inst/tmp_tvalid_reg[1]/CLR, design_1_i/fir_axis_0/inst/tmp_tvalid_reg[2]/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+LUT cell design_1_i/fir_axis_1/inst/tap[0].acc[0][12]_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) design_1_i/fir_axis_0/tap[11].acc_reg[11][23]_i_9/CLR, design_1_i/fir_axis_0/tap[13].acc_reg[13][23]_i_9/CLR, design_1_i/fir_axis_0/tap[15].acc_reg[15][23]_i_9/CLR, design_1_i/fir_axis_0/tap[1].acc_reg[1][23]_i_9/CLR, design_1_i/fir_axis_0/tap[3].acc_reg[3][23]_i_9/CLR, design_1_i/fir_axis_0/tap[5].acc_reg[5][23]_i_9/CLR, design_1_i/fir_axis_0/tap[7].acc_reg[7][23]_i_9/CLR, design_1_i/fir_axis_0/tap[9].acc_reg[9][23]_i_9/CLR, design_1_i/fir_axis_0/inst/tap[0].mult_reg[0][10]/CLR, design_1_i/fir_axis_0/inst/tap[0].mult_reg[0][11]/CLR, design_1_i/fir_axis_0/inst/tap[0].mult_reg[0][12]/CLR, design_1_i/fir_axis_0/inst/tap[0].mult_reg[0][13]/CLR, design_1_i/fir_axis_0/inst/tap[0].mult_reg[0][14]/CLR, design_1_i/fir_axis_0/inst/tap[0].mult_reg[0][15]/CLR, design_1_i/fir_axis_0/inst/tap[0].mult_reg[0][1]/CLR (the first 15 of 49 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
 Related violations: <none>
 
 LUTAR-1#7 Warning
 LUT drives async reset alert  
-LUT cell design_1_i/fir_axis_2/inst/result[11]_i_10, with 2 or more inputs, drives asynchronous preset/clear pin(s) design_1_i/fir_axis_1/result_reg[23]_i_328/CLR, design_1_i/fir_axis_1/result_reg[23]_i_329/CLR, design_1_i/fir_axis_1/result_reg[23]_i_330/CLR, design_1_i/fir_axis_1/result_reg[3]_i_19/CLR, design_1_i/fir_axis_1/inst/tmp_tvalid_reg[0]/CLR, design_1_i/fir_axis_1/inst/tmp_tvalid_reg[1]/CLR, design_1_i/fir_axis_1/inst/tmp_tvalid_reg[2]/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+LUT cell design_1_i/fir_axis_2/inst/tap[0].acc[0][11]_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) design_1_i/fir_axis_1/tap[11].acc_reg[11][23]_i_9/CLR, design_1_i/fir_axis_1/tap[13].acc_reg[13][23]_i_9/CLR, design_1_i/fir_axis_1/tap[15].acc_reg[15][23]_i_9/CLR, design_1_i/fir_axis_1/tap[1].acc_reg[1][23]_i_9/CLR, design_1_i/fir_axis_1/tap[3].acc_reg[3][23]_i_9/CLR, design_1_i/fir_axis_1/tap[5].acc_reg[5][23]_i_9/CLR, design_1_i/fir_axis_1/tap[7].acc_reg[7][23]_i_9/CLR, design_1_i/fir_axis_1/tap[9].acc_reg[9][23]_i_9/CLR, design_1_i/fir_axis_1/inst/tap[0].mult_reg[0][10]/CLR, design_1_i/fir_axis_1/inst/tap[0].mult_reg[0][11]/CLR, design_1_i/fir_axis_1/inst/tap[0].mult_reg[0][12]/CLR, design_1_i/fir_axis_1/inst/tap[0].mult_reg[0][13]/CLR, design_1_i/fir_axis_1/inst/tap[0].mult_reg[0][1]/CLR, design_1_i/fir_axis_1/inst/tap[0].mult_reg[0][23]/CLR, design_1_i/fir_axis_1/inst/tap[0].mult_reg[0][2]/CLR (the first 15 of 46 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
 Related violations: <none>
 
 LUTAR-1#8 Warning
 LUT drives async reset alert  
-LUT cell design_1_i/system_ila_0/inst/ila_lib/inst/ila_core_inst/probeDelay1[0]_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) design_1_i/fir_axis_2/result_reg[23]_i_325/CLR, design_1_i/fir_axis_2/result_reg[23]_i_326/CLR, design_1_i/fir_axis_2/result_reg[23]_i_327/CLR, design_1_i/fir_axis_2/result_reg[3]_i_19/CLR, design_1_i/fir_axis_2/inst/tmp_tvalid_reg[0]/CLR, design_1_i/fir_axis_2/inst/tmp_tvalid_reg[1]/CLR, design_1_i/fir_axis_2/inst/tmp_tvalid_reg[2]/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+LUT cell design_1_i/system_ila_0/inst/ila_lib/inst/ila_core_inst/probeDelay1[0]_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) design_1_i/fir_axis_2/tap[11].acc_reg[11][23]_i_9/CLR, design_1_i/fir_axis_2/tap[13].acc_reg[13][23]_i_9/CLR, design_1_i/fir_axis_2/tap[15].acc_reg[15][23]_i_9/CLR, design_1_i/fir_axis_2/tap[1].acc_reg[1][23]_i_9/CLR, design_1_i/fir_axis_2/tap[3].acc_reg[3][23]_i_9/CLR, design_1_i/fir_axis_2/tap[5].acc_reg[5][23]_i_9/CLR, design_1_i/fir_axis_2/tap[7].acc_reg[7][23]_i_9/CLR, design_1_i/fir_axis_2/tap[9].acc_reg[9][23]_i_9/CLR, design_1_i/fir_axis_2/inst/tap[0].mult_reg[0][0]/CLR, design_1_i/fir_axis_2/inst/tap[0].mult_reg[0][10]/CLR, design_1_i/fir_axis_2/inst/tap[0].mult_reg[0][11]/CLR, design_1_i/fir_axis_2/inst/tap[0].mult_reg[0][12]/CLR, design_1_i/fir_axis_2/inst/tap[0].mult_reg[0][13]/CLR, design_1_i/fir_axis_2/inst/tap[0].mult_reg[0][14]/CLR, design_1_i/fir_axis_2/inst/tap[0].mult_reg[0][1]/CLR (the first 15 of 49 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
 Related violations: <none>
 
 PDRC-190#1 Warning
 Suboptimally placed synchronized register chain  
-The FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD2/stat_reg_reg[0] in site SLICE_X65Y52 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD2/stat_reg_1_reg[0] is not placed in the same (SLICE) site.
+The FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD2/stat_reg_reg[0] in site SLICE_X60Y76 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD2/stat_reg_1_reg[0] is not placed in the same (SLICE) site.
 Related violations: <none>
 
 PDRC-190#2 Warning
 Suboptimally placed synchronized register chain  
-The FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD2/stat_reg_reg[1] in site SLICE_X63Y52 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD2/stat_reg_1_reg[1] is not placed in the same (SLICE) site.
+The FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD2/stat_reg_reg[1] in site SLICE_X59Y76 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD2/stat_reg_1_reg[1] is not placed in the same (SLICE) site.
 Related violations: <none>
 
 PDRC-190#3 Warning
 Suboptimally placed synchronized register chain  
-The FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD2/stat_reg_reg[2] in site SLICE_X62Y52 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD2/stat_reg_1_reg[2] is not placed in the same (SLICE) site.
+The FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD2/stat_reg_reg[2] in site SLICE_X58Y76 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD2/stat_reg_1_reg[2] is not placed in the same (SLICE) site.
 Related violations: <none>
 
 PDRC-190#4 Warning
 Suboptimally placed synchronized register chain  
-The FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD2/stat_reg_reg[3] in site SLICE_X61Y52 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD2/stat_reg_1_reg[3] is not placed in the same (SLICE) site.
+The FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD2/stat_reg_reg[3] in site SLICE_X60Y74 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD2/stat_reg_1_reg[3] is not placed in the same (SLICE) site.
 Related violations: <none>
 
 PDRC-190#5 Warning
 Suboptimally placed synchronized register chain  
-The FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD3/stat_reg_reg[0] in site SLICE_X64Y50 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD3/stat_reg_1_reg[0] is not placed in the same (SLICE) site.
+The FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD3/stat_reg_reg[0] in site SLICE_X61Y76 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD3/stat_reg_1_reg[0] is not placed in the same (SLICE) site.
 Related violations: <none>
 
 PDRC-190#6 Warning
 Suboptimally placed synchronized register chain  
-The FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD3/stat_reg_reg[1] in site SLICE_X66Y50 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD3/stat_reg_1_reg[1] is not placed in the same (SLICE) site.
+The FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD3/stat_reg_reg[1] in site SLICE_X63Y76 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD3/stat_reg_1_reg[1] is not placed in the same (SLICE) site.
 Related violations: <none>
 
 PDRC-190#7 Warning
 Suboptimally placed synchronized register chain  
-The FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD3/stat_reg_reg[2] in site SLICE_X65Y49 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD3/stat_reg_1_reg[2] is not placed in the same (SLICE) site.
+The FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD3/stat_reg_reg[2] in site SLICE_X62Y76 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD3/stat_reg_1_reg[2] is not placed in the same (SLICE) site.
 Related violations: <none>
 
 PDRC-190#8 Warning
 Suboptimally placed synchronized register chain  
-The FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD3/stat_reg_reg[3] in site SLICE_X67Y49 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD3/stat_reg_1_reg[3] is not placed in the same (SLICE) site.
+The FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD3/stat_reg_reg[3] in site SLICE_X64Y76 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD3/stat_reg_1_reg[3] is not placed in the same (SLICE) site.
 Related violations: <none>
 
 PDRC-190#9 Warning
 Suboptimally placed synchronized register chain  
-The FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD7_STAT/stat_reg_reg[0] in site SLICE_X64Y54 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD7_STAT/stat_reg_1_reg[0] is not placed in the same (SLICE) site.
+The FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD7_STAT/stat_reg_reg[0] in site SLICE_X61Y74 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD7_STAT/stat_reg_1_reg[0] is not placed in the same (SLICE) site.
 Related violations: <none>
 
 PDRC-190#10 Warning
 Suboptimally placed synchronized register chain  
-The FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD7_STAT/stat_reg_reg[1] in site SLICE_X65Y54 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD7_STAT/stat_reg_1_reg[1] is not placed in the same (SLICE) site.
+The FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD7_STAT/stat_reg_reg[1] in site SLICE_X63Y74 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD7_STAT/stat_reg_1_reg[1] is not placed in the same (SLICE) site.
 Related violations: <none>
 
 PDRC-190#11 Warning
 Suboptimally placed synchronized register chain  
-The FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD7_STAT/stat_reg_reg[2] in site SLICE_X63Y54 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD7_STAT/stat_reg_1_reg[2] is not placed in the same (SLICE) site.
+The FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD7_STAT/stat_reg_reg[2] in site SLICE_X62Y74 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD7_STAT/stat_reg_1_reg[2] is not placed in the same (SLICE) site.
 Related violations: <none>
 
 

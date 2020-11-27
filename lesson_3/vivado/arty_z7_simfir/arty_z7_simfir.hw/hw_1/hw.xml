@@ -361,7 +361,7 @@
         <Option Id="HW_VIO" value="hw_vio_1"/>
         <Option Id="NAME.CUSTOM" value=""/>
         <Option Id="NAME.SELECT" value="Long"/>
-        <Option Id="OUTPUT_VALUE" value="3750"/>
+        <Option Id="OUTPUT_VALUE" value="6250"/>
         <Option Id="OUTPUT_VALUE_RADIX" value="UNSIGNED"/>
         <Option Id="SOURCE" value="netlist"/>
       </probeOptions>

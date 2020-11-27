@@ -211,19 +211,19 @@ proc create_root_design { parentCell } {
   # Create instance: fir_axis_0, and set properties
   set fir_axis_0 [ create_bd_cell -type ip -vlnv xilinx.com:rostov_ip:fir_axis:1.0 fir_axis_0 ]
   set_property -dict [ list \
-   CONFIG.MEM_FILE {D:/work/radar_course/lesson_3/vivado/arty_z7_simfir/arty_z7_simfir.srcs/sources_1/imports/hdl/coef_lp.mem} \
+   CONFIG.MEM_FILE {d:/work/radar_course/lesson_3/vivado/arty_z7_simfir/arty_z7_simfir.srcs/sources_1/imports/hdl/coef_lp.mem} \
  ] $fir_axis_0
 
   # Create instance: fir_axis_1, and set properties
   set fir_axis_1 [ create_bd_cell -type ip -vlnv xilinx.com:rostov_ip:fir_axis:1.0 fir_axis_1 ]
   set_property -dict [ list \
-   CONFIG.MEM_FILE {D:/work/radar_course/lesson_3/vivado/arty_z7_simfir/arty_z7_simfir.srcs/sources_1/imports/hdl/coef_bp.mem} \
+   CONFIG.MEM_FILE {d:/work/radar_course/lesson_3/vivado/arty_z7_simfir/arty_z7_simfir.srcs/sources_1/imports/hdl/coef_bp.mem} \
  ] $fir_axis_1
 
   # Create instance: fir_axis_2, and set properties
   set fir_axis_2 [ create_bd_cell -type ip -vlnv xilinx.com:rostov_ip:fir_axis:1.0 fir_axis_2 ]
   set_property -dict [ list \
-   CONFIG.MEM_FILE {D:/work/radar_course/lesson_3/vivado/arty_z7_simfir/arty_z7_simfir.srcs/sources_1/imports/hdl/coef_hp.mem} \
+   CONFIG.MEM_FILE {d:/work/radar_course/lesson_3/vivado/arty_z7_simfir/arty_z7_simfir.srcs/sources_1/imports/hdl/coef_hp.mem} \
  ] $fir_axis_2
 
   # Create instance: system_ila_0, and set properties

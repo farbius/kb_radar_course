@@ -13,10 +13,10 @@
       "clk_wiz_0": "",
       "controller_dds_0": "",
       "vio_0": "",
+      "system_ila_0": "",
       "fir_axis_0": "",
       "fir_axis_1": "",
-      "fir_axis_2": "",
-      "system_ila_0": ""
+      "fir_axis_2": ""
     },
     "ports": {
       "sys_clock": {
@@ -269,33 +269,6 @@
           }
         }
       },
-      "fir_axis_0": {
-        "vlnv": "xilinx.com:rostov_ip:fir_axis:1.0",
-        "xci_name": "design_1_fir_axis_0_0",
-        "parameters": {
-          "MEM_FILE": {
-            "value": "D:/work/radar_course/lesson_3/vivado/arty_z7_simfir/arty_z7_simfir.srcs/sources_1/imports/hdl/coef_lp.mem"
-          }
-        }
-      },
-      "fir_axis_1": {
-        "vlnv": "xilinx.com:rostov_ip:fir_axis:1.0",
-        "xci_name": "design_1_fir_axis_1_0",
-        "parameters": {
-          "MEM_FILE": {
-            "value": "D:/work/radar_course/lesson_3/vivado/arty_z7_simfir/arty_z7_simfir.srcs/sources_1/imports/hdl/coef_bp.mem"
-          }
-        }
-      },
-      "fir_axis_2": {
-        "vlnv": "xilinx.com:rostov_ip:fir_axis:1.0",
-        "xci_name": "design_1_fir_axis_2_0",
-        "parameters": {
-          "MEM_FILE": {
-            "value": "D:/work/radar_course/lesson_3/vivado/arty_z7_simfir/arty_z7_simfir.srcs/sources_1/imports/hdl/coef_hp.mem"
-          }
-        }
-      },
       "system_ila_0": {
         "vlnv": "xilinx.com:ip:system_ila:1.1",
         "xci_name": "design_1_system_ila_0_0",
@@ -336,9 +309,42 @@
             "vlnv": "xilinx.com:interface:axis_rtl:1.0"
           }
         }
+      },
+      "fir_axis_0": {
+        "vlnv": "xilinx.com:rostov_ip:fir_axis:1.0",
+        "xci_name": "design_1_fir_axis_0_0",
+        "parameters": {
+          "MEM_FILE": {
+            "value": "d:/work/radar_course/lesson_3/vivado/arty_z7_simfir/arty_z7_simfir.srcs/sources_1/imports/hdl/coef_lp.mem"
+          }
+        }
+      },
+      "fir_axis_1": {
+        "vlnv": "xilinx.com:rostov_ip:fir_axis:1.0",
+        "xci_name": "design_1_fir_axis_1_0",
+        "parameters": {
+          "MEM_FILE": {
+            "value": "d:/work/radar_course/lesson_3/vivado/arty_z7_simfir/arty_z7_simfir.srcs/sources_1/imports/hdl/coef_bp.mem"
+          }
+        }
+      },
+      "fir_axis_2": {
+        "vlnv": "xilinx.com:rostov_ip:fir_axis:1.0",
+        "xci_name": "design_1_fir_axis_2_0",
+        "parameters": {
+          "MEM_FILE": {
+            "value": "d:/work/radar_course/lesson_3/vivado/arty_z7_simfir/arty_z7_simfir.srcs/sources_1/imports/hdl/coef_hp.mem"
+          }
+        }
       }
     },
     "interface_nets": {
+      "fir_axis_2_M00_AXIS": {
+        "interface_ports": [
+          "fir_axis_2/M00_AXIS",
+          "system_ila_0/SLOT_2_AXIS"
+        ]
+      },
       "controller_dds_0_m_axis_phase": {
         "interface_ports": [
           "dds_compiler_0/S_AXIS_PHASE",
@@ -349,12 +355,6 @@
         "interface_ports": [
           "fir_axis_1/M00_AXIS",
           "system_ila_0/SLOT_1_AXIS"
-        ]
-      },
-      "fir_axis_2_M00_AXIS": {
-        "interface_ports": [
-          "fir_axis_2/M00_AXIS",
-          "system_ila_0/SLOT_2_AXIS"
         ]
       },
       "fir_axis_0_M00_AXIS": {
@@ -377,10 +377,10 @@
           "vio_0/clk",
           "controller_dds_0/clk",
           "dds_compiler_0/aclk",
+          "system_ila_0/clk",
           "fir_axis_0/s00_axis_aclk",
           "fir_axis_1/s00_axis_aclk",
-          "fir_axis_2/s00_axis_aclk",
-          "system_ila_0/clk"
+          "fir_axis_2/s00_axis_aclk"
         ]
       },
       "vio_0_probe_out0": {
@@ -418,10 +418,10 @@
           "clk_wiz_0/locked",
           "controller_dds_0/rstn",
           "dds_compiler_0/aresetn",
+          "system_ila_0/resetn",
           "fir_axis_0/s00_axis_aresetn",
           "fir_axis_1/s00_axis_aresetn",
-          "fir_axis_2/s00_axis_aresetn",
-          "system_ila_0/resetn"
+          "fir_axis_2/s00_axis_aresetn"
         ]
       },
       "dds_compiler_0_m_axis_data_tdata": {

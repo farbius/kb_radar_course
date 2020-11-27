@@ -3,8 +3,8 @@
 // Tool Version: Vivado v.2019.1.2 (win64) Build 2615518 Fri Aug  9 15:55:25 MDT 2019
 // Date        : Thu Nov 26 00:14:37 2020
 // Host        : LAPTOP-KSVOJTV9 running 64-bit major release  (build 9200)
-// Command     : write_verilog -force -mode funcsim
-//               d:/work/radar_course/lesson_3/vivado/arty_z7_simfir/arty_z7_simfir.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_sim_netlist.v
+// Command     : write_verilog -force -mode funcsim -rename_top design_1_clk_wiz_0_0 -prefix
+//               design_1_clk_wiz_0_0_ design_1_clk_wiz_0_0_sim_netlist.v
 // Design      : design_1_clk_wiz_0_0
 // Purpose     : This verilog netlist is a functional simulation representation of the design and should not be modified
 //               or synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -31,7 +31,6 @@ module design_1_clk_wiz_0_0
         .locked(locked));
 endmodule
 
-(* ORIG_REF_NAME = "design_1_clk_wiz_0_0_clk_wiz" *) 
 module design_1_clk_wiz_0_0_design_1_clk_wiz_0_0_clk_wiz
    (clk_out1,
     locked,
