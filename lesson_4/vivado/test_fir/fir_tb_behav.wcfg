@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="fir_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="fir_tb" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="182400000fs"></ZoomStartTime>
+      <ZoomEndTime time="415000001fs"></ZoomEndTime>
+      <Cursor1Time time="327400000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="199"></NameColumnWidth>
+      <ValueColumnWidth column_width="146"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="31" />
+   <wvobject fp_name="/fir_tb/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fir_tb/rstn" type="logic">
+      <obj_property name="ElementShortName">rstn</obj_property>
+      <obj_property name="ObjectShortName">rstn</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fir_tb/in_vld" type="logic">
+      <obj_property name="ElementShortName">in_vld</obj_property>
+      <obj_property name="ObjectShortName">in_vld</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fir_tb/dut/coef_mem" type="array">
+      <obj_property name="ElementShortName">coef_mem[0:7][15:0]</obj_property>
+      <obj_property name="ObjectShortName">coef_mem[0:7][15:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      <wvobject fp_name="/fir_tb/dut/coef_mem[0]" type="array">
+         <obj_property name="ElementShortName">[0][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[0][15:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/fir_tb/dut/coef_mem[1]" type="array">
+         <obj_property name="ElementShortName">[1][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[1][15:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/fir_tb/dut/coef_mem[2]" type="array">
+         <obj_property name="ElementShortName">[2][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[2][15:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/fir_tb/dut/coef_mem[3]" type="array">
+         <obj_property name="ElementShortName">[3][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[3][15:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/fir_tb/dut/coef_mem[4]" type="array">
+         <obj_property name="ElementShortName">[4][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[4][15:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/fir_tb/dut/coef_mem[5]" type="array">
+         <obj_property name="ElementShortName">[5][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[5][15:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/fir_tb/dut/coef_mem[6]" type="array">
+         <obj_property name="ElementShortName">[6][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[6][15:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/fir_tb/dut/coef_mem[7]" type="array">
+         <obj_property name="ElementShortName">[7][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[7][15:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="/fir_tb/out_vld" type="logic">
+      <obj_property name="ElementShortName">out_vld</obj_property>
+      <obj_property name="ObjectShortName">out_vld</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fir_tb/in_data" type="array">
+      <obj_property name="ElementShortName">in_data[7:0]</obj_property>
+      <obj_property name="ObjectShortName">in_data[7:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      <obj_property name="CustomSignalColor">#00FFFF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fir_tb/dut/\tap[0].shift_reg " type="array">
+      <obj_property name="ElementShortName">\tap[0].shift_reg [7:0]</obj_property>
+      <obj_property name="ObjectShortName">\tap[0].shift_reg [7:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fir_tb/dut/\tap[1].shift_reg " type="array">
+      <obj_property name="ElementShortName">\tap[1].shift_reg [7:0]</obj_property>
+      <obj_property name="ObjectShortName">\tap[1].shift_reg [7:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fir_tb/dut/\tap[2].shift_reg " type="array">
+      <obj_property name="ElementShortName">\tap[2].shift_reg [7:0]</obj_property>
+      <obj_property name="ObjectShortName">\tap[2].shift_reg [7:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fir_tb/dut/\tap[3].shift_reg " type="array">
+      <obj_property name="ElementShortName">\tap[3].shift_reg [7:0]</obj_property>
+      <obj_property name="ObjectShortName">\tap[3].shift_reg [7:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fir_tb/dut/\tap[4].shift_reg " type="array">
+      <obj_property name="ElementShortName">\tap[4].shift_reg [7:0]</obj_property>
+      <obj_property name="ObjectShortName">\tap[4].shift_reg [7:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fir_tb/dut/\tap[5].shift_reg " type="array">
+      <obj_property name="ElementShortName">\tap[5].shift_reg [7:0]</obj_property>
+      <obj_property name="ObjectShortName">\tap[5].shift_reg [7:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fir_tb/dut/\tap[7].shift_reg " type="array">
+      <obj_property name="ElementShortName">\tap[7].shift_reg [7:0]</obj_property>
+      <obj_property name="ObjectShortName">\tap[7].shift_reg [7:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fir_tb/dut/\tap[6].shift_reg " type="array">
+      <obj_property name="ElementShortName">\tap[6].shift_reg [7:0]</obj_property>
+      <obj_property name="ObjectShortName">\tap[6].shift_reg [7:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fir_tb/dut/\tap[0].mult " type="array">
+      <obj_property name="ElementShortName">\tap[0].mult [23:0]</obj_property>
+      <obj_property name="ObjectShortName">\tap[0].mult [23:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      <obj_property name="CustomSignalColor">#FF00FF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fir_tb/dut/\tap[1].mult " type="array">
+      <obj_property name="ElementShortName">\tap[1].mult [23:0]</obj_property>
+      <obj_property name="ObjectShortName">\tap[1].mult [23:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      <obj_property name="CustomSignalColor">#00FFFF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fir_tb/dut/\tap[2].mult " type="array">
+      <obj_property name="ElementShortName">\tap[2].mult [23:0]</obj_property>
+      <obj_property name="ObjectShortName">\tap[2].mult [23:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fir_tb/dut/\tap[3].mult " type="array">
+      <obj_property name="ElementShortName">\tap[3].mult [23:0]</obj_property>
+      <obj_property name="ObjectShortName">\tap[3].mult [23:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      <obj_property name="CustomSignalColor">#0000FF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fir_tb/dut/\tap[4].mult " type="array">
+      <obj_property name="ElementShortName">\tap[4].mult [23:0]</obj_property>
+      <obj_property name="ObjectShortName">\tap[4].mult [23:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fir_tb/dut/\tap[5].mult " type="array">
+      <obj_property name="ElementShortName">\tap[5].mult [23:0]</obj_property>
+      <obj_property name="ObjectShortName">\tap[5].mult [23:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fir_tb/dut/\tap[6].mult " type="array">
+      <obj_property name="ElementShortName">\tap[6].mult [23:0]</obj_property>
+      <obj_property name="ObjectShortName">\tap[6].mult [23:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fir_tb/dut/\tap[7].mult " type="array">
+      <obj_property name="ElementShortName">\tap[7].mult [23:0]</obj_property>
+      <obj_property name="ObjectShortName">\tap[7].mult [23:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fir_tb/dut/\tap[0].acc " type="array">
+      <obj_property name="ElementShortName">\tap[0].acc [23:0]</obj_property>
+      <obj_property name="ObjectShortName">\tap[0].acc [23:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fir_tb/dut/\tap[1].acc " type="array">
+      <obj_property name="ElementShortName">\tap[1].acc [24:0]</obj_property>
+      <obj_property name="ObjectShortName">\tap[1].acc [24:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fir_tb/dut/\tap[2].acc " type="array">
+      <obj_property name="ElementShortName">\tap[2].acc [25:0]</obj_property>
+      <obj_property name="ObjectShortName">\tap[2].acc [25:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fir_tb/dut/\tap[3].acc " type="array">
+      <obj_property name="ElementShortName">\tap[3].acc [26:0]</obj_property>
+      <obj_property name="ObjectShortName">\tap[3].acc [26:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fir_tb/dut/\tap[4].acc " type="array">
+      <obj_property name="ElementShortName">\tap[4].acc [27:0]</obj_property>
+      <obj_property name="ObjectShortName">\tap[4].acc [27:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fir_tb/dut/\tap[5].acc " type="array">
+      <obj_property name="ElementShortName">\tap[5].acc [28:0]</obj_property>
+      <obj_property name="ObjectShortName">\tap[5].acc [28:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fir_tb/dut/\tap[6].acc " type="array">
+      <obj_property name="ElementShortName">\tap[6].acc [29:0]</obj_property>
+      <obj_property name="ObjectShortName">\tap[6].acc [29:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fir_tb/dut/\tap[7].acc " type="array">
+      <obj_property name="ElementShortName">\tap[7].acc [30:0]</obj_property>
+      <obj_property name="ObjectShortName">\tap[7].acc [30:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      <obj_property name="CustomSignalColor">#FF0080</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fir_tb/out_data" type="array">
+      <obj_property name="ElementShortName">out_data[23:0]</obj_property>
+      <obj_property name="ObjectShortName">out_data[23:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      <obj_property name="CustomSignalColor">#FF0080</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+</wave_config>

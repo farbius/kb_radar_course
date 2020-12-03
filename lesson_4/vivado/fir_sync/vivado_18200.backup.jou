@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2019.1.2 (64-bit)
+# SW Build 2615518 on Fri Aug  9 15:55:25 MDT 2019
+# IP Build 2614745 on Fri Aug  9 20:55:02 MDT 2019
+# Start of session at: Thu Dec  3 08:30:33 2020
+# Process ID: 18200
+# Current directory: D:/work/radar_course/lesson_4/vivado/fir_sync
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent24940 D:\work\radar_course\lesson_4\vivado\fir_sync\fir_sync.xpr
+# Log file: D:/work/radar_course/lesson_4/vivado/fir_sync/vivado.log
+# Journal file: D:/work/radar_course/lesson_4/vivado/fir_sync\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/work/radar_course/lesson_4/vivado/fir_sync/fir_sync.xpr
+update_compile_order -fileset sources_1

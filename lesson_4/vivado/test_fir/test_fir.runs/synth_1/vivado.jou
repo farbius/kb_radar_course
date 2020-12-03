@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.1.2 (64-bit)
+# SW Build 2615518 on Fri Aug  9 15:55:25 MDT 2019
+# IP Build 2614745 on Fri Aug  9 20:55:02 MDT 2019
+# Start of session at: Thu Dec  3 13:03:17 2020
+# Process ID: 4548
+# Current directory: D:/work/radar_course/lesson_4/vivado/test_fir/test_fir.runs/synth_1
+# Command line: vivado.exe -log fir_dec_test.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source fir_dec_test.tcl
+# Log file: D:/work/radar_course/lesson_4/vivado/test_fir/test_fir.runs/synth_1/fir_dec_test.vds
+# Journal file: D:/work/radar_course/lesson_4/vivado/test_fir/test_fir.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source fir_dec_test.tcl -notrace
