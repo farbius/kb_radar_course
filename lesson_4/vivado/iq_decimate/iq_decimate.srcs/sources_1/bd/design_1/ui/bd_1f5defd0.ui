@@ -1,0 +1,51 @@
+{
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.0.19  2019-03-26 bk=1.5019 VDI=41 GEI=35 GUI=JA:9.0 non-TLS-threadsafe
+#  -string -flagsOSRD
+preplace port sys_diff_clock -pg 1 -lvl 0 -x 0 -y 390 -defaultsOSRD
+preplace port reset -pg 1 -lvl 0 -x 0 -y 320 -defaultsOSRD
+preplace portBus dout_0 -pg 1 -lvl 9 -x 2350 -y -200 -defaultsOSRD
+preplace inst clk_wiz_0 -pg 1 -lvl 2 -x 300 -y 390 -defaultsOSRD
+preplace inst vio_0 -pg 1 -lvl 3 -x 590 -y 140 -defaultsOSRD
+preplace inst dds_compiler_0 -pg 1 -lvl 5 -x 1270 -y 130 -defaultsOSRD
+preplace inst dds_compiler_1 -pg 1 -lvl 5 -x 1270 -y 330 -defaultsOSRD
+preplace inst rst_clk_wiz_0_250M -pg 1 -lvl 3 -x 590 -y 340 -defaultsOSRD
+preplace inst system_ila_0 -pg 1 -lvl 8 -x 2240 -y 340 -defaultsOSRD
+preplace inst controller_dds_0 -pg 1 -lvl 4 -x 920 -y 120 -defaultsOSRD
+preplace inst fir_dec_0 -pg 1 -lvl 7 -x 1950 -y 300 -defaultsOSRD
+preplace inst fir_dec_1 -pg 1 -lvl 7 -x 1950 -y 100 -defaultsOSRD
+preplace inst iq_mult_0 -pg 1 -lvl 6 -x 1620 -y 310 -defaultsOSRD
+preplace inst xlconstant_0 -pg 1 -lvl 1 -x 100 -y -200 -defaultsOSRD
+preplace netloc clk_wiz_0_clk_out1 1 2 6 410 240 760 240 1080 230 1480 200 1790 200 2130
+preplace netloc vio_0_probe_out0 1 3 1 N 100
+preplace netloc vio_0_probe_out1 1 3 1 N 120
+preplace netloc vio_0_probe_out2 1 3 1 N 140
+preplace netloc vio_0_probe_out3 1 3 1 N 160
+preplace netloc vio_0_probe_out4 1 3 1 N 180
+preplace netloc dds_compiler_1_m_axis_data_tdata 1 5 3 1460 430 NJ 430 N
+preplace netloc dds_compiler_1_m_axis_data_tvalid 1 5 1 N 350
+preplace netloc dds_compiler_0_m_axis_data_tdata 1 5 3 1470 190 NJ 190 2120
+preplace netloc dds_compiler_0_m_axis_data_tvalid 1 5 1 1450 150n
+preplace netloc iq_mult_0_i_data 1 6 2 1770 390 2100J
+preplace netloc iq_mult_0_i_vld 1 6 2 1760 410 2110J
+preplace netloc iq_mult_0_q_data 1 6 2 1780 420 2150J
+preplace netloc iq_mult_0_q_vld 1 6 2 1810 400 2130J
+preplace netloc clk_wiz_0_locked 1 2 1 420 380n
+preplace netloc rst_clk_wiz_0_250M_peripheral_aresetn 1 3 4 770 250 1090 220 1460J 180 1800
+preplace netloc reset_1 1 0 3 NJ 320 N 320 NJ
+preplace netloc fir_dec_1_out_data 1 7 1 2150 90n
+preplace netloc fir_dec_1_out_vld 1 7 1 2140 110n
+preplace netloc fir_dec_0_out_data 1 7 1 N 290
+preplace netloc fir_dec_0_out_vld 1 7 1 N 310
+preplace netloc controller_dds_0_sync 1 4 4 1070 210 NJ 210 NJ 210 2090J
+preplace netloc xlconstant_0_dout 1 1 8 NJ -200 NJ -200 NJ -200 NJ -200 NJ -200 NJ -200 NJ -200 NJ
+preplace netloc sys_diff_clock_1 1 0 2 NJ 390 N
+preplace netloc controller_dds_0_m_axis_phase 1 4 1 N 110
+levelinfo -pg 1 0 100 300 590 920 1270 1620 1950 2240 2350
+pagesize -pg 1 -db -bbox -sgen -140 -260 2470 510
+"
+}
+{
+   "da_board_cnt":"1",
+   "da_clkrst_cnt":"4"
+}
