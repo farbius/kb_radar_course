@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# xsim v2019.1.2 (64-bit)
+# SW Build 2615518 on Fri Aug  9 15:55:25 MDT 2019
+# IP Build 2614745 on Fri Aug  9 20:55:02 MDT 2019
+# Start of session at: Tue Dec  8 13:18:14 2020
+# Process ID: 7028
+# Current directory: D:/work/radar_course/lesson_5/vivado/fir_hls/solution1/sim/verilog
+# Command line: xsim.exe -mode tcl -source {xsim.dir/fir_hls/xsim_script.tcl}
+# Log file: D:/work/radar_course/lesson_5/vivado/fir_hls/solution1/sim/verilog/xsim.log
+# Journal file: D:/work/radar_course/lesson_5/vivado/fir_hls/solution1/sim/verilog\xsim.jou
+#-----------------------------------------------------------
+source xsim.dir/fir_hls/xsim_script.tcl
+source fir_hls.tcl

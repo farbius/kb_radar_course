@@ -1,0 +1,15 @@
+#-----------------------------------------------------------
+# Vivado v2019.1.2 (64-bit)
+# SW Build 2615518 on Fri Aug  9 15:55:25 MDT 2019
+# IP Build 2614745 on Fri Aug  9 20:55:02 MDT 2019
+# Start of session at: Tue Dec  8 13:18:40 2020
+# Process ID: 9184
+# Current directory: D:/work/radar_course/lesson_5/vivado/fir_hls/solution1/sim/verilog
+# Command line: vivado.exe -source open_wave.tcl
+# Log file: D:/work/radar_course/lesson_5/vivado/fir_hls/solution1/sim/verilog/vivado.log
+# Journal file: D:/work/radar_course/lesson_5/vivado/fir_hls/solution1/sim/verilog\vivado.jou
+#-----------------------------------------------------------
+start_gui
+source open_wave.tcl
+open_wave_config D:/work/radar_course/lesson_5/vivado/fir_hls/solution1/sim/verilog/fir_hls.wcfg
+close_sim

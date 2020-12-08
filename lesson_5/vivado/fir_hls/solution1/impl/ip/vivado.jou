@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.1.2 (64-bit)
+# SW Build 2615518 on Fri Aug  9 15:55:25 MDT 2019
+# IP Build 2614745 on Fri Aug  9 20:55:02 MDT 2019
+# Start of session at: Tue Dec  8 13:20:45 2020
+# Process ID: 28584
+# Current directory: D:/work/radar_course/lesson_5/vivado/fir_hls/solution1/impl/ip
+# Command line: vivado.exe -notrace -mode batch -source run_ippack.tcl
+# Log file: D:/work/radar_course/lesson_5/vivado/fir_hls/solution1/impl/ip/vivado.log
+# Journal file: D:/work/radar_course/lesson_5/vivado/fir_hls/solution1/impl/ip\vivado.jou
+#-----------------------------------------------------------
+source run_ippack.tcl -notrace

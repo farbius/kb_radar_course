@@ -1,0 +1,22 @@
+#-----------------------------------------------------------
+# Vivado v2019.1.2 (64-bit)
+# SW Build 2615518 on Fri Aug  9 15:55:25 MDT 2019
+# IP Build 2614745 on Fri Aug  9 20:55:02 MDT 2019
+# Start of session at: Thu Dec  3 13:52:55 2020
+# Process ID: 9636
+# Current directory: D:/work/radar_course/lesson_4/vivado/test_fir
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent17272 D:\work\radar_course\lesson_4\vivado\test_fir\test_fir.xpr
+# Log file: D:/work/radar_course/lesson_4/vivado/test_fir/vivado.log
+# Journal file: D:/work/radar_course/lesson_4/vivado/test_fir\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/work/radar_course/lesson_4/vivado/test_fir/test_fir.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+open_wave_config D:/work/radar_course/lesson_4/vivado/test_fir/fir_tb_behav.wcfg
+source fir_tb.tcl
+restart
+run all
+restart
+run all
+close_sim

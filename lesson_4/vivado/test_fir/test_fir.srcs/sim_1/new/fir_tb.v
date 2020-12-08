@@ -24,8 +24,8 @@ module fir_tb( );
 
 localparam D_W  = 8;
 localparam C_W  = 16;
-localparam TAPS = 8;
-localparam DECIMATE = 1;
+localparam TAPS = 32;
+localparam DECIMATE = 4;
 
 
 // inputs
