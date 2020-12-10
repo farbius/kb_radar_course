@@ -21,6 +21,8 @@
 !*.bd
 !*.edif
 !*.pptx
+!*.cpp
+!*.mem
 #########
 #IP files
 #########
