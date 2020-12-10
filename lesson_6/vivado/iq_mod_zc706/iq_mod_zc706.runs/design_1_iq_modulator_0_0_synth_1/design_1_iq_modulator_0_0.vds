@@ -1,0 +1,1461 @@
+#-----------------------------------------------------------
+# Vivado v2019.1.2 (64-bit)
+# SW Build 2615518 on Fri Aug  9 15:55:25 MDT 2019
+# IP Build 2614745 on Fri Aug  9 20:55:02 MDT 2019
+# Start of session at: Thu Dec 10 10:16:42 2020
+# Process ID: 1468
+# Current directory: D:/work/radar_course/lesson_6/vivado/iq_mod_zc706/iq_mod_zc706.runs/design_1_iq_modulator_0_0_synth_1
+# Command line: vivado.exe -log design_1_iq_modulator_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_iq_modulator_0_0.tcl
+# Log file: D:/work/radar_course/lesson_6/vivado/iq_mod_zc706/iq_mod_zc706.runs/design_1_iq_modulator_0_0_synth_1/design_1_iq_modulator_0_0.vds
+# Journal file: D:/work/radar_course/lesson_6/vivado/iq_mod_zc706/iq_mod_zc706.runs/design_1_iq_modulator_0_0_synth_1\vivado.jou
+#-----------------------------------------------------------
+source design_1_iq_modulator_0_0.tcl -notrace
+Command: synth_design -top design_1_iq_modulator_0_0 -part xc7z045ffg900-2 -mode out_of_context
+Starting synth_design
+WARNING: [Vivado_Tcl 4-393] The 'Synthesis' target of the following IPs are stale, please generate the output products using the generate_target or synth_ip command before running synth_design.
+d:/work/radar_course/lesson_6/vivado/iq_mod_zc706/iq_mod_zc706.srcs/sources_1/bd/design_1/ip/design_1_iq_modulator_0_0/design_1_iq_modulator_0_0.xci
+
+WARNING: [IP_Flow 19-3571] IP 'design_1_iq_modulator_0_0' is restricted:
+* Module reference is stale and needs refreshing.
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z045'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z045'
+INFO: [Device 21-403] Loading part xc7z045ffg900-2
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 6180 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 818.309 ; gain = 176.664
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'design_1_iq_modulator_0_0' [d:/work/radar_course/lesson_6/vivado/iq_mod_zc706/iq_mod_zc706.srcs/sources_1/bd/design_1/ip/design_1_iq_modulator_0_0/synth/design_1_iq_modulator_0_0.v:58]
+INFO: [Synth 8-6157] synthesizing module 'iq_modulator' [D:/work/radar_course/lesson_6/vivado/iq_mod_zc706/iq_mod_zc706.srcs/sources_1/imports/hdl/iq_modulator.v:23]
+	Parameter UP_NUM bound to: 10 - type: integer 
+	Parameter D_W bound to: 8 - type: integer 
+	Parameter C_W bound to: 16 - type: integer 
+	Parameter TAPS bound to: 64 - type: integer 
+	Parameter MEM_FILE bound to: D:/work/radar_course/lesson_6/vivado/iq_mod_zc706/iq_mod_zc706.srcs/sources_1/imports/hdl/coef_lp.mem - type: string 
+INFO: [Synth 8-6157] synthesizing module 'up_sample' [D:/work/radar_course/lesson_6/vivado/iq_mod_zc706/iq_mod_zc706.srcs/sources_1/imports/hdl/up_sample.v:23]
+	Parameter UP_NUM bound to: 10 - type: integer 
+	Parameter D_W bound to: 8 - type: integer 
+	Parameter C_W bound to: 16 - type: integer 
+	Parameter TAPS bound to: 64 - type: integer 
+	Parameter MEM_FILE bound to: D:/work/radar_course/lesson_6/vivado/iq_mod_zc706/iq_mod_zc706.srcs/sources_1/imports/hdl/coef_lp.mem - type: string 
+INFO: [Synth 8-6157] synthesizing module 'add_zeros' [D:/work/radar_course/lesson_6/vivado/iq_mod_zc706/iq_mod_zc706.srcs/sources_1/imports/hdl/add_zeros.v:23]
+	Parameter UP_NUM bound to: 10 - type: integer 
+	Parameter D_W bound to: 8 - type: integer 
+	Parameter idle bound to: 1'b0 
+	Parameter fill bound to: 1'b1 
+INFO: [Synth 8-155] case statement is not full and has no default [D:/work/radar_course/lesson_6/vivado/iq_mod_zc706/iq_mod_zc706.srcs/sources_1/imports/hdl/add_zeros.v:60]
+WARNING: [Synth 8-6014] Unused sequential element rdy_reg was removed.  [D:/work/radar_course/lesson_6/vivado/iq_mod_zc706/iq_mod_zc706.srcs/sources_1/imports/hdl/add_zeros.v:57]
+INFO: [Synth 8-6155] done synthesizing module 'add_zeros' (1#1) [D:/work/radar_course/lesson_6/vivado/iq_mod_zc706/iq_mod_zc706.srcs/sources_1/imports/hdl/add_zeros.v:23]
+INFO: [Synth 8-6157] synthesizing module 'fir_sync' [D:/work/radar_course/lesson_6/vivado/iq_mod_zc706/iq_mod_zc706.srcs/sources_1/imports/hdl/fir_sync.v:23]
+	Parameter D_W bound to: 8 - type: integer 
+	Parameter C_W bound to: 16 - type: integer 
+	Parameter TAPS bound to: 64 - type: integer 
+	Parameter MEM_FILE bound to: D:/work/radar_course/lesson_6/vivado/iq_mod_zc706/iq_mod_zc706.srcs/sources_1/imports/hdl/coef_lp.mem - type: string 
+	Parameter Nlog2 bound to: 6 - type: integer 
+INFO: [Synth 8-3876] $readmem data file 'D:/work/radar_course/lesson_6/vivado/iq_mod_zc706/iq_mod_zc706.srcs/sources_1/imports/hdl/coef_lp.mem' is read successfully [D:/work/radar_course/lesson_6/vivado/iq_mod_zc706/iq_mod_zc706.srcs/sources_1/imports/hdl/fir_sync.v:48]
+WARNING: [Synth 8-324] index 63 out of range [D:/work/radar_course/lesson_6/vivado/iq_mod_zc706/iq_mod_zc706.srcs/sources_1/imports/hdl/fir_sync.v:89]
+WARNING: [Synth 8-324] index 63 out of range [D:/work/radar_course/lesson_6/vivado/iq_mod_zc706/iq_mod_zc706.srcs/sources_1/imports/hdl/fir_sync.v:89]
+INFO: [Synth 8-6155] done synthesizing module 'fir_sync' (2#1) [D:/work/radar_course/lesson_6/vivado/iq_mod_zc706/iq_mod_zc706.srcs/sources_1/imports/hdl/fir_sync.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'up_sample' (3#1) [D:/work/radar_course/lesson_6/vivado/iq_mod_zc706/iq_mod_zc706.srcs/sources_1/imports/hdl/up_sample.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'iq_modulator' (4#1) [D:/work/radar_course/lesson_6/vivado/iq_mod_zc706/iq_mod_zc706.srcs/sources_1/imports/hdl/iq_modulator.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_iq_modulator_0_0' (5#1) [d:/work/radar_course/lesson_6/vivado/iq_mod_zc706/iq_mod_zc706.srcs/sources_1/bd/design_1/ip/design_1_iq_modulator_0_0/synth/design_1_iq_modulator_0_0.v:58]
+WARNING: [Synth 8-3331] design fir_sync has unconnected port rstn
+WARNING: [Synth 8-3331] design up_sample has unconnected port m_axis_tready
+WARNING: [Synth 8-3331] design iq_modulator has unconnected port s_axis_ref_tvalid
+WARNING: [Synth 8-3331] design iq_modulator has unconnected port m_axis_tready
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 886.883 ; gain = 245.238
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 886.883 ; gain = 245.238
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 886.883 ; gain = 245.238
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1035.184 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+Constraint Validation Runtime : Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.694 . Memory (MB): peak = 1046.418 ; gain = 11.234
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:20 ; elapsed = 00:00:20 . Memory (MB): peak = 1046.418 ; gain = 404.773
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z045ffg900-2
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:20 ; elapsed = 00:00:20 . Memory (MB): peak = 1046.418 ; gain = 404.773
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:20 ; elapsed = 00:00:20 . Memory (MB): peak = 1046.418 ; gain = 404.773
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'add_zeros'
+WARNING: [Synth 8-3936] Found unconnected internal register 'result_reg' and it is trimmed from '88' to '24' bits. [D:/work/radar_course/lesson_6/vivado/iq_mod_zc706/iq_mod_zc706.srcs/sources_1/imports/hdl/fir_sync.v:96]
+WARNING: [Synth 8-3936] Found unconnected internal register 'tap[62].acc_reg[62]' and it is trimmed from '88' to '24' bits. [D:/work/radar_course/lesson_6/vivado/iq_mod_zc706/iq_mod_zc706.srcs/sources_1/imports/hdl/fir_sync.v:89]
+WARNING: [Synth 8-3936] Found unconnected internal register 'tap[60].acc_reg[60]' and it is trimmed from '88' to '24' bits. [D:/work/radar_course/lesson_6/vivado/iq_mod_zc706/iq_mod_zc706.srcs/sources_1/imports/hdl/fir_sync.v:89]
+WARNING: [Synth 8-3936] Found unconnected internal register 'tap[56].acc_reg[56]' and it is trimmed from '88' to '24' bits. [D:/work/radar_course/lesson_6/vivado/iq_mod_zc706/iq_mod_zc706.srcs/sources_1/imports/hdl/fir_sync.v:89]
+WARNING: [Synth 8-3936] Found unconnected internal register 'tap[48].acc_reg[48]' and it is trimmed from '88' to '24' bits. [D:/work/radar_course/lesson_6/vivado/iq_mod_zc706/iq_mod_zc706.srcs/sources_1/imports/hdl/fir_sync.v:89]
+WARNING: [Synth 8-3936] Found unconnected internal register 'tap[32].acc_reg[32]' and it is trimmed from '88' to '24' bits. [D:/work/radar_course/lesson_6/vivado/iq_mod_zc706/iq_mod_zc706.srcs/sources_1/imports/hdl/fir_sync.v:89]
+WARNING: [Synth 8-3936] Found unconnected internal register 'tap[0].acc_reg[0]' and it is trimmed from '88' to '24' bits. [D:/work/radar_course/lesson_6/vivado/iq_mod_zc706/iq_mod_zc706.srcs/sources_1/imports/hdl/fir_sync.v:87]
+WARNING: [Synth 8-3936] Found unconnected internal register 'tap[1].acc_reg[1]' and it is trimmed from '88' to '24' bits. [D:/work/radar_course/lesson_6/vivado/iq_mod_zc706/iq_mod_zc706.srcs/sources_1/imports/hdl/fir_sync.v:87]
+WARNING: [Synth 8-3936] Found unconnected internal register 'tap[33].acc_reg[33]' and it is trimmed from '88' to '24' bits. [D:/work/radar_course/lesson_6/vivado/iq_mod_zc706/iq_mod_zc706.srcs/sources_1/imports/hdl/fir_sync.v:89]
+WARNING: [Synth 8-3936] Found unconnected internal register 'tap[2].acc_reg[2]' and it is trimmed from '88' to '24' bits. [D:/work/radar_course/lesson_6/vivado/iq_mod_zc706/iq_mod_zc706.srcs/sources_1/imports/hdl/fir_sync.v:87]
+WARNING: [Synth 8-3936] Found unconnected internal register 'tap[3].acc_reg[3]' and it is trimmed from '88' to '24' bits. [D:/work/radar_course/lesson_6/vivado/iq_mod_zc706/iq_mod_zc706.srcs/sources_1/imports/hdl/fir_sync.v:87]
+WARNING: [Synth 8-3936] Found unconnected internal register 'tap[49].acc_reg[49]' and it is trimmed from '88' to '24' bits. [D:/work/radar_course/lesson_6/vivado/iq_mod_zc706/iq_mod_zc706.srcs/sources_1/imports/hdl/fir_sync.v:89]
+WARNING: [Synth 8-3936] Found unconnected internal register 'tap[34].acc_reg[34]' and it is trimmed from '88' to '24' bits. [D:/work/radar_course/lesson_6/vivado/iq_mod_zc706/iq_mod_zc706.srcs/sources_1/imports/hdl/fir_sync.v:89]
+WARNING: [Synth 8-3936] Found unconnected internal register 'tap[4].acc_reg[4]' and it is trimmed from '88' to '24' bits. [D:/work/radar_course/lesson_6/vivado/iq_mod_zc706/iq_mod_zc706.srcs/sources_1/imports/hdl/fir_sync.v:87]
+WARNING: [Synth 8-3936] Found unconnected internal register 'tap[5].acc_reg[5]' and it is trimmed from '88' to '24' bits. [D:/work/radar_course/lesson_6/vivado/iq_mod_zc706/iq_mod_zc706.srcs/sources_1/imports/hdl/fir_sync.v:87]
+WARNING: [Synth 8-3936] Found unconnected internal register 'tap[35].acc_reg[35]' and it is trimmed from '88' to '24' bits. [D:/work/radar_course/lesson_6/vivado/iq_mod_zc706/iq_mod_zc706.srcs/sources_1/imports/hdl/fir_sync.v:89]
+WARNING: [Synth 8-3936] Found unconnected internal register 'tap[6].acc_reg[6]' and it is trimmed from '88' to '24' bits. [D:/work/radar_course/lesson_6/vivado/iq_mod_zc706/iq_mod_zc706.srcs/sources_1/imports/hdl/fir_sync.v:87]
+WARNING: [Synth 8-3936] Found unconnected internal register 'tap[7].acc_reg[7]' and it is trimmed from '88' to '24' bits. [D:/work/radar_course/lesson_6/vivado/iq_mod_zc706/iq_mod_zc706.srcs/sources_1/imports/hdl/fir_sync.v:87]
+WARNING: [Synth 8-3936] Found unconnected internal register 'tap[57].acc_reg[57]' and it is trimmed from '88' to '24' bits. [D:/work/radar_course/lesson_6/vivado/iq_mod_zc706/iq_mod_zc706.srcs/sources_1/imports/hdl/fir_sync.v:89]
+WARNING: [Synth 8-3936] Found unconnected internal register 'tap[50].acc_reg[50]' and it is trimmed from '88' to '24' bits. [D:/work/radar_course/lesson_6/vivado/iq_mod_zc706/iq_mod_zc706.srcs/sources_1/imports/hdl/fir_sync.v:89]
+WARNING: [Synth 8-3936] Found unconnected internal register 'tap[36].acc_reg[36]' and it is trimmed from '88' to '24' bits. [D:/work/radar_course/lesson_6/vivado/iq_mod_zc706/iq_mod_zc706.srcs/sources_1/imports/hdl/fir_sync.v:89]
+WARNING: [Synth 8-3936] Found unconnected internal register 'tap[8].acc_reg[8]' and it is trimmed from '88' to '24' bits. [D:/work/radar_course/lesson_6/vivado/iq_mod_zc706/iq_mod_zc706.srcs/sources_1/imports/hdl/fir_sync.v:87]
+WARNING: [Synth 8-3936] Found unconnected internal register 'tap[9].acc_reg[9]' and it is trimmed from '88' to '24' bits. [D:/work/radar_course/lesson_6/vivado/iq_mod_zc706/iq_mod_zc706.srcs/sources_1/imports/hdl/fir_sync.v:87]
+WARNING: [Synth 8-3936] Found unconnected internal register 'tap[37].acc_reg[37]' and it is trimmed from '88' to '24' bits. [D:/work/radar_course/lesson_6/vivado/iq_mod_zc706/iq_mod_zc706.srcs/sources_1/imports/hdl/fir_sync.v:89]
+WARNING: [Synth 8-3936] Found unconnected internal register 'tap[10].acc_reg[10]' and it is trimmed from '88' to '24' bits. [D:/work/radar_course/lesson_6/vivado/iq_mod_zc706/iq_mod_zc706.srcs/sources_1/imports/hdl/fir_sync.v:87]
+WARNING: [Synth 8-3936] Found unconnected internal register 'tap[11].acc_reg[11]' and it is trimmed from '88' to '24' bits. [D:/work/radar_course/lesson_6/vivado/iq_mod_zc706/iq_mod_zc706.srcs/sources_1/imports/hdl/fir_sync.v:87]
+WARNING: [Synth 8-3936] Found unconnected internal register 'tap[51].acc_reg[51]' and it is trimmed from '88' to '24' bits. [D:/work/radar_course/lesson_6/vivado/iq_mod_zc706/iq_mod_zc706.srcs/sources_1/imports/hdl/fir_sync.v:89]
+WARNING: [Synth 8-3936] Found unconnected internal register 'tap[38].acc_reg[38]' and it is trimmed from '88' to '24' bits. [D:/work/radar_course/lesson_6/vivado/iq_mod_zc706/iq_mod_zc706.srcs/sources_1/imports/hdl/fir_sync.v:89]
+WARNING: [Synth 8-3936] Found unconnected internal register 'tap[12].acc_reg[12]' and it is trimmed from '88' to '24' bits. [D:/work/radar_course/lesson_6/vivado/iq_mod_zc706/iq_mod_zc706.srcs/sources_1/imports/hdl/fir_sync.v:87]
+WARNING: [Synth 8-3936] Found unconnected internal register 'tap[13].acc_reg[13]' and it is trimmed from '88' to '24' bits. [D:/work/radar_course/lesson_6/vivado/iq_mod_zc706/iq_mod_zc706.srcs/sources_1/imports/hdl/fir_sync.v:87]
+WARNING: [Synth 8-3936] Found unconnected internal register 'tap[39].acc_reg[39]' and it is trimmed from '88' to '24' bits. [D:/work/radar_course/lesson_6/vivado/iq_mod_zc706/iq_mod_zc706.srcs/sources_1/imports/hdl/fir_sync.v:89]
+WARNING: [Synth 8-3936] Found unconnected internal register 'tap[14].acc_reg[14]' and it is trimmed from '88' to '24' bits. [D:/work/radar_course/lesson_6/vivado/iq_mod_zc706/iq_mod_zc706.srcs/sources_1/imports/hdl/fir_sync.v:87]
+WARNING: [Synth 8-3936] Found unconnected internal register 'tap[15].acc_reg[15]' and it is trimmed from '88' to '24' bits. [D:/work/radar_course/lesson_6/vivado/iq_mod_zc706/iq_mod_zc706.srcs/sources_1/imports/hdl/fir_sync.v:87]
+WARNING: [Synth 8-3936] Found unconnected internal register 'tap[61].acc_reg[61]' and it is trimmed from '88' to '24' bits. [D:/work/radar_course/lesson_6/vivado/iq_mod_zc706/iq_mod_zc706.srcs/sources_1/imports/hdl/fir_sync.v:89]
+WARNING: [Synth 8-3936] Found unconnected internal register 'tap[58].acc_reg[58]' and it is trimmed from '88' to '24' bits. [D:/work/radar_course/lesson_6/vivado/iq_mod_zc706/iq_mod_zc706.srcs/sources_1/imports/hdl/fir_sync.v:89]
+WARNING: [Synth 8-3936] Found unconnected internal register 'tap[52].acc_reg[52]' and it is trimmed from '88' to '24' bits. [D:/work/radar_course/lesson_6/vivado/iq_mod_zc706/iq_mod_zc706.srcs/sources_1/imports/hdl/fir_sync.v:89]
+WARNING: [Synth 8-3936] Found unconnected internal register 'tap[40].acc_reg[40]' and it is trimmed from '88' to '24' bits. [D:/work/radar_course/lesson_6/vivado/iq_mod_zc706/iq_mod_zc706.srcs/sources_1/imports/hdl/fir_sync.v:89]
+WARNING: [Synth 8-3936] Found unconnected internal register 'tap[16].acc_reg[16]' and it is trimmed from '88' to '24' bits. [D:/work/radar_course/lesson_6/vivado/iq_mod_zc706/iq_mod_zc706.srcs/sources_1/imports/hdl/fir_sync.v:87]
+WARNING: [Synth 8-3936] Found unconnected internal register 'tap[17].acc_reg[17]' and it is trimmed from '88' to '24' bits. [D:/work/radar_course/lesson_6/vivado/iq_mod_zc706/iq_mod_zc706.srcs/sources_1/imports/hdl/fir_sync.v:87]
+WARNING: [Synth 8-3936] Found unconnected internal register 'tap[41].acc_reg[41]' and it is trimmed from '88' to '24' bits. [D:/work/radar_course/lesson_6/vivado/iq_mod_zc706/iq_mod_zc706.srcs/sources_1/imports/hdl/fir_sync.v:89]
+WARNING: [Synth 8-3936] Found unconnected internal register 'tap[18].acc_reg[18]' and it is trimmed from '88' to '24' bits. [D:/work/radar_course/lesson_6/vivado/iq_mod_zc706/iq_mod_zc706.srcs/sources_1/imports/hdl/fir_sync.v:87]
+WARNING: [Synth 8-3936] Found unconnected internal register 'tap[19].acc_reg[19]' and it is trimmed from '88' to '24' bits. [D:/work/radar_course/lesson_6/vivado/iq_mod_zc706/iq_mod_zc706.srcs/sources_1/imports/hdl/fir_sync.v:87]
+WARNING: [Synth 8-3936] Found unconnected internal register 'tap[53].acc_reg[53]' and it is trimmed from '88' to '24' bits. [D:/work/radar_course/lesson_6/vivado/iq_mod_zc706/iq_mod_zc706.srcs/sources_1/imports/hdl/fir_sync.v:89]
+WARNING: [Synth 8-3936] Found unconnected internal register 'tap[42].acc_reg[42]' and it is trimmed from '88' to '24' bits. [D:/work/radar_course/lesson_6/vivado/iq_mod_zc706/iq_mod_zc706.srcs/sources_1/imports/hdl/fir_sync.v:89]
+WARNING: [Synth 8-3936] Found unconnected internal register 'tap[20].acc_reg[20]' and it is trimmed from '88' to '24' bits. [D:/work/radar_course/lesson_6/vivado/iq_mod_zc706/iq_mod_zc706.srcs/sources_1/imports/hdl/fir_sync.v:87]
+WARNING: [Synth 8-3936] Found unconnected internal register 'tap[21].acc_reg[21]' and it is trimmed from '88' to '24' bits. [D:/work/radar_course/lesson_6/vivado/iq_mod_zc706/iq_mod_zc706.srcs/sources_1/imports/hdl/fir_sync.v:87]
+WARNING: [Synth 8-3936] Found unconnected internal register 'tap[43].acc_reg[43]' and it is trimmed from '88' to '24' bits. [D:/work/radar_course/lesson_6/vivado/iq_mod_zc706/iq_mod_zc706.srcs/sources_1/imports/hdl/fir_sync.v:89]
+WARNING: [Synth 8-3936] Found unconnected internal register 'tap[22].acc_reg[22]' and it is trimmed from '88' to '24' bits. [D:/work/radar_course/lesson_6/vivado/iq_mod_zc706/iq_mod_zc706.srcs/sources_1/imports/hdl/fir_sync.v:87]
+WARNING: [Synth 8-3936] Found unconnected internal register 'tap[23].acc_reg[23]' and it is trimmed from '88' to '24' bits. [D:/work/radar_course/lesson_6/vivado/iq_mod_zc706/iq_mod_zc706.srcs/sources_1/imports/hdl/fir_sync.v:87]
+WARNING: [Synth 8-3936] Found unconnected internal register 'tap[59].acc_reg[59]' and it is trimmed from '88' to '24' bits. [D:/work/radar_course/lesson_6/vivado/iq_mod_zc706/iq_mod_zc706.srcs/sources_1/imports/hdl/fir_sync.v:89]
+WARNING: [Synth 8-3936] Found unconnected internal register 'tap[54].acc_reg[54]' and it is trimmed from '88' to '24' bits. [D:/work/radar_course/lesson_6/vivado/iq_mod_zc706/iq_mod_zc706.srcs/sources_1/imports/hdl/fir_sync.v:89]
+WARNING: [Synth 8-3936] Found unconnected internal register 'tap[44].acc_reg[44]' and it is trimmed from '88' to '24' bits. [D:/work/radar_course/lesson_6/vivado/iq_mod_zc706/iq_mod_zc706.srcs/sources_1/imports/hdl/fir_sync.v:89]
+WARNING: [Synth 8-3936] Found unconnected internal register 'tap[24].acc_reg[24]' and it is trimmed from '88' to '24' bits. [D:/work/radar_course/lesson_6/vivado/iq_mod_zc706/iq_mod_zc706.srcs/sources_1/imports/hdl/fir_sync.v:87]
+WARNING: [Synth 8-3936] Found unconnected internal register 'tap[25].acc_reg[25]' and it is trimmed from '88' to '24' bits. [D:/work/radar_course/lesson_6/vivado/iq_mod_zc706/iq_mod_zc706.srcs/sources_1/imports/hdl/fir_sync.v:87]
+WARNING: [Synth 8-3936] Found unconnected internal register 'tap[45].acc_reg[45]' and it is trimmed from '88' to '24' bits. [D:/work/radar_course/lesson_6/vivado/iq_mod_zc706/iq_mod_zc706.srcs/sources_1/imports/hdl/fir_sync.v:89]
+WARNING: [Synth 8-3936] Found unconnected internal register 'tap[26].acc_reg[26]' and it is trimmed from '88' to '24' bits. [D:/work/radar_course/lesson_6/vivado/iq_mod_zc706/iq_mod_zc706.srcs/sources_1/imports/hdl/fir_sync.v:87]
+WARNING: [Synth 8-3936] Found unconnected internal register 'tap[27].acc_reg[27]' and it is trimmed from '88' to '24' bits. [D:/work/radar_course/lesson_6/vivado/iq_mod_zc706/iq_mod_zc706.srcs/sources_1/imports/hdl/fir_sync.v:87]
+WARNING: [Synth 8-3936] Found unconnected internal register 'tap[55].acc_reg[55]' and it is trimmed from '88' to '24' bits. [D:/work/radar_course/lesson_6/vivado/iq_mod_zc706/iq_mod_zc706.srcs/sources_1/imports/hdl/fir_sync.v:89]
+WARNING: [Synth 8-3936] Found unconnected internal register 'tap[46].acc_reg[46]' and it is trimmed from '88' to '24' bits. [D:/work/radar_course/lesson_6/vivado/iq_mod_zc706/iq_mod_zc706.srcs/sources_1/imports/hdl/fir_sync.v:89]
+WARNING: [Synth 8-3936] Found unconnected internal register 'tap[28].acc_reg[28]' and it is trimmed from '88' to '24' bits. [D:/work/radar_course/lesson_6/vivado/iq_mod_zc706/iq_mod_zc706.srcs/sources_1/imports/hdl/fir_sync.v:87]
+WARNING: [Synth 8-3936] Found unconnected internal register 'tap[29].acc_reg[29]' and it is trimmed from '88' to '24' bits. [D:/work/radar_course/lesson_6/vivado/iq_mod_zc706/iq_mod_zc706.srcs/sources_1/imports/hdl/fir_sync.v:87]
+WARNING: [Synth 8-3936] Found unconnected internal register 'tap[47].acc_reg[47]' and it is trimmed from '88' to '24' bits. [D:/work/radar_course/lesson_6/vivado/iq_mod_zc706/iq_mod_zc706.srcs/sources_1/imports/hdl/fir_sync.v:89]
+WARNING: [Synth 8-3936] Found unconnected internal register 'tap[30].acc_reg[30]' and it is trimmed from '88' to '24' bits. [D:/work/radar_course/lesson_6/vivado/iq_mod_zc706/iq_mod_zc706.srcs/sources_1/imports/hdl/fir_sync.v:87]
+WARNING: [Synth 8-3936] Found unconnected internal register 'tap[31].acc_reg[31]' and it is trimmed from '88' to '24' bits. [D:/work/radar_course/lesson_6/vivado/iq_mod_zc706/iq_mod_zc706.srcs/sources_1/imports/hdl/fir_sync.v:87]
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                                0 |                               00
+                    fill |                                1 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'add_zeros'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 1046.418 ; gain = 404.773
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 2     
++---Registers : 
+	               32 Bit    Registers := 1     
+	               24 Bit    Registers := 18    
+	                9 Bit    Registers := 2     
+	                8 Bit    Registers := 154   
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 10    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module add_zeros 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 5     
+Module fir_sync 
+Detailed RTL Component Info : 
++---Registers : 
+	               24 Bit    Registers := 9     
+	                9 Bit    Registers := 1     
+	                8 Bit    Registers := 75    
+Module iq_modulator 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 900 (col length:140)
+BRAMs: 1090 (col length: RAMB18 140 RAMB36 70)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-4471] merging register 'inst/i0/i1/tap[0].shift_reg_reg[7:0]' into 'inst/i0/i1/tap[0].shift_reg_reg[7:0]' [D:/work/radar_course/lesson_6/vivado/iq_mod_zc706/iq_mod_zc706.srcs/sources_1/imports/hdl/fir_sync.v:72]
+INFO: [Synth 8-4471] merging register 'inst/i0/i1/tap[0].shift_reg_reg[7:0]' into 'inst/i0/i1/tap[0].shift_reg_reg[7:0]' [D:/work/radar_course/lesson_6/vivado/iq_mod_zc706/iq_mod_zc706.srcs/sources_1/imports/hdl/fir_sync.v:72]
+INFO: [Synth 8-4471] merging register 'inst/i0/i1/tap[2].shift_reg_reg[7:0]' into 'inst/i0/i1/tap[2].shift_reg_reg[7:0]' [D:/work/radar_course/lesson_6/vivado/iq_mod_zc706/iq_mod_zc706.srcs/sources_1/imports/hdl/fir_sync.v:78]
+INFO: [Synth 8-4471] merging register 'inst/i0/i1/tap[6].shift_reg_reg[7:0]' into 'inst/i0/i1/tap[6].shift_reg_reg[7:0]' [D:/work/radar_course/lesson_6/vivado/iq_mod_zc706/iq_mod_zc706.srcs/sources_1/imports/hdl/fir_sync.v:78]
+INFO: [Synth 8-4471] merging register 'inst/i0/i1/tap[10].shift_reg_reg[7:0]' into 'inst/i0/i1/tap[10].shift_reg_reg[7:0]' [D:/work/radar_course/lesson_6/vivado/iq_mod_zc706/iq_mod_zc706.srcs/sources_1/imports/hdl/fir_sync.v:78]
+INFO: [Synth 8-4471] merging register 'inst/i0/i1/tap[14].shift_reg_reg[7:0]' into 'inst/i0/i1/tap[14].shift_reg_reg[7:0]' [D:/work/radar_course/lesson_6/vivado/iq_mod_zc706/iq_mod_zc706.srcs/sources_1/imports/hdl/fir_sync.v:78]
+INFO: [Synth 8-4471] merging register 'inst/i0/i1/tap[18].shift_reg_reg[7:0]' into 'inst/i0/i1/tap[18].shift_reg_reg[7:0]' [D:/work/radar_course/lesson_6/vivado/iq_mod_zc706/iq_mod_zc706.srcs/sources_1/imports/hdl/fir_sync.v:78]
+INFO: [Synth 8-4471] merging register 'inst/i0/i1/tap[22].shift_reg_reg[7:0]' into 'inst/i0/i1/tap[22].shift_reg_reg[7:0]' [D:/work/radar_course/lesson_6/vivado/iq_mod_zc706/iq_mod_zc706.srcs/sources_1/imports/hdl/fir_sync.v:78]
+INFO: [Synth 8-4471] merging register 'inst/i0/i1/tap[26].shift_reg_reg[7:0]' into 'inst/i0/i1/tap[26].shift_reg_reg[7:0]' [D:/work/radar_course/lesson_6/vivado/iq_mod_zc706/iq_mod_zc706.srcs/sources_1/imports/hdl/fir_sync.v:78]
+INFO: [Synth 8-4471] merging register 'inst/i0/i1/tap[30].shift_reg_reg[7:0]' into 'inst/i0/i1/tap[30].shift_reg_reg[7:0]' [D:/work/radar_course/lesson_6/vivado/iq_mod_zc706/iq_mod_zc706.srcs/sources_1/imports/hdl/fir_sync.v:78]
+INFO: [Synth 8-4471] merging register 'inst/i0/i1/tap[34].shift_reg_reg[7:0]' into 'inst/i0/i1/tap[34].shift_reg_reg[7:0]' [D:/work/radar_course/lesson_6/vivado/iq_mod_zc706/iq_mod_zc706.srcs/sources_1/imports/hdl/fir_sync.v:78]
+INFO: [Synth 8-4471] merging register 'inst/i0/i1/tap[38].shift_reg_reg[7:0]' into 'inst/i0/i1/tap[38].shift_reg_reg[7:0]' [D:/work/radar_course/lesson_6/vivado/iq_mod_zc706/iq_mod_zc706.srcs/sources_1/imports/hdl/fir_sync.v:78]
+INFO: [Synth 8-4471] merging register 'inst/i0/i1/tap[42].shift_reg_reg[7:0]' into 'inst/i0/i1/tap[42].shift_reg_reg[7:0]' [D:/work/radar_course/lesson_6/vivado/iq_mod_zc706/iq_mod_zc706.srcs/sources_1/imports/hdl/fir_sync.v:78]
+INFO: [Synth 8-4471] merging register 'inst/i0/i1/tap[46].shift_reg_reg[7:0]' into 'inst/i0/i1/tap[46].shift_reg_reg[7:0]' [D:/work/radar_course/lesson_6/vivado/iq_mod_zc706/iq_mod_zc706.srcs/sources_1/imports/hdl/fir_sync.v:78]
+INFO: [Synth 8-4471] merging register 'inst/i0/i1/tap[50].shift_reg_reg[7:0]' into 'inst/i0/i1/tap[50].shift_reg_reg[7:0]' [D:/work/radar_course/lesson_6/vivado/iq_mod_zc706/iq_mod_zc706.srcs/sources_1/imports/hdl/fir_sync.v:78]
+INFO: [Synth 8-4471] merging register 'inst/i0/i1/tap[54].shift_reg_reg[7:0]' into 'inst/i0/i1/tap[54].shift_reg_reg[7:0]' [D:/work/radar_course/lesson_6/vivado/iq_mod_zc706/iq_mod_zc706.srcs/sources_1/imports/hdl/fir_sync.v:78]
+INFO: [Synth 8-4471] merging register 'inst/i1/i1/tap[0].shift_reg_reg[7:0]' into 'inst/i1/i1/tap[0].shift_reg_reg[7:0]' [D:/work/radar_course/lesson_6/vivado/iq_mod_zc706/iq_mod_zc706.srcs/sources_1/imports/hdl/fir_sync.v:72]
+INFO: [Synth 8-4471] merging register 'inst/i1/i1/tap[0].shift_reg_reg[7:0]' into 'inst/i1/i1/tap[0].shift_reg_reg[7:0]' [D:/work/radar_course/lesson_6/vivado/iq_mod_zc706/iq_mod_zc706.srcs/sources_1/imports/hdl/fir_sync.v:72]
+INFO: [Synth 8-4471] merging register 'inst/i1/i1/tap[2].shift_reg_reg[7:0]' into 'inst/i1/i1/tap[2].shift_reg_reg[7:0]' [D:/work/radar_course/lesson_6/vivado/iq_mod_zc706/iq_mod_zc706.srcs/sources_1/imports/hdl/fir_sync.v:78]
+INFO: [Synth 8-4471] merging register 'inst/i1/i1/tap[6].shift_reg_reg[7:0]' into 'inst/i1/i1/tap[6].shift_reg_reg[7:0]' [D:/work/radar_course/lesson_6/vivado/iq_mod_zc706/iq_mod_zc706.srcs/sources_1/imports/hdl/fir_sync.v:78]
+INFO: [Synth 8-4471] merging register 'inst/i1/i1/tap[10].shift_reg_reg[7:0]' into 'inst/i1/i1/tap[10].shift_reg_reg[7:0]' [D:/work/radar_course/lesson_6/vivado/iq_mod_zc706/iq_mod_zc706.srcs/sources_1/imports/hdl/fir_sync.v:78]
+INFO: [Synth 8-4471] merging register 'inst/i1/i1/tap[14].shift_reg_reg[7:0]' into 'inst/i1/i1/tap[14].shift_reg_reg[7:0]' [D:/work/radar_course/lesson_6/vivado/iq_mod_zc706/iq_mod_zc706.srcs/sources_1/imports/hdl/fir_sync.v:78]
+INFO: [Synth 8-4471] merging register 'inst/i1/i1/tap[18].shift_reg_reg[7:0]' into 'inst/i1/i1/tap[18].shift_reg_reg[7:0]' [D:/work/radar_course/lesson_6/vivado/iq_mod_zc706/iq_mod_zc706.srcs/sources_1/imports/hdl/fir_sync.v:78]
+INFO: [Synth 8-4471] merging register 'inst/i1/i1/tap[22].shift_reg_reg[7:0]' into 'inst/i1/i1/tap[22].shift_reg_reg[7:0]' [D:/work/radar_course/lesson_6/vivado/iq_mod_zc706/iq_mod_zc706.srcs/sources_1/imports/hdl/fir_sync.v:78]
+INFO: [Synth 8-4471] merging register 'inst/i1/i1/tap[26].shift_reg_reg[7:0]' into 'inst/i1/i1/tap[26].shift_reg_reg[7:0]' [D:/work/radar_course/lesson_6/vivado/iq_mod_zc706/iq_mod_zc706.srcs/sources_1/imports/hdl/fir_sync.v:78]
+INFO: [Synth 8-4471] merging register 'inst/i1/i1/tap[30].shift_reg_reg[7:0]' into 'inst/i1/i1/tap[30].shift_reg_reg[7:0]' [D:/work/radar_course/lesson_6/vivado/iq_mod_zc706/iq_mod_zc706.srcs/sources_1/imports/hdl/fir_sync.v:78]
+INFO: [Synth 8-4471] merging register 'inst/i1/i1/tap[34].shift_reg_reg[7:0]' into 'inst/i1/i1/tap[34].shift_reg_reg[7:0]' [D:/work/radar_course/lesson_6/vivado/iq_mod_zc706/iq_mod_zc706.srcs/sources_1/imports/hdl/fir_sync.v:78]
+INFO: [Synth 8-4471] merging register 'inst/i1/i1/tap[38].shift_reg_reg[7:0]' into 'inst/i1/i1/tap[38].shift_reg_reg[7:0]' [D:/work/radar_course/lesson_6/vivado/iq_mod_zc706/iq_mod_zc706.srcs/sources_1/imports/hdl/fir_sync.v:78]
+INFO: [Synth 8-4471] merging register 'inst/i1/i1/tap[42].shift_reg_reg[7:0]' into 'inst/i1/i1/tap[42].shift_reg_reg[7:0]' [D:/work/radar_course/lesson_6/vivado/iq_mod_zc706/iq_mod_zc706.srcs/sources_1/imports/hdl/fir_sync.v:78]
+INFO: [Synth 8-4471] merging register 'inst/i1/i1/tap[46].shift_reg_reg[7:0]' into 'inst/i1/i1/tap[46].shift_reg_reg[7:0]' [D:/work/radar_course/lesson_6/vivado/iq_mod_zc706/iq_mod_zc706.srcs/sources_1/imports/hdl/fir_sync.v:78]
+INFO: [Synth 8-4471] merging register 'inst/i1/i1/tap[50].shift_reg_reg[7:0]' into 'inst/i1/i1/tap[50].shift_reg_reg[7:0]' [D:/work/radar_course/lesson_6/vivado/iq_mod_zc706/iq_mod_zc706.srcs/sources_1/imports/hdl/fir_sync.v:78]
+INFO: [Synth 8-4471] merging register 'inst/i1/i1/tap[54].shift_reg_reg[7:0]' into 'inst/i1/i1/tap[54].shift_reg_reg[7:0]' [D:/work/radar_course/lesson_6/vivado/iq_mod_zc706/iq_mod_zc706.srcs/sources_1/imports/hdl/fir_sync.v:78]
+INFO: [Synth 8-4471] merging register 'inst/i0/i1/tap[1].shift_reg_reg[7:0]' into 'inst/i0/i1/tap[1].shift_reg_reg[7:0]' [D:/work/radar_course/lesson_6/vivado/iq_mod_zc706/iq_mod_zc706.srcs/sources_1/imports/hdl/fir_sync.v:78]
+INFO: [Synth 8-4471] merging register 'inst/i0/i1/tap[3].shift_reg_reg[7:0]' into 'inst/i0/i1/tap[3].shift_reg_reg[7:0]' [D:/work/radar_course/lesson_6/vivado/iq_mod_zc706/iq_mod_zc706.srcs/sources_1/imports/hdl/fir_sync.v:78]
+INFO: [Synth 8-4471] merging register 'inst/i0/i1/tap[7].shift_reg_reg[7:0]' into 'inst/i0/i1/tap[7].shift_reg_reg[7:0]' [D:/work/radar_course/lesson_6/vivado/iq_mod_zc706/iq_mod_zc706.srcs/sources_1/imports/hdl/fir_sync.v:78]
+INFO: [Synth 8-4471] merging register 'inst/i0/i1/tap[11].shift_reg_reg[7:0]' into 'inst/i0/i1/tap[11].shift_reg_reg[7:0]' [D:/work/radar_course/lesson_6/vivado/iq_mod_zc706/iq_mod_zc706.srcs/sources_1/imports/hdl/fir_sync.v:78]
+INFO: [Synth 8-4471] merging register 'inst/i0/i1/tap[15].shift_reg_reg[7:0]' into 'inst/i0/i1/tap[15].shift_reg_reg[7:0]' [D:/work/radar_course/lesson_6/vivado/iq_mod_zc706/iq_mod_zc706.srcs/sources_1/imports/hdl/fir_sync.v:78]
+INFO: [Synth 8-4471] merging register 'inst/i0/i1/tap[19].shift_reg_reg[7:0]' into 'inst/i0/i1/tap[19].shift_reg_reg[7:0]' [D:/work/radar_course/lesson_6/vivado/iq_mod_zc706/iq_mod_zc706.srcs/sources_1/imports/hdl/fir_sync.v:78]
+INFO: [Synth 8-4471] merging register 'inst/i0/i1/tap[23].shift_reg_reg[7:0]' into 'inst/i0/i1/tap[23].shift_reg_reg[7:0]' [D:/work/radar_course/lesson_6/vivado/iq_mod_zc706/iq_mod_zc706.srcs/sources_1/imports/hdl/fir_sync.v:78]
+INFO: [Synth 8-4471] merging register 'inst/i0/i1/tap[27].shift_reg_reg[7:0]' into 'inst/i0/i1/tap[27].shift_reg_reg[7:0]' [D:/work/radar_course/lesson_6/vivado/iq_mod_zc706/iq_mod_zc706.srcs/sources_1/imports/hdl/fir_sync.v:78]
+INFO: [Synth 8-4471] merging register 'inst/i0/i1/tap[31].shift_reg_reg[7:0]' into 'inst/i0/i1/tap[31].shift_reg_reg[7:0]' [D:/work/radar_course/lesson_6/vivado/iq_mod_zc706/iq_mod_zc706.srcs/sources_1/imports/hdl/fir_sync.v:78]
+INFO: [Synth 8-4471] merging register 'inst/i0/i1/tap[35].shift_reg_reg[7:0]' into 'inst/i0/i1/tap[35].shift_reg_reg[7:0]' [D:/work/radar_course/lesson_6/vivado/iq_mod_zc706/iq_mod_zc706.srcs/sources_1/imports/hdl/fir_sync.v:78]
+INFO: [Synth 8-4471] merging register 'inst/i0/i1/tap[39].shift_reg_reg[7:0]' into 'inst/i0/i1/tap[39].shift_reg_reg[7:0]' [D:/work/radar_course/lesson_6/vivado/iq_mod_zc706/iq_mod_zc706.srcs/sources_1/imports/hdl/fir_sync.v:78]
+INFO: [Synth 8-4471] merging register 'inst/i0/i1/tap[43].shift_reg_reg[7:0]' into 'inst/i0/i1/tap[43].shift_reg_reg[7:0]' [D:/work/radar_course/lesson_6/vivado/iq_mod_zc706/iq_mod_zc706.srcs/sources_1/imports/hdl/fir_sync.v:78]
+INFO: [Synth 8-4471] merging register 'inst/i0/i1/tap[47].shift_reg_reg[7:0]' into 'inst/i0/i1/tap[47].shift_reg_reg[7:0]' [D:/work/radar_course/lesson_6/vivado/iq_mod_zc706/iq_mod_zc706.srcs/sources_1/imports/hdl/fir_sync.v:78]
+INFO: [Synth 8-4471] merging register 'inst/i0/i1/tap[51].shift_reg_reg[7:0]' into 'inst/i0/i1/tap[51].shift_reg_reg[7:0]' [D:/work/radar_course/lesson_6/vivado/iq_mod_zc706/iq_mod_zc706.srcs/sources_1/imports/hdl/fir_sync.v:78]
+INFO: [Synth 8-4471] merging register 'inst/i0/i1/tap[55].shift_reg_reg[7:0]' into 'inst/i0/i1/tap[55].shift_reg_reg[7:0]' [D:/work/radar_course/lesson_6/vivado/iq_mod_zc706/iq_mod_zc706.srcs/sources_1/imports/hdl/fir_sync.v:78]
+INFO: [Synth 8-4471] merging register 'inst/i1/i1/tap[1].shift_reg_reg[7:0]' into 'inst/i1/i1/tap[1].shift_reg_reg[7:0]' [D:/work/radar_course/lesson_6/vivado/iq_mod_zc706/iq_mod_zc706.srcs/sources_1/imports/hdl/fir_sync.v:78]
+INFO: [Synth 8-4471] merging register 'inst/i1/i1/tap[3].shift_reg_reg[7:0]' into 'inst/i1/i1/tap[3].shift_reg_reg[7:0]' [D:/work/radar_course/lesson_6/vivado/iq_mod_zc706/iq_mod_zc706.srcs/sources_1/imports/hdl/fir_sync.v:78]
+INFO: [Synth 8-4471] merging register 'inst/i1/i1/tap[7].shift_reg_reg[7:0]' into 'inst/i1/i1/tap[7].shift_reg_reg[7:0]' [D:/work/radar_course/lesson_6/vivado/iq_mod_zc706/iq_mod_zc706.srcs/sources_1/imports/hdl/fir_sync.v:78]
+INFO: [Synth 8-4471] merging register 'inst/i1/i1/tap[11].shift_reg_reg[7:0]' into 'inst/i1/i1/tap[11].shift_reg_reg[7:0]' [D:/work/radar_course/lesson_6/vivado/iq_mod_zc706/iq_mod_zc706.srcs/sources_1/imports/hdl/fir_sync.v:78]
+INFO: [Synth 8-4471] merging register 'inst/i1/i1/tap[15].shift_reg_reg[7:0]' into 'inst/i1/i1/tap[15].shift_reg_reg[7:0]' [D:/work/radar_course/lesson_6/vivado/iq_mod_zc706/iq_mod_zc706.srcs/sources_1/imports/hdl/fir_sync.v:78]
+INFO: [Synth 8-4471] merging register 'inst/i1/i1/tap[19].shift_reg_reg[7:0]' into 'inst/i1/i1/tap[19].shift_reg_reg[7:0]' [D:/work/radar_course/lesson_6/vivado/iq_mod_zc706/iq_mod_zc706.srcs/sources_1/imports/hdl/fir_sync.v:78]
+INFO: [Synth 8-4471] merging register 'inst/i1/i1/tap[23].shift_reg_reg[7:0]' into 'inst/i1/i1/tap[23].shift_reg_reg[7:0]' [D:/work/radar_course/lesson_6/vivado/iq_mod_zc706/iq_mod_zc706.srcs/sources_1/imports/hdl/fir_sync.v:78]
+INFO: [Synth 8-4471] merging register 'inst/i1/i1/tap[27].shift_reg_reg[7:0]' into 'inst/i1/i1/tap[27].shift_reg_reg[7:0]' [D:/work/radar_course/lesson_6/vivado/iq_mod_zc706/iq_mod_zc706.srcs/sources_1/imports/hdl/fir_sync.v:78]
+INFO: [Synth 8-4471] merging register 'inst/i1/i1/tap[31].shift_reg_reg[7:0]' into 'inst/i1/i1/tap[31].shift_reg_reg[7:0]' [D:/work/radar_course/lesson_6/vivado/iq_mod_zc706/iq_mod_zc706.srcs/sources_1/imports/hdl/fir_sync.v:78]
+INFO: [Synth 8-4471] merging register 'inst/i1/i1/tap[35].shift_reg_reg[7:0]' into 'inst/i1/i1/tap[35].shift_reg_reg[7:0]' [D:/work/radar_course/lesson_6/vivado/iq_mod_zc706/iq_mod_zc706.srcs/sources_1/imports/hdl/fir_sync.v:78]
+INFO: [Synth 8-4471] merging register 'inst/i1/i1/tap[39].shift_reg_reg[7:0]' into 'inst/i1/i1/tap[39].shift_reg_reg[7:0]' [D:/work/radar_course/lesson_6/vivado/iq_mod_zc706/iq_mod_zc706.srcs/sources_1/imports/hdl/fir_sync.v:78]
+INFO: [Synth 8-4471] merging register 'inst/i1/i1/tap[43].shift_reg_reg[7:0]' into 'inst/i1/i1/tap[43].shift_reg_reg[7:0]' [D:/work/radar_course/lesson_6/vivado/iq_mod_zc706/iq_mod_zc706.srcs/sources_1/imports/hdl/fir_sync.v:78]
+INFO: [Synth 8-4471] merging register 'inst/i1/i1/tap[47].shift_reg_reg[7:0]' into 'inst/i1/i1/tap[47].shift_reg_reg[7:0]' [D:/work/radar_course/lesson_6/vivado/iq_mod_zc706/iq_mod_zc706.srcs/sources_1/imports/hdl/fir_sync.v:78]
+INFO: [Synth 8-4471] merging register 'inst/i1/i1/tap[51].shift_reg_reg[7:0]' into 'inst/i1/i1/tap[51].shift_reg_reg[7:0]' [D:/work/radar_course/lesson_6/vivado/iq_mod_zc706/iq_mod_zc706.srcs/sources_1/imports/hdl/fir_sync.v:78]
+INFO: [Synth 8-4471] merging register 'inst/i1/i1/tap[55].shift_reg_reg[7:0]' into 'inst/i1/i1/tap[55].shift_reg_reg[7:0]' [D:/work/radar_course/lesson_6/vivado/iq_mod_zc706/iq_mod_zc706.srcs/sources_1/imports/hdl/fir_sync.v:78]
+INFO: [Synth 8-4471] merging register 'inst/i0/i1/tap[1].shift_reg_reg[7:0]' into 'inst/i0/i1/tap[1].shift_reg_reg[7:0]' [D:/work/radar_course/lesson_6/vivado/iq_mod_zc706/iq_mod_zc706.srcs/sources_1/imports/hdl/fir_sync.v:78]
+INFO: [Synth 8-4471] merging register 'inst/i0/i1/tap[4].shift_reg_reg[7:0]' into 'inst/i0/i1/tap[4].shift_reg_reg[7:0]' [D:/work/radar_course/lesson_6/vivado/iq_mod_zc706/iq_mod_zc706.srcs/sources_1/imports/hdl/fir_sync.v:78]
+INFO: [Synth 8-4471] merging register 'inst/i0/i1/tap[8].shift_reg_reg[7:0]' into 'inst/i0/i1/tap[8].shift_reg_reg[7:0]' [D:/work/radar_course/lesson_6/vivado/iq_mod_zc706/iq_mod_zc706.srcs/sources_1/imports/hdl/fir_sync.v:78]
+INFO: [Synth 8-4471] merging register 'inst/i0/i1/tap[12].shift_reg_reg[7:0]' into 'inst/i0/i1/tap[12].shift_reg_reg[7:0]' [D:/work/radar_course/lesson_6/vivado/iq_mod_zc706/iq_mod_zc706.srcs/sources_1/imports/hdl/fir_sync.v:78]
+INFO: [Synth 8-4471] merging register 'inst/i0/i1/tap[16].shift_reg_reg[7:0]' into 'inst/i0/i1/tap[16].shift_reg_reg[7:0]' [D:/work/radar_course/lesson_6/vivado/iq_mod_zc706/iq_mod_zc706.srcs/sources_1/imports/hdl/fir_sync.v:78]
+INFO: [Synth 8-4471] merging register 'inst/i0/i1/tap[20].shift_reg_reg[7:0]' into 'inst/i0/i1/tap[20].shift_reg_reg[7:0]' [D:/work/radar_course/lesson_6/vivado/iq_mod_zc706/iq_mod_zc706.srcs/sources_1/imports/hdl/fir_sync.v:78]
+INFO: [Synth 8-4471] merging register 'inst/i0/i1/tap[24].shift_reg_reg[7:0]' into 'inst/i0/i1/tap[24].shift_reg_reg[7:0]' [D:/work/radar_course/lesson_6/vivado/iq_mod_zc706/iq_mod_zc706.srcs/sources_1/imports/hdl/fir_sync.v:78]
+INFO: [Synth 8-4471] merging register 'inst/i0/i1/tap[28].shift_reg_reg[7:0]' into 'inst/i0/i1/tap[28].shift_reg_reg[7:0]' [D:/work/radar_course/lesson_6/vivado/iq_mod_zc706/iq_mod_zc706.srcs/sources_1/imports/hdl/fir_sync.v:78]
+INFO: [Synth 8-4471] merging register 'inst/i0/i1/tap[32].shift_reg_reg[7:0]' into 'inst/i0/i1/tap[32].shift_reg_reg[7:0]' [D:/work/radar_course/lesson_6/vivado/iq_mod_zc706/iq_mod_zc706.srcs/sources_1/imports/hdl/fir_sync.v:78]
+INFO: [Synth 8-4471] merging register 'inst/i0/i1/tap[36].shift_reg_reg[7:0]' into 'inst/i0/i1/tap[36].shift_reg_reg[7:0]' [D:/work/radar_course/lesson_6/vivado/iq_mod_zc706/iq_mod_zc706.srcs/sources_1/imports/hdl/fir_sync.v:78]
+INFO: [Synth 8-4471] merging register 'inst/i0/i1/tap[40].shift_reg_reg[7:0]' into 'inst/i0/i1/tap[40].shift_reg_reg[7:0]' [D:/work/radar_course/lesson_6/vivado/iq_mod_zc706/iq_mod_zc706.srcs/sources_1/imports/hdl/fir_sync.v:78]
+INFO: [Synth 8-4471] merging register 'inst/i0/i1/tap[44].shift_reg_reg[7:0]' into 'inst/i0/i1/tap[44].shift_reg_reg[7:0]' [D:/work/radar_course/lesson_6/vivado/iq_mod_zc706/iq_mod_zc706.srcs/sources_1/imports/hdl/fir_sync.v:78]
+INFO: [Synth 8-4471] merging register 'inst/i0/i1/tap[48].shift_reg_reg[7:0]' into 'inst/i0/i1/tap[48].shift_reg_reg[7:0]' [D:/work/radar_course/lesson_6/vivado/iq_mod_zc706/iq_mod_zc706.srcs/sources_1/imports/hdl/fir_sync.v:78]
+INFO: [Synth 8-4471] merging register 'inst/i0/i1/tap[52].shift_reg_reg[7:0]' into 'inst/i0/i1/tap[52].shift_reg_reg[7:0]' [D:/work/radar_course/lesson_6/vivado/iq_mod_zc706/iq_mod_zc706.srcs/sources_1/imports/hdl/fir_sync.v:78]
+INFO: [Synth 8-4471] merging register 'inst/i0/i1/tap[56].shift_reg_reg[7:0]' into 'inst/i0/i1/tap[56].shift_reg_reg[7:0]' [D:/work/radar_course/lesson_6/vivado/iq_mod_zc706/iq_mod_zc706.srcs/sources_1/imports/hdl/fir_sync.v:78]
+INFO: [Synth 8-4471] merging register 'inst/i1/i1/tap[1].shift_reg_reg[7:0]' into 'inst/i1/i1/tap[1].shift_reg_reg[7:0]' [D:/work/radar_course/lesson_6/vivado/iq_mod_zc706/iq_mod_zc706.srcs/sources_1/imports/hdl/fir_sync.v:78]
+INFO: [Synth 8-4471] merging register 'inst/i1/i1/tap[4].shift_reg_reg[7:0]' into 'inst/i1/i1/tap[4].shift_reg_reg[7:0]' [D:/work/radar_course/lesson_6/vivado/iq_mod_zc706/iq_mod_zc706.srcs/sources_1/imports/hdl/fir_sync.v:78]
+INFO: [Synth 8-4471] merging register 'inst/i1/i1/tap[8].shift_reg_reg[7:0]' into 'inst/i1/i1/tap[8].shift_reg_reg[7:0]' [D:/work/radar_course/lesson_6/vivado/iq_mod_zc706/iq_mod_zc706.srcs/sources_1/imports/hdl/fir_sync.v:78]
+INFO: [Synth 8-4471] merging register 'inst/i1/i1/tap[12].shift_reg_reg[7:0]' into 'inst/i1/i1/tap[12].shift_reg_reg[7:0]' [D:/work/radar_course/lesson_6/vivado/iq_mod_zc706/iq_mod_zc706.srcs/sources_1/imports/hdl/fir_sync.v:78]
+INFO: [Synth 8-4471] merging register 'inst/i1/i1/tap[16].shift_reg_reg[7:0]' into 'inst/i1/i1/tap[16].shift_reg_reg[7:0]' [D:/work/radar_course/lesson_6/vivado/iq_mod_zc706/iq_mod_zc706.srcs/sources_1/imports/hdl/fir_sync.v:78]
+INFO: [Synth 8-4471] merging register 'inst/i1/i1/tap[20].shift_reg_reg[7:0]' into 'inst/i1/i1/tap[20].shift_reg_reg[7:0]' [D:/work/radar_course/lesson_6/vivado/iq_mod_zc706/iq_mod_zc706.srcs/sources_1/imports/hdl/fir_sync.v:78]
+INFO: [Synth 8-4471] merging register 'inst/i1/i1/tap[24].shift_reg_reg[7:0]' into 'inst/i1/i1/tap[24].shift_reg_reg[7:0]' [D:/work/radar_course/lesson_6/vivado/iq_mod_zc706/iq_mod_zc706.srcs/sources_1/imports/hdl/fir_sync.v:78]
+INFO: [Synth 8-4471] merging register 'inst/i1/i1/tap[28].shift_reg_reg[7:0]' into 'inst/i1/i1/tap[28].shift_reg_reg[7:0]' [D:/work/radar_course/lesson_6/vivado/iq_mod_zc706/iq_mod_zc706.srcs/sources_1/imports/hdl/fir_sync.v:78]
+INFO: [Synth 8-4471] merging register 'inst/i1/i1/tap[32].shift_reg_reg[7:0]' into 'inst/i1/i1/tap[32].shift_reg_reg[7:0]' [D:/work/radar_course/lesson_6/vivado/iq_mod_zc706/iq_mod_zc706.srcs/sources_1/imports/hdl/fir_sync.v:78]
+INFO: [Synth 8-4471] merging register 'inst/i1/i1/tap[36].shift_reg_reg[7:0]' into 'inst/i1/i1/tap[36].shift_reg_reg[7:0]' [D:/work/radar_course/lesson_6/vivado/iq_mod_zc706/iq_mod_zc706.srcs/sources_1/imports/hdl/fir_sync.v:78]
+INFO: [Synth 8-4471] merging register 'inst/i1/i1/tap[40].shift_reg_reg[7:0]' into 'inst/i1/i1/tap[40].shift_reg_reg[7:0]' [D:/work/radar_course/lesson_6/vivado/iq_mod_zc706/iq_mod_zc706.srcs/sources_1/imports/hdl/fir_sync.v:78]
+INFO: [Synth 8-4471] merging register 'inst/i1/i1/tap[44].shift_reg_reg[7:0]' into 'inst/i1/i1/tap[44].shift_reg_reg[7:0]' [D:/work/radar_course/lesson_6/vivado/iq_mod_zc706/iq_mod_zc706.srcs/sources_1/imports/hdl/fir_sync.v:78]
+INFO: [Synth 8-4471] merging register 'inst/i1/i1/tap[48].shift_reg_reg[7:0]' into 'inst/i1/i1/tap[48].shift_reg_reg[7:0]' [D:/work/radar_course/lesson_6/vivado/iq_mod_zc706/iq_mod_zc706.srcs/sources_1/imports/hdl/fir_sync.v:78]
+INFO: [Synth 8-4471] merging register 'inst/i1/i1/tap[52].shift_reg_reg[7:0]' into 'inst/i1/i1/tap[52].shift_reg_reg[7:0]' [D:/work/radar_course/lesson_6/vivado/iq_mod_zc706/iq_mod_zc706.srcs/sources_1/imports/hdl/fir_sync.v:78]
+INFO: [Synth 8-4471] merging register 'inst/i1/i1/tap[56].shift_reg_reg[7:0]' into 'inst/i1/i1/tap[56].shift_reg_reg[7:0]' [D:/work/radar_course/lesson_6/vivado/iq_mod_zc706/iq_mod_zc706.srcs/sources_1/imports/hdl/fir_sync.v:78]
+INFO: [Synth 8-4471] merging register 'inst/i0/i1/tap[2].shift_reg_reg[7:0]' into 'inst/i0/i1/tap[2].shift_reg_reg[7:0]' [D:/work/radar_course/lesson_6/vivado/iq_mod_zc706/iq_mod_zc706.srcs/sources_1/imports/hdl/fir_sync.v:78]
+INFO: [Synth 8-4471] merging register 'inst/i0/i1/tap[5].shift_reg_reg[7:0]' into 'inst/i0/i1/tap[5].shift_reg_reg[7:0]' [D:/work/radar_course/lesson_6/vivado/iq_mod_zc706/iq_mod_zc706.srcs/sources_1/imports/hdl/fir_sync.v:78]
+INFO: [Synth 8-4471] merging register 'inst/i0/i1/tap[9].shift_reg_reg[7:0]' into 'inst/i0/i1/tap[9].shift_reg_reg[7:0]' [D:/work/radar_course/lesson_6/vivado/iq_mod_zc706/iq_mod_zc706.srcs/sources_1/imports/hdl/fir_sync.v:78]
+INFO: [Synth 8-4471] merging register 'inst/i0/i1/tap[13].shift_reg_reg[7:0]' into 'inst/i0/i1/tap[13].shift_reg_reg[7:0]' [D:/work/radar_course/lesson_6/vivado/iq_mod_zc706/iq_mod_zc706.srcs/sources_1/imports/hdl/fir_sync.v:78]
+INFO: [Synth 8-4471] merging register 'inst/i0/i1/tap[17].shift_reg_reg[7:0]' into 'inst/i0/i1/tap[17].shift_reg_reg[7:0]' [D:/work/radar_course/lesson_6/vivado/iq_mod_zc706/iq_mod_zc706.srcs/sources_1/imports/hdl/fir_sync.v:78]
+INFO: [Synth 8-4471] merging register 'inst/i0/i1/tap[21].shift_reg_reg[7:0]' into 'inst/i0/i1/tap[21].shift_reg_reg[7:0]' [D:/work/radar_course/lesson_6/vivado/iq_mod_zc706/iq_mod_zc706.srcs/sources_1/imports/hdl/fir_sync.v:78]
+INFO: [Synth 8-4471] merging register 'inst/i0/i1/tap[25].shift_reg_reg[7:0]' into 'inst/i0/i1/tap[25].shift_reg_reg[7:0]' [D:/work/radar_course/lesson_6/vivado/iq_mod_zc706/iq_mod_zc706.srcs/sources_1/imports/hdl/fir_sync.v:78]
+INFO: [Synth 8-4471] merging register 'inst/i0/i1/tap[29].shift_reg_reg[7:0]' into 'inst/i0/i1/tap[29].shift_reg_reg[7:0]' [D:/work/radar_course/lesson_6/vivado/iq_mod_zc706/iq_mod_zc706.srcs/sources_1/imports/hdl/fir_sync.v:78]
+INFO: [Common 17-14] Message 'Synth 8-4471' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+DSP Report: Generating DSP inst/i0/i1/tap[2].mult_reg[2], operation Mode is: ((A:0xac)*B'')'.
+DSP Report: register inst/i0/i1/tap[1].shift_reg_reg is absorbed into DSP inst/i0/i1/tap[2].mult_reg[2].
+DSP Report: register inst/i0/i1/tap[2].shift_reg_reg is absorbed into DSP inst/i0/i1/tap[2].mult_reg[2].
+DSP Report: register inst/i0/i1/tap[2].mult_reg[2] is absorbed into DSP inst/i0/i1/tap[2].mult_reg[2].
+DSP Report: operator p_0_out is absorbed into DSP inst/i0/i1/tap[2].mult_reg[2].
+DSP Report: Generating DSP inst/i0/i1/tap[4].mult_reg[4], operation Mode is: ((A:0xbf)*BCIN'')'.
+DSP Report: register inst/i0/i1/tap[3].shift_reg_reg is absorbed into DSP inst/i0/i1/tap[4].mult_reg[4].
+DSP Report: register inst/i0/i1/tap[4].shift_reg_reg is absorbed into DSP inst/i0/i1/tap[4].mult_reg[4].
+DSP Report: register inst/i0/i1/tap[4].mult_reg[4] is absorbed into DSP inst/i0/i1/tap[4].mult_reg[4].
+DSP Report: operator p_0_out is absorbed into DSP inst/i0/i1/tap[4].mult_reg[4].
+DSP Report: Generating DSP inst/i0/i1/tap[2].acc_reg[2], operation Mode is: (PCIN+((A:0xac)*BCIN2)')'.
+DSP Report: register inst/i0/i1/tap[5].shift_reg_reg is absorbed into DSP inst/i0/i1/tap[2].acc_reg[2].
+DSP Report: register inst/i0/i1/tap[2].acc_reg[2] is absorbed into DSP inst/i0/i1/tap[2].acc_reg[2].
+DSP Report: register inst/i0/i1/tap[5].mult_reg[5] is absorbed into DSP inst/i0/i1/tap[2].acc_reg[2].
+DSP Report: operator p_0_out is absorbed into DSP inst/i0/i1/tap[2].acc_reg[2].
+DSP Report: operator p_0_out is absorbed into DSP inst/i0/i1/tap[2].acc_reg[2].
+DSP Report: Generating DSP inst/i0/i1/tap[6].mult_reg[6], operation Mode is: ((A:0x80)*BCIN2)'.
+DSP Report: register inst/i0/i1/tap[6].shift_reg_reg is absorbed into DSP inst/i0/i1/tap[6].mult_reg[6].
+DSP Report: register inst/i0/i1/tap[6].mult_reg[6] is absorbed into DSP inst/i0/i1/tap[6].mult_reg[6].
+DSP Report: operator p_0_out is absorbed into DSP inst/i0/i1/tap[6].mult_reg[6].
+DSP Report: Generating DSP inst/i0/i1/tap[8].mult_reg[8], operation Mode is: (A''*(B:0x3ffdc))'.
+DSP Report: register inst/i0/i1/tap[7].shift_reg_reg is absorbed into DSP inst/i0/i1/tap[8].mult_reg[8].
+DSP Report: register inst/i0/i1/tap[8].shift_reg_reg is absorbed into DSP inst/i0/i1/tap[8].mult_reg[8].
+DSP Report: register inst/i0/i1/tap[8].mult_reg[8] is absorbed into DSP inst/i0/i1/tap[8].mult_reg[8].
+DSP Report: operator p_0_out is absorbed into DSP inst/i0/i1/tap[8].mult_reg[8].
+DSP Report: Generating DSP inst/i0/i1/tap[4].acc_reg[4], operation Mode is: (PCIN+((A:0x3fffff65)*B'')')'.
+DSP Report: register inst/i0/i1/tap[8].shift_reg_reg is absorbed into DSP inst/i0/i1/tap[4].acc_reg[4].
+DSP Report: register inst/i0/i1/tap[9].shift_reg_reg is absorbed into DSP inst/i0/i1/tap[4].acc_reg[4].
+DSP Report: register inst/i0/i1/tap[4].acc_reg[4] is absorbed into DSP inst/i0/i1/tap[4].acc_reg[4].
+DSP Report: register inst/i0/i1/tap[9].mult_reg[9] is absorbed into DSP inst/i0/i1/tap[4].acc_reg[4].
+DSP Report: operator p_0_out is absorbed into DSP inst/i0/i1/tap[4].acc_reg[4].
+DSP Report: operator p_0_out is absorbed into DSP inst/i0/i1/tap[4].acc_reg[4].
+DSP Report: Generating DSP inst/i0/i1/tap[10].mult_reg[10], operation Mode is: ((A:0x3ffffedf)*BCIN2)'.
+DSP Report: register inst/i0/i1/tap[10].shift_reg_reg is absorbed into DSP inst/i0/i1/tap[10].mult_reg[10].
+DSP Report: register inst/i0/i1/tap[10].mult_reg[10] is absorbed into DSP inst/i0/i1/tap[10].mult_reg[10].
+DSP Report: operator p_0_out is absorbed into DSP inst/i0/i1/tap[10].mult_reg[10].
+DSP Report: Generating DSP inst/i0/i1/tap[12].mult_reg[12], operation Mode is: ((A:0x3ffffdc6)*BCIN'')'.
+DSP Report: register inst/i0/i1/tap[11].shift_reg_reg is absorbed into DSP inst/i0/i1/tap[12].mult_reg[12].
+DSP Report: register inst/i0/i1/tap[12].shift_reg_reg is absorbed into DSP inst/i0/i1/tap[12].mult_reg[12].
+DSP Report: register inst/i0/i1/tap[12].mult_reg[12] is absorbed into DSP inst/i0/i1/tap[12].mult_reg[12].
+DSP Report: operator p_0_out is absorbed into DSP inst/i0/i1/tap[12].mult_reg[12].
+DSP Report: Generating DSP inst/i0/i1/tap[6].acc_reg[6], operation Mode is: (PCIN+((A:0x3ffffd4e)*BCIN2)')'.
+DSP Report: register inst/i0/i1/tap[13].shift_reg_reg is absorbed into DSP inst/i0/i1/tap[6].acc_reg[6].
+DSP Report: register inst/i0/i1/tap[6].acc_reg[6] is absorbed into DSP inst/i0/i1/tap[6].acc_reg[6].
+DSP Report: register inst/i0/i1/tap[13].mult_reg[13] is absorbed into DSP inst/i0/i1/tap[6].acc_reg[6].
+DSP Report: operator p_0_out is absorbed into DSP inst/i0/i1/tap[6].acc_reg[6].
+DSP Report: operator p_0_out is absorbed into DSP inst/i0/i1/tap[6].acc_reg[6].
+DSP Report: Generating DSP inst/i0/i1/tap[14].mult_reg[14], operation Mode is: ((A:0x3ffffcf7)*BCIN2)'.
+DSP Report: register inst/i0/i1/tap[14].shift_reg_reg is absorbed into DSP inst/i0/i1/tap[14].mult_reg[14].
+DSP Report: register inst/i0/i1/tap[14].mult_reg[14] is absorbed into DSP inst/i0/i1/tap[14].mult_reg[14].
+DSP Report: operator p_0_out is absorbed into DSP inst/i0/i1/tap[14].mult_reg[14].
+DSP Report: Generating DSP inst/i0/i1/tap[7].acc_reg[7], operation Mode is: (PCIN+((A:0x3ffffcd0)*BCIN2)')'.
+DSP Report: register inst/i0/i1/tap[15].shift_reg_reg is absorbed into DSP inst/i0/i1/tap[7].acc_reg[7].
+DSP Report: register inst/i0/i1/tap[7].acc_reg[7] is absorbed into DSP inst/i0/i1/tap[7].acc_reg[7].
+DSP Report: register inst/i0/i1/tap[15].mult_reg[15] is absorbed into DSP inst/i0/i1/tap[7].acc_reg[7].
+DSP Report: operator p_0_out is absorbed into DSP inst/i0/i1/tap[7].acc_reg[7].
+DSP Report: operator p_0_out is absorbed into DSP inst/i0/i1/tap[7].acc_reg[7].
+DSP Report: Generating DSP inst/i0/i1/tap[35].acc_reg[35], operation Mode is: (PCIN+A:B)'.
+DSP Report: register inst/i0/i1/tap[35].acc_reg[35] is absorbed into DSP inst/i0/i1/tap[35].acc_reg[35].
+DSP Report: operator p_0_out is absorbed into DSP inst/i0/i1/tap[35].acc_reg[35].
+DSP Report: Generating DSP inst/i0/i1/tap[16].mult_reg[16], operation Mode is: ((A:0x3ffffcea)*B'')'.
+DSP Report: register inst/i0/i1/tap[15].shift_reg_reg is absorbed into DSP inst/i0/i1/tap[16].mult_reg[16].
+DSP Report: register inst/i0/i1/tap[16].shift_reg_reg is absorbed into DSP inst/i0/i1/tap[16].mult_reg[16].
+DSP Report: register inst/i0/i1/tap[16].mult_reg[16] is absorbed into DSP inst/i0/i1/tap[16].mult_reg[16].
+DSP Report: operator p_0_out is absorbed into DSP inst/i0/i1/tap[16].mult_reg[16].
+DSP Report: Generating DSP inst/i0/i1/tap[8].acc_reg[8], operation Mode is: (PCIN+((A:0x3ffffd51)*BCIN2)')'.
+DSP Report: register inst/i0/i1/tap[17].shift_reg_reg is absorbed into DSP inst/i0/i1/tap[8].acc_reg[8].
+DSP Report: register inst/i0/i1/tap[8].acc_reg[8] is absorbed into DSP inst/i0/i1/tap[8].acc_reg[8].
+DSP Report: register inst/i0/i1/tap[17].mult_reg[17] is absorbed into DSP inst/i0/i1/tap[8].acc_reg[8].
+DSP Report: operator p_0_out is absorbed into DSP inst/i0/i1/tap[8].acc_reg[8].
+DSP Report: operator p_0_out is absorbed into DSP inst/i0/i1/tap[8].acc_reg[8].
+DSP Report: Generating DSP inst/i0/i1/tap[18].mult_reg[18], operation Mode is: ((A:0x3ffffe0e)*BCIN2)'.
+DSP Report: register inst/i0/i1/tap[18].shift_reg_reg is absorbed into DSP inst/i0/i1/tap[18].mult_reg[18].
+DSP Report: register inst/i0/i1/tap[18].mult_reg[18] is absorbed into DSP inst/i0/i1/tap[18].mult_reg[18].
+DSP Report: operator p_0_out is absorbed into DSP inst/i0/i1/tap[18].mult_reg[18].
+DSP Report: Generating DSP inst/i0/i1/tap[20].mult_reg[20], operation Mode is: ((A:0x9c)*BCIN'')'.
+DSP Report: register inst/i0/i1/tap[19].shift_reg_reg is absorbed into DSP inst/i0/i1/tap[20].mult_reg[20].
+DSP Report: register inst/i0/i1/tap[20].shift_reg_reg is absorbed into DSP inst/i0/i1/tap[20].mult_reg[20].
+DSP Report: register inst/i0/i1/tap[20].mult_reg[20] is absorbed into DSP inst/i0/i1/tap[20].mult_reg[20].
+DSP Report: operator p_0_out is absorbed into DSP inst/i0/i1/tap[20].mult_reg[20].
+DSP Report: Generating DSP inst/i0/i1/tap[10].acc_reg[10], operation Mode is: (PCIN+((A:0x266)*BCIN2)')'.
+DSP Report: register inst/i0/i1/tap[21].shift_reg_reg is absorbed into DSP inst/i0/i1/tap[10].acc_reg[10].
+DSP Report: register inst/i0/i1/tap[10].acc_reg[10] is absorbed into DSP inst/i0/i1/tap[10].acc_reg[10].
+DSP Report: register inst/i0/i1/tap[21].mult_reg[21] is absorbed into DSP inst/i0/i1/tap[10].acc_reg[10].
+DSP Report: operator p_0_out is absorbed into DSP inst/i0/i1/tap[10].acc_reg[10].
+DSP Report: operator p_0_out is absorbed into DSP inst/i0/i1/tap[10].acc_reg[10].
+DSP Report: Generating DSP inst/i0/i1/tap[22].mult_reg[22], operation Mode is: ((A:0x47b)*BCIN2)'.
+DSP Report: register inst/i0/i1/tap[22].shift_reg_reg is absorbed into DSP inst/i0/i1/tap[22].mult_reg[22].
+DSP Report: register inst/i0/i1/tap[22].mult_reg[22] is absorbed into DSP inst/i0/i1/tap[22].mult_reg[22].
+DSP Report: operator p_0_out is absorbed into DSP inst/i0/i1/tap[22].mult_reg[22].
+DSP Report: Generating DSP inst/i0/i1/tap[11].acc_reg[11], operation Mode is: (PCIN+((A:0x6c9)*BCIN2)')'.
+DSP Report: register inst/i0/i1/tap[23].shift_reg_reg is absorbed into DSP inst/i0/i1/tap[11].acc_reg[11].
+DSP Report: register inst/i0/i1/tap[11].acc_reg[11] is absorbed into DSP inst/i0/i1/tap[11].acc_reg[11].
+DSP Report: register inst/i0/i1/tap[23].mult_reg[23] is absorbed into DSP inst/i0/i1/tap[11].acc_reg[11].
+DSP Report: operator p_0_out is absorbed into DSP inst/i0/i1/tap[11].acc_reg[11].
+DSP Report: operator p_0_out is absorbed into DSP inst/i0/i1/tap[11].acc_reg[11].
+DSP Report: Generating DSP inst/i0/i1/tap[37].acc_reg[37], operation Mode is: (PCIN+A:B)'.
+DSP Report: register inst/i0/i1/tap[37].acc_reg[37] is absorbed into DSP inst/i0/i1/tap[37].acc_reg[37].
+DSP Report: operator p_0_out is absorbed into DSP inst/i0/i1/tap[37].acc_reg[37].
+DSP Report: Generating DSP inst/i0/i1/tap[28].mult_reg[28], operation Mode is: ((A:0x1243)*B'')'.
+DSP Report: register inst/i0/i1/tap[27].shift_reg_reg is absorbed into DSP inst/i0/i1/tap[28].mult_reg[28].
+DSP Report: register inst/i0/i1/tap[28].shift_reg_reg is absorbed into DSP inst/i0/i1/tap[28].mult_reg[28].
+DSP Report: register inst/i0/i1/tap[28].mult_reg[28] is absorbed into DSP inst/i0/i1/tap[28].mult_reg[28].
+DSP Report: operator p_0_out is absorbed into DSP inst/i0/i1/tap[28].mult_reg[28].
+DSP Report: Generating DSP inst/i0/i1/tap[14].acc_reg[14], operation Mode is: (PCIN+((A:0x13cd)*BCIN2)')'.
+DSP Report: register inst/i0/i1/tap[29].shift_reg_reg is absorbed into DSP inst/i0/i1/tap[14].acc_reg[14].
+DSP Report: register inst/i0/i1/tap[14].acc_reg[14] is absorbed into DSP inst/i0/i1/tap[14].acc_reg[14].
+DSP Report: register inst/i0/i1/tap[29].mult_reg[29] is absorbed into DSP inst/i0/i1/tap[14].acc_reg[14].
+DSP Report: operator p_0_out is absorbed into DSP inst/i0/i1/tap[14].acc_reg[14].
+DSP Report: operator p_0_out is absorbed into DSP inst/i0/i1/tap[14].acc_reg[14].
+DSP Report: Generating DSP inst/i0/i1/tap[30].mult_reg[30], operation Mode is: ((A:0x14e0)*BCIN2)'.
+DSP Report: register inst/i0/i1/tap[30].shift_reg_reg is absorbed into DSP inst/i0/i1/tap[30].mult_reg[30].
+DSP Report: register inst/i0/i1/tap[30].mult_reg[30] is absorbed into DSP inst/i0/i1/tap[30].mult_reg[30].
+DSP Report: operator p_0_out is absorbed into DSP inst/i0/i1/tap[30].mult_reg[30].
+DSP Report: Generating DSP inst/i0/i1/tap[15].acc_reg[15], operation Mode is: (PCIN+((A:0x156d)*BCIN2)')'.
+DSP Report: register inst/i0/i1/tap[31].shift_reg_reg is absorbed into DSP inst/i0/i1/tap[15].acc_reg[15].
+DSP Report: register inst/i0/i1/tap[15].acc_reg[15] is absorbed into DSP inst/i0/i1/tap[15].acc_reg[15].
+DSP Report: register inst/i0/i1/tap[31].mult_reg[31] is absorbed into DSP inst/i0/i1/tap[15].acc_reg[15].
+DSP Report: operator p_0_out is absorbed into DSP inst/i0/i1/tap[15].acc_reg[15].
+DSP Report: operator p_0_out is absorbed into DSP inst/i0/i1/tap[15].acc_reg[15].
+DSP Report: Generating DSP inst/i0/i1/tap[39].acc_reg[39], operation Mode is: (PCIN+A:B)'.
+DSP Report: register inst/i0/i1/tap[39].acc_reg[39] is absorbed into DSP inst/i0/i1/tap[39].acc_reg[39].
+DSP Report: operator p_0_out is absorbed into DSP inst/i0/i1/tap[39].acc_reg[39].
+DSP Report: Generating DSP inst/i0/i1/tap[24].mult_reg[24], operation Mode is: ((A:0x93a)*B'')'.
+DSP Report: register inst/i0/i1/tap[23].shift_reg_reg is absorbed into DSP inst/i0/i1/tap[24].mult_reg[24].
+DSP Report: register inst/i0/i1/tap[24].shift_reg_reg is absorbed into DSP inst/i0/i1/tap[24].mult_reg[24].
+DSP Report: register inst/i0/i1/tap[24].mult_reg[24] is absorbed into DSP inst/i0/i1/tap[24].mult_reg[24].
+DSP Report: operator p_0_out is absorbed into DSP inst/i0/i1/tap[24].mult_reg[24].
+DSP Report: Generating DSP inst/i0/i1/tap[12].acc_reg[12], operation Mode is: (PCIN+((A:0xbb5)*BCIN2)')'.
+DSP Report: register inst/i0/i1/tap[25].shift_reg_reg is absorbed into DSP inst/i0/i1/tap[12].acc_reg[12].
+DSP Report: register inst/i0/i1/tap[12].acc_reg[12] is absorbed into DSP inst/i0/i1/tap[12].acc_reg[12].
+DSP Report: register inst/i0/i1/tap[25].mult_reg[25] is absorbed into DSP inst/i0/i1/tap[12].acc_reg[12].
+DSP Report: operator p_0_out is absorbed into DSP inst/i0/i1/tap[12].acc_reg[12].
+DSP Report: operator p_0_out is absorbed into DSP inst/i0/i1/tap[12].acc_reg[12].
+DSP Report: Generating DSP inst/i0/i1/tap[26].mult_reg[26], operation Mode is: ((A:0xe1d)*BCIN2)'.
+DSP Report: register inst/i0/i1/tap[26].shift_reg_reg is absorbed into DSP inst/i0/i1/tap[26].mult_reg[26].
+DSP Report: register inst/i0/i1/tap[26].mult_reg[26] is absorbed into DSP inst/i0/i1/tap[26].mult_reg[26].
+DSP Report: operator p_0_out is absorbed into DSP inst/i0/i1/tap[26].mult_reg[26].
+DSP Report: Generating DSP inst/i0/i1/tap[13].acc_reg[13], operation Mode is: (PCIN+((A:0x1055)*BCIN2)')'.
+DSP Report: register inst/i0/i1/tap[27].shift_reg_reg is absorbed into DSP inst/i0/i1/tap[13].acc_reg[13].
+DSP Report: register inst/i0/i1/tap[13].acc_reg[13] is absorbed into DSP inst/i0/i1/tap[13].acc_reg[13].
+DSP Report: register inst/i0/i1/tap[27].mult_reg[27] is absorbed into DSP inst/i0/i1/tap[13].acc_reg[13].
+DSP Report: operator p_0_out is absorbed into DSP inst/i0/i1/tap[13].acc_reg[13].
+DSP Report: operator p_0_out is absorbed into DSP inst/i0/i1/tap[13].acc_reg[13].
+DSP Report: Generating DSP inst/i0/i1/tap[38].acc_reg[38], operation Mode is: (PCIN+A:B)'.
+DSP Report: register inst/i0/i1/tap[38].acc_reg[38] is absorbed into DSP inst/i0/i1/tap[38].acc_reg[38].
+DSP Report: operator p_0_out is absorbed into DSP inst/i0/i1/tap[38].acc_reg[38].
+DSP Report: Generating DSP inst/i0/i1/tap[51].acc_reg[51], operation Mode is: (PCIN+A:B)'.
+DSP Report: register inst/i0/i1/tap[51].acc_reg[51] is absorbed into DSP inst/i0/i1/tap[51].acc_reg[51].
+DSP Report: operator p_0_out is absorbed into DSP inst/i0/i1/tap[51].acc_reg[51].
+DSP Report: Generating DSP inst/i0/i1/tap[36].mult_reg[36], operation Mode is: ((A:0x1055)*B'')'.
+DSP Report: register inst/i0/i1/tap[35].shift_reg_reg is absorbed into DSP inst/i0/i1/tap[36].mult_reg[36].
+DSP Report: register inst/i0/i1/tap[36].shift_reg_reg is absorbed into DSP inst/i0/i1/tap[36].mult_reg[36].
+DSP Report: register inst/i0/i1/tap[36].mult_reg[36] is absorbed into DSP inst/i0/i1/tap[36].mult_reg[36].
+DSP Report: operator p_0_out is absorbed into DSP inst/i0/i1/tap[36].mult_reg[36].
+DSP Report: Generating DSP inst/i0/i1/tap[18].acc_reg[18], operation Mode is: (PCIN+((A:0xe1d)*BCIN2)')'.
+DSP Report: register inst/i0/i1/tap[37].shift_reg_reg is absorbed into DSP inst/i0/i1/tap[18].acc_reg[18].
+DSP Report: register inst/i0/i1/tap[18].acc_reg[18] is absorbed into DSP inst/i0/i1/tap[18].acc_reg[18].
+DSP Report: register inst/i0/i1/tap[37].mult_reg[37] is absorbed into DSP inst/i0/i1/tap[18].acc_reg[18].
+DSP Report: operator p_0_out is absorbed into DSP inst/i0/i1/tap[18].acc_reg[18].
+DSP Report: operator p_0_out is absorbed into DSP inst/i0/i1/tap[18].acc_reg[18].
+DSP Report: Generating DSP inst/i0/i1/tap[38].mult_reg[38], operation Mode is: ((A:0xbb5)*BCIN2)'.
+DSP Report: register inst/i0/i1/tap[38].shift_reg_reg is absorbed into DSP inst/i0/i1/tap[38].mult_reg[38].
+DSP Report: register inst/i0/i1/tap[38].mult_reg[38] is absorbed into DSP inst/i0/i1/tap[38].mult_reg[38].
+DSP Report: operator p_0_out is absorbed into DSP inst/i0/i1/tap[38].mult_reg[38].
+DSP Report: Generating DSP inst/i0/i1/tap[19].acc_reg[19], operation Mode is: (PCIN+((A:0x93a)*BCIN2)')'.
+DSP Report: register inst/i0/i1/tap[39].shift_reg_reg is absorbed into DSP inst/i0/i1/tap[19].acc_reg[19].
+DSP Report: register inst/i0/i1/tap[19].acc_reg[19] is absorbed into DSP inst/i0/i1/tap[19].acc_reg[19].
+DSP Report: register inst/i0/i1/tap[39].mult_reg[39] is absorbed into DSP inst/i0/i1/tap[19].acc_reg[19].
+DSP Report: operator p_0_out is absorbed into DSP inst/i0/i1/tap[19].acc_reg[19].
+DSP Report: operator p_0_out is absorbed into DSP inst/i0/i1/tap[19].acc_reg[19].
+DSP Report: Generating DSP inst/i0/i1/tap[41].acc_reg[41], operation Mode is: (PCIN+A:B)'.
+DSP Report: register inst/i0/i1/tap[41].acc_reg[41] is absorbed into DSP inst/i0/i1/tap[41].acc_reg[41].
+DSP Report: operator p_0_out is absorbed into DSP inst/i0/i1/tap[41].acc_reg[41].
+DSP Report: Generating DSP inst/i0/i1/tap[32].mult_reg[32], operation Mode is: ((A:0x156d)*B'')'.
+DSP Report: register inst/i0/i1/tap[31].shift_reg_reg is absorbed into DSP inst/i0/i1/tap[32].mult_reg[32].
+DSP Report: register inst/i0/i1/tap[32].shift_reg_reg is absorbed into DSP inst/i0/i1/tap[32].mult_reg[32].
+DSP Report: register inst/i0/i1/tap[32].mult_reg[32] is absorbed into DSP inst/i0/i1/tap[32].mult_reg[32].
+DSP Report: operator p_0_out is absorbed into DSP inst/i0/i1/tap[32].mult_reg[32].
+DSP Report: Generating DSP inst/i0/i1/tap[16].acc_reg[16], operation Mode is: (PCIN+((A:0x14e0)*BCIN2)')'.
+DSP Report: register inst/i0/i1/tap[33].shift_reg_reg is absorbed into DSP inst/i0/i1/tap[16].acc_reg[16].
+DSP Report: register inst/i0/i1/tap[16].acc_reg[16] is absorbed into DSP inst/i0/i1/tap[16].acc_reg[16].
+DSP Report: register inst/i0/i1/tap[33].mult_reg[33] is absorbed into DSP inst/i0/i1/tap[16].acc_reg[16].
+DSP Report: operator p_0_out is absorbed into DSP inst/i0/i1/tap[16].acc_reg[16].
+DSP Report: operator p_0_out is absorbed into DSP inst/i0/i1/tap[16].acc_reg[16].
+DSP Report: Generating DSP inst/i0/i1/tap[34].mult_reg[34], operation Mode is: ((A:0x13cd)*BCIN2)'.
+DSP Report: register inst/i0/i1/tap[34].shift_reg_reg is absorbed into DSP inst/i0/i1/tap[34].mult_reg[34].
+DSP Report: register inst/i0/i1/tap[34].mult_reg[34] is absorbed into DSP inst/i0/i1/tap[34].mult_reg[34].
+DSP Report: operator p_0_out is absorbed into DSP inst/i0/i1/tap[34].mult_reg[34].
+DSP Report: Generating DSP inst/i0/i1/tap[17].acc_reg[17], operation Mode is: (PCIN+((A:0x1243)*BCIN2)')'.
+DSP Report: register inst/i0/i1/tap[35].shift_reg_reg is absorbed into DSP inst/i0/i1/tap[17].acc_reg[17].
+DSP Report: register inst/i0/i1/tap[17].acc_reg[17] is absorbed into DSP inst/i0/i1/tap[17].acc_reg[17].
+DSP Report: register inst/i0/i1/tap[35].mult_reg[35] is absorbed into DSP inst/i0/i1/tap[17].acc_reg[17].
+DSP Report: operator p_0_out is absorbed into DSP inst/i0/i1/tap[17].acc_reg[17].
+DSP Report: operator p_0_out is absorbed into DSP inst/i0/i1/tap[17].acc_reg[17].
+DSP Report: Generating DSP inst/i0/i1/tap[40].acc_reg[40], operation Mode is: (PCIN+A:B)'.
+DSP Report: register inst/i0/i1/tap[40].acc_reg[40] is absorbed into DSP inst/i0/i1/tap[40].acc_reg[40].
+DSP Report: operator p_0_out is absorbed into DSP inst/i0/i1/tap[40].acc_reg[40].
+DSP Report: Generating DSP inst/i0/i1/tap[52].acc_reg[52], operation Mode is: (PCIN+A:B)'.
+DSP Report: register inst/i0/i1/tap[52].acc_reg[52] is absorbed into DSP inst/i0/i1/tap[52].acc_reg[52].
+DSP Report: operator p_0_out is absorbed into DSP inst/i0/i1/tap[52].acc_reg[52].
+DSP Report: Generating DSP inst/i0/i1/tap[40].mult_reg[40], operation Mode is: ((A:0x6c9)*B'')'.
+DSP Report: register inst/i0/i1/tap[39].shift_reg_reg is absorbed into DSP inst/i0/i1/tap[40].mult_reg[40].
+DSP Report: register inst/i0/i1/tap[40].shift_reg_reg is absorbed into DSP inst/i0/i1/tap[40].mult_reg[40].
+DSP Report: register inst/i0/i1/tap[40].mult_reg[40] is absorbed into DSP inst/i0/i1/tap[40].mult_reg[40].
+DSP Report: operator p_0_out is absorbed into DSP inst/i0/i1/tap[40].mult_reg[40].
+DSP Report: Generating DSP inst/i0/i1/tap[20].acc_reg[20], operation Mode is: (PCIN+((A:0x47b)*BCIN2)')'.
+DSP Report: register inst/i0/i1/tap[41].shift_reg_reg is absorbed into DSP inst/i0/i1/tap[20].acc_reg[20].
+DSP Report: register inst/i0/i1/tap[20].acc_reg[20] is absorbed into DSP inst/i0/i1/tap[20].acc_reg[20].
+DSP Report: register inst/i0/i1/tap[41].mult_reg[41] is absorbed into DSP inst/i0/i1/tap[20].acc_reg[20].
+DSP Report: operator p_0_out is absorbed into DSP inst/i0/i1/tap[20].acc_reg[20].
+DSP Report: operator p_0_out is absorbed into DSP inst/i0/i1/tap[20].acc_reg[20].
+DSP Report: Generating DSP inst/i0/i1/tap[42].mult_reg[42], operation Mode is: ((A:0x266)*BCIN2)'.
+DSP Report: register inst/i0/i1/tap[42].shift_reg_reg is absorbed into DSP inst/i0/i1/tap[42].mult_reg[42].
+DSP Report: register inst/i0/i1/tap[42].mult_reg[42] is absorbed into DSP inst/i0/i1/tap[42].mult_reg[42].
+DSP Report: operator p_0_out is absorbed into DSP inst/i0/i1/tap[42].mult_reg[42].
+DSP Report: Generating DSP inst/i0/i1/tap[44].mult_reg[44], operation Mode is: ((A:0x3fffff27)*BCIN'')'.
+DSP Report: register inst/i0/i1/tap[43].shift_reg_reg is absorbed into DSP inst/i0/i1/tap[44].mult_reg[44].
+DSP Report: register inst/i0/i1/tap[44].shift_reg_reg is absorbed into DSP inst/i0/i1/tap[44].mult_reg[44].
+DSP Report: register inst/i0/i1/tap[44].mult_reg[44] is absorbed into DSP inst/i0/i1/tap[44].mult_reg[44].
+DSP Report: operator p_0_out is absorbed into DSP inst/i0/i1/tap[44].mult_reg[44].
+DSP Report: Generating DSP inst/i0/i1/tap[22].acc_reg[22], operation Mode is: (PCIN+((A:0x3ffffe0e)*BCIN2)')'.
+DSP Report: register inst/i0/i1/tap[45].shift_reg_reg is absorbed into DSP inst/i0/i1/tap[22].acc_reg[22].
+DSP Report: register inst/i0/i1/tap[22].acc_reg[22] is absorbed into DSP inst/i0/i1/tap[22].acc_reg[22].
+DSP Report: register inst/i0/i1/tap[45].mult_reg[45] is absorbed into DSP inst/i0/i1/tap[22].acc_reg[22].
+DSP Report: operator p_0_out is absorbed into DSP inst/i0/i1/tap[22].acc_reg[22].
+DSP Report: operator p_0_out is absorbed into DSP inst/i0/i1/tap[22].acc_reg[22].
+DSP Report: Generating DSP inst/i0/i1/tap[46].mult_reg[46], operation Mode is: ((A:0x3ffffd51)*BCIN2)'.
+DSP Report: register inst/i0/i1/tap[46].shift_reg_reg is absorbed into DSP inst/i0/i1/tap[46].mult_reg[46].
+DSP Report: register inst/i0/i1/tap[46].mult_reg[46] is absorbed into DSP inst/i0/i1/tap[46].mult_reg[46].
+DSP Report: operator p_0_out is absorbed into DSP inst/i0/i1/tap[46].mult_reg[46].
+DSP Report: Generating DSP inst/i0/i1/tap[23].acc_reg[23], operation Mode is: (PCIN+((A:0x3ffffcea)*BCIN2)')'.
+DSP Report: register inst/i0/i1/tap[47].shift_reg_reg is absorbed into DSP inst/i0/i1/tap[23].acc_reg[23].
+DSP Report: register inst/i0/i1/tap[23].acc_reg[23] is absorbed into DSP inst/i0/i1/tap[23].acc_reg[23].
+DSP Report: register inst/i0/i1/tap[47].mult_reg[47] is absorbed into DSP inst/i0/i1/tap[23].acc_reg[23].
+DSP Report: operator p_0_out is absorbed into DSP inst/i0/i1/tap[23].acc_reg[23].
+DSP Report: operator p_0_out is absorbed into DSP inst/i0/i1/tap[23].acc_reg[23].
+DSP Report: Generating DSP inst/i0/i1/tap[43].acc_reg[43], operation Mode is: (PCIN+A:B)'.
+DSP Report: register inst/i0/i1/tap[43].acc_reg[43] is absorbed into DSP inst/i0/i1/tap[43].acc_reg[43].
+DSP Report: operator p_0_out is absorbed into DSP inst/i0/i1/tap[43].acc_reg[43].
+DSP Report: Generating DSP inst/i0/i1/tap[48].mult_reg[48], operation Mode is: ((A:0x3ffffcd0)*B'')'.
+DSP Report: register inst/i0/i1/tap[47].shift_reg_reg is absorbed into DSP inst/i0/i1/tap[48].mult_reg[48].
+DSP Report: register inst/i0/i1/tap[48].shift_reg_reg is absorbed into DSP inst/i0/i1/tap[48].mult_reg[48].
+DSP Report: register inst/i0/i1/tap[48].mult_reg[48] is absorbed into DSP inst/i0/i1/tap[48].mult_reg[48].
+DSP Report: operator p_0_out is absorbed into DSP inst/i0/i1/tap[48].mult_reg[48].
+DSP Report: Generating DSP inst/i0/i1/tap[24].acc_reg[24], operation Mode is: (PCIN+((A:0x3ffffcf7)*BCIN2)')'.
+DSP Report: register inst/i0/i1/tap[49].shift_reg_reg is absorbed into DSP inst/i0/i1/tap[24].acc_reg[24].
+DSP Report: register inst/i0/i1/tap[24].acc_reg[24] is absorbed into DSP inst/i0/i1/tap[24].acc_reg[24].
+DSP Report: register inst/i0/i1/tap[49].mult_reg[49] is absorbed into DSP inst/i0/i1/tap[24].acc_reg[24].
+DSP Report: operator p_0_out is absorbed into DSP inst/i0/i1/tap[24].acc_reg[24].
+DSP Report: operator p_0_out is absorbed into DSP inst/i0/i1/tap[24].acc_reg[24].
+DSP Report: Generating DSP inst/i0/i1/tap[50].mult_reg[50], operation Mode is: ((A:0x3ffffd4e)*BCIN2)'.
+DSP Report: register inst/i0/i1/tap[50].shift_reg_reg is absorbed into DSP inst/i0/i1/tap[50].mult_reg[50].
+DSP Report: register inst/i0/i1/tap[50].mult_reg[50] is absorbed into DSP inst/i0/i1/tap[50].mult_reg[50].
+DSP Report: operator p_0_out is absorbed into DSP inst/i0/i1/tap[50].mult_reg[50].
+DSP Report: Generating DSP inst/i0/i1/tap[25].acc_reg[25], operation Mode is: (PCIN+((A:0x3ffffdc6)*BCIN2)')'.
+DSP Report: register inst/i0/i1/tap[51].shift_reg_reg is absorbed into DSP inst/i0/i1/tap[25].acc_reg[25].
+DSP Report: register inst/i0/i1/tap[25].acc_reg[25] is absorbed into DSP inst/i0/i1/tap[25].acc_reg[25].
+DSP Report: register inst/i0/i1/tap[51].mult_reg[51] is absorbed into DSP inst/i0/i1/tap[25].acc_reg[25].
+DSP Report: operator p_0_out is absorbed into DSP inst/i0/i1/tap[25].acc_reg[25].
+DSP Report: operator p_0_out is absorbed into DSP inst/i0/i1/tap[25].acc_reg[25].
+DSP Report: Generating DSP inst/i0/i1/tap[44].acc_reg[44], operation Mode is: (PCIN+A:B)'.
+DSP Report: register inst/i0/i1/tap[44].acc_reg[44] is absorbed into DSP inst/i0/i1/tap[44].acc_reg[44].
+DSP Report: operator p_0_out is absorbed into DSP inst/i0/i1/tap[44].acc_reg[44].
+DSP Report: Generating DSP inst/i0/i1/tap[52].mult_reg[52], operation Mode is: ((A:0x3ffffe50)*B'')'.
+DSP Report: register inst/i0/i1/tap[51].shift_reg_reg is absorbed into DSP inst/i0/i1/tap[52].mult_reg[52].
+DSP Report: register inst/i0/i1/tap[52].shift_reg_reg is absorbed into DSP inst/i0/i1/tap[52].mult_reg[52].
+DSP Report: register inst/i0/i1/tap[52].mult_reg[52] is absorbed into DSP inst/i0/i1/tap[52].mult_reg[52].
+DSP Report: operator p_0_out is absorbed into DSP inst/i0/i1/tap[52].mult_reg[52].
+DSP Report: Generating DSP inst/i0/i1/tap[26].acc_reg[26], operation Mode is: (PCIN+((A:0x3ffffedf)*BCIN2)')'.
+DSP Report: register inst/i0/i1/tap[53].shift_reg_reg is absorbed into DSP inst/i0/i1/tap[26].acc_reg[26].
+DSP Report: register inst/i0/i1/tap[26].acc_reg[26] is absorbed into DSP inst/i0/i1/tap[26].acc_reg[26].
+DSP Report: register inst/i0/i1/tap[53].mult_reg[53] is absorbed into DSP inst/i0/i1/tap[26].acc_reg[26].
+DSP Report: operator p_0_out is absorbed into DSP inst/i0/i1/tap[26].acc_reg[26].
+DSP Report: operator p_0_out is absorbed into DSP inst/i0/i1/tap[26].acc_reg[26].
+DSP Report: Generating DSP inst/i0/i1/tap[54].mult_reg[54], operation Mode is: ((A:0x3fffff65)*BCIN2)'.
+DSP Report: register inst/i0/i1/tap[54].shift_reg_reg is absorbed into DSP inst/i0/i1/tap[54].mult_reg[54].
+DSP Report: register inst/i0/i1/tap[54].mult_reg[54] is absorbed into DSP inst/i0/i1/tap[54].mult_reg[54].
+DSP Report: operator p_0_out is absorbed into DSP inst/i0/i1/tap[54].mult_reg[54].
+DSP Report: Generating DSP inst/i0/i1/tap[56].mult_reg[56], operation Mode is: (A''*(B:0x3b))'.
+DSP Report: register inst/i0/i1/tap[55].shift_reg_reg is absorbed into DSP inst/i0/i1/tap[56].mult_reg[56].
+DSP Report: register inst/i0/i1/tap[56].shift_reg_reg is absorbed into DSP inst/i0/i1/tap[56].mult_reg[56].
+DSP Report: register inst/i0/i1/tap[56].mult_reg[56] is absorbed into DSP inst/i0/i1/tap[56].mult_reg[56].
+DSP Report: operator p_0_out is absorbed into DSP inst/i0/i1/tap[56].mult_reg[56].
+DSP Report: Generating DSP inst/i0/i1/tap[28].acc_reg[28], operation Mode is: (PCIN+((A:0x80)*B'')')'.
+DSP Report: register inst/i0/i1/tap[56].shift_reg_reg is absorbed into DSP inst/i0/i1/tap[28].acc_reg[28].
+DSP Report: register inst/i0/i1/tap[57].shift_reg_reg is absorbed into DSP inst/i0/i1/tap[28].acc_reg[28].
+DSP Report: register inst/i0/i1/tap[28].acc_reg[28] is absorbed into DSP inst/i0/i1/tap[28].acc_reg[28].
+DSP Report: register inst/i0/i1/tap[57].mult_reg[57] is absorbed into DSP inst/i0/i1/tap[28].acc_reg[28].
+DSP Report: operator p_0_out is absorbed into DSP inst/i0/i1/tap[28].acc_reg[28].
+DSP Report: operator p_0_out is absorbed into DSP inst/i0/i1/tap[28].acc_reg[28].
+DSP Report: Generating DSP inst/i0/i1/tap[58].mult_reg[58], operation Mode is: ((A:0xac)*BCIN2)'.
+DSP Report: register inst/i0/i1/tap[58].shift_reg_reg is absorbed into DSP inst/i0/i1/tap[58].mult_reg[58].
+DSP Report: register inst/i0/i1/tap[58].mult_reg[58] is absorbed into DSP inst/i0/i1/tap[58].mult_reg[58].
+DSP Report: operator p_0_out is absorbed into DSP inst/i0/i1/tap[58].mult_reg[58].
+DSP Report: Generating DSP inst/i0/i1/tap[60].mult_reg[60], operation Mode is: ((A:0xbd)*BCIN'')'.
+DSP Report: register inst/i0/i1/tap[59].shift_reg_reg is absorbed into DSP inst/i0/i1/tap[60].mult_reg[60].
+DSP Report: register inst/i0/i1/tap[60].shift_reg_reg is absorbed into DSP inst/i0/i1/tap[60].mult_reg[60].
+DSP Report: register inst/i0/i1/tap[60].mult_reg[60] is absorbed into DSP inst/i0/i1/tap[60].mult_reg[60].
+DSP Report: operator p_0_out is absorbed into DSP inst/i0/i1/tap[60].mult_reg[60].
+DSP Report: Generating DSP inst/i0/i1/tap[30].acc_reg[30], operation Mode is: (PCIN+((A:0xac)*BCIN2)')'.
+DSP Report: register inst/i0/i1/tap[61].shift_reg_reg is absorbed into DSP inst/i0/i1/tap[30].acc_reg[30].
+DSP Report: register inst/i0/i1/tap[30].acc_reg[30] is absorbed into DSP inst/i0/i1/tap[30].acc_reg[30].
+DSP Report: register inst/i0/i1/tap[61].mult_reg[61] is absorbed into DSP inst/i0/i1/tap[30].acc_reg[30].
+DSP Report: operator p_0_out is absorbed into DSP inst/i0/i1/tap[30].acc_reg[30].
+DSP Report: operator p_0_out is absorbed into DSP inst/i0/i1/tap[30].acc_reg[30].
+DSP Report: Generating DSP inst/i0/i1/tap[62].mult_reg[62], operation Mode is: ((A:0x90)*BCIN2)'.
+DSP Report: register inst/i0/i1/tap[62].shift_reg_reg is absorbed into DSP inst/i0/i1/tap[62].mult_reg[62].
+DSP Report: register inst/i0/i1/tap[62].mult_reg[62] is absorbed into DSP inst/i0/i1/tap[62].mult_reg[62].
+DSP Report: operator p_0_out is absorbed into DSP inst/i0/i1/tap[62].mult_reg[62].
+DSP Report: Generating DSP inst/i0/i1/tap[31].acc_reg[31], operation Mode is: (PCIN+((A:0xe7)*BCIN2)')'.
+DSP Report: register inst/i0/i1/tap[63].shift_reg_reg is absorbed into DSP inst/i0/i1/tap[31].acc_reg[31].
+DSP Report: register inst/i0/i1/tap[31].acc_reg[31] is absorbed into DSP inst/i0/i1/tap[31].acc_reg[31].
+DSP Report: register inst/i0/i1/tap[63].mult_reg[63] is absorbed into DSP inst/i0/i1/tap[31].acc_reg[31].
+DSP Report: operator p_0_out is absorbed into DSP inst/i0/i1/tap[31].acc_reg[31].
+DSP Report: operator p_0_out is absorbed into DSP inst/i0/i1/tap[31].acc_reg[31].
+DSP Report: Generating DSP inst/i0/i1/tap[47].acc_reg[47], operation Mode is: (PCIN+A:B)'.
+DSP Report: register inst/i0/i1/tap[47].acc_reg[47] is absorbed into DSP inst/i0/i1/tap[47].acc_reg[47].
+DSP Report: operator p_0_out is absorbed into DSP inst/i0/i1/tap[47].acc_reg[47].
+DSP Report: Generating DSP inst/i_mult_reg, operation Mode is: (A''*B)'.
+DSP Report: register inst/i0/i1/tap[62].acc_reg[62] is absorbed into DSP inst/i_mult_reg.
+DSP Report: register inst/i0/i1/result_reg is absorbed into DSP inst/i_mult_reg.
+DSP Report: register inst/i_mult_reg is absorbed into DSP inst/i_mult_reg.
+DSP Report: operator inst/i_mult0 is absorbed into DSP inst/i_mult_reg.
+DSP Report: Generating DSP inst/i1/i1/tap[2].mult_reg[2], operation Mode is: ((A:0xac)*B'')'.
+DSP Report: register inst/i1/i1/tap[1].shift_reg_reg is absorbed into DSP inst/i1/i1/tap[2].mult_reg[2].
+DSP Report: register inst/i1/i1/tap[2].shift_reg_reg is absorbed into DSP inst/i1/i1/tap[2].mult_reg[2].
+DSP Report: register inst/i1/i1/tap[2].mult_reg[2] is absorbed into DSP inst/i1/i1/tap[2].mult_reg[2].
+DSP Report: operator p_0_out is absorbed into DSP inst/i1/i1/tap[2].mult_reg[2].
+DSP Report: Generating DSP inst/i1/i1/tap[4].mult_reg[4], operation Mode is: ((A:0xbf)*BCIN'')'.
+DSP Report: register inst/i1/i1/tap[3].shift_reg_reg is absorbed into DSP inst/i1/i1/tap[4].mult_reg[4].
+DSP Report: register inst/i1/i1/tap[4].shift_reg_reg is absorbed into DSP inst/i1/i1/tap[4].mult_reg[4].
+DSP Report: register inst/i1/i1/tap[4].mult_reg[4] is absorbed into DSP inst/i1/i1/tap[4].mult_reg[4].
+DSP Report: operator p_0_out is absorbed into DSP inst/i1/i1/tap[4].mult_reg[4].
+DSP Report: Generating DSP inst/i1/i1/tap[2].acc_reg[2], operation Mode is: (PCIN+((A:0xac)*BCIN2)')'.
+DSP Report: register inst/i1/i1/tap[5].shift_reg_reg is absorbed into DSP inst/i1/i1/tap[2].acc_reg[2].
+DSP Report: register inst/i1/i1/tap[2].acc_reg[2] is absorbed into DSP inst/i1/i1/tap[2].acc_reg[2].
+DSP Report: register inst/i1/i1/tap[5].mult_reg[5] is absorbed into DSP inst/i1/i1/tap[2].acc_reg[2].
+DSP Report: operator p_0_out is absorbed into DSP inst/i1/i1/tap[2].acc_reg[2].
+DSP Report: operator p_0_out is absorbed into DSP inst/i1/i1/tap[2].acc_reg[2].
+DSP Report: Generating DSP inst/i1/i1/tap[6].mult_reg[6], operation Mode is: ((A:0x80)*BCIN2)'.
+DSP Report: register inst/i1/i1/tap[6].shift_reg_reg is absorbed into DSP inst/i1/i1/tap[6].mult_reg[6].
+DSP Report: register inst/i1/i1/tap[6].mult_reg[6] is absorbed into DSP inst/i1/i1/tap[6].mult_reg[6].
+DSP Report: operator p_0_out is absorbed into DSP inst/i1/i1/tap[6].mult_reg[6].
+DSP Report: Generating DSP inst/i1/i1/tap[8].mult_reg[8], operation Mode is: (A''*(B:0x3ffdc))'.
+DSP Report: register inst/i1/i1/tap[7].shift_reg_reg is absorbed into DSP inst/i1/i1/tap[8].mult_reg[8].
+DSP Report: register inst/i1/i1/tap[8].shift_reg_reg is absorbed into DSP inst/i1/i1/tap[8].mult_reg[8].
+DSP Report: register inst/i1/i1/tap[8].mult_reg[8] is absorbed into DSP inst/i1/i1/tap[8].mult_reg[8].
+DSP Report: operator p_0_out is absorbed into DSP inst/i1/i1/tap[8].mult_reg[8].
+DSP Report: Generating DSP inst/i1/i1/tap[4].acc_reg[4], operation Mode is: (PCIN+((A:0x3fffff65)*B'')')'.
+DSP Report: register inst/i1/i1/tap[8].shift_reg_reg is absorbed into DSP inst/i1/i1/tap[4].acc_reg[4].
+DSP Report: register inst/i1/i1/tap[9].shift_reg_reg is absorbed into DSP inst/i1/i1/tap[4].acc_reg[4].
+DSP Report: register inst/i1/i1/tap[4].acc_reg[4] is absorbed into DSP inst/i1/i1/tap[4].acc_reg[4].
+DSP Report: register inst/i1/i1/tap[9].mult_reg[9] is absorbed into DSP inst/i1/i1/tap[4].acc_reg[4].
+DSP Report: operator p_0_out is absorbed into DSP inst/i1/i1/tap[4].acc_reg[4].
+DSP Report: operator p_0_out is absorbed into DSP inst/i1/i1/tap[4].acc_reg[4].
+DSP Report: Generating DSP inst/i1/i1/tap[10].mult_reg[10], operation Mode is: ((A:0x3ffffedf)*BCIN2)'.
+DSP Report: register inst/i1/i1/tap[10].shift_reg_reg is absorbed into DSP inst/i1/i1/tap[10].mult_reg[10].
+DSP Report: register inst/i1/i1/tap[10].mult_reg[10] is absorbed into DSP inst/i1/i1/tap[10].mult_reg[10].
+DSP Report: operator p_0_out is absorbed into DSP inst/i1/i1/tap[10].mult_reg[10].
+DSP Report: Generating DSP inst/i1/i1/tap[12].mult_reg[12], operation Mode is: ((A:0x3ffffdc6)*BCIN'')'.
+DSP Report: register inst/i1/i1/tap[11].shift_reg_reg is absorbed into DSP inst/i1/i1/tap[12].mult_reg[12].
+DSP Report: register inst/i1/i1/tap[12].shift_reg_reg is absorbed into DSP inst/i1/i1/tap[12].mult_reg[12].
+DSP Report: register inst/i1/i1/tap[12].mult_reg[12] is absorbed into DSP inst/i1/i1/tap[12].mult_reg[12].
+DSP Report: operator p_0_out is absorbed into DSP inst/i1/i1/tap[12].mult_reg[12].
+DSP Report: Generating DSP inst/i1/i1/tap[6].acc_reg[6], operation Mode is: (PCIN+((A:0x3ffffd4e)*BCIN2)')'.
+DSP Report: register inst/i1/i1/tap[13].shift_reg_reg is absorbed into DSP inst/i1/i1/tap[6].acc_reg[6].
+DSP Report: register inst/i1/i1/tap[6].acc_reg[6] is absorbed into DSP inst/i1/i1/tap[6].acc_reg[6].
+DSP Report: register inst/i1/i1/tap[13].mult_reg[13] is absorbed into DSP inst/i1/i1/tap[6].acc_reg[6].
+DSP Report: operator p_0_out is absorbed into DSP inst/i1/i1/tap[6].acc_reg[6].
+DSP Report: operator p_0_out is absorbed into DSP inst/i1/i1/tap[6].acc_reg[6].
+DSP Report: Generating DSP inst/i1/i1/tap[14].mult_reg[14], operation Mode is: ((A:0x3ffffcf7)*BCIN2)'.
+DSP Report: register inst/i1/i1/tap[14].shift_reg_reg is absorbed into DSP inst/i1/i1/tap[14].mult_reg[14].
+DSP Report: register inst/i1/i1/tap[14].mult_reg[14] is absorbed into DSP inst/i1/i1/tap[14].mult_reg[14].
+DSP Report: operator p_0_out is absorbed into DSP inst/i1/i1/tap[14].mult_reg[14].
+DSP Report: Generating DSP inst/i1/i1/tap[7].acc_reg[7], operation Mode is: (PCIN+((A:0x3ffffcd0)*BCIN2)')'.
+DSP Report: register inst/i1/i1/tap[15].shift_reg_reg is absorbed into DSP inst/i1/i1/tap[7].acc_reg[7].
+DSP Report: register inst/i1/i1/tap[7].acc_reg[7] is absorbed into DSP inst/i1/i1/tap[7].acc_reg[7].
+DSP Report: register inst/i1/i1/tap[15].mult_reg[15] is absorbed into DSP inst/i1/i1/tap[7].acc_reg[7].
+DSP Report: operator p_0_out is absorbed into DSP inst/i1/i1/tap[7].acc_reg[7].
+DSP Report: operator p_0_out is absorbed into DSP inst/i1/i1/tap[7].acc_reg[7].
+DSP Report: Generating DSP inst/i1/i1/tap[35].acc_reg[35], operation Mode is: (PCIN+A:B)'.
+DSP Report: register inst/i1/i1/tap[35].acc_reg[35] is absorbed into DSP inst/i1/i1/tap[35].acc_reg[35].
+DSP Report: operator p_0_out is absorbed into DSP inst/i1/i1/tap[35].acc_reg[35].
+DSP Report: Generating DSP inst/i1/i1/tap[16].mult_reg[16], operation Mode is: ((A:0x3ffffcea)*B'')'.
+DSP Report: register inst/i1/i1/tap[15].shift_reg_reg is absorbed into DSP inst/i1/i1/tap[16].mult_reg[16].
+DSP Report: register inst/i1/i1/tap[16].shift_reg_reg is absorbed into DSP inst/i1/i1/tap[16].mult_reg[16].
+DSP Report: register inst/i1/i1/tap[16].mult_reg[16] is absorbed into DSP inst/i1/i1/tap[16].mult_reg[16].
+DSP Report: operator p_0_out is absorbed into DSP inst/i1/i1/tap[16].mult_reg[16].
+DSP Report: Generating DSP inst/i1/i1/tap[8].acc_reg[8], operation Mode is: (PCIN+((A:0x3ffffd51)*BCIN2)')'.
+DSP Report: register inst/i1/i1/tap[17].shift_reg_reg is absorbed into DSP inst/i1/i1/tap[8].acc_reg[8].
+DSP Report: register inst/i1/i1/tap[8].acc_reg[8] is absorbed into DSP inst/i1/i1/tap[8].acc_reg[8].
+DSP Report: register inst/i1/i1/tap[17].mult_reg[17] is absorbed into DSP inst/i1/i1/tap[8].acc_reg[8].
+DSP Report: operator p_0_out is absorbed into DSP inst/i1/i1/tap[8].acc_reg[8].
+DSP Report: operator p_0_out is absorbed into DSP inst/i1/i1/tap[8].acc_reg[8].
+DSP Report: Generating DSP inst/i1/i1/tap[18].mult_reg[18], operation Mode is: ((A:0x3ffffe0e)*BCIN2)'.
+DSP Report: register inst/i1/i1/tap[18].shift_reg_reg is absorbed into DSP inst/i1/i1/tap[18].mult_reg[18].
+DSP Report: register inst/i1/i1/tap[18].mult_reg[18] is absorbed into DSP inst/i1/i1/tap[18].mult_reg[18].
+DSP Report: operator p_0_out is absorbed into DSP inst/i1/i1/tap[18].mult_reg[18].
+DSP Report: Generating DSP inst/i1/i1/tap[20].mult_reg[20], operation Mode is: ((A:0x9c)*BCIN'')'.
+DSP Report: register inst/i1/i1/tap[19].shift_reg_reg is absorbed into DSP inst/i1/i1/tap[20].mult_reg[20].
+DSP Report: register inst/i1/i1/tap[20].shift_reg_reg is absorbed into DSP inst/i1/i1/tap[20].mult_reg[20].
+DSP Report: register inst/i1/i1/tap[20].mult_reg[20] is absorbed into DSP inst/i1/i1/tap[20].mult_reg[20].
+DSP Report: operator p_0_out is absorbed into DSP inst/i1/i1/tap[20].mult_reg[20].
+DSP Report: Generating DSP inst/i1/i1/tap[10].acc_reg[10], operation Mode is: (PCIN+((A:0x266)*BCIN2)')'.
+DSP Report: register inst/i1/i1/tap[21].shift_reg_reg is absorbed into DSP inst/i1/i1/tap[10].acc_reg[10].
+DSP Report: register inst/i1/i1/tap[10].acc_reg[10] is absorbed into DSP inst/i1/i1/tap[10].acc_reg[10].
+DSP Report: register inst/i1/i1/tap[21].mult_reg[21] is absorbed into DSP inst/i1/i1/tap[10].acc_reg[10].
+DSP Report: operator p_0_out is absorbed into DSP inst/i1/i1/tap[10].acc_reg[10].
+DSP Report: operator p_0_out is absorbed into DSP inst/i1/i1/tap[10].acc_reg[10].
+DSP Report: Generating DSP inst/i1/i1/tap[22].mult_reg[22], operation Mode is: ((A:0x47b)*BCIN2)'.
+DSP Report: register inst/i1/i1/tap[22].shift_reg_reg is absorbed into DSP inst/i1/i1/tap[22].mult_reg[22].
+DSP Report: register inst/i1/i1/tap[22].mult_reg[22] is absorbed into DSP inst/i1/i1/tap[22].mult_reg[22].
+DSP Report: operator p_0_out is absorbed into DSP inst/i1/i1/tap[22].mult_reg[22].
+DSP Report: Generating DSP inst/i1/i1/tap[11].acc_reg[11], operation Mode is: (PCIN+((A:0x6c9)*BCIN2)')'.
+DSP Report: register inst/i1/i1/tap[23].shift_reg_reg is absorbed into DSP inst/i1/i1/tap[11].acc_reg[11].
+DSP Report: register inst/i1/i1/tap[11].acc_reg[11] is absorbed into DSP inst/i1/i1/tap[11].acc_reg[11].
+DSP Report: register inst/i1/i1/tap[23].mult_reg[23] is absorbed into DSP inst/i1/i1/tap[11].acc_reg[11].
+DSP Report: operator p_0_out is absorbed into DSP inst/i1/i1/tap[11].acc_reg[11].
+DSP Report: operator p_0_out is absorbed into DSP inst/i1/i1/tap[11].acc_reg[11].
+DSP Report: Generating DSP inst/i1/i1/tap[37].acc_reg[37], operation Mode is: (PCIN+A:B)'.
+DSP Report: register inst/i1/i1/tap[37].acc_reg[37] is absorbed into DSP inst/i1/i1/tap[37].acc_reg[37].
+DSP Report: operator p_0_out is absorbed into DSP inst/i1/i1/tap[37].acc_reg[37].
+DSP Report: Generating DSP inst/i1/i1/tap[28].mult_reg[28], operation Mode is: ((A:0x1243)*B'')'.
+DSP Report: register inst/i1/i1/tap[27].shift_reg_reg is absorbed into DSP inst/i1/i1/tap[28].mult_reg[28].
+DSP Report: register inst/i1/i1/tap[28].shift_reg_reg is absorbed into DSP inst/i1/i1/tap[28].mult_reg[28].
+DSP Report: register inst/i1/i1/tap[28].mult_reg[28] is absorbed into DSP inst/i1/i1/tap[28].mult_reg[28].
+DSP Report: operator p_0_out is absorbed into DSP inst/i1/i1/tap[28].mult_reg[28].
+DSP Report: Generating DSP inst/i1/i1/tap[14].acc_reg[14], operation Mode is: (PCIN+((A:0x13cd)*BCIN2)')'.
+DSP Report: register inst/i1/i1/tap[29].shift_reg_reg is absorbed into DSP inst/i1/i1/tap[14].acc_reg[14].
+DSP Report: register inst/i1/i1/tap[14].acc_reg[14] is absorbed into DSP inst/i1/i1/tap[14].acc_reg[14].
+DSP Report: register inst/i1/i1/tap[29].mult_reg[29] is absorbed into DSP inst/i1/i1/tap[14].acc_reg[14].
+DSP Report: operator p_0_out is absorbed into DSP inst/i1/i1/tap[14].acc_reg[14].
+DSP Report: operator p_0_out is absorbed into DSP inst/i1/i1/tap[14].acc_reg[14].
+DSP Report: Generating DSP inst/i1/i1/tap[30].mult_reg[30], operation Mode is: ((A:0x14e0)*BCIN2)'.
+DSP Report: register inst/i1/i1/tap[30].shift_reg_reg is absorbed into DSP inst/i1/i1/tap[30].mult_reg[30].
+DSP Report: register inst/i1/i1/tap[30].mult_reg[30] is absorbed into DSP inst/i1/i1/tap[30].mult_reg[30].
+DSP Report: operator p_0_out is absorbed into DSP inst/i1/i1/tap[30].mult_reg[30].
+DSP Report: Generating DSP inst/i1/i1/tap[15].acc_reg[15], operation Mode is: (PCIN+((A:0x156d)*BCIN2)')'.
+DSP Report: register inst/i1/i1/tap[31].shift_reg_reg is absorbed into DSP inst/i1/i1/tap[15].acc_reg[15].
+DSP Report: register inst/i1/i1/tap[15].acc_reg[15] is absorbed into DSP inst/i1/i1/tap[15].acc_reg[15].
+DSP Report: register inst/i1/i1/tap[31].mult_reg[31] is absorbed into DSP inst/i1/i1/tap[15].acc_reg[15].
+DSP Report: operator p_0_out is absorbed into DSP inst/i1/i1/tap[15].acc_reg[15].
+DSP Report: operator p_0_out is absorbed into DSP inst/i1/i1/tap[15].acc_reg[15].
+DSP Report: Generating DSP inst/i1/i1/tap[39].acc_reg[39], operation Mode is: (PCIN+A:B)'.
+DSP Report: register inst/i1/i1/tap[39].acc_reg[39] is absorbed into DSP inst/i1/i1/tap[39].acc_reg[39].
+DSP Report: operator p_0_out is absorbed into DSP inst/i1/i1/tap[39].acc_reg[39].
+DSP Report: Generating DSP inst/i1/i1/tap[24].mult_reg[24], operation Mode is: ((A:0x93a)*B'')'.
+DSP Report: register inst/i1/i1/tap[23].shift_reg_reg is absorbed into DSP inst/i1/i1/tap[24].mult_reg[24].
+DSP Report: register inst/i1/i1/tap[24].shift_reg_reg is absorbed into DSP inst/i1/i1/tap[24].mult_reg[24].
+DSP Report: register inst/i1/i1/tap[24].mult_reg[24] is absorbed into DSP inst/i1/i1/tap[24].mult_reg[24].
+DSP Report: operator p_0_out is absorbed into DSP inst/i1/i1/tap[24].mult_reg[24].
+DSP Report: Generating DSP inst/i1/i1/tap[12].acc_reg[12], operation Mode is: (PCIN+((A:0xbb5)*BCIN2)')'.
+DSP Report: register inst/i1/i1/tap[25].shift_reg_reg is absorbed into DSP inst/i1/i1/tap[12].acc_reg[12].
+DSP Report: register inst/i1/i1/tap[12].acc_reg[12] is absorbed into DSP inst/i1/i1/tap[12].acc_reg[12].
+DSP Report: register inst/i1/i1/tap[25].mult_reg[25] is absorbed into DSP inst/i1/i1/tap[12].acc_reg[12].
+DSP Report: operator p_0_out is absorbed into DSP inst/i1/i1/tap[12].acc_reg[12].
+DSP Report: operator p_0_out is absorbed into DSP inst/i1/i1/tap[12].acc_reg[12].
+DSP Report: Generating DSP inst/i1/i1/tap[26].mult_reg[26], operation Mode is: ((A:0xe1d)*BCIN2)'.
+DSP Report: register inst/i1/i1/tap[26].shift_reg_reg is absorbed into DSP inst/i1/i1/tap[26].mult_reg[26].
+DSP Report: register inst/i1/i1/tap[26].mult_reg[26] is absorbed into DSP inst/i1/i1/tap[26].mult_reg[26].
+DSP Report: operator p_0_out is absorbed into DSP inst/i1/i1/tap[26].mult_reg[26].
+DSP Report: Generating DSP inst/i1/i1/tap[13].acc_reg[13], operation Mode is: (PCIN+((A:0x1055)*BCIN2)')'.
+DSP Report: register inst/i1/i1/tap[27].shift_reg_reg is absorbed into DSP inst/i1/i1/tap[13].acc_reg[13].
+DSP Report: register inst/i1/i1/tap[13].acc_reg[13] is absorbed into DSP inst/i1/i1/tap[13].acc_reg[13].
+DSP Report: register inst/i1/i1/tap[27].mult_reg[27] is absorbed into DSP inst/i1/i1/tap[13].acc_reg[13].
+DSP Report: operator p_0_out is absorbed into DSP inst/i1/i1/tap[13].acc_reg[13].
+DSP Report: operator p_0_out is absorbed into DSP inst/i1/i1/tap[13].acc_reg[13].
+DSP Report: Generating DSP inst/i1/i1/tap[38].acc_reg[38], operation Mode is: (PCIN+A:B)'.
+DSP Report: register inst/i1/i1/tap[38].acc_reg[38] is absorbed into DSP inst/i1/i1/tap[38].acc_reg[38].
+DSP Report: operator p_0_out is absorbed into DSP inst/i1/i1/tap[38].acc_reg[38].
+DSP Report: Generating DSP inst/i1/i1/tap[51].acc_reg[51], operation Mode is: (PCIN+A:B)'.
+DSP Report: register inst/i1/i1/tap[51].acc_reg[51] is absorbed into DSP inst/i1/i1/tap[51].acc_reg[51].
+DSP Report: operator p_0_out is absorbed into DSP inst/i1/i1/tap[51].acc_reg[51].
+DSP Report: Generating DSP inst/i1/i1/tap[36].mult_reg[36], operation Mode is: ((A:0x1055)*B'')'.
+DSP Report: register inst/i1/i1/tap[35].shift_reg_reg is absorbed into DSP inst/i1/i1/tap[36].mult_reg[36].
+DSP Report: register inst/i1/i1/tap[36].shift_reg_reg is absorbed into DSP inst/i1/i1/tap[36].mult_reg[36].
+DSP Report: register inst/i1/i1/tap[36].mult_reg[36] is absorbed into DSP inst/i1/i1/tap[36].mult_reg[36].
+DSP Report: operator p_0_out is absorbed into DSP inst/i1/i1/tap[36].mult_reg[36].
+DSP Report: Generating DSP inst/i1/i1/tap[18].acc_reg[18], operation Mode is: (PCIN+((A:0xe1d)*BCIN2)')'.
+DSP Report: register inst/i1/i1/tap[37].shift_reg_reg is absorbed into DSP inst/i1/i1/tap[18].acc_reg[18].
+DSP Report: register inst/i1/i1/tap[18].acc_reg[18] is absorbed into DSP inst/i1/i1/tap[18].acc_reg[18].
+DSP Report: register inst/i1/i1/tap[37].mult_reg[37] is absorbed into DSP inst/i1/i1/tap[18].acc_reg[18].
+DSP Report: operator p_0_out is absorbed into DSP inst/i1/i1/tap[18].acc_reg[18].
+DSP Report: operator p_0_out is absorbed into DSP inst/i1/i1/tap[18].acc_reg[18].
+DSP Report: Generating DSP inst/i1/i1/tap[38].mult_reg[38], operation Mode is: ((A:0xbb5)*BCIN2)'.
+DSP Report: register inst/i1/i1/tap[38].shift_reg_reg is absorbed into DSP inst/i1/i1/tap[38].mult_reg[38].
+DSP Report: register inst/i1/i1/tap[38].mult_reg[38] is absorbed into DSP inst/i1/i1/tap[38].mult_reg[38].
+DSP Report: operator p_0_out is absorbed into DSP inst/i1/i1/tap[38].mult_reg[38].
+DSP Report: Generating DSP inst/i1/i1/tap[19].acc_reg[19], operation Mode is: (PCIN+((A:0x93a)*BCIN2)')'.
+DSP Report: register inst/i1/i1/tap[39].shift_reg_reg is absorbed into DSP inst/i1/i1/tap[19].acc_reg[19].
+DSP Report: register inst/i1/i1/tap[19].acc_reg[19] is absorbed into DSP inst/i1/i1/tap[19].acc_reg[19].
+DSP Report: register inst/i1/i1/tap[39].mult_reg[39] is absorbed into DSP inst/i1/i1/tap[19].acc_reg[19].
+DSP Report: operator p_0_out is absorbed into DSP inst/i1/i1/tap[19].acc_reg[19].
+DSP Report: operator p_0_out is absorbed into DSP inst/i1/i1/tap[19].acc_reg[19].
+DSP Report: Generating DSP inst/i1/i1/tap[41].acc_reg[41], operation Mode is: (PCIN+A:B)'.
+DSP Report: register inst/i1/i1/tap[41].acc_reg[41] is absorbed into DSP inst/i1/i1/tap[41].acc_reg[41].
+DSP Report: operator p_0_out is absorbed into DSP inst/i1/i1/tap[41].acc_reg[41].
+DSP Report: Generating DSP inst/i1/i1/tap[32].mult_reg[32], operation Mode is: ((A:0x156d)*B'')'.
+DSP Report: register inst/i1/i1/tap[31].shift_reg_reg is absorbed into DSP inst/i1/i1/tap[32].mult_reg[32].
+DSP Report: register inst/i1/i1/tap[32].shift_reg_reg is absorbed into DSP inst/i1/i1/tap[32].mult_reg[32].
+DSP Report: register inst/i1/i1/tap[32].mult_reg[32] is absorbed into DSP inst/i1/i1/tap[32].mult_reg[32].
+DSP Report: operator p_0_out is absorbed into DSP inst/i1/i1/tap[32].mult_reg[32].
+DSP Report: Generating DSP inst/i1/i1/tap[16].acc_reg[16], operation Mode is: (PCIN+((A:0x14e0)*BCIN2)')'.
+DSP Report: register inst/i1/i1/tap[33].shift_reg_reg is absorbed into DSP inst/i1/i1/tap[16].acc_reg[16].
+DSP Report: register inst/i1/i1/tap[16].acc_reg[16] is absorbed into DSP inst/i1/i1/tap[16].acc_reg[16].
+DSP Report: register inst/i1/i1/tap[33].mult_reg[33] is absorbed into DSP inst/i1/i1/tap[16].acc_reg[16].
+DSP Report: operator p_0_out is absorbed into DSP inst/i1/i1/tap[16].acc_reg[16].
+DSP Report: operator p_0_out is absorbed into DSP inst/i1/i1/tap[16].acc_reg[16].
+DSP Report: Generating DSP inst/i1/i1/tap[34].mult_reg[34], operation Mode is: ((A:0x13cd)*BCIN2)'.
+DSP Report: register inst/i1/i1/tap[34].shift_reg_reg is absorbed into DSP inst/i1/i1/tap[34].mult_reg[34].
+DSP Report: register inst/i1/i1/tap[34].mult_reg[34] is absorbed into DSP inst/i1/i1/tap[34].mult_reg[34].
+DSP Report: operator p_0_out is absorbed into DSP inst/i1/i1/tap[34].mult_reg[34].
+DSP Report: Generating DSP inst/i1/i1/tap[17].acc_reg[17], operation Mode is: (PCIN+((A:0x1243)*BCIN2)')'.
+DSP Report: register inst/i1/i1/tap[35].shift_reg_reg is absorbed into DSP inst/i1/i1/tap[17].acc_reg[17].
+DSP Report: register inst/i1/i1/tap[17].acc_reg[17] is absorbed into DSP inst/i1/i1/tap[17].acc_reg[17].
+DSP Report: register inst/i1/i1/tap[35].mult_reg[35] is absorbed into DSP inst/i1/i1/tap[17].acc_reg[17].
+DSP Report: operator p_0_out is absorbed into DSP inst/i1/i1/tap[17].acc_reg[17].
+DSP Report: operator p_0_out is absorbed into DSP inst/i1/i1/tap[17].acc_reg[17].
+DSP Report: Generating DSP inst/i1/i1/tap[40].acc_reg[40], operation Mode is: (PCIN+A:B)'.
+DSP Report: register inst/i1/i1/tap[40].acc_reg[40] is absorbed into DSP inst/i1/i1/tap[40].acc_reg[40].
+DSP Report: operator p_0_out is absorbed into DSP inst/i1/i1/tap[40].acc_reg[40].
+DSP Report: Generating DSP inst/i1/i1/tap[52].acc_reg[52], operation Mode is: (PCIN+A:B)'.
+DSP Report: register inst/i1/i1/tap[52].acc_reg[52] is absorbed into DSP inst/i1/i1/tap[52].acc_reg[52].
+DSP Report: operator p_0_out is absorbed into DSP inst/i1/i1/tap[52].acc_reg[52].
+DSP Report: Generating DSP inst/i1/i1/tap[40].mult_reg[40], operation Mode is: ((A:0x6c9)*B'')'.
+DSP Report: register inst/i1/i1/tap[39].shift_reg_reg is absorbed into DSP inst/i1/i1/tap[40].mult_reg[40].
+DSP Report: register inst/i1/i1/tap[40].shift_reg_reg is absorbed into DSP inst/i1/i1/tap[40].mult_reg[40].
+DSP Report: register inst/i1/i1/tap[40].mult_reg[40] is absorbed into DSP inst/i1/i1/tap[40].mult_reg[40].
+DSP Report: operator p_0_out is absorbed into DSP inst/i1/i1/tap[40].mult_reg[40].
+DSP Report: Generating DSP inst/i1/i1/tap[20].acc_reg[20], operation Mode is: (PCIN+((A:0x47b)*BCIN2)')'.
+DSP Report: register inst/i1/i1/tap[41].shift_reg_reg is absorbed into DSP inst/i1/i1/tap[20].acc_reg[20].
+DSP Report: register inst/i1/i1/tap[20].acc_reg[20] is absorbed into DSP inst/i1/i1/tap[20].acc_reg[20].
+DSP Report: register inst/i1/i1/tap[41].mult_reg[41] is absorbed into DSP inst/i1/i1/tap[20].acc_reg[20].
+DSP Report: operator p_0_out is absorbed into DSP inst/i1/i1/tap[20].acc_reg[20].
+DSP Report: operator p_0_out is absorbed into DSP inst/i1/i1/tap[20].acc_reg[20].
+DSP Report: Generating DSP inst/i1/i1/tap[42].mult_reg[42], operation Mode is: ((A:0x266)*BCIN2)'.
+DSP Report: register inst/i1/i1/tap[42].shift_reg_reg is absorbed into DSP inst/i1/i1/tap[42].mult_reg[42].
+DSP Report: register inst/i1/i1/tap[42].mult_reg[42] is absorbed into DSP inst/i1/i1/tap[42].mult_reg[42].
+DSP Report: operator p_0_out is absorbed into DSP inst/i1/i1/tap[42].mult_reg[42].
+DSP Report: Generating DSP inst/i1/i1/tap[44].mult_reg[44], operation Mode is: ((A:0x3fffff27)*BCIN'')'.
+DSP Report: register inst/i1/i1/tap[43].shift_reg_reg is absorbed into DSP inst/i1/i1/tap[44].mult_reg[44].
+DSP Report: register inst/i1/i1/tap[44].shift_reg_reg is absorbed into DSP inst/i1/i1/tap[44].mult_reg[44].
+DSP Report: register inst/i1/i1/tap[44].mult_reg[44] is absorbed into DSP inst/i1/i1/tap[44].mult_reg[44].
+DSP Report: operator p_0_out is absorbed into DSP inst/i1/i1/tap[44].mult_reg[44].
+DSP Report: Generating DSP inst/i1/i1/tap[22].acc_reg[22], operation Mode is: (PCIN+((A:0x3ffffe0e)*BCIN2)')'.
+DSP Report: register inst/i1/i1/tap[45].shift_reg_reg is absorbed into DSP inst/i1/i1/tap[22].acc_reg[22].
+DSP Report: register inst/i1/i1/tap[22].acc_reg[22] is absorbed into DSP inst/i1/i1/tap[22].acc_reg[22].
+DSP Report: register inst/i1/i1/tap[45].mult_reg[45] is absorbed into DSP inst/i1/i1/tap[22].acc_reg[22].
+DSP Report: operator p_0_out is absorbed into DSP inst/i1/i1/tap[22].acc_reg[22].
+DSP Report: operator p_0_out is absorbed into DSP inst/i1/i1/tap[22].acc_reg[22].
+DSP Report: Generating DSP inst/i1/i1/tap[46].mult_reg[46], operation Mode is: ((A:0x3ffffd51)*BCIN2)'.
+DSP Report: register inst/i1/i1/tap[46].shift_reg_reg is absorbed into DSP inst/i1/i1/tap[46].mult_reg[46].
+DSP Report: register inst/i1/i1/tap[46].mult_reg[46] is absorbed into DSP inst/i1/i1/tap[46].mult_reg[46].
+DSP Report: operator p_0_out is absorbed into DSP inst/i1/i1/tap[46].mult_reg[46].
+DSP Report: Generating DSP inst/i1/i1/tap[23].acc_reg[23], operation Mode is: (PCIN+((A:0x3ffffcea)*BCIN2)')'.
+DSP Report: register inst/i1/i1/tap[47].shift_reg_reg is absorbed into DSP inst/i1/i1/tap[23].acc_reg[23].
+DSP Report: register inst/i1/i1/tap[23].acc_reg[23] is absorbed into DSP inst/i1/i1/tap[23].acc_reg[23].
+DSP Report: register inst/i1/i1/tap[47].mult_reg[47] is absorbed into DSP inst/i1/i1/tap[23].acc_reg[23].
+DSP Report: operator p_0_out is absorbed into DSP inst/i1/i1/tap[23].acc_reg[23].
+DSP Report: operator p_0_out is absorbed into DSP inst/i1/i1/tap[23].acc_reg[23].
+DSP Report: Generating DSP inst/i1/i1/tap[43].acc_reg[43], operation Mode is: (PCIN+A:B)'.
+DSP Report: register inst/i1/i1/tap[43].acc_reg[43] is absorbed into DSP inst/i1/i1/tap[43].acc_reg[43].
+DSP Report: operator p_0_out is absorbed into DSP inst/i1/i1/tap[43].acc_reg[43].
+DSP Report: Generating DSP inst/i1/i1/tap[48].mult_reg[48], operation Mode is: ((A:0x3ffffcd0)*B'')'.
+DSP Report: register inst/i1/i1/tap[47].shift_reg_reg is absorbed into DSP inst/i1/i1/tap[48].mult_reg[48].
+DSP Report: register inst/i1/i1/tap[48].shift_reg_reg is absorbed into DSP inst/i1/i1/tap[48].mult_reg[48].
+DSP Report: register inst/i1/i1/tap[48].mult_reg[48] is absorbed into DSP inst/i1/i1/tap[48].mult_reg[48].
+DSP Report: operator p_0_out is absorbed into DSP inst/i1/i1/tap[48].mult_reg[48].
+DSP Report: Generating DSP inst/i1/i1/tap[24].acc_reg[24], operation Mode is: (PCIN+((A:0x3ffffcf7)*BCIN2)')'.
+DSP Report: register inst/i1/i1/tap[49].shift_reg_reg is absorbed into DSP inst/i1/i1/tap[24].acc_reg[24].
+DSP Report: register inst/i1/i1/tap[24].acc_reg[24] is absorbed into DSP inst/i1/i1/tap[24].acc_reg[24].
+DSP Report: register inst/i1/i1/tap[49].mult_reg[49] is absorbed into DSP inst/i1/i1/tap[24].acc_reg[24].
+DSP Report: operator p_0_out is absorbed into DSP inst/i1/i1/tap[24].acc_reg[24].
+DSP Report: operator p_0_out is absorbed into DSP inst/i1/i1/tap[24].acc_reg[24].
+DSP Report: Generating DSP inst/i1/i1/tap[50].mult_reg[50], operation Mode is: ((A:0x3ffffd4e)*BCIN2)'.
+DSP Report: register inst/i1/i1/tap[50].shift_reg_reg is absorbed into DSP inst/i1/i1/tap[50].mult_reg[50].
+DSP Report: register inst/i1/i1/tap[50].mult_reg[50] is absorbed into DSP inst/i1/i1/tap[50].mult_reg[50].
+DSP Report: operator p_0_out is absorbed into DSP inst/i1/i1/tap[50].mult_reg[50].
+DSP Report: Generating DSP inst/i1/i1/tap[25].acc_reg[25], operation Mode is: (PCIN+((A:0x3ffffdc6)*BCIN2)')'.
+DSP Report: register inst/i1/i1/tap[51].shift_reg_reg is absorbed into DSP inst/i1/i1/tap[25].acc_reg[25].
+DSP Report: register inst/i1/i1/tap[25].acc_reg[25] is absorbed into DSP inst/i1/i1/tap[25].acc_reg[25].
+DSP Report: register inst/i1/i1/tap[51].mult_reg[51] is absorbed into DSP inst/i1/i1/tap[25].acc_reg[25].
+DSP Report: operator p_0_out is absorbed into DSP inst/i1/i1/tap[25].acc_reg[25].
+DSP Report: operator p_0_out is absorbed into DSP inst/i1/i1/tap[25].acc_reg[25].
+DSP Report: Generating DSP inst/i1/i1/tap[44].acc_reg[44], operation Mode is: (PCIN+A:B)'.
+DSP Report: register inst/i1/i1/tap[44].acc_reg[44] is absorbed into DSP inst/i1/i1/tap[44].acc_reg[44].
+DSP Report: operator p_0_out is absorbed into DSP inst/i1/i1/tap[44].acc_reg[44].
+DSP Report: Generating DSP inst/i1/i1/tap[52].mult_reg[52], operation Mode is: ((A:0x3ffffe50)*B'')'.
+DSP Report: register inst/i1/i1/tap[51].shift_reg_reg is absorbed into DSP inst/i1/i1/tap[52].mult_reg[52].
+DSP Report: register inst/i1/i1/tap[52].shift_reg_reg is absorbed into DSP inst/i1/i1/tap[52].mult_reg[52].
+DSP Report: register inst/i1/i1/tap[52].mult_reg[52] is absorbed into DSP inst/i1/i1/tap[52].mult_reg[52].
+DSP Report: operator p_0_out is absorbed into DSP inst/i1/i1/tap[52].mult_reg[52].
+DSP Report: Generating DSP inst/i1/i1/tap[26].acc_reg[26], operation Mode is: (PCIN+((A:0x3ffffedf)*BCIN2)')'.
+DSP Report: register inst/i1/i1/tap[53].shift_reg_reg is absorbed into DSP inst/i1/i1/tap[26].acc_reg[26].
+DSP Report: register inst/i1/i1/tap[26].acc_reg[26] is absorbed into DSP inst/i1/i1/tap[26].acc_reg[26].
+DSP Report: register inst/i1/i1/tap[53].mult_reg[53] is absorbed into DSP inst/i1/i1/tap[26].acc_reg[26].
+DSP Report: operator p_0_out is absorbed into DSP inst/i1/i1/tap[26].acc_reg[26].
+DSP Report: operator p_0_out is absorbed into DSP inst/i1/i1/tap[26].acc_reg[26].
+DSP Report: Generating DSP inst/i1/i1/tap[54].mult_reg[54], operation Mode is: ((A:0x3fffff65)*BCIN2)'.
+DSP Report: register inst/i1/i1/tap[54].shift_reg_reg is absorbed into DSP inst/i1/i1/tap[54].mult_reg[54].
+DSP Report: register inst/i1/i1/tap[54].mult_reg[54] is absorbed into DSP inst/i1/i1/tap[54].mult_reg[54].
+DSP Report: operator p_0_out is absorbed into DSP inst/i1/i1/tap[54].mult_reg[54].
+DSP Report: Generating DSP inst/i1/i1/tap[56].mult_reg[56], operation Mode is: (A''*(B:0x3b))'.
+DSP Report: register inst/i1/i1/tap[55].shift_reg_reg is absorbed into DSP inst/i1/i1/tap[56].mult_reg[56].
+DSP Report: register inst/i1/i1/tap[56].shift_reg_reg is absorbed into DSP inst/i1/i1/tap[56].mult_reg[56].
+DSP Report: register inst/i1/i1/tap[56].mult_reg[56] is absorbed into DSP inst/i1/i1/tap[56].mult_reg[56].
+DSP Report: operator p_0_out is absorbed into DSP inst/i1/i1/tap[56].mult_reg[56].
+DSP Report: Generating DSP inst/i1/i1/tap[28].acc_reg[28], operation Mode is: (PCIN+((A:0x80)*B'')')'.
+DSP Report: register inst/i1/i1/tap[56].shift_reg_reg is absorbed into DSP inst/i1/i1/tap[28].acc_reg[28].
+DSP Report: register inst/i1/i1/tap[57].shift_reg_reg is absorbed into DSP inst/i1/i1/tap[28].acc_reg[28].
+DSP Report: register inst/i1/i1/tap[28].acc_reg[28] is absorbed into DSP inst/i1/i1/tap[28].acc_reg[28].
+DSP Report: register inst/i1/i1/tap[57].mult_reg[57] is absorbed into DSP inst/i1/i1/tap[28].acc_reg[28].
+DSP Report: operator p_0_out is absorbed into DSP inst/i1/i1/tap[28].acc_reg[28].
+DSP Report: operator p_0_out is absorbed into DSP inst/i1/i1/tap[28].acc_reg[28].
+DSP Report: Generating DSP inst/i1/i1/tap[58].mult_reg[58], operation Mode is: ((A:0xac)*BCIN2)'.
+DSP Report: register inst/i1/i1/tap[58].shift_reg_reg is absorbed into DSP inst/i1/i1/tap[58].mult_reg[58].
+DSP Report: register inst/i1/i1/tap[58].mult_reg[58] is absorbed into DSP inst/i1/i1/tap[58].mult_reg[58].
+DSP Report: operator p_0_out is absorbed into DSP inst/i1/i1/tap[58].mult_reg[58].
+DSP Report: Generating DSP inst/i1/i1/tap[60].mult_reg[60], operation Mode is: ((A:0xbd)*BCIN'')'.
+DSP Report: register inst/i1/i1/tap[59].shift_reg_reg is absorbed into DSP inst/i1/i1/tap[60].mult_reg[60].
+DSP Report: register inst/i1/i1/tap[60].shift_reg_reg is absorbed into DSP inst/i1/i1/tap[60].mult_reg[60].
+DSP Report: register inst/i1/i1/tap[60].mult_reg[60] is absorbed into DSP inst/i1/i1/tap[60].mult_reg[60].
+DSP Report: operator p_0_out is absorbed into DSP inst/i1/i1/tap[60].mult_reg[60].
+DSP Report: Generating DSP inst/i1/i1/tap[30].acc_reg[30], operation Mode is: (PCIN+((A:0xac)*BCIN2)')'.
+DSP Report: register inst/i1/i1/tap[61].shift_reg_reg is absorbed into DSP inst/i1/i1/tap[30].acc_reg[30].
+DSP Report: register inst/i1/i1/tap[30].acc_reg[30] is absorbed into DSP inst/i1/i1/tap[30].acc_reg[30].
+DSP Report: register inst/i1/i1/tap[61].mult_reg[61] is absorbed into DSP inst/i1/i1/tap[30].acc_reg[30].
+DSP Report: operator p_0_out is absorbed into DSP inst/i1/i1/tap[30].acc_reg[30].
+DSP Report: operator p_0_out is absorbed into DSP inst/i1/i1/tap[30].acc_reg[30].
+DSP Report: Generating DSP inst/i1/i1/tap[62].mult_reg[62], operation Mode is: ((A:0x90)*BCIN2)'.
+DSP Report: register inst/i1/i1/tap[62].shift_reg_reg is absorbed into DSP inst/i1/i1/tap[62].mult_reg[62].
+DSP Report: register inst/i1/i1/tap[62].mult_reg[62] is absorbed into DSP inst/i1/i1/tap[62].mult_reg[62].
+DSP Report: operator p_0_out is absorbed into DSP inst/i1/i1/tap[62].mult_reg[62].
+DSP Report: Generating DSP inst/i1/i1/tap[31].acc_reg[31], operation Mode is: (PCIN+((A:0xe7)*BCIN2)')'.
+DSP Report: register inst/i1/i1/tap[63].shift_reg_reg is absorbed into DSP inst/i1/i1/tap[31].acc_reg[31].
+DSP Report: register inst/i1/i1/tap[31].acc_reg[31] is absorbed into DSP inst/i1/i1/tap[31].acc_reg[31].
+DSP Report: register inst/i1/i1/tap[63].mult_reg[63] is absorbed into DSP inst/i1/i1/tap[31].acc_reg[31].
+DSP Report: operator p_0_out is absorbed into DSP inst/i1/i1/tap[31].acc_reg[31].
+DSP Report: operator p_0_out is absorbed into DSP inst/i1/i1/tap[31].acc_reg[31].
+DSP Report: Generating DSP inst/i1/i1/tap[47].acc_reg[47], operation Mode is: (PCIN+A:B)'.
+DSP Report: register inst/i1/i1/tap[47].acc_reg[47] is absorbed into DSP inst/i1/i1/tap[47].acc_reg[47].
+DSP Report: operator p_0_out is absorbed into DSP inst/i1/i1/tap[47].acc_reg[47].
+DSP Report: Generating DSP inst/m_axis_tdata, operation Mode is: PCIN+(A''*B)'.
+DSP Report: register inst/i1/i1/tap[62].acc_reg[62] is absorbed into DSP inst/m_axis_tdata.
+DSP Report: register inst/i1/i1/result_reg is absorbed into DSP inst/m_axis_tdata.
+DSP Report: register inst/q_mult_reg is absorbed into DSP inst/m_axis_tdata.
+DSP Report: operator inst/m_axis_tdata is absorbed into DSP inst/m_axis_tdata.
+DSP Report: operator inst/q_mult0 is absorbed into DSP inst/m_axis_tdata.
+WARNING: [Synth 8-3331] design design_1_iq_modulator_0_0 has unconnected port s_axis_ref_tvalid
+WARNING: [Synth 8-3331] design design_1_iq_modulator_0_0 has unconnected port m_axis_tready
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/i0/i1/tap[55].mult_reg[55][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/i0/i1/tap[43].mult_reg[43][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/i0/i1/tap[11].mult_reg[11][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/i0/i1/tap[11].mult_reg[11][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/i0/i1/tap[11].mult_reg[11][2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/i0/i1/tap[11].mult_reg[11][3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/i0/i1/tap[1].mult_reg[1][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/i0/i1/tap[1].mult_reg[1][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/i0/i1/tap[1].mult_reg[1][2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/i0/i1/tap[1].mult_reg[1][3] )
+INFO: [Synth 8-3886] merging instance 'inst/i0/i1/tap[29].acc_reg[29][17]' (FD) to 'inst/i0/i1/tap[29].acc_reg[29][18]'
+INFO: [Synth 8-3886] merging instance 'inst/i0/i1/tap[29].acc_reg[29][18]' (FD) to 'inst/i0/i1/tap[29].acc_reg[29][19]'
+INFO: [Synth 8-3886] merging instance 'inst/i0/i1/tap[29].acc_reg[29][19]' (FD) to 'inst/i0/i1/tap[29].acc_reg[29][20]'
+INFO: [Synth 8-3886] merging instance 'inst/i0/i1/tap[29].acc_reg[29][20]' (FD) to 'inst/i0/i1/tap[29].acc_reg[29][21]'
+INFO: [Synth 8-3886] merging instance 'inst/i0/i1/tap[29].acc_reg[29][21]' (FD) to 'inst/i0/i1/tap[29].acc_reg[29][22]'
+INFO: [Synth 8-3886] merging instance 'inst/i0/i1/tap[29].acc_reg[29][22]' (FD) to 'inst/i0/i1/tap[29].acc_reg[29][23]'
+INFO: [Synth 8-3886] merging instance 'inst/i0/i1/tap[27].acc_reg[27][17]' (FD) to 'inst/i0/i1/tap[27].acc_reg[27][18]'
+INFO: [Synth 8-3886] merging instance 'inst/i0/i1/tap[27].acc_reg[27][18]' (FD) to 'inst/i0/i1/tap[27].acc_reg[27][19]'
+INFO: [Synth 8-3886] merging instance 'inst/i0/i1/tap[27].acc_reg[27][19]' (FD) to 'inst/i0/i1/tap[27].acc_reg[27][20]'
+INFO: [Synth 8-3886] merging instance 'inst/i0/i1/tap[27].acc_reg[27][20]' (FD) to 'inst/i0/i1/tap[27].acc_reg[27][21]'
+INFO: [Synth 8-3886] merging instance 'inst/i0/i1/tap[27].acc_reg[27][21]' (FD) to 'inst/i0/i1/tap[27].acc_reg[27][22]'
+INFO: [Synth 8-3886] merging instance 'inst/i0/i1/tap[27].acc_reg[27][22]' (FD) to 'inst/i0/i1/tap[27].acc_reg[27][23]'
+INFO: [Synth 8-3886] merging instance 'inst/i0/i1/tap[21].acc_reg[21][19]' (FD) to 'inst/i0/i1/tap[21].acc_reg[21][20]'
+INFO: [Synth 8-3886] merging instance 'inst/i0/i1/tap[21].acc_reg[21][20]' (FD) to 'inst/i0/i1/tap[21].acc_reg[21][21]'
+INFO: [Synth 8-3886] merging instance 'inst/i0/i1/tap[21].acc_reg[21][21]' (FD) to 'inst/i0/i1/tap[21].acc_reg[21][22]'
+INFO: [Synth 8-3886] merging instance 'inst/i0/i1/tap[21].acc_reg[21][22]' (FD) to 'inst/i0/i1/tap[21].acc_reg[21][23]'
+INFO: [Synth 8-3886] merging instance 'inst/i0/i1/tap[9].acc_reg[9][18]' (FD) to 'inst/i0/i1/tap[9].acc_reg[9][19]'
+INFO: [Synth 8-3886] merging instance 'inst/i0/i1/tap[9].acc_reg[9][19]' (FD) to 'inst/i0/i1/tap[9].acc_reg[9][20]'
+INFO: [Synth 8-3886] merging instance 'inst/i0/i1/tap[9].acc_reg[9][20]' (FD) to 'inst/i0/i1/tap[9].acc_reg[9][21]'
+INFO: [Synth 8-3886] merging instance 'inst/i0/i1/tap[9].acc_reg[9][21]' (FD) to 'inst/i0/i1/tap[9].acc_reg[9][22]'
+INFO: [Synth 8-3886] merging instance 'inst/i0/i1/tap[9].acc_reg[9][22]' (FD) to 'inst/i0/i1/tap[9].acc_reg[9][23]'
+INFO: [Synth 8-3886] merging instance 'inst/i0/i1/tap[5].acc_reg[5][18]' (FD) to 'inst/i0/i1/tap[5].acc_reg[5][19]'
+INFO: [Synth 8-3886] merging instance 'inst/i0/i1/tap[5].acc_reg[5][19]' (FD) to 'inst/i0/i1/tap[5].acc_reg[5][20]'
+INFO: [Synth 8-3886] merging instance 'inst/i0/i1/tap[5].acc_reg[5][20]' (FD) to 'inst/i0/i1/tap[5].acc_reg[5][21]'
+INFO: [Synth 8-3886] merging instance 'inst/i0/i1/tap[5].acc_reg[5][21]' (FD) to 'inst/i0/i1/tap[5].acc_reg[5][22]'
+INFO: [Synth 8-3886] merging instance 'inst/i0/i1/tap[5].acc_reg[5][22]' (FD) to 'inst/i0/i1/tap[5].acc_reg[5][23]'
+INFO: [Synth 8-3886] merging instance 'inst/i0/i1/tap[3].acc_reg[3][17]' (FD) to 'inst/i0/i1/tap[3].acc_reg[3][18]'
+INFO: [Synth 8-3886] merging instance 'inst/i0/i1/tap[3].acc_reg[3][18]' (FD) to 'inst/i0/i1/tap[3].acc_reg[3][19]'
+INFO: [Synth 8-3886] merging instance 'inst/i0/i1/tap[3].acc_reg[3][19]' (FD) to 'inst/i0/i1/tap[3].acc_reg[3][20]'
+INFO: [Synth 8-3886] merging instance 'inst/i0/i1/tap[3].acc_reg[3][20]' (FD) to 'inst/i0/i1/tap[3].acc_reg[3][21]'
+INFO: [Synth 8-3886] merging instance 'inst/i0/i1/tap[3].acc_reg[3][21]' (FD) to 'inst/i0/i1/tap[3].acc_reg[3][22]'
+INFO: [Synth 8-3886] merging instance 'inst/i0/i1/tap[3].acc_reg[3][22]' (FD) to 'inst/i0/i1/tap[3].acc_reg[3][23]'
+INFO: [Synth 8-3886] merging instance 'inst/i0/i1/tap[1].acc_reg[1][17]' (FD) to 'inst/i0/i1/tap[1].acc_reg[1][18]'
+INFO: [Synth 8-3886] merging instance 'inst/i0/i1/tap[0].acc_reg[0][17]' (FD) to 'inst/i0/i1/tap[0].acc_reg[0][18]'
+INFO: [Synth 8-3886] merging instance 'inst/i0/i1/tap[1].acc_reg[1][18]' (FD) to 'inst/i0/i1/tap[1].acc_reg[1][19]'
+INFO: [Synth 8-3886] merging instance 'inst/i0/i1/tap[0].acc_reg[0][18]' (FD) to 'inst/i0/i1/tap[0].acc_reg[0][19]'
+INFO: [Synth 8-3886] merging instance 'inst/i0/i1/tap[1].acc_reg[1][19]' (FD) to 'inst/i0/i1/tap[1].acc_reg[1][20]'
+INFO: [Synth 8-3886] merging instance 'inst/i0/i1/tap[0].acc_reg[0][19]' (FD) to 'inst/i0/i1/tap[0].acc_reg[0][20]'
+INFO: [Synth 8-3886] merging instance 'inst/i0/i1/tap[1].acc_reg[1][20]' (FD) to 'inst/i0/i1/tap[1].acc_reg[1][21]'
+INFO: [Synth 8-3886] merging instance 'inst/i0/i1/tap[0].acc_reg[0][20]' (FD) to 'inst/i0/i1/tap[0].acc_reg[0][21]'
+INFO: [Synth 8-3886] merging instance 'inst/i0/i1/tap[1].acc_reg[1][21]' (FD) to 'inst/i0/i1/tap[1].acc_reg[1][22]'
+INFO: [Synth 8-3886] merging instance 'inst/i0/i1/tap[0].acc_reg[0][21]' (FD) to 'inst/i0/i1/tap[0].acc_reg[0][22]'
+INFO: [Synth 8-3886] merging instance 'inst/i0/i1/tap[1].acc_reg[1][22]' (FD) to 'inst/i0/i1/tap[1].acc_reg[1][23]'
+INFO: [Synth 8-3886] merging instance 'inst/i0/i1/tap[0].acc_reg[0][22]' (FD) to 'inst/i0/i1/tap[0].acc_reg[0][23]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/i1/i1/tap[55].mult_reg[55][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/i1/i1/tap[43].mult_reg[43][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/i1/i1/tap[11].mult_reg[11][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/i1/i1/tap[11].mult_reg[11][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/i1/i1/tap[11].mult_reg[11][2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/i1/i1/tap[11].mult_reg[11][3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/i1/i1/tap[1].mult_reg[1][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/i1/i1/tap[1].mult_reg[1][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/i1/i1/tap[1].mult_reg[1][2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/i1/i1/tap[1].mult_reg[1][3] )
+INFO: [Synth 8-3886] merging instance 'inst/i1/i1/tap[29].acc_reg[29][17]' (FD) to 'inst/i1/i1/tap[29].acc_reg[29][18]'
+INFO: [Synth 8-3886] merging instance 'inst/i1/i1/tap[29].acc_reg[29][18]' (FD) to 'inst/i1/i1/tap[29].acc_reg[29][19]'
+INFO: [Synth 8-3886] merging instance 'inst/i1/i1/tap[29].acc_reg[29][19]' (FD) to 'inst/i1/i1/tap[29].acc_reg[29][20]'
+INFO: [Synth 8-3886] merging instance 'inst/i1/i1/tap[29].acc_reg[29][20]' (FD) to 'inst/i1/i1/tap[29].acc_reg[29][21]'
+INFO: [Synth 8-3886] merging instance 'inst/i1/i1/tap[29].acc_reg[29][21]' (FD) to 'inst/i1/i1/tap[29].acc_reg[29][22]'
+INFO: [Synth 8-3886] merging instance 'inst/i1/i1/tap[29].acc_reg[29][22]' (FD) to 'inst/i1/i1/tap[29].acc_reg[29][23]'
+INFO: [Synth 8-3886] merging instance 'inst/i1/i1/tap[27].acc_reg[27][17]' (FD) to 'inst/i1/i1/tap[27].acc_reg[27][18]'
+INFO: [Synth 8-3886] merging instance 'inst/i1/i1/tap[27].acc_reg[27][18]' (FD) to 'inst/i1/i1/tap[27].acc_reg[27][19]'
+INFO: [Synth 8-3886] merging instance 'inst/i1/i1/tap[27].acc_reg[27][19]' (FD) to 'inst/i1/i1/tap[27].acc_reg[27][20]'
+INFO: [Synth 8-3886] merging instance 'inst/i1/i1/tap[27].acc_reg[27][20]' (FD) to 'inst/i1/i1/tap[27].acc_reg[27][21]'
+INFO: [Synth 8-3886] merging instance 'inst/i1/i1/tap[27].acc_reg[27][21]' (FD) to 'inst/i1/i1/tap[27].acc_reg[27][22]'
+INFO: [Synth 8-3886] merging instance 'inst/i1/i1/tap[27].acc_reg[27][22]' (FD) to 'inst/i1/i1/tap[27].acc_reg[27][23]'
+INFO: [Synth 8-3886] merging instance 'inst/i1/i1/tap[21].acc_reg[21][19]' (FD) to 'inst/i1/i1/tap[21].acc_reg[21][20]'
+INFO: [Synth 8-3886] merging instance 'inst/i1/i1/tap[21].acc_reg[21][20]' (FD) to 'inst/i1/i1/tap[21].acc_reg[21][21]'
+INFO: [Synth 8-3886] merging instance 'inst/i1/i1/tap[21].acc_reg[21][21]' (FD) to 'inst/i1/i1/tap[21].acc_reg[21][22]'
+INFO: [Synth 8-3886] merging instance 'inst/i1/i1/tap[21].acc_reg[21][22]' (FD) to 'inst/i1/i1/tap[21].acc_reg[21][23]'
+INFO: [Synth 8-3886] merging instance 'inst/i1/i1/tap[9].acc_reg[9][18]' (FD) to 'inst/i1/i1/tap[9].acc_reg[9][19]'
+INFO: [Synth 8-3886] merging instance 'inst/i1/i1/tap[9].acc_reg[9][19]' (FD) to 'inst/i1/i1/tap[9].acc_reg[9][20]'
+INFO: [Synth 8-3886] merging instance 'inst/i1/i1/tap[9].acc_reg[9][20]' (FD) to 'inst/i1/i1/tap[9].acc_reg[9][21]'
+INFO: [Synth 8-3886] merging instance 'inst/i1/i1/tap[9].acc_reg[9][21]' (FD) to 'inst/i1/i1/tap[9].acc_reg[9][22]'
+INFO: [Synth 8-3886] merging instance 'inst/i1/i1/tap[9].acc_reg[9][22]' (FD) to 'inst/i1/i1/tap[9].acc_reg[9][23]'
+INFO: [Synth 8-3886] merging instance 'inst/i1/i1/tap[5].acc_reg[5][18]' (FD) to 'inst/i1/i1/tap[5].acc_reg[5][19]'
+INFO: [Synth 8-3886] merging instance 'inst/i1/i1/tap[5].acc_reg[5][19]' (FD) to 'inst/i1/i1/tap[5].acc_reg[5][20]'
+INFO: [Synth 8-3886] merging instance 'inst/i1/i1/tap[5].acc_reg[5][20]' (FD) to 'inst/i1/i1/tap[5].acc_reg[5][21]'
+INFO: [Synth 8-3886] merging instance 'inst/i1/i1/tap[5].acc_reg[5][21]' (FD) to 'inst/i1/i1/tap[5].acc_reg[5][22]'
+INFO: [Synth 8-3886] merging instance 'inst/i1/i1/tap[5].acc_reg[5][22]' (FD) to 'inst/i1/i1/tap[5].acc_reg[5][23]'
+INFO: [Synth 8-3886] merging instance 'inst/i1/i1/tap[3].acc_reg[3][17]' (FD) to 'inst/i1/i1/tap[3].acc_reg[3][18]'
+INFO: [Synth 8-3886] merging instance 'inst/i1/i1/tap[3].acc_reg[3][18]' (FD) to 'inst/i1/i1/tap[3].acc_reg[3][19]'
+INFO: [Synth 8-3886] merging instance 'inst/i1/i1/tap[3].acc_reg[3][19]' (FD) to 'inst/i1/i1/tap[3].acc_reg[3][20]'
+INFO: [Synth 8-3886] merging instance 'inst/i1/i1/tap[3].acc_reg[3][20]' (FD) to 'inst/i1/i1/tap[3].acc_reg[3][21]'
+INFO: [Synth 8-3886] merging instance 'inst/i1/i1/tap[3].acc_reg[3][21]' (FD) to 'inst/i1/i1/tap[3].acc_reg[3][22]'
+INFO: [Synth 8-3886] merging instance 'inst/i1/i1/tap[3].acc_reg[3][22]' (FD) to 'inst/i1/i1/tap[3].acc_reg[3][23]'
+INFO: [Synth 8-3886] merging instance 'inst/i1/i1/tap[1].acc_reg[1][17]' (FD) to 'inst/i1/i1/tap[1].acc_reg[1][18]'
+INFO: [Synth 8-3886] merging instance 'inst/i1/i1/tap[0].acc_reg[0][17]' (FD) to 'inst/i1/i1/tap[0].acc_reg[0][18]'
+INFO: [Synth 8-3886] merging instance 'inst/i1/i1/tap[1].acc_reg[1][18]' (FD) to 'inst/i1/i1/tap[1].acc_reg[1][19]'
+INFO: [Synth 8-3886] merging instance 'inst/i1/i1/tap[0].acc_reg[0][18]' (FD) to 'inst/i1/i1/tap[0].acc_reg[0][19]'
+INFO: [Synth 8-3886] merging instance 'inst/i1/i1/tap[1].acc_reg[1][19]' (FD) to 'inst/i1/i1/tap[1].acc_reg[1][20]'
+INFO: [Synth 8-3886] merging instance 'inst/i1/i1/tap[0].acc_reg[0][19]' (FD) to 'inst/i1/i1/tap[0].acc_reg[0][20]'
+INFO: [Synth 8-3886] merging instance 'inst/i1/i1/tap[1].acc_reg[1][20]' (FD) to 'inst/i1/i1/tap[1].acc_reg[1][21]'
+INFO: [Synth 8-3886] merging instance 'inst/i1/i1/tap[0].acc_reg[0][20]' (FD) to 'inst/i1/i1/tap[0].acc_reg[0][21]'
+INFO: [Synth 8-3886] merging instance 'inst/i1/i1/tap[1].acc_reg[1][21]' (FD) to 'inst/i1/i1/tap[1].acc_reg[1][22]'
+INFO: [Synth 8-3886] merging instance 'inst/i1/i1/tap[0].acc_reg[0][21]' (FD) to 'inst/i1/i1/tap[0].acc_reg[0][22]'
+INFO: [Synth 8-3886] merging instance 'inst/i1/i1/tap[1].acc_reg[1][22]' (FD) to 'inst/i1/i1/tap[1].acc_reg[1][23]'
+INFO: [Synth 8-3886] merging instance 'inst/i1/i1/tap[0].acc_reg[0][22]' (FD) to 'inst/i1/i1/tap[0].acc_reg[0][23]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/i0/i1/tap[55].mult_reg[55][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/i0/i1/tap[43].mult_reg[43][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/i1/i1/tap[55].mult_reg[55][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/i1/i1/tap[43].mult_reg[43][1] )
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:35 ; elapsed = 00:00:36 . Memory (MB): peak = 1046.418 ; gain = 404.773
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+DSP: Preliminary Mapping  Report (see note below)
++--------------------------+---------------------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name               | DSP Mapping                     | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++--------------------------+---------------------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|design_1_iq_modulator_0_0 | ((A:0xac)*B'')'                 | 9      | 8      | -      | -      | 17     | 0    | 2    | -    | -    | -     | 1    | 0    | 
+|fir_sync                  | ((A:0xbf)*BCIN'')'              | 9      | 8      | -      | -      | 17     | 0    | 2    | -    | -    | -     | 1    | 0    | 
+|design_1_iq_modulator_0_0 | (PCIN+((A:0xac)*BCIN2)')'       | 9      | 8      | -      | -      | 24     | 0    | 1    | -    | -    | -     | 1    | 1    | 
+|fir_sync                  | ((A:0x80)*BCIN2)'               | 9      | 8      | -      | -      | 17     | 0    | 1    | -    | -    | -     | 1    | 0    | 
+|fir_sync                  | (A''*(B:0x3ffdc))'              | 8      | 7      | -      | -      | 15     | 2    | 0    | -    | -    | -     | 1    | 0    | 
+|fir_sync                  | (PCIN+((A:0x3fffff65)*B'')')'   | 9      | 8      | -      | -      | 24     | 0    | 2    | -    | -    | -     | 1    | 1    | 
+|fir_sync                  | ((A:0x3ffffedf)*BCIN2)'         | 10     | 8      | -      | -      | 18     | 0    | 1    | -    | -    | -     | 1    | 0    | 
+|fir_sync                  | ((A:0x3ffffdc6)*BCIN'')'        | 11     | 8      | -      | -      | 19     | 0    | 2    | -    | -    | -     | 1    | 0    | 
+|design_1_iq_modulator_0_0 | (PCIN+((A:0x3ffffd4e)*BCIN2)')' | 11     | 8      | -      | -      | 24     | 0    | 1    | -    | -    | -     | 1    | 1    | 
+|fir_sync                  | ((A:0x3ffffcf7)*BCIN2)'         | 11     | 8      | -      | -      | 19     | 0    | 1    | -    | -    | -     | 1    | 0    | 
+|fir_sync                  | (PCIN+((A:0x3ffffcd0)*BCIN2)')' | 11     | 8      | -      | -      | 24     | 0    | 1    | -    | -    | -     | 1    | 1    | 
+|fir_sync                  | (PCIN+A:B)'                     | 6      | 18     | -      | -      | -1     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|fir_sync                  | ((A:0x3ffffcea)*B'')'           | 11     | 8      | -      | -      | 19     | 0    | 2    | -    | -    | -     | 1    | 0    | 
+|design_1_iq_modulator_0_0 | (PCIN+((A:0x3ffffd51)*BCIN2)')' | 11     | 8      | -      | -      | 24     | 0    | 1    | -    | -    | -     | 1    | 1    | 
+|fir_sync                  | ((A:0x3ffffe0e)*BCIN2)'         | 10     | 8      | -      | -      | 18     | 0    | 1    | -    | -    | -     | 1    | 0    | 
+|fir_sync                  | ((A:0x9c)*BCIN'')'              | 9      | 8      | -      | -      | 17     | 0    | 2    | -    | -    | -     | 1    | 0    | 
+|design_1_iq_modulator_0_0 | (PCIN+((A:0x266)*BCIN2)')'      | 11     | 8      | -      | -      | 24     | 0    | 1    | -    | -    | -     | 1    | 1    | 
+|fir_sync                  | ((A:0x47b)*BCIN2)'              | 12     | 8      | -      | -      | 20     | 0    | 1    | -    | -    | -     | 1    | 0    | 
+|fir_sync                  | (PCIN+((A:0x6c9)*BCIN2)')'      | 12     | 8      | -      | -      | 24     | 0    | 1    | -    | -    | -     | 1    | 1    | 
+|fir_sync                  | (PCIN+A:B)'                     | 6      | 18     | -      | -      | -1     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|fir_sync                  | ((A:0x1243)*B'')'               | 14     | 8      | -      | -      | 22     | 0    | 2    | -    | -    | -     | 1    | 0    | 
+|design_1_iq_modulator_0_0 | (PCIN+((A:0x13cd)*BCIN2)')'     | 14     | 8      | -      | -      | 24     | 0    | 1    | -    | -    | -     | 1    | 1    | 
+|fir_sync                  | ((A:0x14e0)*BCIN2)'             | 14     | 8      | -      | -      | 22     | 0    | 1    | -    | -    | -     | 1    | 0    | 
+|fir_sync                  | (PCIN+((A:0x156d)*BCIN2)')'     | 14     | 8      | -      | -      | 24     | 0    | 1    | -    | -    | -     | 1    | 1    | 
+|fir_sync                  | (PCIN+A:B)'                     | 6      | 18     | -      | -      | -1     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|fir_sync                  | ((A:0x93a)*B'')'                | 13     | 8      | -      | -      | 21     | 0    | 2    | -    | -    | -     | 1    | 0    | 
+|design_1_iq_modulator_0_0 | (PCIN+((A:0xbb5)*BCIN2)')'      | 13     | 8      | -      | -      | 24     | 0    | 1    | -    | -    | -     | 1    | 1    | 
+|fir_sync                  | ((A:0xe1d)*BCIN2)'              | 13     | 8      | -      | -      | 21     | 0    | 1    | -    | -    | -     | 1    | 0    | 
+|fir_sync                  | (PCIN+((A:0x1055)*BCIN2)')'     | 14     | 8      | -      | -      | 24     | 0    | 1    | -    | -    | -     | 1    | 1    | 
+|fir_sync                  | (PCIN+A:B)'                     | 6      | 18     | -      | -      | -1     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|fir_sync                  | (PCIN+A:B)'                     | 6      | 18     | -      | -      | -1     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|fir_sync                  | ((A:0x1055)*B'')'               | 14     | 8      | -      | -      | 22     | 0    | 2    | -    | -    | -     | 1    | 0    | 
+|design_1_iq_modulator_0_0 | (PCIN+((A:0xe1d)*BCIN2)')'      | 13     | 8      | -      | -      | 24     | 0    | 1    | -    | -    | -     | 1    | 1    | 
+|fir_sync                  | ((A:0xbb5)*BCIN2)'              | 13     | 8      | -      | -      | 21     | 0    | 1    | -    | -    | -     | 1    | 0    | 
+|fir_sync                  | (PCIN+((A:0x93a)*BCIN2)')'      | 13     | 8      | -      | -      | 24     | 0    | 1    | -    | -    | -     | 1    | 1    | 
+|fir_sync                  | (PCIN+A:B)'                     | 6      | 18     | -      | -      | -1     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|fir_sync                  | ((A:0x156d)*B'')'               | 14     | 8      | -      | -      | 22     | 0    | 2    | -    | -    | -     | 1    | 0    | 
+|design_1_iq_modulator_0_0 | (PCIN+((A:0x14e0)*BCIN2)')'     | 14     | 8      | -      | -      | 24     | 0    | 1    | -    | -    | -     | 1    | 1    | 
+|fir_sync                  | ((A:0x13cd)*BCIN2)'             | 14     | 8      | -      | -      | 22     | 0    | 1    | -    | -    | -     | 1    | 0    | 
+|fir_sync                  | (PCIN+((A:0x1243)*BCIN2)')'     | 14     | 8      | -      | -      | 24     | 0    | 1    | -    | -    | -     | 1    | 1    | 
+|fir_sync                  | (PCIN+A:B)'                     | 6      | 18     | -      | -      | -1     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|fir_sync                  | (PCIN+A:B)'                     | 6      | 18     | -      | -      | -1     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|fir_sync                  | ((A:0x6c9)*B'')'                | 12     | 8      | -      | -      | 20     | 0    | 2    | -    | -    | -     | 1    | 0    | 
+|design_1_iq_modulator_0_0 | (PCIN+((A:0x47b)*BCIN2)')'      | 12     | 8      | -      | -      | 24     | 0    | 1    | -    | -    | -     | 1    | 1    | 
+|fir_sync                  | ((A:0x266)*BCIN2)'              | 11     | 8      | -      | -      | 19     | 0    | 1    | -    | -    | -     | 1    | 0    | 
+|fir_sync                  | ((A:0x3fffff27)*BCIN'')'        | 9      | 8      | -      | -      | 17     | 0    | 2    | -    | -    | -     | 1    | 0    | 
+|design_1_iq_modulator_0_0 | (PCIN+((A:0x3ffffe0e)*BCIN2)')' | 10     | 8      | -      | -      | 24     | 0    | 1    | -    | -    | -     | 1    | 1    | 
+|fir_sync                  | ((A:0x3ffffd51)*BCIN2)'         | 11     | 8      | -      | -      | 19     | 0    | 1    | -    | -    | -     | 1    | 0    | 
+|fir_sync                  | (PCIN+((A:0x3ffffcea)*BCIN2)')' | 11     | 8      | -      | -      | 24     | 0    | 1    | -    | -    | -     | 1    | 1    | 
+|fir_sync                  | (PCIN+A:B)'                     | 6      | 18     | -      | -      | -1     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|fir_sync                  | ((A:0x3ffffcd0)*B'')'           | 11     | 8      | -      | -      | 19     | 0    | 2    | -    | -    | -     | 1    | 0    | 
+|design_1_iq_modulator_0_0 | (PCIN+((A:0x3ffffcf7)*BCIN2)')' | 11     | 8      | -      | -      | 24     | 0    | 1    | -    | -    | -     | 1    | 1    | 
+|fir_sync                  | ((A:0x3ffffd4e)*BCIN2)'         | 11     | 8      | -      | -      | 19     | 0    | 1    | -    | -    | -     | 1    | 0    | 
+|fir_sync                  | (PCIN+((A:0x3ffffdc6)*BCIN2)')' | 11     | 8      | -      | -      | 24     | 0    | 1    | -    | -    | -     | 1    | 1    | 
+|fir_sync                  | (PCIN+A:B)'                     | 6      | 18     | -      | -      | -1     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|fir_sync                  | ((A:0x3ffffe50)*B'')'           | 10     | 8      | -      | -      | 18     | 0    | 2    | -    | -    | -     | 1    | 0    | 
+|design_1_iq_modulator_0_0 | (PCIN+((A:0x3ffffedf)*BCIN2)')' | 10     | 8      | -      | -      | 24     | 0    | 1    | -    | -    | -     | 1    | 1    | 
+|fir_sync                  | ((A:0x3fffff65)*BCIN2)'         | 9      | 8      | -      | -      | 17     | 0    | 1    | -    | -    | -     | 1    | 0    | 
+|fir_sync                  | (A''*(B:0x3b))'                 | 8      | 7      | -      | -      | 15     | 2    | 0    | -    | -    | -     | 1    | 0    | 
+|fir_sync                  | (PCIN+((A:0x80)*B'')')'         | 9      | 8      | -      | -      | 24     | 0    | 2    | -    | -    | -     | 1    | 1    | 
+|fir_sync                  | ((A:0xac)*BCIN2)'               | 9      | 8      | -      | -      | 17     | 0    | 1    | -    | -    | -     | 1    | 0    | 
+|fir_sync                  | ((A:0xbd)*BCIN'')'              | 9      | 8      | -      | -      | 17     | 0    | 2    | -    | -    | -     | 1    | 0    | 
+|fir_sync                  | (PCIN+((A:0xac)*BCIN2)')'       | 9      | 8      | -      | -      | 24     | 0    | 1    | -    | -    | -     | 1    | 1    | 
+|fir_sync                  | ((A:0x90)*BCIN2)'               | 9      | 8      | -      | -      | 17     | 0    | 1    | -    | -    | -     | 1    | 0    | 
+|fir_sync                  | (PCIN+((A:0xe7)*BCIN2)')'       | 9      | 8      | -      | -      | 24     | 0    | 1    | -    | -    | -     | 1    | 1    | 
+|fir_sync                  | (PCIN+A:B)'                     | 6      | 18     | -      | -      | -1     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|fir_sync                  | (A''*B)'                        | 24     | 8      | -      | -      | 32     | 2    | 0    | -    | -    | -     | 1    | 0    | 
+|design_1_iq_modulator_0_0 | ((A:0xac)*B'')'                 | 9      | 8      | -      | -      | 17     | 0    | 2    | -    | -    | -     | 1    | 0    | 
+|fir_sync                  | ((A:0xbf)*BCIN'')'              | 9      | 8      | -      | -      | 17     | 0    | 2    | -    | -    | -     | 1    | 0    | 
+|design_1_iq_modulator_0_0 | (PCIN+((A:0xac)*BCIN2)')'       | 9      | 8      | -      | -      | 24     | 0    | 1    | -    | -    | -     | 1    | 1    | 
+|fir_sync                  | ((A:0x80)*BCIN2)'               | 9      | 8      | -      | -      | 17     | 0    | 1    | -    | -    | -     | 1    | 0    | 
+|fir_sync                  | (A''*(B:0x3ffdc))'              | 8      | 7      | -      | -      | 15     | 2    | 0    | -    | -    | -     | 1    | 0    | 
+|fir_sync                  | (PCIN+((A:0x3fffff65)*B'')')'   | 9      | 8      | -      | -      | 24     | 0    | 2    | -    | -    | -     | 1    | 1    | 
+|fir_sync                  | ((A:0x3ffffedf)*BCIN2)'         | 10     | 8      | -      | -      | 18     | 0    | 1    | -    | -    | -     | 1    | 0    | 
+|fir_sync                  | ((A:0x3ffffdc6)*BCIN'')'        | 11     | 8      | -      | -      | 19     | 0    | 2    | -    | -    | -     | 1    | 0    | 
+|design_1_iq_modulator_0_0 | (PCIN+((A:0x3ffffd4e)*BCIN2)')' | 11     | 8      | -      | -      | 24     | 0    | 1    | -    | -    | -     | 1    | 1    | 
+|fir_sync                  | ((A:0x3ffffcf7)*BCIN2)'         | 11     | 8      | -      | -      | 19     | 0    | 1    | -    | -    | -     | 1    | 0    | 
+|fir_sync                  | (PCIN+((A:0x3ffffcd0)*BCIN2)')' | 11     | 8      | -      | -      | 24     | 0    | 1    | -    | -    | -     | 1    | 1    | 
+|fir_sync                  | (PCIN+A:B)'                     | 6      | 18     | -      | -      | -1     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|fir_sync                  | ((A:0x3ffffcea)*B'')'           | 11     | 8      | -      | -      | 19     | 0    | 2    | -    | -    | -     | 1    | 0    | 
+|design_1_iq_modulator_0_0 | (PCIN+((A:0x3ffffd51)*BCIN2)')' | 11     | 8      | -      | -      | 24     | 0    | 1    | -    | -    | -     | 1    | 1    | 
+|fir_sync                  | ((A:0x3ffffe0e)*BCIN2)'         | 10     | 8      | -      | -      | 18     | 0    | 1    | -    | -    | -     | 1    | 0    | 
+|fir_sync                  | ((A:0x9c)*BCIN'')'              | 9      | 8      | -      | -      | 17     | 0    | 2    | -    | -    | -     | 1    | 0    | 
+|design_1_iq_modulator_0_0 | (PCIN+((A:0x266)*BCIN2)')'      | 11     | 8      | -      | -      | 24     | 0    | 1    | -    | -    | -     | 1    | 1    | 
+|fir_sync                  | ((A:0x47b)*BCIN2)'              | 12     | 8      | -      | -      | 20     | 0    | 1    | -    | -    | -     | 1    | 0    | 
+|fir_sync                  | (PCIN+((A:0x6c9)*BCIN2)')'      | 12     | 8      | -      | -      | 24     | 0    | 1    | -    | -    | -     | 1    | 1    | 
+|fir_sync                  | (PCIN+A:B)'                     | 6      | 18     | -      | -      | -1     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|fir_sync                  | ((A:0x1243)*B'')'               | 14     | 8      | -      | -      | 22     | 0    | 2    | -    | -    | -     | 1    | 0    | 
+|design_1_iq_modulator_0_0 | (PCIN+((A:0x13cd)*BCIN2)')'     | 14     | 8      | -      | -      | 24     | 0    | 1    | -    | -    | -     | 1    | 1    | 
+|fir_sync                  | ((A:0x14e0)*BCIN2)'             | 14     | 8      | -      | -      | 22     | 0    | 1    | -    | -    | -     | 1    | 0    | 
+|fir_sync                  | (PCIN+((A:0x156d)*BCIN2)')'     | 14     | 8      | -      | -      | 24     | 0    | 1    | -    | -    | -     | 1    | 1    | 
+|fir_sync                  | (PCIN+A:B)'                     | 6      | 18     | -      | -      | -1     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|fir_sync                  | ((A:0x93a)*B'')'                | 13     | 8      | -      | -      | 21     | 0    | 2    | -    | -    | -     | 1    | 0    | 
+|design_1_iq_modulator_0_0 | (PCIN+((A:0xbb5)*BCIN2)')'      | 13     | 8      | -      | -      | 24     | 0    | 1    | -    | -    | -     | 1    | 1    | 
+|fir_sync                  | ((A:0xe1d)*BCIN2)'              | 13     | 8      | -      | -      | 21     | 0    | 1    | -    | -    | -     | 1    | 0    | 
+|fir_sync                  | (PCIN+((A:0x1055)*BCIN2)')'     | 14     | 8      | -      | -      | 24     | 0    | 1    | -    | -    | -     | 1    | 1    | 
+|fir_sync                  | (PCIN+A:B)'                     | 6      | 18     | -      | -      | -1     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|fir_sync                  | (PCIN+A:B)'                     | 6      | 18     | -      | -      | -1     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|fir_sync                  | ((A:0x1055)*B'')'               | 14     | 8      | -      | -      | 22     | 0    | 2    | -    | -    | -     | 1    | 0    | 
+|design_1_iq_modulator_0_0 | (PCIN+((A:0xe1d)*BCIN2)')'      | 13     | 8      | -      | -      | 24     | 0    | 1    | -    | -    | -     | 1    | 1    | 
+|fir_sync                  | ((A:0xbb5)*BCIN2)'              | 13     | 8      | -      | -      | 21     | 0    | 1    | -    | -    | -     | 1    | 0    | 
+|fir_sync                  | (PCIN+((A:0x93a)*BCIN2)')'      | 13     | 8      | -      | -      | 24     | 0    | 1    | -    | -    | -     | 1    | 1    | 
+|fir_sync                  | (PCIN+A:B)'                     | 6      | 18     | -      | -      | -1     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|fir_sync                  | ((A:0x156d)*B'')'               | 14     | 8      | -      | -      | 22     | 0    | 2    | -    | -    | -     | 1    | 0    | 
+|design_1_iq_modulator_0_0 | (PCIN+((A:0x14e0)*BCIN2)')'     | 14     | 8      | -      | -      | 24     | 0    | 1    | -    | -    | -     | 1    | 1    | 
+|fir_sync                  | ((A:0x13cd)*BCIN2)'             | 14     | 8      | -      | -      | 22     | 0    | 1    | -    | -    | -     | 1    | 0    | 
+|fir_sync                  | (PCIN+((A:0x1243)*BCIN2)')'     | 14     | 8      | -      | -      | 24     | 0    | 1    | -    | -    | -     | 1    | 1    | 
+|fir_sync                  | (PCIN+A:B)'                     | 6      | 18     | -      | -      | -1     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|fir_sync                  | (PCIN+A:B)'                     | 6      | 18     | -      | -      | -1     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|fir_sync                  | ((A:0x6c9)*B'')'                | 12     | 8      | -      | -      | 20     | 0    | 2    | -    | -    | -     | 1    | 0    | 
+|design_1_iq_modulator_0_0 | (PCIN+((A:0x47b)*BCIN2)')'      | 12     | 8      | -      | -      | 24     | 0    | 1    | -    | -    | -     | 1    | 1    | 
+|fir_sync                  | ((A:0x266)*BCIN2)'              | 11     | 8      | -      | -      | 19     | 0    | 1    | -    | -    | -     | 1    | 0    | 
+|fir_sync                  | ((A:0x3fffff27)*BCIN'')'        | 9      | 8      | -      | -      | 17     | 0    | 2    | -    | -    | -     | 1    | 0    | 
+|design_1_iq_modulator_0_0 | (PCIN+((A:0x3ffffe0e)*BCIN2)')' | 10     | 8      | -      | -      | 24     | 0    | 1    | -    | -    | -     | 1    | 1    | 
+|fir_sync                  | ((A:0x3ffffd51)*BCIN2)'         | 11     | 8      | -      | -      | 19     | 0    | 1    | -    | -    | -     | 1    | 0    | 
+|fir_sync                  | (PCIN+((A:0x3ffffcea)*BCIN2)')' | 11     | 8      | -      | -      | 24     | 0    | 1    | -    | -    | -     | 1    | 1    | 
+|fir_sync                  | (PCIN+A:B)'                     | 6      | 18     | -      | -      | -1     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|fir_sync                  | ((A:0x3ffffcd0)*B'')'           | 11     | 8      | -      | -      | 19     | 0    | 2    | -    | -    | -     | 1    | 0    | 
+|design_1_iq_modulator_0_0 | (PCIN+((A:0x3ffffcf7)*BCIN2)')' | 11     | 8      | -      | -      | 24     | 0    | 1    | -    | -    | -     | 1    | 1    | 
+|fir_sync                  | ((A:0x3ffffd4e)*BCIN2)'         | 11     | 8      | -      | -      | 19     | 0    | 1    | -    | -    | -     | 1    | 0    | 
+|fir_sync                  | (PCIN+((A:0x3ffffdc6)*BCIN2)')' | 11     | 8      | -      | -      | 24     | 0    | 1    | -    | -    | -     | 1    | 1    | 
+|fir_sync                  | (PCIN+A:B)'                     | 6      | 18     | -      | -      | -1     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|fir_sync                  | ((A:0x3ffffe50)*B'')'           | 10     | 8      | -      | -      | 18     | 0    | 2    | -    | -    | -     | 1    | 0    | 
+|design_1_iq_modulator_0_0 | (PCIN+((A:0x3ffffedf)*BCIN2)')' | 10     | 8      | -      | -      | 24     | 0    | 1    | -    | -    | -     | 1    | 1    | 
+|fir_sync                  | ((A:0x3fffff65)*BCIN2)'         | 9      | 8      | -      | -      | 17     | 0    | 1    | -    | -    | -     | 1    | 0    | 
+|fir_sync                  | (A''*(B:0x3b))'                 | 8      | 7      | -      | -      | 15     | 2    | 0    | -    | -    | -     | 1    | 0    | 
+|fir_sync                  | (PCIN+((A:0x80)*B'')')'         | 9      | 8      | -      | -      | 24     | 0    | 2    | -    | -    | -     | 1    | 1    | 
+|fir_sync                  | ((A:0xac)*BCIN2)'               | 9      | 8      | -      | -      | 17     | 0    | 1    | -    | -    | -     | 1    | 0    | 
+|fir_sync                  | ((A:0xbd)*BCIN'')'              | 9      | 8      | -      | -      | 17     | 0    | 2    | -    | -    | -     | 1    | 0    | 
+|fir_sync                  | (PCIN+((A:0xac)*BCIN2)')'       | 9      | 8      | -      | -      | 24     | 0    | 1    | -    | -    | -     | 1    | 1    | 
+|fir_sync                  | ((A:0x90)*BCIN2)'               | 9      | 8      | -      | -      | 17     | 0    | 1    | -    | -    | -     | 1    | 0    | 
+|fir_sync                  | (PCIN+((A:0xe7)*BCIN2)')'       | 9      | 8      | -      | -      | 24     | 0    | 1    | -    | -    | -     | 1    | 1    | 
+|fir_sync                  | (PCIN+A:B)'                     | 6      | 18     | -      | -      | -1     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|fir_sync                  | PCIN+(A''*B)'                   | 24     | 8      | -      | -      | 32     | 2    | 0    | -    | -    | -     | 1    | 0    | 
++--------------------------+---------------------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:53 ; elapsed = 00:00:55 . Memory (MB): peak = 1067.500 ; gain = 425.855
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:54 ; elapsed = 00:00:55 . Memory (MB): peak = 1072.316 ; gain = 430.672
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:55 ; elapsed = 00:00:57 . Memory (MB): peak = 1113.637 ; gain = 471.992
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:58 ; elapsed = 00:01:00 . Memory (MB): peak = 1121.832 ; gain = 480.188
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:58 ; elapsed = 00:01:00 . Memory (MB): peak = 1121.832 ; gain = 480.188
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:59 ; elapsed = 00:01:00 . Memory (MB): peak = 1121.832 ; gain = 480.188
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:59 ; elapsed = 00:01:00 . Memory (MB): peak = 1121.832 ; gain = 480.188
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:59 ; elapsed = 00:01:00 . Memory (MB): peak = 1121.832 ; gain = 480.188
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:59 ; elapsed = 00:01:00 . Memory (MB): peak = 1121.832 ; gain = 480.188
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Static Shift Register Report:
++--------------------------+-------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name               | RTL Name                            | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++--------------------------+-------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|design_1_iq_modulator_0_0 | inst/i0/i1/tap[6].shift_reg_reg[7]  | 3      | 32    | NO           | NO                 | YES               | 32     | 0       | 
+|design_1_iq_modulator_0_0 | inst/i0/i1/tap[11].shift_reg_reg[7] | 4      | 64    | NO           | NO                 | YES               | 64     | 0       | 
+|design_1_iq_modulator_0_0 | inst/i0/i1/tap[19].shift_reg_reg[7] | 5      | 16    | NO           | NO                 | YES               | 16     | 0       | 
+|design_1_iq_modulator_0_0 | inst/i0/i1/shift_tmp_reg[8]         | 9      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|design_1_iq_modulator_0_0 | inst/i1/i1/tap[6].shift_reg_reg[7]  | 3      | 32    | NO           | NO                 | YES               | 32     | 0       | 
+|design_1_iq_modulator_0_0 | inst/i1/i1/tap[11].shift_reg_reg[7] | 4      | 64    | NO           | NO                 | YES               | 64     | 0       | 
+|design_1_iq_modulator_0_0 | inst/i1/i1/tap[19].shift_reg_reg[7] | 5      | 16    | NO           | NO                 | YES               | 16     | 0       | 
++--------------------------+-------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----------+------+
+|      |Cell       |Count |
++------+-----------+------+
+|1     |CARRY4     |   446|
+|2     |DSP48E1_10 |     5|
+|3     |DSP48E1_2  |    44|
+|4     |DSP48E1_4  |     1|
+|5     |DSP48E1_5  |     4|
+|6     |DSP48E1_6  |    22|
+|7     |DSP48E1_7  |    18|
+|8     |DSP48E1_8  |    10|
+|9     |DSP48E1_9  |    30|
+|10    |LUT1       |    97|
+|11    |LUT2       |  1458|
+|12    |LUT3       |    86|
+|13    |LUT4       |    72|
+|14    |LUT5       |   110|
+|15    |LUT6       |   140|
+|16    |SRL16E     |   225|
+|17    |FDRE       |  1888|
++------+-----------+------+
+
+Report Instance Areas: 
++------+---------+-------------+------+
+|      |Instance |Module       |Cells |
++------+---------+-------------+------+
+|1     |top      |             |  4656|
+|2     |  inst   |iq_modulator |  4656|
+|3     |    i0   |up_sample    |  2351|
+|4     |      i0 |add_zeros_1  |    32|
+|5     |      i1 |fir_sync_2   |  2319|
+|6     |    i1   |up_sample_0  |  2302|
+|7     |      i0 |add_zeros    |    34|
+|8     |      i1 |fir_sync     |  2268|
++------+---------+-------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:59 ; elapsed = 00:01:00 . Memory (MB): peak = 1121.832 ; gain = 480.188
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 66 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:44 ; elapsed = 00:00:53 . Memory (MB): peak = 1121.832 ; gain = 320.652
+Synthesis Optimization Complete : Time (s): cpu = 00:00:59 ; elapsed = 00:01:01 . Memory (MB): peak = 1121.832 ; gain = 480.188
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 580 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1141.152 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+238 Infos, 76 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:16 ; elapsed = 00:01:19 . Memory (MB): peak = 1141.152 ; gain = 841.238
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1141.152 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'D:/work/radar_course/lesson_6/vivado/iq_mod_zc706/iq_mod_zc706.runs/design_1_iq_modulator_0_0_synth_1/design_1_iq_modulator_0_0.dcp' has been generated.
+WARNING: [Common 17-576] 'use_project_ipc' is deprecated. This option is deprecated and no longer used.
+INFO: [Coretcl 2-1174] Renamed 7 cell refs.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1141.152 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'D:/work/radar_course/lesson_6/vivado/iq_mod_zc706/iq_mod_zc706.runs/design_1_iq_modulator_0_0_synth_1/design_1_iq_modulator_0_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file design_1_iq_modulator_0_0_utilization_synth.rpt -pb design_1_iq_modulator_0_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Thu Dec 10 10:18:14 2020...

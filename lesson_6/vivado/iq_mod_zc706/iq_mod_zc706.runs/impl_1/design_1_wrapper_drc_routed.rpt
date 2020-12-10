@@ -1,0 +1,355 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.1.2 (win64) Build 2615518 Fri Aug  9 15:55:25 MDT 2019
+| Date         : Thu Dec 10 10:28:20 2020
+| Host         : LAPTOP-KSVOJTV9 running 64-bit major release  (build 9200)
+| Command      : report_drc -file design_1_wrapper_drc_routed.rpt -pb design_1_wrapper_drc_routed.pb -rpx design_1_wrapper_drc_routed.rpx
+| Design       : design_1_wrapper
+| Device       : xc7z045ffg900-2
+| Speed File   : -2
+| Design State : Fully Routed
+------------------------------------------------------------------------------------------------------------------------------------------
+
+Report DRC
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+           Ruledeck: default
+             Max violations: <unlimited>
+             Violations found: 63
++-----------+----------+------------------------+------------+
+| Rule      | Severity | Description            | Violations |
++-----------+----------+------------------------+------------+
+| DPIP-1    | Warning  | Input pipelining       | 46         |
+| DPOP-1    | Warning  | PREG Output pipelining | 1          |
+| DPOP-2    | Warning  | MREG Output pipelining | 14         |
+| RTSTAT-10 | Warning  | No routable loads      | 1          |
+| ZPS7-1    | Warning  | PS7 block required     | 1          |
++-----------+----------+------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+DPIP-1#1 Warning
+Input pipelining  
+DSP design_1_i/iq_modulator_0/inst/i0/i1/tap[35].acc_reg[35] input design_1_i/iq_modulator_0/inst/i0/i1/tap[35].acc_reg[35]/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#2 Warning
+Input pipelining  
+DSP design_1_i/iq_modulator_0/inst/i0/i1/tap[35].acc_reg[35] input design_1_i/iq_modulator_0/inst/i0/i1/tap[35].acc_reg[35]/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#3 Warning
+Input pipelining  
+DSP design_1_i/iq_modulator_0/inst/i0/i1/tap[37].acc_reg[37] input design_1_i/iq_modulator_0/inst/i0/i1/tap[37].acc_reg[37]/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#4 Warning
+Input pipelining  
+DSP design_1_i/iq_modulator_0/inst/i0/i1/tap[37].acc_reg[37] input design_1_i/iq_modulator_0/inst/i0/i1/tap[37].acc_reg[37]/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#5 Warning
+Input pipelining  
+DSP design_1_i/iq_modulator_0/inst/i0/i1/tap[38].acc_reg[38] input design_1_i/iq_modulator_0/inst/i0/i1/tap[38].acc_reg[38]/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#6 Warning
+Input pipelining  
+DSP design_1_i/iq_modulator_0/inst/i0/i1/tap[38].acc_reg[38] input design_1_i/iq_modulator_0/inst/i0/i1/tap[38].acc_reg[38]/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#7 Warning
+Input pipelining  
+DSP design_1_i/iq_modulator_0/inst/i0/i1/tap[39].acc_reg[39] input design_1_i/iq_modulator_0/inst/i0/i1/tap[39].acc_reg[39]/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#8 Warning
+Input pipelining  
+DSP design_1_i/iq_modulator_0/inst/i0/i1/tap[39].acc_reg[39] input design_1_i/iq_modulator_0/inst/i0/i1/tap[39].acc_reg[39]/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#9 Warning
+Input pipelining  
+DSP design_1_i/iq_modulator_0/inst/i0/i1/tap[40].acc_reg[40] input design_1_i/iq_modulator_0/inst/i0/i1/tap[40].acc_reg[40]/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#10 Warning
+Input pipelining  
+DSP design_1_i/iq_modulator_0/inst/i0/i1/tap[40].acc_reg[40] input design_1_i/iq_modulator_0/inst/i0/i1/tap[40].acc_reg[40]/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#11 Warning
+Input pipelining  
+DSP design_1_i/iq_modulator_0/inst/i0/i1/tap[41].acc_reg[41] input design_1_i/iq_modulator_0/inst/i0/i1/tap[41].acc_reg[41]/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#12 Warning
+Input pipelining  
+DSP design_1_i/iq_modulator_0/inst/i0/i1/tap[41].acc_reg[41] input design_1_i/iq_modulator_0/inst/i0/i1/tap[41].acc_reg[41]/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#13 Warning
+Input pipelining  
+DSP design_1_i/iq_modulator_0/inst/i0/i1/tap[43].acc_reg[43] input design_1_i/iq_modulator_0/inst/i0/i1/tap[43].acc_reg[43]/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#14 Warning
+Input pipelining  
+DSP design_1_i/iq_modulator_0/inst/i0/i1/tap[43].acc_reg[43] input design_1_i/iq_modulator_0/inst/i0/i1/tap[43].acc_reg[43]/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#15 Warning
+Input pipelining  
+DSP design_1_i/iq_modulator_0/inst/i0/i1/tap[44].acc_reg[44] input design_1_i/iq_modulator_0/inst/i0/i1/tap[44].acc_reg[44]/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#16 Warning
+Input pipelining  
+DSP design_1_i/iq_modulator_0/inst/i0/i1/tap[44].acc_reg[44] input design_1_i/iq_modulator_0/inst/i0/i1/tap[44].acc_reg[44]/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#17 Warning
+Input pipelining  
+DSP design_1_i/iq_modulator_0/inst/i0/i1/tap[47].acc_reg[47] input design_1_i/iq_modulator_0/inst/i0/i1/tap[47].acc_reg[47]/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#18 Warning
+Input pipelining  
+DSP design_1_i/iq_modulator_0/inst/i0/i1/tap[47].acc_reg[47] input design_1_i/iq_modulator_0/inst/i0/i1/tap[47].acc_reg[47]/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#19 Warning
+Input pipelining  
+DSP design_1_i/iq_modulator_0/inst/i0/i1/tap[51].acc_reg[51] input design_1_i/iq_modulator_0/inst/i0/i1/tap[51].acc_reg[51]/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#20 Warning
+Input pipelining  
+DSP design_1_i/iq_modulator_0/inst/i0/i1/tap[51].acc_reg[51] input design_1_i/iq_modulator_0/inst/i0/i1/tap[51].acc_reg[51]/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#21 Warning
+Input pipelining  
+DSP design_1_i/iq_modulator_0/inst/i0/i1/tap[52].acc_reg[52] input design_1_i/iq_modulator_0/inst/i0/i1/tap[52].acc_reg[52]/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#22 Warning
+Input pipelining  
+DSP design_1_i/iq_modulator_0/inst/i0/i1/tap[52].acc_reg[52] input design_1_i/iq_modulator_0/inst/i0/i1/tap[52].acc_reg[52]/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#23 Warning
+Input pipelining  
+DSP design_1_i/iq_modulator_0/inst/i1/i1/tap[35].acc_reg[35] input design_1_i/iq_modulator_0/inst/i1/i1/tap[35].acc_reg[35]/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#24 Warning
+Input pipelining  
+DSP design_1_i/iq_modulator_0/inst/i1/i1/tap[35].acc_reg[35] input design_1_i/iq_modulator_0/inst/i1/i1/tap[35].acc_reg[35]/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#25 Warning
+Input pipelining  
+DSP design_1_i/iq_modulator_0/inst/i1/i1/tap[37].acc_reg[37] input design_1_i/iq_modulator_0/inst/i1/i1/tap[37].acc_reg[37]/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#26 Warning
+Input pipelining  
+DSP design_1_i/iq_modulator_0/inst/i1/i1/tap[37].acc_reg[37] input design_1_i/iq_modulator_0/inst/i1/i1/tap[37].acc_reg[37]/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#27 Warning
+Input pipelining  
+DSP design_1_i/iq_modulator_0/inst/i1/i1/tap[38].acc_reg[38] input design_1_i/iq_modulator_0/inst/i1/i1/tap[38].acc_reg[38]/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#28 Warning
+Input pipelining  
+DSP design_1_i/iq_modulator_0/inst/i1/i1/tap[38].acc_reg[38] input design_1_i/iq_modulator_0/inst/i1/i1/tap[38].acc_reg[38]/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#29 Warning
+Input pipelining  
+DSP design_1_i/iq_modulator_0/inst/i1/i1/tap[39].acc_reg[39] input design_1_i/iq_modulator_0/inst/i1/i1/tap[39].acc_reg[39]/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#30 Warning
+Input pipelining  
+DSP design_1_i/iq_modulator_0/inst/i1/i1/tap[39].acc_reg[39] input design_1_i/iq_modulator_0/inst/i1/i1/tap[39].acc_reg[39]/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#31 Warning
+Input pipelining  
+DSP design_1_i/iq_modulator_0/inst/i1/i1/tap[40].acc_reg[40] input design_1_i/iq_modulator_0/inst/i1/i1/tap[40].acc_reg[40]/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#32 Warning
+Input pipelining  
+DSP design_1_i/iq_modulator_0/inst/i1/i1/tap[40].acc_reg[40] input design_1_i/iq_modulator_0/inst/i1/i1/tap[40].acc_reg[40]/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#33 Warning
+Input pipelining  
+DSP design_1_i/iq_modulator_0/inst/i1/i1/tap[41].acc_reg[41] input design_1_i/iq_modulator_0/inst/i1/i1/tap[41].acc_reg[41]/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#34 Warning
+Input pipelining  
+DSP design_1_i/iq_modulator_0/inst/i1/i1/tap[41].acc_reg[41] input design_1_i/iq_modulator_0/inst/i1/i1/tap[41].acc_reg[41]/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#35 Warning
+Input pipelining  
+DSP design_1_i/iq_modulator_0/inst/i1/i1/tap[43].acc_reg[43] input design_1_i/iq_modulator_0/inst/i1/i1/tap[43].acc_reg[43]/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#36 Warning
+Input pipelining  
+DSP design_1_i/iq_modulator_0/inst/i1/i1/tap[43].acc_reg[43] input design_1_i/iq_modulator_0/inst/i1/i1/tap[43].acc_reg[43]/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#37 Warning
+Input pipelining  
+DSP design_1_i/iq_modulator_0/inst/i1/i1/tap[44].acc_reg[44] input design_1_i/iq_modulator_0/inst/i1/i1/tap[44].acc_reg[44]/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#38 Warning
+Input pipelining  
+DSP design_1_i/iq_modulator_0/inst/i1/i1/tap[44].acc_reg[44] input design_1_i/iq_modulator_0/inst/i1/i1/tap[44].acc_reg[44]/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#39 Warning
+Input pipelining  
+DSP design_1_i/iq_modulator_0/inst/i1/i1/tap[47].acc_reg[47] input design_1_i/iq_modulator_0/inst/i1/i1/tap[47].acc_reg[47]/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#40 Warning
+Input pipelining  
+DSP design_1_i/iq_modulator_0/inst/i1/i1/tap[47].acc_reg[47] input design_1_i/iq_modulator_0/inst/i1/i1/tap[47].acc_reg[47]/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#41 Warning
+Input pipelining  
+DSP design_1_i/iq_modulator_0/inst/i1/i1/tap[51].acc_reg[51] input design_1_i/iq_modulator_0/inst/i1/i1/tap[51].acc_reg[51]/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#42 Warning
+Input pipelining  
+DSP design_1_i/iq_modulator_0/inst/i1/i1/tap[51].acc_reg[51] input design_1_i/iq_modulator_0/inst/i1/i1/tap[51].acc_reg[51]/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#43 Warning
+Input pipelining  
+DSP design_1_i/iq_modulator_0/inst/i1/i1/tap[52].acc_reg[52] input design_1_i/iq_modulator_0/inst/i1/i1/tap[52].acc_reg[52]/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#44 Warning
+Input pipelining  
+DSP design_1_i/iq_modulator_0/inst/i1/i1/tap[52].acc_reg[52] input design_1_i/iq_modulator_0/inst/i1/i1/tap[52].acc_reg[52]/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#45 Warning
+Input pipelining  
+DSP design_1_i/iq_modulator_0/inst/i_mult_reg input design_1_i/iq_modulator_0/inst/i_mult_reg/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#46 Warning
+Input pipelining  
+DSP design_1_i/iq_modulator_0/inst/m_axis_tdata__0 input design_1_i/iq_modulator_0/inst/m_axis_tdata__0/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPOP-1#1 Warning
+PREG Output pipelining  
+DSP design_1_i/iq_modulator_0/inst/m_axis_tdata__0 output design_1_i/iq_modulator_0/inst/m_axis_tdata__0/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-2#1 Warning
+MREG Output pipelining  
+DSP design_1_i/iq_modulator_0/inst/i0/i1/tap[10].mult_reg[10] multiplier stage design_1_i/iq_modulator_0/inst/i0/i1/tap[10].mult_reg[10]/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#2 Warning
+MREG Output pipelining  
+DSP design_1_i/iq_modulator_0/inst/i0/i1/tap[18].mult_reg[18] multiplier stage design_1_i/iq_modulator_0/inst/i0/i1/tap[18].mult_reg[18]/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#3 Warning
+MREG Output pipelining  
+DSP design_1_i/iq_modulator_0/inst/i0/i1/tap[2].mult_reg[2] multiplier stage design_1_i/iq_modulator_0/inst/i0/i1/tap[2].mult_reg[2]/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#4 Warning
+MREG Output pipelining  
+DSP design_1_i/iq_modulator_0/inst/i0/i1/tap[42].mult_reg[42] multiplier stage design_1_i/iq_modulator_0/inst/i0/i1/tap[42].mult_reg[42]/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#5 Warning
+MREG Output pipelining  
+DSP design_1_i/iq_modulator_0/inst/i0/i1/tap[54].mult_reg[54] multiplier stage design_1_i/iq_modulator_0/inst/i0/i1/tap[54].mult_reg[54]/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#6 Warning
+MREG Output pipelining  
+DSP design_1_i/iq_modulator_0/inst/i0/i1/tap[58].mult_reg[58] multiplier stage design_1_i/iq_modulator_0/inst/i0/i1/tap[58].mult_reg[58]/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#7 Warning
+MREG Output pipelining  
+DSP design_1_i/iq_modulator_0/inst/i0/i1/tap[6].mult_reg[6] multiplier stage design_1_i/iq_modulator_0/inst/i0/i1/tap[6].mult_reg[6]/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#8 Warning
+MREG Output pipelining  
+DSP design_1_i/iq_modulator_0/inst/i1/i1/tap[10].mult_reg[10] multiplier stage design_1_i/iq_modulator_0/inst/i1/i1/tap[10].mult_reg[10]/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#9 Warning
+MREG Output pipelining  
+DSP design_1_i/iq_modulator_0/inst/i1/i1/tap[18].mult_reg[18] multiplier stage design_1_i/iq_modulator_0/inst/i1/i1/tap[18].mult_reg[18]/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#10 Warning
+MREG Output pipelining  
+DSP design_1_i/iq_modulator_0/inst/i1/i1/tap[2].mult_reg[2] multiplier stage design_1_i/iq_modulator_0/inst/i1/i1/tap[2].mult_reg[2]/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#11 Warning
+MREG Output pipelining  
+DSP design_1_i/iq_modulator_0/inst/i1/i1/tap[42].mult_reg[42] multiplier stage design_1_i/iq_modulator_0/inst/i1/i1/tap[42].mult_reg[42]/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#12 Warning
+MREG Output pipelining  
+DSP design_1_i/iq_modulator_0/inst/i1/i1/tap[54].mult_reg[54] multiplier stage design_1_i/iq_modulator_0/inst/i1/i1/tap[54].mult_reg[54]/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#13 Warning
+MREG Output pipelining  
+DSP design_1_i/iq_modulator_0/inst/i1/i1/tap[58].mult_reg[58] multiplier stage design_1_i/iq_modulator_0/inst/i1/i1/tap[58].mult_reg[58]/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#14 Warning
+MREG Output pipelining  
+DSP design_1_i/iq_modulator_0/inst/i1/i1/tap[6].mult_reg[6] multiplier stage design_1_i/iq_modulator_0/inst/i1/i1/tap[6].mult_reg[6]/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+RTSTAT-10#1 Warning
+No routable loads  
+29 net(s) have no routable loads. The problem bus(es) and/or net(s) are dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/U_RD_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_rdfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i, dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD7_CTL/ctl_reg[2:0], dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD7_CTL/ctl_reg_en_2[1], dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD1/ctl_reg_en_2[1], dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.bscan_switch/m_bscan_capture[0], dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.bscan_switch/m_bscan_drck[0], dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.bscan_switch/m_bscan_runtest[0], dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_WR/U_WR_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_wrfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwhf.whf/overflow, dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/U_RD_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_rdfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwhf.whf/overflow, design_1_i/vio_0/inst/PROBE_OUT_ALL_INST/G_PROBE_OUT[0].PROBE_OUT0_INST/probe_out0[30], design_1_i/vio_0/inst/PROBE_OUT_ALL_INST/G_PROBE_OUT[0].PROBE_OUT0_INST/probe_out0[31], design_1_i/vio_0/inst/PROBE_OUT_ALL_INST/G_PROBE_OUT[1].PROBE_OUT0_INST/probe_out1[30], design_1_i/vio_0/inst/PROBE_OUT_ALL_INST/G_PROBE_OUT[1].PROBE_OUT0_INST/probe_out1[31], dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/U_RD_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_rdfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/ram_empty_i, dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_WR/U_WR_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_wrfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_i (the first 15 of 27 listed).
+Related violations: <none>
+
+ZPS7-1#1 Warning
+PS7 block required  
+The PS7 cell must be used in this Zynq design in order to enable correct default configuration.
+Related violations: <none>
+
+

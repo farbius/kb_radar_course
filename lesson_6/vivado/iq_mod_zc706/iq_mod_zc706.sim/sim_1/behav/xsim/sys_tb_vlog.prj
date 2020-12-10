@@ -1,0 +1,28 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../iq_mod_zc706.srcs/sources_1/bd/design_1/ipshared/c923" --include "../../../../iq_mod_zc706.srcs/sources_1/bd/design_1/ipshared/8713/hdl" \
+"../../../../iq_mod_zc706.srcs/sources_1/imports/hdl/controller_dds.v" \
+"../../../../iq_mod_zc706.srcs/sources_1/imports/hdl/add_zeros.v" \
+"../../../../iq_mod_zc706.srcs/sources_1/imports/hdl/fir_sync.v" \
+"../../../../iq_mod_zc706.srcs/sources_1/imports/hdl/up_sample.v" \
+"../../../../iq_mod_zc706.srcs/sources_1/imports/hdl/iq_modulator.v" \
+"../../../../iq_mod_zc706.ip_user_files/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_clk_wiz.v" \
+"../../../../iq_mod_zc706.ip_user_files/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.v" \
+"../../../../iq_mod_zc706.ip_user_files/bd/design_1/ip/design_1_controller_dds_0_0/sim/design_1_controller_dds_0_0.v" \
+"../../../../iq_mod_zc706.ip_user_files/bd/design_1/ip/design_1_vio_0_0/sim/design_1_vio_0_0.v" \
+"../../../../iq_mod_zc706.ip_user_files/bd/design_1/ip/design_1_iq_modulator_0_0/sim/design_1_iq_modulator_0_0.v" \
+"../../../../iq_mod_zc706.ip_user_files/bd/design_1/ip/design_1_axis_data_fifo_0_0/sim/design_1_axis_data_fifo_0_0.v" \
+"../../../../iq_mod_zc706.ip_user_files/bd/design_1/ip/design_1_system_ila_0_0/bd_0/ip/ip_0/sim/bd_f60c_ila_lib_0.v" \
+"../../../../iq_mod_zc706.ip_user_files/bd/design_1/ip/design_1_system_ila_0_0/bd_0/ip/ip_1/bd_f60c_g_inst_0_gigantic_mux.v" \
+"../../../../iq_mod_zc706.ip_user_files/bd/design_1/ip/design_1_system_ila_0_0/bd_0/ip/ip_1/sim/bd_f60c_g_inst_0.v" \
+"../../../../iq_mod_zc706.ip_user_files/bd/design_1/ip/design_1_system_ila_0_0/bd_0/sim/bd_f60c.v" \
+"../../../../iq_mod_zc706.ip_user_files/bd/design_1/ip/design_1_system_ila_0_0/sim/design_1_system_ila_0_0.v" \
+"../../../../iq_mod_zc706.ip_user_files/bd/design_1/ip/design_1_xlconstant_0_0/sim/design_1_xlconstant_0_0.v" \
+"../../../../iq_mod_zc706.ip_user_files/bd/design_1/sim/design_1.v" \
+"../../../../iq_mod_zc706.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v" \
+"../../../../iq_mod_zc706.srcs/sim_1/imports/hdl/sys_tb.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
