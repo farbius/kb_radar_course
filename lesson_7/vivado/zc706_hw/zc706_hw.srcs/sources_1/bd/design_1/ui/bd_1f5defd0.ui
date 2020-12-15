@@ -1,0 +1,51 @@
+{
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.0.19  2019-03-26 bk=1.5019 VDI=41 GEI=35 GUI=JA:9.0 non-TLS
+#  -string -flagsOSRD
+preplace port sys_diff_clock -pg 1 -lvl 0 -x 0 -y 430 -defaultsOSRD
+preplace port reset -pg 1 -lvl 0 -x 0 -y 450 -defaultsOSRD
+preplace inst dds_compiler_0 -pg 1 -lvl 4 -x 1040 -y 600 -defaultsOSRD
+preplace inst dds_compiler_1 -pg 1 -lvl 6 -x 1750 -y 210 -defaultsOSRD
+preplace inst dds_compiler_2 -pg 1 -lvl 4 -x 1040 -y 440 -defaultsOSRD
+preplace inst axis_data_fifo_0 -pg 1 -lvl 6 -x 1750 -y 400 -defaultsOSRD
+preplace inst axis_data_fifo_1 -pg 1 -lvl 8 -x 2340 -y 410 -defaultsOSRD
+preplace inst clk_wiz_0 -pg 1 -lvl 1 -x 130 -y 440 -defaultsOSRD
+preplace inst LFM_phase_gen_0 -pg 1 -lvl 3 -x 720 -y 590 -defaultsOSRD
+preplace inst fir_dec_wrapper_0 -pg 1 -lvl 5 -x 1400 -y 650 -defaultsOSRD
+preplace inst iq_modulator_0 -pg 1 -lvl 9 -x 2640 -y 460 -defaultsOSRD
+preplace inst mod_subsys_0 -pg 1 -lvl 7 -x 2070 -y 260 -defaultsOSRD
+preplace inst ref_phase_0 -pg 1 -lvl 5 -x 1400 -y 190 -defaultsOSRD
+preplace inst rst_clk_wiz_0_100M -pg 1 -lvl 2 -x 420 -y 340 -defaultsOSRD
+preplace inst rst_clk_wiz_0_10M -pg 1 -lvl 4 -x 1040 -y 260 -defaultsOSRD
+preplace inst vio_0 -pg 1 -lvl 4 -x 1040 -y 80 -defaultsOSRD
+preplace inst system_ila_0 -pg 1 -lvl 10 -x 2910 -y 490 -defaultsOSRD
+preplace inst system_ila_1 -pg 1 -lvl 8 -x 2340 -y 260 -defaultsOSRD
+preplace netloc reset_1 1 0 4 20 360 240 240 NJ 240 N
+preplace netloc clk_wiz_0_clk_out1 1 1 9 250 440 590 470 860 360 1230 540 1590 500 NJ 500 2210 500 2460 350 2800
+preplace netloc clk_wiz_0_locked 1 1 3 240 450 NJ 450 850
+preplace netloc rst_clk_wiz_0_100M_peripheral_aresetn 1 2 8 600 480 870 520 1210 760 1600 510 NJ 510 NJ 510 2460 570 2800J
+preplace netloc clk_wiz_0_clk_out2 1 1 7 NJ 460 NJ 460 840 160 1240 110 1560 310 1920 370 2220
+preplace netloc rst_clk_wiz_0_10M_peripheral_aresetn 1 4 4 1210 270 1580 490 1940 380 2200
+preplace netloc dds_compiler_2_m_axis_data_tdata 1 4 5 1240 520 NJ 520 NJ 520 NJ 520 2470
+preplace netloc dds_compiler_2_m_axis_data_tvalid 1 4 5 1220 530 NJ 530 NJ 530 NJ 530 2480
+preplace netloc vio_0_probe_out0 1 4 1 1230 60n
+preplace netloc vio_0_probe_out1 1 4 3 NJ 80 1600J 290 N
+preplace netloc vio_0_probe_out2 1 4 3 NJ 100 1570J 300 1930
+preplace netloc LFM_phase_gen_0_sync 1 3 7 850J 770 NJ 770 NJ 770 NJ 770 NJ 770 NJ 770 2810
+preplace netloc sys_diff_clock_1 1 0 1 NJ 430
+preplace netloc LFM_phase_gen_0_m_axis_phase 1 3 1 N 580
+preplace netloc dds_compiler_0_M_AXIS_DATA 1 4 1 N 600
+preplace netloc fir_dec_wrapper_0_m_axis 1 5 1 1570 370n
+preplace netloc axis_data_fifo_0_M_AXIS 1 6 1 1910 210n
+preplace netloc mod_subsys_0_m_axis 1 7 1 2210 240n
+preplace netloc axis_data_fifo_1_M_AXIS 1 8 1 N 410
+preplace netloc dds_compiler_1_M_AXIS_DATA 1 6 1 1900 210n
+preplace netloc ref_phase_0_m_axis_phase 1 5 1 N 190
+preplace netloc iq_modulator_0_m_axis 1 9 1 N 460
+levelinfo -pg 1 0 130 420 720 1040 1400 1750 2070 2340 2640 2910 3020
+pagesize -pg 1 -db -bbox -sgen -140 0 3020 780
+"
+}
+{
+   "da_clkrst_cnt":"6"
+}

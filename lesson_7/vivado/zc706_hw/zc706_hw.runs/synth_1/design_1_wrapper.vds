@@ -1,0 +1,390 @@
+#-----------------------------------------------------------
+# Vivado v2019.1.3 (64-bit)
+# SW Build 2644227 on Wed Sep  4 09:45:24 MDT 2019
+# IP Build 2633630 on Wed Sep  4 12:30:14 MDT 2019
+# Start of session at: Tue Dec 15 10:12:18 2020
+# Process ID: 6728
+# Current directory: D:/work/kb_radar_course/lesson_7/vivado/zc706_hw/zc706_hw.runs/synth_1
+# Command line: vivado.exe -log design_1_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_wrapper.tcl
+# Log file: D:/work/kb_radar_course/lesson_7/vivado/zc706_hw/zc706_hw.runs/synth_1/design_1_wrapper.vds
+# Journal file: D:/work/kb_radar_course/lesson_7/vivado/zc706_hw/zc706_hw.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source design_1_wrapper.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.1/data/ip'.
+add_files: Time (s): cpu = 00:00:07 ; elapsed = 00:00:16 . Memory (MB): peak = 391.066 ; gain = 97.531
+Command: synth_design -top design_1_wrapper -part xc7z045ffg900-2
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z045'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z045'
+INFO: [Device 21-403] Loading part xc7z045ffg900-2
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 9768 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 899.453 ; gain = 178.336
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'design_1_wrapper' [D:/work/kb_radar_course/lesson_7/vivado/zc706_hw/zc706_hw.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v:12]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [D:/work/kb_radar_course/lesson_7/vivado/zc706_hw/zc706_hw.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v:24]
+INFO: [Synth 8-6157] synthesizing module 'design_1' [D:/work/kb_radar_course/lesson_7/vivado/zc706_hw/zc706_hw.srcs/sources_1/bd/design_1/synth/design_1.v:13]
+INFO: [Synth 8-6157] synthesizing module 'design_1_LFM_phase_gen_0_0' [D:/work/kb_radar_course/lesson_7/vivado/zc706_hw/zc706_hw.runs/synth_1/.Xil/Vivado-6728-DESKTOP-IOTF14Q/realtime/design_1_LFM_phase_gen_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_LFM_phase_gen_0_0' (1#1) [D:/work/kb_radar_course/lesson_7/vivado/zc706_hw/zc706_hw.runs/synth_1/.Xil/Vivado-6728-DESKTOP-IOTF14Q/realtime/design_1_LFM_phase_gen_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_axis_data_fifo_0_0' [D:/work/kb_radar_course/lesson_7/vivado/zc706_hw/zc706_hw.runs/synth_1/.Xil/Vivado-6728-DESKTOP-IOTF14Q/realtime/design_1_axis_data_fifo_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_axis_data_fifo_0_0' (2#1) [D:/work/kb_radar_course/lesson_7/vivado/zc706_hw/zc706_hw.runs/synth_1/.Xil/Vivado-6728-DESKTOP-IOTF14Q/realtime/design_1_axis_data_fifo_0_0_stub.v:6]
+WARNING: [Synth 8-7023] instance 'axis_data_fifo_0' of module 'design_1_axis_data_fifo_0_0' has 9 connections declared, but only 8 given [D:/work/kb_radar_course/lesson_7/vivado/zc706_hw/zc706_hw.srcs/sources_1/bd/design_1/synth/design_1.v:66]
+INFO: [Synth 8-6157] synthesizing module 'design_1_axis_data_fifo_0_1' [D:/work/kb_radar_course/lesson_7/vivado/zc706_hw/zc706_hw.runs/synth_1/.Xil/Vivado-6728-DESKTOP-IOTF14Q/realtime/design_1_axis_data_fifo_0_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_axis_data_fifo_0_1' (3#1) [D:/work/kb_radar_course/lesson_7/vivado/zc706_hw/zc706_hw.runs/synth_1/.Xil/Vivado-6728-DESKTOP-IOTF14Q/realtime/design_1_axis_data_fifo_0_1_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_clk_wiz_0_0' [D:/work/kb_radar_course/lesson_7/vivado/zc706_hw/zc706_hw.runs/synth_1/.Xil/Vivado-6728-DESKTOP-IOTF14Q/realtime/design_1_clk_wiz_0_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_clk_wiz_0_0' (4#1) [D:/work/kb_radar_course/lesson_7/vivado/zc706_hw/zc706_hw.runs/synth_1/.Xil/Vivado-6728-DESKTOP-IOTF14Q/realtime/design_1_clk_wiz_0_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'design_1_dds_compiler_0_0' [D:/work/kb_radar_course/lesson_7/vivado/zc706_hw/zc706_hw.runs/synth_1/.Xil/Vivado-6728-DESKTOP-IOTF14Q/realtime/design_1_dds_compiler_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_dds_compiler_0_0' (5#1) [D:/work/kb_radar_course/lesson_7/vivado/zc706_hw/zc706_hw.runs/synth_1/.Xil/Vivado-6728-DESKTOP-IOTF14Q/realtime/design_1_dds_compiler_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_dds_compiler_0_1' [D:/work/kb_radar_course/lesson_7/vivado/zc706_hw/zc706_hw.runs/synth_1/.Xil/Vivado-6728-DESKTOP-IOTF14Q/realtime/design_1_dds_compiler_0_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_dds_compiler_0_1' (6#1) [D:/work/kb_radar_course/lesson_7/vivado/zc706_hw/zc706_hw.runs/synth_1/.Xil/Vivado-6728-DESKTOP-IOTF14Q/realtime/design_1_dds_compiler_0_1_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_dds_compiler_0_2' [D:/work/kb_radar_course/lesson_7/vivado/zc706_hw/zc706_hw.runs/synth_1/.Xil/Vivado-6728-DESKTOP-IOTF14Q/realtime/design_1_dds_compiler_0_2_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_dds_compiler_0_2' (7#1) [D:/work/kb_radar_course/lesson_7/vivado/zc706_hw/zc706_hw.runs/synth_1/.Xil/Vivado-6728-DESKTOP-IOTF14Q/realtime/design_1_dds_compiler_0_2_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_fir_dec_wrapper_0_0' [D:/work/kb_radar_course/lesson_7/vivado/zc706_hw/zc706_hw.runs/synth_1/.Xil/Vivado-6728-DESKTOP-IOTF14Q/realtime/design_1_fir_dec_wrapper_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_fir_dec_wrapper_0_0' (8#1) [D:/work/kb_radar_course/lesson_7/vivado/zc706_hw/zc706_hw.runs/synth_1/.Xil/Vivado-6728-DESKTOP-IOTF14Q/realtime/design_1_fir_dec_wrapper_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_iq_modulator_0_0' [D:/work/kb_radar_course/lesson_7/vivado/zc706_hw/zc706_hw.runs/synth_1/.Xil/Vivado-6728-DESKTOP-IOTF14Q/realtime/design_1_iq_modulator_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_iq_modulator_0_0' (9#1) [D:/work/kb_radar_course/lesson_7/vivado/zc706_hw/zc706_hw.runs/synth_1/.Xil/Vivado-6728-DESKTOP-IOTF14Q/realtime/design_1_iq_modulator_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_mod_subsys_0_0' [D:/work/kb_radar_course/lesson_7/vivado/zc706_hw/zc706_hw.runs/synth_1/.Xil/Vivado-6728-DESKTOP-IOTF14Q/realtime/design_1_mod_subsys_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_mod_subsys_0_0' (10#1) [D:/work/kb_radar_course/lesson_7/vivado/zc706_hw/zc706_hw.runs/synth_1/.Xil/Vivado-6728-DESKTOP-IOTF14Q/realtime/design_1_mod_subsys_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_ref_phase_0_0' [D:/work/kb_radar_course/lesson_7/vivado/zc706_hw/zc706_hw.runs/synth_1/.Xil/Vivado-6728-DESKTOP-IOTF14Q/realtime/design_1_ref_phase_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_ref_phase_0_0' (11#1) [D:/work/kb_radar_course/lesson_7/vivado/zc706_hw/zc706_hw.runs/synth_1/.Xil/Vivado-6728-DESKTOP-IOTF14Q/realtime/design_1_ref_phase_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_rst_clk_wiz_0_100M_0' [D:/work/kb_radar_course/lesson_7/vivado/zc706_hw/zc706_hw.runs/synth_1/.Xil/Vivado-6728-DESKTOP-IOTF14Q/realtime/design_1_rst_clk_wiz_0_100M_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_rst_clk_wiz_0_100M_0' (12#1) [D:/work/kb_radar_course/lesson_7/vivado/zc706_hw/zc706_hw.runs/synth_1/.Xil/Vivado-6728-DESKTOP-IOTF14Q/realtime/design_1_rst_clk_wiz_0_100M_0_stub.v:6]
+WARNING: [Synth 8-7023] instance 'rst_clk_wiz_0_100M' of module 'design_1_rst_clk_wiz_0_100M_0' has 10 connections declared, but only 6 given [D:/work/kb_radar_course/lesson_7/vivado/zc706_hw/zc706_hw.srcs/sources_1/bd/design_1/synth/design_1.v:150]
+INFO: [Synth 8-6157] synthesizing module 'design_1_rst_clk_wiz_0_10M_0' [D:/work/kb_radar_course/lesson_7/vivado/zc706_hw/zc706_hw.runs/synth_1/.Xil/Vivado-6728-DESKTOP-IOTF14Q/realtime/design_1_rst_clk_wiz_0_10M_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_rst_clk_wiz_0_10M_0' (13#1) [D:/work/kb_radar_course/lesson_7/vivado/zc706_hw/zc706_hw.runs/synth_1/.Xil/Vivado-6728-DESKTOP-IOTF14Q/realtime/design_1_rst_clk_wiz_0_10M_0_stub.v:6]
+WARNING: [Synth 8-7023] instance 'rst_clk_wiz_0_10M' of module 'design_1_rst_clk_wiz_0_10M_0' has 10 connections declared, but only 6 given [D:/work/kb_radar_course/lesson_7/vivado/zc706_hw/zc706_hw.srcs/sources_1/bd/design_1/synth/design_1.v:157]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [D:/work/kb_radar_course/lesson_7/vivado/zc706_hw/zc706_hw.srcs/sources_1/bd/design_1/synth/design_1.v:164]
+INFO: [Synth 8-6157] synthesizing module 'design_1_system_ila_0_0' [D:/work/kb_radar_course/lesson_7/vivado/zc706_hw/zc706_hw.runs/synth_1/.Xil/Vivado-6728-DESKTOP-IOTF14Q/realtime/design_1_system_ila_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_system_ila_0_0' (14#1) [D:/work/kb_radar_course/lesson_7/vivado/zc706_hw/zc706_hw.runs/synth_1/.Xil/Vivado-6728-DESKTOP-IOTF14Q/realtime/design_1_system_ila_0_0_stub.v:6]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [D:/work/kb_radar_course/lesson_7/vivado/zc706_hw/zc706_hw.srcs/sources_1/bd/design_1/synth/design_1.v:172]
+INFO: [Synth 8-6157] synthesizing module 'design_1_system_ila_1_0' [D:/work/kb_radar_course/lesson_7/vivado/zc706_hw/zc706_hw.runs/synth_1/.Xil/Vivado-6728-DESKTOP-IOTF14Q/realtime/design_1_system_ila_1_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_system_ila_1_0' (15#1) [D:/work/kb_radar_course/lesson_7/vivado/zc706_hw/zc706_hw.runs/synth_1/.Xil/Vivado-6728-DESKTOP-IOTF14Q/realtime/design_1_system_ila_1_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_vio_0_0' [D:/work/kb_radar_course/lesson_7/vivado/zc706_hw/zc706_hw.runs/synth_1/.Xil/Vivado-6728-DESKTOP-IOTF14Q/realtime/design_1_vio_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_vio_0_0' (16#1) [D:/work/kb_radar_course/lesson_7/vivado/zc706_hw/zc706_hw.runs/synth_1/.Xil/Vivado-6728-DESKTOP-IOTF14Q/realtime/design_1_vio_0_0_stub.v:6]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'vio_0'. This will prevent further optimization [D:/work/kb_radar_course/lesson_7/vivado/zc706_hw/zc706_hw.srcs/sources_1/bd/design_1/synth/design_1.v:179]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'ref_phase_0'. This will prevent further optimization [D:/work/kb_radar_course/lesson_7/vivado/zc706_hw/zc706_hw.srcs/sources_1/bd/design_1/synth/design_1.v:144]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'mod_subsys_0'. This will prevent further optimization [D:/work/kb_radar_course/lesson_7/vivado/zc706_hw/zc706_hw.srcs/sources_1/bd/design_1/synth/design_1.v:131]
+INFO: [Synth 8-6155] done synthesizing module 'design_1' (17#1) [D:/work/kb_radar_course/lesson_7/vivado/zc706_hw/zc706_hw.srcs/sources_1/bd/design_1/synth/design_1.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_wrapper' (18#1) [D:/work/kb_radar_course/lesson_7/vivado/zc706_hw/zc706_hw.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v:12]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 967.914 ; gain = 246.797
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 967.914 ; gain = 246.797
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 967.914 ; gain = 246.797
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [d:/work/kb_radar_course/lesson_7/vivado/zc706_hw/zc706_hw.srcs/sources_1/bd/design_1/ip/design_1_dds_compiler_0_0/design_1_dds_compiler_0_0/design_1_dds_compiler_0_0_in_context.xdc] for cell 'design_1_i/dds_compiler_0'
+Finished Parsing XDC File [d:/work/kb_radar_course/lesson_7/vivado/zc706_hw/zc706_hw.srcs/sources_1/bd/design_1/ip/design_1_dds_compiler_0_0/design_1_dds_compiler_0_0/design_1_dds_compiler_0_0_in_context.xdc] for cell 'design_1_i/dds_compiler_0'
+Parsing XDC File [d:/work/kb_radar_course/lesson_7/vivado/zc706_hw/zc706_hw.srcs/sources_1/bd/design_1/ip/design_1_dds_compiler_0_1/design_1_dds_compiler_0_1/design_1_dds_compiler_0_1_in_context.xdc] for cell 'design_1_i/dds_compiler_1'
+Finished Parsing XDC File [d:/work/kb_radar_course/lesson_7/vivado/zc706_hw/zc706_hw.srcs/sources_1/bd/design_1/ip/design_1_dds_compiler_0_1/design_1_dds_compiler_0_1/design_1_dds_compiler_0_1_in_context.xdc] for cell 'design_1_i/dds_compiler_1'
+Parsing XDC File [d:/work/kb_radar_course/lesson_7/vivado/zc706_hw/zc706_hw.srcs/sources_1/bd/design_1/ip/design_1_dds_compiler_0_2/design_1_dds_compiler_0_2/design_1_dds_compiler_0_2_in_context.xdc] for cell 'design_1_i/dds_compiler_2'
+Finished Parsing XDC File [d:/work/kb_radar_course/lesson_7/vivado/zc706_hw/zc706_hw.srcs/sources_1/bd/design_1/ip/design_1_dds_compiler_0_2/design_1_dds_compiler_0_2/design_1_dds_compiler_0_2_in_context.xdc] for cell 'design_1_i/dds_compiler_2'
+Parsing XDC File [d:/work/kb_radar_course/lesson_7/vivado/zc706_hw/zc706_hw.srcs/sources_1/bd/design_1/ip/design_1_axis_data_fifo_0_0/design_1_axis_data_fifo_0_0/design_1_axis_data_fifo_0_0_in_context.xdc] for cell 'design_1_i/axis_data_fifo_0'
+Finished Parsing XDC File [d:/work/kb_radar_course/lesson_7/vivado/zc706_hw/zc706_hw.srcs/sources_1/bd/design_1/ip/design_1_axis_data_fifo_0_0/design_1_axis_data_fifo_0_0/design_1_axis_data_fifo_0_0_in_context.xdc] for cell 'design_1_i/axis_data_fifo_0'
+Parsing XDC File [d:/work/kb_radar_course/lesson_7/vivado/zc706_hw/zc706_hw.srcs/sources_1/bd/design_1/ip/design_1_axis_data_fifo_0_1/design_1_axis_data_fifo_0_1/design_1_axis_data_fifo_0_1_in_context.xdc] for cell 'design_1_i/axis_data_fifo_1'
+Finished Parsing XDC File [d:/work/kb_radar_course/lesson_7/vivado/zc706_hw/zc706_hw.srcs/sources_1/bd/design_1/ip/design_1_axis_data_fifo_0_1/design_1_axis_data_fifo_0_1/design_1_axis_data_fifo_0_1_in_context.xdc] for cell 'design_1_i/axis_data_fifo_1'
+Parsing XDC File [d:/work/kb_radar_course/lesson_7/vivado/zc706_hw/zc706_hw.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_in_context.xdc] for cell 'design_1_i/clk_wiz_0'
+Finished Parsing XDC File [d:/work/kb_radar_course/lesson_7/vivado/zc706_hw/zc706_hw.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_in_context.xdc] for cell 'design_1_i/clk_wiz_0'
+Parsing XDC File [d:/work/kb_radar_course/lesson_7/vivado/zc706_hw/zc706_hw.srcs/sources_1/bd/design_1/ip/design_1_LFM_phase_gen_0_0/design_1_LFM_phase_gen_0_0/design_1_LFM_phase_gen_0_0_in_context.xdc] for cell 'design_1_i/LFM_phase_gen_0'
+Finished Parsing XDC File [d:/work/kb_radar_course/lesson_7/vivado/zc706_hw/zc706_hw.srcs/sources_1/bd/design_1/ip/design_1_LFM_phase_gen_0_0/design_1_LFM_phase_gen_0_0/design_1_LFM_phase_gen_0_0_in_context.xdc] for cell 'design_1_i/LFM_phase_gen_0'
+Parsing XDC File [d:/work/kb_radar_course/lesson_7/vivado/zc706_hw/zc706_hw.srcs/sources_1/bd/design_1/ip/design_1_fir_dec_wrapper_0_0/design_1_fir_dec_wrapper_0_0/design_1_fir_dec_wrapper_0_0_in_context.xdc] for cell 'design_1_i/fir_dec_wrapper_0'
+Finished Parsing XDC File [d:/work/kb_radar_course/lesson_7/vivado/zc706_hw/zc706_hw.srcs/sources_1/bd/design_1/ip/design_1_fir_dec_wrapper_0_0/design_1_fir_dec_wrapper_0_0/design_1_fir_dec_wrapper_0_0_in_context.xdc] for cell 'design_1_i/fir_dec_wrapper_0'
+Parsing XDC File [d:/work/kb_radar_course/lesson_7/vivado/zc706_hw/zc706_hw.srcs/sources_1/bd/design_1/ip/design_1_iq_modulator_0_0/design_1_iq_modulator_0_0/design_1_iq_modulator_0_0_in_context.xdc] for cell 'design_1_i/iq_modulator_0'
+Finished Parsing XDC File [d:/work/kb_radar_course/lesson_7/vivado/zc706_hw/zc706_hw.srcs/sources_1/bd/design_1/ip/design_1_iq_modulator_0_0/design_1_iq_modulator_0_0/design_1_iq_modulator_0_0_in_context.xdc] for cell 'design_1_i/iq_modulator_0'
+Parsing XDC File [d:/work/kb_radar_course/lesson_7/vivado/zc706_hw/zc706_hw.srcs/sources_1/bd/design_1/ip/design_1_mod_subsys_0_0/design_1_mod_subsys_0_0/design_1_mod_subsys_0_0_in_context.xdc] for cell 'design_1_i/mod_subsys_0'
+Finished Parsing XDC File [d:/work/kb_radar_course/lesson_7/vivado/zc706_hw/zc706_hw.srcs/sources_1/bd/design_1/ip/design_1_mod_subsys_0_0/design_1_mod_subsys_0_0/design_1_mod_subsys_0_0_in_context.xdc] for cell 'design_1_i/mod_subsys_0'
+Parsing XDC File [d:/work/kb_radar_course/lesson_7/vivado/zc706_hw/zc706_hw.srcs/sources_1/bd/design_1/ip/design_1_ref_phase_0_0/design_1_ref_phase_0_0/design_1_ref_phase_0_0_in_context.xdc] for cell 'design_1_i/ref_phase_0'
+Finished Parsing XDC File [d:/work/kb_radar_course/lesson_7/vivado/zc706_hw/zc706_hw.srcs/sources_1/bd/design_1/ip/design_1_ref_phase_0_0/design_1_ref_phase_0_0/design_1_ref_phase_0_0_in_context.xdc] for cell 'design_1_i/ref_phase_0'
+Parsing XDC File [d:/work/kb_radar_course/lesson_7/vivado/zc706_hw/zc706_hw.srcs/sources_1/bd/design_1/ip/design_1_rst_clk_wiz_0_100M_0/design_1_rst_clk_wiz_0_100M_0/design_1_rst_clk_wiz_0_100M_0_in_context.xdc] for cell 'design_1_i/rst_clk_wiz_0_100M'
+Finished Parsing XDC File [d:/work/kb_radar_course/lesson_7/vivado/zc706_hw/zc706_hw.srcs/sources_1/bd/design_1/ip/design_1_rst_clk_wiz_0_100M_0/design_1_rst_clk_wiz_0_100M_0/design_1_rst_clk_wiz_0_100M_0_in_context.xdc] for cell 'design_1_i/rst_clk_wiz_0_100M'
+Parsing XDC File [d:/work/kb_radar_course/lesson_7/vivado/zc706_hw/zc706_hw.srcs/sources_1/bd/design_1/ip/design_1_rst_clk_wiz_0_10M_0/design_1_rst_clk_wiz_0_10M_0/design_1_rst_clk_wiz_0_10M_0_in_context.xdc] for cell 'design_1_i/rst_clk_wiz_0_10M'
+Finished Parsing XDC File [d:/work/kb_radar_course/lesson_7/vivado/zc706_hw/zc706_hw.srcs/sources_1/bd/design_1/ip/design_1_rst_clk_wiz_0_10M_0/design_1_rst_clk_wiz_0_10M_0/design_1_rst_clk_wiz_0_10M_0_in_context.xdc] for cell 'design_1_i/rst_clk_wiz_0_10M'
+Parsing XDC File [d:/work/kb_radar_course/lesson_7/vivado/zc706_hw/zc706_hw.srcs/sources_1/bd/design_1/ip/design_1_vio_0_0/design_1_vio_0_0/design_1_vio_0_0_in_context.xdc] for cell 'design_1_i/vio_0'
+Finished Parsing XDC File [d:/work/kb_radar_course/lesson_7/vivado/zc706_hw/zc706_hw.srcs/sources_1/bd/design_1/ip/design_1_vio_0_0/design_1_vio_0_0/design_1_vio_0_0_in_context.xdc] for cell 'design_1_i/vio_0'
+Parsing XDC File [d:/work/kb_radar_course/lesson_7/vivado/zc706_hw/zc706_hw.srcs/sources_1/bd/design_1/ip/design_1_system_ila_0_0/design_1_system_ila_0_0/design_1_system_ila_0_0_in_context.xdc] for cell 'design_1_i/system_ila_0'
+Finished Parsing XDC File [d:/work/kb_radar_course/lesson_7/vivado/zc706_hw/zc706_hw.srcs/sources_1/bd/design_1/ip/design_1_system_ila_0_0/design_1_system_ila_0_0/design_1_system_ila_0_0_in_context.xdc] for cell 'design_1_i/system_ila_0'
+Parsing XDC File [d:/work/kb_radar_course/lesson_7/vivado/zc706_hw/zc706_hw.srcs/sources_1/bd/design_1/ip/design_1_system_ila_1_0/design_1_system_ila_1_0/design_1_system_ila_1_0_in_context.xdc] for cell 'design_1_i/system_ila_1'
+Finished Parsing XDC File [d:/work/kb_radar_course/lesson_7/vivado/zc706_hw/zc706_hw.srcs/sources_1/bd/design_1/ip/design_1_system_ila_1_0/design_1_system_ila_1_0/design_1_system_ila_1_0_in_context.xdc] for cell 'design_1_i/system_ila_1'
+Parsing XDC File [D:/work/kb_radar_course/lesson_7/vivado/zc706_hw/zc706_hw.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [D:/work/kb_radar_course/lesson_7/vivado/zc706_hw/zc706_hw.runs/synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1045.234 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.032 . Memory (MB): peak = 1045.234 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1045.234 ; gain = 324.117
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z045ffg900-2
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1045.234 ; gain = 324.117
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for sys_diff_clock_clk_n. (constraint file  d:/work/kb_radar_course/lesson_7/vivado/zc706_hw/zc706_hw.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_in_context.xdc, line 4).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for sys_diff_clock_clk_n. (constraint file  d:/work/kb_radar_course/lesson_7/vivado/zc706_hw/zc706_hw.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_in_context.xdc, line 5).
+Applied set_property IO_BUFFER_TYPE = NONE for sys_diff_clock_clk_p. (constraint file  d:/work/kb_radar_course/lesson_7/vivado/zc706_hw/zc706_hw.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_in_context.xdc, line 6).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for sys_diff_clock_clk_p. (constraint file  d:/work/kb_radar_course/lesson_7/vivado/zc706_hw/zc706_hw.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_in_context.xdc, line 7).
+Applied set_property DONT_TOUCH = true for design_1_i. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/dds_compiler_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/dds_compiler_1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/dds_compiler_2. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/axis_data_fifo_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/axis_data_fifo_1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/clk_wiz_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/LFM_phase_gen_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/fir_dec_wrapper_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/iq_modulator_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/mod_subsys_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/ref_phase_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/rst_clk_wiz_0_100M. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/rst_clk_wiz_0_10M. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/vio_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/system_ila_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/system_ila_1. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 1045.234 ; gain = 324.117
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 1045.234 ; gain = 324.117
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 900 (col length:140)
+BRAMs: 1090 (col length: RAMB18 140 RAMB36 70)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1045.234 ; gain = 324.117
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5578] Moved timing constraint from pin 'design_1_i/clk_wiz_0/clk_out1' to pin 'design_1_i/clk_wiz_0/bbstub_clk_out1/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'design_1_i/clk_wiz_0/clk_out2' to pin 'design_1_i/clk_wiz_0/bbstub_clk_out2/O'
+INFO: [Synth 8-5819] Moved 2 constraints on hierarchical pins to their respective driving/loading pins
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 1056.484 ; gain = 335.367
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 1056.484 ; gain = 335.367
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 1066.754 ; gain = 345.637
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:23 ; elapsed = 00:00:26 . Memory (MB): peak = 1081.566 ; gain = 360.449
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:23 ; elapsed = 00:00:26 . Memory (MB): peak = 1081.566 ; gain = 360.449
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:23 ; elapsed = 00:00:26 . Memory (MB): peak = 1081.566 ; gain = 360.449
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:23 ; elapsed = 00:00:26 . Memory (MB): peak = 1081.566 ; gain = 360.449
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:23 ; elapsed = 00:00:26 . Memory (MB): peak = 1081.566 ; gain = 360.449
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:23 ; elapsed = 00:00:26 . Memory (MB): peak = 1081.566 ; gain = 360.449
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+------------------------------+----------+
+|      |BlackBox name                 |Instances |
++------+------------------------------+----------+
+|1     |design_1_LFM_phase_gen_0_0    |         1|
+|2     |design_1_axis_data_fifo_0_0   |         1|
+|3     |design_1_axis_data_fifo_0_1   |         1|
+|4     |design_1_clk_wiz_0_0          |         1|
+|5     |design_1_dds_compiler_0_0     |         1|
+|6     |design_1_dds_compiler_0_1     |         1|
+|7     |design_1_dds_compiler_0_2     |         1|
+|8     |design_1_fir_dec_wrapper_0_0  |         1|
+|9     |design_1_iq_modulator_0_0     |         1|
+|10    |design_1_mod_subsys_0_0       |         1|
+|11    |design_1_ref_phase_0_0        |         1|
+|12    |design_1_rst_clk_wiz_0_100M_0 |         1|
+|13    |design_1_rst_clk_wiz_0_10M_0  |         1|
+|14    |design_1_system_ila_0_0       |         1|
+|15    |design_1_system_ila_1_0       |         1|
+|16    |design_1_vio_0_0              |         1|
++------+------------------------------+----------+
+
+Report Cell Usage: 
++------+------------------------------+------+
+|      |Cell                          |Count |
++------+------------------------------+------+
+|1     |design_1_LFM_phase_gen_0_0    |     1|
+|2     |design_1_axis_data_fifo_0_0   |     1|
+|3     |design_1_axis_data_fifo_0_1   |     1|
+|4     |design_1_clk_wiz_0_0          |     1|
+|5     |design_1_dds_compiler_0_0     |     1|
+|6     |design_1_dds_compiler_0_1     |     1|
+|7     |design_1_dds_compiler_0_2     |     1|
+|8     |design_1_fir_dec_wrapper_0_0  |     1|
+|9     |design_1_iq_modulator_0_0     |     1|
+|10    |design_1_mod_subsys_0_0       |     1|
+|11    |design_1_ref_phase_0_0        |     1|
+|12    |design_1_rst_clk_wiz_0_100M_0 |     1|
+|13    |design_1_rst_clk_wiz_0_10M_0  |     1|
+|14    |design_1_system_ila_0_0       |     1|
+|15    |design_1_system_ila_1_0       |     1|
+|16    |design_1_vio_0_0              |     1|
+|17    |IBUF                          |     1|
++------+------------------------------+------+
+
+Report Instance Areas: 
++------+-------------+---------+------+
+|      |Instance     |Module   |Cells |
++------+-------------+---------+------+
+|1     |top          |         |   383|
+|2     |  design_1_i |design_1 |   382|
++------+-------------+---------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:23 ; elapsed = 00:00:26 . Memory (MB): peak = 1081.566 ; gain = 360.449
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:16 ; elapsed = 00:00:23 . Memory (MB): peak = 1081.566 ; gain = 283.129
+Synthesis Optimization Complete : Time (s): cpu = 00:00:23 ; elapsed = 00:00:26 . Memory (MB): peak = 1081.566 ; gain = 360.449
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1105.395 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+54 Infos, 6 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:29 ; elapsed = 00:00:34 . Memory (MB): peak = 1105.395 ; gain = 714.328
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1105.395 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'D:/work/kb_radar_course/lesson_7/vivado/zc706_hw/zc706_hw.runs/synth_1/design_1_wrapper.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file design_1_wrapper_utilization_synth.rpt -pb design_1_wrapper_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue Dec 15 10:13:12 2020...
