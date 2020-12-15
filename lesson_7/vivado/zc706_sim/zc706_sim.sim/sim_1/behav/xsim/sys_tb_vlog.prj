@@ -1,0 +1,30 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../zc706_sim.srcs/sources_1/bd/design_1/ipshared/8713/hdl" --include "../../../../zc706_sim.srcs/sources_1/bd/design_1/ipshared/c923" \
+"../../../../zc706_sim.ip_user_files/bd/design_1/ip/design_1_axis_data_fifo_0_0/sim/design_1_axis_data_fifo_0_0.v" \
+"../../../../zc706_sim.ip_user_files/bd/design_1/ip/design_1_axis_data_fifo_0_1/sim/design_1_axis_data_fifo_0_1.v" \
+"../../../../zc706_sim.ip_user_files/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_clk_wiz.v" \
+"../../../../zc706_sim.ip_user_files/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.v" \
+"../../../../zc706_sim.ip_user_files/bd/design_1/ip/design_1_LFM_phase_gen_0_0/sim/design_1_LFM_phase_gen_0_0.v" \
+"../../../../zc706_sim.ip_user_files/bd/design_1/ip/design_1_fir_dec_wrapper_0_0/sim/design_1_fir_dec_wrapper_0_0.v" \
+"../../../../zc706_sim.ip_user_files/bd/design_1/ip/design_1_iq_modulator_0_0/sim/design_1_iq_modulator_0_0.v" \
+"../../../../zc706_sim.ip_user_files/bd/design_1/ip/design_1_mod_subsys_0_0/sim/design_1_mod_subsys_0_0.v" \
+"../../../../zc706_sim.ip_user_files/bd/design_1/ip/design_1_ref_phase_0_0/sim/design_1_ref_phase_0_0.v" \
+"../../../../zc706_sim.ip_user_files/bd/design_1/ip/design_1_vio_0_0/sim/design_1_vio_0_0.v" \
+"../../../../zc706_sim.srcs/sources_1/imports/hdl/LFM_phase_gen.v" \
+"../../../../zc706_sim.srcs/sources_1/imports/hdl/fir_dec.v" \
+"../../../../zc706_sim.srcs/sources_1/imports/hdl/fir_dec_wrapper.v" \
+"../../../../zc706_sim.srcs/sources_1/imports/hdl/add_zeros.v" \
+"../../../../zc706_sim.srcs/sources_1/imports/hdl/fir_sync.v" \
+"../../../../zc706_sim.srcs/sources_1/imports/hdl/up_sample.v" \
+"../../../../zc706_sim.srcs/sources_1/imports/hdl/iq_modulator.v" \
+"../../../../zc706_sim.srcs/sources_1/imports/hdl/mod_subsys.v" \
+"../../../../zc706_sim.srcs/sources_1/imports/hdl/ref_phase.v" \
+"../../../../zc706_sim.ip_user_files/bd/design_1/sim/design_1.v" \
+"../../../../zc706_sim.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v" \
+"../../../../zc706_sim.srcs/sim_1/imports/hdl/sys_tb.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

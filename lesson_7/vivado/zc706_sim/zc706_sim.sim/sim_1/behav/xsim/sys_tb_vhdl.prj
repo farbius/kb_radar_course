@@ -1,0 +1,10 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../zc706_sim.ip_user_files/bd/design_1/ip/design_1_dds_compiler_0_0/sim/design_1_dds_compiler_0_0.vhd" \
+"../../../../zc706_sim.ip_user_files/bd/design_1/ip/design_1_dds_compiler_0_1/sim/design_1_dds_compiler_0_1.vhd" \
+"../../../../zc706_sim.ip_user_files/bd/design_1/ip/design_1_dds_compiler_0_2/sim/design_1_dds_compiler_0_2.vhd" \
+"../../../../zc706_sim.ip_user_files/bd/design_1/ip/design_1_rst_clk_wiz_0_100M_0/sim/design_1_rst_clk_wiz_0_100M_0.vhd" \
+"../../../../zc706_sim.ip_user_files/bd/design_1/ip/design_1_rst_clk_wiz_0_10M_0/sim/design_1_rst_clk_wiz_0_10M_0.vhd" \
+
+# Do not sort compile order
+nosort
