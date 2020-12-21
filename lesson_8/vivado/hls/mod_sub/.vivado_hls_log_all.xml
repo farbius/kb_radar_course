@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vivadoHLSLog:LogRoot xmlns:vivadoHLSLog="www.xilinx.com/vivadoHLSLog">
+  <errorLogs>
+    <logs>
+      <synLog/>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </errorLogs>
+  <warningLogs>
+    <logs>
+      <synLog>
+        <logs message="WARNING: [HLS 200-631] Ignoring ap_ctrl_none interface for mod_sub due to mod_sub.entry23 with non-FIFO I/O" projectName="mod_sub" solutionName="solution1" date="2020-12-21T15:45:36.423+0300" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'tmp' is power-on initialization." projectName="mod_sub" solutionName="solution1" date="2020-12-21T15:45:35.230+0300" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'count_V' is power-on initialization." projectName="mod_sub" solutionName="solution1" date="2020-12-21T15:45:35.219+0300" type="Warning"/>
+        <logs message="WARNING: [SYN 201-103] Legalizing function name 'mod_sub.entry23' to 'mod_sub_entry23'." projectName="mod_sub" solutionName="solution1" date="2020-12-21T15:45:32.147+0300" type="Warning"/>
+      </synLog>
+      <simLog>
+        <logs message="WARNING: assign NaN to ap integer value" projectName="mod_sub" solutionName="solution1" date="2020-12-21T15:47:05.922+0300" type="Warning"/>
+        <logs message="WARNING: assign NaN to ap integer value" projectName="mod_sub" solutionName="solution1" date="2020-12-21T15:47:05.588+0300" type="Warning"/>
+        <logs message="WARNING: assign NaN to ap integer value" projectName="mod_sub" solutionName="solution1" date="2020-12-21T15:47:05.576+0300" type="Warning"/>
+        <logs message="WARNING: assign NaN to ap integer value" projectName="mod_sub" solutionName="solution1" date="2020-12-21T15:47:05.565+0300" type="Warning"/>
+        <logs message="WARNING: assign NaN to ap integer value" projectName="mod_sub" solutionName="solution1" date="2020-12-21T15:47:05.552+0300" type="Warning"/>
+        <logs message="WARNING: assign NaN to ap integer value" projectName="mod_sub" solutionName="solution1" date="2020-12-21T15:47:05.543+0300" type="Warning"/>
+        <logs message="WARNING: assign NaN to ap integer value" projectName="mod_sub" solutionName="solution1" date="2020-12-21T15:47:05.533+0300" type="Warning"/>
+        <logs message="WARNING: assign NaN to ap integer value" projectName="mod_sub" solutionName="solution1" date="2020-12-21T15:47:05.523+0300" type="Warning"/>
+        <logs message="WARNING: assign NaN to ap integer value" projectName="mod_sub" solutionName="solution1" date="2020-12-21T15:47:05.513+0300" type="Warning"/>
+        <logs message="WARNING: assign NaN to ap integer value" projectName="mod_sub" solutionName="solution1" date="2020-12-21T15:47:05.504+0300" type="Warning"/>
+        <logs message="WARNING: assign NaN to ap integer value" projectName="mod_sub" solutionName="solution1" date="2020-12-21T15:47:05.494+0300" type="Warning"/>
+        <logs message="WARNING: assign NaN to ap integer value" projectName="mod_sub" solutionName="solution1" date="2020-12-21T15:47:05.483+0300" type="Warning"/>
+        <logs message="WARNING: assign NaN to ap integer value" projectName="mod_sub" solutionName="solution1" date="2020-12-21T15:46:46.859+0300" type="Warning"/>
+        <logs message="WARNING: assign NaN to ap integer value" projectName="mod_sub" solutionName="solution1" date="2020-12-21T15:46:46.848+0300" type="Warning"/>
+        <logs message="WARNING: assign NaN to ap integer value" projectName="mod_sub" solutionName="solution1" date="2020-12-21T15:46:46.838+0300" type="Warning"/>
+        <logs message="WARNING: assign NaN to ap integer value" projectName="mod_sub" solutionName="solution1" date="2020-12-21T15:46:46.829+0300" type="Warning"/>
+        <logs message="WARNING: assign NaN to ap integer value" projectName="mod_sub" solutionName="solution1" date="2020-12-21T15:46:46.818+0300" type="Warning"/>
+        <logs message="WARNING: assign NaN to ap integer value" projectName="mod_sub" solutionName="solution1" date="2020-12-21T15:46:46.808+0300" type="Warning"/>
+        <logs message="WARNING: assign NaN to ap integer value" projectName="mod_sub" solutionName="solution1" date="2020-12-21T15:46:46.798+0300" type="Warning"/>
+        <logs message="WARNING: assign NaN to ap integer value" projectName="mod_sub" solutionName="solution1" date="2020-12-21T15:46:46.788+0300" type="Warning"/>
+        <logs message="WARNING: assign NaN to ap integer value" projectName="mod_sub" solutionName="solution1" date="2020-12-21T15:46:46.778+0300" type="Warning"/>
+        <logs message="WARNING: assign NaN to ap integer value" projectName="mod_sub" solutionName="solution1" date="2020-12-21T15:46:46.769+0300" type="Warning"/>
+        <logs message="WARNING: assign NaN to ap integer value" projectName="mod_sub" solutionName="solution1" date="2020-12-21T15:46:46.760+0300" type="Warning"/>
+        <logs message="WARNING: assign NaN to ap integer value" projectName="mod_sub" solutionName="solution1" date="2020-12-21T15:46:46.750+0300" type="Warning"/>
+      </simLog>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </warningLogs>
+</vivadoHLSLog:LogRoot>

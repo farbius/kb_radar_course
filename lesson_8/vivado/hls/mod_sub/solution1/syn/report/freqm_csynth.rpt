@@ -1,0 +1,160 @@
+
+
+================================================================
+== Vivado HLS Report for 'freqm'
+================================================================
+* Date:           Mon Dec 21 15:45:35 2020
+
+* Version:        2019.1.3 (Build 2642998 on Wed Sep 04 10:25:22 MDT 2019)
+* Project:        mod_sub
+* Solution:       solution1
+* Product family: zynq
+* Target device:  xc7z045-ffg900-2
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+--------+----------+------------+
+    |  Clock | Target | Estimated| Uncertainty|
+    +--------+--------+----------+------------+
+    |ap_clk  |  100.00|    12.347|       12.50|
+    +--------+--------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +-----+-----+-----+-----+----------+
+    |  Latency  |  Interval | Pipeline |
+    | min | max | min | max |   Type   |
+    +-----+-----+-----+-----+----------+
+    |    0|    0|    1|    1| function |
+    +-----+-----+-----+-----+----------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-------+--------+--------+-----+
+|       Name      | BRAM_18K| DSP48E|   FF   |   LUT  | URAM|
++-----------------+---------+-------+--------+--------+-----+
+|DSP              |        -|      -|       -|       -|    -|
+|Expression       |        -|      8|       0|     149|    -|
+|FIFO             |        -|      -|       -|       -|    -|
+|Instance         |        -|      -|       -|       -|    -|
+|Memory           |        -|      -|       -|       -|    -|
+|Multiplexer      |        -|      -|       -|      27|    -|
+|Register         |        -|      -|      66|       -|    -|
++-----------------+---------+-------+--------+--------+-----+
+|Total            |        0|      8|      66|     176|    0|
++-----------------+---------+-------+--------+--------+-----+
+|Available        |     1090|    900|  437200|  218600|    0|
++-----------------+---------+-------+--------+--------+-----+
+|Utilization (%)  |        0|   ~0  |   ~0   |   ~0   |    0|
++-----------------+---------+-------+--------+--------+-----+
+
++ Detail: 
+    * Instance: 
+    N/A
+
+    * DSP48E: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +----------------------+----------+-------+---+----+------------+------------+
+    |     Variable Name    | Operation| DSP48E| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +----------------------+----------+-------+---+----+------------+------------+
+    |mul_ln68_1_fu_154_p2  |     *    |      2|  0|  21|          32|           8|
+    |mul_ln68_2_fu_166_p2  |     *    |      2|  0|  21|          32|           8|
+    |mul_ln68_3_fu_172_p2  |     *    |      2|  0|  21|          32|           8|
+    |mul_ln68_fu_144_p2    |     *    |      2|  0|  21|          32|           8|
+    |add_ln68_fu_178_p2    |     +    |      0|  0|  32|          32|          32|
+    |sub_ln68_fu_160_p2    |     -    |      0|  0|  32|          32|          32|
+    |ap_block_state1       |    or    |      0|  0|   1|           1|           1|
+    +----------------------+----------+-------+---+----+------------+------------+
+    |Total                 |          |      8|  0| 149|         193|          97|
+    +----------------------+----------+-------+---+----+------------+------------+
+
+    * Multiplexer: 
+    +----------------+----+-----------+-----+-----------+
+    |      Name      | LUT| Input Size| Bits| Total Bits|
+    +----------------+----+-----------+-----+-----------+
+    |ap_done         |   3|          2|    1|          2|
+    |ap_return_0     |   3|          2|   32|         64|
+    |ap_return_1     |   3|          2|   32|         64|
+    |i_mod_V_blk_n   |   3|          2|    1|          2|
+    |ix_V_blk_n      |   3|          2|    1|          2|
+    |ix_V_out_blk_n  |   3|          2|    1|          2|
+    |q_mod_V_blk_n   |   3|          2|    1|          2|
+    |qx_V_blk_n      |   3|          2|    1|          2|
+    |qx_V_out_blk_n  |   3|          2|    1|          2|
+    +----------------+----+-----------+-----+-----------+
+    |Total           |  27|         18|   71|        142|
+    +----------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +------------------+----+----+-----+-----------+
+    |       Name       | FF | LUT| Bits| Const Bits|
+    +------------------+----+----+-----+-----------+
+    |ap_CS_fsm         |   1|   0|    1|          0|
+    |ap_done_reg       |   1|   0|    1|          0|
+    |ap_return_0_preg  |  32|   0|   32|          0|
+    |ap_return_1_preg  |  32|   0|   32|          0|
+    +------------------+----+----+-----+-----------+
+    |Total             |  66|   0|   66|          0|
+    +------------------+----+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++-----------------+-----+-----+------------+--------------+--------------+
+|    RTL Ports    | Dir | Bits|  Protocol  | Source Object|    C Type    |
++-----------------+-----+-----+------------+--------------+--------------+
+|ap_clk           |  in |    1| ap_ctrl_hs |     freqm    | return value |
+|ap_rst           |  in |    1| ap_ctrl_hs |     freqm    | return value |
+|ap_start         |  in |    1| ap_ctrl_hs |     freqm    | return value |
+|ap_done          | out |    1| ap_ctrl_hs |     freqm    | return value |
+|ap_continue      |  in |    1| ap_ctrl_hs |     freqm    | return value |
+|ap_idle          | out |    1| ap_ctrl_hs |     freqm    | return value |
+|ap_ready         | out |    1| ap_ctrl_hs |     freqm    | return value |
+|ap_return_0      | out |   32| ap_ctrl_hs |     freqm    | return value |
+|ap_return_1      | out |   32| ap_ctrl_hs |     freqm    | return value |
+|ix_V_dout        |  in |   32|   ap_fifo  |     ix_V     |    pointer   |
+|ix_V_empty_n     |  in |    1|   ap_fifo  |     ix_V     |    pointer   |
+|ix_V_read        | out |    1|   ap_fifo  |     ix_V     |    pointer   |
+|qx_V_dout        |  in |   32|   ap_fifo  |     qx_V     |    pointer   |
+|qx_V_empty_n     |  in |    1|   ap_fifo  |     qx_V     |    pointer   |
+|qx_V_read        | out |    1|   ap_fifo  |     qx_V     |    pointer   |
+|i_mod_V_dout     |  in |    8|   ap_fifo  |    i_mod_V   |    pointer   |
+|i_mod_V_empty_n  |  in |    1|   ap_fifo  |    i_mod_V   |    pointer   |
+|i_mod_V_read     | out |    1|   ap_fifo  |    i_mod_V   |    pointer   |
+|q_mod_V_dout     |  in |    8|   ap_fifo  |    q_mod_V   |    pointer   |
+|q_mod_V_empty_n  |  in |    1|   ap_fifo  |    q_mod_V   |    pointer   |
+|q_mod_V_read     | out |    1|   ap_fifo  |    q_mod_V   |    pointer   |
+|ix_V_out_din     | out |   32|   ap_fifo  |   ix_V_out   |    pointer   |
+|ix_V_out_full_n  |  in |    1|   ap_fifo  |   ix_V_out   |    pointer   |
+|ix_V_out_write   | out |    1|   ap_fifo  |   ix_V_out   |    pointer   |
+|qx_V_out_din     | out |   32|   ap_fifo  |   qx_V_out   |    pointer   |
+|qx_V_out_full_n  |  in |    1|   ap_fifo  |   qx_V_out   |    pointer   |
+|qx_V_out_write   | out |    1|   ap_fifo  |   qx_V_out   |    pointer   |
++-----------------+-----+-----+------------+--------------+--------------+
+

@@ -1,0 +1,271 @@
+
+
+================================================================
+== Vivado HLS Report for 'fir_filter_a'
+================================================================
+* Date:           Mon Dec 21 15:44:28 2020
+
+* Version:        2019.1.3 (Build 2642998 on Wed Sep 04 10:25:22 MDT 2019)
+* Project:        d_conv
+* Solution:       solution1
+* Product family: zynq
+* Target device:  xc7z045-ffg900-2
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+-------+----------+------------+
+    |  Clock | Target| Estimated| Uncertainty|
+    +--------+-------+----------+------------+
+    |ap_clk  |  10.00|     7.446|        1.25|
+    +--------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +-----+-----+-----+-----+----------+
+    |  Latency  |  Interval | Pipeline |
+    | min | max | min | max |   Type   |
+    +-----+-----+-----+-----+----------+
+    |    3|    3|    1|    1| function |
+    +-----+-----+-----+-----+----------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 2
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 2
+HasVarLatency: 0
+IsPipeline: 1
+IsRtlPipelined: 1
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
++ Individual pipeline summary: 
+  * Pipeline-0: initiation interval (II) = 1, depth = 4
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 4
+* Pipeline : 1
+  Pipeline-0 : II = 1, D = 4, States = { 1 2 3 4 }
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 3 
+3 --> 4 
+4 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 7.05>
+ST_1 : Operation 5 [1/1] (0.00ns)   --->   "%data_V = call i16 @_ssdm_op_Read.ap_auto.i16(i16 %extLd_loc_channel)" [../sources/d_conv.cpp:23]   --->   Operation 5 'read' 'data_V' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 6 [1/1] (0.00ns)   --->   "%shift_reg_V_30_load = load i32* @shift_reg_V_30, align 8" [../sources/d_conv.cpp:49->../sources/d_conv.cpp:23->../sources/d_conv.cpp:23]   --->   Operation 6 'load' 'shift_reg_V_30_load' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 7 [1/1] (7.05ns)   --->   "%mul_ln700 = mul i32 %shift_reg_V_30_load, -473" [../sources/d_conv.cpp:52->../sources/d_conv.cpp:23->../sources/d_conv.cpp:23]   --->   Operation 7 'mul' 'mul_ln700' <Predicate = true> <Delay = 7.05> <Core = "Mul">   --->   Core 16 'Mul' <Latency = 0> <II = 1> <Delay = 7.05> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 8 [1/1] (0.00ns)   --->   "%shift_reg_V_29_load = load i32* @shift_reg_V_29, align 4" [../sources/d_conv.cpp:49->../sources/d_conv.cpp:23->../sources/d_conv.cpp:23]   --->   Operation 8 'load' 'shift_reg_V_29_load' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 9 [1/1] (0.00ns)   --->   "store i32 %shift_reg_V_29_load, i32* @shift_reg_V_30, align 8" [../sources/d_conv.cpp:49->../sources/d_conv.cpp:23->../sources/d_conv.cpp:23]   --->   Operation 9 'store' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 10 [1/1] (7.05ns)   --->   "%mul_ln700_32 = mul i32 %shift_reg_V_29_load, -417" [../sources/d_conv.cpp:52->../sources/d_conv.cpp:23->../sources/d_conv.cpp:23]   --->   Operation 10 'mul' 'mul_ln700_32' <Predicate = true> <Delay = 7.05> <Core = "Mul">   --->   Core 16 'Mul' <Latency = 0> <II = 1> <Delay = 7.05> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 11 [1/1] (0.00ns)   --->   "%shift_reg_V_28_load = load i32* @shift_reg_V_28, align 16" [../sources/d_conv.cpp:49->../sources/d_conv.cpp:23->../sources/d_conv.cpp:23]   --->   Operation 11 'load' 'shift_reg_V_28_load' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 12 [1/1] (0.00ns)   --->   "store i32 %shift_reg_V_28_load, i32* @shift_reg_V_29, align 4" [../sources/d_conv.cpp:49->../sources/d_conv.cpp:23->../sources/d_conv.cpp:23]   --->   Operation 12 'store' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 13 [1/1] (7.05ns)   --->   "%mul_ln700_33 = mul i32 %shift_reg_V_28_load, -519" [../sources/d_conv.cpp:52->../sources/d_conv.cpp:23->../sources/d_conv.cpp:23]   --->   Operation 13 'mul' 'mul_ln700_33' <Predicate = true> <Delay = 7.05> <Core = "Mul">   --->   Core 16 'Mul' <Latency = 0> <II = 1> <Delay = 7.05> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 14 [1/1] (0.00ns)   --->   "%shift_reg_V_27_load = load i32* @shift_reg_V_27, align 4" [../sources/d_conv.cpp:49->../sources/d_conv.cpp:23->../sources/d_conv.cpp:23]   --->   Operation 14 'load' 'shift_reg_V_27_load' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 15 [1/1] (0.00ns)   --->   "store i32 %shift_reg_V_27_load, i32* @shift_reg_V_28, align 16" [../sources/d_conv.cpp:49->../sources/d_conv.cpp:23->../sources/d_conv.cpp:23]   --->   Operation 15 'store' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 16 [1/1] (7.05ns)   --->   "%mul_ln700_34 = mul i32 %shift_reg_V_27_load, -554" [../sources/d_conv.cpp:52->../sources/d_conv.cpp:23->../sources/d_conv.cpp:23]   --->   Operation 16 'mul' 'mul_ln700_34' <Predicate = true> <Delay = 7.05> <Core = "Mul">   --->   Core 16 'Mul' <Latency = 0> <II = 1> <Delay = 7.05> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 17 [1/1] (0.00ns)   --->   "%shift_reg_V_26_load = load i32* @shift_reg_V_26, align 8" [../sources/d_conv.cpp:49->../sources/d_conv.cpp:23->../sources/d_conv.cpp:23]   --->   Operation 17 'load' 'shift_reg_V_26_load' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 18 [1/1] (0.00ns)   --->   "store i32 %shift_reg_V_26_load, i32* @shift_reg_V_27, align 4" [../sources/d_conv.cpp:49->../sources/d_conv.cpp:23->../sources/d_conv.cpp:23]   --->   Operation 18 'store' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 19 [1/1] (7.05ns)   --->   "%mul_ln700_35 = mul i32 %shift_reg_V_26_load, -485" [../sources/d_conv.cpp:52->../sources/d_conv.cpp:23->../sources/d_conv.cpp:23]   --->   Operation 19 'mul' 'mul_ln700_35' <Predicate = true> <Delay = 7.05> <Core = "Mul">   --->   Core 16 'Mul' <Latency = 0> <II = 1> <Delay = 7.05> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 20 [1/1] (0.00ns)   --->   "%shift_reg_V_25_load = load i32* @shift_reg_V_25, align 4" [../sources/d_conv.cpp:49->../sources/d_conv.cpp:23->../sources/d_conv.cpp:23]   --->   Operation 20 'load' 'shift_reg_V_25_load' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 21 [1/1] (0.00ns)   --->   "store i32 %shift_reg_V_25_load, i32* @shift_reg_V_26, align 8" [../sources/d_conv.cpp:49->../sources/d_conv.cpp:23->../sources/d_conv.cpp:23]   --->   Operation 21 'store' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 22 [1/1] (7.05ns)   --->   "%mul_ln700_36 = mul i32 %shift_reg_V_25_load, -275" [../sources/d_conv.cpp:52->../sources/d_conv.cpp:23->../sources/d_conv.cpp:23]   --->   Operation 22 'mul' 'mul_ln700_36' <Predicate = true> <Delay = 7.05> <Core = "Mul">   --->   Core 16 'Mul' <Latency = 0> <II = 1> <Delay = 7.05> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 23 [1/1] (0.00ns)   --->   "%shift_reg_V_24_load = load i32* @shift_reg_V_24, align 16" [../sources/d_conv.cpp:49->../sources/d_conv.cpp:23->../sources/d_conv.cpp:23]   --->   Operation 23 'load' 'shift_reg_V_24_load' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 24 [1/1] (0.00ns)   --->   "store i32 %shift_reg_V_24_load, i32* @shift_reg_V_25, align 4" [../sources/d_conv.cpp:49->../sources/d_conv.cpp:23->../sources/d_conv.cpp:23]   --->   Operation 24 'store' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 25 [1/1] (7.05ns)   --->   "%mul_ln700_37 = mul i32 %shift_reg_V_24_load, 103" [../sources/d_conv.cpp:52->../sources/d_conv.cpp:23->../sources/d_conv.cpp:23]   --->   Operation 25 'mul' 'mul_ln700_37' <Predicate = true> <Delay = 7.05> <Core = "Mul">   --->   Core 16 'Mul' <Latency = 0> <II = 1> <Delay = 7.05> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 26 [1/1] (0.00ns)   --->   "%shift_reg_V_23_load = load i32* @shift_reg_V_23, align 4" [../sources/d_conv.cpp:49->../sources/d_conv.cpp:23->../sources/d_conv.cpp:23]   --->   Operation 26 'load' 'shift_reg_V_23_load' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 27 [1/1] (0.00ns)   --->   "store i32 %shift_reg_V_23_load, i32* @shift_reg_V_24, align 16" [../sources/d_conv.cpp:49->../sources/d_conv.cpp:23->../sources/d_conv.cpp:23]   --->   Operation 27 'store' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 28 [1/1] (7.05ns)   --->   "%mul_ln700_38 = mul i32 %shift_reg_V_23_load, 660" [../sources/d_conv.cpp:52->../sources/d_conv.cpp:23->../sources/d_conv.cpp:23]   --->   Operation 28 'mul' 'mul_ln700_38' <Predicate = true> <Delay = 7.05> <Core = "Mul">   --->   Core 16 'Mul' <Latency = 0> <II = 1> <Delay = 7.05> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 29 [1/1] (0.00ns)   --->   "%shift_reg_V_22_load = load i32* @shift_reg_V_22, align 8" [../sources/d_conv.cpp:49->../sources/d_conv.cpp:23->../sources/d_conv.cpp:23]   --->   Operation 29 'load' 'shift_reg_V_22_load' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 30 [1/1] (0.00ns)   --->   "store i32 %shift_reg_V_22_load, i32* @shift_reg_V_23, align 4" [../sources/d_conv.cpp:49->../sources/d_conv.cpp:23->../sources/d_conv.cpp:23]   --->   Operation 30 'store' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 31 [1/1] (7.05ns)   --->   "%mul_ln700_39 = mul i32 %shift_reg_V_22_load, 1386" [../sources/d_conv.cpp:52->../sources/d_conv.cpp:23->../sources/d_conv.cpp:23]   --->   Operation 31 'mul' 'mul_ln700_39' <Predicate = true> <Delay = 7.05> <Core = "Mul">   --->   Core 16 'Mul' <Latency = 0> <II = 1> <Delay = 7.05> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 32 [1/1] (0.00ns)   --->   "%shift_reg_V_21_load = load i32* @shift_reg_V_21, align 4" [../sources/d_conv.cpp:49->../sources/d_conv.cpp:23->../sources/d_conv.cpp:23]   --->   Operation 32 'load' 'shift_reg_V_21_load' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 33 [1/1] (0.00ns)   --->   "store i32 %shift_reg_V_21_load, i32* @shift_reg_V_22, align 8" [../sources/d_conv.cpp:49->../sources/d_conv.cpp:23->../sources/d_conv.cpp:23]   --->   Operation 33 'store' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 34 [1/1] (7.05ns)   --->   "%mul_ln700_40 = mul i32 %shift_reg_V_21_load, 2252" [../sources/d_conv.cpp:52->../sources/d_conv.cpp:23->../sources/d_conv.cpp:23]   --->   Operation 34 'mul' 'mul_ln700_40' <Predicate = true> <Delay = 7.05> <Core = "Mul">   --->   Core 16 'Mul' <Latency = 0> <II = 1> <Delay = 7.05> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 35 [1/1] (0.00ns)   --->   "%shift_reg_V_20_load = load i32* @shift_reg_V_20, align 16" [../sources/d_conv.cpp:49->../sources/d_conv.cpp:23->../sources/d_conv.cpp:23]   --->   Operation 35 'load' 'shift_reg_V_20_load' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 36 [1/1] (0.00ns)   --->   "store i32 %shift_reg_V_20_load, i32* @shift_reg_V_21, align 4" [../sources/d_conv.cpp:49->../sources/d_conv.cpp:23->../sources/d_conv.cpp:23]   --->   Operation 36 'store' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 37 [1/1] (7.05ns)   --->   "%mul_ln700_41 = mul i32 %shift_reg_V_20_load, 3203" [../sources/d_conv.cpp:52->../sources/d_conv.cpp:23->../sources/d_conv.cpp:23]   --->   Operation 37 'mul' 'mul_ln700_41' <Predicate = true> <Delay = 7.05> <Core = "Mul">   --->   Core 16 'Mul' <Latency = 0> <II = 1> <Delay = 7.05> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 38 [1/1] (0.00ns)   --->   "%shift_reg_V_19_load = load i32* @shift_reg_V_19, align 4" [../sources/d_conv.cpp:49->../sources/d_conv.cpp:23->../sources/d_conv.cpp:23]   --->   Operation 38 'load' 'shift_reg_V_19_load' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 39 [1/1] (0.00ns)   --->   "store i32 %shift_reg_V_19_load, i32* @shift_reg_V_20, align 16" [../sources/d_conv.cpp:49->../sources/d_conv.cpp:23->../sources/d_conv.cpp:23]   --->   Operation 39 'store' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 40 [1/1] (7.05ns)   --->   "%mul_ln700_42 = mul i32 %shift_reg_V_19_load, 4172" [../sources/d_conv.cpp:52->../sources/d_conv.cpp:23->../sources/d_conv.cpp:23]   --->   Operation 40 'mul' 'mul_ln700_42' <Predicate = true> <Delay = 7.05> <Core = "Mul">   --->   Core 16 'Mul' <Latency = 0> <II = 1> <Delay = 7.05> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 41 [1/1] (0.00ns)   --->   "%shift_reg_V_18_load = load i32* @shift_reg_V_18, align 8" [../sources/d_conv.cpp:49->../sources/d_conv.cpp:23->../sources/d_conv.cpp:23]   --->   Operation 41 'load' 'shift_reg_V_18_load' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 42 [1/1] (0.00ns)   --->   "store i32 %shift_reg_V_18_load, i32* @shift_reg_V_19, align 4" [../sources/d_conv.cpp:49->../sources/d_conv.cpp:23->../sources/d_conv.cpp:23]   --->   Operation 42 'store' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 43 [1/1] (7.05ns)   --->   "%mul_ln700_43 = mul i32 %shift_reg_V_18_load, 5079" [../sources/d_conv.cpp:52->../sources/d_conv.cpp:23->../sources/d_conv.cpp:23]   --->   Operation 43 'mul' 'mul_ln700_43' <Predicate = true> <Delay = 7.05> <Core = "Mul">   --->   Core 16 'Mul' <Latency = 0> <II = 1> <Delay = 7.05> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 44 [1/1] (0.00ns)   --->   "%shift_reg_V_17_load = load i32* @shift_reg_V_17, align 4" [../sources/d_conv.cpp:49->../sources/d_conv.cpp:23->../sources/d_conv.cpp:23]   --->   Operation 44 'load' 'shift_reg_V_17_load' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 45 [1/1] (0.00ns)   --->   "store i32 %shift_reg_V_17_load, i32* @shift_reg_V_18, align 8" [../sources/d_conv.cpp:49->../sources/d_conv.cpp:23->../sources/d_conv.cpp:23]   --->   Operation 45 'store' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 46 [1/1] (7.05ns)   --->   "%mul_ln700_44 = mul i32 %shift_reg_V_17_load, 5845" [../sources/d_conv.cpp:52->../sources/d_conv.cpp:23->../sources/d_conv.cpp:23]   --->   Operation 46 'mul' 'mul_ln700_44' <Predicate = true> <Delay = 7.05> <Core = "Mul">   --->   Core 16 'Mul' <Latency = 0> <II = 1> <Delay = 7.05> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 47 [1/1] (0.00ns)   --->   "%shift_reg_V_16_load = load i32* @shift_reg_V_16, align 16" [../sources/d_conv.cpp:49->../sources/d_conv.cpp:23->../sources/d_conv.cpp:23]   --->   Operation 47 'load' 'shift_reg_V_16_load' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 48 [1/1] (0.00ns)   --->   "store i32 %shift_reg_V_16_load, i32* @shift_reg_V_17, align 4" [../sources/d_conv.cpp:49->../sources/d_conv.cpp:23->../sources/d_conv.cpp:23]   --->   Operation 48 'store' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 49 [1/1] (7.05ns)   --->   "%mul_ln700_45 = mul i32 %shift_reg_V_16_load, 6401" [../sources/d_conv.cpp:52->../sources/d_conv.cpp:23->../sources/d_conv.cpp:23]   --->   Operation 49 'mul' 'mul_ln700_45' <Predicate = true> <Delay = 7.05> <Core = "Mul">   --->   Core 16 'Mul' <Latency = 0> <II = 1> <Delay = 7.05> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 50 [1/1] (0.00ns)   --->   "%shift_reg_V_15_load = load i32* @shift_reg_V_15, align 4" [../sources/d_conv.cpp:49->../sources/d_conv.cpp:23->../sources/d_conv.cpp:23]   --->   Operation 50 'load' 'shift_reg_V_15_load' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 51 [1/1] (0.00ns)   --->   "store i32 %shift_reg_V_15_load, i32* @shift_reg_V_16, align 16" [../sources/d_conv.cpp:49->../sources/d_conv.cpp:23->../sources/d_conv.cpp:23]   --->   Operation 51 'store' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 52 [1/1] (7.05ns)   --->   "%mul_ln700_46 = mul i32 %shift_reg_V_15_load, 6693" [../sources/d_conv.cpp:52->../sources/d_conv.cpp:23->../sources/d_conv.cpp:23]   --->   Operation 52 'mul' 'mul_ln700_46' <Predicate = true> <Delay = 7.05> <Core = "Mul">   --->   Core 16 'Mul' <Latency = 0> <II = 1> <Delay = 7.05> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 53 [1/1] (0.00ns)   --->   "%shift_reg_V_14_load = load i32* @shift_reg_V_14, align 8" [../sources/d_conv.cpp:49->../sources/d_conv.cpp:23->../sources/d_conv.cpp:23]   --->   Operation 53 'load' 'shift_reg_V_14_load' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 54 [1/1] (0.00ns)   --->   "store i32 %shift_reg_V_14_load, i32* @shift_reg_V_15, align 4" [../sources/d_conv.cpp:49->../sources/d_conv.cpp:23->../sources/d_conv.cpp:23]   --->   Operation 54 'store' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 55 [1/1] (7.05ns)   --->   "%mul_ln700_47 = mul i32 %shift_reg_V_14_load, 6693" [../sources/d_conv.cpp:52->../sources/d_conv.cpp:23->../sources/d_conv.cpp:23]   --->   Operation 55 'mul' 'mul_ln700_47' <Predicate = true> <Delay = 7.05> <Core = "Mul">   --->   Core 16 'Mul' <Latency = 0> <II = 1> <Delay = 7.05> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 56 [1/1] (0.00ns)   --->   "%shift_reg_V_13_load = load i32* @shift_reg_V_13, align 4" [../sources/d_conv.cpp:49->../sources/d_conv.cpp:23->../sources/d_conv.cpp:23]   --->   Operation 56 'load' 'shift_reg_V_13_load' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 57 [1/1] (0.00ns)   --->   "store i32 %shift_reg_V_13_load, i32* @shift_reg_V_14, align 8" [../sources/d_conv.cpp:49->../sources/d_conv.cpp:23->../sources/d_conv.cpp:23]   --->   Operation 57 'store' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 58 [1/1] (7.05ns)   --->   "%mul_ln700_48 = mul i32 %shift_reg_V_13_load, 6401" [../sources/d_conv.cpp:52->../sources/d_conv.cpp:23->../sources/d_conv.cpp:23]   --->   Operation 58 'mul' 'mul_ln700_48' <Predicate = true> <Delay = 7.05> <Core = "Mul">   --->   Core 16 'Mul' <Latency = 0> <II = 1> <Delay = 7.05> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 59 [1/1] (0.00ns)   --->   "%shift_reg_V_12_load = load i32* @shift_reg_V_12, align 16" [../sources/d_conv.cpp:49->../sources/d_conv.cpp:23->../sources/d_conv.cpp:23]   --->   Operation 59 'load' 'shift_reg_V_12_load' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 60 [1/1] (0.00ns)   --->   "store i32 %shift_reg_V_12_load, i32* @shift_reg_V_13, align 4" [../sources/d_conv.cpp:49->../sources/d_conv.cpp:23->../sources/d_conv.cpp:23]   --->   Operation 60 'store' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 61 [1/1] (7.05ns)   --->   "%mul_ln700_49 = mul i32 %shift_reg_V_12_load, 5845" [../sources/d_conv.cpp:52->../sources/d_conv.cpp:23->../sources/d_conv.cpp:23]   --->   Operation 61 'mul' 'mul_ln700_49' <Predicate = true> <Delay = 7.05> <Core = "Mul">   --->   Core 16 'Mul' <Latency = 0> <II = 1> <Delay = 7.05> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 62 [1/1] (0.00ns)   --->   "%shift_reg_V_11_load = load i32* @shift_reg_V_11, align 4" [../sources/d_conv.cpp:49->../sources/d_conv.cpp:23->../sources/d_conv.cpp:23]   --->   Operation 62 'load' 'shift_reg_V_11_load' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 63 [1/1] (0.00ns)   --->   "store i32 %shift_reg_V_11_load, i32* @shift_reg_V_12, align 16" [../sources/d_conv.cpp:49->../sources/d_conv.cpp:23->../sources/d_conv.cpp:23]   --->   Operation 63 'store' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 64 [1/1] (7.05ns)   --->   "%mul_ln700_50 = mul i32 %shift_reg_V_11_load, 5079" [../sources/d_conv.cpp:52->../sources/d_conv.cpp:23->../sources/d_conv.cpp:23]   --->   Operation 64 'mul' 'mul_ln700_50' <Predicate = true> <Delay = 7.05> <Core = "Mul">   --->   Core 16 'Mul' <Latency = 0> <II = 1> <Delay = 7.05> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 65 [1/1] (0.00ns)   --->   "%shift_reg_V_10_load = load i32* @shift_reg_V_10, align 8" [../sources/d_conv.cpp:49->../sources/d_conv.cpp:23->../sources/d_conv.cpp:23]   --->   Operation 65 'load' 'shift_reg_V_10_load' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 66 [1/1] (0.00ns)   --->   "store i32 %shift_reg_V_10_load, i32* @shift_reg_V_11, align 4" [../sources/d_conv.cpp:49->../sources/d_conv.cpp:23->../sources/d_conv.cpp:23]   --->   Operation 66 'store' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 67 [1/1] (7.05ns)   --->   "%mul_ln700_51 = mul i32 %shift_reg_V_10_load, 4172" [../sources/d_conv.cpp:52->../sources/d_conv.cpp:23->../sources/d_conv.cpp:23]   --->   Operation 67 'mul' 'mul_ln700_51' <Predicate = true> <Delay = 7.05> <Core = "Mul">   --->   Core 16 'Mul' <Latency = 0> <II = 1> <Delay = 7.05> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 68 [1/1] (0.00ns)   --->   "%shift_reg_V_9_load = load i32* @shift_reg_V_9, align 4" [../sources/d_conv.cpp:49->../sources/d_conv.cpp:23->../sources/d_conv.cpp:23]   --->   Operation 68 'load' 'shift_reg_V_9_load' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 69 [1/1] (0.00ns)   --->   "store i32 %shift_reg_V_9_load, i32* @shift_reg_V_10, align 8" [../sources/d_conv.cpp:49->../sources/d_conv.cpp:23->../sources/d_conv.cpp:23]   --->   Operation 69 'store' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 70 [1/1] (7.05ns)   --->   "%mul_ln700_52 = mul i32 %shift_reg_V_9_load, 3203" [../sources/d_conv.cpp:52->../sources/d_conv.cpp:23->../sources/d_conv.cpp:23]   --->   Operation 70 'mul' 'mul_ln700_52' <Predicate = true> <Delay = 7.05> <Core = "Mul">   --->   Core 16 'Mul' <Latency = 0> <II = 1> <Delay = 7.05> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 71 [1/1] (0.00ns)   --->   "%shift_reg_V_8_load = load i32* @shift_reg_V_8, align 16" [../sources/d_conv.cpp:49->../sources/d_conv.cpp:23->../sources/d_conv.cpp:23]   --->   Operation 71 'load' 'shift_reg_V_8_load' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 72 [1/1] (0.00ns)   --->   "store i32 %shift_reg_V_8_load, i32* @shift_reg_V_9, align 4" [../sources/d_conv.cpp:49->../sources/d_conv.cpp:23->../sources/d_conv.cpp:23]   --->   Operation 72 'store' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 73 [1/1] (7.05ns)   --->   "%mul_ln700_53 = mul i32 %shift_reg_V_8_load, 2252" [../sources/d_conv.cpp:52->../sources/d_conv.cpp:23->../sources/d_conv.cpp:23]   --->   Operation 73 'mul' 'mul_ln700_53' <Predicate = true> <Delay = 7.05> <Core = "Mul">   --->   Core 16 'Mul' <Latency = 0> <II = 1> <Delay = 7.05> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 74 [1/1] (0.00ns)   --->   "%shift_reg_V_7_load = load i32* @shift_reg_V_7, align 4" [../sources/d_conv.cpp:49->../sources/d_conv.cpp:23->../sources/d_conv.cpp:23]   --->   Operation 74 'load' 'shift_reg_V_7_load' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 75 [1/1] (0.00ns)   --->   "store i32 %shift_reg_V_7_load, i32* @shift_reg_V_8, align 16" [../sources/d_conv.cpp:49->../sources/d_conv.cpp:23->../sources/d_conv.cpp:23]   --->   Operation 75 'store' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 76 [1/1] (7.05ns)   --->   "%mul_ln700_54 = mul i32 %shift_reg_V_7_load, 1386" [../sources/d_conv.cpp:52->../sources/d_conv.cpp:23->../sources/d_conv.cpp:23]   --->   Operation 76 'mul' 'mul_ln700_54' <Predicate = true> <Delay = 7.05> <Core = "Mul">   --->   Core 16 'Mul' <Latency = 0> <II = 1> <Delay = 7.05> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 77 [1/1] (0.00ns)   --->   "%shift_reg_V_6_load = load i32* @shift_reg_V_6, align 8" [../sources/d_conv.cpp:49->../sources/d_conv.cpp:23->../sources/d_conv.cpp:23]   --->   Operation 77 'load' 'shift_reg_V_6_load' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 78 [1/1] (0.00ns)   --->   "store i32 %shift_reg_V_6_load, i32* @shift_reg_V_7, align 4" [../sources/d_conv.cpp:49->../sources/d_conv.cpp:23->../sources/d_conv.cpp:23]   --->   Operation 78 'store' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 79 [1/1] (7.05ns)   --->   "%mul_ln700_55 = mul i32 %shift_reg_V_6_load, 660" [../sources/d_conv.cpp:52->../sources/d_conv.cpp:23->../sources/d_conv.cpp:23]   --->   Operation 79 'mul' 'mul_ln700_55' <Predicate = true> <Delay = 7.05> <Core = "Mul">   --->   Core 16 'Mul' <Latency = 0> <II = 1> <Delay = 7.05> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 80 [1/1] (0.00ns)   --->   "%shift_reg_V_5_load = load i32* @shift_reg_V_5, align 4" [../sources/d_conv.cpp:49->../sources/d_conv.cpp:23->../sources/d_conv.cpp:23]   --->   Operation 80 'load' 'shift_reg_V_5_load' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 81 [1/1] (0.00ns)   --->   "store i32 %shift_reg_V_5_load, i32* @shift_reg_V_6, align 8" [../sources/d_conv.cpp:49->../sources/d_conv.cpp:23->../sources/d_conv.cpp:23]   --->   Operation 81 'store' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 82 [1/1] (7.05ns)   --->   "%mul_ln700_56 = mul i32 %shift_reg_V_5_load, 103" [../sources/d_conv.cpp:52->../sources/d_conv.cpp:23->../sources/d_conv.cpp:23]   --->   Operation 82 'mul' 'mul_ln700_56' <Predicate = true> <Delay = 7.05> <Core = "Mul">   --->   Core 16 'Mul' <Latency = 0> <II = 1> <Delay = 7.05> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 83 [1/1] (0.00ns)   --->   "%shift_reg_V_4_load = load i32* @shift_reg_V_4, align 16" [../sources/d_conv.cpp:49->../sources/d_conv.cpp:23->../sources/d_conv.cpp:23]   --->   Operation 83 'load' 'shift_reg_V_4_load' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 84 [1/1] (0.00ns)   --->   "store i32 %shift_reg_V_4_load, i32* @shift_reg_V_5, align 4" [../sources/d_conv.cpp:49->../sources/d_conv.cpp:23->../sources/d_conv.cpp:23]   --->   Operation 84 'store' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 85 [1/1] (7.05ns)   --->   "%mul_ln700_57 = mul i32 %shift_reg_V_4_load, -275" [../sources/d_conv.cpp:52->../sources/d_conv.cpp:23->../sources/d_conv.cpp:23]   --->   Operation 85 'mul' 'mul_ln700_57' <Predicate = true> <Delay = 7.05> <Core = "Mul">   --->   Core 16 'Mul' <Latency = 0> <II = 1> <Delay = 7.05> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 86 [1/1] (0.00ns)   --->   "%shift_reg_V_3_load = load i32* @shift_reg_V_3, align 4" [../sources/d_conv.cpp:49->../sources/d_conv.cpp:23->../sources/d_conv.cpp:23]   --->   Operation 86 'load' 'shift_reg_V_3_load' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 87 [1/1] (0.00ns)   --->   "store i32 %shift_reg_V_3_load, i32* @shift_reg_V_4, align 16" [../sources/d_conv.cpp:49->../sources/d_conv.cpp:23->../sources/d_conv.cpp:23]   --->   Operation 87 'store' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 88 [1/1] (7.05ns)   --->   "%mul_ln700_58 = mul i32 %shift_reg_V_3_load, -485" [../sources/d_conv.cpp:52->../sources/d_conv.cpp:23->../sources/d_conv.cpp:23]   --->   Operation 88 'mul' 'mul_ln700_58' <Predicate = true> <Delay = 7.05> <Core = "Mul">   --->   Core 16 'Mul' <Latency = 0> <II = 1> <Delay = 7.05> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 89 [1/1] (0.00ns)   --->   "%shift_reg_V_2_load = load i32* @shift_reg_V_2, align 8" [../sources/d_conv.cpp:49->../sources/d_conv.cpp:23->../sources/d_conv.cpp:23]   --->   Operation 89 'load' 'shift_reg_V_2_load' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 90 [1/1] (0.00ns)   --->   "store i32 %shift_reg_V_2_load, i32* @shift_reg_V_3, align 4" [../sources/d_conv.cpp:49->../sources/d_conv.cpp:23->../sources/d_conv.cpp:23]   --->   Operation 90 'store' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 91 [1/1] (7.05ns)   --->   "%mul_ln700_59 = mul i32 %shift_reg_V_2_load, -554" [../sources/d_conv.cpp:52->../sources/d_conv.cpp:23->../sources/d_conv.cpp:23]   --->   Operation 91 'mul' 'mul_ln700_59' <Predicate = true> <Delay = 7.05> <Core = "Mul">   --->   Core 16 'Mul' <Latency = 0> <II = 1> <Delay = 7.05> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 92 [1/1] (0.00ns)   --->   "%shift_reg_V_1_load = load i16* @shift_reg_V_1, align 2" [../sources/d_conv.cpp:49->../sources/d_conv.cpp:23->../sources/d_conv.cpp:23]   --->   Operation 92 'load' 'shift_reg_V_1_load' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 93 [1/1] (0.00ns)   --->   "%sext_ln180 = sext i16 %shift_reg_V_1_load to i32" [../sources/d_conv.cpp:49->../sources/d_conv.cpp:23->../sources/d_conv.cpp:23]   --->   Operation 93 'sext' 'sext_ln180' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 94 [1/1] (0.00ns)   --->   "store i32 %sext_ln180, i32* @shift_reg_V_2, align 8" [../sources/d_conv.cpp:49->../sources/d_conv.cpp:23->../sources/d_conv.cpp:23]   --->   Operation 94 'store' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 95 [1/1] (0.00ns)   --->   "%shift_reg_V_0_load = load i16* @shift_reg_V_0, align 2" [../sources/d_conv.cpp:49->../sources/d_conv.cpp:23->../sources/d_conv.cpp:23]   --->   Operation 95 'load' 'shift_reg_V_0_load' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 96 [1/1] (0.00ns)   --->   "store i16 %shift_reg_V_0_load, i16* @shift_reg_V_1, align 2" [../sources/d_conv.cpp:49->../sources/d_conv.cpp:23->../sources/d_conv.cpp:23]   --->   Operation 96 'store' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 97 [1/1] (0.00ns)   --->   "store i16 %data_V, i16* @shift_reg_V_0, align 2" [../sources/d_conv.cpp:46->../sources/d_conv.cpp:23->../sources/d_conv.cpp:23]   --->   Operation 97 'store' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 98 [1/1] (0.00ns)   --->   "%sext_ln700 = sext i16 %data_V to i26" [../sources/d_conv.cpp:52->../sources/d_conv.cpp:23->../sources/d_conv.cpp:23]   --->   Operation 98 'sext' 'sext_ln700' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 99 [1/1] (5.55ns) (root node of the DSP)   --->   "%mul_ln700_62 = mul i26 %sext_ln700, -473" [../sources/d_conv.cpp:52->../sources/d_conv.cpp:23->../sources/d_conv.cpp:23]   --->   Operation 99 'mul' 'mul_ln700_62' <Predicate = true> <Delay = 5.55> <Core = "DSP48">   --->   Core 88 'DSP48' <Latency = 0> <II = 1> <Delay = 5.55> <IPBlock> <Opcode : 'mul' 'add' 'sub' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+
+State 2 <SV = 1> <Delay = 7.44>
+ST_2 : Operation 100 [1/1] (5.55ns) (root node of the DSP)   --->   "%mul_ln700_60 = mul i32 %sext_ln180, -519" [../sources/d_conv.cpp:52->../sources/d_conv.cpp:23->../sources/d_conv.cpp:23]   --->   Operation 100 'mul' 'mul_ln700_60' <Predicate = true> <Delay = 5.55> <Core = "DSP48">   --->   Core 88 'DSP48' <Latency = 0> <II = 1> <Delay = 5.55> <IPBlock> <Opcode : 'mul' 'add' 'sub' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+ST_2 : Operation 101 [1/1] (0.00ns)   --->   "%sext_ln180_2 = sext i16 %shift_reg_V_0_load to i26" [../sources/d_conv.cpp:49->../sources/d_conv.cpp:23->../sources/d_conv.cpp:23]   --->   Operation 101 'sext' 'sext_ln180_2' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 102 [1/1] (2.82ns) (grouped into DSP with root node add_ln700_56)   --->   "%mul_ln700_61 = mul i26 %sext_ln180_2, -417" [../sources/d_conv.cpp:52->../sources/d_conv.cpp:23->../sources/d_conv.cpp:23]   --->   Operation 102 'mul' 'mul_ln700_61' <Predicate = true> <Delay = 2.82> <Core = "DSP48">   --->   Core 88 'DSP48' <Latency = 0> <II = 1> <Delay = 5.55> <IPBlock> <Opcode : 'mul' 'add' 'sub' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+ST_2 : Operation 103 [1/1] (1.89ns)   --->   "%add_ln700 = add i32 %mul_ln700_32, %mul_ln700" [../sources/d_conv.cpp:52->../sources/d_conv.cpp:23->../sources/d_conv.cpp:23]   --->   Operation 103 'add' 'add_ln700' <Predicate = true> <Delay = 1.89> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.89> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 104 [1/1] (0.00ns) (grouped into TernaryAdder)   --->   "%add_ln700_31 = add i32 %mul_ln700_34, %mul_ln700_33" [../sources/d_conv.cpp:52->../sources/d_conv.cpp:23->../sources/d_conv.cpp:23]   --->   Operation 104 'add' 'add_ln700_31' <Predicate = true> <Delay = 0.00> <Core = "TAddSub">   --->   Core 83 'TAddSub' <Latency = 0> <II = 1> <Delay = 1.79> <IPBlock> <Opcode : 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync> <CReg>
+ST_2 : Operation 105 [1/1] (3.58ns) (root node of TernaryAdder)   --->   "%add_ln700_32 = add i32 %add_ln700, %add_ln700_31" [../sources/d_conv.cpp:52->../sources/d_conv.cpp:23->../sources/d_conv.cpp:23]   --->   Operation 105 'add' 'add_ln700_32' <Predicate = true> <Delay = 3.58> <Core = "TAddSub">   --->   Core 83 'TAddSub' <Latency = 0> <II = 1> <Delay = 1.79> <IPBlock> <Opcode : 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync> <CReg>
+ST_2 : Operation 106 [1/1] (1.89ns)   --->   "%add_ln700_33 = add i32 %mul_ln700_36, %mul_ln700_35" [../sources/d_conv.cpp:52->../sources/d_conv.cpp:23->../sources/d_conv.cpp:23]   --->   Operation 106 'add' 'add_ln700_33' <Predicate = true> <Delay = 1.89> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.89> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 107 [1/1] (1.89ns)   --->   "%add_ln700_34 = add i32 %mul_ln700_38, %mul_ln700_37" [../sources/d_conv.cpp:52->../sources/d_conv.cpp:23->../sources/d_conv.cpp:23]   --->   Operation 107 'add' 'add_ln700_34' <Predicate = true> <Delay = 1.89> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.89> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 108 [1/1] (1.89ns)   --->   "%add_ln700_37 = add i32 %mul_ln700_40, %mul_ln700_39" [../sources/d_conv.cpp:52->../sources/d_conv.cpp:23->../sources/d_conv.cpp:23]   --->   Operation 108 'add' 'add_ln700_37' <Predicate = true> <Delay = 1.89> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.89> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 109 [1/1] (0.00ns) (grouped into TernaryAdder)   --->   "%add_ln700_38 = add i32 %mul_ln700_42, %mul_ln700_41" [../sources/d_conv.cpp:52->../sources/d_conv.cpp:23->../sources/d_conv.cpp:23]   --->   Operation 109 'add' 'add_ln700_38' <Predicate = true> <Delay = 0.00> <Core = "TAddSub">   --->   Core 83 'TAddSub' <Latency = 0> <II = 1> <Delay = 1.79> <IPBlock> <Opcode : 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync> <CReg>
+ST_2 : Operation 110 [1/1] (3.58ns) (root node of TernaryAdder)   --->   "%add_ln700_39 = add i32 %add_ln700_37, %add_ln700_38" [../sources/d_conv.cpp:52->../sources/d_conv.cpp:23->../sources/d_conv.cpp:23]   --->   Operation 110 'add' 'add_ln700_39' <Predicate = true> <Delay = 3.58> <Core = "TAddSub">   --->   Core 83 'TAddSub' <Latency = 0> <II = 1> <Delay = 1.79> <IPBlock> <Opcode : 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync> <CReg>
+ST_2 : Operation 111 [1/1] (1.89ns)   --->   "%add_ln700_40 = add i32 %mul_ln700_44, %mul_ln700_43" [../sources/d_conv.cpp:52->../sources/d_conv.cpp:23->../sources/d_conv.cpp:23]   --->   Operation 111 'add' 'add_ln700_40' <Predicate = true> <Delay = 1.89> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.89> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 112 [1/1] (0.00ns) (grouped into TernaryAdder)   --->   "%add_ln700_41 = add i32 %mul_ln700_46, %mul_ln700_45" [../sources/d_conv.cpp:52->../sources/d_conv.cpp:23->../sources/d_conv.cpp:23]   --->   Operation 112 'add' 'add_ln700_41' <Predicate = true> <Delay = 0.00> <Core = "TAddSub">   --->   Core 83 'TAddSub' <Latency = 0> <II = 1> <Delay = 1.79> <IPBlock> <Opcode : 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync> <CReg>
+ST_2 : Operation 113 [1/1] (3.58ns) (root node of TernaryAdder)   --->   "%add_ln700_42 = add i32 %add_ln700_40, %add_ln700_41" [../sources/d_conv.cpp:52->../sources/d_conv.cpp:23->../sources/d_conv.cpp:23]   --->   Operation 113 'add' 'add_ln700_42' <Predicate = true> <Delay = 3.58> <Core = "TAddSub">   --->   Core 83 'TAddSub' <Latency = 0> <II = 1> <Delay = 1.79> <IPBlock> <Opcode : 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync> <CReg>
+ST_2 : Operation 114 [1/1] (1.89ns)   --->   "%add_ln700_45 = add i32 %mul_ln700_48, %mul_ln700_47" [../sources/d_conv.cpp:52->../sources/d_conv.cpp:23->../sources/d_conv.cpp:23]   --->   Operation 114 'add' 'add_ln700_45' <Predicate = true> <Delay = 1.89> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.89> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 115 [1/1] (0.00ns) (grouped into TernaryAdder)   --->   "%add_ln700_46 = add i32 %mul_ln700_50, %mul_ln700_49" [../sources/d_conv.cpp:52->../sources/d_conv.cpp:23->../sources/d_conv.cpp:23]   --->   Operation 115 'add' 'add_ln700_46' <Predicate = true> <Delay = 0.00> <Core = "TAddSub">   --->   Core 83 'TAddSub' <Latency = 0> <II = 1> <Delay = 1.79> <IPBlock> <Opcode : 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync> <CReg>
+ST_2 : Operation 116 [1/1] (3.58ns) (root node of TernaryAdder)   --->   "%add_ln700_47 = add i32 %add_ln700_45, %add_ln700_46" [../sources/d_conv.cpp:52->../sources/d_conv.cpp:23->../sources/d_conv.cpp:23]   --->   Operation 116 'add' 'add_ln700_47' <Predicate = true> <Delay = 3.58> <Core = "TAddSub">   --->   Core 83 'TAddSub' <Latency = 0> <II = 1> <Delay = 1.79> <IPBlock> <Opcode : 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync> <CReg>
+ST_2 : Operation 117 [1/1] (1.89ns)   --->   "%add_ln700_48 = add i32 %mul_ln700_52, %mul_ln700_51" [../sources/d_conv.cpp:52->../sources/d_conv.cpp:23->../sources/d_conv.cpp:23]   --->   Operation 117 'add' 'add_ln700_48' <Predicate = true> <Delay = 1.89> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.89> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 118 [1/1] (1.89ns)   --->   "%add_ln700_49 = add i32 %mul_ln700_54, %mul_ln700_53" [../sources/d_conv.cpp:52->../sources/d_conv.cpp:23->../sources/d_conv.cpp:23]   --->   Operation 118 'add' 'add_ln700_49' <Predicate = true> <Delay = 1.89> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.89> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 119 [1/1] (1.89ns)   --->   "%add_ln700_52 = add i32 %mul_ln700_56, %mul_ln700_55" [../sources/d_conv.cpp:52->../sources/d_conv.cpp:23->../sources/d_conv.cpp:23]   --->   Operation 119 'add' 'add_ln700_52' <Predicate = true> <Delay = 1.89> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.89> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 120 [1/1] (0.00ns) (grouped into TernaryAdder)   --->   "%add_ln700_53 = add i32 %mul_ln700_58, %mul_ln700_57" [../sources/d_conv.cpp:52->../sources/d_conv.cpp:23->../sources/d_conv.cpp:23]   --->   Operation 120 'add' 'add_ln700_53' <Predicate = true> <Delay = 0.00> <Core = "TAddSub">   --->   Core 83 'TAddSub' <Latency = 0> <II = 1> <Delay = 1.79> <IPBlock> <Opcode : 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync> <CReg>
+ST_2 : Operation 121 [1/1] (3.58ns) (root node of TernaryAdder)   --->   "%add_ln700_54 = add i32 %add_ln700_52, %add_ln700_53" [../sources/d_conv.cpp:52->../sources/d_conv.cpp:23->../sources/d_conv.cpp:23]   --->   Operation 121 'add' 'add_ln700_54' <Predicate = true> <Delay = 3.58> <Core = "TAddSub">   --->   Core 83 'TAddSub' <Latency = 0> <II = 1> <Delay = 1.79> <IPBlock> <Opcode : 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync> <CReg>
+ST_2 : Operation 122 [1/1] (1.89ns)   --->   "%add_ln700_55 = add i32 %mul_ln700_60, %mul_ln700_59" [../sources/d_conv.cpp:52->../sources/d_conv.cpp:23->../sources/d_conv.cpp:23]   --->   Operation 122 'add' 'add_ln700_55' <Predicate = true> <Delay = 1.89> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.89> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 123 [1/1] (2.73ns) (root node of the DSP)   --->   "%add_ln700_56 = add i26 %mul_ln700_62, %mul_ln700_61" [../sources/d_conv.cpp:52->../sources/d_conv.cpp:23->../sources/d_conv.cpp:23]   --->   Operation 123 'add' 'add_ln700_56' <Predicate = true> <Delay = 2.73> <Core = "DSP48">   --->   Core 88 'DSP48' <Latency = 0> <II = 1> <Delay = 5.55> <IPBlock> <Opcode : 'mul' 'add' 'sub' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+
+State 3 <SV = 2> <Delay = 7.17>
+ST_3 : Operation 124 [1/1] (0.00ns) (grouped into TernaryAdder)   --->   "%add_ln700_35 = add i32 %add_ln700_33, %add_ln700_34" [../sources/d_conv.cpp:52->../sources/d_conv.cpp:23->../sources/d_conv.cpp:23]   --->   Operation 124 'add' 'add_ln700_35' <Predicate = true> <Delay = 0.00> <Core = "TAddSub">   --->   Core 83 'TAddSub' <Latency = 0> <II = 1> <Delay = 1.79> <IPBlock> <Opcode : 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync> <CReg>
+ST_3 : Operation 125 [1/1] (3.58ns) (root node of TernaryAdder)   --->   "%add_ln700_36 = add i32 %add_ln700_32, %add_ln700_35" [../sources/d_conv.cpp:52->../sources/d_conv.cpp:23->../sources/d_conv.cpp:23]   --->   Operation 125 'add' 'add_ln700_36' <Predicate = true> <Delay = 3.58> <Core = "TAddSub">   --->   Core 83 'TAddSub' <Latency = 0> <II = 1> <Delay = 1.79> <IPBlock> <Opcode : 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync> <CReg>
+ST_3 : Operation 126 [1/1] (0.00ns) (grouped into TernaryAdder)   --->   "%add_ln700_43 = add i32 %add_ln700_39, %add_ln700_42" [../sources/d_conv.cpp:52->../sources/d_conv.cpp:23->../sources/d_conv.cpp:23]   --->   Operation 126 'add' 'add_ln700_43' <Predicate = true> <Delay = 0.00> <Core = "TAddSub">   --->   Core 83 'TAddSub' <Latency = 0> <II = 1> <Delay = 1.79> <IPBlock> <Opcode : 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync> <CReg>
+ST_3 : Operation 127 [1/1] (3.58ns) (root node of TernaryAdder)   --->   "%add_ln700_44 = add i32 %add_ln700_36, %add_ln700_43" [../sources/d_conv.cpp:52->../sources/d_conv.cpp:23->../sources/d_conv.cpp:23]   --->   Operation 127 'add' 'add_ln700_44' <Predicate = true> <Delay = 3.58> <Core = "TAddSub">   --->   Core 83 'TAddSub' <Latency = 0> <II = 1> <Delay = 1.79> <IPBlock> <Opcode : 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync> <CReg>
+ST_3 : Operation 128 [1/1] (0.00ns) (grouped into TernaryAdder)   --->   "%add_ln700_50 = add i32 %add_ln700_48, %add_ln700_49" [../sources/d_conv.cpp:52->../sources/d_conv.cpp:23->../sources/d_conv.cpp:23]   --->   Operation 128 'add' 'add_ln700_50' <Predicate = true> <Delay = 0.00> <Core = "TAddSub">   --->   Core 83 'TAddSub' <Latency = 0> <II = 1> <Delay = 1.79> <IPBlock> <Opcode : 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync> <CReg>
+ST_3 : Operation 129 [1/1] (3.58ns) (root node of TernaryAdder)   --->   "%add_ln700_51 = add i32 %add_ln700_47, %add_ln700_50" [../sources/d_conv.cpp:52->../sources/d_conv.cpp:23->../sources/d_conv.cpp:23]   --->   Operation 129 'add' 'add_ln700_51' <Predicate = true> <Delay = 3.58> <Core = "TAddSub">   --->   Core 83 'TAddSub' <Latency = 0> <II = 1> <Delay = 1.79> <IPBlock> <Opcode : 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync> <CReg>
+ST_3 : Operation 130 [1/1] (0.00ns)   --->   "%sext_ln700_2 = sext i26 %add_ln700_56 to i32" [../sources/d_conv.cpp:52->../sources/d_conv.cpp:23->../sources/d_conv.cpp:23]   --->   Operation 130 'sext' 'sext_ln700_2' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 131 [1/1] (0.00ns) (grouped into TernaryAdder)   --->   "%add_ln700_57 = add i32 %add_ln700_55, %sext_ln700_2" [../sources/d_conv.cpp:52->../sources/d_conv.cpp:23->../sources/d_conv.cpp:23]   --->   Operation 131 'add' 'add_ln700_57' <Predicate = true> <Delay = 0.00> <Core = "TAddSub">   --->   Core 83 'TAddSub' <Latency = 0> <II = 1> <Delay = 1.79> <IPBlock> <Opcode : 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync> <CReg>
+ST_3 : Operation 132 [1/1] (3.58ns) (root node of TernaryAdder)   --->   "%add_ln700_58 = add i32 %add_ln700_54, %add_ln700_57" [../sources/d_conv.cpp:52->../sources/d_conv.cpp:23->../sources/d_conv.cpp:23]   --->   Operation 132 'add' 'add_ln700_58' <Predicate = true> <Delay = 3.58> <Core = "TAddSub">   --->   Core 83 'TAddSub' <Latency = 0> <II = 1> <Delay = 1.79> <IPBlock> <Opcode : 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync> <CReg>
+
+State 4 <SV = 3> <Delay = 3.58>
+ST_4 : Operation 133 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecFUCore(i32 0, [1 x i8]* @p_str1, [6 x i8]* @p_str3, [1 x i8]* @p_str1, i32 -1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1)" [../sources/d_conv.cpp:38->../sources/d_conv.cpp:23->../sources/d_conv.cpp:23]   --->   Operation 133 'specfucore' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 134 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecPipeline(i32 -1, i32 1, i32 1, i32 0, [1 x i8]* @p_str1) nounwind" [../sources/d_conv.cpp:39->../sources/d_conv.cpp:23->../sources/d_conv.cpp:23]   --->   Operation 134 'specpipeline' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 135 [1/1] (0.00ns) (grouped into TernaryAdder)   --->   "%add_ln700_59 = add i32 %add_ln700_51, %add_ln700_58" [../sources/d_conv.cpp:52->../sources/d_conv.cpp:23->../sources/d_conv.cpp:23]   --->   Operation 135 'add' 'add_ln700_59' <Predicate = true> <Delay = 0.00> <Core = "TAddSub">   --->   Core 83 'TAddSub' <Latency = 0> <II = 1> <Delay = 1.79> <IPBlock> <Opcode : 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync> <CReg>
+ST_4 : Operation 136 [1/1] (3.58ns) (root node of TernaryAdder)   --->   "%add_ln700_60 = add i32 %add_ln700_44, %add_ln700_59" [../sources/d_conv.cpp:52->../sources/d_conv.cpp:23->../sources/d_conv.cpp:23]   --->   Operation 136 'add' 'add_ln700_60' <Predicate = true> <Delay = 3.58> <Core = "TAddSub">   --->   Core 83 'TAddSub' <Latency = 0> <II = 1> <Delay = 1.79> <IPBlock> <Opcode : 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync> <CReg>
+ST_4 : Operation 137 [1/1] (0.00ns)   --->   "call void @_ssdm_op_Write.ap_auto.i32P(i32* %y_V, i32 %add_ln700_60)" [../sources/d_conv.cpp:54->../sources/d_conv.cpp:23->../sources/d_conv.cpp:23]   --->   Operation 137 'write' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 138 [1/1] (0.00ns)   --->   "ret void" [../sources/d_conv.cpp:23]   --->   Operation 138 'ret' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10ns, clock uncertainty: 1.25ns.
+
+ <State 1>: 7.05ns
+The critical path consists of the following:
+	'load' operation ('shift_reg_V_30_load', ../sources/d_conv.cpp:49->../sources/d_conv.cpp:23->../sources/d_conv.cpp:23) on static variable 'shift_reg_V_30' [37]  (0 ns)
+	'mul' operation ('mul_ln700', ../sources/d_conv.cpp:52->../sources/d_conv.cpp:23->../sources/d_conv.cpp:23) [38]  (7.05 ns)
+
+ <State 2>: 7.45ns
+The critical path consists of the following:
+	'mul' operation of DSP[126] ('mul_ln700_60', ../sources/d_conv.cpp:52->../sources/d_conv.cpp:23->../sources/d_conv.cpp:23) [126]  (5.55 ns)
+	'add' operation ('add_ln700_55', ../sources/d_conv.cpp:52->../sources/d_conv.cpp:23->../sources/d_conv.cpp:23) [159]  (1.9 ns)
+
+ <State 3>: 7.17ns
+The critical path consists of the following:
+	'add' operation ('add_ln700_35', ../sources/d_conv.cpp:52->../sources/d_conv.cpp:23->../sources/d_conv.cpp:23) [139]  (0 ns)
+	'add' operation ('add_ln700_36', ../sources/d_conv.cpp:52->../sources/d_conv.cpp:23->../sources/d_conv.cpp:23) [140]  (3.59 ns)
+	'add' operation ('add_ln700_44', ../sources/d_conv.cpp:52->../sources/d_conv.cpp:23->../sources/d_conv.cpp:23) [148]  (3.59 ns)
+
+ <State 4>: 3.59ns
+The critical path consists of the following:
+	'add' operation ('add_ln700_59', ../sources/d_conv.cpp:52->../sources/d_conv.cpp:23->../sources/d_conv.cpp:23) [164]  (0 ns)
+	'add' operation ('add_ln700_60', ../sources/d_conv.cpp:52->../sources/d_conv.cpp:23->../sources/d_conv.cpp:23) [165]  (3.59 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

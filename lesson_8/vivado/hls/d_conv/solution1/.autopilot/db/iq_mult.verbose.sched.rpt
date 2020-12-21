@@ -1,0 +1,116 @@
+
+
+================================================================
+== Vivado HLS Report for 'iq_mult'
+================================================================
+* Date:           Mon Dec 21 15:44:28 2020
+
+* Version:        2019.1.3 (Build 2642998 on Wed Sep 04 10:25:22 MDT 2019)
+* Project:        d_conv
+* Solution:       solution1
+* Product family: zynq
+* Target device:  xc7z045-ffg900-2
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+-------+----------+------------+
+    |  Clock | Target| Estimated| Uncertainty|
+    +--------+-------+----------+------------+
+    |ap_clk  |  10.00|     3.610|        1.25|
+    +--------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +-----+-----+-----+-----+---------+
+    |  Latency  |  Interval | Pipeline|
+    | min | max | min | max |   Type  |
+    +-----+-----+-----+-----+---------+
+    |    0|    0|    0|    0|   none  |
+    +-----+-----+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 2
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 0
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 1
+* Pipeline : 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 3.61>
+ST_1 : Operation 2 [1/1] (0.00ns)   --->   "%ref_q_V_read = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %ref_q_V)" [../sources/d_conv.cpp:31]   --->   Operation 2 'read' 'ref_q_V_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 3 [1/1] (0.00ns)   --->   "%ref_i_V_read = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %ref_i_V)" [../sources/d_conv.cpp:31]   --->   Operation 3 'read' 'ref_i_V_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 4 [1/1] (0.00ns)   --->   "%x_V_read = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %x_V)" [../sources/d_conv.cpp:31]   --->   Operation 4 'read' 'x_V_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 5 [1/1] (0.00ns)   --->   "%lhs_V = sext i8 %x_V_read to i16" [../sources/d_conv.cpp:31]   --->   Operation 5 'sext' 'lhs_V' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 6 [1/1] (0.00ns)   --->   "%rhs_V = sext i8 %ref_i_V_read to i16" [../sources/d_conv.cpp:31]   --->   Operation 6 'sext' 'rhs_V' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 7 [1/1] (3.61ns)   --->   "%ret_V = mul i16 %rhs_V, %lhs_V" [../sources/d_conv.cpp:31]   --->   Operation 7 'mul' 'ret_V' <Predicate = true> <Delay = 3.61> <Core = "Mul">   --->   Core 16 'Mul' <Latency = 0> <II = 1> <Delay = 3.61> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 8 [1/1] (0.00ns)   --->   "%rhs_V_1 = sext i8 %ref_q_V_read to i16" [../sources/d_conv.cpp:32]   --->   Operation 8 'sext' 'rhs_V_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 9 [1/1] (3.61ns)   --->   "%ret_V_1 = mul i16 %rhs_V_1, %lhs_V" [../sources/d_conv.cpp:32]   --->   Operation 9 'mul' 'ret_V_1' <Predicate = true> <Delay = 3.61> <Core = "Mul">   --->   Core 16 'Mul' <Latency = 0> <II = 1> <Delay = 3.61> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 10 [1/1] (0.00ns)   --->   "%mrv = insertvalue { i16, i16 } undef, i16 %ret_V, 0" [../sources/d_conv.cpp:33]   --->   Operation 10 'insertvalue' 'mrv' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 11 [1/1] (0.00ns)   --->   "%mrv_1 = insertvalue { i16, i16 } %mrv, i16 %ret_V_1, 1" [../sources/d_conv.cpp:33]   --->   Operation 11 'insertvalue' 'mrv_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 12 [1/1] (0.00ns)   --->   "ret { i16, i16 } %mrv_1" [../sources/d_conv.cpp:33]   --->   Operation 12 'ret' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10ns, clock uncertainty: 1.25ns.
+
+ <State 1>: 3.61ns
+The critical path consists of the following:
+	wire read on port 'ref_q_V' (../sources/d_conv.cpp:31) [4]  (0 ns)
+	'mul' operation ('ret.V', ../sources/d_conv.cpp:32) [11]  (3.61 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

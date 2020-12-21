@@ -1,0 +1,618 @@
+#-----------------------------------------------------------
+# Vivado v2019.1.3 (64-bit)
+# SW Build 2644227 on Wed Sep  4 09:45:24 MDT 2019
+# IP Build 2633630 on Wed Sep  4 12:30:14 MDT 2019
+# Start of session at: Mon Dec 21 16:31:16 2020
+# Process ID: 10432
+# Current directory: D:/work/kb_radar_course/lesson_8/vivado/zc706_hw_v/zc706_hw_v.runs/design_1_mod_sub_0_0_synth_1
+# Command line: vivado.exe -log design_1_mod_sub_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_mod_sub_0_0.tcl
+# Log file: D:/work/kb_radar_course/lesson_8/vivado/zc706_hw_v/zc706_hw_v.runs/design_1_mod_sub_0_0_synth_1/design_1_mod_sub_0_0.vds
+# Journal file: D:/work/kb_radar_course/lesson_8/vivado/zc706_hw_v/zc706_hw_v.runs/design_1_mod_sub_0_0_synth_1\vivado.jou
+#-----------------------------------------------------------
+source design_1_mod_sub_0_0.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/work/kb_radar_course/lesson_8/vivado/hls'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.1/data/ip'.
+Command: synth_design -top design_1_mod_sub_0_0 -part xc7z045ffg900-2 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z045'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z045'
+INFO: [Device 21-403] Loading part xc7z045ffg900-2
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 10020 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 830.387 ; gain = 176.613
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'design_1_mod_sub_0_0' [d:/work/kb_radar_course/lesson_8/vivado/zc706_hw_v/zc706_hw_v.srcs/sources_1/bd/design_1/ip/design_1_mod_sub_0_0/synth/design_1_mod_sub_0_0.v:58]
+INFO: [Synth 8-6157] synthesizing module 'mod_sub' [d:/work/kb_radar_course/lesson_8/vivado/zc706_hw_v/zc706_hw_v.srcs/sources_1/bd/design_1/ipshared/4aec/hdl/verilog/mod_sub.v:12]
+INFO: [Synth 8-6157] synthesizing module 'mod_sub_entry23' [d:/work/kb_radar_course/lesson_8/vivado/zc706_hw_v/zc706_hw_v.srcs/sources_1/bd/design_1/ipshared/4aec/hdl/verilog/mod_sub_entry23.v:10]
+	Parameter ap_ST_fsm_state1 bound to: 1'b1 
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [d:/work/kb_radar_course/lesson_8/vivado/zc706_hw_v/zc706_hw_v.srcs/sources_1/bd/design_1/ipshared/4aec/hdl/verilog/mod_sub_entry23.v:109]
+INFO: [Synth 8-6155] done synthesizing module 'mod_sub_entry23' (1#1) [d:/work/kb_radar_course/lesson_8/vivado/zc706_hw_v/zc706_hw_v.srcs/sources_1/bd/design_1/ipshared/4aec/hdl/verilog/mod_sub_entry23.v:10]
+INFO: [Synth 8-6157] synthesizing module 'freqm' [d:/work/kb_radar_course/lesson_8/vivado/zc706_hw_v/zc706_hw_v.srcs/sources_1/bd/design_1/ipshared/4aec/hdl/verilog/freqm.v:10]
+	Parameter ap_ST_fsm_state1 bound to: 1'b1 
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [d:/work/kb_radar_course/lesson_8/vivado/zc706_hw_v/zc706_hw_v.srcs/sources_1/bd/design_1/ipshared/4aec/hdl/verilog/freqm.v:83]
+INFO: [Synth 8-6155] done synthesizing module 'freqm' (2#1) [d:/work/kb_radar_course/lesson_8/vivado/zc706_hw_v/zc706_hw_v.srcs/sources_1/bd/design_1/ipshared/4aec/hdl/verilog/freqm.v:10]
+INFO: [Synth 8-6157] synthesizing module 'phasm' [d:/work/kb_radar_course/lesson_8/vivado/zc706_hw_v/zc706_hw_v.srcs/sources_1/bd/design_1/ipshared/4aec/hdl/verilog/phasm.v:10]
+	Parameter ap_ST_fsm_state1 bound to: 1'b1 
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [d:/work/kb_radar_course/lesson_8/vivado/zc706_hw_v/zc706_hw_v.srcs/sources_1/bd/design_1/ipshared/4aec/hdl/verilog/phasm.v:45]
+INFO: [Synth 8-6155] done synthesizing module 'phasm' (3#1) [d:/work/kb_radar_course/lesson_8/vivado/zc706_hw_v/zc706_hw_v.srcs/sources_1/bd/design_1/ipshared/4aec/hdl/verilog/phasm.v:10]
+INFO: [Synth 8-6157] synthesizing module 'o_mux' [d:/work/kb_radar_course/lesson_8/vivado/zc706_hw_v/zc706_hw_v.srcs/sources_1/bd/design_1/ipshared/4aec/hdl/verilog/o_mux.v:10]
+	Parameter ap_ST_fsm_state1 bound to: 1'b1 
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [d:/work/kb_radar_course/lesson_8/vivado/zc706_hw_v/zc706_hw_v.srcs/sources_1/bd/design_1/ipshared/4aec/hdl/verilog/o_mux.v:74]
+INFO: [Synth 8-6155] done synthesizing module 'o_mux' (4#1) [d:/work/kb_radar_course/lesson_8/vivado/zc706_hw_v/zc706_hw_v.srcs/sources_1/bd/design_1/ipshared/4aec/hdl/verilog/o_mux.v:10]
+INFO: [Synth 8-6157] synthesizing module 'fifo_w32_d2_A' [d:/work/kb_radar_course/lesson_8/vivado/zc706_hw_v/zc706_hw_v.srcs/sources_1/bd/design_1/ipshared/4aec/hdl/verilog/fifo_w32_d2_A.v:42]
+	Parameter MEM_STYLE bound to: shiftreg - type: string 
+	Parameter DATA_WIDTH bound to: 32 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2'b10 
+INFO: [Synth 8-6157] synthesizing module 'fifo_w32_d2_A_shiftReg' [d:/work/kb_radar_course/lesson_8/vivado/zc706_hw_v/zc706_hw_v.srcs/sources_1/bd/design_1/ipshared/4aec/hdl/verilog/fifo_w32_d2_A.v:8]
+	Parameter DATA_WIDTH bound to: 32 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2'b10 
+INFO: [Synth 8-6155] done synthesizing module 'fifo_w32_d2_A_shiftReg' (5#1) [d:/work/kb_radar_course/lesson_8/vivado/zc706_hw_v/zc706_hw_v.srcs/sources_1/bd/design_1/ipshared/4aec/hdl/verilog/fifo_w32_d2_A.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'fifo_w32_d2_A' (6#1) [d:/work/kb_radar_course/lesson_8/vivado/zc706_hw_v/zc706_hw_v.srcs/sources_1/bd/design_1/ipshared/4aec/hdl/verilog/fifo_w32_d2_A.v:42]
+INFO: [Synth 8-6157] synthesizing module 'fifo_w8_d2_A' [d:/work/kb_radar_course/lesson_8/vivado/zc706_hw_v/zc706_hw_v.srcs/sources_1/bd/design_1/ipshared/4aec/hdl/verilog/fifo_w8_d2_A.v:42]
+	Parameter MEM_STYLE bound to: shiftreg - type: string 
+	Parameter DATA_WIDTH bound to: 8 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2'b10 
+INFO: [Synth 8-6157] synthesizing module 'fifo_w8_d2_A_shiftReg' [d:/work/kb_radar_course/lesson_8/vivado/zc706_hw_v/zc706_hw_v.srcs/sources_1/bd/design_1/ipshared/4aec/hdl/verilog/fifo_w8_d2_A.v:8]
+	Parameter DATA_WIDTH bound to: 8 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2'b10 
+INFO: [Synth 8-6155] done synthesizing module 'fifo_w8_d2_A_shiftReg' (7#1) [d:/work/kb_radar_course/lesson_8/vivado/zc706_hw_v/zc706_hw_v.srcs/sources_1/bd/design_1/ipshared/4aec/hdl/verilog/fifo_w8_d2_A.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'fifo_w8_d2_A' (8#1) [d:/work/kb_radar_course/lesson_8/vivado/zc706_hw_v/zc706_hw_v.srcs/sources_1/bd/design_1/ipshared/4aec/hdl/verilog/fifo_w8_d2_A.v:42]
+INFO: [Synth 8-6157] synthesizing module 'fifo_w2_d3_A' [d:/work/kb_radar_course/lesson_8/vivado/zc706_hw_v/zc706_hw_v.srcs/sources_1/bd/design_1/ipshared/4aec/hdl/verilog/fifo_w2_d3_A.v:42]
+	Parameter MEM_STYLE bound to: shiftreg - type: string 
+	Parameter DATA_WIDTH bound to: 2 - type: integer 
+	Parameter ADDR_WIDTH bound to: 2 - type: integer 
+	Parameter DEPTH bound to: 3'b011 
+INFO: [Synth 8-6157] synthesizing module 'fifo_w2_d3_A_shiftReg' [d:/work/kb_radar_course/lesson_8/vivado/zc706_hw_v/zc706_hw_v.srcs/sources_1/bd/design_1/ipshared/4aec/hdl/verilog/fifo_w2_d3_A.v:8]
+	Parameter DATA_WIDTH bound to: 2 - type: integer 
+	Parameter ADDR_WIDTH bound to: 2 - type: integer 
+	Parameter DEPTH bound to: 3'b011 
+INFO: [Synth 8-6155] done synthesizing module 'fifo_w2_d3_A_shiftReg' (9#1) [d:/work/kb_radar_course/lesson_8/vivado/zc706_hw_v/zc706_hw_v.srcs/sources_1/bd/design_1/ipshared/4aec/hdl/verilog/fifo_w2_d3_A.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'fifo_w2_d3_A' (10#1) [d:/work/kb_radar_course/lesson_8/vivado/zc706_hw_v/zc706_hw_v.srcs/sources_1/bd/design_1/ipshared/4aec/hdl/verilog/fifo_w2_d3_A.v:42]
+INFO: [Synth 8-6157] synthesizing module 'fifo_w1_d2_A' [d:/work/kb_radar_course/lesson_8/vivado/zc706_hw_v/zc706_hw_v.srcs/sources_1/bd/design_1/ipshared/4aec/hdl/verilog/fifo_w1_d2_A.v:42]
+	Parameter MEM_STYLE bound to: shiftreg - type: string 
+	Parameter DATA_WIDTH bound to: 1 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2'b10 
+INFO: [Synth 8-6157] synthesizing module 'fifo_w1_d2_A_shiftReg' [d:/work/kb_radar_course/lesson_8/vivado/zc706_hw_v/zc706_hw_v.srcs/sources_1/bd/design_1/ipshared/4aec/hdl/verilog/fifo_w1_d2_A.v:8]
+	Parameter DATA_WIDTH bound to: 1 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2'b10 
+INFO: [Synth 8-6155] done synthesizing module 'fifo_w1_d2_A_shiftReg' (11#1) [d:/work/kb_radar_course/lesson_8/vivado/zc706_hw_v/zc706_hw_v.srcs/sources_1/bd/design_1/ipshared/4aec/hdl/verilog/fifo_w1_d2_A.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'fifo_w1_d2_A' (12#1) [d:/work/kb_radar_course/lesson_8/vivado/zc706_hw_v/zc706_hw_v.srcs/sources_1/bd/design_1/ipshared/4aec/hdl/verilog/fifo_w1_d2_A.v:42]
+INFO: [Synth 8-6157] synthesizing module 'start_for_freqm_U0' [d:/work/kb_radar_course/lesson_8/vivado/zc706_hw_v/zc706_hw_v.srcs/sources_1/bd/design_1/ipshared/4aec/hdl/verilog/start_for_freqm_U0.v:42]
+	Parameter MEM_STYLE bound to: shiftreg - type: string 
+	Parameter DATA_WIDTH bound to: 1 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2'b10 
+INFO: [Synth 8-6157] synthesizing module 'start_for_freqm_U0_shiftReg' [d:/work/kb_radar_course/lesson_8/vivado/zc706_hw_v/zc706_hw_v.srcs/sources_1/bd/design_1/ipshared/4aec/hdl/verilog/start_for_freqm_U0.v:8]
+	Parameter DATA_WIDTH bound to: 1 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2'b10 
+INFO: [Synth 8-6155] done synthesizing module 'start_for_freqm_U0_shiftReg' (13#1) [d:/work/kb_radar_course/lesson_8/vivado/zc706_hw_v/zc706_hw_v.srcs/sources_1/bd/design_1/ipshared/4aec/hdl/verilog/start_for_freqm_U0.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'start_for_freqm_U0' (14#1) [d:/work/kb_radar_course/lesson_8/vivado/zc706_hw_v/zc706_hw_v.srcs/sources_1/bd/design_1/ipshared/4aec/hdl/verilog/start_for_freqm_U0.v:42]
+INFO: [Synth 8-6157] synthesizing module 'start_for_phasm_U0' [d:/work/kb_radar_course/lesson_8/vivado/zc706_hw_v/zc706_hw_v.srcs/sources_1/bd/design_1/ipshared/4aec/hdl/verilog/start_for_phasm_U0.v:42]
+	Parameter MEM_STYLE bound to: shiftreg - type: string 
+	Parameter DATA_WIDTH bound to: 1 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2'b10 
+INFO: [Synth 8-6157] synthesizing module 'start_for_phasm_U0_shiftReg' [d:/work/kb_radar_course/lesson_8/vivado/zc706_hw_v/zc706_hw_v.srcs/sources_1/bd/design_1/ipshared/4aec/hdl/verilog/start_for_phasm_U0.v:8]
+	Parameter DATA_WIDTH bound to: 1 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2'b10 
+INFO: [Synth 8-6155] done synthesizing module 'start_for_phasm_U0_shiftReg' (15#1) [d:/work/kb_radar_course/lesson_8/vivado/zc706_hw_v/zc706_hw_v.srcs/sources_1/bd/design_1/ipshared/4aec/hdl/verilog/start_for_phasm_U0.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'start_for_phasm_U0' (16#1) [d:/work/kb_radar_course/lesson_8/vivado/zc706_hw_v/zc706_hw_v.srcs/sources_1/bd/design_1/ipshared/4aec/hdl/verilog/start_for_phasm_U0.v:42]
+INFO: [Synth 8-6155] done synthesizing module 'mod_sub' (17#1) [d:/work/kb_radar_course/lesson_8/vivado/zc706_hw_v/zc706_hw_v.srcs/sources_1/bd/design_1/ipshared/4aec/hdl/verilog/mod_sub.v:12]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_mod_sub_0_0' (18#1) [d:/work/kb_radar_course/lesson_8/vivado/zc706_hw_v/zc706_hw_v.srcs/sources_1/bd/design_1/ip/design_1_mod_sub_0_0/synth/design_1_mod_sub_0_0.v:58]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 899.270 ; gain = 245.496
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 899.270 ; gain = 245.496
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 899.270 ; gain = 245.496
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [d:/work/kb_radar_course/lesson_8/vivado/zc706_hw_v/zc706_hw_v.srcs/sources_1/bd/design_1/ip/design_1_mod_sub_0_0/constraints/mod_sub_ooc.xdc] for cell 'inst'
+Finished Parsing XDC File [d:/work/kb_radar_course/lesson_8/vivado/zc706_hw_v/zc706_hw_v.srcs/sources_1/bd/design_1/ip/design_1_mod_sub_0_0/constraints/mod_sub_ooc.xdc] for cell 'inst'
+Parsing XDC File [D:/work/kb_radar_course/lesson_8/vivado/zc706_hw_v/zc706_hw_v.runs/design_1_mod_sub_0_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [D:/work/kb_radar_course/lesson_8/vivado/zc706_hw_v/zc706_hw_v.runs/design_1_mod_sub_0_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1027.094 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.045 . Memory (MB): peak = 1037.840 ; gain = 10.746
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1037.840 ; gain = 384.066
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z045ffg900-2
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1037.840 ; gain = 384.066
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for inst. (constraint file  D:/work/kb_radar_course/lesson_8/vivado/zc706_hw_v/zc706_hw_v.runs/design_1_mod_sub_0_0_synth_1/dont_touch.xdc, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1037.840 ; gain = 384.066
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 1037.840 ; gain = 384.066
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     32 Bit       Adders := 1     
+	   2 Input     32 Bit       Adders := 5     
+	   2 Input      8 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 1     
+	   2 Input      2 Bit       Adders := 12    
++---XORs : 
+	   2 Input      1 Bit         XORs := 3     
++---Registers : 
+	               32 Bit    Registers := 16    
+	                8 Bit    Registers := 7     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 12    
+	                1 Bit    Registers := 45    
++---Multipliers : 
+	                 8x32  Multipliers := 4     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 17    
+	   4 Input     32 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 3     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 68    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module mod_sub_entry23 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 3     
+Module freqm 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     32 Bit       Adders := 1     
+	   2 Input     32 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 2     
+	                1 Bit    Registers := 2     
++---Multipliers : 
+	                 8x32  Multipliers := 4     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 2     
+Module phasm 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
++---Registers : 
+	                8 Bit    Registers := 1     
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 4     
+Module o_mux 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 4     
++---Registers : 
+	               32 Bit    Registers := 2     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 7     
+	   4 Input     32 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+Module fifo_w32_d2_A_shiftReg 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+Module fifo_w32_d2_A 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 4     
+Module fifo_w8_d2_A_shiftReg 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module fifo_w8_d2_A 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 4     
+Module fifo_w2_d3_A 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 5     
+Module fifo_w1_d2_A_shiftReg 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module fifo_w1_d2_A 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 4     
+Module start_for_freqm_U0_shiftReg 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module start_for_freqm_U0 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 4     
+Module start_for_phasm_U0_shiftReg 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module start_for_phasm_U0 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 4     
+Module mod_sub 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 2     
++---Registers : 
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 900 (col length:140)
+BRAMs: 1090 (col length: RAMB18 140 RAMB36 70)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [d:/work/kb_radar_course/lesson_8/vivado/zc706_hw_v/zc706_hw_v.srcs/sources_1/bd/design_1/ipshared/4aec/hdl/verilog/freqm.v:321]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [d:/work/kb_radar_course/lesson_8/vivado/zc706_hw_v/zc706_hw_v.srcs/sources_1/bd/design_1/ipshared/4aec/hdl/verilog/freqm.v:339]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [d:/work/kb_radar_course/lesson_8/vivado/zc706_hw_v/zc706_hw_v.srcs/sources_1/bd/design_1/ipshared/4aec/hdl/verilog/freqm.v:333]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [d:/work/kb_radar_course/lesson_8/vivado/zc706_hw_v/zc706_hw_v.srcs/sources_1/bd/design_1/ipshared/4aec/hdl/verilog/freqm.v:327]
+DSP Report: Generating DSP mul_ln68_1_fu_154_p2, operation Mode is: A*B.
+DSP Report: operator mul_ln68_1_fu_154_p2 is absorbed into DSP mul_ln68_1_fu_154_p2.
+DSP Report: operator mul_ln68_1_fu_154_p2 is absorbed into DSP mul_ln68_1_fu_154_p2.
+DSP Report: Generating DSP mul_ln68_1_fu_154_p2, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator mul_ln68_1_fu_154_p2 is absorbed into DSP mul_ln68_1_fu_154_p2.
+DSP Report: operator mul_ln68_1_fu_154_p2 is absorbed into DSP mul_ln68_1_fu_154_p2.
+DSP Report: Generating DSP mul_ln68_fu_144_p2, operation Mode is: A*B.
+DSP Report: operator mul_ln68_fu_144_p2 is absorbed into DSP mul_ln68_fu_144_p2.
+DSP Report: operator mul_ln68_fu_144_p2 is absorbed into DSP mul_ln68_fu_144_p2.
+DSP Report: Generating DSP mul_ln68_fu_144_p2, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator mul_ln68_fu_144_p2 is absorbed into DSP mul_ln68_fu_144_p2.
+DSP Report: operator mul_ln68_fu_144_p2 is absorbed into DSP mul_ln68_fu_144_p2.
+DSP Report: Generating DSP mul_ln68_3_fu_172_p2, operation Mode is: A*B.
+DSP Report: operator mul_ln68_3_fu_172_p2 is absorbed into DSP mul_ln68_3_fu_172_p2.
+DSP Report: operator mul_ln68_3_fu_172_p2 is absorbed into DSP mul_ln68_3_fu_172_p2.
+DSP Report: Generating DSP mul_ln68_3_fu_172_p2, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator mul_ln68_3_fu_172_p2 is absorbed into DSP mul_ln68_3_fu_172_p2.
+DSP Report: operator mul_ln68_3_fu_172_p2 is absorbed into DSP mul_ln68_3_fu_172_p2.
+DSP Report: Generating DSP mul_ln68_2_fu_166_p2, operation Mode is: A*B.
+DSP Report: operator mul_ln68_2_fu_166_p2 is absorbed into DSP mul_ln68_2_fu_166_p2.
+DSP Report: operator mul_ln68_2_fu_166_p2 is absorbed into DSP mul_ln68_2_fu_166_p2.
+DSP Report: Generating DSP mul_ln68_2_fu_166_p2, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator mul_ln68_2_fu_166_p2 is absorbed into DSP mul_ln68_2_fu_166_p2.
+DSP Report: operator mul_ln68_2_fu_166_p2 is absorbed into DSP mul_ln68_2_fu_166_p2.
+INFO: [Synth 8-3886] merging instance 'inst/freqm_U0/ap_CS_fsm_reg[0]' (FDSE) to 'inst/o_mux_U0/ap_CS_fsm_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/mod_sub_entry23_U0/ap_CS_fsm_reg[0]' (FDSE) to 'inst/o_mux_U0/ap_CS_fsm_reg[0]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\mod_sub_entry23_U0/ap_done_reg_reg )
+INFO: [Synth 8-3886] merging instance 'inst/phasm_U0/ap_CS_fsm_reg[0]' (FDSE) to 'inst/o_mux_U0/ap_CS_fsm_reg[0]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/\o_mux_U0/ap_CS_fsm_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\o_mux_U0/ap_done_reg_reg )
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 1037.840 ; gain = 384.066
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+DSP: Preliminary Mapping  Report (see note below)
++------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping    | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|freqm       | A*B            | 18     | 8      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|freqm       | (PCIN>>17)+A*B | 15     | 8      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|freqm       | A*B            | 18     | 8      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|freqm       | (PCIN>>17)+A*B | 15     | 8      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|freqm       | A*B            | 18     | 8      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|freqm       | (PCIN>>17)+A*B | 15     | 8      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|freqm       | A*B            | 18     | 8      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|freqm       | (PCIN>>17)+A*B | 15     | 8      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
++------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:30 ; elapsed = 00:00:33 . Memory (MB): peak = 1055.922 ; gain = 402.148
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:35 ; elapsed = 00:00:38 . Memory (MB): peak = 1149.453 ; gain = 495.680
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:36 ; elapsed = 00:00:39 . Memory (MB): peak = 1150.434 ; gain = 496.660
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:38 ; elapsed = 00:00:41 . Memory (MB): peak = 1153.234 ; gain = 499.461
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:38 ; elapsed = 00:00:41 . Memory (MB): peak = 1153.234 ; gain = 499.461
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:39 ; elapsed = 00:00:42 . Memory (MB): peak = 1153.234 ; gain = 499.461
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:39 ; elapsed = 00:00:42 . Memory (MB): peak = 1153.234 ; gain = 499.461
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:39 ; elapsed = 00:00:42 . Memory (MB): peak = 1153.234 ; gain = 499.461
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:39 ; elapsed = 00:00:42 . Memory (MB): peak = 1153.234 ; gain = 499.461
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Dynamic Shift Register Report:
++------------+----------------+--------+------------+--------+---------+--------+--------+--------+
+|Module Name | RTL Name       | Length | Data Width | SRL16E | SRLC32E | Mux F7 | Mux F8 | Mux F9 | 
++------------+----------------+--------+------------+--------+---------+--------+--------+--------+
+|dsrl        | SRL_SIG_reg[2] | 2      | 2          | 2      | 0       | 0      | 0      | 0      | 
++------------+----------------+--------+------------+--------+---------+--------+--------+--------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+--------+------+
+|      |Cell    |Count |
++------+--------+------+
+|1     |CARRY4  |    48|
+|2     |DSP48E1 |     8|
+|3     |LUT1    |     8|
+|4     |LUT2    |    76|
+|5     |LUT3    |   102|
+|6     |LUT4    |   336|
+|7     |LUT5    |    42|
+|8     |LUT6    |   203|
+|9     |SRL16E  |     2|
+|10    |FDRE    |   599|
+|11    |FDSE    |    31|
++------+--------+------+
+
+Report Instance Areas: 
++------+--------------------------+--------------------------+------+
+|      |Instance                  |Module                    |Cells |
++------+--------------------------+--------------------------+------+
+|1     |top                       |                          |  1455|
+|2     |  inst                    |mod_sub                   |  1455|
+|3     |    flag_U                |fifo_w1_d2_A              |    19|
+|4     |      U_fifo_w1_d2_A_ram  |fifo_w1_d2_A_shiftReg     |    10|
+|5     |    freqm_U0              |freqm                     |   227|
+|6     |    i_fr_V_U              |fifo_w32_d2_A             |   144|
+|7     |      U_fifo_w32_d2_A_ram |fifo_w32_d2_A_shiftReg_13 |   136|
+|8     |    i_mod_V_c_U           |fifo_w8_d2_A              |    35|
+|9     |      U_fifo_w8_d2_A_ram  |fifo_w8_d2_A_shiftReg_12  |    24|
+|10    |    ix_V_c2_U             |fifo_w32_d2_A_0           |   145|
+|11    |      U_fifo_w32_d2_A_ram |fifo_w32_d2_A_shiftReg_11 |   136|
+|12    |    ix_V_c_U              |fifo_w32_d2_A_1           |   104|
+|13    |      U_fifo_w32_d2_A_ram |fifo_w32_d2_A_shiftReg_10 |    96|
+|14    |    mod_sub_entry23_U0    |mod_sub_entry23           |     1|
+|15    |    mux_V_c_U             |fifo_w2_d3_A              |   144|
+|16    |      U_fifo_w2_d3_A_ram  |fifo_w2_d3_A_shiftReg     |   132|
+|17    |    o_mux_U0              |o_mux                     |    73|
+|18    |    period_V_c_U          |fifo_w8_d2_A_2            |    36|
+|19    |      U_fifo_w8_d2_A_ram  |fifo_w8_d2_A_shiftReg_9   |    26|
+|20    |    phasm_U0              |phasm                     |    23|
+|21    |    q_fr_V_U              |fifo_w32_d2_A_3           |   168|
+|22    |      U_fifo_w32_d2_A_ram |fifo_w32_d2_A_shiftReg_8  |   160|
+|23    |    q_mod_V_c_U           |fifo_w8_d2_A_4            |    32|
+|24    |      U_fifo_w8_d2_A_ram  |fifo_w8_d2_A_shiftReg     |    24|
+|25    |    qx_V_c3_U             |fifo_w32_d2_A_5           |   178|
+|26    |      U_fifo_w32_d2_A_ram |fifo_w32_d2_A_shiftReg_7  |   164|
+|27    |    qx_V_c_U              |fifo_w32_d2_A_6           |   105|
+|28    |      U_fifo_w32_d2_A_ram |fifo_w32_d2_A_shiftReg    |    97|
+|29    |    start_for_freqm_U0_U  |start_for_freqm_U0        |     9|
+|30    |    start_for_phasm_U0_U  |start_for_phasm_U0        |    10|
++------+--------------------------+--------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:39 ; elapsed = 00:00:42 . Memory (MB): peak = 1153.234 ; gain = 499.461
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:31 ; elapsed = 00:00:39 . Memory (MB): peak = 1153.234 ; gain = 360.891
+Synthesis Optimization Complete : Time (s): cpu = 00:00:39 ; elapsed = 00:00:42 . Memory (MB): peak = 1153.234 ; gain = 499.461
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 56 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1162.395 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+64 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:44 ; elapsed = 00:00:50 . Memory (MB): peak = 1162.395 ; gain = 846.461
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1162.395 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'D:/work/kb_radar_course/lesson_8/vivado/zc706_hw_v/zc706_hw_v.runs/design_1_mod_sub_0_0_synth_1/design_1_mod_sub_0_0.dcp' has been generated.
+WARNING: [Common 17-576] 'use_project_ipc' is deprecated. This option is deprecated and no longer used.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP design_1_mod_sub_0_0, cache-ID = 82fc9bd75b2444e7
+INFO: [Coretcl 2-1174] Renamed 29 cell refs.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1162.395 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'D:/work/kb_radar_course/lesson_8/vivado/zc706_hw_v/zc706_hw_v.runs/design_1_mod_sub_0_0_synth_1/design_1_mod_sub_0_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file design_1_mod_sub_0_0_utilization_synth.rpt -pb design_1_mod_sub_0_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon Dec 21 16:32:12 2020...

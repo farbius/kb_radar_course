@@ -1,0 +1,171 @@
+
+
+================================================================
+== Vivado HLS Report for 'mod_sub_entry23'
+================================================================
+* Date:           Mon Dec 21 15:45:34 2020
+
+* Version:        2019.1.3 (Build 2642998 on Wed Sep 04 10:25:22 MDT 2019)
+* Project:        mod_sub
+* Solution:       solution1
+* Product family: zynq
+* Target device:  xc7z045-ffg900-2
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+--------+----------+------------+
+    |  Clock | Target | Estimated| Uncertainty|
+    +--------+--------+----------+------------+
+    |ap_clk  |  100.00|     3.401|       12.50|
+    +--------+--------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +-----+-----+-----+-----+---------+
+    |  Latency  |  Interval | Pipeline|
+    | min | max | min | max |   Type  |
+    +-----+-----+-----+-----+---------+
+    |    0|    0|    0|    0|   none  |
+    +-----+-----+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-------+--------+--------+-----+
+|       Name      | BRAM_18K| DSP48E|   FF   |   LUT  | URAM|
++-----------------+---------+-------+--------+--------+-----+
+|DSP              |        -|      -|       -|       -|    -|
+|Expression       |        -|      -|       0|       1|    -|
+|FIFO             |        -|      -|       -|       -|    -|
+|Instance         |        -|      -|       -|       -|    -|
+|Memory           |        -|      -|       -|       -|    -|
+|Multiplexer      |        -|      -|       -|      42|    -|
+|Register         |        -|      -|       3|       -|    -|
++-----------------+---------+-------+--------+--------+-----+
+|Total            |        0|      0|       3|      43|    0|
++-----------------+---------+-------+--------+--------+-----+
+|Available        |     1090|    900|  437200|  218600|    0|
++-----------------+---------+-------+--------+--------+-----+
+|Utilization (%)  |        0|      0|   ~0   |   ~0   |    0|
++-----------------+---------+-------+--------+--------+-----+
+
++ Detail: 
+    * Instance: 
+    N/A
+
+    * DSP48E: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +-----------------+----------+-------+---+----+------------+------------+
+    |  Variable Name  | Operation| DSP48E| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +-----------------+----------+-------+---+----+------------+------------+
+    |ap_block_state1  |    or    |      0|  0|   1|           1|           1|
+    +-----------------+----------+-------+---+----+------------+------------+
+    |Total            |          |      0|  0|   1|           1|           1|
+    +-----------------+----------+-------+---+----+------------+------------+
+
+    * Multiplexer: 
+    +--------------------+----+-----------+-----+-----------+
+    |        Name        | LUT| Input Size| Bits| Total Bits|
+    +--------------------+----+-----------+-----+-----------+
+    |ap_done             |   3|          2|    1|          2|
+    |i_mod_V_blk_n       |   3|          2|    1|          2|
+    |i_mod_V_out_blk_n   |   3|          2|    1|          2|
+    |ix_V_blk_n          |   3|          2|    1|          2|
+    |ix_V_out_blk_n      |   3|          2|    1|          2|
+    |mux_V_blk_n         |   3|          2|    1|          2|
+    |mux_V_out_blk_n     |   3|          2|    1|          2|
+    |period_V_blk_n      |   3|          2|    1|          2|
+    |period_V_out_blk_n  |   3|          2|    1|          2|
+    |q_mod_V_blk_n       |   3|          2|    1|          2|
+    |q_mod_V_out_blk_n   |   3|          2|    1|          2|
+    |qx_V_blk_n          |   3|          2|    1|          2|
+    |qx_V_out_blk_n      |   3|          2|    1|          2|
+    |real_start          |   3|          2|    1|          2|
+    +--------------------+----+-----------+-----+-----------+
+    |Total               |  42|         28|   14|         28|
+    +--------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +----------------+---+----+-----+-----------+
+    |      Name      | FF| LUT| Bits| Const Bits|
+    +----------------+---+----+-----+-----------+
+    |ap_CS_fsm       |  1|   0|    1|          0|
+    |ap_done_reg     |  1|   0|    1|          0|
+    |start_once_reg  |  1|   0|    1|          0|
+    +----------------+---+----+-----+-----------+
+    |Total           |  3|   0|    3|          0|
+    +----------------+---+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++---------------------+-----+-----+------------+-----------------+--------------+
+|      RTL Ports      | Dir | Bits|  Protocol  |  Source Object  |    C Type    |
++---------------------+-----+-----+------------+-----------------+--------------+
+|ap_clk               |  in |    1| ap_ctrl_hs | mod_sub.entry23 | return value |
+|ap_rst               |  in |    1| ap_ctrl_hs | mod_sub.entry23 | return value |
+|ap_start             |  in |    1| ap_ctrl_hs | mod_sub.entry23 | return value |
+|start_full_n         |  in |    1| ap_ctrl_hs | mod_sub.entry23 | return value |
+|ap_done              | out |    1| ap_ctrl_hs | mod_sub.entry23 | return value |
+|ap_continue          |  in |    1| ap_ctrl_hs | mod_sub.entry23 | return value |
+|ap_idle              | out |    1| ap_ctrl_hs | mod_sub.entry23 | return value |
+|ap_ready             | out |    1| ap_ctrl_hs | mod_sub.entry23 | return value |
+|start_out            | out |    1| ap_ctrl_hs | mod_sub.entry23 | return value |
+|start_write          | out |    1| ap_ctrl_hs | mod_sub.entry23 | return value |
+|ix_V                 |  in |   32|   ap_vld   |       ix_V      |    scalar    |
+|ix_V_ap_vld          |  in |    1|   ap_vld   |       ix_V      |    scalar    |
+|qx_V                 |  in |   32|   ap_vld   |       qx_V      |    scalar    |
+|qx_V_ap_vld          |  in |    1|   ap_vld   |       qx_V      |    scalar    |
+|i_mod_V              |  in |    8|   ap_vld   |     i_mod_V     |    scalar    |
+|i_mod_V_ap_vld       |  in |    1|   ap_vld   |     i_mod_V     |    scalar    |
+|q_mod_V              |  in |    8|   ap_vld   |     q_mod_V     |    scalar    |
+|q_mod_V_ap_vld       |  in |    1|   ap_vld   |     q_mod_V     |    scalar    |
+|period_V             |  in |    8|   ap_vld   |     period_V    |    scalar    |
+|period_V_ap_vld      |  in |    1|   ap_vld   |     period_V    |    scalar    |
+|mux_V                |  in |    2|   ap_vld   |      mux_V      |    scalar    |
+|mux_V_ap_vld         |  in |    1|   ap_vld   |      mux_V      |    scalar    |
+|ix_V_out_din         | out |   32|   ap_fifo  |     ix_V_out    |    pointer   |
+|ix_V_out_full_n      |  in |    1|   ap_fifo  |     ix_V_out    |    pointer   |
+|ix_V_out_write       | out |    1|   ap_fifo  |     ix_V_out    |    pointer   |
+|qx_V_out_din         | out |   32|   ap_fifo  |     qx_V_out    |    pointer   |
+|qx_V_out_full_n      |  in |    1|   ap_fifo  |     qx_V_out    |    pointer   |
+|qx_V_out_write       | out |    1|   ap_fifo  |     qx_V_out    |    pointer   |
+|i_mod_V_out_din      | out |    8|   ap_fifo  |   i_mod_V_out   |    pointer   |
+|i_mod_V_out_full_n   |  in |    1|   ap_fifo  |   i_mod_V_out   |    pointer   |
+|i_mod_V_out_write    | out |    1|   ap_fifo  |   i_mod_V_out   |    pointer   |
+|q_mod_V_out_din      | out |    8|   ap_fifo  |   q_mod_V_out   |    pointer   |
+|q_mod_V_out_full_n   |  in |    1|   ap_fifo  |   q_mod_V_out   |    pointer   |
+|q_mod_V_out_write    | out |    1|   ap_fifo  |   q_mod_V_out   |    pointer   |
+|period_V_out_din     | out |    8|   ap_fifo  |   period_V_out  |    pointer   |
+|period_V_out_full_n  |  in |    1|   ap_fifo  |   period_V_out  |    pointer   |
+|period_V_out_write   | out |    1|   ap_fifo  |   period_V_out  |    pointer   |
+|mux_V_out_din        | out |    2|   ap_fifo  |    mux_V_out    |    pointer   |
+|mux_V_out_full_n     |  in |    1|   ap_fifo  |    mux_V_out    |    pointer   |
+|mux_V_out_write      | out |    1|   ap_fifo  |    mux_V_out    |    pointer   |
++---------------------+-----+-----+------------+-----------------+--------------+
+

@@ -1,0 +1,13 @@
+sv work "glbl.v"
+sv xil_defaultlib "Block_proc.v"
+sv xil_defaultlib "Block_proc33.v"
+sv xil_defaultlib "d_conv.autotb.v"
+sv xil_defaultlib "d_conv.v"
+sv xil_defaultlib "d_conv_mac_muladddEe.v"
+sv xil_defaultlib "d_conv_mul_mul_16bkb.v"
+sv xil_defaultlib "d_conv_mul_mul_16cud.v"
+sv xil_defaultlib "fifo_w16_d2_A.v"
+sv xil_defaultlib "fir_filter_a.v"
+sv xil_defaultlib "fir_filter_b.v"
+sv xil_defaultlib "iq_mult.v"
+

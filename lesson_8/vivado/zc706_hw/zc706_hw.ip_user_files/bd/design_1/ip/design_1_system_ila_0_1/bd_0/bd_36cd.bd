@@ -1,0 +1,30 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0x0",
+      "design_src": "SBD",
+      "device": "xc7z045ffg900-2",
+      "name": "bd_36cd",
+      "scoped": "true",
+      "synth_flow_mode": "None",
+      "tool_version": "2019.1.2"
+    },
+    "design_tree": {},
+    "ports": {
+      "clk": {
+        "type": "clk",
+        "direction": "I"
+      },
+      "probe0": {
+        "direction": "I",
+        "left": "0",
+        "right": "0"
+      },
+      "probe1": {
+        "direction": "I",
+        "left": "0",
+        "right": "0"
+      }
+    }
+  }
+}

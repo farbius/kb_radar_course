@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="d_conv.wdb" id="1">
+         <top_modules>
+            <top_module name="apatb_d_conv_top" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+   </zoom_setting>
+   <column_width_setting>
+   </column_width_setting>
+   <WVObjectSize size="1" />
+   <wvobject fp_name="group1" type="group">
+      <obj_property name="label">Design Top Signals</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="group2" type="group">
+         <obj_property name="label">C Outputs</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject fp_name="group3" type="group">
+            <obj_property name="label">y_q(wire)</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject fp_name="/apatb_d_conv_top/AESL_inst_d_conv/y_q_V_ap_vld" type="logic">
+               <obj_property name="ElementShortName">y_q_V_ap_vld</obj_property>
+               <obj_property name="ObjectShortName">y_q_V_ap_vld</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_d_conv_top/AESL_inst_d_conv/y_q_V" type="array">
+               <obj_property name="ElementShortName">y_q_V[31:0]</obj_property>
+               <obj_property name="ObjectShortName">y_q_V[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+         </wvobject>
+         <wvobject fp_name="group6" type="group">
+            <obj_property name="label">y_i(wire)</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject fp_name="/apatb_d_conv_top/AESL_inst_d_conv/y_i_V_ap_vld" type="logic">
+               <obj_property name="ElementShortName">y_i_V_ap_vld</obj_property>
+               <obj_property name="ObjectShortName">y_i_V_ap_vld</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_d_conv_top/AESL_inst_d_conv/y_i_V" type="array">
+               <obj_property name="ElementShortName">y_i_V[31:0]</obj_property>
+               <obj_property name="ObjectShortName">y_i_V[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+         </wvobject>
+      </wvobject>
+      <wvobject fp_name="group9" type="group">
+         <obj_property name="label">C Inputs</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject fp_name="group10" type="group">
+            <obj_property name="label">ref_q(wire)</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject fp_name="/apatb_d_conv_top/AESL_inst_d_conv/ref_q_V_ap_vld" type="logic">
+               <obj_property name="ElementShortName">ref_q_V_ap_vld</obj_property>
+               <obj_property name="ObjectShortName">ref_q_V_ap_vld</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_d_conv_top/AESL_inst_d_conv/ref_q_V" type="array">
+               <obj_property name="ElementShortName">ref_q_V[7:0]</obj_property>
+               <obj_property name="ObjectShortName">ref_q_V[7:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+         </wvobject>
+         <wvobject fp_name="group13" type="group">
+            <obj_property name="label">ref_i(wire)</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject fp_name="/apatb_d_conv_top/AESL_inst_d_conv/ref_i_V_ap_vld" type="logic">
+               <obj_property name="ElementShortName">ref_i_V_ap_vld</obj_property>
+               <obj_property name="ObjectShortName">ref_i_V_ap_vld</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_d_conv_top/AESL_inst_d_conv/ref_i_V" type="array">
+               <obj_property name="ElementShortName">ref_i_V[7:0]</obj_property>
+               <obj_property name="ObjectShortName">ref_i_V[7:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+         </wvobject>
+         <wvobject fp_name="group16" type="group">
+            <obj_property name="label">x(wire)</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject fp_name="/apatb_d_conv_top/AESL_inst_d_conv/x_V_ap_vld" type="logic">
+               <obj_property name="ElementShortName">x_V_ap_vld</obj_property>
+               <obj_property name="ObjectShortName">x_V_ap_vld</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_d_conv_top/AESL_inst_d_conv/x_V" type="array">
+               <obj_property name="ElementShortName">x_V[7:0]</obj_property>
+               <obj_property name="ObjectShortName">x_V[7:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+         </wvobject>
+      </wvobject>
+      <wvobject fp_name="group19" type="group">
+         <obj_property name="label">Reset</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject fp_name="/apatb_d_conv_top/AESL_inst_d_conv/ap_rst" type="logic">
+            <obj_property name="ElementShortName">ap_rst</obj_property>
+            <obj_property name="ObjectShortName">ap_rst</obj_property>
+         </wvobject>
+      </wvobject>
+      <wvobject fp_name="group21" type="group">
+         <obj_property name="label">Clock</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject fp_name="/apatb_d_conv_top/AESL_inst_d_conv/ap_clk" type="logic">
+            <obj_property name="ElementShortName">ap_clk</obj_property>
+            <obj_property name="ObjectShortName">ap_clk</obj_property>
+         </wvobject>
+      </wvobject>
+   </wvobject>
+</wave_config>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xd:acceleratorMap xmlns:xd="http://www.xilinx.com/xidane" xd:functionName="mod_sub" xd:componentRef="mod_sub" xd:initiationInterval="3" xd:clockPeriod="100.000" xd:sequential="true" xd:hostMachine="64" xd:reset="control">
+  <xd:arg xd:name="ix" xd:originalName="ix" xd:direction="in" xd:interfaceRef="ix_V" xd:busTypeRef="register" xd:handshakeRef="ap_vld" xd:dataWidth="32"/>
+  <xd:arg xd:name="qx" xd:originalName="qx" xd:direction="in" xd:interfaceRef="qx_V" xd:busTypeRef="register" xd:handshakeRef="ap_vld" xd:dataWidth="32"/>
+  <xd:arg xd:name="i_mod" xd:originalName="i_mod" xd:direction="in" xd:interfaceRef="i_mod_V" xd:busTypeRef="register" xd:handshakeRef="ap_vld" xd:dataWidth="8"/>
+  <xd:arg xd:name="q_mod" xd:originalName="q_mod" xd:direction="in" xd:interfaceRef="q_mod_V" xd:busTypeRef="register" xd:handshakeRef="ap_vld" xd:dataWidth="8"/>
+  <xd:arg xd:name="*(iy)" xd:originalName="iy" xd:direction="out" xd:interfaceRef="iy_V" xd:busTypeRef="register" xd:handshakeRef="ap_vld" xd:dataWidth="32" xd:firstOut="0"/>
+  <xd:arg xd:name="*(qy)" xd:originalName="qy" xd:direction="out" xd:interfaceRef="qy_V" xd:busTypeRef="register" xd:handshakeRef="ap_vld" xd:dataWidth="32" xd:firstOut="0"/>
+  <xd:arg xd:name="period" xd:originalName="period" xd:direction="in" xd:interfaceRef="period_V" xd:busTypeRef="register" xd:handshakeRef="ap_vld" xd:dataWidth="8" xd:firstOut="0"/>
+  <xd:arg xd:name="mux" xd:originalName="mux" xd:direction="in" xd:interfaceRef="mux_V" xd:busTypeRef="register" xd:handshakeRef="ap_vld" xd:dataWidth="2" xd:firstOut="0"/>
+  <xd:latencyEstimates xd:best-case="2" xd:worst-case="2" xd:average-case="2"/>
+  <xd:resourceEstimates xd:LUT="780" xd:FF="204" xd:BRAM="0" xd:DSP="8"/>
+</xd:acceleratorMap>

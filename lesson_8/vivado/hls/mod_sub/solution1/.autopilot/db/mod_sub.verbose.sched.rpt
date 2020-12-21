@@ -1,0 +1,178 @@
+
+
+================================================================
+== Vivado HLS Report for 'mod_sub'
+================================================================
+* Date:           Mon Dec 21 15:45:34 2020
+
+* Version:        2019.1.3 (Build 2642998 on Wed Sep 04 10:25:22 MDT 2019)
+* Project:        mod_sub
+* Solution:       solution1
+* Product family: zynq
+* Target device:  xc7z045-ffg900-2
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+--------+----------+------------+
+    |  Clock | Target | Estimated| Uncertainty|
+    +--------+--------+----------+------------+
+    |ap_clk  |  100.00|    12.347|       12.50|
+    +--------+--------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +-----+-----+-----+-----+----------+
+    |  Latency  |  Interval | Pipeline |
+    | min | max | min | max |   Type   |
+    +-----+-----+-----+-----+----------+
+    |    2|    2|    1|    1| dataflow |
+    +-----+-----+-----+-----+----------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 1
+ResetActiveHigh: 1
+IsCombinational: 2
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 3
+* Pipeline : 0
+* Dataflow Pipeline: 1
+  DF-Pipeline-0: Size = 3, States = { 1 2 3 }
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 3 
+3 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 3.40>
+ST_1 : Operation 4 [1/1] (0.00ns)   --->   "%mux_V_read = call i2 @_ssdm_op_Read.ap_vld.i2(i2 %mux_V)" [../sources/mod_sub.cpp:19]   --->   Operation 4 'read' 'mux_V_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 5 [1/1] (0.00ns)   --->   "%period_V_read = call i8 @_ssdm_op_Read.ap_vld.i8(i8 %period_V)" [../sources/mod_sub.cpp:19]   --->   Operation 5 'read' 'period_V_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 6 [1/1] (0.00ns)   --->   "%q_mod_V_read = call i8 @_ssdm_op_Read.ap_vld.i8(i8 %q_mod_V)" [../sources/mod_sub.cpp:19]   --->   Operation 6 'read' 'q_mod_V_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 7 [1/1] (0.00ns)   --->   "%i_mod_V_read = call i8 @_ssdm_op_Read.ap_vld.i8(i8 %i_mod_V)" [../sources/mod_sub.cpp:19]   --->   Operation 7 'read' 'i_mod_V_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 8 [1/1] (0.00ns)   --->   "%qx_V_read = call i32 @_ssdm_op_Read.ap_vld.i32(i32 %qx_V)" [../sources/mod_sub.cpp:19]   --->   Operation 8 'read' 'qx_V_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 9 [1/1] (0.00ns)   --->   "%ix_V_read = call i32 @_ssdm_op_Read.ap_vld.i32(i32 %ix_V)" [../sources/mod_sub.cpp:19]   --->   Operation 9 'read' 'ix_V_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 10 [1/1] (0.00ns)   --->   "%qx_V_c3 = alloca i32, align 4" [../sources/mod_sub.cpp:19]   --->   Operation 10 'alloca' 'qx_V_c3' <Predicate = true> <Delay = 0.00> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 3.40> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 2> <Depth = 2> <FIFO>
+ST_1 : Operation 11 [1/1] (0.00ns)   --->   "%ix_V_c2 = alloca i32, align 4" [../sources/mod_sub.cpp:19]   --->   Operation 11 'alloca' 'ix_V_c2' <Predicate = true> <Delay = 0.00> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 3.40> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 2> <Depth = 2> <FIFO>
+ST_1 : Operation 12 [1/1] (0.00ns)   --->   "%mux_V_c = alloca i2, align 1" [../sources/mod_sub.cpp:19]   --->   Operation 12 'alloca' 'mux_V_c' <Predicate = true> <Delay = 0.00> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 3.40> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 2> <Depth = 2> <FIFO>
+ST_1 : Operation 13 [1/1] (0.00ns)   --->   "%period_V_c = alloca i8, align 1" [../sources/mod_sub.cpp:19]   --->   Operation 13 'alloca' 'period_V_c' <Predicate = true> <Delay = 0.00> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 3.40> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 2> <Depth = 2> <FIFO>
+ST_1 : Operation 14 [1/1] (0.00ns)   --->   "%q_mod_V_c = alloca i8, align 1" [../sources/mod_sub.cpp:19]   --->   Operation 14 'alloca' 'q_mod_V_c' <Predicate = true> <Delay = 0.00> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 3.40> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 2> <Depth = 2> <FIFO>
+ST_1 : Operation 15 [1/1] (0.00ns)   --->   "%i_mod_V_c = alloca i8, align 1" [../sources/mod_sub.cpp:19]   --->   Operation 15 'alloca' 'i_mod_V_c' <Predicate = true> <Delay = 0.00> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 3.40> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 2> <Depth = 2> <FIFO>
+ST_1 : Operation 16 [1/1] (0.00ns)   --->   "%qx_V_c = alloca i32, align 4" [../sources/mod_sub.cpp:19]   --->   Operation 16 'alloca' 'qx_V_c' <Predicate = true> <Delay = 0.00> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 3.40> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 2> <Depth = 2> <FIFO>
+ST_1 : Operation 17 [1/1] (0.00ns)   --->   "%ix_V_c = alloca i32, align 4" [../sources/mod_sub.cpp:19]   --->   Operation 17 'alloca' 'ix_V_c' <Predicate = true> <Delay = 0.00> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 3.40> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 2> <Depth = 2> <FIFO>
+ST_1 : Operation 18 [1/1] (3.40ns)   --->   "call fastcc void @mod_sub.entry23(i32 %ix_V_read, i32 %qx_V_read, i8 %i_mod_V_read, i8 %q_mod_V_read, i8 %period_V_read, i2 %mux_V_read, i32* %ix_V_c, i32* %qx_V_c, i8* %i_mod_V_c, i8* %q_mod_V_c, i8* %period_V_c, i2* %mux_V_c)" [../sources/mod_sub.cpp:19]   --->   Operation 18 'call' <Predicate = true> <Delay = 3.40> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 2 <SV = 1> <Delay = 0.00>
+ST_2 : Operation 19 [1/1] (0.00ns)   --->   "%freqm_ret = call fastcc { i32, i32 } @freqm(i32* %ix_V_c, i32* %qx_V_c, i8* %i_mod_V_c, i8* %q_mod_V_c, i32* %ix_V_c2, i32* %qx_V_c3)" [../sources/mod_sub.cpp:24]   --->   Operation 19 'call' 'freqm_ret' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_2 : Operation 20 [1/1] (0.00ns)   --->   "%i_fr_V = extractvalue { i32, i32 } %freqm_ret, 0" [../sources/mod_sub.cpp:24]   --->   Operation 20 'extractvalue' 'i_fr_V' <Predicate = true> <Delay = 0.00> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 3.40> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 2> <Depth = 2> <FIFO>
+ST_2 : Operation 21 [1/1] (0.00ns)   --->   "%q_fr_V = extractvalue { i32, i32 } %freqm_ret, 1" [../sources/mod_sub.cpp:24]   --->   Operation 21 'extractvalue' 'q_fr_V' <Predicate = true> <Delay = 0.00> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 3.40> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 2> <Depth = 2> <FIFO>
+
+State 3 <SV = 2> <Delay = 2.36>
+ST_3 : Operation 22 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecDataflowPipeline(i32 -1, i32 0, [1 x i8]* @p_str1) nounwind" [../sources/mod_sub.cpp:19]   --->   Operation 22 'specdataflowpipeline' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 23 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i32 %ix_V), !map !72"   --->   Operation 23 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 24 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i32 %qx_V), !map !78"   --->   Operation 24 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 25 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i8 %i_mod_V), !map !82"   --->   Operation 25 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 26 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i8 %q_mod_V), !map !86"   --->   Operation 26 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 27 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i32* %iy_V), !map !90"   --->   Operation 27 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 28 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i32* %qy_V), !map !96"   --->   Operation 28 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 29 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i8 %period_V), !map !100"   --->   Operation 29 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 30 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i2 %mux_V), !map !104"   --->   Operation 30 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 31 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecTopModule([8 x i8]* @mod_sub_str) nounwind"   --->   Operation 31 'spectopmodule' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 32 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i32 0, [13 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str1, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind" [../sources/mod_sub.cpp:10]   --->   Operation 32 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 33 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i2 %mux_V, [7 x i8]* @p_str2, i32 0, i32 0, [1 x i8]* @p_str1, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind" [../sources/mod_sub.cpp:11]   --->   Operation 33 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 34 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i8 %period_V, [7 x i8]* @p_str2, i32 0, i32 0, [1 x i8]* @p_str1, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind" [../sources/mod_sub.cpp:12]   --->   Operation 34 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 35 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i32* %qy_V, [7 x i8]* @p_str2, i32 0, i32 0, [1 x i8]* @p_str1, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind" [../sources/mod_sub.cpp:13]   --->   Operation 35 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 36 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i32* %iy_V, [7 x i8]* @p_str2, i32 0, i32 0, [1 x i8]* @p_str1, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind" [../sources/mod_sub.cpp:14]   --->   Operation 36 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 37 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i8 %q_mod_V, [7 x i8]* @p_str2, i32 0, i32 0, [1 x i8]* @p_str1, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind" [../sources/mod_sub.cpp:15]   --->   Operation 37 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 38 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i8 %i_mod_V, [7 x i8]* @p_str2, i32 0, i32 0, [1 x i8]* @p_str1, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind" [../sources/mod_sub.cpp:16]   --->   Operation 38 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 39 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i32 %qx_V, [7 x i8]* @p_str2, i32 0, i32 0, [1 x i8]* @p_str1, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind" [../sources/mod_sub.cpp:17]   --->   Operation 39 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 40 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i32 %ix_V, [7 x i8]* @p_str2, i32 0, i32 0, [1 x i8]* @p_str1, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind" [../sources/mod_sub.cpp:18]   --->   Operation 40 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 41 [1/1] (0.00ns)   --->   "%empty = call i32 (...)* @_ssdm_op_SpecChannel([7 x i8]* @ix_OC_V_c_str, i32 1, [1 x i8]* @p_str55, [1 x i8]* @p_str55, i32 2, i32 0, i32* %ix_V_c, i32* %ix_V_c)" [../sources/mod_sub.cpp:19]   --->   Operation 41 'specchannel' 'empty' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 42 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i32* %ix_V_c, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str56, i32 0, i32 0, [1 x i8]* @p_str57, [1 x i8]* @p_str58, [1 x i8]* @p_str59, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str60, [1 x i8]* @p_str61)" [../sources/mod_sub.cpp:19]   --->   Operation 42 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 43 [1/1] (0.00ns)   --->   "%empty_5 = call i32 (...)* @_ssdm_op_SpecChannel([7 x i8]* @qx_OC_V_c_str, i32 1, [1 x i8]* @p_str62, [1 x i8]* @p_str62, i32 2, i32 0, i32* %qx_V_c, i32* %qx_V_c)" [../sources/mod_sub.cpp:19]   --->   Operation 43 'specchannel' 'empty_5' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 44 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i32* %qx_V_c, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str63, i32 0, i32 0, [1 x i8]* @p_str64, [1 x i8]* @p_str65, [1 x i8]* @p_str66, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str67, [1 x i8]* @p_str68)" [../sources/mod_sub.cpp:19]   --->   Operation 44 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 45 [1/1] (0.00ns)   --->   "%empty_6 = call i32 (...)* @_ssdm_op_SpecChannel([10 x i8]* @i_mod_OC_V_c_str, i32 1, [1 x i8]* @p_str69, [1 x i8]* @p_str69, i32 2, i32 0, i8* %i_mod_V_c, i8* %i_mod_V_c)" [../sources/mod_sub.cpp:19]   --->   Operation 45 'specchannel' 'empty_6' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 46 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i8* %i_mod_V_c, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str70, i32 0, i32 0, [1 x i8]* @p_str71, [1 x i8]* @p_str72, [1 x i8]* @p_str73, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str74, [1 x i8]* @p_str75)" [../sources/mod_sub.cpp:19]   --->   Operation 46 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 47 [1/1] (0.00ns)   --->   "%empty_7 = call i32 (...)* @_ssdm_op_SpecChannel([10 x i8]* @q_mod_OC_V_c_str, i32 1, [1 x i8]* @p_str76, [1 x i8]* @p_str76, i32 2, i32 0, i8* %q_mod_V_c, i8* %q_mod_V_c)" [../sources/mod_sub.cpp:19]   --->   Operation 47 'specchannel' 'empty_7' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 48 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i8* %q_mod_V_c, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str77, i32 0, i32 0, [1 x i8]* @p_str78, [1 x i8]* @p_str79, [1 x i8]* @p_str80, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str81, [1 x i8]* @p_str82)" [../sources/mod_sub.cpp:19]   --->   Operation 48 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 49 [1/1] (0.00ns)   --->   "%empty_8 = call i32 (...)* @_ssdm_op_SpecChannel([11 x i8]* @period_OC_V_c_str, i32 1, [1 x i8]* @p_str83, [1 x i8]* @p_str83, i32 2, i32 0, i8* %period_V_c, i8* %period_V_c)" [../sources/mod_sub.cpp:19]   --->   Operation 49 'specchannel' 'empty_8' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 50 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i8* %period_V_c, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str84, i32 0, i32 0, [1 x i8]* @p_str85, [1 x i8]* @p_str86, [1 x i8]* @p_str87, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str88, [1 x i8]* @p_str89)" [../sources/mod_sub.cpp:19]   --->   Operation 50 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 51 [1/1] (0.00ns)   --->   "%empty_9 = call i32 (...)* @_ssdm_op_SpecChannel([8 x i8]* @mux_OC_V_c_str, i32 1, [1 x i8]* @p_str90, [1 x i8]* @p_str90, i32 3, i32 0, i2* %mux_V_c, i2* %mux_V_c)" [../sources/mod_sub.cpp:19]   --->   Operation 51 'specchannel' 'empty_9' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 52 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i2* %mux_V_c, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str91, i32 0, i32 0, [1 x i8]* @p_str92, [1 x i8]* @p_str93, [1 x i8]* @p_str94, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str95, [1 x i8]* @p_str96)" [../sources/mod_sub.cpp:19]   --->   Operation 52 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 53 [1/1] (0.00ns)   --->   "%empty_10 = call i32 (...)* @_ssdm_op_SpecChannel([8 x i8]* @ix_OC_V_c2_str, i32 1, [1 x i8]* @p_str128, [1 x i8]* @p_str128, i32 2, i32 0, i32* %ix_V_c2, i32* %ix_V_c2)" [../sources/mod_sub.cpp:19]   --->   Operation 53 'specchannel' 'empty_10' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 54 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i32* %ix_V_c2, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str129, i32 0, i32 0, [1 x i8]* @p_str130, [1 x i8]* @p_str131, [1 x i8]* @p_str132, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str133, [1 x i8]* @p_str134)" [../sources/mod_sub.cpp:19]   --->   Operation 54 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 55 [1/1] (0.00ns)   --->   "%empty_11 = call i32 (...)* @_ssdm_op_SpecChannel([8 x i8]* @qx_OC_V_c3_str, i32 1, [1 x i8]* @p_str135, [1 x i8]* @p_str135, i32 2, i32 0, i32* %qx_V_c3, i32* %qx_V_c3)" [../sources/mod_sub.cpp:19]   --->   Operation 55 'specchannel' 'empty_11' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 56 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i32* %qx_V_c3, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str136, i32 0, i32 0, [1 x i8]* @p_str137, [1 x i8]* @p_str138, [1 x i8]* @p_str139, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str140, [1 x i8]* @p_str141)" [../sources/mod_sub.cpp:19]   --->   Operation 56 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 57 [1/1] (0.00ns)   --->   "%flag = call fastcc i1 @phasm(i8* %period_V_c)" [../sources/mod_sub.cpp:25]   --->   Operation 57 'call' 'flag' <Predicate = true> <Delay = 0.00> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 3.40> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 2> <Depth = 2> <FIFO>
+ST_3 : Operation 58 [1/1] (2.36ns)   --->   "call fastcc void @o_mux(i32* %ix_V_c2, i32* %qx_V_c3, i32 %i_fr_V, i32 %q_fr_V, i32* %iy_V, i32* %qy_V, i1 %flag, i2* %mux_V_c)" [../sources/mod_sub.cpp:26]   --->   Operation 58 'call' <Predicate = true> <Delay = 2.36> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_3 : Operation 59 [1/1] (0.00ns)   --->   "ret void" [../sources/mod_sub.cpp:27]   --->   Operation 59 'ret' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 100ns, clock uncertainty: 12.5ns.
+
+ <State 1>: 3.4ns
+The critical path consists of the following:
+	wire read on port 'mux_V' (../sources/mod_sub.cpp:19) [11]  (0 ns)
+	'call' operation ('call_ln19', ../sources/mod_sub.cpp:19) to 'mod_sub.entry23' [56]  (3.4 ns)
+
+ <State 2>: 0ns
+The critical path consists of the following:
+
+ <State 3>: 2.36ns
+The critical path consists of the following:
+	'call' operation ('flag', ../sources/mod_sub.cpp:25) to 'phasm' [64]  (0 ns)
+	'call' operation ('call_ln26', ../sources/mod_sub.cpp:26) to 'o_mux' [65]  (2.36 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

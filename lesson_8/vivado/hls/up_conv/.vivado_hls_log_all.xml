@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vivadoHLSLog:LogRoot xmlns:vivadoHLSLog="www.xilinx.com/vivadoHLSLog">
+  <errorLogs>
+    <logs>
+      <synLog/>
+      <simLog>
+        <logs message="ERROR: [COSIM 212-4] *** C/RTL co-simulation finished: FAIL ***&#xD;&#xA;could not read &quot;D:/work/kb_radar_course/lesson_8/vivado/hls/up_conv/solution1/sim/tv/rtldatafile/sim/report/cosim.log&quot;: no such file or directory&#xD;&#xA;    while executing&#xD;&#xA;&quot;source D:/work/kb_radar_course/lesson_8/vivado/hls/up_conv/solution1/cosim.tcl&quot;&#xD;&#xA;    invoked from within&#xD;&#xA;&quot;hls::main D:/work/kb_radar_course/lesson_8/vivado/hls/up_conv/solution1/cosim.tcl&quot;&#xD;&#xA;    (&quot;uplevel&quot; body line 1)&#xD;&#xA;    invoked from within&#xD;&#xA;&quot;uplevel 1 hls::main {*}$args&quot;&#xD;&#xA;    (procedure &quot;hls_proc&quot; line 5)&#xD;&#xA;    invoked from within&#xD;&#xA;&quot;hls_proc $argv&quot;&#xD;&#xA;" projectName="up_conv" solutionName="solution1" date="2020-12-21T16:11:29.591+0300"/>
+        <logs message="ERROR: [COSIM 212-344] Rtl simulation failed." projectName="up_conv" solutionName="solution1" date="2020-12-21T16:11:29.483+0300"/>
+        <logs message="ERROR: [COSIM 212-303] Aborting co-simulation: RTL simulation failed.  " projectName="up_conv" solutionName="solution1" date="2020-12-21T16:11:29.457+0300"/>
+      </simLog>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </errorLogs>
+  <warningLogs>
+    <logs>
+      <synLog>
+        <logs message="WARNING: [HLS 200-631] Ignoring ap_ctrl_none interface for up_conv due to up_conv.entry14 with non-FIFO I/O" projectName="up_conv" solutionName="solution1" date="2020-12-21T15:51:23.245+0300" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'shift_reg_0' is power-on initialization." projectName="up_conv" solutionName="solution1" date="2020-12-21T15:51:21.862+0300" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'shift_reg_1' is power-on initialization." projectName="up_conv" solutionName="solution1" date="2020-12-21T15:51:21.796+0300" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'shift_reg_2' is power-on initialization." projectName="up_conv" solutionName="solution1" date="2020-12-21T15:51:21.785+0300" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'shift_reg_3' is power-on initialization." projectName="up_conv" solutionName="solution1" date="2020-12-21T15:51:21.776+0300" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'shift_reg_4' is power-on initialization." projectName="up_conv" solutionName="solution1" date="2020-12-21T15:51:21.767+0300" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'shift_reg_5' is power-on initialization." projectName="up_conv" solutionName="solution1" date="2020-12-21T15:51:21.757+0300" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'shift_reg_6' is power-on initialization." projectName="up_conv" solutionName="solution1" date="2020-12-21T15:51:21.748+0300" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'shift_reg_7' is power-on initialization." projectName="up_conv" solutionName="solution1" date="2020-12-21T15:51:21.734+0300" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'shift_reg_8' is power-on initialization." projectName="up_conv" solutionName="solution1" date="2020-12-21T15:51:21.724+0300" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'shift_reg_9' is power-on initialization." projectName="up_conv" solutionName="solution1" date="2020-12-21T15:51:21.710+0300" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'shift_reg_10' is power-on initialization." projectName="up_conv" solutionName="solution1" date="2020-12-21T15:51:21.700+0300" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'shift_reg_11' is power-on initialization." projectName="up_conv" solutionName="solution1" date="2020-12-21T15:51:21.690+0300" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'shift_reg_12' is power-on initialization." projectName="up_conv" solutionName="solution1" date="2020-12-21T15:51:21.676+0300" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'shift_reg_13' is power-on initialization." projectName="up_conv" solutionName="solution1" date="2020-12-21T15:51:21.668+0300" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'shift_reg_14' is power-on initialization." projectName="up_conv" solutionName="solution1" date="2020-12-21T15:51:21.659+0300" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'shift_reg_15' is power-on initialization." projectName="up_conv" solutionName="solution1" date="2020-12-21T15:51:21.643+0300" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'shift_reg_16' is power-on initialization." projectName="up_conv" solutionName="solution1" date="2020-12-21T15:51:21.633+0300" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'shift_reg_17' is power-on initialization." projectName="up_conv" solutionName="solution1" date="2020-12-21T15:51:21.624+0300" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'shift_reg_18' is power-on initialization." projectName="up_conv" solutionName="solution1" date="2020-12-21T15:51:21.614+0300" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'shift_reg_19' is power-on initialization." projectName="up_conv" solutionName="solution1" date="2020-12-21T15:51:21.605+0300" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'shift_reg_20' is power-on initialization." projectName="up_conv" solutionName="solution1" date="2020-12-21T15:51:21.596+0300" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'shift_reg_21' is power-on initialization." projectName="up_conv" solutionName="solution1" date="2020-12-21T15:51:21.585+0300" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'shift_reg_22' is power-on initialization." projectName="up_conv" solutionName="solution1" date="2020-12-21T15:51:21.569+0300" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'shift_reg_23' is power-on initialization." projectName="up_conv" solutionName="solution1" date="2020-12-21T15:51:21.557+0300" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'shift_reg_24' is power-on initialization." projectName="up_conv" solutionName="solution1" date="2020-12-21T15:51:21.547+0300" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'shift_reg_25' is power-on initialization." projectName="up_conv" solutionName="solution1" date="2020-12-21T15:51:21.531+0300" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'shift_reg_26' is power-on initialization." projectName="up_conv" solutionName="solution1" date="2020-12-21T15:51:21.522+0300" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'shift_reg_27' is power-on initialization." projectName="up_conv" solutionName="solution1" date="2020-12-21T15:51:21.513+0300" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'shift_reg_28' is power-on initialization." projectName="up_conv" solutionName="solution1" date="2020-12-21T15:51:21.505+0300" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'shift_reg_29' is power-on initialization." projectName="up_conv" solutionName="solution1" date="2020-12-21T15:51:21.496+0300" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'shift_reg_30' is power-on initialization." projectName="up_conv" solutionName="solution1" date="2020-12-21T15:51:21.487+0300" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'shift_reg_31' is power-on initialization." projectName="up_conv" solutionName="solution1" date="2020-12-21T15:51:21.477+0300" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'shift_reg_32' is power-on initialization." projectName="up_conv" solutionName="solution1" date="2020-12-21T15:51:21.470+0300" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'shift_reg_33' is power-on initialization." projectName="up_conv" solutionName="solution1" date="2020-12-21T15:51:21.452+0300" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'shift_reg_34' is power-on initialization." projectName="up_conv" solutionName="solution1" date="2020-12-21T15:51:21.437+0300" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'shift_reg_35' is power-on initialization." projectName="up_conv" solutionName="solution1" date="2020-12-21T15:51:21.421+0300" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'shift_reg_36' is power-on initialization." projectName="up_conv" solutionName="solution1" date="2020-12-21T15:51:21.410+0300" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'shift_reg_37' is power-on initialization." projectName="up_conv" solutionName="solution1" date="2020-12-21T15:51:21.388+0300" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'shift_reg_38' is power-on initialization." projectName="up_conv" solutionName="solution1" date="2020-12-21T15:51:21.356+0300" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'shift_reg_39' is power-on initialization." projectName="up_conv" solutionName="solution1" date="2020-12-21T15:51:21.335+0300" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'shift_reg_40' is power-on initialization." projectName="up_conv" solutionName="solution1" date="2020-12-21T15:51:21.322+0300" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'shift_reg_41' is power-on initialization." projectName="up_conv" solutionName="solution1" date="2020-12-21T15:51:21.301+0300" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'shift_reg_42' is power-on initialization." projectName="up_conv" solutionName="solution1" date="2020-12-21T15:51:21.288+0300" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'shift_reg_43' is power-on initialization." projectName="up_conv" solutionName="solution1" date="2020-12-21T15:51:21.275+0300" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'shift_reg_44' is power-on initialization." projectName="up_conv" solutionName="solution1" date="2020-12-21T15:51:21.255+0300" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'shift_reg_45' is power-on initialization." projectName="up_conv" solutionName="solution1" date="2020-12-21T15:51:21.243+0300" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'shift_reg_46' is power-on initialization." projectName="up_conv" solutionName="solution1" date="2020-12-21T15:51:21.227+0300" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'shift_reg_47' is power-on initialization." projectName="up_conv" solutionName="solution1" date="2020-12-21T15:51:21.213+0300" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'shift_reg_48' is power-on initialization." projectName="up_conv" solutionName="solution1" date="2020-12-21T15:51:21.201+0300" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'shift_reg_49' is power-on initialization." projectName="up_conv" solutionName="solution1" date="2020-12-21T15:51:21.192+0300" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'shift_reg_50' is power-on initialization." projectName="up_conv" solutionName="solution1" date="2020-12-21T15:51:21.180+0300" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'shift_reg_51' is power-on initialization." projectName="up_conv" solutionName="solution1" date="2020-12-21T15:51:21.165+0300" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'shift_reg_52' is power-on initialization." projectName="up_conv" solutionName="solution1" date="2020-12-21T15:51:21.147+0300" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'shift_reg_53' is power-on initialization." projectName="up_conv" solutionName="solution1" date="2020-12-21T15:51:21.136+0300" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'shift_reg_54' is power-on initialization." projectName="up_conv" solutionName="solution1" date="2020-12-21T15:51:21.118+0300" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'shift_reg_55' is power-on initialization." projectName="up_conv" solutionName="solution1" date="2020-12-21T15:51:21.107+0300" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'shift_reg_56' is power-on initialization." projectName="up_conv" solutionName="solution1" date="2020-12-21T15:51:21.091+0300" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'shift_reg_57' is power-on initialization." projectName="up_conv" solutionName="solution1" date="2020-12-21T15:51:21.080+0300" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'shift_reg_58' is power-on initialization." projectName="up_conv" solutionName="solution1" date="2020-12-21T15:51:21.069+0300" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'shift_reg_59' is power-on initialization." projectName="up_conv" solutionName="solution1" date="2020-12-21T15:51:21.050+0300" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'shift_reg_60' is power-on initialization." projectName="up_conv" solutionName="solution1" date="2020-12-21T15:51:21.039+0300" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'shift_reg_61' is power-on initialization." projectName="up_conv" solutionName="solution1" date="2020-12-21T15:51:21.030+0300" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'shift_reg_62' is power-on initialization." projectName="up_conv" solutionName="solution1" date="2020-12-21T15:51:21.022+0300" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'shift_reg_1_0' is power-on initialization." projectName="up_conv" solutionName="solution1" date="2020-12-21T15:51:20.160+0300" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'shift_reg_1_1' is power-on initialization." projectName="up_conv" solutionName="solution1" date="2020-12-21T15:51:20.083+0300" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'shift_reg_1_2' is power-on initialization." projectName="up_conv" solutionName="solution1" date="2020-12-21T15:51:20.055+0300" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'shift_reg_1_3' is power-on initialization." projectName="up_conv" solutionName="solution1" date="2020-12-21T15:51:20.044+0300" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'shift_reg_1_4' is power-on initialization." projectName="up_conv" solutionName="solution1" date="2020-12-21T15:51:20.006+0300" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'shift_reg_1_5' is power-on initialization." projectName="up_conv" solutionName="solution1" date="2020-12-21T15:51:19.990+0300" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'shift_reg_1_6' is power-on initialization." projectName="up_conv" solutionName="solution1" date="2020-12-21T15:51:19.955+0300" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'shift_reg_1_7' is power-on initialization." projectName="up_conv" solutionName="solution1" date="2020-12-21T15:51:19.927+0300" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'shift_reg_1_8' is power-on initialization." projectName="up_conv" solutionName="solution1" date="2020-12-21T15:51:19.911+0300" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'shift_reg_1_9' is power-on initialization." projectName="up_conv" solutionName="solution1" date="2020-12-21T15:51:19.881+0300" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'shift_reg_1_10' is power-on initialization." projectName="up_conv" solutionName="solution1" date="2020-12-21T15:51:19.852+0300" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'shift_reg_1_11' is power-on initialization." projectName="up_conv" solutionName="solution1" date="2020-12-21T15:51:19.823+0300" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'shift_reg_1_12' is power-on initialization." projectName="up_conv" solutionName="solution1" date="2020-12-21T15:51:19.785+0300" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'shift_reg_1_13' is power-on initialization." projectName="up_conv" solutionName="solution1" date="2020-12-21T15:51:19.734+0300" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'shift_reg_1_14' is power-on initialization." projectName="up_conv" solutionName="solution1" date="2020-12-21T15:51:19.720+0300" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'shift_reg_1_15' is power-on initialization." projectName="up_conv" solutionName="solution1" date="2020-12-21T15:51:19.675+0300" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'shift_reg_1_16' is power-on initialization." projectName="up_conv" solutionName="solution1" date="2020-12-21T15:51:19.660+0300" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'shift_reg_1_17' is power-on initialization." projectName="up_conv" solutionName="solution1" date="2020-12-21T15:51:19.650+0300" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'shift_reg_1_18' is power-on initialization." projectName="up_conv" solutionName="solution1" date="2020-12-21T15:51:19.615+0300" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'shift_reg_1_19' is power-on initialization." projectName="up_conv" solutionName="solution1" date="2020-12-21T15:51:19.534+0300" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'shift_reg_1_20' is power-on initialization." projectName="up_conv" solutionName="solution1" date="2020-12-21T15:51:19.519+0300" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'shift_reg_1_21' is power-on initialization." projectName="up_conv" solutionName="solution1" date="2020-12-21T15:51:19.510+0300" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'shift_reg_1_22' is power-on initialization." projectName="up_conv" solutionName="solution1" date="2020-12-21T15:51:19.502+0300" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'shift_reg_1_23' is power-on initialization." projectName="up_conv" solutionName="solution1" date="2020-12-21T15:51:19.473+0300" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'shift_reg_1_24' is power-on initialization." projectName="up_conv" solutionName="solution1" date="2020-12-21T15:51:19.398+0300" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'shift_reg_1_25' is power-on initialization." projectName="up_conv" solutionName="solution1" date="2020-12-21T15:51:19.389+0300" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'shift_reg_1_26' is power-on initialization." projectName="up_conv" solutionName="solution1" date="2020-12-21T15:51:19.381+0300" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'shift_reg_1_27' is power-on initialization." projectName="up_conv" solutionName="solution1" date="2020-12-21T15:51:19.372+0300" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'shift_reg_1_28' is power-on initialization." projectName="up_conv" solutionName="solution1" date="2020-12-21T15:51:19.361+0300" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'shift_reg_1_29' is power-on initialization." projectName="up_conv" solutionName="solution1" date="2020-12-21T15:51:19.353+0300" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'shift_reg_1_30' is power-on initialization." projectName="up_conv" solutionName="solution1" date="2020-12-21T15:51:19.344+0300" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'shift_reg_1_31' is power-on initialization." projectName="up_conv" solutionName="solution1" date="2020-12-21T15:51:19.334+0300" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'shift_reg_1_32' is power-on initialization." projectName="up_conv" solutionName="solution1" date="2020-12-21T15:51:19.323+0300" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'shift_reg_1_33' is power-on initialization." projectName="up_conv" solutionName="solution1" date="2020-12-21T15:51:19.310+0300" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'shift_reg_1_34' is power-on initialization." projectName="up_conv" solutionName="solution1" date="2020-12-21T15:51:19.302+0300" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'shift_reg_1_35' is power-on initialization." projectName="up_conv" solutionName="solution1" date="2020-12-21T15:51:19.293+0300" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'shift_reg_1_36' is power-on initialization." projectName="up_conv" solutionName="solution1" date="2020-12-21T15:51:19.284+0300" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'shift_reg_1_37' is power-on initialization." projectName="up_conv" solutionName="solution1" date="2020-12-21T15:51:19.274+0300" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'shift_reg_1_38' is power-on initialization." projectName="up_conv" solutionName="solution1" date="2020-12-21T15:51:19.265+0300" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'shift_reg_1_39' is power-on initialization." projectName="up_conv" solutionName="solution1" date="2020-12-21T15:51:19.256+0300" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'shift_reg_1_40' is power-on initialization." projectName="up_conv" solutionName="solution1" date="2020-12-21T15:51:19.247+0300" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'shift_reg_1_41' is power-on initialization." projectName="up_conv" solutionName="solution1" date="2020-12-21T15:51:19.187+0300" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'shift_reg_1_42' is power-on initialization." projectName="up_conv" solutionName="solution1" date="2020-12-21T15:51:19.171+0300" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'shift_reg_1_43' is power-on initialization." projectName="up_conv" solutionName="solution1" date="2020-12-21T15:51:19.154+0300" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'shift_reg_1_44' is power-on initialization." projectName="up_conv" solutionName="solution1" date="2020-12-21T15:51:19.133+0300" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'shift_reg_1_45' is power-on initialization." projectName="up_conv" solutionName="solution1" date="2020-12-21T15:51:19.121+0300" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'shift_reg_1_46' is power-on initialization." projectName="up_conv" solutionName="solution1" date="2020-12-21T15:51:19.102+0300" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'shift_reg_1_47' is power-on initialization." projectName="up_conv" solutionName="solution1" date="2020-12-21T15:51:19.079+0300" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'shift_reg_1_48' is power-on initialization." projectName="up_conv" solutionName="solution1" date="2020-12-21T15:51:19.064+0300" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'shift_reg_1_49' is power-on initialization." projectName="up_conv" solutionName="solution1" date="2020-12-21T15:51:19.049+0300" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'shift_reg_1_50' is power-on initialization." projectName="up_conv" solutionName="solution1" date="2020-12-21T15:51:19.031+0300" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'shift_reg_1_51' is power-on initialization." projectName="up_conv" solutionName="solution1" date="2020-12-21T15:51:19.015+0300" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'shift_reg_1_52' is power-on initialization." projectName="up_conv" solutionName="solution1" date="2020-12-21T15:51:18.998+0300" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'shift_reg_1_53' is power-on initialization." projectName="up_conv" solutionName="solution1" date="2020-12-21T15:51:18.973+0300" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'shift_reg_1_54' is power-on initialization." projectName="up_conv" solutionName="solution1" date="2020-12-21T15:51:18.952+0300" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'shift_reg_1_55' is power-on initialization." projectName="up_conv" solutionName="solution1" date="2020-12-21T15:51:18.927+0300" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'shift_reg_1_56' is power-on initialization." projectName="up_conv" solutionName="solution1" date="2020-12-21T15:51:18.911+0300" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'shift_reg_1_57' is power-on initialization." projectName="up_conv" solutionName="solution1" date="2020-12-21T15:51:18.894+0300" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'shift_reg_1_58' is power-on initialization." projectName="up_conv" solutionName="solution1" date="2020-12-21T15:51:18.882+0300" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'shift_reg_1_59' is power-on initialization." projectName="up_conv" solutionName="solution1" date="2020-12-21T15:51:18.868+0300" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'shift_reg_1_60' is power-on initialization." projectName="up_conv" solutionName="solution1" date="2020-12-21T15:51:18.827+0300" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'shift_reg_1_61' is power-on initialization." projectName="up_conv" solutionName="solution1" date="2020-12-21T15:51:18.810+0300" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'shift_reg_1_62' is power-on initialization." projectName="up_conv" solutionName="solution1" date="2020-12-21T15:51:18.799+0300" type="Warning"/>
+        <logs message="WARNING: [SYN 201-103] Legalizing function name 'up_conv.entry14' to 'up_conv_entry14'." projectName="up_conv" solutionName="solution1" date="2020-12-21T15:51:15.544+0300" type="Warning"/>
+      </synLog>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </warningLogs>
+</vivadoHLSLog:LogRoot>

@@ -1,0 +1,981 @@
+#-----------------------------------------------------------
+# Vivado v2019.1.3 (64-bit)
+# SW Build 2644227 on Wed Sep  4 09:45:24 MDT 2019
+# IP Build 2633630 on Wed Sep  4 12:30:14 MDT 2019
+# Start of session at: Mon Dec 21 16:27:20 2020
+# Process ID: 4200
+# Current directory: D:/work/kb_radar_course/lesson_8/vivado/zc706_hw_v/zc706_hw_v.runs/design_1_d_conv_0_0_synth_1
+# Command line: vivado.exe -log design_1_d_conv_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_d_conv_0_0.tcl
+# Log file: D:/work/kb_radar_course/lesson_8/vivado/zc706_hw_v/zc706_hw_v.runs/design_1_d_conv_0_0_synth_1/design_1_d_conv_0_0.vds
+# Journal file: D:/work/kb_radar_course/lesson_8/vivado/zc706_hw_v/zc706_hw_v.runs/design_1_d_conv_0_0_synth_1\vivado.jou
+#-----------------------------------------------------------
+source design_1_d_conv_0_0.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/work/kb_radar_course/lesson_8/vivado/hls'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.1/data/ip'.
+Command: synth_design -top design_1_d_conv_0_0 -part xc7z045ffg900-2 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z045'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z045'
+INFO: [Device 21-403] Loading part xc7z045ffg900-2
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 6508 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 829.328 ; gain = 177.750
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'design_1_d_conv_0_0' [d:/work/kb_radar_course/lesson_8/vivado/zc706_hw_v/zc706_hw_v.srcs/sources_1/bd/design_1/ip/design_1_d_conv_0_0/synth/design_1_d_conv_0_0.v:58]
+INFO: [Synth 8-6157] synthesizing module 'd_conv' [d:/work/kb_radar_course/lesson_8/vivado/zc706_hw_v/zc706_hw_v.srcs/sources_1/bd/design_1/ipshared/e600/hdl/verilog/d_conv.v:12]
+INFO: [Synth 8-6157] synthesizing module 'iq_mult' [d:/work/kb_radar_course/lesson_8/vivado/zc706_hw_v/zc706_hw_v.srcs/sources_1/bd/design_1/ipshared/e600/hdl/verilog/iq_mult.v:10]
+	Parameter ap_ST_fsm_state1 bound to: 1'b1 
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [d:/work/kb_radar_course/lesson_8/vivado/zc706_hw_v/zc706_hw_v.srcs/sources_1/bd/design_1/ipshared/e600/hdl/verilog/iq_mult.v:53]
+INFO: [Synth 8-6155] done synthesizing module 'iq_mult' (1#1) [d:/work/kb_radar_course/lesson_8/vivado/zc706_hw_v/zc706_hw_v.srcs/sources_1/bd/design_1/ipshared/e600/hdl/verilog/iq_mult.v:10]
+INFO: [Synth 8-6157] synthesizing module 'Block_proc' [d:/work/kb_radar_course/lesson_8/vivado/zc706_hw_v/zc706_hw_v.srcs/sources_1/bd/design_1/ipshared/e600/hdl/verilog/Block_proc.v:10]
+	Parameter ap_ST_fsm_state1 bound to: 1'b1 
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [d:/work/kb_radar_course/lesson_8/vivado/zc706_hw_v/zc706_hw_v.srcs/sources_1/bd/design_1/ipshared/e600/hdl/verilog/Block_proc.v:40]
+INFO: [Synth 8-6155] done synthesizing module 'Block_proc' (2#1) [d:/work/kb_radar_course/lesson_8/vivado/zc706_hw_v/zc706_hw_v.srcs/sources_1/bd/design_1/ipshared/e600/hdl/verilog/Block_proc.v:10]
+INFO: [Synth 8-6157] synthesizing module 'fir_filter_a' [d:/work/kb_radar_course/lesson_8/vivado/zc706_hw_v/zc706_hw_v.srcs/sources_1/bd/design_1/ipshared/e600/hdl/verilog/fir_filter_a.v:10]
+	Parameter ap_ST_fsm_pp0_stage0 bound to: 1'b1 
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [d:/work/kb_radar_course/lesson_8/vivado/zc706_hw_v/zc706_hw_v.srcs/sources_1/bd/design_1/ipshared/e600/hdl/verilog/fir_filter_a.v:42]
+INFO: [Synth 8-5534] Detected attribute (* use_dsp48 = "no" *) [d:/work/kb_radar_course/lesson_8/vivado/zc706_hw_v/zc706_hw_v.srcs/sources_1/bd/design_1/ipshared/e600/hdl/verilog/fir_filter_a.v:166]
+WARNING: [Synth 8-5974] attribute "use_dsp48" has been deprecated, please use "use_dsp" instead 
+INFO: [Synth 8-6157] synthesizing module 'd_conv_mul_mul_16bkb' [d:/work/kb_radar_course/lesson_8/vivado/zc706_hw_v/zc706_hw_v.srcs/sources_1/bd/design_1/ipshared/e600/hdl/verilog/d_conv_mul_mul_16bkb.v:13]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 1 - type: integer 
+	Parameter din0_WIDTH bound to: 16 - type: integer 
+	Parameter din1_WIDTH bound to: 10 - type: integer 
+	Parameter dout_WIDTH bound to: 26 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'd_conv_mul_mul_16bkb_DSP48_0' [d:/work/kb_radar_course/lesson_8/vivado/zc706_hw_v/zc706_hw_v.srcs/sources_1/bd/design_1/ipshared/e600/hdl/verilog/d_conv_mul_mul_16bkb.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'd_conv_mul_mul_16bkb_DSP48_0' (3#1) [d:/work/kb_radar_course/lesson_8/vivado/zc706_hw_v/zc706_hw_v.srcs/sources_1/bd/design_1/ipshared/e600/hdl/verilog/d_conv_mul_mul_16bkb.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'd_conv_mul_mul_16bkb' (4#1) [d:/work/kb_radar_course/lesson_8/vivado/zc706_hw_v/zc706_hw_v.srcs/sources_1/bd/design_1/ipshared/e600/hdl/verilog/d_conv_mul_mul_16bkb.v:13]
+INFO: [Synth 8-6157] synthesizing module 'd_conv_mul_mul_16cud' [d:/work/kb_radar_course/lesson_8/vivado/zc706_hw_v/zc706_hw_v.srcs/sources_1/bd/design_1/ipshared/e600/hdl/verilog/d_conv_mul_mul_16cud.v:13]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 1 - type: integer 
+	Parameter din0_WIDTH bound to: 16 - type: integer 
+	Parameter din1_WIDTH bound to: 11 - type: integer 
+	Parameter dout_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'd_conv_mul_mul_16cud_DSP48_1' [d:/work/kb_radar_course/lesson_8/vivado/zc706_hw_v/zc706_hw_v.srcs/sources_1/bd/design_1/ipshared/e600/hdl/verilog/d_conv_mul_mul_16cud.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'd_conv_mul_mul_16cud_DSP48_1' (5#1) [d:/work/kb_radar_course/lesson_8/vivado/zc706_hw_v/zc706_hw_v.srcs/sources_1/bd/design_1/ipshared/e600/hdl/verilog/d_conv_mul_mul_16cud.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'd_conv_mul_mul_16cud' (6#1) [d:/work/kb_radar_course/lesson_8/vivado/zc706_hw_v/zc706_hw_v.srcs/sources_1/bd/design_1/ipshared/e600/hdl/verilog/d_conv_mul_mul_16cud.v:13]
+INFO: [Synth 8-6157] synthesizing module 'd_conv_mac_muladddEe' [d:/work/kb_radar_course/lesson_8/vivado/zc706_hw_v/zc706_hw_v.srcs/sources_1/bd/design_1/ipshared/e600/hdl/verilog/d_conv_mac_muladddEe.v:30]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 1 - type: integer 
+	Parameter din0_WIDTH bound to: 16 - type: integer 
+	Parameter din1_WIDTH bound to: 10 - type: integer 
+	Parameter din2_WIDTH bound to: 26 - type: integer 
+	Parameter dout_WIDTH bound to: 26 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'd_conv_mac_muladddEe_DSP48_2' [d:/work/kb_radar_course/lesson_8/vivado/zc706_hw_v/zc706_hw_v.srcs/sources_1/bd/design_1/ipshared/e600/hdl/verilog/d_conv_mac_muladddEe.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'd_conv_mac_muladddEe_DSP48_2' (7#1) [d:/work/kb_radar_course/lesson_8/vivado/zc706_hw_v/zc706_hw_v.srcs/sources_1/bd/design_1/ipshared/e600/hdl/verilog/d_conv_mac_muladddEe.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'd_conv_mac_muladddEe' (8#1) [d:/work/kb_radar_course/lesson_8/vivado/zc706_hw_v/zc706_hw_v.srcs/sources_1/bd/design_1/ipshared/e600/hdl/verilog/d_conv_mac_muladddEe.v:30]
+INFO: [Synth 8-6155] done synthesizing module 'fir_filter_a' (9#1) [d:/work/kb_radar_course/lesson_8/vivado/zc706_hw_v/zc706_hw_v.srcs/sources_1/bd/design_1/ipshared/e600/hdl/verilog/fir_filter_a.v:10]
+INFO: [Synth 8-6157] synthesizing module 'Block_proc33' [d:/work/kb_radar_course/lesson_8/vivado/zc706_hw_v/zc706_hw_v.srcs/sources_1/bd/design_1/ipshared/e600/hdl/verilog/Block_proc33.v:10]
+	Parameter ap_ST_fsm_state1 bound to: 1'b1 
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [d:/work/kb_radar_course/lesson_8/vivado/zc706_hw_v/zc706_hw_v.srcs/sources_1/bd/design_1/ipshared/e600/hdl/verilog/Block_proc33.v:40]
+INFO: [Synth 8-6155] done synthesizing module 'Block_proc33' (10#1) [d:/work/kb_radar_course/lesson_8/vivado/zc706_hw_v/zc706_hw_v.srcs/sources_1/bd/design_1/ipshared/e600/hdl/verilog/Block_proc33.v:10]
+INFO: [Synth 8-6157] synthesizing module 'fir_filter_b' [d:/work/kb_radar_course/lesson_8/vivado/zc706_hw_v/zc706_hw_v.srcs/sources_1/bd/design_1/ipshared/e600/hdl/verilog/fir_filter_b.v:10]
+	Parameter ap_ST_fsm_pp0_stage0 bound to: 1'b1 
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [d:/work/kb_radar_course/lesson_8/vivado/zc706_hw_v/zc706_hw_v.srcs/sources_1/bd/design_1/ipshared/e600/hdl/verilog/fir_filter_b.v:42]
+INFO: [Synth 8-5534] Detected attribute (* use_dsp48 = "no" *) [d:/work/kb_radar_course/lesson_8/vivado/zc706_hw_v/zc706_hw_v.srcs/sources_1/bd/design_1/ipshared/e600/hdl/verilog/fir_filter_b.v:166]
+WARNING: [Synth 8-5974] attribute "use_dsp48" has been deprecated, please use "use_dsp" instead 
+INFO: [Synth 8-6155] done synthesizing module 'fir_filter_b' (11#1) [d:/work/kb_radar_course/lesson_8/vivado/zc706_hw_v/zc706_hw_v.srcs/sources_1/bd/design_1/ipshared/e600/hdl/verilog/fir_filter_b.v:10]
+INFO: [Synth 8-6157] synthesizing module 'fifo_w16_d2_A' [d:/work/kb_radar_course/lesson_8/vivado/zc706_hw_v/zc706_hw_v.srcs/sources_1/bd/design_1/ipshared/e600/hdl/verilog/fifo_w16_d2_A.v:42]
+	Parameter MEM_STYLE bound to: shiftreg - type: string 
+	Parameter DATA_WIDTH bound to: 16 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2'b10 
+INFO: [Synth 8-6157] synthesizing module 'fifo_w16_d2_A_shiftReg' [d:/work/kb_radar_course/lesson_8/vivado/zc706_hw_v/zc706_hw_v.srcs/sources_1/bd/design_1/ipshared/e600/hdl/verilog/fifo_w16_d2_A.v:8]
+	Parameter DATA_WIDTH bound to: 16 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2'b10 
+INFO: [Synth 8-6155] done synthesizing module 'fifo_w16_d2_A_shiftReg' (12#1) [d:/work/kb_radar_course/lesson_8/vivado/zc706_hw_v/zc706_hw_v.srcs/sources_1/bd/design_1/ipshared/e600/hdl/verilog/fifo_w16_d2_A.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'fifo_w16_d2_A' (13#1) [d:/work/kb_radar_course/lesson_8/vivado/zc706_hw_v/zc706_hw_v.srcs/sources_1/bd/design_1/ipshared/e600/hdl/verilog/fifo_w16_d2_A.v:42]
+INFO: [Synth 8-6155] done synthesizing module 'd_conv' (14#1) [d:/work/kb_radar_course/lesson_8/vivado/zc706_hw_v/zc706_hw_v.srcs/sources_1/bd/design_1/ipshared/e600/hdl/verilog/d_conv.v:12]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_d_conv_0_0' (15#1) [d:/work/kb_radar_course/lesson_8/vivado/zc706_hw_v/zc706_hw_v.srcs/sources_1/bd/design_1/ip/design_1_d_conv_0_0/synth/design_1_d_conv_0_0.v:58]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 898.605 ; gain = 247.027
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 898.605 ; gain = 247.027
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 898.605 ; gain = 247.027
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [d:/work/kb_radar_course/lesson_8/vivado/zc706_hw_v/zc706_hw_v.srcs/sources_1/bd/design_1/ip/design_1_d_conv_0_0/constraints/d_conv_ooc.xdc] for cell 'inst'
+Finished Parsing XDC File [d:/work/kb_radar_course/lesson_8/vivado/zc706_hw_v/zc706_hw_v.srcs/sources_1/bd/design_1/ip/design_1_d_conv_0_0/constraints/d_conv_ooc.xdc] for cell 'inst'
+Parsing XDC File [D:/work/kb_radar_course/lesson_8/vivado/zc706_hw_v/zc706_hw_v.runs/design_1_d_conv_0_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [D:/work/kb_radar_course/lesson_8/vivado/zc706_hw_v/zc706_hw_v.runs/design_1_d_conv_0_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 1037.492 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.147 . Memory (MB): peak = 1050.070 ; gain = 12.578
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:11 ; elapsed = 00:00:14 . Memory (MB): peak = 1050.070 ; gain = 398.492
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z045ffg900-2
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:11 ; elapsed = 00:00:14 . Memory (MB): peak = 1050.070 ; gain = 398.492
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for inst. (constraint file  D:/work/kb_radar_course/lesson_8/vivado/zc706_hw_v/zc706_hw_v.runs/design_1_d_conv_0_0_synth_1/dont_touch.xdc, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:14 . Memory (MB): peak = 1050.070 ; gain = 398.492
+---------------------------------------------------------------------------------
+INFO: [Synth 8-4471] merging register 'mul_ln700_39_reg_828_reg[0:0]' into 'mul_ln700_34_reg_803_reg[0:0]' [d:/work/kb_radar_course/lesson_8/vivado/zc706_hw_v/zc706_hw_v.srcs/sources_1/bd/design_1/ipshared/e600/hdl/verilog/fir_filter_a.v:540]
+INFO: [Synth 8-4471] merging register 'mul_ln700_40_reg_833_reg[1:0]' into 'mul_ln700_38_reg_823_reg[1:0]' [d:/work/kb_radar_course/lesson_8/vivado/zc706_hw_v/zc706_hw_v.srcs/sources_1/bd/design_1/ipshared/e600/hdl/verilog/fir_filter_a.v:540]
+INFO: [Synth 8-4471] merging register 'mul_ln700_42_reg_843_reg[1:0]' into 'mul_ln700_38_reg_823_reg[1:0]' [d:/work/kb_radar_course/lesson_8/vivado/zc706_hw_v/zc706_hw_v.srcs/sources_1/bd/design_1/ipshared/e600/hdl/verilog/fir_filter_a.v:542]
+INFO: [Synth 8-4471] merging register 'mul_ln700_51_reg_888_reg[1:0]' into 'mul_ln700_38_reg_823_reg[1:0]' [d:/work/kb_radar_course/lesson_8/vivado/zc706_hw_v/zc706_hw_v.srcs/sources_1/bd/design_1/ipshared/e600/hdl/verilog/fir_filter_a.v:562]
+INFO: [Synth 8-4471] merging register 'mul_ln700_53_reg_898_reg[1:0]' into 'mul_ln700_38_reg_823_reg[1:0]' [d:/work/kb_radar_course/lesson_8/vivado/zc706_hw_v/zc706_hw_v.srcs/sources_1/bd/design_1/ipshared/e600/hdl/verilog/fir_filter_a.v:564]
+INFO: [Synth 8-4471] merging register 'mul_ln700_54_reg_903_reg[0:0]' into 'mul_ln700_34_reg_803_reg[0:0]' [d:/work/kb_radar_course/lesson_8/vivado/zc706_hw_v/zc706_hw_v.srcs/sources_1/bd/design_1/ipshared/e600/hdl/verilog/fir_filter_a.v:564]
+INFO: [Synth 8-4471] merging register 'mul_ln700_55_reg_908_reg[1:0]' into 'mul_ln700_38_reg_823_reg[1:0]' [d:/work/kb_radar_course/lesson_8/vivado/zc706_hw_v/zc706_hw_v.srcs/sources_1/bd/design_1/ipshared/e600/hdl/verilog/fir_filter_a.v:570]
+INFO: [Synth 8-4471] merging register 'mul_ln700_59_reg_928_reg[0:0]' into 'mul_ln700_34_reg_803_reg[0:0]' [d:/work/kb_radar_course/lesson_8/vivado/zc706_hw_v/zc706_hw_v.srcs/sources_1/bd/design_1/ipshared/e600/hdl/verilog/fir_filter_a.v:576]
+INFO: [Synth 8-4471] merging register 'add_ln700_49_reg_983_reg[0:0]' into 'mul_ln700_34_reg_803_reg[0:0]' [d:/work/kb_radar_course/lesson_8/vivado/zc706_hw_v/zc706_hw_v.srcs/sources_1/bd/design_1/ipshared/e600/hdl/verilog/fir_filter_a.v:566]
+INFO: [Synth 8-4471] merging register 'mul_ln700_8_reg_828_reg[0:0]' into 'mul_ln700_3_reg_803_reg[0:0]' [d:/work/kb_radar_course/lesson_8/vivado/zc706_hw_v/zc706_hw_v.srcs/sources_1/bd/design_1/ipshared/e600/hdl/verilog/fir_filter_b.v:578]
+INFO: [Synth 8-4471] merging register 'mul_ln700_9_reg_833_reg[1:0]' into 'mul_ln700_7_reg_823_reg[1:0]' [d:/work/kb_radar_course/lesson_8/vivado/zc706_hw_v/zc706_hw_v.srcs/sources_1/bd/design_1/ipshared/e600/hdl/verilog/fir_filter_b.v:578]
+INFO: [Synth 8-4471] merging register 'mul_ln700_11_reg_843_reg[1:0]' into 'mul_ln700_7_reg_823_reg[1:0]' [d:/work/kb_radar_course/lesson_8/vivado/zc706_hw_v/zc706_hw_v.srcs/sources_1/bd/design_1/ipshared/e600/hdl/verilog/fir_filter_b.v:580]
+INFO: [Synth 8-4471] merging register 'mul_ln700_20_reg_888_reg[1:0]' into 'mul_ln700_7_reg_823_reg[1:0]' [d:/work/kb_radar_course/lesson_8/vivado/zc706_hw_v/zc706_hw_v.srcs/sources_1/bd/design_1/ipshared/e600/hdl/verilog/fir_filter_b.v:544]
+INFO: [Synth 8-4471] merging register 'mul_ln700_22_reg_898_reg[1:0]' into 'mul_ln700_7_reg_823_reg[1:0]' [d:/work/kb_radar_course/lesson_8/vivado/zc706_hw_v/zc706_hw_v.srcs/sources_1/bd/design_1/ipshared/e600/hdl/verilog/fir_filter_b.v:546]
+INFO: [Synth 8-4471] merging register 'mul_ln700_23_reg_903_reg[0:0]' into 'mul_ln700_3_reg_803_reg[0:0]' [d:/work/kb_radar_course/lesson_8/vivado/zc706_hw_v/zc706_hw_v.srcs/sources_1/bd/design_1/ipshared/e600/hdl/verilog/fir_filter_b.v:546]
+INFO: [Synth 8-4471] merging register 'mul_ln700_24_reg_908_reg[1:0]' into 'mul_ln700_7_reg_823_reg[1:0]' [d:/work/kb_radar_course/lesson_8/vivado/zc706_hw_v/zc706_hw_v.srcs/sources_1/bd/design_1/ipshared/e600/hdl/verilog/fir_filter_b.v:554]
+INFO: [Synth 8-4471] merging register 'mul_ln700_28_reg_928_reg[0:0]' into 'mul_ln700_3_reg_803_reg[0:0]' [d:/work/kb_radar_course/lesson_8/vivado/zc706_hw_v/zc706_hw_v.srcs/sources_1/bd/design_1/ipshared/e600/hdl/verilog/fir_filter_b.v:560]
+INFO: [Synth 8-4471] merging register 'add_ln700_19_reg_983_reg[0:0]' into 'mul_ln700_3_reg_803_reg[0:0]' [d:/work/kb_radar_course/lesson_8/vivado/zc706_hw_v/zc706_hw_v.srcs/sources_1/bd/design_1/ipshared/e600/hdl/verilog/fir_filter_b.v:550]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:15 . Memory (MB): peak = 1050.070 ; gain = 398.492
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+------------------+------------+----------+
+|      |RTL Partition     |Replication |Instances |
++------+------------------+------------+----------+
+|1     |fir_filter_a__GB0 |           1|     21385|
+|2     |fir_filter_a__GB1 |           1|      5923|
+|3     |fir_filter_b__GB0 |           1|     21385|
+|4     |fir_filter_b__GB1 |           1|      5923|
+|5     |d_conv__GC0       |           1|       547|
++------+------------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     32 Bit       Adders := 6     
+	   5 Input     32 Bit       Adders := 2     
+	   4 Input     32 Bit       Adders := 10    
+	   2 Input     32 Bit       Adders := 10    
+	   2 Input      2 Bit       Adders := 4     
++---XORs : 
+	   2 Input      1 Bit         XORs := 2     
++---Registers : 
+	               32 Bit    Registers := 82    
+	               31 Bit    Registers := 2     
+	               26 Bit    Registers := 4     
+	               16 Bit    Registers := 78    
+	                2 Bit    Registers := 6     
+	                1 Bit    Registers := 28    
++---Multipliers : 
+	                10x32  Multipliers := 12    
+	                11x32  Multipliers := 10    
+	                13x32  Multipliers := 8     
+	                14x32  Multipliers := 20    
+	                12x32  Multipliers := 4     
+	                 8x32  Multipliers := 4     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 12    
+	   2 Input      1 Bit        Muxes := 27    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module fir_filter_a 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     32 Bit       Adders := 3     
+	   5 Input     32 Bit       Adders := 1     
+	   4 Input     32 Bit       Adders := 5     
+	   2 Input     32 Bit       Adders := 5     
++---Registers : 
+	               32 Bit    Registers := 41    
+	               31 Bit    Registers := 1     
+	               26 Bit    Registers := 2     
+	               16 Bit    Registers := 33    
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 6     
++---Multipliers : 
+	                10x32  Multipliers := 6     
+	                11x32  Multipliers := 5     
+	                13x32  Multipliers := 4     
+	                14x32  Multipliers := 10    
+	                12x32  Multipliers := 2     
+	                 8x32  Multipliers := 2     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 2     
+Module fir_filter_b 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     32 Bit       Adders := 3     
+	   5 Input     32 Bit       Adders := 1     
+	   4 Input     32 Bit       Adders := 5     
+	   2 Input     32 Bit       Adders := 5     
++---Registers : 
+	               32 Bit    Registers := 41    
+	               31 Bit    Registers := 1     
+	               26 Bit    Registers := 2     
+	               16 Bit    Registers := 33    
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 6     
++---Multipliers : 
+	                10x32  Multipliers := 6     
+	                11x32  Multipliers := 5     
+	                13x32  Multipliers := 4     
+	                14x32  Multipliers := 10    
+	                12x32  Multipliers := 2     
+	                 8x32  Multipliers := 2     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 2     
+Module iq_mult 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 2     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 2     
+Module Block_proc 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 2     
+Module Block_proc33 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 2     
+Module fifo_w16_d2_A_shiftReg__1 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 1     
+Module fifo_w16_d2_A__1 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 4     
+Module fifo_w16_d2_A_shiftReg__2 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 1     
+Module fifo_w16_d2_A__2 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 4     
+Module fifo_w16_d2_A_shiftReg__3 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 1     
+Module fifo_w16_d2_A__3 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 4     
+Module fifo_w16_d2_A_shiftReg 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 1     
+Module fifo_w16_d2_A 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 4     
+Module d_conv 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 2     
++---Registers : 
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 900 (col length:140)
+BRAMs: 1090 (col length: RAMB18 140 RAMB36 70)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+DSP Report: Generating DSP mul_ln700_62_reg_943_reg, operation Mode is: (A*(B:0x3fe27))'.
+DSP Report: register mul_ln700_62_reg_943_reg is absorbed into DSP mul_ln700_62_reg_943_reg.
+DSP Report: operator d_conv_mul_mul_16bkb_U5/d_conv_mul_mul_16bkb_DSP48_0_U/p is absorbed into DSP mul_ln700_62_reg_943_reg.
+DSP Report: Generating DSP add_ln700_56_reg_998_reg, operation Mode is: PCIN+A''*(B:0x3fe5f).
+DSP Report: register shift_reg_V_0_reg is absorbed into DSP add_ln700_56_reg_998_reg.
+DSP Report: register shift_reg_V_0_load_reg_938_reg is absorbed into DSP add_ln700_56_reg_998_reg.
+DSP Report: register add_ln700_56_reg_998_reg is absorbed into DSP add_ln700_56_reg_998_reg.
+DSP Report: operator d_conv_mac_muladddEe_U7/d_conv_mac_muladddEe_DSP48_2_U/p is absorbed into DSP add_ln700_56_reg_998_reg.
+DSP Report: operator d_conv_mac_muladddEe_U7/d_conv_mac_muladddEe_DSP48_2_U/m is absorbed into DSP add_ln700_56_reg_998_reg.
+DSP Report: Generating DSP d_conv_mul_mul_16cud_U6/d_conv_mul_mul_16cud_DSP48_1_U/p, operation Mode is: A''*(B:0x3fdf9).
+DSP Report: register shift_reg_V_1_reg is absorbed into DSP d_conv_mul_mul_16cud_U6/d_conv_mul_mul_16cud_DSP48_1_U/p.
+DSP Report: register sext_ln180_reg_933_reg is absorbed into DSP d_conv_mul_mul_16cud_U6/d_conv_mul_mul_16cud_DSP48_1_U/p.
+DSP Report: operator d_conv_mul_mul_16cud_U6/d_conv_mul_mul_16cud_DSP48_1_U/p is absorbed into DSP d_conv_mul_mul_16cud_U6/d_conv_mul_mul_16cud_DSP48_1_U/p.
+DSP Report: Generating DSP mul_ln700_51_reg_888_reg, operation Mode is: (A2*(B:0x104c))'.
+DSP Report: register shift_reg_V_10_reg is absorbed into DSP mul_ln700_51_reg_888_reg.
+DSP Report: register mul_ln700_51_reg_888_reg is absorbed into DSP mul_ln700_51_reg_888_reg.
+DSP Report: operator mul_ln700_51_fu_457_p2 is absorbed into DSP mul_ln700_51_reg_888_reg.
+DSP Report: Generating DSP add_ln700_48_reg_978_reg, operation Mode is: (C+(A*(B:0xc83))')'.
+DSP Report: register add_ln700_48_reg_978_reg is absorbed into DSP add_ln700_48_reg_978_reg.
+DSP Report: register mul_ln700_52_reg_893_reg is absorbed into DSP add_ln700_48_reg_978_reg.
+DSP Report: operator add_ln700_48_fu_692_p2 is absorbed into DSP add_ln700_48_reg_978_reg.
+DSP Report: operator mul_ln700_52_fu_473_p2 is absorbed into DSP add_ln700_48_reg_978_reg.
+DSP Report: Generating DSP mul_ln700_50_reg_883_reg, operation Mode is: (A''*(B:0x13d7))'.
+DSP Report: register shift_reg_V_10_reg is absorbed into DSP mul_ln700_50_reg_883_reg.
+DSP Report: register shift_reg_V_11_reg is absorbed into DSP mul_ln700_50_reg_883_reg.
+DSP Report: register mul_ln700_50_reg_883_reg is absorbed into DSP mul_ln700_50_reg_883_reg.
+DSP Report: operator mul_ln700_50_fu_441_p2 is absorbed into DSP mul_ln700_50_reg_883_reg.
+DSP Report: Generating DSP mul_ln700_49_reg_878_reg, operation Mode is: (ACIN''*(B:0x16d5))'.
+DSP Report: register shift_reg_V_11_reg is absorbed into DSP mul_ln700_49_reg_878_reg.
+DSP Report: register shift_reg_V_12_reg is absorbed into DSP mul_ln700_49_reg_878_reg.
+DSP Report: register mul_ln700_49_reg_878_reg is absorbed into DSP mul_ln700_49_reg_878_reg.
+DSP Report: operator mul_ln700_49_fu_425_p2 is absorbed into DSP mul_ln700_49_reg_878_reg.
+DSP Report: Generating DSP mul_ln700_48_reg_873_reg, operation Mode is: (ACIN2*(B:0x1901))'.
+DSP Report: register shift_reg_V_13_reg is absorbed into DSP mul_ln700_48_reg_873_reg.
+DSP Report: register mul_ln700_48_reg_873_reg is absorbed into DSP mul_ln700_48_reg_873_reg.
+DSP Report: operator mul_ln700_48_fu_409_p2 is absorbed into DSP mul_ln700_48_reg_873_reg.
+DSP Report: Generating DSP mul_ln700_47_reg_868_reg, operation Mode is: (ACIN2*(B:0x1a25))'.
+DSP Report: register shift_reg_V_14_reg is absorbed into DSP mul_ln700_47_reg_868_reg.
+DSP Report: register mul_ln700_47_reg_868_reg is absorbed into DSP mul_ln700_47_reg_868_reg.
+DSP Report: operator mul_ln700_47_fu_393_p2 is absorbed into DSP mul_ln700_47_reg_868_reg.
+DSP Report: Generating DSP mul_ln700_46_reg_863_reg, operation Mode is: (ACIN2*(B:0x1a25))'.
+DSP Report: register shift_reg_V_15_reg is absorbed into DSP mul_ln700_46_reg_863_reg.
+DSP Report: register mul_ln700_46_reg_863_reg is absorbed into DSP mul_ln700_46_reg_863_reg.
+DSP Report: operator mul_ln700_46_fu_377_p2 is absorbed into DSP mul_ln700_46_reg_863_reg.
+DSP Report: Generating DSP mul_ln700_45_reg_858_reg, operation Mode is: (ACIN2*(B:0x1901))'.
+DSP Report: register shift_reg_V_16_reg is absorbed into DSP mul_ln700_45_reg_858_reg.
+DSP Report: register mul_ln700_45_reg_858_reg is absorbed into DSP mul_ln700_45_reg_858_reg.
+DSP Report: operator mul_ln700_45_fu_361_p2 is absorbed into DSP mul_ln700_45_reg_858_reg.
+DSP Report: Generating DSP mul_ln700_44_reg_853_reg, operation Mode is: (ACIN2*(B:0x16d5))'.
+DSP Report: register shift_reg_V_17_reg is absorbed into DSP mul_ln700_44_reg_853_reg.
+DSP Report: register mul_ln700_44_reg_853_reg is absorbed into DSP mul_ln700_44_reg_853_reg.
+DSP Report: operator mul_ln700_44_fu_345_p2 is absorbed into DSP mul_ln700_44_reg_853_reg.
+DSP Report: Generating DSP mul_ln700_43_reg_848_reg, operation Mode is: (ACIN2*(B:0x13d7))'.
+DSP Report: register shift_reg_V_18_reg is absorbed into DSP mul_ln700_43_reg_848_reg.
+DSP Report: register mul_ln700_43_reg_848_reg is absorbed into DSP mul_ln700_43_reg_848_reg.
+DSP Report: operator mul_ln700_43_fu_329_p2 is absorbed into DSP mul_ln700_43_reg_848_reg.
+DSP Report: Generating DSP mul_ln700_42_reg_843_reg, operation Mode is: (ACIN2*(B:0x104c))'.
+DSP Report: register shift_reg_V_19_reg is absorbed into DSP mul_ln700_42_reg_843_reg.
+DSP Report: register mul_ln700_42_reg_843_reg is absorbed into DSP mul_ln700_42_reg_843_reg.
+DSP Report: operator mul_ln700_42_fu_313_p2 is absorbed into DSP mul_ln700_42_reg_843_reg.
+DSP Report: Generating DSP mul_ln700_41_reg_838_reg, operation Mode is: (ACIN2*(B:0xc83))'.
+DSP Report: register shift_reg_V_20_reg is absorbed into DSP mul_ln700_41_reg_838_reg.
+DSP Report: register mul_ln700_41_reg_838_reg is absorbed into DSP mul_ln700_41_reg_838_reg.
+DSP Report: operator mul_ln700_41_fu_297_p2 is absorbed into DSP mul_ln700_41_reg_838_reg.
+DSP Report: Generating DSP mul_ln700_40_reg_833_reg, operation Mode is: (ACIN2*(B:0x8cc))'.
+DSP Report: register shift_reg_V_21_reg is absorbed into DSP mul_ln700_40_reg_833_reg.
+DSP Report: register mul_ln700_40_reg_833_reg is absorbed into DSP mul_ln700_40_reg_833_reg.
+DSP Report: operator mul_ln700_40_fu_281_p2 is absorbed into DSP mul_ln700_40_reg_833_reg.
+DSP Report: Generating DSP mul_ln700_39_reg_828_reg, operation Mode is: (ACIN2*(B:0x56a))'.
+DSP Report: register shift_reg_V_22_reg is absorbed into DSP mul_ln700_39_reg_828_reg.
+DSP Report: register mul_ln700_39_reg_828_reg is absorbed into DSP mul_ln700_39_reg_828_reg.
+DSP Report: operator mul_ln700_39_fu_265_p2 is absorbed into DSP mul_ln700_39_reg_828_reg.
+DSP Report: Generating DSP mul_ln700_38_reg_823_reg, operation Mode is: (ACIN2*(B:0x294))'.
+DSP Report: register shift_reg_V_23_reg is absorbed into DSP mul_ln700_38_reg_823_reg.
+DSP Report: register mul_ln700_38_reg_823_reg is absorbed into DSP mul_ln700_38_reg_823_reg.
+DSP Report: operator mul_ln700_38_fu_249_p2 is absorbed into DSP mul_ln700_38_reg_823_reg.
+DSP Report: Generating DSP add_ln700_34_reg_958_reg, operation Mode is: (C+(ACIN2*(B:0x67))')'.
+DSP Report: register shift_reg_V_24_reg is absorbed into DSP add_ln700_34_reg_958_reg.
+DSP Report: register add_ln700_34_reg_958_reg is absorbed into DSP add_ln700_34_reg_958_reg.
+DSP Report: register mul_ln700_37_reg_818_reg is absorbed into DSP add_ln700_34_reg_958_reg.
+DSP Report: operator add_ln700_34_fu_646_p2 is absorbed into DSP add_ln700_34_reg_958_reg.
+DSP Report: operator mul_ln700_37_fu_233_p2 is absorbed into DSP add_ln700_34_reg_958_reg.
+DSP Report: Generating DSP mul_ln700_36_reg_813_reg, operation Mode is: (ACIN2*(B:0x3feed))'.
+DSP Report: register shift_reg_V_25_reg is absorbed into DSP mul_ln700_36_reg_813_reg.
+DSP Report: register mul_ln700_36_reg_813_reg is absorbed into DSP mul_ln700_36_reg_813_reg.
+DSP Report: operator mul_ln700_36_fu_217_p2 is absorbed into DSP mul_ln700_36_reg_813_reg.
+DSP Report: Generating DSP add_ln700_33_reg_953_reg, operation Mode is: (C+(ACIN2*(B:0x3fe1b))')'.
+DSP Report: register shift_reg_V_26_reg is absorbed into DSP add_ln700_33_reg_953_reg.
+DSP Report: register add_ln700_33_reg_953_reg is absorbed into DSP add_ln700_33_reg_953_reg.
+DSP Report: register mul_ln700_35_reg_808_reg is absorbed into DSP add_ln700_33_reg_953_reg.
+DSP Report: operator add_ln700_33_fu_642_p2 is absorbed into DSP add_ln700_33_reg_953_reg.
+DSP Report: operator mul_ln700_35_fu_201_p2 is absorbed into DSP add_ln700_33_reg_953_reg.
+DSP Report: Generating DSP mul_ln700_34_reg_803_reg, operation Mode is: (ACIN2*(B:0x3fdd6))'.
+DSP Report: register shift_reg_V_27_reg is absorbed into DSP mul_ln700_34_reg_803_reg.
+DSP Report: register mul_ln700_34_reg_803_reg is absorbed into DSP mul_ln700_34_reg_803_reg.
+DSP Report: operator mul_ln700_34_fu_185_p2 is absorbed into DSP mul_ln700_34_reg_803_reg.
+DSP Report: Generating DSP mul_ln700_33_reg_798_reg, operation Mode is: (ACIN2*(B:0x3fdf9))'.
+DSP Report: register shift_reg_V_28_reg is absorbed into DSP mul_ln700_33_reg_798_reg.
+DSP Report: register mul_ln700_33_reg_798_reg is absorbed into DSP mul_ln700_33_reg_798_reg.
+DSP Report: operator mul_ln700_33_fu_169_p2 is absorbed into DSP mul_ln700_33_reg_798_reg.
+DSP Report: Generating DSP mul_ln700_32_reg_793_reg, operation Mode is: (ACIN2*(B:0x3fe5f))'.
+DSP Report: register shift_reg_V_29_reg is absorbed into DSP mul_ln700_32_reg_793_reg.
+DSP Report: register mul_ln700_32_reg_793_reg is absorbed into DSP mul_ln700_32_reg_793_reg.
+DSP Report: operator mul_ln700_32_fu_153_p2 is absorbed into DSP mul_ln700_32_reg_793_reg.
+DSP Report: Generating DSP mul_ln700_reg_788_reg, operation Mode is: (ACIN2*(B:0x3fe27))'.
+DSP Report: register shift_reg_V_30_reg is absorbed into DSP mul_ln700_reg_788_reg.
+DSP Report: register mul_ln700_reg_788_reg is absorbed into DSP mul_ln700_reg_788_reg.
+DSP Report: operator mul_ln700_fu_137_p2 is absorbed into DSP mul_ln700_reg_788_reg.
+DSP Report: Generating DSP mul_ln700_55_reg_908_reg, operation Mode is: (A''*(B:0x294))'.
+DSP Report: register shift_reg_V_5_reg is absorbed into DSP mul_ln700_55_reg_908_reg.
+DSP Report: register shift_reg_V_6_reg is absorbed into DSP mul_ln700_55_reg_908_reg.
+DSP Report: register mul_ln700_55_reg_908_reg is absorbed into DSP mul_ln700_55_reg_908_reg.
+DSP Report: operator mul_ln700_55_fu_521_p2 is absorbed into DSP mul_ln700_55_reg_908_reg.
+DSP Report: Generating DSP mul_ln700_53_reg_898_reg, operation Mode is: (ACIN''*(B:0x8cc))'.
+DSP Report: register shift_reg_V_7_reg is absorbed into DSP mul_ln700_53_reg_898_reg.
+DSP Report: register shift_reg_V_8_reg is absorbed into DSP mul_ln700_53_reg_898_reg.
+DSP Report: register mul_ln700_53_reg_898_reg is absorbed into DSP mul_ln700_53_reg_898_reg.
+DSP Report: operator mul_ln700_53_fu_489_p2 is absorbed into DSP mul_ln700_53_reg_898_reg.
+DSP Report: Generating DSP mul_ln700_59_reg_928_reg, operation Mode is: (A2*(B:0x3fdd6))'.
+DSP Report: register shift_reg_V_2_reg is absorbed into DSP mul_ln700_59_reg_928_reg.
+DSP Report: register mul_ln700_59_reg_928_reg is absorbed into DSP mul_ln700_59_reg_928_reg.
+DSP Report: operator mul_ln700_59_fu_585_p2 is absorbed into DSP mul_ln700_59_reg_928_reg.
+DSP Report: Generating DSP mul_ln700_57_reg_918_reg, operation Mode is: (ACIN''*(B:0x3feed))'.
+DSP Report: register shift_reg_V_3_reg is absorbed into DSP mul_ln700_57_reg_918_reg.
+DSP Report: register shift_reg_V_4_reg is absorbed into DSP mul_ln700_57_reg_918_reg.
+DSP Report: register mul_ln700_57_reg_918_reg is absorbed into DSP mul_ln700_57_reg_918_reg.
+DSP Report: operator mul_ln700_57_fu_553_p2 is absorbed into DSP mul_ln700_57_reg_918_reg.
+DSP Report: Generating DSP mul_ln700_56_reg_913_reg, operation Mode is: (ACIN2*(B:0x67))'.
+DSP Report: register shift_reg_V_5_reg is absorbed into DSP mul_ln700_56_reg_913_reg.
+DSP Report: register mul_ln700_56_reg_913_reg is absorbed into DSP mul_ln700_56_reg_913_reg.
+DSP Report: operator mul_ln700_56_fu_537_p2 is absorbed into DSP mul_ln700_56_reg_913_reg.
+DSP Report: Generating DSP mul_ln700_54_reg_903_reg, operation Mode is: (ACIN''*(B:0x56a))'.
+DSP Report: register shift_reg_V_6_reg is absorbed into DSP mul_ln700_54_reg_903_reg.
+DSP Report: register shift_reg_V_7_reg is absorbed into DSP mul_ln700_54_reg_903_reg.
+DSP Report: register mul_ln700_54_reg_903_reg is absorbed into DSP mul_ln700_54_reg_903_reg.
+DSP Report: operator mul_ln700_54_fu_505_p2 is absorbed into DSP mul_ln700_54_reg_903_reg.
+DSP Report: Generating DSP mul_ln700_58_reg_923_reg, operation Mode is: (A''*(B:0x3fe1b))'.
+DSP Report: register shift_reg_V_2_reg is absorbed into DSP mul_ln700_58_reg_923_reg.
+DSP Report: register shift_reg_V_3_reg is absorbed into DSP mul_ln700_58_reg_923_reg.
+DSP Report: register mul_ln700_58_reg_923_reg is absorbed into DSP mul_ln700_58_reg_923_reg.
+DSP Report: operator mul_ln700_58_fu_569_p2 is absorbed into DSP mul_ln700_58_reg_923_reg.
+DSP Report: Generating DSP mul_ln700_31_reg_943_reg, operation Mode is: (A*(B:0x3fe27))'.
+DSP Report: register mul_ln700_31_reg_943_reg is absorbed into DSP mul_ln700_31_reg_943_reg.
+DSP Report: operator d_conv_mul_mul_16bkb_U14/d_conv_mul_mul_16bkb_DSP48_0_U/p is absorbed into DSP mul_ln700_31_reg_943_reg.
+DSP Report: Generating DSP add_ln700_26_reg_998_reg, operation Mode is: PCIN+A''*(B:0x3fe5f).
+DSP Report: register shift_reg_V_1_0_reg is absorbed into DSP add_ln700_26_reg_998_reg.
+DSP Report: register shift_reg_V_1_0_load_reg_938_reg is absorbed into DSP add_ln700_26_reg_998_reg.
+DSP Report: register add_ln700_26_reg_998_reg is absorbed into DSP add_ln700_26_reg_998_reg.
+DSP Report: operator d_conv_mac_muladddEe_U16/d_conv_mac_muladddEe_DSP48_2_U/p is absorbed into DSP add_ln700_26_reg_998_reg.
+DSP Report: operator d_conv_mac_muladddEe_U16/d_conv_mac_muladddEe_DSP48_2_U/m is absorbed into DSP add_ln700_26_reg_998_reg.
+DSP Report: Generating DSP d_conv_mul_mul_16cud_U15/d_conv_mul_mul_16cud_DSP48_1_U/p, operation Mode is: A''*(B:0x3fdf9).
+DSP Report: register shift_reg_V_1_1_reg is absorbed into DSP d_conv_mul_mul_16cud_U15/d_conv_mul_mul_16cud_DSP48_1_U/p.
+DSP Report: register sext_ln180_reg_933_reg is absorbed into DSP d_conv_mul_mul_16cud_U15/d_conv_mul_mul_16cud_DSP48_1_U/p.
+DSP Report: operator d_conv_mul_mul_16cud_U15/d_conv_mul_mul_16cud_DSP48_1_U/p is absorbed into DSP d_conv_mul_mul_16cud_U15/d_conv_mul_mul_16cud_DSP48_1_U/p.
+DSP Report: Generating DSP mul_ln700_20_reg_888_reg, operation Mode is: (A2*(B:0x104c))'.
+DSP Report: register shift_reg_V_1_10_reg is absorbed into DSP mul_ln700_20_reg_888_reg.
+DSP Report: register mul_ln700_20_reg_888_reg is absorbed into DSP mul_ln700_20_reg_888_reg.
+DSP Report: operator mul_ln700_20_fu_457_p2 is absorbed into DSP mul_ln700_20_reg_888_reg.
+DSP Report: Generating DSP add_ln700_18_reg_978_reg, operation Mode is: (C+(A*(B:0xc83))')'.
+DSP Report: register add_ln700_18_reg_978_reg is absorbed into DSP add_ln700_18_reg_978_reg.
+DSP Report: register mul_ln700_21_reg_893_reg is absorbed into DSP add_ln700_18_reg_978_reg.
+DSP Report: operator add_ln700_18_fu_692_p2 is absorbed into DSP add_ln700_18_reg_978_reg.
+DSP Report: operator mul_ln700_21_fu_473_p2 is absorbed into DSP add_ln700_18_reg_978_reg.
+DSP Report: Generating DSP mul_ln700_19_reg_883_reg, operation Mode is: (A''*(B:0x13d7))'.
+DSP Report: register shift_reg_V_1_10_reg is absorbed into DSP mul_ln700_19_reg_883_reg.
+DSP Report: register shift_reg_V_1_11_reg is absorbed into DSP mul_ln700_19_reg_883_reg.
+DSP Report: register mul_ln700_19_reg_883_reg is absorbed into DSP mul_ln700_19_reg_883_reg.
+DSP Report: operator mul_ln700_19_fu_441_p2 is absorbed into DSP mul_ln700_19_reg_883_reg.
+DSP Report: Generating DSP mul_ln700_18_reg_878_reg, operation Mode is: (ACIN''*(B:0x16d5))'.
+DSP Report: register shift_reg_V_1_11_reg is absorbed into DSP mul_ln700_18_reg_878_reg.
+DSP Report: register shift_reg_V_1_12_reg is absorbed into DSP mul_ln700_18_reg_878_reg.
+DSP Report: register mul_ln700_18_reg_878_reg is absorbed into DSP mul_ln700_18_reg_878_reg.
+DSP Report: operator mul_ln700_18_fu_425_p2 is absorbed into DSP mul_ln700_18_reg_878_reg.
+DSP Report: Generating DSP mul_ln700_17_reg_873_reg, operation Mode is: (ACIN2*(B:0x1901))'.
+DSP Report: register shift_reg_V_1_13_reg is absorbed into DSP mul_ln700_17_reg_873_reg.
+DSP Report: register mul_ln700_17_reg_873_reg is absorbed into DSP mul_ln700_17_reg_873_reg.
+DSP Report: operator mul_ln700_17_fu_409_p2 is absorbed into DSP mul_ln700_17_reg_873_reg.
+DSP Report: Generating DSP mul_ln700_16_reg_868_reg, operation Mode is: (ACIN2*(B:0x1a25))'.
+DSP Report: register shift_reg_V_1_14_reg is absorbed into DSP mul_ln700_16_reg_868_reg.
+DSP Report: register mul_ln700_16_reg_868_reg is absorbed into DSP mul_ln700_16_reg_868_reg.
+DSP Report: operator mul_ln700_16_fu_393_p2 is absorbed into DSP mul_ln700_16_reg_868_reg.
+DSP Report: Generating DSP mul_ln700_15_reg_863_reg, operation Mode is: (ACIN2*(B:0x1a25))'.
+DSP Report: register shift_reg_V_1_15_reg is absorbed into DSP mul_ln700_15_reg_863_reg.
+DSP Report: register mul_ln700_15_reg_863_reg is absorbed into DSP mul_ln700_15_reg_863_reg.
+DSP Report: operator mul_ln700_15_fu_377_p2 is absorbed into DSP mul_ln700_15_reg_863_reg.
+DSP Report: Generating DSP mul_ln700_14_reg_858_reg, operation Mode is: (ACIN2*(B:0x1901))'.
+DSP Report: register shift_reg_V_1_16_reg is absorbed into DSP mul_ln700_14_reg_858_reg.
+DSP Report: register mul_ln700_14_reg_858_reg is absorbed into DSP mul_ln700_14_reg_858_reg.
+DSP Report: operator mul_ln700_14_fu_361_p2 is absorbed into DSP mul_ln700_14_reg_858_reg.
+DSP Report: Generating DSP mul_ln700_13_reg_853_reg, operation Mode is: (ACIN2*(B:0x16d5))'.
+DSP Report: register shift_reg_V_1_17_reg is absorbed into DSP mul_ln700_13_reg_853_reg.
+DSP Report: register mul_ln700_13_reg_853_reg is absorbed into DSP mul_ln700_13_reg_853_reg.
+DSP Report: operator mul_ln700_13_fu_345_p2 is absorbed into DSP mul_ln700_13_reg_853_reg.
+DSP Report: Generating DSP mul_ln700_12_reg_848_reg, operation Mode is: (ACIN2*(B:0x13d7))'.
+DSP Report: register shift_reg_V_1_18_reg is absorbed into DSP mul_ln700_12_reg_848_reg.
+DSP Report: register mul_ln700_12_reg_848_reg is absorbed into DSP mul_ln700_12_reg_848_reg.
+DSP Report: operator mul_ln700_12_fu_329_p2 is absorbed into DSP mul_ln700_12_reg_848_reg.
+DSP Report: Generating DSP mul_ln700_11_reg_843_reg, operation Mode is: (ACIN2*(B:0x104c))'.
+DSP Report: register shift_reg_V_1_19_reg is absorbed into DSP mul_ln700_11_reg_843_reg.
+DSP Report: register mul_ln700_11_reg_843_reg is absorbed into DSP mul_ln700_11_reg_843_reg.
+DSP Report: operator mul_ln700_11_fu_313_p2 is absorbed into DSP mul_ln700_11_reg_843_reg.
+DSP Report: Generating DSP mul_ln700_10_reg_838_reg, operation Mode is: (ACIN2*(B:0xc83))'.
+DSP Report: register shift_reg_V_1_20_reg is absorbed into DSP mul_ln700_10_reg_838_reg.
+DSP Report: register mul_ln700_10_reg_838_reg is absorbed into DSP mul_ln700_10_reg_838_reg.
+DSP Report: operator mul_ln700_10_fu_297_p2 is absorbed into DSP mul_ln700_10_reg_838_reg.
+DSP Report: Generating DSP mul_ln700_9_reg_833_reg, operation Mode is: (ACIN2*(B:0x8cc))'.
+DSP Report: register shift_reg_V_1_21_reg is absorbed into DSP mul_ln700_9_reg_833_reg.
+DSP Report: register mul_ln700_9_reg_833_reg is absorbed into DSP mul_ln700_9_reg_833_reg.
+DSP Report: operator mul_ln700_9_fu_281_p2 is absorbed into DSP mul_ln700_9_reg_833_reg.
+DSP Report: Generating DSP mul_ln700_8_reg_828_reg, operation Mode is: (ACIN2*(B:0x56a))'.
+DSP Report: register shift_reg_V_1_22_reg is absorbed into DSP mul_ln700_8_reg_828_reg.
+DSP Report: register mul_ln700_8_reg_828_reg is absorbed into DSP mul_ln700_8_reg_828_reg.
+DSP Report: operator mul_ln700_8_fu_265_p2 is absorbed into DSP mul_ln700_8_reg_828_reg.
+DSP Report: Generating DSP mul_ln700_7_reg_823_reg, operation Mode is: (ACIN2*(B:0x294))'.
+DSP Report: register shift_reg_V_1_23_reg is absorbed into DSP mul_ln700_7_reg_823_reg.
+DSP Report: register mul_ln700_7_reg_823_reg is absorbed into DSP mul_ln700_7_reg_823_reg.
+DSP Report: operator mul_ln700_7_fu_249_p2 is absorbed into DSP mul_ln700_7_reg_823_reg.
+DSP Report: Generating DSP add_ln700_4_reg_958_reg, operation Mode is: (C+(ACIN2*(B:0x67))')'.
+DSP Report: register shift_reg_V_1_24_reg is absorbed into DSP add_ln700_4_reg_958_reg.
+DSP Report: register add_ln700_4_reg_958_reg is absorbed into DSP add_ln700_4_reg_958_reg.
+DSP Report: register mul_ln700_6_reg_818_reg is absorbed into DSP add_ln700_4_reg_958_reg.
+DSP Report: operator add_ln700_4_fu_646_p2 is absorbed into DSP add_ln700_4_reg_958_reg.
+DSP Report: operator mul_ln700_6_fu_233_p2 is absorbed into DSP add_ln700_4_reg_958_reg.
+DSP Report: Generating DSP mul_ln700_5_reg_813_reg, operation Mode is: (ACIN2*(B:0x3feed))'.
+DSP Report: register shift_reg_V_1_25_reg is absorbed into DSP mul_ln700_5_reg_813_reg.
+DSP Report: register mul_ln700_5_reg_813_reg is absorbed into DSP mul_ln700_5_reg_813_reg.
+DSP Report: operator mul_ln700_5_fu_217_p2 is absorbed into DSP mul_ln700_5_reg_813_reg.
+DSP Report: Generating DSP add_ln700_3_reg_953_reg, operation Mode is: (C+(ACIN2*(B:0x3fe1b))')'.
+DSP Report: register shift_reg_V_1_26_reg is absorbed into DSP add_ln700_3_reg_953_reg.
+DSP Report: register add_ln700_3_reg_953_reg is absorbed into DSP add_ln700_3_reg_953_reg.
+DSP Report: register mul_ln700_4_reg_808_reg is absorbed into DSP add_ln700_3_reg_953_reg.
+DSP Report: operator add_ln700_3_fu_642_p2 is absorbed into DSP add_ln700_3_reg_953_reg.
+DSP Report: operator mul_ln700_4_fu_201_p2 is absorbed into DSP add_ln700_3_reg_953_reg.
+DSP Report: Generating DSP mul_ln700_3_reg_803_reg, operation Mode is: (ACIN2*(B:0x3fdd6))'.
+DSP Report: register shift_reg_V_1_27_reg is absorbed into DSP mul_ln700_3_reg_803_reg.
+DSP Report: register mul_ln700_3_reg_803_reg is absorbed into DSP mul_ln700_3_reg_803_reg.
+DSP Report: operator mul_ln700_3_fu_185_p2 is absorbed into DSP mul_ln700_3_reg_803_reg.
+DSP Report: Generating DSP mul_ln700_2_reg_798_reg, operation Mode is: (ACIN2*(B:0x3fdf9))'.
+DSP Report: register shift_reg_V_1_28_reg is absorbed into DSP mul_ln700_2_reg_798_reg.
+DSP Report: register mul_ln700_2_reg_798_reg is absorbed into DSP mul_ln700_2_reg_798_reg.
+DSP Report: operator mul_ln700_2_fu_169_p2 is absorbed into DSP mul_ln700_2_reg_798_reg.
+DSP Report: Generating DSP mul_ln700_1_reg_793_reg, operation Mode is: (ACIN2*(B:0x3fe5f))'.
+DSP Report: register shift_reg_V_1_29_reg is absorbed into DSP mul_ln700_1_reg_793_reg.
+DSP Report: register mul_ln700_1_reg_793_reg is absorbed into DSP mul_ln700_1_reg_793_reg.
+DSP Report: operator mul_ln700_1_fu_153_p2 is absorbed into DSP mul_ln700_1_reg_793_reg.
+DSP Report: Generating DSP mul_ln700_reg_788_reg, operation Mode is: (ACIN2*(B:0x3fe27))'.
+DSP Report: register shift_reg_V_1_30_reg is absorbed into DSP mul_ln700_reg_788_reg.
+DSP Report: register mul_ln700_reg_788_reg is absorbed into DSP mul_ln700_reg_788_reg.
+DSP Report: operator mul_ln700_fu_137_p2 is absorbed into DSP mul_ln700_reg_788_reg.
+DSP Report: Generating DSP mul_ln700_24_reg_908_reg, operation Mode is: (A''*(B:0x294))'.
+DSP Report: register shift_reg_V_1_5_reg is absorbed into DSP mul_ln700_24_reg_908_reg.
+DSP Report: register shift_reg_V_1_6_reg is absorbed into DSP mul_ln700_24_reg_908_reg.
+DSP Report: register mul_ln700_24_reg_908_reg is absorbed into DSP mul_ln700_24_reg_908_reg.
+DSP Report: operator mul_ln700_24_fu_521_p2 is absorbed into DSP mul_ln700_24_reg_908_reg.
+DSP Report: Generating DSP mul_ln700_22_reg_898_reg, operation Mode is: (ACIN''*(B:0x8cc))'.
+DSP Report: register shift_reg_V_1_7_reg is absorbed into DSP mul_ln700_22_reg_898_reg.
+DSP Report: register shift_reg_V_1_8_reg is absorbed into DSP mul_ln700_22_reg_898_reg.
+DSP Report: register mul_ln700_22_reg_898_reg is absorbed into DSP mul_ln700_22_reg_898_reg.
+DSP Report: operator mul_ln700_22_fu_489_p2 is absorbed into DSP mul_ln700_22_reg_898_reg.
+DSP Report: Generating DSP mul_ln700_28_reg_928_reg, operation Mode is: (A2*(B:0x3fdd6))'.
+DSP Report: register shift_reg_V_1_2_reg is absorbed into DSP mul_ln700_28_reg_928_reg.
+DSP Report: register mul_ln700_28_reg_928_reg is absorbed into DSP mul_ln700_28_reg_928_reg.
+DSP Report: operator mul_ln700_28_fu_585_p2 is absorbed into DSP mul_ln700_28_reg_928_reg.
+DSP Report: Generating DSP mul_ln700_26_reg_918_reg, operation Mode is: (ACIN''*(B:0x3feed))'.
+DSP Report: register shift_reg_V_1_3_reg is absorbed into DSP mul_ln700_26_reg_918_reg.
+DSP Report: register shift_reg_V_1_4_reg is absorbed into DSP mul_ln700_26_reg_918_reg.
+DSP Report: register mul_ln700_26_reg_918_reg is absorbed into DSP mul_ln700_26_reg_918_reg.
+DSP Report: operator mul_ln700_26_fu_553_p2 is absorbed into DSP mul_ln700_26_reg_918_reg.
+DSP Report: Generating DSP mul_ln700_25_reg_913_reg, operation Mode is: (ACIN2*(B:0x67))'.
+DSP Report: register shift_reg_V_1_5_reg is absorbed into DSP mul_ln700_25_reg_913_reg.
+DSP Report: register mul_ln700_25_reg_913_reg is absorbed into DSP mul_ln700_25_reg_913_reg.
+DSP Report: operator mul_ln700_25_fu_537_p2 is absorbed into DSP mul_ln700_25_reg_913_reg.
+DSP Report: Generating DSP mul_ln700_23_reg_903_reg, operation Mode is: (ACIN''*(B:0x56a))'.
+DSP Report: register shift_reg_V_1_6_reg is absorbed into DSP mul_ln700_23_reg_903_reg.
+DSP Report: register shift_reg_V_1_7_reg is absorbed into DSP mul_ln700_23_reg_903_reg.
+DSP Report: register mul_ln700_23_reg_903_reg is absorbed into DSP mul_ln700_23_reg_903_reg.
+DSP Report: operator mul_ln700_23_fu_505_p2 is absorbed into DSP mul_ln700_23_reg_903_reg.
+DSP Report: Generating DSP mul_ln700_27_reg_923_reg, operation Mode is: (A''*(B:0x3fe1b))'.
+DSP Report: register shift_reg_V_1_2_reg is absorbed into DSP mul_ln700_27_reg_923_reg.
+DSP Report: register shift_reg_V_1_3_reg is absorbed into DSP mul_ln700_27_reg_923_reg.
+DSP Report: register mul_ln700_27_reg_923_reg is absorbed into DSP mul_ln700_27_reg_923_reg.
+DSP Report: operator mul_ln700_27_fu_569_p2 is absorbed into DSP mul_ln700_27_reg_923_reg.
+INFO: [Synth 8-4471] merging register 'Block_proc_U0/ap_CS_fsm_reg[0:0]' into 'iq_mult_U0/ap_CS_fsm_reg[0:0]' [d:/work/kb_radar_course/lesson_8/vivado/zc706_hw_v/zc706_hw_v.srcs/sources_1/bd/design_1/ipshared/e600/hdl/verilog/Block_proc.v:55]
+INFO: [Synth 8-4471] merging register 'Block_proc33_U0/ap_CS_fsm_reg[0:0]' into 'iq_mult_U0/ap_CS_fsm_reg[0:0]' [d:/work/kb_radar_course/lesson_8/vivado/zc706_hw_v/zc706_hw_v.srcs/sources_1/bd/design_1/ipshared/e600/hdl/verilog/Block_proc33.v:55]
+INFO: [Synth 8-3886] merging instance 'inst/fir_filter_a_U0i_1/add_ln700_32_reg_948_reg[28]' (FDE) to 'inst/fir_filter_a_U0i_1/add_ln700_32_reg_948_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/fir_filter_a_U0i_1/add_ln700_32_reg_948_reg[29]' (FDE) to 'inst/fir_filter_a_U0i_1/add_ln700_32_reg_948_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/fir_filter_a_U0i_1/add_ln700_32_reg_948_reg[30]' (FDE) to 'inst/fir_filter_a_U0i_1/add_ln700_32_reg_948_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/fir_filter_a_U0i_2/add_ln700_54_reg_988_reg[28]' (FDE) to 'inst/fir_filter_a_U0i_2/add_ln700_54_reg_988_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/fir_filter_a_U0i_2/add_ln700_54_reg_988_reg[29]' (FDE) to 'inst/fir_filter_a_U0i_2/add_ln700_54_reg_988_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/fir_filter_a_U0i_2/add_ln700_54_reg_988_reg[30]' (FDE) to 'inst/fir_filter_a_U0i_2/add_ln700_54_reg_988_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/fir_filter_a_U0i_2/mul_ln700_38_reg_823_reg[0]' (FD) to 'inst/fir_filter_a_U0i_2/mul_ln700_38_reg_823_reg[1]'
+INFO: [Synth 8-3886] merging instance 'inst/fir_filter_a_U0i_2/mul_ln700_38_reg_823_reg[1]' (FD) to 'inst/fir_filter_a_U0i_2/mul_ln700_34_reg_803_reg[0]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/fir_filter_a_U0i_2/\mul_ln700_34_reg_803_reg[0] )
+INFO: [Synth 8-3886] merging instance 'inst/fir_filter_a_U0i_2/add_ln700_49_reg_983_reg[29]' (FDE) to 'inst/fir_filter_a_U0i_2/add_ln700_49_reg_983_reg[30]'
+INFO: [Synth 8-3886] merging instance 'inst/fir_filter_a_U0i_2/add_ln700_49_reg_983_reg[30]' (FDE) to 'inst/fir_filter_a_U0i_2/add_ln700_49_reg_983_reg[31]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/fir_filter_a_U0i_2/\ap_CS_fsm_reg[0] )
+INFO: [Synth 8-3886] merging instance 'inst/fir_filter_b_U0i_3/add_ln700_2_reg_948_reg[28]' (FDE) to 'inst/fir_filter_b_U0i_3/add_ln700_2_reg_948_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/fir_filter_b_U0i_3/add_ln700_2_reg_948_reg[29]' (FDE) to 'inst/fir_filter_b_U0i_3/add_ln700_2_reg_948_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/fir_filter_b_U0i_3/add_ln700_2_reg_948_reg[30]' (FDE) to 'inst/fir_filter_b_U0i_3/add_ln700_2_reg_948_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/fir_filter_b_U0i_4/add_ln700_24_reg_988_reg[28]' (FDE) to 'inst/fir_filter_b_U0i_4/add_ln700_24_reg_988_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/fir_filter_b_U0i_4/add_ln700_24_reg_988_reg[29]' (FDE) to 'inst/fir_filter_b_U0i_4/add_ln700_24_reg_988_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/fir_filter_b_U0i_4/add_ln700_24_reg_988_reg[30]' (FDE) to 'inst/fir_filter_b_U0i_4/add_ln700_24_reg_988_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/fir_filter_b_U0i_4/mul_ln700_7_reg_823_reg[0]' (FD) to 'inst/fir_filter_b_U0i_4/mul_ln700_7_reg_823_reg[1]'
+INFO: [Synth 8-3886] merging instance 'inst/fir_filter_b_U0i_4/mul_ln700_7_reg_823_reg[1]' (FD) to 'inst/fir_filter_b_U0i_4/mul_ln700_3_reg_803_reg[0]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/fir_filter_b_U0i_4/\mul_ln700_3_reg_803_reg[0] )
+INFO: [Synth 8-3886] merging instance 'inst/fir_filter_b_U0i_4/add_ln700_19_reg_983_reg[29]' (FDE) to 'inst/fir_filter_b_U0i_4/add_ln700_19_reg_983_reg[30]'
+INFO: [Synth 8-3886] merging instance 'inst/fir_filter_b_U0i_4/add_ln700_19_reg_983_reg[30]' (FDE) to 'inst/fir_filter_b_U0i_4/add_ln700_19_reg_983_reg[31]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/fir_filter_b_U0i_4/\ap_CS_fsm_reg[0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/i_0/\iq_mult_U0/ap_CS_fsm_reg[0] )
+INFO: [Synth 8-3886] merging instance 'inst/fir_filter_b_U0i_3/add_ln700_25_reg_993_reg[27]' (FDE) to 'inst/fir_filter_b_U0i_3/add_ln700_25_reg_993_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/fir_filter_b_U0i_3/add_ln700_25_reg_993_reg[28]' (FDE) to 'inst/fir_filter_b_U0i_3/add_ln700_25_reg_993_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/fir_filter_b_U0i_3/add_ln700_25_reg_993_reg[29]' (FDE) to 'inst/fir_filter_b_U0i_3/add_ln700_25_reg_993_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/fir_filter_b_U0i_3/add_ln700_25_reg_993_reg[30]' (FDE) to 'inst/fir_filter_b_U0i_3/add_ln700_25_reg_993_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/fir_filter_a_U0i_1/add_ln700_55_reg_993_reg[27]' (FDE) to 'inst/fir_filter_a_U0i_1/add_ln700_55_reg_993_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/fir_filter_a_U0i_1/add_ln700_55_reg_993_reg[28]' (FDE) to 'inst/fir_filter_a_U0i_1/add_ln700_55_reg_993_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/fir_filter_a_U0i_1/add_ln700_55_reg_993_reg[29]' (FDE) to 'inst/fir_filter_a_U0i_1/add_ln700_55_reg_993_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/fir_filter_a_U0i_1/add_ln700_55_reg_993_reg[30]' (FDE) to 'inst/fir_filter_a_U0i_1/add_ln700_55_reg_993_reg[31]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/fir_filter_b_U0i_4/ap_done_reg_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/fir_filter_a_U0i_2/ap_done_reg_reg)
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:20 ; elapsed = 00:00:24 . Memory (MB): peak = 1050.070 ; gain = 398.492
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+DSP: Preliminary Mapping  Report (see note below)
++------------+---------------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping               | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+---------------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|d_conv      | (A*(B:0x3fe27))'          | 16     | 10     | -      | -      | 26     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|d_conv      | PCIN+A''*(B:0x3fe5f)      | 16     | 10     | -      | -      | 26     | 2    | 0    | -    | -    | -     | 0    | 1    | 
+|d_conv      | A''*(B:0x3fdf9)           | 16     | 11     | -      | -      | 27     | 2    | 0    | -    | -    | -     | 0    | 0    | 
+|d_conv      | (A2*(B:0x104c))'          | 16     | 14     | -      | -      | 30     | 1    | 0    | -    | -    | -     | 1    | 0    | 
+|d_conv      | (C+(A*(B:0xc83))')'       | 16     | 13     | 32     | -      | 32     | 0    | 0    | 0    | -    | -     | 1    | 1    | 
+|d_conv      | (A''*(B:0x13d7))'         | 16     | 14     | -      | -      | 30     | 2    | 0    | -    | -    | -     | 1    | 0    | 
+|d_conv      | (ACIN''*(B:0x16d5))'      | 16     | 14     | -      | -      | 30     | 2    | 0    | -    | -    | -     | 1    | 0    | 
+|d_conv      | (ACIN2*(B:0x1901))'       | 16     | 14     | -      | -      | 30     | 1    | 0    | -    | -    | -     | 1    | 0    | 
+|d_conv      | (ACIN2*(B:0x1a25))'       | 16     | 14     | -      | -      | 30     | 1    | 0    | -    | -    | -     | 1    | 0    | 
+|d_conv      | (ACIN2*(B:0x1a25))'       | 16     | 14     | -      | -      | 30     | 1    | 0    | -    | -    | -     | 1    | 0    | 
+|d_conv      | (ACIN2*(B:0x1901))'       | 16     | 14     | -      | -      | 30     | 1    | 0    | -    | -    | -     | 1    | 0    | 
+|d_conv      | (ACIN2*(B:0x16d5))'       | 16     | 14     | -      | -      | 30     | 1    | 0    | -    | -    | -     | 1    | 0    | 
+|d_conv      | (ACIN2*(B:0x13d7))'       | 16     | 14     | -      | -      | 30     | 1    | 0    | -    | -    | -     | 1    | 0    | 
+|d_conv      | (ACIN2*(B:0x104c))'       | 16     | 14     | -      | -      | 30     | 1    | 0    | -    | -    | -     | 1    | 0    | 
+|d_conv      | (ACIN2*(B:0xc83))'        | 16     | 13     | -      | -      | 29     | 1    | 0    | -    | -    | -     | 1    | 0    | 
+|d_conv      | (ACIN2*(B:0x8cc))'        | 16     | 13     | -      | -      | 29     | 1    | 0    | -    | -    | -     | 1    | 0    | 
+|d_conv      | (ACIN2*(B:0x56a))'        | 16     | 12     | -      | -      | 28     | 1    | 0    | -    | -    | -     | 1    | 0    | 
+|d_conv      | (ACIN2*(B:0x294))'        | 16     | 11     | -      | -      | 27     | 1    | 0    | -    | -    | -     | 1    | 0    | 
+|d_conv      | (C+(ACIN2*(B:0x67))')'    | 16     | 8      | 32     | -      | 32     | 1    | 0    | 0    | -    | -     | 1    | 1    | 
+|d_conv      | (ACIN2*(B:0x3feed))'      | 16     | 10     | -      | -      | 26     | 1    | 0    | -    | -    | -     | 1    | 0    | 
+|d_conv      | (C+(ACIN2*(B:0x3fe1b))')' | 16     | 10     | 32     | -      | 32     | 1    | 0    | 0    | -    | -     | 1    | 1    | 
+|d_conv      | (ACIN2*(B:0x3fdd6))'      | 16     | 11     | -      | -      | 27     | 1    | 0    | -    | -    | -     | 1    | 0    | 
+|d_conv      | (ACIN2*(B:0x3fdf9))'      | 16     | 11     | -      | -      | 27     | 1    | 0    | -    | -    | -     | 1    | 0    | 
+|d_conv      | (ACIN2*(B:0x3fe5f))'      | 16     | 10     | -      | -      | 26     | 1    | 0    | -    | -    | -     | 1    | 0    | 
+|d_conv      | (ACIN2*(B:0x3fe27))'      | 16     | 10     | -      | -      | 26     | 1    | 0    | -    | -    | -     | 1    | 0    | 
+|d_conv      | (A''*(B:0x294))'          | 16     | 11     | -      | -      | 27     | 2    | 0    | -    | -    | -     | 1    | 0    | 
+|d_conv      | (ACIN''*(B:0x8cc))'       | 16     | 13     | -      | -      | 29     | 2    | 0    | -    | -    | -     | 1    | 0    | 
+|d_conv      | (A2*(B:0x3fdd6))'         | 16     | 11     | -      | -      | 27     | 1    | 0    | -    | -    | -     | 1    | 0    | 
+|d_conv      | (ACIN''*(B:0x3feed))'     | 16     | 10     | -      | -      | 26     | 2    | 0    | -    | -    | -     | 1    | 0    | 
+|d_conv      | (ACIN2*(B:0x67))'         | 16     | 8      | -      | -      | 24     | 1    | 0    | -    | -    | -     | 1    | 0    | 
+|d_conv      | (ACIN''*(B:0x56a))'       | 16     | 12     | -      | -      | 28     | 2    | 0    | -    | -    | -     | 1    | 0    | 
+|d_conv      | (A''*(B:0x3fe1b))'        | 16     | 10     | -      | -      | 26     | 2    | 0    | -    | -    | -     | 1    | 0    | 
+|d_conv      | (A*(B:0x3fe27))'          | 16     | 10     | -      | -      | 26     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|d_conv      | PCIN+A''*(B:0x3fe5f)      | 16     | 10     | -      | -      | 26     | 2    | 0    | -    | -    | -     | 0    | 1    | 
+|d_conv      | A''*(B:0x3fdf9)           | 16     | 11     | -      | -      | 27     | 2    | 0    | -    | -    | -     | 0    | 0    | 
+|d_conv      | (A2*(B:0x104c))'          | 16     | 14     | -      | -      | 30     | 1    | 0    | -    | -    | -     | 1    | 0    | 
+|d_conv      | (C+(A*(B:0xc83))')'       | 16     | 13     | 32     | -      | 32     | 0    | 0    | 0    | -    | -     | 1    | 1    | 
+|d_conv      | (A''*(B:0x13d7))'         | 16     | 14     | -      | -      | 30     | 2    | 0    | -    | -    | -     | 1    | 0    | 
+|d_conv      | (ACIN''*(B:0x16d5))'      | 16     | 14     | -      | -      | 30     | 2    | 0    | -    | -    | -     | 1    | 0    | 
+|d_conv      | (ACIN2*(B:0x1901))'       | 16     | 14     | -      | -      | 30     | 1    | 0    | -    | -    | -     | 1    | 0    | 
+|d_conv      | (ACIN2*(B:0x1a25))'       | 16     | 14     | -      | -      | 30     | 1    | 0    | -    | -    | -     | 1    | 0    | 
+|d_conv      | (ACIN2*(B:0x1a25))'       | 16     | 14     | -      | -      | 30     | 1    | 0    | -    | -    | -     | 1    | 0    | 
+|d_conv      | (ACIN2*(B:0x1901))'       | 16     | 14     | -      | -      | 30     | 1    | 0    | -    | -    | -     | 1    | 0    | 
+|d_conv      | (ACIN2*(B:0x16d5))'       | 16     | 14     | -      | -      | 30     | 1    | 0    | -    | -    | -     | 1    | 0    | 
+|d_conv      | (ACIN2*(B:0x13d7))'       | 16     | 14     | -      | -      | 30     | 1    | 0    | -    | -    | -     | 1    | 0    | 
+|d_conv      | (ACIN2*(B:0x104c))'       | 16     | 14     | -      | -      | 30     | 1    | 0    | -    | -    | -     | 1    | 0    | 
+|d_conv      | (ACIN2*(B:0xc83))'        | 16     | 13     | -      | -      | 29     | 1    | 0    | -    | -    | -     | 1    | 0    | 
+|d_conv      | (ACIN2*(B:0x8cc))'        | 16     | 13     | -      | -      | 29     | 1    | 0    | -    | -    | -     | 1    | 0    | 
+|d_conv      | (ACIN2*(B:0x56a))'        | 16     | 12     | -      | -      | 28     | 1    | 0    | -    | -    | -     | 1    | 0    | 
+|d_conv      | (ACIN2*(B:0x294))'        | 16     | 11     | -      | -      | 27     | 1    | 0    | -    | -    | -     | 1    | 0    | 
+|d_conv      | (C+(ACIN2*(B:0x67))')'    | 16     | 8      | 32     | -      | 32     | 1    | 0    | 0    | -    | -     | 1    | 1    | 
+|d_conv      | (ACIN2*(B:0x3feed))'      | 16     | 10     | -      | -      | 26     | 1    | 0    | -    | -    | -     | 1    | 0    | 
+|d_conv      | (C+(ACIN2*(B:0x3fe1b))')' | 16     | 10     | 32     | -      | 32     | 1    | 0    | 0    | -    | -     | 1    | 1    | 
+|d_conv      | (ACIN2*(B:0x3fdd6))'      | 16     | 11     | -      | -      | 27     | 1    | 0    | -    | -    | -     | 1    | 0    | 
+|d_conv      | (ACIN2*(B:0x3fdf9))'      | 16     | 11     | -      | -      | 27     | 1    | 0    | -    | -    | -     | 1    | 0    | 
+|d_conv      | (ACIN2*(B:0x3fe5f))'      | 16     | 10     | -      | -      | 26     | 1    | 0    | -    | -    | -     | 1    | 0    | 
+|d_conv      | (ACIN2*(B:0x3fe27))'      | 16     | 10     | -      | -      | 26     | 1    | 0    | -    | -    | -     | 1    | 0    | 
+|d_conv      | (A''*(B:0x294))'          | 16     | 11     | -      | -      | 27     | 2    | 0    | -    | -    | -     | 1    | 0    | 
+|d_conv      | (ACIN''*(B:0x8cc))'       | 16     | 13     | -      | -      | 29     | 2    | 0    | -    | -    | -     | 1    | 0    | 
+|d_conv      | (A2*(B:0x3fdd6))'         | 16     | 11     | -      | -      | 27     | 1    | 0    | -    | -    | -     | 1    | 0    | 
+|d_conv      | (ACIN''*(B:0x3feed))'     | 16     | 10     | -      | -      | 26     | 2    | 0    | -    | -    | -     | 1    | 0    | 
+|d_conv      | (ACIN2*(B:0x67))'         | 16     | 8      | -      | -      | 24     | 1    | 0    | -    | -    | -     | 1    | 0    | 
+|d_conv      | (ACIN''*(B:0x56a))'       | 16     | 12     | -      | -      | 28     | 2    | 0    | -    | -    | -     | 1    | 0    | 
+|d_conv      | (A''*(B:0x3fe1b))'        | 16     | 10     | -      | -      | 26     | 2    | 0    | -    | -    | -     | 1    | 0    | 
++------------+---------------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+------------------+------------+----------+
+|      |RTL Partition     |Replication |Instances |
++------+------------------+------------+----------+
+|1     |fir_filter_a__GB0 |           1|      3558|
+|2     |fir_filter_a__GB1 |           1|       636|
+|3     |fir_filter_b__GB0 |           1|      3558|
+|4     |fir_filter_b__GB1 |           1|       636|
+|5     |d_conv__GC0       |           1|       955|
++------+------------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:32 ; elapsed = 00:00:36 . Memory (MB): peak = 1088.430 ; gain = 436.852
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:35 ; elapsed = 00:00:39 . Memory (MB): peak = 1103.344 ; gain = 451.766
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+------------------+------------+----------+
+|      |RTL Partition     |Replication |Instances |
++------+------------------+------------+----------+
+|1     |fir_filter_a__GB0 |           1|      3544|
+|2     |fir_filter_a__GB1 |           1|       636|
+|3     |fir_filter_b__GB0 |           1|      3544|
+|4     |fir_filter_b__GB1 |           1|       636|
+|5     |d_conv__GC0       |           1|       955|
++------+------------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:38 ; elapsed = 00:00:44 . Memory (MB): peak = 1162.637 ; gain = 511.059
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:40 ; elapsed = 00:00:46 . Memory (MB): peak = 1174.488 ; gain = 522.910
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:40 ; elapsed = 00:00:47 . Memory (MB): peak = 1174.488 ; gain = 522.910
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:41 ; elapsed = 00:00:47 . Memory (MB): peak = 1174.488 ; gain = 522.910
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:41 ; elapsed = 00:00:47 . Memory (MB): peak = 1174.488 ; gain = 522.910
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:41 ; elapsed = 00:00:47 . Memory (MB): peak = 1174.488 ; gain = 522.910
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:41 ; elapsed = 00:00:47 . Memory (MB): peak = 1174.488 ; gain = 522.910
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Static Shift Register Report:
++------------+-----------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name | RTL Name                                | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++------------+-----------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|d_conv      | fir_filter_a_U0/shift_reg_V_4_reg[15]   | 3      | 16    | NO           | NO                 | YES               | 16     | 0       | 
+|d_conv      | fir_filter_a_U0/shift_reg_V_8_reg[15]   | 4      | 16    | NO           | NO                 | YES               | 16     | 0       | 
+|d_conv      | fir_filter_b_U0/shift_reg_V_1_4_reg[15] | 3      | 16    | NO           | NO                 | YES               | 16     | 0       | 
+|d_conv      | fir_filter_b_U0/shift_reg_V_1_8_reg[15] | 4      | 16    | NO           | NO                 | YES               | 16     | 0       | 
++------------+-----------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----------+------+
+|      |Cell       |Count |
++------+-----------+------+
+|1     |CARRY4     |   214|
+|2     |DSP48E1_1  |     2|
+|3     |DSP48E1_10 |    34|
+|4     |DSP48E1_11 |     6|
+|5     |DSP48E1_12 |     2|
+|6     |DSP48E1_13 |     8|
+|7     |DSP48E1_14 |     2|
+|8     |DSP48E1_15 |     2|
+|9     |DSP48E1_16 |     2|
+|10    |DSP48E1_2  |     2|
+|11    |DSP48E1_8  |     4|
+|12    |LUT1       |     4|
+|13    |LUT2       |   176|
+|14    |LUT3       |   584|
+|15    |LUT4       |   428|
+|16    |LUT5       |   318|
+|17    |LUT6       |   417|
+|18    |SRL16E     |    64|
+|19    |FDRE       |   985|
+|20    |FDSE       |     8|
++------+-----------+------+
+
+Report Instance Areas: 
++------+---------------------------------------+-------------------------------+------+
+|      |Instance                               |Module                         |Cells |
++------+---------------------------------------+-------------------------------+------+
+|1     |top                                    |                               |  3262|
+|2     |  inst                                 |d_conv                         |  3262|
+|3     |    Block_proc33_U0                    |Block_proc33                   |    18|
+|4     |    Block_proc_U0                      |Block_proc                     |    18|
+|5     |    extLd4_loc_channel_U               |fifo_w16_d2_A                  |    58|
+|6     |      U_fifo_w16_d2_A_ram              |fifo_w16_d2_A_shiftReg_7       |    49|
+|7     |    extLd_loc_channel_U                |fifo_w16_d2_A_0                |    58|
+|8     |      U_fifo_w16_d2_A_ram              |fifo_w16_d2_A_shiftReg_6       |    49|
+|9     |    fir_filter_a_U0                    |fir_filter_a                   |  1347|
+|10    |      d_conv_mul_mul_16cud_U6          |d_conv_mul_mul_16cud_4         |    35|
+|11    |        d_conv_mul_mul_16cud_DSP48_1_U |d_conv_mul_mul_16cud_DSP48_1_5 |    35|
+|12    |    fir_filter_b_U0                    |fir_filter_b                   |  1347|
+|13    |      d_conv_mul_mul_16cud_U15         |d_conv_mul_mul_16cud           |    35|
+|14    |        d_conv_mul_mul_16cud_DSP48_1_U |d_conv_mul_mul_16cud_DSP48_1   |    35|
+|15    |    iq_mult_U0                         |iq_mult                        |   267|
+|16    |    x_i_V_U                            |fifo_w16_d2_A_1                |    74|
+|17    |      U_fifo_w16_d2_A_ram              |fifo_w16_d2_A_shiftReg_3       |    64|
+|18    |    x_q_V_U                            |fifo_w16_d2_A_2                |    73|
+|19    |      U_fifo_w16_d2_A_ram              |fifo_w16_d2_A_shiftReg         |    64|
++------+---------------------------------------+-------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:41 ; elapsed = 00:00:47 . Memory (MB): peak = 1174.488 ; gain = 522.910
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:33 ; elapsed = 00:00:43 . Memory (MB): peak = 1174.488 ; gain = 371.445
+Synthesis Optimization Complete : Time (s): cpu = 00:00:41 ; elapsed = 00:00:47 . Memory (MB): peak = 1174.488 ; gain = 522.910
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 278 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1194.707 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+106 Infos, 2 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:48 ; elapsed = 00:00:56 . Memory (MB): peak = 1194.707 ; gain = 878.441
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1194.707 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'D:/work/kb_radar_course/lesson_8/vivado/zc706_hw_v/zc706_hw_v.runs/design_1_d_conv_0_0_synth_1/design_1_d_conv_0_0.dcp' has been generated.
+WARNING: [Common 17-576] 'use_project_ipc' is deprecated. This option is deprecated and no longer used.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP design_1_d_conv_0_0, cache-ID = fd0ef1eeb510c7b6
+INFO: [Coretcl 2-1174] Renamed 18 cell refs.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1194.707 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'D:/work/kb_radar_course/lesson_8/vivado/zc706_hw_v/zc706_hw_v.runs/design_1_d_conv_0_0_synth_1/design_1_d_conv_0_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file design_1_d_conv_0_0_utilization_synth.rpt -pb design_1_d_conv_0_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon Dec 21 16:28:25 2020...

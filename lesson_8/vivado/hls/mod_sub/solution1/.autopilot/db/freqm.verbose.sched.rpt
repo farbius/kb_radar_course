@@ -1,0 +1,134 @@
+
+
+================================================================
+== Vivado HLS Report for 'freqm'
+================================================================
+* Date:           Mon Dec 21 15:45:33 2020
+
+* Version:        2019.1.3 (Build 2642998 on Wed Sep 04 10:25:22 MDT 2019)
+* Project:        mod_sub
+* Solution:       solution1
+* Product family: zynq
+* Target device:  xc7z045-ffg900-2
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+--------+----------+------------+
+    |  Clock | Target | Estimated| Uncertainty|
+    +--------+--------+----------+------------+
+    |ap_clk  |  100.00|    12.347|       12.50|
+    +--------+--------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +-----+-----+-----+-----+----------+
+    |  Latency  |  Interval | Pipeline |
+    | min | max | min | max |   Type   |
+    +-----+-----+-----+-----+----------+
+    |    0|    0|    1|    1| function |
+    +-----+-----+-----+-----+----------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 2
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 2
+HasVarLatency: 0
+IsPipeline: 1
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
++ Individual pipeline summary: 
+  * Pipeline-0: initiation interval (II) = 1, depth = 1
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 1
+* Pipeline : 1
+  Pipeline-0 : II = 1, D = 1, States = { 1 }
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 12.3>
+ST_1 : Operation 2 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i8* %q_mod_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str113, i32 0, i32 0, [1 x i8]* @p_str114, [1 x i8]* @p_str115, [1 x i8]* @p_str116, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str117, [11 x i8]* @ScalarProp_str)"   --->   Operation 2 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 3 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i8* %i_mod_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str108, i32 0, i32 0, [1 x i8]* @p_str109, [1 x i8]* @p_str110, [1 x i8]* @p_str111, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str112, [11 x i8]* @ScalarProp_str)"   --->   Operation 3 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 4 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i32* %qx_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str103, i32 0, i32 0, [1 x i8]* @p_str104, [1 x i8]* @p_str105, [1 x i8]* @p_str106, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str107, [11 x i8]* @ScalarProp_str)"   --->   Operation 4 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 5 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i32* %ix_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str98, i32 0, i32 0, [1 x i8]* @p_str99, [1 x i8]* @p_str100, [1 x i8]* @p_str101, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str102, [11 x i8]* @ScalarProp_str)"   --->   Operation 5 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 6 [1/1] (3.40ns)   --->   "%ix_V_read = call i32 @_ssdm_op_Read.ap_fifo.i32P(i32* %ix_V)" [../sources/mod_sub.cpp:35]   --->   Operation 6 'read' 'ix_V_read' <Predicate = true> <Delay = 3.40> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 3.40> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 2> <FIFO>
+ST_1 : Operation 7 [1/1] (3.40ns)   --->   "%qx_V_read = call i32 @_ssdm_op_Read.ap_fifo.i32P(i32* %qx_V)" [../sources/mod_sub.cpp:35]   --->   Operation 7 'read' 'qx_V_read' <Predicate = true> <Delay = 3.40> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 3.40> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 2> <FIFO>
+ST_1 : Operation 8 [1/1] (3.40ns)   --->   "%i_mod_V_read = call i8 @_ssdm_op_Read.ap_fifo.i8P(i8* %i_mod_V)" [../sources/mod_sub.cpp:34]   --->   Operation 8 'read' 'i_mod_V_read' <Predicate = true> <Delay = 3.40> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 3.40> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 2> <FIFO>
+ST_1 : Operation 9 [1/1] (3.40ns)   --->   "%q_mod_V_read = call i8 @_ssdm_op_Read.ap_fifo.i8P(i8* %q_mod_V)" [../sources/mod_sub.cpp:34]   --->   Operation 9 'read' 'q_mod_V_read' <Predicate = true> <Delay = 3.40> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 3.40> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 2> <FIFO>
+ST_1 : Operation 10 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i32* %ix_V_out, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str118, i32 0, i32 0, [1 x i8]* @p_str119, [1 x i8]* @p_str120, [1 x i8]* @p_str121, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str122, [11 x i8]* @ScalarProp_str)"   --->   Operation 10 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 11 [1/1] (3.40ns)   --->   "call void @_ssdm_op_Write.ap_fifo.i32P(i32* %ix_V_out, i32 %ix_V_read)" [../sources/mod_sub.cpp:19]   --->   Operation 11 'write' <Predicate = true> <Delay = 3.40> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 3.40> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 2> <FIFO>
+ST_1 : Operation 12 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i32* %qx_V_out, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str123, i32 0, i32 0, [1 x i8]* @p_str124, [1 x i8]* @p_str125, [1 x i8]* @p_str126, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str127, [11 x i8]* @ScalarProp_str)"   --->   Operation 12 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 13 [1/1] (3.40ns)   --->   "call void @_ssdm_op_Write.ap_fifo.i32P(i32* %qx_V_out, i32 %qx_V_read)" [../sources/mod_sub.cpp:19]   --->   Operation 13 'write' <Predicate = true> <Delay = 3.40> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 3.40> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 2> <FIFO>
+ST_1 : Operation 14 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecPipeline(i32 -1, i32 1, i32 1, i32 0, [1 x i8]* @p_str1) nounwind" [../sources/mod_sub.cpp:33->../sources/mod_sub.cpp:19]   --->   Operation 14 'specpipeline' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 15 [1/1] (0.00ns)   --->   "%sext_ln68 = sext i8 %q_mod_V_read to i32" [../sources/mod_sub.cpp:34->../sources/mod_sub.cpp:19]   --->   Operation 15 'sext' 'sext_ln68' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 16 [1/1] (7.05ns)   --->   "%mul_ln68 = mul i32 %ix_V_read, %sext_ln68" [../sources/mod_sub.cpp:34->../sources/mod_sub.cpp:19]   --->   Operation 16 'mul' 'mul_ln68' <Predicate = true> <Delay = 7.05> <Core = "Mul">   --->   Core 16 'Mul' <Latency = 0> <II = 1> <Delay = 7.05> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 17 [1/1] (0.00ns)   --->   "%sext_ln68_1 = sext i8 %i_mod_V_read to i32" [../sources/mod_sub.cpp:34->../sources/mod_sub.cpp:19]   --->   Operation 17 'sext' 'sext_ln68_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 18 [1/1] (7.05ns)   --->   "%mul_ln68_1 = mul i32 %qx_V_read, %sext_ln68_1" [../sources/mod_sub.cpp:34->../sources/mod_sub.cpp:19]   --->   Operation 18 'mul' 'mul_ln68_1' <Predicate = true> <Delay = 7.05> <Core = "Mul">   --->   Core 16 'Mul' <Latency = 0> <II = 1> <Delay = 7.05> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 19 [1/1] (1.89ns)   --->   "%sub_ln68 = sub i32 %mul_ln68, %mul_ln68_1" [../sources/mod_sub.cpp:34->../sources/mod_sub.cpp:19]   --->   Operation 19 'sub' 'sub_ln68' <Predicate = true> <Delay = 1.89> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.89> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 20 [1/1] (7.05ns)   --->   "%mul_ln68_2 = mul i32 %ix_V_read, %sext_ln68_1" [../sources/mod_sub.cpp:35->../sources/mod_sub.cpp:19]   --->   Operation 20 'mul' 'mul_ln68_2' <Predicate = true> <Delay = 7.05> <Core = "Mul">   --->   Core 16 'Mul' <Latency = 0> <II = 1> <Delay = 7.05> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 21 [1/1] (7.05ns)   --->   "%mul_ln68_3 = mul i32 %qx_V_read, %sext_ln68" [../sources/mod_sub.cpp:35->../sources/mod_sub.cpp:19]   --->   Operation 21 'mul' 'mul_ln68_3' <Predicate = true> <Delay = 7.05> <Core = "Mul">   --->   Core 16 'Mul' <Latency = 0> <II = 1> <Delay = 7.05> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 22 [1/1] (1.89ns)   --->   "%add_ln68 = add i32 %mul_ln68_2, %mul_ln68_3" [../sources/mod_sub.cpp:35->../sources/mod_sub.cpp:19]   --->   Operation 22 'add' 'add_ln68' <Predicate = true> <Delay = 1.89> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.89> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 23 [1/1] (0.00ns)   --->   "%mrv = insertvalue { i32, i32 } undef, i32 %sub_ln68, 0" [../sources/mod_sub.cpp:19]   --->   Operation 23 'insertvalue' 'mrv' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 24 [1/1] (0.00ns)   --->   "%mrv_1 = insertvalue { i32, i32 } %mrv, i32 %add_ln68, 1" [../sources/mod_sub.cpp:19]   --->   Operation 24 'insertvalue' 'mrv_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 25 [1/1] (0.00ns)   --->   "ret { i32, i32 } %mrv_1" [../sources/mod_sub.cpp:19]   --->   Operation 25 'ret' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 100ns, clock uncertainty: 12.5ns.
+
+ <State 1>: 12.3ns
+The critical path consists of the following:
+	fifo read on port 'ix_V' (../sources/mod_sub.cpp:35) [11]  (3.4 ns)
+	'mul' operation ('mul_ln68', ../sources/mod_sub.cpp:34->../sources/mod_sub.cpp:19) [21]  (7.05 ns)
+	'sub' operation ('iy.V', ../sources/mod_sub.cpp:34->../sources/mod_sub.cpp:19) [24]  (1.9 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A
