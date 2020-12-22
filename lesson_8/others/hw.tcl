@@ -1,4 +1,4 @@
-set project_name "zc706_hw_v"
+set project_name "zc706_hw"
 
 create_project $project_name [pwd]/$project_name -part xc7z045ffg900-2
 set_property board_part xilinx.com:zc706:part0:1.4 [current_project]
