@@ -1,0 +1,161 @@
+
+
+================================================================
+== Vivado HLS Report for 'Block_proc14'
+================================================================
+* Date:           Tue Dec 22 13:01:24 2020
+
+* Version:        2019.1.2 (Build 2614775 on Fri Aug 09 16:45:44 MDT 2019)
+* Project:        up_conv
+* Solution:       solution1
+* Product family: zynq
+* Target device:  xc7z045-ffg900-2
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+-------+----------+------------+
+    |  Clock | Target| Estimated| Uncertainty|
+    +--------+-------+----------+------------+
+    |ap_clk  |  10.00|     3.401|        1.25|
+    +--------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +-----+-----+-----+-----+---------+
+    |  Latency  |  Interval | Pipeline|
+    | min | max | min | max |   Type  |
+    +-----+-----+-----+-----+---------+
+    |    0|    0|    0|    0|   none  |
+    +-----+-----+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-------+--------+--------+-----+
+|       Name      | BRAM_18K| DSP48E|   FF   |   LUT  | URAM|
++-----------------+---------+-------+--------+--------+-----+
+|DSP              |        -|      -|       -|       -|    -|
+|Expression       |        -|      -|       0|       1|    -|
+|FIFO             |        -|      -|       -|       -|    -|
+|Instance         |        -|      -|       -|       -|    -|
+|Memory           |        -|      -|       -|       -|    -|
+|Multiplexer      |        -|      -|       -|      33|    -|
+|Register         |        -|      -|       3|       -|    -|
++-----------------+---------+-------+--------+--------+-----+
+|Total            |        0|      0|       3|      34|    0|
++-----------------+---------+-------+--------+--------+-----+
+|Available        |     1090|    900|  437200|  218600|    0|
++-----------------+---------+-------+--------+--------+-----+
+|Utilization (%)  |        0|      0|   ~0   |   ~0   |    0|
++-----------------+---------+-------+--------+--------+-----+
+
++ Detail: 
+    * Instance: 
+    N/A
+
+    * DSP48E: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +-----------------+----------+-------+---+----+------------+------------+
+    |  Variable Name  | Operation| DSP48E| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +-----------------+----------+-------+---+----+------------+------------+
+    |ap_block_state1  |    or    |      0|  0|   1|           1|           1|
+    +-----------------+----------+-------+---+----+------------+------------+
+    |Total            |          |      0|  0|   1|           1|           1|
+    +-----------------+----------+-------+---+----+------------+------------+
+
+    * Multiplexer: 
+    +-------------------+----+-----------+-----+-----------+
+    |        Name       | LUT| Input Size| Bits| Total Bits|
+    +-------------------+----+-----------+-----+-----------+
+    |ap_done            |   3|          2|    1|          2|
+    |q_tmp_out_blk_n    |   3|          2|    1|          2|
+    |real_start         |   3|          2|    1|          2|
+    |ref_i_V_blk_n      |   3|          2|    1|          2|
+    |ref_i_V_out_blk_n  |   3|          2|    1|          2|
+    |ref_q_V_blk_n      |   3|          2|    1|          2|
+    |ref_q_V_out_blk_n  |   3|          2|    1|          2|
+    |x_i_blk_n          |   3|          2|    1|          2|
+    |x_i_out_blk_n      |   3|          2|    1|          2|
+    |x_q_blk_n          |   3|          2|    1|          2|
+    |x_q_out_blk_n      |   3|          2|    1|          2|
+    +-------------------+----+-----------+-----+-----------+
+    |Total              |  33|         22|   11|         22|
+    +-------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +----------------+---+----+-----+-----------+
+    |      Name      | FF| LUT| Bits| Const Bits|
+    +----------------+---+----+-----+-----------+
+    |ap_CS_fsm       |  1|   0|    1|          0|
+    |ap_done_reg     |  1|   0|    1|          0|
+    |start_once_reg  |  1|   0|    1|          0|
+    +----------------+---+----+-----+-----------+
+    |Total           |  3|   0|    3|          0|
+    +----------------+---+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++--------------------+-----+-----+------------+---------------+--------------+
+|      RTL Ports     | Dir | Bits|  Protocol  | Source Object |    C Type    |
++--------------------+-----+-----+------------+---------------+--------------+
+|ap_clk              |  in |    1| ap_ctrl_hs | Block__proc14 | return value |
+|ap_rst              |  in |    1| ap_ctrl_hs | Block__proc14 | return value |
+|ap_start            |  in |    1| ap_ctrl_hs | Block__proc14 | return value |
+|start_full_n        |  in |    1| ap_ctrl_hs | Block__proc14 | return value |
+|ap_done             | out |    1| ap_ctrl_hs | Block__proc14 | return value |
+|ap_continue         |  in |    1| ap_ctrl_hs | Block__proc14 | return value |
+|ap_idle             | out |    1| ap_ctrl_hs | Block__proc14 | return value |
+|ap_ready            | out |    1| ap_ctrl_hs | Block__proc14 | return value |
+|start_out           | out |    1| ap_ctrl_hs | Block__proc14 | return value |
+|start_write         | out |    1| ap_ctrl_hs | Block__proc14 | return value |
+|x_i                 |  in |   32|   ap_vld   |      x_i      |    scalar    |
+|x_i_ap_vld          |  in |    1|   ap_vld   |      x_i      |    scalar    |
+|x_q                 |  in |   32|   ap_vld   |      x_q      |    scalar    |
+|x_q_ap_vld          |  in |    1|   ap_vld   |      x_q      |    scalar    |
+|ref_i_V             |  in |    8|   ap_vld   |    ref_i_V    |    scalar    |
+|ref_i_V_ap_vld      |  in |    1|   ap_vld   |    ref_i_V    |    scalar    |
+|ref_q_V             |  in |    8|   ap_vld   |    ref_q_V    |    scalar    |
+|ref_q_V_ap_vld      |  in |    1|   ap_vld   |    ref_q_V    |    scalar    |
+|q_tmp_out_din       | out |    1|   ap_fifo  |   q_tmp_out   |    pointer   |
+|q_tmp_out_full_n    |  in |    1|   ap_fifo  |   q_tmp_out   |    pointer   |
+|q_tmp_out_write     | out |    1|   ap_fifo  |   q_tmp_out   |    pointer   |
+|x_i_out_din         | out |   32|   ap_fifo  |    x_i_out    |    pointer   |
+|x_i_out_full_n      |  in |    1|   ap_fifo  |    x_i_out    |    pointer   |
+|x_i_out_write       | out |    1|   ap_fifo  |    x_i_out    |    pointer   |
+|x_q_out_din         | out |   32|   ap_fifo  |    x_q_out    |    pointer   |
+|x_q_out_full_n      |  in |    1|   ap_fifo  |    x_q_out    |    pointer   |
+|x_q_out_write       | out |    1|   ap_fifo  |    x_q_out    |    pointer   |
+|ref_i_V_out_din     | out |    8|   ap_fifo  |  ref_i_V_out  |    pointer   |
+|ref_i_V_out_full_n  |  in |    1|   ap_fifo  |  ref_i_V_out  |    pointer   |
+|ref_i_V_out_write   | out |    1|   ap_fifo  |  ref_i_V_out  |    pointer   |
+|ref_q_V_out_din     | out |    8|   ap_fifo  |  ref_q_V_out  |    pointer   |
+|ref_q_V_out_full_n  |  in |    1|   ap_fifo  |  ref_q_V_out  |    pointer   |
+|ref_q_V_out_write   | out |    1|   ap_fifo  |  ref_q_V_out  |    pointer   |
++--------------------+-----+-----+------------+---------------+--------------+
+

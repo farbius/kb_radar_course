@@ -14,20 +14,20 @@ set isEnableWaveformDebug 1
 set C_modelName {iq_mult}
 set C_modelType { void 0 }
 set C_modelArgList {
-	{ x_i int 32 regular  }
-	{ x_q int 32 regular  }
+	{ i_tmp int 32 regular {fifo 0}  }
+	{ q_tmp int 1 regular {fifo 0}  }
 	{ ref_i_V int 8 regular {fifo 0}  }
 	{ ref_q_V int 8 regular {fifo 0}  }
 	{ y int 32 regular {pointer 1}  }
 }
 set C_modelArgMapList {[ 
-	{ "Name" : "x_i", "interface" : "wire", "bitwidth" : 32, "direction" : "READONLY"} , 
- 	{ "Name" : "x_q", "interface" : "wire", "bitwidth" : 32, "direction" : "READONLY"} , 
+	{ "Name" : "i_tmp", "interface" : "fifo", "bitwidth" : 32, "direction" : "READONLY"} , 
+ 	{ "Name" : "q_tmp", "interface" : "fifo", "bitwidth" : 1, "direction" : "READONLY"} , 
  	{ "Name" : "ref_i_V", "interface" : "fifo", "bitwidth" : 8, "direction" : "READONLY"} , 
  	{ "Name" : "ref_q_V", "interface" : "fifo", "bitwidth" : 8, "direction" : "READONLY"} , 
  	{ "Name" : "y", "interface" : "wire", "bitwidth" : 32, "direction" : "WRITEONLY"} ]}
 # RTL Port declarations: 
-set portNum 17
+set portNum 21
 set portList { 
 	{ ap_clk sc_in sc_logic 1 clock -1 } 
 	{ ap_rst sc_in sc_logic 1 reset -1 active_high_sync } 
@@ -42,8 +42,12 @@ set portList {
 	{ ref_q_V_dout sc_in sc_lv 8 signal 3 } 
 	{ ref_q_V_empty_n sc_in sc_logic 1 signal 3 } 
 	{ ref_q_V_read sc_out sc_logic 1 signal 3 } 
-	{ x_i sc_in sc_lv 32 signal 0 } 
-	{ x_q sc_in sc_lv 32 signal 1 } 
+	{ i_tmp_dout sc_in sc_lv 32 signal 0 } 
+	{ i_tmp_empty_n sc_in sc_logic 1 signal 0 } 
+	{ i_tmp_read sc_out sc_logic 1 signal 0 } 
+	{ q_tmp_dout sc_in sc_lv 1 signal 1 } 
+	{ q_tmp_empty_n sc_in sc_logic 1 signal 1 } 
+	{ q_tmp_read sc_out sc_logic 1 signal 1 } 
 	{ y sc_out sc_lv 32 signal 4 } 
 	{ y_ap_vld sc_out sc_logic 1 outvld 4 } 
 }
@@ -61,8 +65,12 @@ set NewPortList {[
  	{ "name": "ref_q_V_dout", "direction": "in", "datatype": "sc_lv", "bitwidth":8, "type": "signal", "bundle":{"name": "ref_q_V", "role": "dout" }} , 
  	{ "name": "ref_q_V_empty_n", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "ref_q_V", "role": "empty_n" }} , 
  	{ "name": "ref_q_V_read", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "ref_q_V", "role": "read" }} , 
- 	{ "name": "x_i", "direction": "in", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "x_i", "role": "default" }} , 
- 	{ "name": "x_q", "direction": "in", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "x_q", "role": "default" }} , 
+ 	{ "name": "i_tmp_dout", "direction": "in", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "i_tmp", "role": "dout" }} , 
+ 	{ "name": "i_tmp_empty_n", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "i_tmp", "role": "empty_n" }} , 
+ 	{ "name": "i_tmp_read", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "i_tmp", "role": "read" }} , 
+ 	{ "name": "q_tmp_dout", "direction": "in", "datatype": "sc_lv", "bitwidth":1, "type": "signal", "bundle":{"name": "q_tmp", "role": "dout" }} , 
+ 	{ "name": "q_tmp_empty_n", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "q_tmp", "role": "empty_n" }} , 
+ 	{ "name": "q_tmp_read", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "q_tmp", "role": "read" }} , 
  	{ "name": "y", "direction": "out", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "y", "role": "default" }} , 
  	{ "name": "y_ap_vld", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "outvld", "bundle":{"name": "y", "role": "ap_vld" }}  ]}
 
@@ -81,8 +89,12 @@ set RtlHierarchyInfo {[
 		"InDataflowNetwork" : "1",
 		"HasNonBlockingOperation" : "0",
 		"Port" : [
-			{"Name" : "x_i", "Type" : "None", "Direction" : "I", "DependentProc" : "0", "DependentChan" : "0"},
-			{"Name" : "x_q", "Type" : "None", "Direction" : "I", "DependentProc" : "0", "DependentChan" : "0"},
+			{"Name" : "i_tmp", "Type" : "Fifo", "Direction" : "I", "DependentProc" : "0", "DependentChan" : "0",
+				"BlockSignal" : [
+					{"Name" : "i_tmp_blk_n", "Type" : "RtlSignal"}]},
+			{"Name" : "q_tmp", "Type" : "Fifo", "Direction" : "I", "DependentProc" : "0", "DependentChan" : "0",
+				"BlockSignal" : [
+					{"Name" : "q_tmp_blk_n", "Type" : "RtlSignal"}]},
 			{"Name" : "ref_i_V", "Type" : "Fifo", "Direction" : "I", "DependentProc" : "0", "DependentChan" : "0",
 				"BlockSignal" : [
 					{"Name" : "ref_i_V_blk_n", "Type" : "RtlSignal"}]},
@@ -94,8 +106,8 @@ set RtlHierarchyInfo {[
 
 set ArgLastReadFirstWriteLatency {
 	iq_mult {
-		x_i {Type I LastRead 0 FirstWrite -1}
-		x_q {Type I LastRead 0 FirstWrite -1}
+		i_tmp {Type I LastRead 0 FirstWrite -1}
+		q_tmp {Type I LastRead 0 FirstWrite -1}
 		ref_i_V {Type I LastRead 0 FirstWrite -1}
 		ref_q_V {Type I LastRead 0 FirstWrite -1}
 		y {Type O LastRead -1 FirstWrite 2}}}
@@ -112,8 +124,8 @@ set PipelineEnableSignalInfo {[
 ]}
 
 set Spec2ImplPortList { 
-	x_i { ap_none {  { x_i in_data 0 32 } } }
-	x_q { ap_none {  { x_q in_data 0 32 } } }
+	i_tmp { ap_fifo {  { i_tmp_dout fifo_data 0 32 }  { i_tmp_empty_n fifo_status 0 1 }  { i_tmp_read fifo_update 1 1 } } }
+	q_tmp { ap_fifo {  { q_tmp_dout fifo_data 0 1 }  { q_tmp_empty_n fifo_status 0 1 }  { q_tmp_read fifo_update 1 1 } } }
 	ref_i_V { ap_fifo {  { ref_i_V_dout fifo_data 0 8 }  { ref_i_V_empty_n fifo_status 0 1 }  { ref_i_V_read fifo_update 1 1 } } }
 	ref_q_V { ap_fifo {  { ref_q_V_dout fifo_data 0 8 }  { ref_q_V_empty_n fifo_status 0 1 }  { ref_q_V_read fifo_update 1 1 } } }
 	y { ap_vld {  { y out_data 1 32 }  { y_ap_vld out_vld 1 1 } } }

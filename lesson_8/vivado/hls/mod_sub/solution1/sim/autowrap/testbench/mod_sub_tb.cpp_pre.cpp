@@ -1,8 +1,8 @@
-# 1 "D:/work/kb_radar_course/lesson_8/vivado/sources/mod_sub_tb.cpp"
+# 1 "D:/work/radar_course/lesson_8/vivado/sources/mod_sub_tb.cpp"
 # 1 "<built-in>"
 # 1 "<command-line>"
-# 1 "D:/work/kb_radar_course/lesson_8/vivado/sources/mod_sub_tb.cpp"
-# 1 "D:/work/kb_radar_course/lesson_8/vivado/sources/mod_sub.h" 1
+# 1 "D:/work/radar_course/lesson_8/vivado/sources/mod_sub_tb.cpp"
+# 1 "D:/work/radar_course/lesson_8/vivado/sources/mod_sub.h" 1
 # 1 "C:/Xilinx/Vivado/2019.1/include/ap_fixed.h" 1
 # 54 "C:/Xilinx/Vivado/2019.1/include/ap_fixed.h"
 # 1 "C:/Xilinx/Vivado/2019.1/include/ap_common.h" 1
@@ -63631,7 +63631,7 @@ inline bool operator!=(
 
 }
 # 399 "C:/Xilinx/Vivado/2019.1/include/ap_fixed.h" 2
-# 2 "D:/work/kb_radar_course/lesson_8/vivado/sources/mod_sub.h" 2
+# 2 "D:/work/radar_course/lesson_8/vivado/sources/mod_sub.h" 2
 
 typedef ap_int<32> data_t;
 typedef ap_int<32> dout_t;
@@ -63640,7 +63640,7 @@ typedef ap_uint<2> key_t;
 typedef ap_uint<8> prd_t;
 
 void mod_sub(data_t ix, data_t qx, refs_t i_mod, refs_t q_mod, dout_t *iy, dout_t *qy, prd_t period, key_t mux);
-# 2 "D:/work/kb_radar_course/lesson_8/vivado/sources/mod_sub_tb.cpp" 2
+# 2 "D:/work/radar_course/lesson_8/vivado/sources/mod_sub_tb.cpp" 2
 
 
 # 1 "C:/Xilinx/Vivado/2019.1/msys64/mingw64/include/c++/6.2.0/fstream" 1 3
@@ -65484,9 +65484,9 @@ namespace std
 
 }
 # 1082 "C:/Xilinx/Vivado/2019.1/msys64/mingw64/include/c++/6.2.0/fstream" 2 3
-# 5 "D:/work/kb_radar_course/lesson_8/vivado/sources/mod_sub_tb.cpp" 2
+# 5 "D:/work/radar_course/lesson_8/vivado/sources/mod_sub_tb.cpp" 2
 # 1 "C:/Xilinx/Vivado/2019.1/msys64/mingw64/include/c++/6.2.0/math.h" 1 3
-# 6 "D:/work/kb_radar_course/lesson_8/vivado/sources/mod_sub_tb.cpp" 2
+# 6 "D:/work/radar_course/lesson_8/vivado/sources/mod_sub_tb.cpp" 2
 
 
 
@@ -65495,7 +65495,7 @@ namespace std
 
 
 
-# 13 "D:/work/kb_radar_course/lesson_8/vivado/sources/mod_sub_tb.cpp"
+# 13 "D:/work/radar_course/lesson_8/vivado/sources/mod_sub_tb.cpp"
 using namespace std;
 
 

@@ -64,13 +64,13 @@ ximum {}} value 0} bitoffset {attribs {resolve_type generated dependency user_of
         <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_W">16</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.DECIMATE">10</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.D_W">8</spirit:configurableElementValue>
-        <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.MEM_FILE">D:/radar/lesson_7/vivado/zc706_sim/zc706_sim.srcs/sources_1/imports/hdl/coef_lp_dec.mem</spirit:configurableElementValue>
+        <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.MEM_FILE">D:/work/radar_course/lesson_7/vivado/zc706_sim/zc706_sim.srcs/sources_1/imports/hdl/coef_lp_dec.mem</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.TAPS">32</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.C_W">16</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.Component_Name">design_1_fir_dec_wrapper_0_0</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.DECIMATE">10</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.D_W">8</spirit:configurableElementValue>
-        <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.MEM_FILE">D:/radar/lesson_7/vivado/zc706_sim/zc706_sim.srcs/sources_1/imports/hdl/coef_lp_dec.mem</spirit:configurableElementValue>
+        <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.MEM_FILE">D:/work/radar_course/lesson_7/vivado/zc706_sim/zc706_sim.srcs/sources_1/imports/hdl/coef_lp_dec.mem</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.TAPS">32</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="PROJECT_PARAM.ARCHITECTURE">zynq</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="PROJECT_PARAM.BASE_BOARD_PART">xilinx.com:zc706:part0:1.4</spirit:configurableElementValue>

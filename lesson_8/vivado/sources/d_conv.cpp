@@ -13,9 +13,10 @@ void d_conv(ap_int<8> x, ap_int<8> ref_i, ap_int<8> ref_q, dout_t *y_i, dout_t *
 #pragma HLS INTERFACE ap_vld register port=y_i
 #pragma HLS INTERFACE ap_vld register port=ref_q
 #pragma HLS INTERFACE ap_vld register port=ref_i
-#pragma HLS INTERFACE ap_vld register port=x
+#pragma HLS INTERFACE ap_vld port=x
 #pragma HLS INTERFACE ap_ctrl_none port=return
 #pragma HLS DATAFLOW
+
 	coef_t x_i, x_q;
 
 
@@ -35,7 +36,6 @@ void iq_mult(ap_int<8> x, ap_int<8> ref_i, ap_int<8> ref_q, coef_t *x_i, coef_t 
 
 void fir_filter_a(coef_t x, dout_t *y)
 {
-#pragma HLS RESOURCE variable=return core=Mul2S
 #pragma HLS PIPELINE
 	static coef_t shift_reg[N];
 	coef_t data;
@@ -56,7 +56,6 @@ void fir_filter_a(coef_t x, dout_t *y)
 
 void fir_filter_b(coef_t x, dout_t *y)
 {
-#pragma HLS RESOURCE variable=return core=Mul2S
 #pragma HLS PIPELINE
 	static coef_t shift_reg[N];
 	coef_t data;

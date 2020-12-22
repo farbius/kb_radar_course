@@ -1,9 +1,9 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'up_conv'" level="0">
-<item name = "Date">Mon Dec 21 15:51:18 2020
+<item name = "Date">Tue Dec 22 13:01:24 2020
 </item>
-<item name = "Version">2019.1.3 (Build 2642998 on Wed Sep 04 10:25:22 MDT 2019)</item>
+<item name = "Version">2019.1.2 (Build 2614775 on Fri Aug 09 16:45:44 MDT 2019)</item>
 <item name = "Project">up_conv</item>
 <item name = "Solution">solution1</item>
 <item name = "Product family">zynq</item>
@@ -24,17 +24,17 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="6">, min, max, min, max, Type</keys>
-<column name="">5, 5, 1, 1, dataflow</column>
+<column name="">9, 9, 1, 1, dataflow</column>
 </table>
 </item>
 <item name = "Detail">
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="0">
 <keys size="7">Instance, Module, min, max, min, max, Type</keys>
-<column name="grp_fir_filter_a_fu_412">fir_filter_a, 4, 4, 1, 1, function</column>
-<column name="grp_fir_filter_b_fu_543">fir_filter_b, 4, 4, 1, 1, function</column>
-<column name="grp_iq_mult_fu_674">iq_mult, 2, 2, 1, 1, function</column>
-<column name="call_ln20_up_conv_entry14_fu_686">up_conv_entry14, 0, 0, 0, 0, none</column>
+<column name="grp_fir_filter_a_fu_448">fir_filter_a, 5, 5, 1, 1, function</column>
+<column name="grp_iq_mult_fu_580">iq_mult, 2, 2, 1, 1, function</column>
+<column name="call_ln25_fir_filter_b_fu_590">fir_filter_b, 0, 0, 1, 1, function</column>
+<column name="call_ln12_Block_proc14_fu_717">Block_proc14, 0, 0, 0, 0, none</column>
 </table>
 </item>
 <item name = "Loop"><table name="" hasTotal="0">

@@ -18,7 +18,7 @@ void up_conv(data_t x_i, data_t x_q, ap_int<8> ref_i, ap_int<8> ref_q, dout_t *y
 #pragma HLS INTERFACE ap_vld port=x_i
 #pragma HLS INTERFACE ap_ctrl_none port=return
 #pragma HLS DATAFLOW
-	dout_t i_tmp, q_tmp;
+	dout_t i_tmp = 0, q_tmp=0;
 
 
 	 fir_filter_a(x_i, &i_tmp);

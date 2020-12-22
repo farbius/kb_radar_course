@@ -1,8 +1,8 @@
-# 1 "D:/work/kb_radar_course/lesson_8/vivado/sources/d_conv.cpp"
+# 1 "D:/work/radar_course/lesson_8/vivado/sources/d_conv.cpp"
 # 1 "<built-in>"
 # 1 "<command-line>"
-# 1 "D:/work/kb_radar_course/lesson_8/vivado/sources/d_conv.cpp"
-# 1 "D:/work/kb_radar_course/lesson_8/vivado/sources/d_conv.h" 1
+# 1 "D:/work/radar_course/lesson_8/vivado/sources/d_conv.cpp"
+# 1 "D:/work/radar_course/lesson_8/vivado/sources/d_conv.h" 1
 # 1 "C:/Xilinx/Vivado/2019.1/include/ap_fixed.h" 1
 # 54 "C:/Xilinx/Vivado/2019.1/include/ap_fixed.h"
 # 1 "C:/Xilinx/Vivado/2019.1/include/ap_common.h" 1
@@ -63631,7 +63631,7 @@ inline bool operator!=(
 
 }
 # 399 "C:/Xilinx/Vivado/2019.1/include/ap_fixed.h" 2
-# 2 "D:/work/kb_radar_course/lesson_8/vivado/sources/d_conv.h" 2
+# 2 "D:/work/radar_course/lesson_8/vivado/sources/d_conv.h" 2
 
 
 
@@ -63641,7 +63641,7 @@ typedef ap_int<32> dout_t;
 typedef ap_int<32> coef_t;
 
 void d_conv(ap_int<8> x, ap_int<8> ref_i, ap_int<8> ref_q, dout_t *y_i, dout_t *y_q);
-# 2 "D:/work/kb_radar_course/lesson_8/vivado/sources/d_conv.cpp" 2
+# 2 "D:/work/radar_course/lesson_8/vivado/sources/d_conv.cpp" 2
 
 coef_t coeff[32] = {-473,-417,-519,-554,-485,-275,103,660,1386,2252,3203,4172,5079,5845,6401,6693,6693,6401,5845,5079,4172,3203,2252,1386,660,103,-275,-485,-554,-519,-417,-473};
 
@@ -63656,9 +63656,10 @@ void d_conv(ap_int<8> x, ap_int<8> ref_i, ap_int<8> ref_q, dout_t *y_i, dout_t *
 #pragma HLS INTERFACE ap_vld register port=y_i
 #pragma HLS INTERFACE ap_vld register port=ref_q
 #pragma HLS INTERFACE ap_vld register port=ref_i
-#pragma HLS INTERFACE ap_vld register port=x
+#pragma HLS INTERFACE ap_vld port=x
 #pragma HLS INTERFACE ap_ctrl_none port=return
 #pragma HLS DATAFLOW
+
  coef_t x_i, x_q;
 
 
@@ -63678,7 +63679,6 @@ void iq_mult(ap_int<8> x, ap_int<8> ref_i, ap_int<8> ref_q, coef_t *x_i, coef_t 
 
 void fir_filter_a(coef_t x, dout_t *y)
 {
-#pragma HLS RESOURCE variable=return core=Mul2S
 #pragma HLS PIPELINE
  static coef_t shift_reg[32];
  coef_t data;
@@ -63699,7 +63699,6 @@ void fir_filter_a(coef_t x, dout_t *y)
 
 void fir_filter_b(coef_t x, dout_t *y)
 {
-#pragma HLS RESOURCE variable=return core=Mul2S
 #pragma HLS PIPELINE
  static coef_t shift_reg[32];
  coef_t data;

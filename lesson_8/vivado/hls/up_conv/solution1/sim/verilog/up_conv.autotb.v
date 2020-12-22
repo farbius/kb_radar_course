@@ -1,5 +1,5 @@
 // ==============================================================
-// Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.1.3 (64-bit)
+// Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.1.2 (64-bit)
 // Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 // ==============================================================
  `timescale 1ns/1ps
@@ -14,7 +14,7 @@
 `define AUTOTB_MAX_ALLOW_LATENCY  15000000
 `define AUTOTB_CLOCK_PERIOD_DIV2 5.00
 `define AUTOTB_II 1
-`define AUTOTB_LATENCY 5
+`define AUTOTB_LATENCY 9
 
 `define AESL_DEPTH_x_i 1
 `define AESL_DEPTH_x_q 1
@@ -35,7 +35,7 @@ module `AUTOTB_TOP;
 
 parameter AUTOTB_TRANSACTION_NUM = 1000;
 parameter PROGRESS_TIMEOUT = 10000000;
-parameter LATENCY_ESTIMATION = 5;
+parameter LATENCY_ESTIMATION = 9;
 parameter LENGTH_x_i = 1;
 parameter LENGTH_x_q = 1;
 parameter LENGTH_ref_i_V = 1;

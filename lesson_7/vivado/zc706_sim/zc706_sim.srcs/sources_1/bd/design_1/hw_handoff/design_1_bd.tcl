@@ -282,7 +282,7 @@ proc create_root_design { parentCell } {
    }
     set_property -dict [ list \
    CONFIG.DECIMATE {10} \
-   CONFIG.MEM_FILE {D:/radar/lesson_7/vivado/zc706_sim/zc706_sim.srcs/sources_1/imports/hdl/coef_lp_dec.mem} \
+   CONFIG.MEM_FILE {D:/work/radar_course/lesson_7/vivado/zc706_sim/zc706_sim.srcs/sources_1/imports/hdl/coef_lp_dec.mem} \
  ] $fir_dec_wrapper_0
 
   # Create instance: iq_modulator_0, and set properties
@@ -297,7 +297,7 @@ proc create_root_design { parentCell } {
    }
     set_property -dict [ list \
    CONFIG.D_W {24} \
-   CONFIG.MEM_FILE {D:/radar/lesson_7/vivado/zc706_sim/zc706_sim.srcs/sources_1/imports/hdl/coef_lp_int.mem} \
+   CONFIG.MEM_FILE {D:/work/radar_course/lesson_7/vivado/zc706_sim/zc706_sim.srcs/sources_1/imports/hdl/coef_lp_int.mem} \
  ] $iq_modulator_0
 
   # Create instance: mod_subsys_0, and set properties

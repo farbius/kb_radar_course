@@ -1,8 +1,8 @@
-# 1 "D:/work/kb_radar_course/lesson_8/vivado/sources/up_conv.cpp"
+# 1 "D:/work/radar_course/lesson_8/vivado/sources/up_conv.cpp"
 # 1 "<built-in>"
 # 1 "<command-line>"
-# 1 "D:/work/kb_radar_course/lesson_8/vivado/sources/up_conv.cpp"
-# 1 "D:/work/kb_radar_course/lesson_8/vivado/sources/up_conv.h" 1
+# 1 "D:/work/radar_course/lesson_8/vivado/sources/up_conv.cpp"
+# 1 "D:/work/radar_course/lesson_8/vivado/sources/up_conv.h" 1
 # 1 "C:/Xilinx/Vivado/2019.1/include/ap_fixed.h" 1
 # 54 "C:/Xilinx/Vivado/2019.1/include/ap_fixed.h"
 # 1 "C:/Xilinx/Vivado/2019.1/include/ap_common.h" 1
@@ -63631,7 +63631,7 @@ inline bool operator!=(
 
 }
 # 399 "C:/Xilinx/Vivado/2019.1/include/ap_fixed.h" 2
-# 2 "D:/work/kb_radar_course/lesson_8/vivado/sources/up_conv.h" 2
+# 2 "D:/work/radar_course/lesson_8/vivado/sources/up_conv.h" 2
 
 
 
@@ -63641,7 +63641,7 @@ typedef int dout_t;
 typedef int coef_t;
 
 void up_conv(data_t x_i, data_t x_q, ap_int<8> ref_i, ap_int<8> ref_q, dout_t *y);
-# 2 "D:/work/kb_radar_course/lesson_8/vivado/sources/up_conv.cpp" 2
+# 2 "D:/work/radar_course/lesson_8/vivado/sources/up_conv.cpp" 2
 
 
 
@@ -63661,7 +63661,7 @@ void up_conv(data_t x_i, data_t x_q, ap_int<8> ref_i, ap_int<8> ref_q, dout_t *y
 #pragma HLS INTERFACE ap_vld port=x_i
 #pragma HLS INTERFACE ap_ctrl_none port=return
 #pragma HLS DATAFLOW
- dout_t i_tmp, q_tmp;
+ dout_t i_tmp = 0, q_tmp=0;
 
 
   fir_filter_a(x_i, &i_tmp);

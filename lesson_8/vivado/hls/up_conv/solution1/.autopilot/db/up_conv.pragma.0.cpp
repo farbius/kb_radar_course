@@ -6350,7 +6350,8 @@ inline bool operator!=(
 
 }
 # 399 "C:/Xilinx/Vivado/2019.1/common/technology/autopilot\\ap_fixed.h" 2
-# 2 "../sources/up_conv.h" 2
+# 1 "../sources/up_conv.h" 2
+
 
 
 
@@ -6380,7 +6381,7 @@ void up_conv(data_t x_i, data_t x_q, ap_int<8> ref_i, ap_int<8> ref_q, dout_t *y
 #pragma HLS INTERFACE ap_vld port=&x_i
 #pragma HLS INTERFACE ap_ctrl_none port=return
 #pragma HLS DATAFLOW
- dout_t i_tmp, q_tmp;
+ dout_t i_tmp = 0, q_tmp=0;
 
 
   fir_filter_a(x_i, &i_tmp);

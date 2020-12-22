@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<webTalkData  fileName='usage_statistics_ext_xsim.xml'  majorVersion='1' minorVersion='0' timeStamp='Mon Dec 21 15:46:02 2020'>
+<webTalkData  fileName='usage_statistics_ext_xsim.xml'  majorVersion='1' minorVersion='0' timeStamp='Tue Dec 22 12:37:00 2020'>
 <section name="__ROOT__" level="0" order="1" description="">
  <section name="software_version_and_target_device" level="1" order="1" description="">
   <keyValuePair key="beta" value="FALSE" description="" />
-  <keyValuePair key="build_version" value="2644227" description="" />
-  <keyValuePair key="date_generated" value="Mon Dec 21 15:45:36 2020" description="" />
+  <keyValuePair key="build_version" value="2615518" description="" />
+  <keyValuePair key="date_generated" value="Tue Dec 22 12:36:59 2020" description="" />
   <keyValuePair key="os_platform" value="WIN64" description="" />
-  <keyValuePair key="product_version" value="XSIM v2019.1.3 (64-bit)" description="" />
-  <keyValuePair key="project_id" value="31b6b2b6-e4a6-459e-912f-123f7dbe162b" description="" />
+  <keyValuePair key="product_version" value="XSIM v2019.1.2 (64-bit)" description="" />
+  <keyValuePair key="project_id" value="d62397fc-2597-44c2-b57c-47bb43454eb7" description="" />
   <keyValuePair key="project_iteration" value="2" description="" />
-  <keyValuePair key="random_id" value="93a0692f-7f5f-4cfd-a3d8-a64c45f2bb74" description="" />
-  <keyValuePair key="registration_id" value="93a0692f-7f5f-4cfd-a3d8-a64c45f2bb74" description="" />
+  <keyValuePair key="random_id" value="9c457efb-2f68-40f7-a4e0-296f8a2241c8" description="" />
+  <keyValuePair key="registration_id" value="9c457efb-2f68-40f7-a4e0-296f8a2241c8" description="" />
   <keyValuePair key="route_design" value="FALSE" description="" />
   <keyValuePair key="target_device" value="not_applicable" description="" />
   <keyValuePair key="target_family" value="not_applicable" description="" />
@@ -19,11 +19,11 @@
   <keyValuePair key="tool_flow" value="xsim" description="" />
  </section>
  <section name="user_environment" level="1" order="2" description="">
-  <keyValuePair key="cpu_name" value="Intel(R) Core(TM) i5-7600 CPU @ 3.50GHz" description="" />
-  <keyValuePair key="cpu_speed" value="3504 MHz" description="" />
+  <keyValuePair key="cpu_name" value="Intel(R) Core(TM) i7-10510U CPU @ 1.80GHz" description="" />
+  <keyValuePair key="cpu_speed" value="2304 MHz" description="" />
   <keyValuePair key="os_name" value="Windows Server 2016 or Windows 10" description="" />
   <keyValuePair key="os_release" value="major release  (build 9200)" description="" />
-  <keyValuePair key="system_ram" value="34.000 GB" description="" />
+  <keyValuePair key="system_ram" value="8.000 GB" description="" />
   <keyValuePair key="total_processors" value="1" description="" />
  </section>
  <section name="vivado_usage" level="1" order="3" description="">
@@ -36,8 +36,8 @@
   <section name="usage" level="2" order="2" description="">
    <keyValuePair key="iteration" value="0" description="" />
    <keyValuePair key="runtime" value="10195 ns" description="" />
-   <keyValuePair key="simulation_memory" value="8356_KB" description="" />
-   <keyValuePair key="simulation_time" value="0.16_sec" description="" />
+   <keyValuePair key="simulation_memory" value="8392_KB" description="" />
+   <keyValuePair key="simulation_time" value="0.26_sec" description="" />
    <keyValuePair key="trace_waveform" value="true" description="" />
   </section>
  </section>

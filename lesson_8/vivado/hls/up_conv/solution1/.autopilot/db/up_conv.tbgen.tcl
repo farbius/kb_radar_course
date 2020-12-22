@@ -57,13 +57,13 @@ set NewPortList {[
  	{ "name": "y_ap_vld", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "outvld", "bundle":{"name": "y", "role": "ap_vld" }}  ]}
 
 set RtlHierarchyInfo {[
-	{"ID" : "0", "Level" : "0", "Path" : "`AUTOTB_DUT_INST", "Parent" : "", "Child" : ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12"],
+	{"ID" : "0", "Level" : "0", "Path" : "`AUTOTB_DUT_INST", "Parent" : "", "Child" : ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13"],
 		"CDFG" : "up_conv",
 		"Protocol" : "ap_ctrl_none",
 		"ControlExist" : "0", "ap_start" : "0", "ap_ready" : "0", "ap_done" : "0", "ap_continue" : "0", "ap_idle" : "0",
 		"Pipeline" : "Dataflow", "UnalignedPipeline" : "0", "RewindPipeline" : "0", "ProcessNetwork" : "1",
 		"II" : "0",
-		"VariableLatency" : "1", "ExactLatency" : "-1", "EstimateLatencyMin" : "5", "EstimateLatencyMax" : "5",
+		"VariableLatency" : "1", "ExactLatency" : "-1", "EstimateLatencyMin" : "9", "EstimateLatencyMax" : "9",
 		"Combinational" : "0",
 		"Datapath" : "0",
 		"ClockEnable" : "0",
@@ -71,8 +71,9 @@ set RtlHierarchyInfo {[
 		"InDataflowNetwork" : "0",
 		"HasNonBlockingOperation" : "0",
 		"InputProcess" : [
-			{"ID" : "1", "Name" : "up_conv_entry14_U0"}],
+			{"ID" : "1", "Name" : "Block_proc14_U0"}],
 		"OutputProcess" : [
+			{"ID" : "3", "Name" : "fir_filter_b_U0"},
 			{"ID" : "4", "Name" : "iq_mult_U0"}],
 		"Port" : [
 			{"Name" : "x_i", "Type" : "Vld", "Direction" : "I"},
@@ -271,18 +272,12 @@ set RtlHierarchyInfo {[
 			{"Name" : "shift_reg_1_0", "Type" : "OVld", "Direction" : "IO",
 				"SubConnect" : [
 					{"ID" : "2", "SubInstance" : "fir_filter_a_U0", "Port" : "shift_reg_1_0"}]},
-			{"Name" : "shift_reg_62", "Type" : "OVld", "Direction" : "IO",
-				"SubConnect" : [
-					{"ID" : "3", "SubInstance" : "fir_filter_b_U0", "Port" : "shift_reg_62"}]},
-			{"Name" : "shift_reg_61", "Type" : "OVld", "Direction" : "IO",
-				"SubConnect" : [
-					{"ID" : "3", "SubInstance" : "fir_filter_b_U0", "Port" : "shift_reg_61"}]},
-			{"Name" : "shift_reg_60", "Type" : "OVld", "Direction" : "IO",
-				"SubConnect" : [
-					{"ID" : "3", "SubInstance" : "fir_filter_b_U0", "Port" : "shift_reg_60"}]},
 			{"Name" : "shift_reg_59", "Type" : "OVld", "Direction" : "IO",
 				"SubConnect" : [
 					{"ID" : "3", "SubInstance" : "fir_filter_b_U0", "Port" : "shift_reg_59"}]},
+			{"Name" : "shift_reg_60", "Type" : "Vld", "Direction" : "O",
+				"SubConnect" : [
+					{"ID" : "3", "SubInstance" : "fir_filter_b_U0", "Port" : "shift_reg_60"}]},
 			{"Name" : "shift_reg_58", "Type" : "OVld", "Direction" : "IO",
 				"SubConnect" : [
 					{"ID" : "3", "SubInstance" : "fir_filter_b_U0", "Port" : "shift_reg_58"}]},
@@ -460,8 +455,8 @@ set RtlHierarchyInfo {[
 			{"Name" : "shift_reg_0", "Type" : "OVld", "Direction" : "IO",
 				"SubConnect" : [
 					{"ID" : "3", "SubInstance" : "fir_filter_b_U0", "Port" : "shift_reg_0"}]}]},
-	{"ID" : "1", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.up_conv_entry14_U0", "Parent" : "0",
-		"CDFG" : "up_conv_entry14",
+	{"ID" : "1", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.Block_proc14_U0", "Parent" : "0",
+		"CDFG" : "Block_proc14",
 		"Protocol" : "ap_ctrl_hs",
 		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "1", "ap_idle" : "1",
 		"Pipeline" : "None", "UnalignedPipeline" : "0", "RewindPipeline" : "0", "ProcessNetwork" : "0",
@@ -486,16 +481,19 @@ set RtlHierarchyInfo {[
 			{"Name" : "ref_q_V", "Type" : "Vld", "Direction" : "I",
 				"BlockSignal" : [
 					{"Name" : "ref_q_V_blk_n", "Type" : "RtlSignal"}]},
-			{"Name" : "x_i_out", "Type" : "Fifo", "Direction" : "O", "DependentProc" : "2", "DependentChan" : "5",
+			{"Name" : "q_tmp_out", "Type" : "Fifo", "Direction" : "O", "DependentProc" : "4", "DependentChan" : "5",
+				"BlockSignal" : [
+					{"Name" : "q_tmp_out_blk_n", "Type" : "RtlSignal"}]},
+			{"Name" : "x_i_out", "Type" : "Fifo", "Direction" : "O", "DependentProc" : "2", "DependentChan" : "6",
 				"BlockSignal" : [
 					{"Name" : "x_i_out_blk_n", "Type" : "RtlSignal"}]},
-			{"Name" : "x_q_out", "Type" : "Fifo", "Direction" : "O", "DependentProc" : "3", "DependentChan" : "6",
+			{"Name" : "x_q_out", "Type" : "Fifo", "Direction" : "O", "DependentProc" : "3", "DependentChan" : "7",
 				"BlockSignal" : [
 					{"Name" : "x_q_out_blk_n", "Type" : "RtlSignal"}]},
-			{"Name" : "ref_i_V_out", "Type" : "Fifo", "Direction" : "O", "DependentProc" : "4", "DependentChan" : "7",
+			{"Name" : "ref_i_V_out", "Type" : "Fifo", "Direction" : "O", "DependentProc" : "4", "DependentChan" : "8",
 				"BlockSignal" : [
 					{"Name" : "ref_i_V_out_blk_n", "Type" : "RtlSignal"}]},
-			{"Name" : "ref_q_V_out", "Type" : "Fifo", "Direction" : "O", "DependentProc" : "4", "DependentChan" : "8",
+			{"Name" : "ref_q_V_out", "Type" : "Fifo", "Direction" : "O", "DependentProc" : "4", "DependentChan" : "9",
 				"BlockSignal" : [
 					{"Name" : "ref_q_V_out_blk_n", "Type" : "RtlSignal"}]}]},
 	{"ID" : "2", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.fir_filter_a_U0", "Parent" : "0",
@@ -504,7 +502,7 @@ set RtlHierarchyInfo {[
 		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "1", "ap_idle" : "1",
 		"Pipeline" : "Aligned", "UnalignedPipeline" : "0", "RewindPipeline" : "0", "ProcessNetwork" : "0",
 		"II" : "1",
-		"VariableLatency" : "0", "ExactLatency" : "4", "EstimateLatencyMin" : "4", "EstimateLatencyMax" : "4",
+		"VariableLatency" : "0", "ExactLatency" : "5", "EstimateLatencyMin" : "5", "EstimateLatencyMax" : "5",
 		"Combinational" : "0",
 		"Datapath" : "0",
 		"ClockEnable" : "0",
@@ -514,9 +512,12 @@ set RtlHierarchyInfo {[
 		"StartSource" : "1",
 		"StartFifo" : "start_for_fir_filbkb_U",
 		"Port" : [
-			{"Name" : "x", "Type" : "Fifo", "Direction" : "I", "DependentProc" : "1", "DependentChan" : "5",
+			{"Name" : "x", "Type" : "Fifo", "Direction" : "I", "DependentProc" : "1", "DependentChan" : "6",
 				"BlockSignal" : [
 					{"Name" : "x_blk_n", "Type" : "RtlSignal"}]},
+			{"Name" : "y", "Type" : "Fifo", "Direction" : "O", "DependentProc" : "4", "DependentChan" : "10",
+				"BlockSignal" : [
+					{"Name" : "y_blk_n", "Type" : "RtlSignal"}]},
 			{"Name" : "shift_reg_1_62", "Type" : "OVld", "Direction" : "IO"},
 			{"Name" : "shift_reg_1_61", "Type" : "OVld", "Direction" : "IO"},
 			{"Name" : "shift_reg_1_60", "Type" : "OVld", "Direction" : "IO"},
@@ -584,9 +585,9 @@ set RtlHierarchyInfo {[
 		"CDFG" : "fir_filter_b",
 		"Protocol" : "ap_ctrl_hs",
 		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "1", "ap_idle" : "1",
-		"Pipeline" : "Aligned", "UnalignedPipeline" : "0", "RewindPipeline" : "0", "ProcessNetwork" : "0",
+		"Pipeline" : "None", "UnalignedPipeline" : "0", "RewindPipeline" : "0", "ProcessNetwork" : "0",
 		"II" : "1",
-		"VariableLatency" : "0", "ExactLatency" : "4", "EstimateLatencyMin" : "4", "EstimateLatencyMax" : "4",
+		"VariableLatency" : "0", "ExactLatency" : "0", "EstimateLatencyMin" : "0", "EstimateLatencyMax" : "0",
 		"Combinational" : "0",
 		"Datapath" : "0",
 		"ClockEnable" : "0",
@@ -596,13 +597,11 @@ set RtlHierarchyInfo {[
 		"StartSource" : "1",
 		"StartFifo" : "start_for_fir_filcud_U",
 		"Port" : [
-			{"Name" : "x", "Type" : "Fifo", "Direction" : "I", "DependentProc" : "1", "DependentChan" : "6",
+			{"Name" : "x", "Type" : "Fifo", "Direction" : "I", "DependentProc" : "1", "DependentChan" : "7",
 				"BlockSignal" : [
 					{"Name" : "x_blk_n", "Type" : "RtlSignal"}]},
-			{"Name" : "shift_reg_62", "Type" : "OVld", "Direction" : "IO"},
-			{"Name" : "shift_reg_61", "Type" : "OVld", "Direction" : "IO"},
-			{"Name" : "shift_reg_60", "Type" : "OVld", "Direction" : "IO"},
 			{"Name" : "shift_reg_59", "Type" : "OVld", "Direction" : "IO"},
+			{"Name" : "shift_reg_60", "Type" : "Vld", "Direction" : "O"},
 			{"Name" : "shift_reg_58", "Type" : "OVld", "Direction" : "IO"},
 			{"Name" : "shift_reg_57", "Type" : "OVld", "Direction" : "IO"},
 			{"Name" : "shift_reg_56", "Type" : "OVld", "Direction" : "IO"},
@@ -675,24 +674,31 @@ set RtlHierarchyInfo {[
 		"HasSubDataflow" : "0",
 		"InDataflowNetwork" : "1",
 		"HasNonBlockingOperation" : "0",
+		"StartSource" : "1",
+		"StartFifo" : "start_for_iq_multdEe_U",
 		"Port" : [
-			{"Name" : "x_i", "Type" : "None", "Direction" : "I", "DependentProc" : "2", "DependentChan" : "9"},
-			{"Name" : "x_q", "Type" : "None", "Direction" : "I", "DependentProc" : "3", "DependentChan" : "10"},
-			{"Name" : "ref_i_V", "Type" : "Fifo", "Direction" : "I", "DependentProc" : "1", "DependentChan" : "7",
+			{"Name" : "i_tmp", "Type" : "Fifo", "Direction" : "I", "DependentProc" : "2", "DependentChan" : "10",
+				"BlockSignal" : [
+					{"Name" : "i_tmp_blk_n", "Type" : "RtlSignal"}]},
+			{"Name" : "q_tmp", "Type" : "Fifo", "Direction" : "I", "DependentProc" : "1", "DependentChan" : "5",
+				"BlockSignal" : [
+					{"Name" : "q_tmp_blk_n", "Type" : "RtlSignal"}]},
+			{"Name" : "ref_i_V", "Type" : "Fifo", "Direction" : "I", "DependentProc" : "1", "DependentChan" : "8",
 				"BlockSignal" : [
 					{"Name" : "ref_i_V_blk_n", "Type" : "RtlSignal"}]},
-			{"Name" : "ref_q_V", "Type" : "Fifo", "Direction" : "I", "DependentProc" : "1", "DependentChan" : "8",
+			{"Name" : "ref_q_V", "Type" : "Fifo", "Direction" : "I", "DependentProc" : "1", "DependentChan" : "9",
 				"BlockSignal" : [
 					{"Name" : "ref_q_V_blk_n", "Type" : "RtlSignal"}]},
 			{"Name" : "y", "Type" : "Vld", "Direction" : "O"}]},
-	{"ID" : "5", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.x_i_c_U", "Parent" : "0"},
-	{"ID" : "6", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.x_q_c_U", "Parent" : "0"},
-	{"ID" : "7", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.ref_i_V_c_U", "Parent" : "0"},
-	{"ID" : "8", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.ref_q_V_c_U", "Parent" : "0"},
-	{"ID" : "9", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.i_tmp_U", "Parent" : "0"},
-	{"ID" : "10", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.q_tmp_U", "Parent" : "0"},
+	{"ID" : "5", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.q_tmp_c_U", "Parent" : "0"},
+	{"ID" : "6", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.x_i_c_U", "Parent" : "0"},
+	{"ID" : "7", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.x_q_c_U", "Parent" : "0"},
+	{"ID" : "8", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.ref_i_V_c_U", "Parent" : "0"},
+	{"ID" : "9", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.ref_q_V_c_U", "Parent" : "0"},
+	{"ID" : "10", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.i_tmp_c_U", "Parent" : "0"},
 	{"ID" : "11", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.start_for_fir_filbkb_U", "Parent" : "0"},
-	{"ID" : "12", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.start_for_fir_filcud_U", "Parent" : "0"}]}
+	{"ID" : "12", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.start_for_fir_filcud_U", "Parent" : "0"},
+	{"ID" : "13", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.start_for_iq_multdEe_U", "Parent" : "0"}]}
 
 
 set ArgLastReadFirstWriteLatency {
@@ -765,10 +771,8 @@ set ArgLastReadFirstWriteLatency {
 		shift_reg_1_2 {Type IO LastRead -1 FirstWrite -1}
 		shift_reg_1_1 {Type IO LastRead -1 FirstWrite -1}
 		shift_reg_1_0 {Type IO LastRead -1 FirstWrite -1}
-		shift_reg_62 {Type IO LastRead -1 FirstWrite -1}
-		shift_reg_61 {Type IO LastRead -1 FirstWrite -1}
-		shift_reg_60 {Type IO LastRead -1 FirstWrite -1}
 		shift_reg_59 {Type IO LastRead -1 FirstWrite -1}
+		shift_reg_60 {Type O LastRead -1 FirstWrite -1}
 		shift_reg_58 {Type IO LastRead -1 FirstWrite -1}
 		shift_reg_57 {Type IO LastRead -1 FirstWrite -1}
 		shift_reg_56 {Type IO LastRead -1 FirstWrite -1}
@@ -828,17 +832,19 @@ set ArgLastReadFirstWriteLatency {
 		shift_reg_2 {Type IO LastRead -1 FirstWrite -1}
 		shift_reg_1 {Type IO LastRead -1 FirstWrite -1}
 		shift_reg_0 {Type IO LastRead -1 FirstWrite -1}}
-	up_conv_entry14 {
+	Block_proc14 {
 		x_i {Type I LastRead 0 FirstWrite -1}
 		x_q {Type I LastRead 0 FirstWrite -1}
 		ref_i_V {Type I LastRead 0 FirstWrite -1}
 		ref_q_V {Type I LastRead 0 FirstWrite -1}
+		q_tmp_out {Type O LastRead -1 FirstWrite 0}
 		x_i_out {Type O LastRead -1 FirstWrite 0}
 		x_q_out {Type O LastRead -1 FirstWrite 0}
 		ref_i_V_out {Type O LastRead -1 FirstWrite 0}
 		ref_q_V_out {Type O LastRead -1 FirstWrite 0}}
 	fir_filter_a {
 		x {Type I LastRead 0 FirstWrite -1}
+		y {Type O LastRead -1 FirstWrite 5}
 		shift_reg_1_62 {Type IO LastRead -1 FirstWrite -1}
 		shift_reg_1_61 {Type IO LastRead -1 FirstWrite -1}
 		shift_reg_1_60 {Type IO LastRead -1 FirstWrite -1}
@@ -904,10 +910,8 @@ set ArgLastReadFirstWriteLatency {
 		shift_reg_1_0 {Type IO LastRead -1 FirstWrite -1}}
 	fir_filter_b {
 		x {Type I LastRead 0 FirstWrite -1}
-		shift_reg_62 {Type IO LastRead -1 FirstWrite -1}
-		shift_reg_61 {Type IO LastRead -1 FirstWrite -1}
-		shift_reg_60 {Type IO LastRead -1 FirstWrite -1}
 		shift_reg_59 {Type IO LastRead -1 FirstWrite -1}
+		shift_reg_60 {Type O LastRead -1 FirstWrite -1}
 		shift_reg_58 {Type IO LastRead -1 FirstWrite -1}
 		shift_reg_57 {Type IO LastRead -1 FirstWrite -1}
 		shift_reg_56 {Type IO LastRead -1 FirstWrite -1}
@@ -968,8 +972,8 @@ set ArgLastReadFirstWriteLatency {
 		shift_reg_1 {Type IO LastRead -1 FirstWrite -1}
 		shift_reg_0 {Type IO LastRead -1 FirstWrite -1}}
 	iq_mult {
-		x_i {Type I LastRead 0 FirstWrite -1}
-		x_q {Type I LastRead 0 FirstWrite -1}
+		i_tmp {Type I LastRead 0 FirstWrite -1}
+		q_tmp {Type I LastRead 0 FirstWrite -1}
 		ref_i_V {Type I LastRead 0 FirstWrite -1}
 		ref_q_V {Type I LastRead 0 FirstWrite -1}
 		y {Type O LastRead -1 FirstWrite 2}}}
@@ -977,7 +981,7 @@ set ArgLastReadFirstWriteLatency {
 set hasDtUnsupportedChannel 0
 
 set PerformanceInfo {[
-	{"Name" : "Latency", "Min" : "5", "Max" : "5"}
+	{"Name" : "Latency", "Min" : "9", "Max" : "9"}
 	, {"Name" : "Interval", "Min" : "1", "Max" : "1"}
 ]}
 

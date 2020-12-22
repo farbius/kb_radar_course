@@ -42,7 +42,7 @@ set SCTraceOption all
 set TargetInfo xc7z045:-ffg900:-2
 set SourceFiles {sc {} c ../../../sources/d_conv.cpp}
 set SourceFlags {sc {} c {{}}}
-set DirectiveFile D:/work/kb_radar_course/lesson_8/vivado/hls/d_conv/solution1/solution1.directive
+set DirectiveFile D:/work/radar_course/lesson_8/vivado/hls/d_conv/solution1/solution1.directive
 set TBFiles {verilog ../../../sources/d_conv_tb.cpp bc ../../../sources/d_conv_tb.cpp vhdl ../../../sources/d_conv_tb.cpp sc ../../../sources/d_conv_tb.cpp cas ../../../sources/d_conv_tb.cpp c {}}
 set SpecLanguage C
 set TVInFiles {bc {} c {} sc {} cas {} vhdl {} verilog {}}

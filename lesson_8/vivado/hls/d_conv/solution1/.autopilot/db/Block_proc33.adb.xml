@@ -37,7 +37,7 @@ newFuncRoot:0  %p_read_1 = call i16 @_ssdm_op_Read.ap_auto.i16(i16 %p_read)
 newFuncRoot:1  ret i16 %p_read_1
 
 ]]></Node>
-<StgValue><ssdm name="ret_ln24"/></StgValue>
+<StgValue><ssdm name="ret_ln25"/></StgValue>
 </operation>
 </state>
 </state_list>
@@ -55,7 +55,7 @@ newFuncRoot:1  ret i16 %p_read_1
 </dataflow>
 <dataflow id="7" from="p_read" to="p_read_1" fromId="4" toId="2">
 </dataflow>
-<dataflow id="8" from="p_read_1" to="ret_ln24" fromId="2" toId="3">
+<dataflow id="8" from="p_read_1" to="ret_ln25" fromId="2" toId="3">
 </dataflow>
 </dataflows>
 

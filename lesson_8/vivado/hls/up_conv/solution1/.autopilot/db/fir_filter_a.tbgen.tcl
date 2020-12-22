@@ -12,15 +12,16 @@ set ProfileFlag 0
 set StallSigGenFlag 0
 set isEnableWaveformDebug 1
 set C_modelName {fir_filter_a}
-set C_modelType { int 32 }
+set C_modelType { void 0 }
 set C_modelArgList {
 	{ x int 32 regular {fifo 0}  }
+	{ y int 32 regular {fifo 1}  }
 }
 set C_modelArgMapList {[ 
 	{ "Name" : "x", "interface" : "fifo", "bitwidth" : 32, "direction" : "READONLY"} , 
- 	{ "Name" : "ap_return", "interface" : "wire", "bitwidth" : 32} ]}
+ 	{ "Name" : "y", "interface" : "fifo", "bitwidth" : 32, "direction" : "WRITEONLY"} ]}
 # RTL Port declarations: 
-set portNum 11
+set portNum 13
 set portList { 
 	{ ap_clk sc_in sc_logic 1 clock -1 } 
 	{ ap_rst sc_in sc_logic 1 reset -1 active_high_sync } 
@@ -32,7 +33,9 @@ set portList {
 	{ x_dout sc_in sc_lv 32 signal 0 } 
 	{ x_empty_n sc_in sc_logic 1 signal 0 } 
 	{ x_read sc_out sc_logic 1 signal 0 } 
-	{ ap_return sc_out sc_lv 32 signal -1 } 
+	{ y_din sc_out sc_lv 32 signal 1 } 
+	{ y_full_n sc_in sc_logic 1 signal 1 } 
+	{ y_write sc_out sc_logic 1 signal 1 } 
 }
 set NewPortList {[ 
 	{ "name": "ap_clk", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "clock", "bundle":{"name": "ap_clk", "role": "default" }} , 
@@ -45,7 +48,9 @@ set NewPortList {[
  	{ "name": "x_dout", "direction": "in", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "x", "role": "dout" }} , 
  	{ "name": "x_empty_n", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "x", "role": "empty_n" }} , 
  	{ "name": "x_read", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "x", "role": "read" }} , 
- 	{ "name": "ap_return", "direction": "out", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "ap_return", "role": "default" }}  ]}
+ 	{ "name": "y_din", "direction": "out", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "y", "role": "din" }} , 
+ 	{ "name": "y_full_n", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "y", "role": "full_n" }} , 
+ 	{ "name": "y_write", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "y", "role": "write" }}  ]}
 
 set RtlHierarchyInfo {[
 	{"ID" : "0", "Level" : "0", "Path" : "`AUTOTB_DUT_INST", "Parent" : "",
@@ -54,7 +59,7 @@ set RtlHierarchyInfo {[
 		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "1", "ap_idle" : "1",
 		"Pipeline" : "Aligned", "UnalignedPipeline" : "0", "RewindPipeline" : "0", "ProcessNetwork" : "0",
 		"II" : "1",
-		"VariableLatency" : "0", "ExactLatency" : "4", "EstimateLatencyMin" : "4", "EstimateLatencyMax" : "4",
+		"VariableLatency" : "0", "ExactLatency" : "5", "EstimateLatencyMin" : "5", "EstimateLatencyMax" : "5",
 		"Combinational" : "0",
 		"Datapath" : "0",
 		"ClockEnable" : "0",
@@ -65,6 +70,9 @@ set RtlHierarchyInfo {[
 			{"Name" : "x", "Type" : "Fifo", "Direction" : "I", "DependentProc" : "0", "DependentChan" : "0",
 				"BlockSignal" : [
 					{"Name" : "x_blk_n", "Type" : "RtlSignal"}]},
+			{"Name" : "y", "Type" : "Fifo", "Direction" : "O", "DependentProc" : "0", "DependentChan" : "0",
+				"BlockSignal" : [
+					{"Name" : "y_blk_n", "Type" : "RtlSignal"}]},
 			{"Name" : "shift_reg_1_62", "Type" : "OVld", "Direction" : "IO"},
 			{"Name" : "shift_reg_1_61", "Type" : "OVld", "Direction" : "IO"},
 			{"Name" : "shift_reg_1_60", "Type" : "OVld", "Direction" : "IO"},
@@ -133,6 +141,7 @@ set RtlHierarchyInfo {[
 set ArgLastReadFirstWriteLatency {
 	fir_filter_a {
 		x {Type I LastRead 0 FirstWrite -1}
+		y {Type O LastRead -1 FirstWrite 5}
 		shift_reg_1_62 {Type IO LastRead -1 FirstWrite -1}
 		shift_reg_1_61 {Type IO LastRead -1 FirstWrite -1}
 		shift_reg_1_60 {Type IO LastRead -1 FirstWrite -1}
@@ -200,7 +209,7 @@ set ArgLastReadFirstWriteLatency {
 set hasDtUnsupportedChannel 0
 
 set PerformanceInfo {[
-	{"Name" : "Latency", "Min" : "4", "Max" : "4"}
+	{"Name" : "Latency", "Min" : "5", "Max" : "5"}
 	, {"Name" : "Interval", "Min" : "1", "Max" : "1"}
 ]}
 
@@ -210,4 +219,5 @@ set PipelineEnableSignalInfo {[
 
 set Spec2ImplPortList { 
 	x { ap_fifo {  { x_dout fifo_data 0 32 }  { x_empty_n fifo_status 0 1 }  { x_read fifo_update 1 1 } } }
+	y { ap_fifo {  { y_din fifo_data 1 32 }  { y_full_n fifo_status 0 1 }  { y_write fifo_update 1 1 } } }
 }

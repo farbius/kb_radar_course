@@ -26,13 +26,13 @@
 <InstName>Block_proc_U0</InstName>
 <ModuleName>Block_proc</ModuleName>
 <IsCompInst>true</IsCompInst>
-<ID>334</ID>
+<ID>333</ID>
 </Instance>
 <Instance>
 <InstName>Block_proc33_U0</InstName>
 <ModuleName>Block_proc33</ModuleName>
 <IsCompInst>true</IsCompInst>
-<ID>340</ID>
+<ID>339</ID>
 </Instance>
 </InstancesList>
 </TopModule>
@@ -799,7 +799,7 @@
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_vld</IOProtocol>
-<IOConfig>register</IOConfig>
+<IOConfig></IOConfig>
 <Dir>in</Dir>
 <Bits>8</Bits>
 <Attribute>data</Attribute>
@@ -811,7 +811,7 @@
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_vld</IOProtocol>
-<IOConfig>register</IOConfig>
+<IOConfig></IOConfig>
 <Dir>in</Dir>
 <Bits>1</Bits>
 <Attribute>control</Attribute>

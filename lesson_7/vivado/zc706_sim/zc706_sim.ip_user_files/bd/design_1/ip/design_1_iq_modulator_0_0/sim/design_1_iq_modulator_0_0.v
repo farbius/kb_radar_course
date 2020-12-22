@@ -98,7 +98,7 @@ input wire m_axis_tready;
     .D_W(24),
     .C_W(16),
     .TAPS(64),
-    .MEM_FILE("D:/radar/lesson_7/vivado/zc706_sim/zc706_sim.srcs/sources_1/imports/hdl/coef_lp_int.mem")
+    .MEM_FILE("D:/work/radar_course/lesson_7/vivado/zc706_sim/zc706_sim.srcs/sources_1/imports/hdl/coef_lp_int.mem")
   ) inst (
     .clk(clk),
     .rstn(rstn),

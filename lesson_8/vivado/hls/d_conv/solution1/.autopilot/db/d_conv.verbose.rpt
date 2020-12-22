@@ -3,9 +3,9 @@
 ================================================================
 == Vivado HLS Report for 'd_conv'
 ================================================================
-* Date:           Mon Dec 21 15:44:35 2020
+* Date:           Tue Dec 22 12:35:18 2020
 
-* Version:        2019.1.3 (Build 2642998 on Wed Sep 04 10:25:22 MDT 2019)
+* Version:        2019.1.2 (Build 2614775 on Fri Aug 09 16:45:44 MDT 2019)
 * Project:        d_conv
 * Solution:       solution1
 * Product family: zynq
@@ -205,49 +205,48 @@ IsGatedGlobalClock: 0
 State 1 <SV = 0> <Delay = 0.00>
 ST_1 : Operation 8 [2/2] (0.00ns)   --->   "%ref_q_V_read = call i8 @_ssdm_op_Read.ap_vld.i8(i8 %ref_q_V)" [../sources/d_conv.cpp:10]   --->   Operation 8 'read' 'ref_q_V_read' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 9 [2/2] (0.00ns)   --->   "%ref_i_V_read = call i8 @_ssdm_op_Read.ap_vld.i8(i8 %ref_i_V)" [../sources/d_conv.cpp:10]   --->   Operation 9 'read' 'ref_i_V_read' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 10 [2/2] (0.00ns)   --->   "%x_V_read = call i8 @_ssdm_op_Read.ap_vld.i8(i8 %x_V)" [../sources/d_conv.cpp:10]   --->   Operation 10 'read' 'x_V_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 10 [1/1] (0.00ns)   --->   "%x_V_read = call i8 @_ssdm_op_Read.ap_vld.i8(i8 %x_V)" [../sources/d_conv.cpp:10]   --->   Operation 10 'read' 'x_V_read' <Predicate = true> <Delay = 0.00>
 
 State 2 <SV = 1> <Delay = 3.61>
 ST_2 : Operation 11 [1/2] (0.00ns)   --->   "%ref_q_V_read = call i8 @_ssdm_op_Read.ap_vld.i8(i8 %ref_q_V)" [../sources/d_conv.cpp:10]   --->   Operation 11 'read' 'ref_q_V_read' <Predicate = true> <Delay = 0.00>
 ST_2 : Operation 12 [1/2] (0.00ns)   --->   "%ref_i_V_read = call i8 @_ssdm_op_Read.ap_vld.i8(i8 %ref_i_V)" [../sources/d_conv.cpp:10]   --->   Operation 12 'read' 'ref_i_V_read' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 13 [1/2] (0.00ns)   --->   "%x_V_read = call i8 @_ssdm_op_Read.ap_vld.i8(i8 %x_V)" [../sources/d_conv.cpp:10]   --->   Operation 13 'read' 'x_V_read' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 14 [1/1] (3.61ns)   --->   "%call_ret = call fastcc { i16, i16 } @iq_mult(i8 %x_V_read, i8 %ref_i_V_read, i8 %ref_q_V_read)" [../sources/d_conv.cpp:22]   --->   Operation 14 'call' 'call_ret' <Predicate = true> <Delay = 3.61> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
-ST_2 : Operation 15 [1/1] (0.00ns)   --->   "%x_i_V = extractvalue { i16, i16 } %call_ret, 0" [../sources/d_conv.cpp:22]   --->   Operation 15 'extractvalue' 'x_i_V' <Predicate = true> <Delay = 0.00> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 3.40> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 16> <Depth = 2> <FIFO>
-ST_2 : Operation 16 [1/1] (0.00ns)   --->   "%x_q_V = extractvalue { i16, i16 } %call_ret, 1" [../sources/d_conv.cpp:22]   --->   Operation 16 'extractvalue' 'x_q_V' <Predicate = true> <Delay = 0.00> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 3.40> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 16> <Depth = 2> <FIFO>
+ST_2 : Operation 13 [1/1] (3.61ns)   --->   "%call_ret = call fastcc { i16, i16 } @iq_mult(i8 %x_V_read, i8 %ref_i_V_read, i8 %ref_q_V_read)" [../sources/d_conv.cpp:23]   --->   Operation 13 'call' 'call_ret' <Predicate = true> <Delay = 3.61> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_2 : Operation 14 [1/1] (0.00ns)   --->   "%x_i_V = extractvalue { i16, i16 } %call_ret, 0" [../sources/d_conv.cpp:23]   --->   Operation 14 'extractvalue' 'x_i_V' <Predicate = true> <Delay = 0.00> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 3.40> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 16> <Depth = 2> <FIFO>
+ST_2 : Operation 15 [1/1] (0.00ns)   --->   "%x_q_V = extractvalue { i16, i16 } %call_ret, 1" [../sources/d_conv.cpp:23]   --->   Operation 15 'extractvalue' 'x_q_V' <Predicate = true> <Delay = 0.00> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 3.40> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 16> <Depth = 2> <FIFO>
 
 State 3 <SV = 2> <Delay = 5.55>
-ST_3 : Operation 17 [1/1] (0.00ns)   --->   "%extLd_loc_channel = call fastcc i16 @Block__proc(i16 %x_i_V)" [../sources/d_conv.cpp:22]   --->   Operation 17 'call' 'extLd_loc_channel' <Predicate = true> <Delay = 0.00> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 3.40> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 16> <Depth = 2> <FIFO>
-ST_3 : Operation 18 [4/4] (5.55ns)   --->   "call void @fir_filter_a(i16 %extLd_loc_channel, i32* %y_i_V)" [../sources/d_conv.cpp:23]   --->   Operation 18 'call' <Predicate = true> <Delay = 5.55> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
-ST_3 : Operation 19 [1/1] (0.00ns)   --->   "%extLd4_loc_channel = call fastcc i16 @Block__proc33(i16 %x_q_V)" [../sources/d_conv.cpp:22]   --->   Operation 19 'call' 'extLd4_loc_channel' <Predicate = true> <Delay = 0.00> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 3.40> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 16> <Depth = 2> <FIFO>
-ST_3 : Operation 20 [4/4] (5.55ns)   --->   "call void @fir_filter_b(i16 %extLd4_loc_channel, i32* %y_q_V)" [../sources/d_conv.cpp:24]   --->   Operation 20 'call' <Predicate = true> <Delay = 5.55> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_3 : Operation 16 [1/1] (0.00ns)   --->   "%extLd_loc_channel = call fastcc i16 @Block__proc(i16 %x_i_V)" [../sources/d_conv.cpp:23]   --->   Operation 16 'call' 'extLd_loc_channel' <Predicate = true> <Delay = 0.00> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 3.40> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 16> <Depth = 2> <FIFO>
+ST_3 : Operation 17 [4/4] (5.55ns)   --->   "call void @fir_filter_a(i16 %extLd_loc_channel, i32* %y_i_V)" [../sources/d_conv.cpp:24]   --->   Operation 17 'call' <Predicate = true> <Delay = 5.55> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_3 : Operation 18 [1/1] (0.00ns)   --->   "%extLd4_loc_channel = call fastcc i16 @Block__proc33(i16 %x_q_V)" [../sources/d_conv.cpp:23]   --->   Operation 18 'call' 'extLd4_loc_channel' <Predicate = true> <Delay = 0.00> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 3.40> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 16> <Depth = 2> <FIFO>
+ST_3 : Operation 19 [4/4] (5.55ns)   --->   "call void @fir_filter_b(i16 %extLd4_loc_channel, i32* %y_q_V)" [../sources/d_conv.cpp:25]   --->   Operation 19 'call' <Predicate = true> <Delay = 5.55> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
 
 State 4 <SV = 3> <Delay = 7.44>
-ST_4 : Operation 21 [3/4] (7.44ns)   --->   "call void @fir_filter_a(i16 %extLd_loc_channel, i32* %y_i_V)" [../sources/d_conv.cpp:23]   --->   Operation 21 'call' <Predicate = true> <Delay = 7.44> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
-ST_4 : Operation 22 [3/4] (7.44ns)   --->   "call void @fir_filter_b(i16 %extLd4_loc_channel, i32* %y_q_V)" [../sources/d_conv.cpp:24]   --->   Operation 22 'call' <Predicate = true> <Delay = 7.44> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_4 : Operation 20 [3/4] (7.44ns)   --->   "call void @fir_filter_a(i16 %extLd_loc_channel, i32* %y_i_V)" [../sources/d_conv.cpp:24]   --->   Operation 20 'call' <Predicate = true> <Delay = 7.44> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_4 : Operation 21 [3/4] (7.44ns)   --->   "call void @fir_filter_b(i16 %extLd4_loc_channel, i32* %y_q_V)" [../sources/d_conv.cpp:25]   --->   Operation 21 'call' <Predicate = true> <Delay = 7.44> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
 
 State 5 <SV = 4> <Delay = 7.44>
-ST_5 : Operation 23 [2/4] (7.44ns)   --->   "call void @fir_filter_a(i16 %extLd_loc_channel, i32* %y_i_V)" [../sources/d_conv.cpp:23]   --->   Operation 23 'call' <Predicate = true> <Delay = 7.44> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
-ST_5 : Operation 24 [2/4] (7.44ns)   --->   "call void @fir_filter_b(i16 %extLd4_loc_channel, i32* %y_q_V)" [../sources/d_conv.cpp:24]   --->   Operation 24 'call' <Predicate = true> <Delay = 7.44> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_5 : Operation 22 [2/4] (7.44ns)   --->   "call void @fir_filter_a(i16 %extLd_loc_channel, i32* %y_i_V)" [../sources/d_conv.cpp:24]   --->   Operation 22 'call' <Predicate = true> <Delay = 7.44> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_5 : Operation 23 [2/4] (7.44ns)   --->   "call void @fir_filter_b(i16 %extLd4_loc_channel, i32* %y_q_V)" [../sources/d_conv.cpp:25]   --->   Operation 23 'call' <Predicate = true> <Delay = 7.44> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
 
 State 6 <SV = 5> <Delay = 3.58>
-ST_6 : Operation 25 [1/4] (3.58ns)   --->   "call void @fir_filter_a(i16 %extLd_loc_channel, i32* %y_i_V)" [../sources/d_conv.cpp:23]   --->   Operation 25 'call' <Predicate = true> <Delay = 3.58> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
-ST_6 : Operation 26 [1/4] (3.58ns)   --->   "call void @fir_filter_b(i16 %extLd4_loc_channel, i32* %y_q_V)" [../sources/d_conv.cpp:24]   --->   Operation 26 'call' <Predicate = true> <Delay = 3.58> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_6 : Operation 24 [1/4] (3.58ns)   --->   "call void @fir_filter_a(i16 %extLd_loc_channel, i32* %y_i_V)" [../sources/d_conv.cpp:24]   --->   Operation 24 'call' <Predicate = true> <Delay = 3.58> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_6 : Operation 25 [1/4] (3.58ns)   --->   "call void @fir_filter_b(i16 %extLd4_loc_channel, i32* %y_q_V)" [../sources/d_conv.cpp:25]   --->   Operation 25 'call' <Predicate = true> <Delay = 3.58> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
 
 State 7 <SV = 6> <Delay = 0.00>
-ST_7 : Operation 27 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecDataflowPipeline(i32 -1, i32 0, [1 x i8]* @p_str1) nounwind" [../sources/d_conv.cpp:18]   --->   Operation 27 'specdataflowpipeline' <Predicate = true> <Delay = 0.00>
-ST_7 : Operation 28 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i8 %x_V), !map !56"   --->   Operation 28 'specbitsmap' <Predicate = true> <Delay = 0.00>
-ST_7 : Operation 29 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i8 %ref_i_V), !map !62"   --->   Operation 29 'specbitsmap' <Predicate = true> <Delay = 0.00>
-ST_7 : Operation 30 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i8 %ref_q_V), !map !66"   --->   Operation 30 'specbitsmap' <Predicate = true> <Delay = 0.00>
-ST_7 : Operation 31 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i32* %y_i_V), !map !70"   --->   Operation 31 'specbitsmap' <Predicate = true> <Delay = 0.00>
-ST_7 : Operation 32 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i32* %y_q_V), !map !74"   --->   Operation 32 'specbitsmap' <Predicate = true> <Delay = 0.00>
-ST_7 : Operation 33 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecTopModule([7 x i8]* @d_conv_str) nounwind"   --->   Operation 33 'spectopmodule' <Predicate = true> <Delay = 0.00>
-ST_7 : Operation 34 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i32* %y_q_V, [7 x i8]* @p_str, i32 1, i32 1, [1 x i8]* @p_str1, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind" [../sources/d_conv.cpp:12]   --->   Operation 34 'specinterface' <Predicate = true> <Delay = 0.00>
-ST_7 : Operation 35 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i32* %y_i_V, [7 x i8]* @p_str, i32 1, i32 1, [1 x i8]* @p_str1, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind" [../sources/d_conv.cpp:13]   --->   Operation 35 'specinterface' <Predicate = true> <Delay = 0.00>
-ST_7 : Operation 36 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i8 %ref_q_V, [7 x i8]* @p_str, i32 1, i32 1, [1 x i8]* @p_str1, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind" [../sources/d_conv.cpp:14]   --->   Operation 36 'specinterface' <Predicate = true> <Delay = 0.00>
-ST_7 : Operation 37 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i8 %ref_i_V, [7 x i8]* @p_str, i32 1, i32 1, [1 x i8]* @p_str1, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind" [../sources/d_conv.cpp:15]   --->   Operation 37 'specinterface' <Predicate = true> <Delay = 0.00>
-ST_7 : Operation 38 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i8 %x_V, [7 x i8]* @p_str, i32 1, i32 1, [1 x i8]* @p_str1, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind" [../sources/d_conv.cpp:16]   --->   Operation 38 'specinterface' <Predicate = true> <Delay = 0.00>
-ST_7 : Operation 39 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i32 0, [13 x i8]* @p_str2, i32 0, i32 0, [1 x i8]* @p_str1, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind" [../sources/d_conv.cpp:17]   --->   Operation 39 'specinterface' <Predicate = true> <Delay = 0.00>
-ST_7 : Operation 40 [1/1] (0.00ns)   --->   "ret void" [../sources/d_conv.cpp:27]   --->   Operation 40 'ret' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 26 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecDataflowPipeline(i32 -1, i32 0, [1 x i8]* @p_str1) nounwind" [../sources/d_conv.cpp:18]   --->   Operation 26 'specdataflowpipeline' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 27 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i8 %x_V), !map !56"   --->   Operation 27 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 28 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i8 %ref_i_V), !map !62"   --->   Operation 28 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 29 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i8 %ref_q_V), !map !66"   --->   Operation 29 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 30 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i32* %y_i_V), !map !70"   --->   Operation 30 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 31 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i32* %y_q_V), !map !74"   --->   Operation 31 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 32 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecTopModule([7 x i8]* @d_conv_str) nounwind"   --->   Operation 32 'spectopmodule' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 33 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i32* %y_q_V, [7 x i8]* @p_str, i32 1, i32 1, [1 x i8]* @p_str1, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind" [../sources/d_conv.cpp:12]   --->   Operation 33 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 34 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i32* %y_i_V, [7 x i8]* @p_str, i32 1, i32 1, [1 x i8]* @p_str1, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind" [../sources/d_conv.cpp:13]   --->   Operation 34 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 35 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i8 %ref_q_V, [7 x i8]* @p_str, i32 1, i32 1, [1 x i8]* @p_str1, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind" [../sources/d_conv.cpp:14]   --->   Operation 35 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 36 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i8 %ref_i_V, [7 x i8]* @p_str, i32 1, i32 1, [1 x i8]* @p_str1, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind" [../sources/d_conv.cpp:15]   --->   Operation 36 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 37 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i8 %x_V, [7 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str1, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind" [../sources/d_conv.cpp:16]   --->   Operation 37 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 38 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i32 0, [13 x i8]* @p_str2, i32 0, i32 0, [1 x i8]* @p_str1, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind" [../sources/d_conv.cpp:17]   --->   Operation 38 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 39 [1/1] (0.00ns)   --->   "ret void" [../sources/d_conv.cpp:28]   --->   Operation 39 'ret' <Predicate = true> <Delay = 0.00>
 
 
 ============================================================
@@ -334,16 +333,16 @@ Port [ shift_reg_V_1_0]:  wired=0; compound=0; hidden=1; nouse=1; global=1; stat
 
 <LifeTime>
 <method=bitvector/>
+x_V_read                  (read                ) [ 00100000]
 ref_q_V_read              (read                ) [ 00000000]
 ref_i_V_read              (read                ) [ 00000000]
-x_V_read                  (read                ) [ 00000000]
 call_ret                  (call                ) [ 00000000]
 x_i_V                     (extractvalue        ) [ 00010000]
 x_q_V                     (extractvalue        ) [ 00010000]
 extLd_loc_channel         (call                ) [ 00000000]
 extLd4_loc_channel        (call                ) [ 00000000]
-call_ln23                 (call                ) [ 00000000]
 call_ln24                 (call                ) [ 00000000]
+call_ln25                 (call                ) [ 00000000]
 specdataflowpipeline_ln18 (specdataflowpipeline) [ 00000000]
 specbitsmap_ln0           (specbitsmap         ) [ 00000000]
 specbitsmap_ln0           (specbitsmap         ) [ 00000000]
@@ -357,7 +356,7 @@ specinterface_ln14        (specinterface       ) [ 00000000]
 specinterface_ln15        (specinterface       ) [ 00000000]
 specinterface_ln16        (specinterface       ) [ 00000000]
 specinterface_ln17        (specinterface       ) [ 00000000]
-ret_ln27                  (ret                 ) [ 00000000]
+ret_ln28                  (ret                 ) [ 00000000]
 </LifeTime>
 
 <model>
@@ -1143,11 +1142,11 @@ ret_ln27                  (ret                 ) [ 00000000]
 </bind>
 </comp>
 
-<comp id="180" class="1004" name="grp_read_fu_180">
+<comp id="180" class="1004" name="x_V_read_read_fu_180">
 <pin_list>
 <pin id="181" dir="0" index="0" bw="8" slack="0"/>
 <pin id="182" dir="0" index="1" bw="8" slack="0"/>
-<pin id="183" dir="1" index="2" bw="8" slack="0"/>
+<pin id="183" dir="1" index="2" bw="8" slack="1"/>
 </pin_list>
 <bind>
 <opcode="read(1150) " fcode="read"/>
@@ -1195,7 +1194,7 @@ ret_ln27                  (ret                 ) [ 00000000]
 </pin_list>
 <bind>
 <opcode="call(48) " fcode="call"/>
-<opset="call_ln23/3 "/>
+<opset="call_ln24/3 "/>
 </bind>
 </comp>
 
@@ -1239,14 +1238,14 @@ ret_ln27                  (ret                 ) [ 00000000]
 </pin_list>
 <bind>
 <opcode="call(48) " fcode="call"/>
-<opset="call_ln24/3 "/>
+<opset="call_ln25/3 "/>
 </bind>
 </comp>
 
 <comp id="324" class="1004" name="call_ret_iq_mult_fu_324">
 <pin_list>
 <pin id="325" dir="0" index="0" bw="32" slack="0"/>
-<pin id="326" dir="0" index="1" bw="8" slack="0"/>
+<pin id="326" dir="0" index="1" bw="8" slack="1"/>
 <pin id="327" dir="0" index="2" bw="8" slack="0"/>
 <pin id="328" dir="0" index="3" bw="8" slack="0"/>
 <pin id="329" dir="1" index="4" bw="32" slack="0"/>
@@ -1257,11 +1256,11 @@ ret_ln27                  (ret                 ) [ 00000000]
 </bind>
 </comp>
 
-<comp id="334" class="1004" name="extLd_loc_channel_Block_proc_fu_334">
+<comp id="333" class="1004" name="extLd_loc_channel_Block_proc_fu_333">
 <pin_list>
-<pin id="335" dir="0" index="0" bw="16" slack="0"/>
-<pin id="336" dir="0" index="1" bw="16" slack="1"/>
-<pin id="337" dir="1" index="2" bw="16" slack="0"/>
+<pin id="334" dir="0" index="0" bw="16" slack="0"/>
+<pin id="335" dir="0" index="1" bw="16" slack="1"/>
+<pin id="336" dir="1" index="2" bw="16" slack="0"/>
 </pin_list>
 <bind>
 <opcode="call(48) " fcode="call"/>
@@ -1269,11 +1268,11 @@ ret_ln27                  (ret                 ) [ 00000000]
 </bind>
 </comp>
 
-<comp id="340" class="1004" name="extLd4_loc_channel_Block_proc33_fu_340">
+<comp id="339" class="1004" name="extLd4_loc_channel_Block_proc33_fu_339">
 <pin_list>
-<pin id="341" dir="0" index="0" bw="16" slack="0"/>
-<pin id="342" dir="0" index="1" bw="16" slack="1"/>
-<pin id="343" dir="1" index="2" bw="16" slack="0"/>
+<pin id="340" dir="0" index="0" bw="16" slack="0"/>
+<pin id="341" dir="0" index="1" bw="16" slack="1"/>
+<pin id="342" dir="1" index="2" bw="16" slack="0"/>
 </pin_list>
 <bind>
 <opcode="call(48) " fcode="call"/>
@@ -1281,10 +1280,10 @@ ret_ln27                  (ret                 ) [ 00000000]
 </bind>
 </comp>
 
-<comp id="346" class="1004" name="x_i_V_fu_346">
+<comp id="345" class="1004" name="x_i_V_fu_345">
 <pin_list>
-<pin id="347" dir="0" index="0" bw="32" slack="0"/>
-<pin id="348" dir="1" index="1" bw="16" slack="1"/>
+<pin id="346" dir="0" index="0" bw="32" slack="0"/>
+<pin id="347" dir="1" index="1" bw="16" slack="1"/>
 </pin_list>
 <bind>
 <opcode="extractvalue(56) " fcode="extractvalue"/>
@@ -1292,10 +1291,10 @@ ret_ln27                  (ret                 ) [ 00000000]
 </bind>
 </comp>
 
-<comp id="350" class="1004" name="x_q_V_fu_350">
+<comp id="349" class="1004" name="x_q_V_fu_349">
 <pin_list>
-<pin id="351" dir="0" index="0" bw="32" slack="0"/>
-<pin id="352" dir="1" index="1" bw="16" slack="1"/>
+<pin id="350" dir="0" index="0" bw="32" slack="0"/>
+<pin id="351" dir="1" index="1" bw="16" slack="1"/>
 </pin_list>
 <bind>
 <opcode="extractvalue(56) " fcode="extractvalue"/>
@@ -1303,20 +1302,30 @@ ret_ln27                  (ret                 ) [ 00000000]
 </bind>
 </comp>
 
-<comp id="354" class="1005" name="x_i_V_reg_354">
+<comp id="353" class="1005" name="x_V_read_reg_353">
 <pin_list>
-<pin id="355" dir="0" index="0" bw="16" slack="1"/>
-<pin id="356" dir="1" index="1" bw="16" slack="1"/>
+<pin id="354" dir="0" index="0" bw="8" slack="1"/>
+<pin id="355" dir="1" index="1" bw="8" slack="1"/>
+</pin_list>
+<bind>
+<opset="x_V_read "/>
+</bind>
+</comp>
+
+<comp id="358" class="1005" name="x_i_V_reg_358">
+<pin_list>
+<pin id="359" dir="0" index="0" bw="16" slack="1"/>
+<pin id="360" dir="1" index="1" bw="16" slack="1"/>
 </pin_list>
 <bind>
 <opset="x_i_V "/>
 </bind>
 </comp>
 
-<comp id="359" class="1005" name="x_q_V_reg_359">
+<comp id="363" class="1005" name="x_q_V_reg_363">
 <pin_list>
-<pin id="360" dir="0" index="0" bw="16" slack="1"/>
-<pin id="361" dir="1" index="1" bw="16" slack="1"/>
+<pin id="364" dir="0" index="0" bw="16" slack="1"/>
+<pin id="365" dir="1" index="1" bw="16" slack="1"/>
 </pin_list>
 <bind>
 <opset="x_q_V "/>
@@ -1472,31 +1481,33 @@ ret_ln27                  (ret                 ) [ 00000000]
 
 <net id="330"><net_src comp="136" pin="0"/><net_sink comp="324" pin=0"/></net>
 
-<net id="331"><net_src comp="180" pin="2"/><net_sink comp="324" pin=1"/></net>
+<net id="331"><net_src comp="174" pin="2"/><net_sink comp="324" pin=2"/></net>
 
-<net id="332"><net_src comp="174" pin="2"/><net_sink comp="324" pin=2"/></net>
+<net id="332"><net_src comp="168" pin="2"/><net_sink comp="324" pin=3"/></net>
 
-<net id="333"><net_src comp="168" pin="2"/><net_sink comp="324" pin=3"/></net>
+<net id="337"><net_src comp="138" pin="0"/><net_sink comp="333" pin=0"/></net>
 
-<net id="338"><net_src comp="138" pin="0"/><net_sink comp="334" pin=0"/></net>
+<net id="338"><net_src comp="333" pin="2"/><net_sink comp="186" pin=1"/></net>
 
-<net id="339"><net_src comp="334" pin="2"/><net_sink comp="186" pin=1"/></net>
+<net id="343"><net_src comp="142" pin="0"/><net_sink comp="339" pin=0"/></net>
 
-<net id="344"><net_src comp="142" pin="0"/><net_sink comp="340" pin=0"/></net>
+<net id="344"><net_src comp="339" pin="2"/><net_sink comp="255" pin=1"/></net>
 
-<net id="345"><net_src comp="340" pin="2"/><net_sink comp="255" pin=1"/></net>
+<net id="348"><net_src comp="324" pin="4"/><net_sink comp="345" pin=0"/></net>
 
-<net id="349"><net_src comp="324" pin="4"/><net_sink comp="346" pin=0"/></net>
+<net id="352"><net_src comp="324" pin="4"/><net_sink comp="349" pin=0"/></net>
 
-<net id="353"><net_src comp="324" pin="4"/><net_sink comp="350" pin=0"/></net>
+<net id="356"><net_src comp="180" pin="2"/><net_sink comp="353" pin=0"/></net>
 
-<net id="357"><net_src comp="346" pin="1"/><net_sink comp="354" pin=0"/></net>
+<net id="357"><net_src comp="353" pin="1"/><net_sink comp="324" pin=1"/></net>
 
-<net id="358"><net_src comp="354" pin="1"/><net_sink comp="334" pin=1"/></net>
+<net id="361"><net_src comp="345" pin="1"/><net_sink comp="358" pin=0"/></net>
 
-<net id="362"><net_src comp="350" pin="1"/><net_sink comp="359" pin=0"/></net>
+<net id="362"><net_src comp="358" pin="1"/><net_sink comp="333" pin=1"/></net>
 
-<net id="363"><net_src comp="359" pin="1"/><net_sink comp="340" pin=1"/></net>
+<net id="366"><net_src comp="349" pin="1"/><net_sink comp="363" pin=0"/></net>
+
+<net id="367"><net_src comp="363" pin="1"/><net_sink comp="339" pin=1"/></net>
 
 </net_list>
 
@@ -1641,8 +1652,8 @@ ret_ln27                  (ret                 ) [ 00000000]
 		x_i_V : 1
 		x_q_V : 1
 	State 3
-		call_ln23 : 1
 		call_ln24 : 1
+		call_ln25 : 1
 	State 4
 	State 5
 	State 6
@@ -1660,15 +1671,15 @@ ret_ln27                  (ret                 ) [ 00000000]
 |          |         grp_fir_filter_a_fu_186        |    61   |  0.466  |   1444  |   1572  |
 |          |         grp_fir_filter_b_fu_255        |    61   |  0.466  |   1444  |   1572  |
 |   call   |         call_ret_iq_mult_fu_324        |    0    |    0    |    0    |    82   |
-|          |   extLd_loc_channel_Block_proc_fu_334  |    0    |    0    |    0    |    0    |
-|          | extLd4_loc_channel_Block_proc33_fu_340 |    0    |    0    |    0    |    0    |
+|          |   extLd_loc_channel_Block_proc_fu_333  |    0    |    0    |    0    |    0    |
+|          | extLd4_loc_channel_Block_proc33_fu_339 |    0    |    0    |    0    |    0    |
 |----------|----------------------------------------|---------|---------|---------|---------|
 |          |             grp_read_fu_168            |    0    |    0    |    0    |    0    |
 |   read   |             grp_read_fu_174            |    0    |    0    |    0    |    0    |
-|          |             grp_read_fu_180            |    0    |    0    |    0    |    0    |
+|          |          x_V_read_read_fu_180          |    0    |    0    |    0    |    0    |
 |----------|----------------------------------------|---------|---------|---------|---------|
-|extractvalue|              x_i_V_fu_346              |    0    |    0    |    0    |    0    |
-|          |              x_q_V_fu_350              |    0    |    0    |    0    |    0    |
+|extractvalue|              x_i_V_fu_345              |    0    |    0    |    0    |    0    |
+|          |              x_q_V_fu_349              |    0    |    0    |    0    |    0    |
 |----------|----------------------------------------|---------|---------|---------|---------|
 |   Total  |                                        |   122   |  0.932  |   2888  |   3226  |
 |----------|----------------------------------------|---------|---------|---------|---------|
@@ -1677,14 +1688,15 @@ Memories:
 N/A
 
 * Register list:
-+-------------+--------+
-|             |   FF   |
-+-------------+--------+
-|x_i_V_reg_354|   16   |
-|x_q_V_reg_359|   16   |
-+-------------+--------+
-|    Total    |   32   |
-+-------------+--------+
++----------------+--------+
+|                |   FF   |
++----------------+--------+
+|x_V_read_reg_353|    8   |
+|  x_i_V_reg_358 |   16   |
+|  x_q_V_reg_363 |   16   |
++----------------+--------+
+|      Total     |   40   |
++----------------+--------+
 
 * Multiplexer (MUX) list: 
 |--------|------|------|------|--------|
@@ -1702,7 +1714,7 @@ N/A
 |  Function |   122  |    0   |  2888  |  3226  |
 |   Memory  |    -   |    -   |    -   |    -   |
 |Multiplexer|    -   |    -   |    -   |    -   |
-|  Register |    -   |    -   |   32   |    -   |
+|  Register |    -   |    -   |   40   |    -   |
 +-----------+--------+--------+--------+--------+
-|   Total   |   122  |    0   |  2920  |  3226  |
+|   Total   |   122  |    0   |  2928  |  3226  |
 +-----------+--------+--------+--------+--------+

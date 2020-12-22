@@ -37,7 +37,7 @@ newFuncRoot:0  %p_read_1 = call i16 @_ssdm_op_Read.ap_auto.i16(i16 %p_read)
 newFuncRoot:1  ret i16 %p_read_1
 
 ]]></Node>
-<StgValue><ssdm name="ret_ln24"/></StgValue>
+<StgValue><ssdm name="ret_ln25"/></StgValue>
 </operation>
 </state>
 </state_list>

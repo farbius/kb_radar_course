@@ -134,13 +134,13 @@ module AESL_deadlock_report_unit #( parameter PROC_NUM = 4 ) (
     endfunction
 
     // get the proc path based on dl vector
-    function [288:0] proc_path(input [PROC_NUM - 1:0] dl_vec);
+    function [264:0] proc_path(input [PROC_NUM - 1:0] dl_vec);
         integer index;
         begin
             index = proc_index(dl_vec);
             case (index)
                 0 : begin
-                    proc_path = "up_conv.up_conv_entry14_U0";
+                    proc_path = "up_conv.Block_proc14_U0";
                 end
                 1 : begin
                     proc_path = "up_conv.fir_filter_a_U0";
@@ -168,7 +168,7 @@ module AESL_deadlock_report_unit #( parameter PROC_NUM = 4 ) (
     endtask
 
     // print the start of a cycle
-    task print_cycle_start(input reg [288:0] proc_path, input integer cycle_id);
+    task print_cycle_start(input reg [264:0] proc_path, input integer cycle_id);
         begin
             $display("/////////////////////////");
             $display("// Dependence cycle %0d:", cycle_id);
@@ -186,7 +186,7 @@ module AESL_deadlock_report_unit #( parameter PROC_NUM = 4 ) (
     endtask
 
     // print one proc component in the cycle
-    task print_cycle_proc_comp(input reg [288:0] proc_path, input integer cycle_comp_id);
+    task print_cycle_proc_comp(input reg [264:0] proc_path, input integer cycle_comp_id);
         begin
             $display("// (%0d): Process: %0s", cycle_comp_id, proc_path);
         end
@@ -203,8 +203,53 @@ module AESL_deadlock_report_unit #( parameter PROC_NUM = 4 ) (
             case (index1)
                 0 : begin
                     case(index2)
+                    3: begin
+                        if (~AESL_inst_up_conv.Block_proc14_U0.q_tmp_out_blk_n) begin
+                            chan_path = "up_conv.q_tmp_c_U";
+                            if (~AESL_inst_up_conv.q_tmp_c_U.if_empty_n) begin
+                                $display("//      Channel: %0s, EMPTY", chan_path);
+                            end
+                            else if (~AESL_inst_up_conv.q_tmp_c_U.if_full_n) begin
+                                $display("//      Channel: %0s, FULL", chan_path);
+                            end
+                            else begin
+                                $display("//      Channel: %0s", chan_path);
+                            end
+                        end
+                        if (~AESL_inst_up_conv.Block_proc14_U0.ref_i_V_out_blk_n) begin
+                            chan_path = "up_conv.ref_i_V_c_U";
+                            if (~AESL_inst_up_conv.ref_i_V_c_U.if_empty_n) begin
+                                $display("//      Channel: %0s, EMPTY", chan_path);
+                            end
+                            else if (~AESL_inst_up_conv.ref_i_V_c_U.if_full_n) begin
+                                $display("//      Channel: %0s, FULL", chan_path);
+                            end
+                            else begin
+                                $display("//      Channel: %0s", chan_path);
+                            end
+                        end
+                        if (~AESL_inst_up_conv.Block_proc14_U0.ref_q_V_out_blk_n) begin
+                            chan_path = "up_conv.ref_q_V_c_U";
+                            if (~AESL_inst_up_conv.ref_q_V_c_U.if_empty_n) begin
+                                $display("//      Channel: %0s, EMPTY", chan_path);
+                            end
+                            else if (~AESL_inst_up_conv.ref_q_V_c_U.if_full_n) begin
+                                $display("//      Channel: %0s, FULL", chan_path);
+                            end
+                            else begin
+                                $display("//      Channel: %0s", chan_path);
+                            end
+                        end
+                        if ((~AESL_inst_up_conv.start_for_iq_multdEe_U.if_full_n & AESL_inst_up_conv.iq_mult_U0.ap_done)) begin
+                            chan_path = "";
+                            if ((~AESL_inst_up_conv.start_for_iq_multdEe_U.if_full_n & AESL_inst_up_conv.iq_mult_U0.ap_done)) begin
+                                $display("//      Deadlock detected: can be a false alarm due to leftover data,");
+                                $display("//      please try cosim_design -disable_deadlock_detection");
+                            end
+                        end
+                    end
                     1: begin
-                        if (~AESL_inst_up_conv.up_conv_entry14_U0.x_i_out_blk_n) begin
+                        if (~AESL_inst_up_conv.Block_proc14_U0.x_i_out_blk_n) begin
                             chan_path = "up_conv.x_i_c_U";
                             if (~AESL_inst_up_conv.x_i_c_U.if_empty_n) begin
                                 $display("//      Channel: %0s, EMPTY", chan_path);
@@ -225,7 +270,7 @@ module AESL_deadlock_report_unit #( parameter PROC_NUM = 4 ) (
                         end
                     end
                     2: begin
-                        if (~AESL_inst_up_conv.up_conv_entry14_U0.x_q_out_blk_n) begin
+                        if (~AESL_inst_up_conv.Block_proc14_U0.x_q_out_blk_n) begin
                             chan_path = "up_conv.x_q_c_U";
                             if (~AESL_inst_up_conv.x_q_c_U.if_empty_n) begin
                                 $display("//      Channel: %0s, EMPTY", chan_path);
@@ -242,32 +287,6 @@ module AESL_deadlock_report_unit #( parameter PROC_NUM = 4 ) (
                             if ((~AESL_inst_up_conv.start_for_fir_filcud_U.if_full_n & AESL_inst_up_conv.fir_filter_b_U0.ap_done)) begin
                                 $display("//      Deadlock detected: can be a false alarm due to leftover data,");
                                 $display("//      please try cosim_design -disable_deadlock_detection");
-                            end
-                        end
-                    end
-                    3: begin
-                        if (~AESL_inst_up_conv.up_conv_entry14_U0.ref_i_V_out_blk_n) begin
-                            chan_path = "up_conv.ref_i_V_c_U";
-                            if (~AESL_inst_up_conv.ref_i_V_c_U.if_empty_n) begin
-                                $display("//      Channel: %0s, EMPTY", chan_path);
-                            end
-                            else if (~AESL_inst_up_conv.ref_i_V_c_U.if_full_n) begin
-                                $display("//      Channel: %0s, FULL", chan_path);
-                            end
-                            else begin
-                                $display("//      Channel: %0s", chan_path);
-                            end
-                        end
-                        if (~AESL_inst_up_conv.up_conv_entry14_U0.ref_q_V_out_blk_n) begin
-                            chan_path = "up_conv.ref_q_V_c_U";
-                            if (~AESL_inst_up_conv.ref_q_V_c_U.if_empty_n) begin
-                                $display("//      Channel: %0s, EMPTY", chan_path);
-                            end
-                            else if (~AESL_inst_up_conv.ref_q_V_c_U.if_full_n) begin
-                                $display("//      Channel: %0s, FULL", chan_path);
-                            end
-                            else begin
-                                $display("//      Channel: %0s", chan_path);
                             end
                         end
                     end
@@ -293,6 +312,20 @@ module AESL_deadlock_report_unit #( parameter PROC_NUM = 4 ) (
                             if ((~AESL_inst_up_conv.start_for_fir_filbkb_U.if_empty_n & (AESL_inst_up_conv.fir_filter_a_U0.ap_ready | AESL_inst_up_conv.fir_filter_a_U0.ap_idle))) begin
                                 $display("//      Deadlock detected: can be a false alarm due to leftover data,");
                                 $display("//      please try cosim_design -disable_deadlock_detection");
+                            end
+                        end
+                    end
+                    3: begin
+                        if (~AESL_inst_up_conv.fir_filter_a_U0.y_blk_n) begin
+                            chan_path = "up_conv.i_tmp_c_U";
+                            if (~AESL_inst_up_conv.i_tmp_c_U.if_empty_n) begin
+                                $display("//      Channel: %0s, EMPTY", chan_path);
+                            end
+                            else if (~AESL_inst_up_conv.i_tmp_c_U.if_full_n) begin
+                                $display("//      Channel: %0s, FULL", chan_path);
+                            end
+                            else begin
+                                $display("//      Channel: %0s", chan_path);
                             end
                         end
                     end
@@ -326,26 +359,12 @@ module AESL_deadlock_report_unit #( parameter PROC_NUM = 4 ) (
                 3 : begin
                     case(index2)
                     1: begin
-                        if (~AESL_inst_up_conv.i_tmp_U.if_empty_n & (AESL_inst_up_conv.iq_mult_U0.ap_ready | AESL_inst_up_conv.iq_mult_U0.ap_idle) & ~AESL_inst_up_conv.i_tmp_U.if_write) begin
-                            chan_path = "up_conv.i_tmp_U";
-                            if (~AESL_inst_up_conv.i_tmp_U.if_empty_n) begin
+                        if (~AESL_inst_up_conv.iq_mult_U0.i_tmp_blk_n) begin
+                            chan_path = "up_conv.i_tmp_c_U";
+                            if (~AESL_inst_up_conv.i_tmp_c_U.if_empty_n) begin
                                 $display("//      Channel: %0s, EMPTY", chan_path);
                             end
-                            else if (~AESL_inst_up_conv.i_tmp_U.if_full_n) begin
-                                $display("//      Channel: %0s, FULL", chan_path);
-                            end
-                            else begin
-                                $display("//      Channel: %0s", chan_path);
-                            end
-                        end
-                    end
-                    2: begin
-                        if (~AESL_inst_up_conv.q_tmp_U.if_empty_n & (AESL_inst_up_conv.iq_mult_U0.ap_ready | AESL_inst_up_conv.iq_mult_U0.ap_idle) & ~AESL_inst_up_conv.q_tmp_U.if_write) begin
-                            chan_path = "up_conv.q_tmp_U";
-                            if (~AESL_inst_up_conv.q_tmp_U.if_empty_n) begin
-                                $display("//      Channel: %0s, EMPTY", chan_path);
-                            end
-                            else if (~AESL_inst_up_conv.q_tmp_U.if_full_n) begin
+                            else if (~AESL_inst_up_conv.i_tmp_c_U.if_full_n) begin
                                 $display("//      Channel: %0s, FULL", chan_path);
                             end
                             else begin
@@ -354,6 +373,18 @@ module AESL_deadlock_report_unit #( parameter PROC_NUM = 4 ) (
                         end
                     end
                     0: begin
+                        if (~AESL_inst_up_conv.iq_mult_U0.q_tmp_blk_n) begin
+                            chan_path = "up_conv.q_tmp_c_U";
+                            if (~AESL_inst_up_conv.q_tmp_c_U.if_empty_n) begin
+                                $display("//      Channel: %0s, EMPTY", chan_path);
+                            end
+                            else if (~AESL_inst_up_conv.q_tmp_c_U.if_full_n) begin
+                                $display("//      Channel: %0s, FULL", chan_path);
+                            end
+                            else begin
+                                $display("//      Channel: %0s", chan_path);
+                            end
+                        end
                         if (~AESL_inst_up_conv.iq_mult_U0.ref_i_V_blk_n) begin
                             chan_path = "up_conv.ref_i_V_c_U";
                             if (~AESL_inst_up_conv.ref_i_V_c_U.if_empty_n) begin
@@ -376,6 +407,13 @@ module AESL_deadlock_report_unit #( parameter PROC_NUM = 4 ) (
                             end
                             else begin
                                 $display("//      Channel: %0s", chan_path);
+                            end
+                        end
+                        if ((~AESL_inst_up_conv.start_for_iq_multdEe_U.if_empty_n & (AESL_inst_up_conv.iq_mult_U0.ap_ready | AESL_inst_up_conv.iq_mult_U0.ap_idle))) begin
+                            chan_path = "";
+                            if ((~AESL_inst_up_conv.start_for_iq_multdEe_U.if_empty_n & (AESL_inst_up_conv.iq_mult_U0.ap_ready | AESL_inst_up_conv.iq_mult_U0.ap_idle))) begin
+                                $display("//      Deadlock detected: can be a false alarm due to leftover data,");
+                                $display("//      please try cosim_design -disable_deadlock_detection");
                             end
                         end
                     end

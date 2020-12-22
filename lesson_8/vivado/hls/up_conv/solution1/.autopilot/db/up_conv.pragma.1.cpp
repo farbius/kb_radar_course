@@ -6350,7 +6350,8 @@ inline bool operator!=(
 
 }
 # 399 "C:/Xilinx/Vivado/2019.1/common/technology/autopilot\\ap_fixed.h" 2
-# 2 "../sources/up_conv.h" 2
+# 1 "../sources/up_conv.h" 2
+
 
 
 
@@ -6380,7 +6381,7 @@ _ssdm_op_SpecInterface(x_q, "ap_vld", 0, 0, "", 0, 0, "", "", "", 0, 0, 0, 0, ""
 _ssdm_op_SpecInterface(x_i, "ap_vld", 0, 0, "", 0, 0, "", "", "", 0, 0, 0, 0, "", "");
 _ssdm_op_SpecInterface(0, "ap_ctrl_none", 0, 0, "", 0, 0, "", "", "", 0, 0, 0, 0, "", "");
 _ssdm_op_SpecDataflowPipeline(-1, 0, "");
- dout_t i_tmp, q_tmp;
+ dout_t i_tmp = 0, q_tmp=0;
 
 
   fir_filter_a(x_i, &i_tmp);

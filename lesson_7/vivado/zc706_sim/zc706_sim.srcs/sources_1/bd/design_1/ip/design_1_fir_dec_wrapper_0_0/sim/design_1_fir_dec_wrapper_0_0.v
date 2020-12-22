@@ -99,7 +99,7 @@ output wire m_axis_tvalid;
     .D_W(8),
     .C_W(16),
     .TAPS(32),
-    .MEM_FILE("D:/radar/lesson_7/vivado/zc706_sim/zc706_sim.srcs/sources_1/imports/hdl/coef_lp_dec.mem"),
+    .MEM_FILE("D:/work/radar_course/lesson_7/vivado/zc706_sim/zc706_sim.srcs/sources_1/imports/hdl/coef_lp_dec.mem"),
     .DECIMATE(10)
   ) inst (
     .clk(clk),

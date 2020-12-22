@@ -2,47 +2,47 @@
    "ExpandedHierarchyInLayout":"",
    "guistr":"# # String gsaved with Nlview 7.0.19  2019-03-26 bk=1.5019 VDI=41 GEI=35 GUI=JA:9.0 non-TLS
 #  -string -flagsOSRD
-preplace port sys_diff_clock -pg 1 -lvl 0 -x 0 -y 470 -defaultsOSRD
+preplace port sys_diff_clock -pg 1 -lvl 0 -x -90 -y 470 -defaultsOSRD
 preplace port m_axis_0 -pg 1 -lvl 10 -x 2790 -y 600 -defaultsOSRD
-preplace port reset -pg 1 -lvl 0 -x 0 -y 490 -defaultsOSRD
+preplace port reset -pg 1 -lvl 0 -x -90 -y 490 -defaultsOSRD
 preplace port clk_out -pg 1 -lvl 10 -x 2790 -y 710 -defaultsOSRD
-preplace inst dds_compiler_0 -pg 1 -lvl 4 -x 1030 -y 240 -defaultsOSRD
-preplace inst dds_compiler_1 -pg 1 -lvl 6 -x 1720 -y 490 -defaultsOSRD
-preplace inst dds_compiler_2 -pg 1 -lvl 4 -x 1030 -y 80 -defaultsOSRD
-preplace inst axis_data_fifo_0 -pg 1 -lvl 6 -x 1720 -y 320 -defaultsOSRD
+preplace inst dds_compiler_0 -pg 1 -lvl 4 -x 940 -y 240 -defaultsOSRD
+preplace inst dds_compiler_1 -pg 1 -lvl 6 -x 1630 -y 490 -defaultsOSRD
+preplace inst dds_compiler_2 -pg 1 -lvl 4 -x 940 -y 80 -defaultsOSRD
+preplace inst axis_data_fifo_0 -pg 1 -lvl 6 -x 1630 -y 320 -defaultsOSRD
 preplace inst axis_data_fifo_1 -pg 1 -lvl 8 -x 2300 -y 550 -defaultsOSRD
-preplace inst clk_wiz_0 -pg 1 -lvl 1 -x 130 -y 480 -defaultsOSRD
-preplace inst LFM_phase_gen_0 -pg 1 -lvl 3 -x 730 -y 230 -defaultsOSRD
-preplace inst fir_dec_wrapper_0 -pg 1 -lvl 5 -x 1380 -y 290 -defaultsOSRD
+preplace inst clk_wiz_0 -pg 1 -lvl 1 -x 40 -y 480 -defaultsOSRD
+preplace inst LFM_phase_gen_0 -pg 1 -lvl 3 -x 640 -y 230 -defaultsOSRD
+preplace inst fir_dec_wrapper_0 -pg 1 -lvl 5 -x 1290 -y 290 -defaultsOSRD
 preplace inst iq_modulator_0 -pg 1 -lvl 9 -x 2610 -y 600 -defaultsOSRD
-preplace inst mod_subsys_0 -pg 1 -lvl 7 -x 2030 -y 520 -defaultsOSRD
-preplace inst rst_clk_wiz_0_100M -pg 1 -lvl 2 -x 430 -y 400 -defaultsOSRD
-preplace inst rst_clk_wiz_0_10M -pg 1 -lvl 4 -x 1030 -y 750 -defaultsOSRD
-preplace inst vio_0 -pg 1 -lvl 4 -x 1030 -y 590 -defaultsOSRD
-preplace inst ref_phase_0 -pg 1 -lvl 5 -x 1380 -y 490 -defaultsOSRD
-preplace netloc reset_1 1 0 4 20 560 250 730 NJ 730 NJ
-preplace netloc clk_wiz_0_clk_out1 1 1 9 240 300 600 300 850 320 1220 410 1550 410 NJ 410 2160 460 2420 490 2770J
-preplace netloc clk_wiz_0_locked 1 1 3 260 720 NJ 720 860J
-preplace netloc rst_clk_wiz_0_100M_peripheral_aresetn 1 2 7 610 310 860 330 1200 400 1540 230 NJ 230 NJ 230 2430J
-preplace netloc clk_wiz_0_clk_out2 1 1 7 NJ 500 NJ 500 850 500 1210 570 1560 570 1880 630 2180J
-preplace netloc rst_clk_wiz_0_10M_peripheral_aresetn 1 4 4 1220 580 1570 580 1890 640 2170J
-preplace netloc dds_compiler_2_m_axis_data_tdata 1 4 5 1220 170 NJ 170 NJ 170 NJ 170 2450
-preplace netloc dds_compiler_2_m_axis_data_tvalid 1 4 5 1200 180 NJ 180 NJ 180 NJ 180 2440
-preplace netloc vio_0_probe_out0 1 4 1 1200 510n
-preplace netloc vio_0_probe_out1 1 4 3 NJ 590 NJ 590 1870
-preplace netloc vio_0_probe_out2 1 4 3 NJ 610 NJ 610 1900
-preplace netloc sys_diff_clock_1 1 0 1 NJ 470
+preplace inst mod_subsys_0 -pg 1 -lvl 7 -x 1980 -y 520 -defaultsOSRD
+preplace inst rst_clk_wiz_0_100M -pg 1 -lvl 2 -x 340 -y 400 -defaultsOSRD
+preplace inst rst_clk_wiz_0_10M -pg 1 -lvl 4 -x 940 -y 750 -defaultsOSRD
+preplace inst vio_0 -pg 1 -lvl 4 -x 940 -y 590 -defaultsOSRD
+preplace inst ref_phase_0 -pg 1 -lvl 5 -x 1290 -y 490 -defaultsOSRD
+preplace netloc reset_1 1 0 4 -70 560 160 730 NJ 730 NJ
+preplace netloc clk_wiz_0_clk_out1 1 1 9 150 300 510 300 760 320 1130 410 1460 410 NJ 410 2160 460 2420 490 2770J
+preplace netloc clk_wiz_0_locked 1 1 3 170 500 NJ 500 760J
+preplace netloc rst_clk_wiz_0_100M_peripheral_aresetn 1 2 7 520 310 770 330 1110 400 1450 230 NJ 230 NJ 230 2430J
+preplace netloc clk_wiz_0_clk_out2 1 1 7 150J 510 NJ 510 770 510 1110 570 1470 570 1790 630 2180J
+preplace netloc rst_clk_wiz_0_10M_peripheral_aresetn 1 4 4 1120 580 1480 580 1800 640 2170J
+preplace netloc dds_compiler_2_m_axis_data_tdata 1 4 5 1130 170 NJ 170 NJ 170 NJ 170 2450
+preplace netloc dds_compiler_2_m_axis_data_tvalid 1 4 5 1110 180 NJ 180 NJ 180 NJ 180 2440
+preplace netloc vio_0_probe_out0 1 4 1 1130 510n
+preplace netloc vio_0_probe_out1 1 4 3 NJ 590 NJ 590 1780
+preplace netloc vio_0_probe_out2 1 4 3 NJ 610 NJ 610 1810
+preplace netloc fir_dec_wrapper_0_m_axis 1 5 1 N 290
 preplace netloc LFM_phase_gen_0_m_axis_phase 1 3 1 N 220
 preplace netloc dds_compiler_0_M_AXIS_DATA 1 4 1 N 240
-preplace netloc fir_dec_wrapper_0_m_axis 1 5 1 N 290
-preplace netloc axis_data_fifo_0_M_AXIS 1 6 1 1870 320n
-preplace netloc mod_subsys_0_m_axis 1 7 1 N 520
+preplace netloc axis_data_fifo_0_M_AXIS 1 6 1 1780 320n
+preplace netloc sys_diff_clock_1 1 0 1 NJ 470
+preplace netloc mod_subsys_0_m_axis 1 7 1 2150 490n
 preplace netloc axis_data_fifo_1_M_AXIS 1 8 1 N 550
 preplace netloc dds_compiler_1_M_AXIS_DATA 1 6 1 N 490
-preplace netloc ref_phase_0_m_axis_phase 1 5 1 1540 470n
+preplace netloc ref_phase_0_m_axis_phase 1 5 1 1450 470n
 preplace netloc iq_modulator_0_m_axis 1 9 1 NJ 600
-levelinfo -pg 1 0 130 430 730 1030 1380 1720 2030 2300 2610 2790
-pagesize -pg 1 -db -bbox -sgen -140 0 2900 850
+levelinfo -pg 1 -90 40 340 640 940 1290 1630 1980 2300 2610 2790
+pagesize -pg 1 -db -bbox -sgen -230 0 2900 850
 "
 }
 {

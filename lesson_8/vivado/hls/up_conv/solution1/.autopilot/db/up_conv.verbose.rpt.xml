@@ -1,9 +1,9 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'up_conv'" level="0">
-<item name = "Date">Mon Dec 21 15:51:23 2020
+<item name = "Date">Tue Dec 22 13:01:29 2020
 </item>
-<item name = "Version">2019.1.3 (Build 2642998 on Wed Sep 04 10:25:22 MDT 2019)</item>
+<item name = "Version">2019.1.2 (Build 2614775 on Fri Aug 09 16:45:44 MDT 2019)</item>
 <item name = "Project">up_conv</item>
 <item name = "Solution">solution1</item>
 <item name = "Product family">zynq</item>
@@ -24,17 +24,17 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="6">, min, max, min, max, Type</keys>
-<column name="">5, 5, 1, 1, dataflow</column>
+<column name="">9, 9, 1, 1, dataflow</column>
 </table>
 </item>
 <item name = "Detail">
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="0">
 <keys size="7">Instance, Module, min, max, min, max, Type</keys>
-<column name="fir_filter_a_U0">fir_filter_a, 4, 4, 1, 1, function</column>
-<column name="fir_filter_b_U0">fir_filter_b, 4, 4, 1, 1, function</column>
+<column name="fir_filter_a_U0">fir_filter_a, 5, 5, 1, 1, function</column>
 <column name="iq_mult_U0">iq_mult, 2, 2, 1, 1, function</column>
-<column name="up_conv_entry14_U0">up_conv_entry14, 0, 0, 0, 0, none</column>
+<column name="fir_filter_b_U0">fir_filter_b, 0, 0, 1, 1, function</column>
+<column name="Block_proc14_U0">Block_proc14, 0, 0, 0, 0, none</column>
 </table>
 </item>
 <item name = "Loop"><table name="" hasTotal="0">
@@ -51,24 +51,24 @@
 <item name = "Summary"><table name="" hasTotal="1">
 <keys size="6">Name, BRAM_18K, DSP48E, FF, LUT, URAM</keys>
 <column name="DSP">-, -, -, -, -</column>
-<column name="Expression">-, -, 0, 2, -</column>
-<column name="FIFO">0, -, 30, 216, -</column>
-<column name="Instance">-, 236, 10083, 6996, -</column>
+<column name="Expression">-, -, 0, 1, -</column>
+<column name="FIFO">0, -, 30, 188, -</column>
+<column name="Instance">-, 118, 5029, 3562, -</column>
 <column name="Memory">-, -, -, -, -</column>
 <column name="Multiplexer">-, -, -, -, -</column>
 <column name="Register">-, -, -, -, -</column>
 <specialColumn name="Available">1090, 900, 437200, 218600, 0</specialColumn>
-<specialColumn name="Utilization (%)">0, 26, 2, 3, 0</specialColumn>
+<specialColumn name="Utilization (%)">0, 13, 1, 1, 0</specialColumn>
 </table>
 </item>
 <item name = "Detail">
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="1">
 <keys size="7">Instance, Module, BRAM_18K, DSP48E, FF, LUT, URAM</keys>
-<column name="fir_filter_a_U0">fir_filter_a, 0, 116, 4966, 3439, 0</column>
-<column name="fir_filter_b_U0">fir_filter_b, 0, 116, 4966, 3439, 0</column>
-<column name="iq_mult_U0">iq_mult, 0, 4, 148, 87, 0</column>
-<column name="up_conv_entry14_U0">up_conv_entry14, 0, 0, 3, 31, 0</column>
+<column name="Block_proc14_U0">Block_proc14, 0, 0, 3, 34, 0</column>
+<column name="fir_filter_a_U0">fir_filter_a, 0, 116, 4930, 3439, 0</column>
+<column name="fir_filter_b_U0">fir_filter_b, 0, 0, 2, 7, 0</column>
+<column name="iq_mult_U0">iq_mult, 0, 2, 94, 82, 0</column>
 </table>
 </item>
 <item name = "DSP48E"><table name="" hasTotal="0">
@@ -81,8 +81,8 @@
 </item>
 <item name = "FIFO"><table name="" hasTotal="1">
 <keys size="8">Name, BRAM_18K, FF, LUT, URAM, Depth, Bits, Size:D*B</keys>
-<column name="i_tmp_U">0, 5, 0, -, 2, 32, 64</column>
-<column name="q_tmp_U">0, 5, 0, -, 2, 32, 64</column>
+<column name="i_tmp_c_U">0, 5, 0, -, 2, 32, 64</column>
+<column name="q_tmp_c_U">0, 5, 0, -, 3, 1, 3</column>
 <column name="ref_i_V_c_U">0, 5, 0, -, 3, 8, 24</column>
 <column name="ref_q_V_c_U">0, 5, 0, -, 3, 8, 24</column>
 <column name="x_i_c_U">0, 5, 0, -, 2, 32, 64</column>
@@ -91,8 +91,7 @@
 </item>
 <item name = "Expression"><table name="" hasTotal="1">
 <keys size="7">Variable Name, Operation, DSP48E, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
-<column name="iq_mult_U0_ap_start">and, 0, 0, 1, 1, 1</column>
-<column name="up_conv_entry14_U0_start_full_n">and, 0, 0, 1, 1, 1</column>
+<column name="Block_proc14_U0_start_full_n">and, 0, 0, 1, 1, 1</column>
 </table>
 </item>
 <item name = "Multiplexer"><table name="" hasTotal="1">

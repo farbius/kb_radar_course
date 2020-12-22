@@ -432,7 +432,7 @@
             "value": "10"
           },
           "MEM_FILE": {
-            "value": "D:/radar/lesson_7/vivado/zc706_sim/zc706_sim.srcs/sources_1/imports/hdl/coef_lp_dec.mem"
+            "value": "D:/work/radar_course/lesson_7/vivado/zc706_sim/zc706_sim.srcs/sources_1/imports/hdl/coef_lp_dec.mem"
           }
         },
         "reference_info": {
@@ -679,7 +679,7 @@
             "value": "24"
           },
           "MEM_FILE": {
-            "value": "D:/radar/lesson_7/vivado/zc706_sim/zc706_sim.srcs/sources_1/imports/hdl/coef_lp_int.mem"
+            "value": "D:/work/radar_course/lesson_7/vivado/zc706_sim/zc706_sim.srcs/sources_1/imports/hdl/coef_lp_int.mem"
           }
         },
         "reference_info": {
@@ -1332,16 +1332,10 @@
       }
     },
     "interface_nets": {
-      "fir_dec_wrapper_0_m_axis": {
+      "iq_modulator_0_m_axis": {
         "interface_ports": [
-          "fir_dec_wrapper_0/m_axis",
-          "axis_data_fifo_0/S_AXIS"
-        ]
-      },
-      "LFM_phase_gen_0_m_axis_phase": {
-        "interface_ports": [
-          "LFM_phase_gen_0/m_axis_phase",
-          "dds_compiler_0/S_AXIS_PHASE"
+          "m_axis_0",
+          "iq_modulator_0/m_axis"
         ]
       },
       "dds_compiler_0_M_AXIS_DATA": {
@@ -1350,10 +1344,10 @@
           "fir_dec_wrapper_0/s_axis"
         ]
       },
-      "axis_data_fifo_0_M_AXIS": {
+      "ref_phase_0_m_axis_phase": {
         "interface_ports": [
-          "axis_data_fifo_0/M_AXIS",
-          "mod_subsys_0/s_axis"
+          "dds_compiler_1/S_AXIS_PHASE",
+          "ref_phase_0/m_axis_phase"
         ]
       },
       "sys_diff_clock_1": {
@@ -1362,16 +1356,22 @@
           "clk_wiz_0/CLK_IN1_D"
         ]
       },
+      "LFM_phase_gen_0_m_axis_phase": {
+        "interface_ports": [
+          "LFM_phase_gen_0/m_axis_phase",
+          "dds_compiler_0/S_AXIS_PHASE"
+        ]
+      },
+      "axis_data_fifo_0_M_AXIS": {
+        "interface_ports": [
+          "axis_data_fifo_0/M_AXIS",
+          "mod_subsys_0/s_axis"
+        ]
+      },
       "mod_subsys_0_m_axis": {
         "interface_ports": [
           "mod_subsys_0/m_axis",
           "axis_data_fifo_1/S_AXIS"
-        ]
-      },
-      "axis_data_fifo_1_M_AXIS": {
-        "interface_ports": [
-          "axis_data_fifo_1/M_AXIS",
-          "iq_modulator_0/s_axis"
         ]
       },
       "dds_compiler_1_M_AXIS_DATA": {
@@ -1380,16 +1380,16 @@
           "mod_subsys_0/s_axis_shift"
         ]
       },
-      "ref_phase_0_m_axis_phase": {
+      "fir_dec_wrapper_0_m_axis": {
         "interface_ports": [
-          "dds_compiler_1/S_AXIS_PHASE",
-          "ref_phase_0/m_axis_phase"
+          "fir_dec_wrapper_0/m_axis",
+          "axis_data_fifo_0/S_AXIS"
         ]
       },
-      "iq_modulator_0_m_axis": {
+      "axis_data_fifo_1_M_AXIS": {
         "interface_ports": [
-          "m_axis_0",
-          "iq_modulator_0/m_axis"
+          "axis_data_fifo_1/M_AXIS",
+          "iq_modulator_0/s_axis"
         ]
       }
     },

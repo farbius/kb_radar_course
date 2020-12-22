@@ -6350,7 +6350,8 @@ inline bool operator!=(
 
 }
 # 399 "C:/Xilinx/Vivado/2019.1/common/technology/autopilot\\ap_fixed.h" 2
-# 2 "../sources/d_conv.h" 2
+# 1 "../sources/d_conv.h" 2
+
 
 
 
@@ -6375,9 +6376,10 @@ _ssdm_op_SpecInterface(y_q, "ap_vld", 1, 1, "", 0, 0, "", "", "", 0, 0, 0, 0, ""
 _ssdm_op_SpecInterface(y_i, "ap_vld", 1, 1, "", 0, 0, "", "", "", 0, 0, 0, 0, "", "");
 _ssdm_op_SpecInterface(&ref_q, "ap_vld", 1, 1, "", 0, 0, "", "", "", 0, 0, 0, 0, "", "");
 _ssdm_op_SpecInterface(&ref_i, "ap_vld", 1, 1, "", 0, 0, "", "", "", 0, 0, 0, 0, "", "");
-_ssdm_op_SpecInterface(&x, "ap_vld", 1, 1, "", 0, 0, "", "", "", 0, 0, 0, 0, "", "");
+_ssdm_op_SpecInterface(&x, "ap_vld", 0, 0, "", 0, 0, "", "", "", 0, 0, 0, 0, "", "");
 _ssdm_op_SpecInterface(0, "ap_ctrl_none", 0, 0, "", 0, 0, "", "", "", 0, 0, 0, 0, "", "");
 _ssdm_op_SpecDataflowPipeline(-1, 0, "");
+
  coef_t x_i, x_q;
 
 
@@ -6397,7 +6399,6 @@ void iq_mult(ap_int<8> x, ap_int<8> ref_i, ap_int<8> ref_q, coef_t *x_i, coef_t 
 
 void fir_filter_a(coef_t x, dout_t *y)
 {
-_ssdm_op_SpecResource(0, "", "Mul2S", "", -1, "", "", "", "", "");
 _ssdm_op_SpecPipeline(-1, 1, 1, 0, "");
  static coef_t shift_reg[32];
  coef_t data;
@@ -6418,7 +6419,6 @@ _ssdm_op_SpecPipeline(-1, 1, 1, 0, "");
 
 void fir_filter_b(coef_t x, dout_t *y)
 {
-_ssdm_op_SpecResource(0, "", "Mul2S", "", -1, "", "", "", "", "");
 _ssdm_op_SpecPipeline(-1, 1, 1, 0, "");
  static coef_t shift_reg[32];
  coef_t data;

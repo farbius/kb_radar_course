@@ -1,8 +1,8 @@
-# 1 "D:/work/kb_radar_course/lesson_8/vivado/sources/mod_sub.cpp"
+# 1 "D:/work/radar_course/lesson_8/vivado/sources/mod_sub.cpp"
 # 1 "<built-in>"
 # 1 "<command-line>"
-# 1 "D:/work/kb_radar_course/lesson_8/vivado/sources/mod_sub.cpp"
-# 1 "D:/work/kb_radar_course/lesson_8/vivado/sources/mod_sub.h" 1
+# 1 "D:/work/radar_course/lesson_8/vivado/sources/mod_sub.cpp"
+# 1 "D:/work/radar_course/lesson_8/vivado/sources/mod_sub.h" 1
 # 1 "C:/Xilinx/Vivado/2019.1/include/ap_fixed.h" 1
 # 54 "C:/Xilinx/Vivado/2019.1/include/ap_fixed.h"
 # 1 "C:/Xilinx/Vivado/2019.1/include/ap_common.h" 1
@@ -63631,7 +63631,7 @@ inline bool operator!=(
 
 }
 # 399 "C:/Xilinx/Vivado/2019.1/include/ap_fixed.h" 2
-# 2 "D:/work/kb_radar_course/lesson_8/vivado/sources/mod_sub.h" 2
+# 2 "D:/work/radar_course/lesson_8/vivado/sources/mod_sub.h" 2
 
 typedef ap_int<32> data_t;
 typedef ap_int<32> dout_t;
@@ -63640,7 +63640,7 @@ typedef ap_uint<2> key_t;
 typedef ap_uint<8> prd_t;
 
 void mod_sub(data_t ix, data_t qx, refs_t i_mod, refs_t q_mod, dout_t *iy, dout_t *qy, prd_t period, key_t mux);
-# 2 "D:/work/kb_radar_course/lesson_8/vivado/sources/mod_sub.cpp" 2
+# 2 "D:/work/radar_course/lesson_8/vivado/sources/mod_sub.cpp" 2
 
 void freqm(data_t ix, data_t qx, refs_t i_mod, refs_t q_mod, dout_t *iy, dout_t *qy);
 void phasm(prd_t period, bool *flag);
