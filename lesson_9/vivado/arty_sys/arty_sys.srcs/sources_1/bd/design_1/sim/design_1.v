@@ -1,8 +1,8 @@
 //Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
-//Tool Version: Vivado v.2019.1.2 (win64) Build 2615518 Fri Aug  9 15:55:25 MDT 2019
-//Date        : Mon Dec 21 20:37:46 2020
-//Host        : LAPTOP-KSVOJTV9 running 64-bit major release  (build 9200)
+//Tool Version: Vivado v.2019.1.3 (win64) Build 2644227 Wed Sep  4 09:45:24 MDT 2019
+//Date        : Tue Dec 22 17:27:46 2020
+//Host        : DESKTOP-IOTF14Q running 64-bit major release  (build 9200)
 //Command     : generate_target design_1.bd
 //Design      : design_1
 //Purpose     : IP block netlist
@@ -122,6 +122,9 @@ module design_1
   wire processing_system7_0_M_AXI_GP0_WREADY;
   wire [3:0]processing_system7_0_M_AXI_GP0_WSTRB;
   wire processing_system7_0_M_AXI_GP0_WVALID;
+  wire processing_system7_0_TTC0_WAVE0_OUT;
+  wire processing_system7_0_TTC0_WAVE1_OUT;
+  wire processing_system7_0_TTC0_WAVE2_OUT;
   (* CONN_BUS_INFO = "ps7_0_axi_periph_M00_AXI xilinx.com:interface:aximm:1.0 AXI4LITE ARADDR" *) (* DONT_TOUCH *) wire [31:0]ps7_0_axi_periph_M00_AXI_ARADDR;
   (* CONN_BUS_INFO = "ps7_0_axi_periph_M00_AXI xilinx.com:interface:aximm:1.0 AXI4LITE ARREADY" *) (* DONT_TOUCH *) wire ps7_0_axi_periph_M00_AXI_ARREADY;
   (* CONN_BUS_INFO = "ps7_0_axi_periph_M00_AXI xilinx.com:interface:aximm:1.0 AXI4LITE ARVALID" *) (* DONT_TOUCH *) wire ps7_0_axi_periph_M00_AXI_ARVALID;
@@ -230,6 +233,9 @@ module design_1
         .PS_CLK(FIXED_IO_ps_clk),
         .PS_PORB(FIXED_IO_ps_porb),
         .PS_SRSTB(FIXED_IO_ps_srstb),
+        .TTC0_WAVE0_OUT(processing_system7_0_TTC0_WAVE0_OUT),
+        .TTC0_WAVE1_OUT(processing_system7_0_TTC0_WAVE1_OUT),
+        .TTC0_WAVE2_OUT(processing_system7_0_TTC0_WAVE2_OUT),
         .USB0_VBUS_PWRFAULT(1'b0));
   design_1_ps7_0_axi_periph_0 ps7_0_axi_periph
        (.ACLK(processing_system7_0_FCLK_CLK0),
@@ -320,6 +326,9 @@ module design_1
         .SLOT_0_AXI_wvalid(ps7_0_axi_periph_M00_AXI_WVALID),
         .clk(processing_system7_0_FCLK_CLK0),
         .probe0(axi_gpio_0_ip2intc_irpt),
+        .probe1(processing_system7_0_TTC0_WAVE0_OUT),
+        .probe2(processing_system7_0_TTC0_WAVE1_OUT),
+        .probe3(processing_system7_0_TTC0_WAVE2_OUT),
         .resetn(rst_ps7_0_100M_peripheral_aresetn));
 endmodule
 

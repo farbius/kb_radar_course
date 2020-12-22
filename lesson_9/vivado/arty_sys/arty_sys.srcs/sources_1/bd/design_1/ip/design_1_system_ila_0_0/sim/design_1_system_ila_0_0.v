@@ -56,6 +56,9 @@
 module design_1_system_ila_0_0 (
   clk,
   probe0,
+  probe1,
+  probe2,
+  probe3,
   SLOT_0_AXI_awaddr,
   SLOT_0_AXI_awvalid,
   SLOT_0_AXI_awready,
@@ -80,6 +83,9 @@ module design_1_system_ila_0_0 (
 (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 CLK.clk CLK" *)
 input wire clk;
 input wire [0 : 0] probe0;
+input wire [0 : 0] probe1;
+input wire [0 : 0] probe2;
+input wire [0 : 0] probe3;
 (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 SLOT_0_AXI AWADDR" *)
 input wire [8 : 0] SLOT_0_AXI_awaddr;
 (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 SLOT_0_AXI AWVALID" *)
@@ -123,6 +129,9 @@ input wire resetn;
   bd_f60c inst (
     .clk(clk),
     .probe0(probe0),
+    .probe1(probe1),
+    .probe2(probe2),
+    .probe3(probe3),
     .SLOT_0_AXI_awaddr(SLOT_0_AXI_awaddr),
     .SLOT_0_AXI_awvalid(SLOT_0_AXI_awvalid),
     .SLOT_0_AXI_awready(SLOT_0_AXI_awready),
