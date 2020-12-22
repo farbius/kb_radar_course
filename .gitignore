@@ -24,6 +24,19 @@
 !*.cpp
 !*.mem
 !*.pdf
+!*.xml
+!*.app
+!*.aps
+!*.json
+!*.exe
+!*.mk
+!*.bin
+!*.bat
+!*.rules
+!*.d
+!*.o
+!*.directive
+!*.funcunit
 #########
 #IP files
 #########
