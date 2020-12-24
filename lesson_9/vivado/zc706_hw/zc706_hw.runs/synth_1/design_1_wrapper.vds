@@ -2,8 +2,8 @@
 # Vivado v2019.1.3 (64-bit)
 # SW Build 2644227 on Wed Sep  4 09:45:24 MDT 2019
 # IP Build 2633630 on Wed Sep  4 12:30:14 MDT 2019
-# Start of session at: Tue Dec 22 16:53:20 2020
-# Process ID: 12008
+# Start of session at: Wed Dec 23 21:00:41 2020
+# Process ID: 4816
 # Current directory: D:/work/kb_radar_course/lesson_9/vivado/zc706_hw/zc706_hw.runs/synth_1
 # Command line: vivado.exe -log design_1_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_wrapper.tcl
 # Log file: D:/work/kb_radar_course/lesson_9/vivado/zc706_hw/zc706_hw.runs/synth_1/design_1_wrapper.vds
@@ -13,41 +13,134 @@ source design_1_wrapper.tcl -notrace
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.1/data/ip'.
+add_files: Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 377.273 ; gain = 82.031
 Command: synth_design -top design_1_wrapper -part xc7z045ffg900-2
 Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7z045'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z045'
 INFO: [Device 21-403] Loading part xc7z045ffg900-2
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 2120 
+INFO: Helper process launched with PID 2476 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 837.254 ; gain = 177.598
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 888.730 ; gain = 178.434
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'design_1_wrapper' [D:/work/kb_radar_course/lesson_9/vivado/zc706_hw/zc706_hw.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v:12]
 INFO: [Synth 8-6157] synthesizing module 'design_1' [D:/work/kb_radar_course/lesson_9/vivado/zc706_hw/zc706_hw.srcs/sources_1/bd/design_1/synth/design_1.v:13]
-INFO: [Synth 8-6157] synthesizing module 'design_1_axi_gpio_0_0' [D:/work/kb_radar_course/lesson_9/vivado/zc706_hw/zc706_hw.runs/synth_1/.Xil/Vivado-12008-DESKTOP-IOTF14Q/realtime/design_1_axi_gpio_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_gpio_0_0' (1#1) [D:/work/kb_radar_course/lesson_9/vivado/zc706_hw/zc706_hw.runs/synth_1/.Xil/Vivado-12008-DESKTOP-IOTF14Q/realtime/design_1_axi_gpio_0_0_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'design_1_processing_system7_0_0' [D:/work/kb_radar_course/lesson_9/vivado/zc706_hw/zc706_hw.runs/synth_1/.Xil/Vivado-12008-DESKTOP-IOTF14Q/realtime/design_1_processing_system7_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_processing_system7_0_0' (2#1) [D:/work/kb_radar_course/lesson_9/vivado/zc706_hw/zc706_hw.runs/synth_1/.Xil/Vivado-12008-DESKTOP-IOTF14Q/realtime/design_1_processing_system7_0_0_stub.v:6]
-WARNING: [Synth 8-7023] instance 'processing_system7_0' of module 'design_1_processing_system7_0_0' has 69 connections declared, but only 64 given [D:/work/kb_radar_course/lesson_9/vivado/zc706_hw/zc706_hw.srcs/sources_1/bd/design_1/synth/design_1.v:169]
-INFO: [Synth 8-6157] synthesizing module 'design_1_ps7_0_axi_periph_0' [D:/work/kb_radar_course/lesson_9/vivado/zc706_hw/zc706_hw.srcs/sources_1/bd/design_1/synth/design_1.v:305]
-INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_UYSKKA' [D:/work/kb_radar_course/lesson_9/vivado/zc706_hw/zc706_hw.srcs/sources_1/bd/design_1/synth/design_1.v:610]
-INFO: [Synth 8-6157] synthesizing module 'design_1_auto_pc_0' [D:/work/kb_radar_course/lesson_9/vivado/zc706_hw/zc706_hw.runs/synth_1/.Xil/Vivado-12008-DESKTOP-IOTF14Q/realtime/design_1_auto_pc_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_auto_pc_0' (3#1) [D:/work/kb_radar_course/lesson_9/vivado/zc706_hw/zc706_hw.runs/synth_1/.Xil/Vivado-12008-DESKTOP-IOTF14Q/realtime/design_1_auto_pc_0_stub.v:6]
-WARNING: [Synth 8-7023] instance 'auto_pc' of module 'design_1_auto_pc_0' has 59 connections declared, but only 57 given [D:/work/kb_radar_course/lesson_9/vivado/zc706_hw/zc706_hw.srcs/sources_1/bd/design_1/synth/design_1.v:845]
-INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_UYSKKA' (4#1) [D:/work/kb_radar_course/lesson_9/vivado/zc706_hw/zc706_hw.srcs/sources_1/bd/design_1/synth/design_1.v:610]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_ps7_0_axi_periph_0' (5#1) [D:/work/kb_radar_course/lesson_9/vivado/zc706_hw/zc706_hw.srcs/sources_1/bd/design_1/synth/design_1.v:305]
-INFO: [Synth 8-6157] synthesizing module 'design_1_rst_ps7_0_50M_0' [D:/work/kb_radar_course/lesson_9/vivado/zc706_hw/zc706_hw.runs/synth_1/.Xil/Vivado-12008-DESKTOP-IOTF14Q/realtime/design_1_rst_ps7_0_50M_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_rst_ps7_0_50M_0' (6#1) [D:/work/kb_radar_course/lesson_9/vivado/zc706_hw/zc706_hw.runs/synth_1/.Xil/Vivado-12008-DESKTOP-IOTF14Q/realtime/design_1_rst_ps7_0_50M_0_stub.v:6]
-WARNING: [Synth 8-7023] instance 'rst_ps7_0_50M' of module 'design_1_rst_ps7_0_50M_0' has 10 connections declared, but only 6 given [D:/work/kb_radar_course/lesson_9/vivado/zc706_hw/zc706_hw.srcs/sources_1/bd/design_1/synth/design_1.v:296]
-INFO: [Synth 8-6155] done synthesizing module 'design_1' (7#1) [D:/work/kb_radar_course/lesson_9/vivado/zc706_hw/zc706_hw.srcs/sources_1/bd/design_1/synth/design_1.v:13]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_wrapper' (8#1) [D:/work/kb_radar_course/lesson_9/vivado/zc706_hw/zc706_hw.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v:12]
+INFO: [Synth 8-6157] synthesizing module 'design_1_axi_gpio_0_0' [D:/work/kb_radar_course/lesson_9/vivado/zc706_hw/zc706_hw.runs/synth_1/.Xil/Vivado-4816-DESKTOP-IOTF14Q/realtime/design_1_axi_gpio_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_gpio_0_0' (1#1) [D:/work/kb_radar_course/lesson_9/vivado/zc706_hw/zc706_hw.runs/synth_1/.Xil/Vivado-4816-DESKTOP-IOTF14Q/realtime/design_1_axi_gpio_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_axi_gpio_1_0' [D:/work/kb_radar_course/lesson_9/vivado/zc706_hw/zc706_hw.runs/synth_1/.Xil/Vivado-4816-DESKTOP-IOTF14Q/realtime/design_1_axi_gpio_1_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_gpio_1_0' (2#1) [D:/work/kb_radar_course/lesson_9/vivado/zc706_hw/zc706_hw.runs/synth_1/.Xil/Vivado-4816-DESKTOP-IOTF14Q/realtime/design_1_axi_gpio_1_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_processing_system7_0_0' [D:/work/kb_radar_course/lesson_9/vivado/zc706_hw/zc706_hw.runs/synth_1/.Xil/Vivado-4816-DESKTOP-IOTF14Q/realtime/design_1_processing_system7_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_processing_system7_0_0' (3#1) [D:/work/kb_radar_course/lesson_9/vivado/zc706_hw/zc706_hw.runs/synth_1/.Xil/Vivado-4816-DESKTOP-IOTF14Q/realtime/design_1_processing_system7_0_0_stub.v:6]
+WARNING: [Synth 8-7023] instance 'processing_system7_0' of module 'design_1_processing_system7_0_0' has 69 connections declared, but only 64 given [D:/work/kb_radar_course/lesson_9/vivado/zc706_hw/zc706_hw.srcs/sources_1/bd/design_1/synth/design_1.v:216]
+INFO: [Synth 8-6157] synthesizing module 'design_1_ps7_0_axi_periph_0' [D:/work/kb_radar_course/lesson_9/vivado/zc706_hw/zc706_hw.srcs/sources_1/bd/design_1/synth/design_1.v:400]
+INFO: [Synth 8-6157] synthesizing module 'm00_couplers_imp_15SPJYW' [D:/work/kb_radar_course/lesson_9/vivado/zc706_hw/zc706_hw.srcs/sources_1/bd/design_1/synth/design_1.v:961]
+INFO: [Synth 8-6155] done synthesizing module 'm00_couplers_imp_15SPJYW' (4#1) [D:/work/kb_radar_course/lesson_9/vivado/zc706_hw/zc706_hw.srcs/sources_1/bd/design_1/synth/design_1.v:961]
+INFO: [Synth 8-6157] synthesizing module 'm01_couplers_imp_XU9C55' [D:/work/kb_radar_course/lesson_9/vivado/zc706_hw/zc706_hw.srcs/sources_1/bd/design_1/synth/design_1.v:1107]
+INFO: [Synth 8-6155] done synthesizing module 'm01_couplers_imp_XU9C55' (5#1) [D:/work/kb_radar_course/lesson_9/vivado/zc706_hw/zc706_hw.srcs/sources_1/bd/design_1/synth/design_1.v:1107]
+INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_UYSKKA' [D:/work/kb_radar_course/lesson_9/vivado/zc706_hw/zc706_hw.srcs/sources_1/bd/design_1/synth/design_1.v:1239]
+INFO: [Synth 8-6157] synthesizing module 'design_1_auto_pc_0' [D:/work/kb_radar_course/lesson_9/vivado/zc706_hw/zc706_hw.runs/synth_1/.Xil/Vivado-4816-DESKTOP-IOTF14Q/realtime/design_1_auto_pc_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_auto_pc_0' (6#1) [D:/work/kb_radar_course/lesson_9/vivado/zc706_hw/zc706_hw.runs/synth_1/.Xil/Vivado-4816-DESKTOP-IOTF14Q/realtime/design_1_auto_pc_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_UYSKKA' (7#1) [D:/work/kb_radar_course/lesson_9/vivado/zc706_hw/zc706_hw.srcs/sources_1/bd/design_1/synth/design_1.v:1239]
+INFO: [Synth 8-6157] synthesizing module 'design_1_xbar_0' [D:/work/kb_radar_course/lesson_9/vivado/zc706_hw/zc706_hw.runs/synth_1/.Xil/Vivado-4816-DESKTOP-IOTF14Q/realtime/design_1_xbar_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_xbar_0' (8#1) [D:/work/kb_radar_course/lesson_9/vivado/zc706_hw/zc706_hw.runs/synth_1/.Xil/Vivado-4816-DESKTOP-IOTF14Q/realtime/design_1_xbar_0_stub.v:6]
+WARNING: [Synth 8-689] width (3) of port connection 'm_axi_arprot' does not match port width (6) of module 'design_1_xbar_0' [D:/work/kb_radar_course/lesson_9/vivado/zc706_hw/zc706_hw.srcs/sources_1/bd/design_1/synth/design_1.v:922]
+WARNING: [Synth 8-689] width (3) of port connection 'm_axi_awprot' does not match port width (6) of module 'design_1_xbar_0' [D:/work/kb_radar_course/lesson_9/vivado/zc706_hw/zc706_hw.srcs/sources_1/bd/design_1/synth/design_1.v:926]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_ps7_0_axi_periph_0' (9#1) [D:/work/kb_radar_course/lesson_9/vivado/zc706_hw/zc706_hw.srcs/sources_1/bd/design_1/synth/design_1.v:400]
+INFO: [Synth 8-6157] synthesizing module 'design_1_rst_ps7_0_50M_0' [D:/work/kb_radar_course/lesson_9/vivado/zc706_hw/zc706_hw.runs/synth_1/.Xil/Vivado-4816-DESKTOP-IOTF14Q/realtime/design_1_rst_ps7_0_50M_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_rst_ps7_0_50M_0' (10#1) [D:/work/kb_radar_course/lesson_9/vivado/zc706_hw/zc706_hw.runs/synth_1/.Xil/Vivado-4816-DESKTOP-IOTF14Q/realtime/design_1_rst_ps7_0_50M_0_stub.v:6]
+WARNING: [Synth 8-7023] instance 'rst_ps7_0_50M' of module 'design_1_rst_ps7_0_50M_0' has 10 connections declared, but only 6 given [D:/work/kb_radar_course/lesson_9/vivado/zc706_hw/zc706_hw.srcs/sources_1/bd/design_1/synth/design_1.v:364]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [D:/work/kb_radar_course/lesson_9/vivado/zc706_hw/zc706_hw.srcs/sources_1/bd/design_1/synth/design_1.v:371]
+INFO: [Synth 8-6157] synthesizing module 'design_1_system_ila_0_0' [D:/work/kb_radar_course/lesson_9/vivado/zc706_hw/zc706_hw.runs/synth_1/.Xil/Vivado-4816-DESKTOP-IOTF14Q/realtime/design_1_system_ila_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_system_ila_0_0' (11#1) [D:/work/kb_radar_course/lesson_9/vivado/zc706_hw/zc706_hw.runs/synth_1/.Xil/Vivado-4816-DESKTOP-IOTF14Q/realtime/design_1_system_ila_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_xlconcat_0_0' [d:/work/kb_radar_course/lesson_9/vivado/zc706_hw/zc706_hw.srcs/sources_1/bd/design_1/ip/design_1_xlconcat_0_0/synth/design_1_xlconcat_0_0.v:58]
+INFO: [Synth 8-6157] synthesizing module 'xlconcat_v2_1_3_xlconcat' [d:/work/kb_radar_course/lesson_9/vivado/zc706_hw/zc706_hw.srcs/sources_1/bd/design_1/ipshared/442e/hdl/xlconcat_v2_1_vl_rfs.v:14]
+	Parameter IN0_WIDTH bound to: 1 - type: integer 
+	Parameter IN1_WIDTH bound to: 1 - type: integer 
+	Parameter IN2_WIDTH bound to: 1 - type: integer 
+	Parameter IN3_WIDTH bound to: 1 - type: integer 
+	Parameter IN4_WIDTH bound to: 1 - type: integer 
+	Parameter IN5_WIDTH bound to: 1 - type: integer 
+	Parameter IN6_WIDTH bound to: 1 - type: integer 
+	Parameter IN7_WIDTH bound to: 1 - type: integer 
+	Parameter IN8_WIDTH bound to: 1 - type: integer 
+	Parameter IN9_WIDTH bound to: 1 - type: integer 
+	Parameter IN10_WIDTH bound to: 1 - type: integer 
+	Parameter IN11_WIDTH bound to: 1 - type: integer 
+	Parameter IN12_WIDTH bound to: 1 - type: integer 
+	Parameter IN13_WIDTH bound to: 1 - type: integer 
+	Parameter IN14_WIDTH bound to: 1 - type: integer 
+	Parameter IN15_WIDTH bound to: 1 - type: integer 
+	Parameter IN16_WIDTH bound to: 1 - type: integer 
+	Parameter IN17_WIDTH bound to: 1 - type: integer 
+	Parameter IN18_WIDTH bound to: 1 - type: integer 
+	Parameter IN19_WIDTH bound to: 1 - type: integer 
+	Parameter IN20_WIDTH bound to: 1 - type: integer 
+	Parameter IN21_WIDTH bound to: 1 - type: integer 
+	Parameter IN22_WIDTH bound to: 1 - type: integer 
+	Parameter IN23_WIDTH bound to: 1 - type: integer 
+	Parameter IN24_WIDTH bound to: 1 - type: integer 
+	Parameter IN25_WIDTH bound to: 1 - type: integer 
+	Parameter IN26_WIDTH bound to: 1 - type: integer 
+	Parameter IN27_WIDTH bound to: 1 - type: integer 
+	Parameter IN28_WIDTH bound to: 1 - type: integer 
+	Parameter IN29_WIDTH bound to: 1 - type: integer 
+	Parameter IN30_WIDTH bound to: 1 - type: integer 
+	Parameter IN31_WIDTH bound to: 1 - type: integer 
+	Parameter dout_width bound to: 2 - type: integer 
+	Parameter NUM_PORTS bound to: 2 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xlconcat_v2_1_3_xlconcat' (12#1) [d:/work/kb_radar_course/lesson_9/vivado/zc706_hw/zc706_hw.srcs/sources_1/bd/design_1/ipshared/442e/hdl/xlconcat_v2_1_vl_rfs.v:14]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_xlconcat_0_0' (13#1) [d:/work/kb_radar_course/lesson_9/vivado/zc706_hw/zc706_hw.srcs/sources_1/bd/design_1/ip/design_1_xlconcat_0_0/synth/design_1_xlconcat_0_0.v:58]
+INFO: [Synth 8-6155] done synthesizing module 'design_1' (14#1) [D:/work/kb_radar_course/lesson_9/vivado/zc706_hw/zc706_hw.srcs/sources_1/bd/design_1/synth/design_1.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_wrapper' (15#1) [D:/work/kb_radar_course/lesson_9/vivado/zc706_hw/zc706_hw.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v:12]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In2[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In3[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In4[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In5[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In6[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In7[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In8[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In9[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In10[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In11[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In12[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In13[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In14[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In15[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In16[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In17[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In18[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In19[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In20[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In21[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In22[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In23[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In24[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In25[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In26[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In27[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In28[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In29[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In30[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In31[0]
 WARNING: [Synth 8-3331] design s00_couplers_imp_UYSKKA has unconnected port M_ACLK
 WARNING: [Synth 8-3331] design s00_couplers_imp_UYSKKA has unconnected port M_ARESETN
-WARNING: [Synth 8-3331] design design_1_ps7_0_axi_periph_0 has unconnected port ACLK
-WARNING: [Synth 8-3331] design design_1_ps7_0_axi_periph_0 has unconnected port ARESETN
+WARNING: [Synth 8-3331] design m01_couplers_imp_XU9C55 has unconnected port M_ACLK
+WARNING: [Synth 8-3331] design m01_couplers_imp_XU9C55 has unconnected port M_ARESETN
+WARNING: [Synth 8-3331] design m01_couplers_imp_XU9C55 has unconnected port S_ACLK
+WARNING: [Synth 8-3331] design m01_couplers_imp_XU9C55 has unconnected port S_ARESETN
+WARNING: [Synth 8-3331] design m00_couplers_imp_15SPJYW has unconnected port M_ACLK
+WARNING: [Synth 8-3331] design m00_couplers_imp_15SPJYW has unconnected port M_ARESETN
+WARNING: [Synth 8-3331] design m00_couplers_imp_15SPJYW has unconnected port S_ACLK
+WARNING: [Synth 8-3331] design m00_couplers_imp_15SPJYW has unconnected port S_ARESETN
+WARNING: [Synth 8-3331] design design_1_ps7_0_axi_periph_0 has unconnected port M00_ACLK
+WARNING: [Synth 8-3331] design design_1_ps7_0_axi_periph_0 has unconnected port M00_ARESETN
+WARNING: [Synth 8-3331] design design_1_ps7_0_axi_periph_0 has unconnected port M01_ACLK
+WARNING: [Synth 8-3331] design design_1_ps7_0_axi_periph_0 has unconnected port M01_ARESETN
+WARNING: [Synth 8-3331] design design_1_ps7_0_axi_periph_0 has unconnected port S00_ACLK
+WARNING: [Synth 8-3331] design design_1_ps7_0_axi_periph_0 has unconnected port S00_ARESETN
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 904.652 ; gain = 244.996
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 956.359 ; gain = 246.063
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -60,10 +153,10 @@ Report Check Netlist:
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 904.652 ; gain = 244.996
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 956.359 ; gain = 246.063
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 904.652 ; gain = 244.996
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 956.359 ; gain = 246.063
 ---------------------------------------------------------------------------------
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
@@ -73,28 +166,34 @@ Parsing XDC File [d:/work/kb_radar_course/lesson_9/vivado/zc706_hw/zc706_hw.srcs
 Finished Parsing XDC File [d:/work/kb_radar_course/lesson_9/vivado/zc706_hw/zc706_hw.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc] for cell 'design_1_i/processing_system7_0'
 Parsing XDC File [d:/work/kb_radar_course/lesson_9/vivado/zc706_hw/zc706_hw.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_0_0/design_1_axi_gpio_0_0/design_1_axi_gpio_0_0_in_context.xdc] for cell 'design_1_i/axi_gpio_0'
 Finished Parsing XDC File [d:/work/kb_radar_course/lesson_9/vivado/zc706_hw/zc706_hw.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_0_0/design_1_axi_gpio_0_0/design_1_axi_gpio_0_0_in_context.xdc] for cell 'design_1_i/axi_gpio_0'
+Parsing XDC File [d:/work/kb_radar_course/lesson_9/vivado/zc706_hw/zc706_hw.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_1_0/design_1_axi_gpio_1_0/design_1_axi_gpio_1_0_in_context.xdc] for cell 'design_1_i/axi_gpio_1'
+Finished Parsing XDC File [d:/work/kb_radar_course/lesson_9/vivado/zc706_hw/zc706_hw.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_1_0/design_1_axi_gpio_1_0/design_1_axi_gpio_1_0_in_context.xdc] for cell 'design_1_i/axi_gpio_1'
+Parsing XDC File [d:/work/kb_radar_course/lesson_9/vivado/zc706_hw/zc706_hw.srcs/sources_1/bd/design_1/ip/design_1_xbar_0/design_1_xbar_0/design_1_xbar_0_in_context.xdc] for cell 'design_1_i/ps7_0_axi_periph/xbar'
+Finished Parsing XDC File [d:/work/kb_radar_course/lesson_9/vivado/zc706_hw/zc706_hw.srcs/sources_1/bd/design_1/ip/design_1_xbar_0/design_1_xbar_0/design_1_xbar_0_in_context.xdc] for cell 'design_1_i/ps7_0_axi_periph/xbar'
 Parsing XDC File [d:/work/kb_radar_course/lesson_9/vivado/zc706_hw/zc706_hw.srcs/sources_1/bd/design_1/ip/design_1_rst_ps7_0_50M_0/design_1_rst_ps7_0_50M_0/design_1_rst_ps7_0_50M_0_in_context.xdc] for cell 'design_1_i/rst_ps7_0_50M'
 Finished Parsing XDC File [d:/work/kb_radar_course/lesson_9/vivado/zc706_hw/zc706_hw.srcs/sources_1/bd/design_1/ip/design_1_rst_ps7_0_50M_0/design_1_rst_ps7_0_50M_0/design_1_rst_ps7_0_50M_0_in_context.xdc] for cell 'design_1_i/rst_ps7_0_50M'
+Parsing XDC File [d:/work/kb_radar_course/lesson_9/vivado/zc706_hw/zc706_hw.srcs/sources_1/bd/design_1/ip/design_1_system_ila_0_0/design_1_system_ila_0_0/design_1_system_ila_0_0_in_context.xdc] for cell 'design_1_i/system_ila_0'
+Finished Parsing XDC File [d:/work/kb_radar_course/lesson_9/vivado/zc706_hw/zc706_hw.srcs/sources_1/bd/design_1/ip/design_1_system_ila_0_0/design_1_system_ila_0_0/design_1_system_ila_0_0_in_context.xdc] for cell 'design_1_i/system_ila_0'
 Parsing XDC File [d:/work/kb_radar_course/lesson_9/vivado/zc706_hw/zc706_hw.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_0/design_1_auto_pc_0/design_1_auto_pc_0_in_context.xdc] for cell 'design_1_i/ps7_0_axi_periph/s00_couplers/auto_pc'
 Finished Parsing XDC File [d:/work/kb_radar_course/lesson_9/vivado/zc706_hw/zc706_hw.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_0/design_1_auto_pc_0/design_1_auto_pc_0_in_context.xdc] for cell 'design_1_i/ps7_0_axi_periph/s00_couplers/auto_pc'
 Parsing XDC File [D:/work/kb_radar_course/lesson_9/vivado/zc706_hw/zc706_hw.runs/synth_1/dont_touch.xdc]
 Finished Parsing XDC File [D:/work/kb_radar_course/lesson_9/vivado/zc706_hw/zc706_hw.runs/synth_1/dont_touch.xdc]
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 958.000 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1020.184 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.018 . Memory (MB): peak = 958.000 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.022 . Memory (MB): peak = 1020.184 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 958.000 ; gain = 298.344
+Finished Constraint Validation : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1020.184 ; gain = 309.887
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z045ffg900-2
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 958.000 ; gain = 298.344
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1020.184 ; gain = 309.887
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -362,14 +461,18 @@ Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_ps_srstb. (constraint
 Applied set_property DONT_TOUCH = true for design_1_i. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for design_1_i/processing_system7_0. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for design_1_i/axi_gpio_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/axi_gpio_1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/xlconcat_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/ps7_0_axi_periph/xbar. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for design_1_i/ps7_0_axi_periph. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for design_1_i/rst_ps7_0_50M. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/system_ila_0. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for design_1_i/ps7_0_axi_periph/s00_couplers/auto_pc. (constraint file  auto generated constraint, line ).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 958.000 ; gain = 298.344
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1020.184 ; gain = 309.887
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 958.000 ; gain = 298.344
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1020.184 ; gain = 309.887
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -404,12 +507,14 @@ Finished Part Resource Summary
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 Warning: Parallel synthesis criteria is not met 
-WARNING: [Synth 8-3331] design design_1_ps7_0_axi_periph_0 has unconnected port ACLK
-WARNING: [Synth 8-3331] design design_1_ps7_0_axi_periph_0 has unconnected port ARESETN
 WARNING: [Synth 8-3331] design design_1_ps7_0_axi_periph_0 has unconnected port M00_ACLK
 WARNING: [Synth 8-3331] design design_1_ps7_0_axi_periph_0 has unconnected port M00_ARESETN
+WARNING: [Synth 8-3331] design design_1_ps7_0_axi_periph_0 has unconnected port M01_ACLK
+WARNING: [Synth 8-3331] design design_1_ps7_0_axi_periph_0 has unconnected port M01_ARESETN
+WARNING: [Synth 8-3331] design design_1_ps7_0_axi_periph_0 has unconnected port S00_ACLK
+WARNING: [Synth 8-3331] design design_1_ps7_0_axi_periph_0 has unconnected port S00_ARESETN
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 958.000 ; gain = 298.344
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1020.184 ; gain = 309.887
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -423,13 +528,13 @@ Start Applying XDC Timing Constraints
 INFO: [Synth 8-5578] Moved timing constraint from pin 'design_1_i/processing_system7_0/FCLK_CLK0' to pin 'design_1_i/processing_system7_0/bbstub_FCLK_CLK0/O'
 INFO: [Synth 8-5819] Moved 1 constraints on hierarchical pins to their respective driving/loading pins
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 993.234 ; gain = 333.578
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 1044.590 ; gain = 334.293
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 993.309 ; gain = 333.652
+Finished Timing Optimization : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 1044.590 ; gain = 334.293
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -441,7 +546,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 1003.168 ; gain = 343.512
+Finished Technology Mapping : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 1054.449 ; gain = 344.152
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -465,7 +570,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:21 ; elapsed = 00:00:24 . Memory (MB): peak = 1017.980 ; gain = 358.324
+Finished IO Insertion : Time (s): cpu = 00:00:20 ; elapsed = 00:00:20 . Memory (MB): peak = 1070.254 ; gain = 359.957
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -478,7 +583,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:21 ; elapsed = 00:00:24 . Memory (MB): peak = 1017.980 ; gain = 358.324
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:20 ; elapsed = 00:00:20 . Memory (MB): peak = 1070.254 ; gain = 359.957
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -490,25 +595,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:21 ; elapsed = 00:00:24 . Memory (MB): peak = 1017.980 ; gain = 358.324
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:20 ; elapsed = 00:00:20 . Memory (MB): peak = 1070.254 ; gain = 359.957
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:21 ; elapsed = 00:00:24 . Memory (MB): peak = 1017.980 ; gain = 358.324
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:20 ; elapsed = 00:00:20 . Memory (MB): peak = 1070.254 ; gain = 359.957
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:21 ; elapsed = 00:00:24 . Memory (MB): peak = 1017.980 ; gain = 358.324
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:20 ; elapsed = 00:00:20 . Memory (MB): peak = 1070.254 ; gain = 359.957
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:21 ; elapsed = 00:00:24 . Memory (MB): peak = 1017.980 ; gain = 358.324
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:20 ; elapsed = 00:00:20 . Memory (MB): peak = 1070.254 ; gain = 359.957
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -518,10 +623,13 @@ Report BlackBoxes:
 +------+--------------------------------+----------+
 |      |BlackBox name                   |Instances |
 +------+--------------------------------+----------+
-|1     |design_1_auto_pc_0              |         1|
-|2     |design_1_axi_gpio_0_0           |         1|
-|3     |design_1_processing_system7_0_0 |         1|
-|4     |design_1_rst_ps7_0_50M_0        |         1|
+|1     |design_1_xbar_0                 |         1|
+|2     |design_1_auto_pc_0              |         1|
+|3     |design_1_axi_gpio_0_0           |         1|
+|4     |design_1_axi_gpio_1_0           |         1|
+|5     |design_1_processing_system7_0_0 |         1|
+|6     |design_1_rst_ps7_0_50M_0        |         1|
+|7     |design_1_system_ila_0_0         |         1|
 +------+--------------------------------+----------+
 
 Report Cell Usage: 
@@ -530,41 +638,45 @@ Report Cell Usage:
 +------+--------------------------------+------+
 |1     |design_1_auto_pc_0              |     1|
 |2     |design_1_axi_gpio_0_0           |     1|
-|3     |design_1_processing_system7_0_0 |     1|
-|4     |design_1_rst_ps7_0_50M_0        |     1|
-|5     |IBUF                            |     3|
-|6     |OBUF                            |     4|
+|3     |design_1_axi_gpio_1_0           |     1|
+|4     |design_1_processing_system7_0_0 |     1|
+|5     |design_1_rst_ps7_0_50M_0        |     1|
+|6     |design_1_system_ila_0_0         |     1|
+|7     |design_1_xbar_0                 |     1|
+|8     |IBUF                            |     7|
+|9     |OBUF                            |     4|
 +------+--------------------------------+------+
 
 Report Instance Areas: 
 +------+---------------------+----------------------------+------+
 |      |Instance             |Module                      |Cells |
 +------+---------------------+----------------------------+------+
-|1     |top                  |                            |   429|
-|2     |  design_1_i         |design_1                    |   422|
-|3     |    ps7_0_axi_periph |design_1_ps7_0_axi_periph_0 |   177|
+|1     |top                  |                            |   738|
+|2     |  design_1_i         |design_1                    |   727|
+|3     |    ps7_0_axi_periph |design_1_ps7_0_axi_periph_0 |   440|
 |4     |      s00_couplers   |s00_couplers_imp_UYSKKA     |   177|
+|5     |    xlconcat_0       |design_1_xlconcat_0_0       |     0|
 +------+---------------------+----------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:21 ; elapsed = 00:00:24 . Memory (MB): peak = 1017.980 ; gain = 358.324
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:20 ; elapsed = 00:00:20 . Memory (MB): peak = 1070.254 ; gain = 359.957
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 4 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:15 ; elapsed = 00:00:21 . Memory (MB): peak = 1017.980 ; gain = 304.977
-Synthesis Optimization Complete : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 1017.980 ; gain = 358.324
+Synthesis finished with 0 errors, 0 critical warnings and 6 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:13 ; elapsed = 00:00:18 . Memory (MB): peak = 1070.254 ; gain = 296.133
+Synthesis Optimization Complete : Time (s): cpu = 00:00:20 ; elapsed = 00:00:20 . Memory (MB): peak = 1070.254 ; gain = 359.957
 INFO: [Project 1-571] Translating synthesized netlist
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1045.645 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1093.598 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
-30 Infos, 11 Warnings, 0 Critical Warnings and 0 Errors encountered.
+44 Infos, 57 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:28 ; elapsed = 00:00:32 . Memory (MB): peak = 1045.645 ; gain = 722.480
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1045.645 ; gain = 0.000
+synth_design: Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 1093.598 ; gain = 716.324
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1093.598 ; gain = 0.000
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
 INFO: [Common 17-1381] The checkpoint 'D:/work/kb_radar_course/lesson_9/vivado/zc706_hw/zc706_hw.runs/synth_1/design_1_wrapper.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file design_1_wrapper_utilization_synth.rpt -pb design_1_wrapper_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Tue Dec 22 16:53:57 2020...
+INFO: [Common 17-206] Exiting Vivado at Wed Dec 23 21:01:17 2020...

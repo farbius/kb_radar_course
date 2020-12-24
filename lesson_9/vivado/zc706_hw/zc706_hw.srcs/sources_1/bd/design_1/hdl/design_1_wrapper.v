@@ -1,7 +1,7 @@
 //Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2019.1.3 (win64) Build 2644227 Wed Sep  4 09:45:24 MDT 2019
-//Date        : Tue Dec 22 16:50:09 2020
+//Date        : Wed Dec 23 20:56:17 2020
 //Host        : DESKTOP-IOTF14Q running 64-bit major release  (build 9200)
 //Command     : generate_target design_1_wrapper.bd
 //Design      : design_1_wrapper
@@ -31,6 +31,7 @@ module design_1_wrapper
     FIXED_IO_ps_clk,
     FIXED_IO_ps_porb,
     FIXED_IO_ps_srstb,
+    dip_switches_4bits_tri_i,
     gpio_sws_3bits_tri_i,
     led_4bits_tri_o);
   inout [14:0]DDR_addr;
@@ -54,6 +55,7 @@ module design_1_wrapper
   inout FIXED_IO_ps_clk;
   inout FIXED_IO_ps_porb;
   inout FIXED_IO_ps_srstb;
+  input [3:0]dip_switches_4bits_tri_i;
   input [2:0]gpio_sws_3bits_tri_i;
   output [3:0]led_4bits_tri_o;
 
@@ -78,6 +80,7 @@ module design_1_wrapper
   wire FIXED_IO_ps_clk;
   wire FIXED_IO_ps_porb;
   wire FIXED_IO_ps_srstb;
+  wire [3:0]dip_switches_4bits_tri_i;
   wire [2:0]gpio_sws_3bits_tri_i;
   wire [3:0]led_4bits_tri_o;
 
@@ -103,6 +106,7 @@ module design_1_wrapper
         .FIXED_IO_ps_clk(FIXED_IO_ps_clk),
         .FIXED_IO_ps_porb(FIXED_IO_ps_porb),
         .FIXED_IO_ps_srstb(FIXED_IO_ps_srstb),
+        .dip_switches_4bits_tri_i(dip_switches_4bits_tri_i),
         .gpio_sws_3bits_tri_i(gpio_sws_3bits_tri_i),
         .led_4bits_tri_o(led_4bits_tri_o));
 endmodule

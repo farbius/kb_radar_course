@@ -56,10 +56,8 @@
 module design_1_system_ila_0_0 (
   clk,
   probe0,
-  probe1,
-  probe2,
-  probe3,
   SLOT_0_AXI_awaddr,
+  SLOT_0_AXI_awprot,
   SLOT_0_AXI_awvalid,
   SLOT_0_AXI_awready,
   SLOT_0_AXI_wdata,
@@ -70,6 +68,7 @@ module design_1_system_ila_0_0 (
   SLOT_0_AXI_bvalid,
   SLOT_0_AXI_bready,
   SLOT_0_AXI_araddr,
+  SLOT_0_AXI_arprot,
   SLOT_0_AXI_arvalid,
   SLOT_0_AXI_arready,
   SLOT_0_AXI_rdata,
@@ -83,11 +82,10 @@ module design_1_system_ila_0_0 (
 (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 CLK.clk CLK" *)
 input wire clk;
 input wire [0 : 0] probe0;
-input wire [0 : 0] probe1;
-input wire [0 : 0] probe2;
-input wire [0 : 0] probe3;
 (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 SLOT_0_AXI AWADDR" *)
 input wire [8 : 0] SLOT_0_AXI_awaddr;
+(* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 SLOT_0_AXI AWPROT" *)
+input wire [2 : 0] SLOT_0_AXI_awprot;
 (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 SLOT_0_AXI AWVALID" *)
 input wire SLOT_0_AXI_awvalid;
 (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 SLOT_0_AXI AWREADY" *)
@@ -108,6 +106,8 @@ input wire SLOT_0_AXI_bvalid;
 input wire SLOT_0_AXI_bready;
 (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 SLOT_0_AXI ARADDR" *)
 input wire [8 : 0] SLOT_0_AXI_araddr;
+(* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 SLOT_0_AXI ARPROT" *)
+input wire [2 : 0] SLOT_0_AXI_arprot;
 (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 SLOT_0_AXI ARVALID" *)
 input wire SLOT_0_AXI_arvalid;
 (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 SLOT_0_AXI ARREADY" *)
@@ -118,8 +118,8 @@ input wire [31 : 0] SLOT_0_AXI_rdata;
 input wire [1 : 0] SLOT_0_AXI_rresp;
 (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 SLOT_0_AXI RVALID" *)
 input wire SLOT_0_AXI_rvalid;
-(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME SLOT_0_AXI, DATA_WIDTH 32, PROTOCOL AXI4LITE, FREQ_HZ 100000000, ID_WIDTH 0, ADDR_WIDTH 9, AWUSER_WIDTH 0, ARUSER_WIDTH 0, WUSER_WIDTH 0, RUSER_WIDTH 0, BUSER_WIDTH 0, READ_WRITE_MODE READ_WRITE, HAS_BURST 0, HAS_LOCK 0, HAS_PROT 0, HAS_CACHE 0, HAS_QOS 0, HAS_REGION 0, HAS_WSTRB 1, HAS_BRESP 1, HAS_RRESP 1, SUPPORTS_NARROW_BURST 0, NUM_READ_OUTSTANDING 8, NUM_WRITE_OUTSTANDING 8, MAX_BURST_LENGTH 1, PHASE 0.000, CLK_DOMAIN design_1_processing_system7_0_0_FCLK_CLK0, NUM_READ_TH\
-READS 4, NUM_WRITE_THREADS 4, RUSER_BITS_PER_BYTE 0, WUSER_BITS_PER_BYTE 0, INSERT_VIP 0" *)
+(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME SLOT_0_AXI, DATA_WIDTH 32, PROTOCOL AXI4LITE, FREQ_HZ 100000000, ID_WIDTH 0, ADDR_WIDTH 9, AWUSER_WIDTH 0, ARUSER_WIDTH 0, WUSER_WIDTH 0, RUSER_WIDTH 0, BUSER_WIDTH 0, READ_WRITE_MODE READ_WRITE, HAS_BURST 0, HAS_LOCK 0, HAS_PROT 1, HAS_CACHE 0, HAS_QOS 0, HAS_REGION 0, HAS_WSTRB 1, HAS_BRESP 1, HAS_RRESP 1, SUPPORTS_NARROW_BURST 0, NUM_READ_OUTSTANDING 2, NUM_WRITE_OUTSTANDING 2, MAX_BURST_LENGTH 1, PHASE 0.000, CLK_DOMAIN design_1_processing_system7_0_0_FCLK_CLK0, NUM_READ_TH\
+READS 1, NUM_WRITE_THREADS 1, RUSER_BITS_PER_BYTE 0, WUSER_BITS_PER_BYTE 0, INSERT_VIP 0" *)
 (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 SLOT_0_AXI RREADY" *)
 input wire SLOT_0_AXI_rready;
 (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME RST.resetn, POLARITY ACTIVE_LOW, INSERT_VIP 0" *)
@@ -129,10 +129,8 @@ input wire resetn;
   bd_f60c inst (
     .clk(clk),
     .probe0(probe0),
-    .probe1(probe1),
-    .probe2(probe2),
-    .probe3(probe3),
     .SLOT_0_AXI_awaddr(SLOT_0_AXI_awaddr),
+    .SLOT_0_AXI_awprot(SLOT_0_AXI_awprot),
     .SLOT_0_AXI_awvalid(SLOT_0_AXI_awvalid),
     .SLOT_0_AXI_awready(SLOT_0_AXI_awready),
     .SLOT_0_AXI_wdata(SLOT_0_AXI_wdata),
@@ -143,6 +141,7 @@ input wire resetn;
     .SLOT_0_AXI_bvalid(SLOT_0_AXI_bvalid),
     .SLOT_0_AXI_bready(SLOT_0_AXI_bready),
     .SLOT_0_AXI_araddr(SLOT_0_AXI_araddr),
+    .SLOT_0_AXI_arprot(SLOT_0_AXI_arprot),
     .SLOT_0_AXI_arvalid(SLOT_0_AXI_arvalid),
     .SLOT_0_AXI_arready(SLOT_0_AXI_arready),
     .SLOT_0_AXI_rdata(SLOT_0_AXI_rdata),

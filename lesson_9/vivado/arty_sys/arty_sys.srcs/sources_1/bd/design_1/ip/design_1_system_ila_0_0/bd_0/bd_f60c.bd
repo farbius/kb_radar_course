@@ -1,7 +1,7 @@
 {
   "design": {
     "design_info": {
-      "boundary_crc": "0x9649EFBB35A18964",
+      "boundary_crc": "0xD5B993CDFC1F3388",
       "design_src": "SBD",
       "device": "xc7z020clg400-1",
       "name": "bd_f60c",
@@ -69,7 +69,7 @@
             "value_src": "default"
           },
           "HAS_PROT": {
-            "value": "0",
+            "value": "1",
             "value_src": "default"
           },
           "HAS_QOS": {
@@ -101,19 +101,19 @@
             "value_src": "default"
           },
           "NUM_READ_OUTSTANDING": {
-            "value": "8",
-            "value_src": "default"
+            "value": "2",
+            "value_src": "default_prop"
           },
           "NUM_READ_THREADS": {
-            "value": "4",
+            "value": "1",
             "value_src": "default"
           },
           "NUM_WRITE_OUTSTANDING": {
-            "value": "8",
-            "value_src": "default"
+            "value": "2",
+            "value_src": "default_prop"
           },
           "NUM_WRITE_THREADS": {
-            "value": "4",
+            "value": "1",
             "value_src": "default"
           },
           "PHASE": {
@@ -185,21 +185,6 @@
         "left": "0",
         "right": "0"
       },
-      "probe1": {
-        "direction": "I",
-        "left": "0",
-        "right": "0"
-      },
-      "probe2": {
-        "direction": "I",
-        "left": "0",
-        "right": "0"
-      },
-      "probe3": {
-        "direction": "I",
-        "left": "0",
-        "right": "0"
-      },
       "resetn": {
         "type": "rst",
         "direction": "I",
@@ -230,7 +215,7 @@
             "value": "FALSE"
           },
           "C_DATA_DEPTH": {
-            "value": "8192"
+            "value": "2048"
           },
           "C_EN_STRG_QUAL": {
             "value": "0"
@@ -248,7 +233,7 @@
             "value": "Native"
           },
           "C_NUM_OF_PROBES": {
-            "value": "20"
+            "value": "19"
           },
           "C_PROBE0_MU_CNT": {
             "value": "1"
@@ -263,31 +248,31 @@
             "value": "0"
           },
           "C_PROBE10_WIDTH": {
-            "value": "2"
+            "value": "32"
           },
           "C_PROBE11_TYPE": {
             "value": "0"
           },
           "C_PROBE11_WIDTH": {
-            "value": "32"
+            "value": "2"
           },
           "C_PROBE12_TYPE": {
             "value": "0"
           },
           "C_PROBE12_WIDTH": {
-            "value": "2"
+            "value": "32"
           },
           "C_PROBE13_TYPE": {
             "value": "0"
           },
           "C_PROBE13_WIDTH": {
-            "value": "32"
+            "value": "4"
           },
           "C_PROBE14_TYPE": {
             "value": "0"
           },
           "C_PROBE14_WIDTH": {
-            "value": "4"
+            "value": "2"
           },
           "C_PROBE15_TYPE": {
             "value": "0"
@@ -313,38 +298,23 @@
           "C_PROBE18_WIDTH": {
             "value": "2"
           },
-          "C_PROBE19_TYPE": {
-            "value": "0"
-          },
-          "C_PROBE19_WIDTH": {
-            "value": "2"
-          },
-          "C_PROBE1_MU_CNT": {
-            "value": "1"
-          },
           "C_PROBE1_TYPE": {
             "value": "0"
           },
           "C_PROBE1_WIDTH": {
-            "value": "1"
-          },
-          "C_PROBE2_MU_CNT": {
-            "value": "1"
+            "value": "2"
           },
           "C_PROBE2_TYPE": {
             "value": "0"
           },
           "C_PROBE2_WIDTH": {
-            "value": "1"
-          },
-          "C_PROBE3_MU_CNT": {
-            "value": "1"
+            "value": "9"
           },
           "C_PROBE3_TYPE": {
             "value": "0"
           },
           "C_PROBE3_WIDTH": {
-            "value": "1"
+            "value": "3"
           },
           "C_PROBE4_TYPE": {
             "value": "0"
@@ -362,13 +332,13 @@
             "value": "0"
           },
           "C_PROBE6_WIDTH": {
-            "value": "2"
+            "value": "3"
           },
           "C_PROBE7_TYPE": {
             "value": "0"
           },
           "C_PROBE7_WIDTH": {
-            "value": "9"
+            "value": "2"
           },
           "C_PROBE8_TYPE": {
             "value": "0"
@@ -470,7 +440,7 @@
             "value": "0"
           },
           "C_SLOT_0_HAS_PROT": {
-            "value": "0"
+            "value": "1"
           },
           "C_SLOT_0_HAS_QOS": {
             "value": "0"
@@ -551,24 +521,6 @@
           "ila_lib/probe0"
         ]
       },
-      "probe1_1": {
-        "ports": [
-          "probe1",
-          "ila_lib/probe1"
-        ]
-      },
-      "probe2_1": {
-        "ports": [
-          "probe2",
-          "ila_lib/probe2"
-        ]
-      },
-      "probe3_1": {
-        "ports": [
-          "probe3",
-          "ila_lib/probe3"
-        ]
-      },
       "resetn_1": {
         "ports": [
           "resetn",
@@ -578,73 +530,85 @@
       "net_slot_0_axi_ar_cnt": {
         "ports": [
           "g_inst/m_slot_0_axi_ar_cnt",
-          "ila_lib/probe4"
+          "ila_lib/probe1"
         ]
       },
       "net_slot_0_axi_araddr": {
         "ports": [
           "g_inst/m_slot_0_axi_araddr",
-          "ila_lib/probe5"
+          "ila_lib/probe2"
+        ]
+      },
+      "net_slot_0_axi_arprot": {
+        "ports": [
+          "g_inst/m_slot_0_axi_arprot",
+          "ila_lib/probe3"
         ]
       },
       "net_slot_0_axi_aw_cnt": {
         "ports": [
           "g_inst/m_slot_0_axi_aw_cnt",
-          "ila_lib/probe6"
+          "ila_lib/probe4"
         ]
       },
       "net_slot_0_axi_awaddr": {
         "ports": [
           "g_inst/m_slot_0_axi_awaddr",
-          "ila_lib/probe7"
+          "ila_lib/probe5"
+        ]
+      },
+      "net_slot_0_axi_awprot": {
+        "ports": [
+          "g_inst/m_slot_0_axi_awprot",
+          "ila_lib/probe6"
         ]
       },
       "net_slot_0_axi_b_cnt": {
         "ports": [
           "g_inst/m_slot_0_axi_b_cnt",
-          "ila_lib/probe8"
+          "ila_lib/probe7"
         ]
       },
       "net_slot_0_axi_bresp": {
         "ports": [
           "g_inst/m_slot_0_axi_bresp",
-          "ila_lib/probe9"
+          "ila_lib/probe8"
         ]
       },
       "net_slot_0_axi_r_cnt": {
         "ports": [
           "g_inst/m_slot_0_axi_r_cnt",
-          "ila_lib/probe10"
+          "ila_lib/probe9"
         ]
       },
       "net_slot_0_axi_rdata": {
         "ports": [
           "g_inst/m_slot_0_axi_rdata",
-          "ila_lib/probe11"
+          "ila_lib/probe10"
         ]
       },
       "net_slot_0_axi_rresp": {
         "ports": [
           "g_inst/m_slot_0_axi_rresp",
-          "ila_lib/probe12"
+          "ila_lib/probe11"
         ]
       },
       "net_slot_0_axi_wdata": {
         "ports": [
           "g_inst/m_slot_0_axi_wdata",
-          "ila_lib/probe13"
+          "ila_lib/probe12"
         ]
       },
       "net_slot_0_axi_wstrb": {
         "ports": [
           "g_inst/m_slot_0_axi_wstrb",
-          "ila_lib/probe14"
+          "ila_lib/probe13"
         ]
       },
       "net_slot_0_axi_aw_ctrl": {
         "ports": [
           "slot_0_aw/dout",
-          "ila_lib/probe15"
+          "ila_lib/probe14"
         ]
       },
       "net_slot_0_axi_awvalid": {
@@ -662,7 +626,7 @@
       "net_slot_0_axi_w_ctrl": {
         "ports": [
           "slot_0_w/dout",
-          "ila_lib/probe16"
+          "ila_lib/probe15"
         ]
       },
       "net_slot_0_axi_wvalid": {
@@ -680,7 +644,7 @@
       "net_slot_0_axi_b_ctrl": {
         "ports": [
           "slot_0_b/dout",
-          "ila_lib/probe17"
+          "ila_lib/probe16"
         ]
       },
       "net_slot_0_axi_bvalid": {
@@ -698,7 +662,7 @@
       "net_slot_0_axi_ar_ctrl": {
         "ports": [
           "slot_0_ar/dout",
-          "ila_lib/probe18"
+          "ila_lib/probe17"
         ]
       },
       "net_slot_0_axi_arvalid": {
@@ -716,7 +680,7 @@
       "net_slot_0_axi_r_ctrl": {
         "ports": [
           "slot_0_r/dout",
-          "ila_lib/probe19"
+          "ila_lib/probe18"
         ]
       },
       "net_slot_0_axi_rvalid": {

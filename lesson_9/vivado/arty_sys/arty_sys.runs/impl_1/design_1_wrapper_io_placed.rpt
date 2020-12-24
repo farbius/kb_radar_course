@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------
 | Tool Version              : Vivado v.2019.1.3 (win64) Build 2644227 Wed Sep  4 09:45:24 MDT 2019
-| Date                      : Tue Dec 22 17:32:54 2020
+| Date                      : Wed Dec 23 20:58:40 2020
 | Host                      : DESKTOP-IOTF14Q running 64-bit major release  (build 9200)
 | Command                   : report_io -file design_1_wrapper_io_placed.rpt
 | Design                    : design_1_wrapper
@@ -25,7 +25,7 @@ Table of Contents
 +---------------+
 | Total User IO |
 +---------------+
-|           138 |
+|           140 |
 +---------------+
 
 
@@ -273,8 +273,8 @@ Table of Contents
 | M16        |                     | High Range | VCCO_35                 | VCCO        |                   |      35 |            |      |                     |                      |    3.30 |            |           |          |      |                  |              |                   |              |
 | M17        |                     | High Range | IO_L8P_T1_AD10P_35      | User IO     |                   |      35 |            |      |                     |                      |         |            |           |          |      |                  |              |                   |              |
 | M18        |                     | High Range | IO_L8N_T1_AD10N_35      | User IO     |                   |      35 |            |      |                     |                      |         |            |           |          |      |                  |              |                   |              |
-| M19        |                     | High Range | IO_L7P_T1_AD2P_35       | User IO     |                   |      35 |            |      |                     |                      |         |            |           |          |      |                  |              |                   |              |
-| M20        |                     | High Range | IO_L7N_T1_AD2N_35       | User IO     |                   |      35 |            |      |                     |                      |         |            |           |          |      |                  |              |                   |              |
+| M19        | sws_2bits_tri_i[1]  | High Range | IO_L7P_T1_AD2P_35       | INPUT       | LVCMOS33          |      35 |            |      |                     |                 NONE |         | FIXED      |           |          |      | NONE             |              |                   |              |
+| M20        | sws_2bits_tri_i[0]  | High Range | IO_L7N_T1_AD2N_35       | INPUT       | LVCMOS33          |      35 |            |      |                     |                 NONE |         | FIXED      |           |          |      | NONE             |              |                   |              |
 | N1         | DDR_cs_n            |            | PS_DDR_CS_B_502         | OUT         | SSTL15            |         |            | SLOW |                     |            FP_VTT_50 |         | FIXED      |           |          |      | NONE             |              |                   |              |
 | N2         | DDR_addr[0]         |            | PS_DDR_A0_502           | OUT         | SSTL15            |         |            | SLOW |                     |            FP_VTT_50 |         | FIXED      |           |          |      | NONE             |              |                   |              |
 | N3         | DDR_cke             |            | PS_DDR_CKE_502          | OUT         | SSTL15            |         |            | SLOW |                     |            FP_VTT_50 |         | FIXED      |           |          |      | NONE             |              |                   |              |
