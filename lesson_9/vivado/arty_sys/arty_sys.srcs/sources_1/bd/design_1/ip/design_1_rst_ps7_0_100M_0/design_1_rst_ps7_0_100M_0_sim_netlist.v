@@ -1,10 +1,10 @@
 // Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
-// Tool Version: Vivado v.2019.1.3 (win64) Build 2644227 Wed Sep  4 09:45:24 MDT 2019
-// Date        : Wed Dec 23 20:54:39 2020
-// Host        : DESKTOP-IOTF14Q running 64-bit major release  (build 9200)
+// Tool Version: Vivado v.2019.1.2 (win64) Build 2615518 Fri Aug  9 15:55:25 MDT 2019
+// Date        : Thu Dec 24 11:33:31 2020
+// Host        : LAPTOP-KSVOJTV9 running 64-bit major release  (build 9200)
 // Command     : write_verilog -force -mode funcsim
-//               d:/work/kb_radar_course/lesson_9/vivado/arty_sys/arty_sys.srcs/sources_1/bd/design_1/ip/design_1_rst_ps7_0_100M_0/design_1_rst_ps7_0_100M_0_sim_netlist.v
+//               D:/work/radar_course/lesson_9/vivado/arty_sys/arty_sys.srcs/sources_1/bd/design_1/ip/design_1_rst_ps7_0_100M_0/design_1_rst_ps7_0_100M_0_sim_netlist.v
 // Design      : design_1_rst_ps7_0_100M_0
 // Purpose     : This verilog netlist is a functional simulation representation of the design and should not be modified
 //               or synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -12,7 +12,7 @@
 // --------------------------------------------------------------------------------
 `timescale 1 ps / 1 ps
 
-(* CHECK_LICENSE_TYPE = "design_1_rst_ps7_0_100M_0,proc_sys_reset,{}" *) (* downgradeipidentifiedwarnings = "yes" *) (* x_core_info = "proc_sys_reset,Vivado 2019.1.3" *) 
+(* CHECK_LICENSE_TYPE = "design_1_rst_ps7_0_100M_0,proc_sys_reset,{}" *) (* downgradeipidentifiedwarnings = "yes" *) (* x_core_info = "proc_sys_reset,Vivado 2019.1.2" *) 
 (* NotValidForBitStream *)
 module design_1_rst_ps7_0_100M_0
    (slowest_sync_clk,
