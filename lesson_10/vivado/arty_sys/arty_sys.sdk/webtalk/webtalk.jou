@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2019.1.2 (64-bit)
+# SW Build 2615518 on Fri Aug  9 15:55:25 MDT 2019
+# 
+# Start of session at: Tue Dec 29 02:02:57 2020
+# Process ID: 10500
+# Current directory: D:/work/radar_course/lesson_10/vivado/arty_sys/arty_sys.sdk/webtalk
+# Command line: wbtcv.exe -mode batch -source sdk_webtalk.tcl
+# Log file: D:/work/radar_course/lesson_10/vivado/arty_sys/arty_sys.sdk/webtalk/webtalk.log
+# Journal file: D:/work/radar_course/lesson_10/vivado/arty_sys/arty_sys.sdk/webtalk\webtalk.jou
+#-----------------------------------------------------------
+source sdk_webtalk.tcl

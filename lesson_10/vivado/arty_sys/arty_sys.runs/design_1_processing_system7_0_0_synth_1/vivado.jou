@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.1.2 (64-bit)
+# SW Build 2615518 on Fri Aug  9 15:55:25 MDT 2019
+# IP Build 2614745 on Fri Aug  9 20:55:02 MDT 2019
+# Start of session at: Tue Dec 29 01:08:21 2020
+# Process ID: 10332
+# Current directory: D:/work/radar_course/lesson_10/vivado/arty_sys/arty_sys.runs/design_1_processing_system7_0_0_synth_1
+# Command line: vivado.exe -log design_1_processing_system7_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_processing_system7_0_0.tcl
+# Log file: D:/work/radar_course/lesson_10/vivado/arty_sys/arty_sys.runs/design_1_processing_system7_0_0_synth_1/design_1_processing_system7_0_0.vds
+# Journal file: D:/work/radar_course/lesson_10/vivado/arty_sys/arty_sys.runs/design_1_processing_system7_0_0_synth_1\vivado.jou
+#-----------------------------------------------------------
+source design_1_processing_system7_0_0.tcl -notrace

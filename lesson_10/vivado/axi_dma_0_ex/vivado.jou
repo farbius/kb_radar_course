@@ -1,0 +1,19 @@
+#-----------------------------------------------------------
+# Vivado v2019.1.2 (64-bit)
+# SW Build 2615518 on Fri Aug  9 15:55:25 MDT 2019
+# IP Build 2614745 on Fri Aug  9 20:55:02 MDT 2019
+# Start of session at: Tue Dec 29 01:04:20 2020
+# Process ID: 3348
+# Current directory: d:/work/radar_course/lesson_10/vivado/axi_dma_0_ex
+# Command line: vivado.exe -notrace -source d:/work/radar_course/lesson_10/vivado/arty_sys/.Xil/axi_dma_0/tmp_axi_dma_0.srcs/sources_1/ip/axi_dma_0/axi_dma_0_ex.tcl
+# Log file: d:/work/radar_course/lesson_10/vivado/axi_dma_0_ex/vivado.log
+# Journal file: d:/work/radar_course/lesson_10/vivado/axi_dma_0_ex\vivado.jou
+#-----------------------------------------------------------
+start_gui
+source d:/work/radar_course/lesson_10/vivado/arty_sys/.Xil/axi_dma_0/tmp_axi_dma_0.srcs/sources_1/ip/axi_dma_0/axi_dma_0_ex.tcl -notrace
+update_compile_order -fileset sources_1
+launch_simulation
+source axi_dma_0_exdes_tb.tcl
+restart
+run all
+close_sim
