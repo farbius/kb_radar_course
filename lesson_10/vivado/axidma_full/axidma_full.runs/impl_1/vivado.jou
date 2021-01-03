@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.1.2 (64-bit)
+# SW Build 2615518 on Fri Aug  9 15:55:25 MDT 2019
+# IP Build 2614745 on Fri Aug  9 20:55:02 MDT 2019
+# Start of session at: Sun Jan  3 09:00:31 2021
+# Process ID: 16116
+# Current directory: D:/work/radar_course/lesson_10/vivado/axidma_full/axidma_full.runs/impl_1
+# Command line: vivado.exe -log design_1_wrapper.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source design_1_wrapper.tcl -notrace
+# Log file: D:/work/radar_course/lesson_10/vivado/axidma_full/axidma_full.runs/impl_1/design_1_wrapper.vdi
+# Journal file: D:/work/radar_course/lesson_10/vivado/axidma_full/axidma_full.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source design_1_wrapper.tcl -notrace
