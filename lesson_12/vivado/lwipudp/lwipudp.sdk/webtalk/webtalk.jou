@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2019.1.2 (64-bit)
+# SW Build 2615518 on Fri Aug  9 15:55:25 MDT 2019
+# 
+# Start of session at: Fri Jan  8 17:26:12 2021
+# Process ID: 13404
+# Current directory: D:/work/radar_course/lesson_12/vivado/lwipudp/lwipudp.sdk/webtalk
+# Command line: wbtcv.exe -mode batch -source sdk_webtalk.tcl
+# Log file: D:/work/radar_course/lesson_12/vivado/lwipudp/lwipudp.sdk/webtalk/webtalk.log
+# Journal file: D:/work/radar_course/lesson_12/vivado/lwipudp/lwipudp.sdk/webtalk\webtalk.jou
+#-----------------------------------------------------------
+source sdk_webtalk.tcl

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item value="D:\work\radar_course\lesson_12\vivado\lwipudp\lwipudp.sdk\udp_srv\Debug" key="bootgen_files_selection"/>
+	<item value="D:\work\radar_course\lesson_12\vivado\lwipudp\lwipudp.sdk\fsbl\Debug" key="zynq_flash_files_selection"/>
+	<item value="D:\work\radar_course\lesson_12\vivado\lwipudp\lwipudp.sdk\fsbl\Debug" key="last_stored_selection"/>
+</section>

@@ -1,0 +1,56 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0x0",
+      "design_src": "SBD",
+      "device": "xc7z045ffg900-2",
+      "name": "bd_d5b8",
+      "scoped": "true",
+      "synth_flow_mode": "None",
+      "tool_version": "2019.1"
+    },
+    "design_tree": {},
+    "interface_ports": {
+      "SLOT_0_AXIS": {
+        "mode": "Monitor",
+        "vlnv": "xilinx.com:interface:axis_rtl:1.0"
+      },
+      "SLOT_1_AXIS": {
+        "mode": "Monitor",
+        "vlnv": "xilinx.com:interface:axis_rtl:1.0"
+      },
+      "SLOT_2_AXIS": {
+        "mode": "Monitor",
+        "vlnv": "xilinx.com:interface:axis_rtl:1.0"
+      }
+    },
+    "ports": {
+      "clk": {
+        "type": "clk",
+        "direction": "I",
+        "parameters": {
+          "ASSOCIATED_BUSIF": {
+            "value": "SLOT_0_AXIS:SLOT_1_AXIS:SLOT_2_AXIS"
+          },
+          "ASSOCIATED_RESET": {
+            "value": "resetn"
+          }
+        }
+      },
+      "probe0": {
+        "direction": "I",
+        "left": "0",
+        "right": "0"
+      },
+      "probe1": {
+        "direction": "I",
+        "left": "0",
+        "right": "0"
+      },
+      "resetn": {
+        "type": "rst",
+        "direction": "I"
+      }
+    }
+  }
+}

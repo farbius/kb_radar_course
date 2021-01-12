@@ -1,0 +1,44 @@
++--------------------------+--------------------------+----------------------------------------------------------------------------------------------------------+
+|       Launch Clock       |      Capture Clock       |                                                 Pin                                                      |
++--------------------------+--------------------------+----------------------------------------------------------------------------------------------------------+
+|               clk_fpga_0 |               clk_fpga_1 |                                                    system_i/s_axi_generator_0/inst/i0/tlast_cnt_reg[14]/R|
+|               clk_fpga_0 |               clk_fpga_1 |                                                    system_i/s_axi_generator_0/inst/i0/tlast_cnt_reg[15]/R|
+|               clk_fpga_0 |               clk_fpga_1 |                                                    system_i/s_axi_generator_0/inst/i0/tlast_cnt_reg[13]/R|
+|               clk_fpga_0 |               clk_fpga_1 |                                                    system_i/s_axi_generator_0/inst/i0/tlast_cnt_reg[12]/R|
+|               clk_fpga_0 |               clk_fpga_1 |                                                    system_i/s_axi_generator_0/inst/i0/tlast_cnt_reg[17]/R|
+|               clk_fpga_0 |               clk_fpga_1 |                                                    system_i/s_axi_generator_0/inst/i0/tlast_cnt_reg[16]/R|
+|               clk_fpga_0 |               clk_fpga_1 |                                                    system_i/s_axi_generator_0/inst/i0/tlast_cnt_reg[18]/R|
+|               clk_fpga_0 |               clk_fpga_1 |                                                    system_i/s_axi_generator_0/inst/i0/tlast_cnt_reg[19]/R|
+|               clk_fpga_0 |               clk_fpga_1 |                                                    system_i/s_axi_generator_0/inst/i0/tlast_cnt_reg[21]/R|
+|               clk_fpga_0 |               clk_fpga_1 |                                                    system_i/s_axi_generator_0/inst/i0/tlast_cnt_reg[22]/R|
+|               clk_fpga_0 |               clk_fpga_1 |                                                    system_i/s_axi_generator_0/inst/i0/tlast_cnt_reg[23]/R|
+|               clk_fpga_0 |               clk_fpga_1 |                                                    system_i/s_axi_generator_0/inst/i0/tlast_cnt_reg[20]/R|
+|               clk_fpga_0 |               clk_fpga_1 |                                                    system_i/s_axi_generator_0/inst/i0/tlast_cnt_reg[10]/R|
+|               clk_fpga_0 |               clk_fpga_1 |                                                     system_i/s_axi_generator_0/inst/i0/tlast_cnt_reg[8]/R|
+|               clk_fpga_0 |               clk_fpga_1 |                                                    system_i/s_axi_generator_0/inst/i0/tlast_cnt_reg[11]/R|
+|               clk_fpga_0 |               clk_fpga_1 |                                                     system_i/s_axi_generator_0/inst/i0/tlast_cnt_reg[9]/R|
+|               clk_fpga_0 |               clk_fpga_1 |                                                     system_i/s_axi_generator_0/inst/i0/tlast_cnt_reg[4]/R|
+|               clk_fpga_0 |               clk_fpga_1 |                                                     system_i/s_axi_generator_0/inst/i0/tlast_cnt_reg[5]/R|
+|               clk_fpga_0 |               clk_fpga_1 |                                                     system_i/s_axi_generator_0/inst/i0/tlast_cnt_reg[6]/R|
+|               clk_fpga_0 |               clk_fpga_1 |                                                     system_i/s_axi_generator_0/inst/i0/tlast_cnt_reg[7]/R|
+|               clk_fpga_0 |               clk_fpga_1 |                                                     system_i/s_axi_generator_0/inst/i0/tlast_cnt_reg[0]/R|
+|               clk_fpga_0 |               clk_fpga_1 |                                                     system_i/s_axi_generator_0/inst/i0/tlast_cnt_reg[3]/R|
+|               clk_fpga_0 |               clk_fpga_1 |                                                     system_i/s_axi_generator_0/inst/i0/tlast_cnt_reg[1]/R|
+|               clk_fpga_0 |               clk_fpga_1 |                                                     system_i/s_axi_generator_0/inst/i0/tlast_cnt_reg[2]/R|
+|               clk_fpga_0 |               clk_fpga_1 |                                                    system_i/s_axi_generator_0/inst/i0/tlast_cnt_reg[25]/R|
+|               clk_fpga_0 |               clk_fpga_1 |                                                    system_i/s_axi_generator_0/inst/i0/tlast_cnt_reg[26]/R|
+|               clk_fpga_0 |               clk_fpga_1 |                                                    system_i/s_axi_generator_0/inst/i0/tlast_cnt_reg[27]/R|
+|               clk_fpga_0 |               clk_fpga_1 |                                                    system_i/s_axi_generator_0/inst/i0/tlast_cnt_reg[24]/R|
+|               clk_fpga_0 |               clk_fpga_1 |               system_i/axis_dwidth_converter_0/inst/gen_upsizer_conversion.axisc_upsizer_0/acc_last_reg/D|
+|               clk_fpga_0 |               clk_fpga_1 |system_i/system_ila_0/inst/ila_lib/inst/ila_core_inst/u_trig/U_TM/N_DDR_MODE.G_NMU[5].U_M/allx_typeA_match_detection.ltlib_v1_0_0_allx_typeA_inst/probeDelay1_reg[0]/D|
+|               clk_fpga_0 |               clk_fpga_1 |                                                       system_i/s_axi_generator_0/inst/i0/counter_reg[2]/D|
+|               clk_fpga_0 |               clk_fpga_1 |                                                       system_i/s_axi_generator_0/inst/i0/counter_reg[0]/D|
+|               clk_fpga_0 |               clk_fpga_1 |                                                       system_i/s_axi_generator_0/inst/i0/counter_reg[3]/D|
+|               clk_fpga_0 |               clk_fpga_1 |                                                       system_i/s_axi_generator_0/inst/i0/counter_reg[1]/D|
+|               clk_fpga_0 |               clk_fpga_1 |                                                        system_i/s_axi_generator_0/inst/i0/tdata_reg[31]/R|
+|               clk_fpga_0 |               clk_fpga_1 |                                                        system_i/s_axi_generator_0/inst/i0/tdata_reg[30]/R|
+|               clk_fpga_0 |               clk_fpga_1 |                                                        system_i/s_axi_generator_0/inst/i0/tdata_reg[29]/R|
+|               clk_fpga_0 |               clk_fpga_1 |                                                        system_i/s_axi_generator_0/inst/i0/tdata_reg[28]/R|
+|               clk_fpga_0 |               clk_fpga_1 |                    system_i/system_ila_0/inst/ila_lib/inst/ila_core_inst/shifted_data_in_reg[7][1]_srl8/D|
+|               clk_fpga_0 |               clk_fpga_1 |                                                        system_i/s_axi_generator_0/inst/i0/start_reg_reg/D|
++--------------------------+--------------------------+----------------------------------------------------------------------------------------------------------+
