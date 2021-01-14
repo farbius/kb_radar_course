@@ -1,0 +1,1160 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Tue Jan 12 15:28:33 2021
+# Process ID: 6760
+# Current directory: D:/work/radar_course/lesson_15/vivado/fmcomms1/fmcomms1.runs/system_axi_ad9643_0_0_synth_1
+# Command line: vivado.exe -log system_axi_ad9643_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source system_axi_ad9643_0_0.tcl
+# Log file: D:/work/radar_course/lesson_15/vivado/fmcomms1/fmcomms1.runs/system_axi_ad9643_0_0_synth_1/system_axi_ad9643_0_0.vds
+# Journal file: D:/work/radar_course/lesson_15/vivado/fmcomms1/fmcomms1.runs/system_axi_ad9643_0_0_synth_1\vivado.jou
+#-----------------------------------------------------------
+source system_axi_ad9643_0_0.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/work/radar_course/lesson_15/vivado/sources/ip_cores'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.1/data/ip'.
+Command: synth_design -top system_axi_ad9643_0_0 -part xc7z045ffg900-2 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z045'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z045'
+INFO: [Device 21-403] Loading part xc7z045ffg900-2
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 15152 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 794.320 ; gain = 177.902
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'system_axi_ad9643_0_0' [d:/work/radar_course/lesson_15/vivado/fmcomms1/fmcomms1.srcs/sources_1/bd/system/ip/system_axi_ad9643_0_0/synth/system_axi_ad9643_0_0.v:56]
+INFO: [Synth 8-6157] synthesizing module 'axi_ad9643' [d:/work/radar_course/lesson_15/vivado/fmcomms1/fmcomms1.srcs/sources_1/bd/system/ipshared/8b67/axi_ad9643.v:40]
+	Parameter ID bound to: 0 - type: integer 
+	Parameter DEVICE_TYPE bound to: 0 - type: integer 
+	Parameter ADC_DATAPATH_DISABLE bound to: 0 - type: integer 
+	Parameter IO_DELAY_GROUP bound to: adc_if_delay_group - type: string 
+INFO: [Synth 8-6157] synthesizing module 'axi_ad9643_channel' [d:/work/radar_course/lesson_15/vivado/fmcomms1/fmcomms1.srcs/sources_1/bd/system/ipshared/8b67/axi_ad9643_channel.v:41]
+	Parameter Q_OR_I_N bound to: 0 - type: integer 
+	Parameter CHANNEL_ID bound to: 0 - type: integer 
+	Parameter DATAPATH_DISABLE bound to: 0 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'ad_datafmt' [d:/work/radar_course/lesson_15/vivado/fmcomms1/fmcomms1.srcs/sources_1/bd/system/ipshared/common/ad_datafmt.v:43]
+	Parameter DATA_WIDTH bound to: 14 - type: integer 
+	Parameter DW bound to: 13 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'ad_datafmt' (1#1) [d:/work/radar_course/lesson_15/vivado/fmcomms1/fmcomms1.srcs/sources_1/bd/system/ipshared/common/ad_datafmt.v:43]
+INFO: [Synth 8-6157] synthesizing module 'ad_dcfilter' [d:/work/radar_course/lesson_15/vivado/fmcomms1/fmcomms1.srcs/sources_1/bd/system/ipshared/common/ad_dcfilter.v:43]
+INFO: [Synth 8-6157] synthesizing module 'DSP48E1' [C:/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:12404]
+	Parameter ACASCREG bound to: 1 - type: integer 
+	Parameter ADREG bound to: 1 - type: integer 
+	Parameter ALUMODEREG bound to: 0 - type: integer 
+	Parameter AREG bound to: 1 - type: integer 
+	Parameter AUTORESET_PATDET bound to: NO_RESET - type: string 
+	Parameter A_INPUT bound to: DIRECT - type: string 
+	Parameter BCASCREG bound to: 1 - type: integer 
+	Parameter BREG bound to: 1 - type: integer 
+	Parameter B_INPUT bound to: DIRECT - type: string 
+	Parameter CARRYINREG bound to: 0 - type: integer 
+	Parameter CARRYINSELREG bound to: 0 - type: integer 
+	Parameter CREG bound to: 1 - type: integer 
+	Parameter DREG bound to: 0 - type: integer 
+	Parameter INMODEREG bound to: 0 - type: integer 
+	Parameter IS_ALUMODE_INVERTED bound to: 4'b0000 
+	Parameter IS_CARRYIN_INVERTED bound to: 1'b0 
+	Parameter IS_CLK_INVERTED bound to: 1'b0 
+	Parameter IS_INMODE_INVERTED bound to: 5'b00000 
+	Parameter IS_OPMODE_INVERTED bound to: 7'b0000000 
+	Parameter MASK bound to: 48'b001111111111111111111111111111111111111111111111 
+	Parameter MREG bound to: 1 - type: integer 
+	Parameter OPMODEREG bound to: 0 - type: integer 
+	Parameter PATTERN bound to: 48'b000000000000000000000000000000000000000000000000 
+	Parameter PREG bound to: 0 - type: integer 
+	Parameter SEL_MASK bound to: MASK - type: string 
+	Parameter SEL_PATTERN bound to: PATTERN - type: string 
+	Parameter USE_DPORT bound to: TRUE - type: string 
+	Parameter USE_MULT bound to: MULTIPLY - type: string 
+	Parameter USE_PATTERN_DETECT bound to: NO_PATDET - type: string 
+	Parameter USE_SIMD bound to: ONE48 - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'DSP48E1' (2#1) [C:/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:12404]
+INFO: [Synth 8-6155] done synthesizing module 'ad_dcfilter' (3#1) [d:/work/radar_course/lesson_15/vivado/fmcomms1/fmcomms1.srcs/sources_1/bd/system/ipshared/common/ad_dcfilter.v:43]
+INFO: [Synth 8-6157] synthesizing module 'ad_iqcor' [d:/work/radar_course/lesson_15/vivado/fmcomms1/fmcomms1.srcs/sources_1/bd/system/ipshared/common/ad_iqcor.v:41]
+	Parameter Q_OR_I_N bound to: 0 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'ad_mul' [d:/work/radar_course/lesson_15/vivado/fmcomms1/fmcomms1.srcs/sources_1/bd/system/ipshared/common/ad_mul.v:42]
+	Parameter DELAY_DATA_WIDTH bound to: 17 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'MULT_MACRO' [C:/Xilinx/Vivado/2019.1/data/verilog/src/unimacro/MULT_MACRO.v:24]
+	Parameter DEVICE bound to: VIRTEX5 - type: string 
+	Parameter LATENCY bound to: 3 - type: integer 
+	Parameter STYLE bound to: DSP - type: string 
+	Parameter WIDTH_A bound to: 17 - type: integer 
+	Parameter WIDTH_B bound to: 17 - type: integer 
+	Parameter MODEL_TYPE bound to: 0 - type: integer 
+	Parameter VERBOSITY bound to: 0 - type: integer 
+	Parameter AREG_IN bound to: 1 - type: integer 
+	Parameter BREG_IN bound to: 1 - type: integer 
+	Parameter MREG_IN bound to: 1 - type: integer 
+	Parameter PREG_IN bound to: 1 - type: integer 
+	Parameter A1REG_IN bound to: 1 - type: integer 
+	Parameter A0REG_IN bound to: 0 - type: integer 
+	Parameter B1REG_IN bound to: 1 - type: integer 
+	Parameter B0REG_IN bound to: 0 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'DSP48E' [C:/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:12287]
+	Parameter ACASCREG bound to: 1 - type: integer 
+	Parameter ALUMODEREG bound to: 1 - type: integer 
+	Parameter AREG bound to: 1 - type: integer 
+	Parameter AUTORESET_PATTERN_DETECT bound to: FALSE - type: string 
+	Parameter AUTORESET_PATTERN_DETECT_OPTINV bound to: MATCH - type: string 
+	Parameter A_INPUT bound to: DIRECT - type: string 
+	Parameter BCASCREG bound to: 1 - type: integer 
+	Parameter BREG bound to: 1 - type: integer 
+	Parameter B_INPUT bound to: DIRECT - type: string 
+	Parameter CARRYINREG bound to: 1 - type: integer 
+	Parameter CARRYINSELREG bound to: 1 - type: integer 
+	Parameter CREG bound to: 1 - type: integer 
+	Parameter MASK bound to: 48'b001111111111111111111111111111111111111111111111 
+	Parameter MREG bound to: 1 - type: integer 
+	Parameter MULTCARRYINREG bound to: 1 - type: integer 
+	Parameter OPMODEREG bound to: 1 - type: integer 
+	Parameter PATTERN bound to: 48'b000000000000000000000000000000000000000000000000 
+	Parameter PREG bound to: 1 - type: integer 
+	Parameter SEL_MASK bound to: MASK - type: string 
+	Parameter SEL_PATTERN bound to: PATTERN - type: string 
+	Parameter SEL_ROUNDING_MASK bound to: SEL_MASK - type: string 
+	Parameter SIM_MODE bound to: SAFE - type: string 
+	Parameter USE_MULT bound to: MULT_S - type: string 
+	Parameter USE_PATTERN_DETECT bound to: NO_PATDET - type: string 
+	Parameter USE_SIMD bound to: ONE48 - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'DSP48E' (4#1) [C:/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:12287]
+INFO: [Synth 8-6155] done synthesizing module 'MULT_MACRO' (5#1) [C:/Xilinx/Vivado/2019.1/data/verilog/src/unimacro/MULT_MACRO.v:24]
+INFO: [Synth 8-6155] done synthesizing module 'ad_mul' (6#1) [d:/work/radar_course/lesson_15/vivado/fmcomms1/fmcomms1.srcs/sources_1/bd/system/ipshared/common/ad_mul.v:42]
+INFO: [Synth 8-6157] synthesizing module 'ad_mul__parameterized0' [d:/work/radar_course/lesson_15/vivado/fmcomms1/fmcomms1.srcs/sources_1/bd/system/ipshared/common/ad_mul.v:42]
+	Parameter DELAY_DATA_WIDTH bound to: 16 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'ad_mul__parameterized0' (6#1) [d:/work/radar_course/lesson_15/vivado/fmcomms1/fmcomms1.srcs/sources_1/bd/system/ipshared/common/ad_mul.v:42]
+WARNING: [Synth 8-6014] Unused sequential element p1_data_q_reg was removed.  [d:/work/radar_course/lesson_15/vivado/fmcomms1/fmcomms1.srcs/sources_1/bd/system/ipshared/common/ad_iqcor.v:135]
+WARNING: [Synth 8-3936] Found unconnected internal register 'p1_data_p_reg' and it is trimmed from '34' to '30' bits. [d:/work/radar_course/lesson_15/vivado/fmcomms1/fmcomms1.srcs/sources_1/bd/system/ipshared/common/ad_iqcor.v:136]
+INFO: [Synth 8-6155] done synthesizing module 'ad_iqcor' (7#1) [d:/work/radar_course/lesson_15/vivado/fmcomms1/fmcomms1.srcs/sources_1/bd/system/ipshared/common/ad_iqcor.v:41]
+INFO: [Synth 8-6157] synthesizing module 'axi_ad9643_pnmon' [d:/work/radar_course/lesson_15/vivado/fmcomms1/fmcomms1.srcs/sources_1/bd/system/ipshared/8b67/axi_ad9643_pnmon.v:43]
+INFO: [Synth 8-6157] synthesizing module 'ad_pnmon' [d:/work/radar_course/lesson_15/vivado/fmcomms1/fmcomms1.srcs/sources_1/bd/system/ipshared/common/ad_pnmon.v:43]
+	Parameter DATA_WIDTH bound to: 30 - type: integer 
+	Parameter DW bound to: 29 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'ad_pnmon' (8#1) [d:/work/radar_course/lesson_15/vivado/fmcomms1/fmcomms1.srcs/sources_1/bd/system/ipshared/common/ad_pnmon.v:43]
+INFO: [Synth 8-6155] done synthesizing module 'axi_ad9643_pnmon' (9#1) [d:/work/radar_course/lesson_15/vivado/fmcomms1/fmcomms1.srcs/sources_1/bd/system/ipshared/8b67/axi_ad9643_pnmon.v:43]
+INFO: [Synth 8-6157] synthesizing module 'up_adc_channel' [d:/work/radar_course/lesson_15/vivado/fmcomms1/fmcomms1.srcs/sources_1/bd/system/ipshared/common/up_adc_channel.v:42]
+	Parameter ADC_CHANNEL_ID bound to: 0 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'up_xfer_cntrl' [d:/work/radar_course/lesson_15/vivado/fmcomms1/fmcomms1.srcs/sources_1/bd/system/ipshared/common/up_xfer_cntrl.v:40]
+	Parameter DATA_WIDTH bound to: 78 - type: integer 
+	Parameter DW bound to: 77 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'up_xfer_cntrl' (10#1) [d:/work/radar_course/lesson_15/vivado/fmcomms1/fmcomms1.srcs/sources_1/bd/system/ipshared/common/up_xfer_cntrl.v:40]
+INFO: [Synth 8-6157] synthesizing module 'up_xfer_status' [d:/work/radar_course/lesson_15/vivado/fmcomms1/fmcomms1.srcs/sources_1/bd/system/ipshared/common/up_xfer_status.v:40]
+	Parameter DATA_WIDTH bound to: 3 - type: integer 
+	Parameter DW bound to: 2 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'up_xfer_status' (11#1) [d:/work/radar_course/lesson_15/vivado/fmcomms1/fmcomms1.srcs/sources_1/bd/system/ipshared/common/up_xfer_status.v:40]
+INFO: [Synth 8-6155] done synthesizing module 'up_adc_channel' (12#1) [d:/work/radar_course/lesson_15/vivado/fmcomms1/fmcomms1.srcs/sources_1/bd/system/ipshared/common/up_adc_channel.v:42]
+INFO: [Synth 8-6155] done synthesizing module 'axi_ad9643_channel' (13#1) [d:/work/radar_course/lesson_15/vivado/fmcomms1/fmcomms1.srcs/sources_1/bd/system/ipshared/8b67/axi_ad9643_channel.v:41]
+INFO: [Synth 8-6157] synthesizing module 'axi_ad9643_channel__parameterized0' [d:/work/radar_course/lesson_15/vivado/fmcomms1/fmcomms1.srcs/sources_1/bd/system/ipshared/8b67/axi_ad9643_channel.v:41]
+	Parameter Q_OR_I_N bound to: 1 - type: integer 
+	Parameter CHANNEL_ID bound to: 1 - type: integer 
+	Parameter DATAPATH_DISABLE bound to: 0 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'ad_iqcor__parameterized0' [d:/work/radar_course/lesson_15/vivado/fmcomms1/fmcomms1.srcs/sources_1/bd/system/ipshared/common/ad_iqcor.v:41]
+	Parameter Q_OR_I_N bound to: 1 - type: integer 
+WARNING: [Synth 8-6014] Unused sequential element p1_data_i_reg was removed.  [d:/work/radar_course/lesson_15/vivado/fmcomms1/fmcomms1.srcs/sources_1/bd/system/ipshared/common/ad_iqcor.v:134]
+WARNING: [Synth 8-3936] Found unconnected internal register 'p1_data_p_reg' and it is trimmed from '34' to '30' bits. [d:/work/radar_course/lesson_15/vivado/fmcomms1/fmcomms1.srcs/sources_1/bd/system/ipshared/common/ad_iqcor.v:136]
+INFO: [Synth 8-6155] done synthesizing module 'ad_iqcor__parameterized0' (13#1) [d:/work/radar_course/lesson_15/vivado/fmcomms1/fmcomms1.srcs/sources_1/bd/system/ipshared/common/ad_iqcor.v:41]
+INFO: [Synth 8-6157] synthesizing module 'up_adc_channel__parameterized0' [d:/work/radar_course/lesson_15/vivado/fmcomms1/fmcomms1.srcs/sources_1/bd/system/ipshared/common/up_adc_channel.v:42]
+	Parameter ADC_CHANNEL_ID bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'up_adc_channel__parameterized0' (13#1) [d:/work/radar_course/lesson_15/vivado/fmcomms1/fmcomms1.srcs/sources_1/bd/system/ipshared/common/up_adc_channel.v:42]
+INFO: [Synth 8-6155] done synthesizing module 'axi_ad9643_channel__parameterized0' (13#1) [d:/work/radar_course/lesson_15/vivado/fmcomms1/fmcomms1.srcs/sources_1/bd/system/ipshared/8b67/axi_ad9643_channel.v:41]
+INFO: [Synth 8-6157] synthesizing module 'axi_ad9643_if' [d:/work/radar_course/lesson_15/vivado/fmcomms1/fmcomms1.srcs/sources_1/bd/system/ipshared/8b67/axi_ad9643_if.v:45]
+	Parameter DEVICE_TYPE bound to: 0 - type: integer 
+	Parameter IO_DELAY_GROUP bound to: adc_if_delay_group - type: string 
+INFO: [Synth 8-6157] synthesizing module 'ad_lvds_in' [d:/work/radar_course/lesson_15/vivado/fmcomms1/fmcomms1.srcs/sources_1/bd/system/ipshared/common/ad_lvds_in.v:42]
+	Parameter SINGLE_ENDED bound to: 0 - type: integer 
+	Parameter DEVICE_TYPE bound to: 0 - type: integer 
+	Parameter IODELAY_CTRL bound to: 0 - type: integer 
+	Parameter IODELAY_GROUP bound to: adc_if_delay_group - type: string 
+	Parameter SERIES7 bound to: 0 - type: integer 
+	Parameter VIRTEX6 bound to: 1 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'IBUFDS' [C:/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:32871]
+	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
+	Parameter DIFF_TERM bound to: FALSE - type: string 
+	Parameter DQS_BIAS bound to: FALSE - type: string 
+	Parameter IBUF_DELAY_VALUE bound to: 0 - type: string 
+	Parameter IBUF_LOW_PWR bound to: TRUE - type: string 
+	Parameter IFD_DELAY_VALUE bound to: AUTO - type: string 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'IBUFDS' (14#1) [C:/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:32871]
+INFO: [Synth 8-6157] synthesizing module 'IDELAYE2' [C:/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:34946]
+	Parameter CINVCTRL_SEL bound to: FALSE - type: string 
+	Parameter DELAY_SRC bound to: IDATAIN - type: string 
+	Parameter HIGH_PERFORMANCE_MODE bound to: FALSE - type: string 
+	Parameter IDELAY_TYPE bound to: VAR_LOAD - type: string 
+	Parameter IDELAY_VALUE bound to: 0 - type: integer 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_DATAIN_INVERTED bound to: 1'b0 
+	Parameter IS_IDATAIN_INVERTED bound to: 1'b0 
+	Parameter PIPE_SEL bound to: FALSE - type: string 
+	Parameter REFCLK_FREQUENCY bound to: 200.000000 - type: float 
+	Parameter SIGNAL_PATTERN bound to: DATA - type: string 
+	Parameter SIM_DELAY_D bound to: 0 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'IDELAYE2' (15#1) [C:/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:34946]
+INFO: [Synth 8-6157] synthesizing module 'IDDR' [C:/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:34811]
+	Parameter DDR_CLK_EDGE bound to: SAME_EDGE_PIPELINED - type: string 
+	Parameter INIT_Q1 bound to: 1'b0 
+	Parameter INIT_Q2 bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter SRTYPE bound to: ASYNC - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'IDDR' (16#1) [C:/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:34811]
+INFO: [Synth 8-6155] done synthesizing module 'ad_lvds_in' (17#1) [d:/work/radar_course/lesson_15/vivado/fmcomms1/fmcomms1.srcs/sources_1/bd/system/ipshared/common/ad_lvds_in.v:42]
+INFO: [Synth 8-6157] synthesizing module 'ad_lvds_in__parameterized0' [d:/work/radar_course/lesson_15/vivado/fmcomms1/fmcomms1.srcs/sources_1/bd/system/ipshared/common/ad_lvds_in.v:42]
+	Parameter SINGLE_ENDED bound to: 0 - type: integer 
+	Parameter DEVICE_TYPE bound to: 0 - type: integer 
+	Parameter IODELAY_CTRL bound to: 1 - type: integer 
+	Parameter IODELAY_GROUP bound to: adc_if_delay_group - type: string 
+	Parameter SERIES7 bound to: 0 - type: integer 
+	Parameter VIRTEX6 bound to: 1 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'IDELAYCTRL' [C:/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:34933]
+	Parameter SIM_DEVICE bound to: 7SERIES - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'IDELAYCTRL' (18#1) [C:/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:34933]
+INFO: [Synth 8-6155] done synthesizing module 'ad_lvds_in__parameterized0' (18#1) [d:/work/radar_course/lesson_15/vivado/fmcomms1/fmcomms1.srcs/sources_1/bd/system/ipshared/common/ad_lvds_in.v:42]
+INFO: [Synth 8-6157] synthesizing module 'ad_lvds_clk' [d:/work/radar_course/lesson_15/vivado/fmcomms1/fmcomms1.srcs/sources_1/bd/system/ipshared/common/ad_lvds_clk.v:42]
+	Parameter DEVICE_TYPE bound to: 0 - type: integer 
+	Parameter SERIES7 bound to: 0 - type: integer 
+	Parameter VIRTEX6 bound to: 1 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'BUFG' [C:/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:1075]
+INFO: [Synth 8-6155] done synthesizing module 'BUFG' (19#1) [C:/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:1075]
+INFO: [Synth 8-6157] synthesizing module 'IBUFGDS' [C:/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:33335]
+	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
+	Parameter DIFF_TERM bound to: FALSE - type: string 
+	Parameter IBUF_DELAY_VALUE bound to: 0 - type: string 
+	Parameter IBUF_LOW_PWR bound to: TRUE - type: string 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'IBUFGDS' (20#1) [C:/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:33335]
+INFO: [Synth 8-6155] done synthesizing module 'ad_lvds_clk' (21#1) [d:/work/radar_course/lesson_15/vivado/fmcomms1/fmcomms1.srcs/sources_1/bd/system/ipshared/common/ad_lvds_clk.v:42]
+INFO: [Synth 8-6155] done synthesizing module 'axi_ad9643_if' (22#1) [d:/work/radar_course/lesson_15/vivado/fmcomms1/fmcomms1.srcs/sources_1/bd/system/ipshared/8b67/axi_ad9643_if.v:45]
+INFO: [Synth 8-6157] synthesizing module 'up_adc_common' [d:/work/radar_course/lesson_15/vivado/fmcomms1/fmcomms1.srcs/sources_1/bd/system/ipshared/common/up_adc_common.v:40]
+	Parameter PCORE_VERSION bound to: 589922 - type: integer 
+	Parameter ID bound to: 0 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'ad_rst' [d:/work/radar_course/lesson_15/vivado/fmcomms1/fmcomms1.srcs/sources_1/bd/system/ipshared/common/ad_rst.v:40]
+INFO: [Synth 8-6155] done synthesizing module 'ad_rst' (23#1) [d:/work/radar_course/lesson_15/vivado/fmcomms1/fmcomms1.srcs/sources_1/bd/system/ipshared/common/ad_rst.v:40]
+INFO: [Synth 8-6157] synthesizing module 'up_xfer_cntrl__parameterized0' [d:/work/radar_course/lesson_15/vivado/fmcomms1/fmcomms1.srcs/sources_1/bd/system/ipshared/common/up_xfer_cntrl.v:40]
+	Parameter DATA_WIDTH bound to: 36 - type: integer 
+	Parameter DW bound to: 35 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'up_xfer_cntrl__parameterized0' (23#1) [d:/work/radar_course/lesson_15/vivado/fmcomms1/fmcomms1.srcs/sources_1/bd/system/ipshared/common/up_xfer_cntrl.v:40]
+INFO: [Synth 8-6157] synthesizing module 'up_xfer_status__parameterized0' [d:/work/radar_course/lesson_15/vivado/fmcomms1/fmcomms1.srcs/sources_1/bd/system/ipshared/common/up_xfer_status.v:40]
+	Parameter DATA_WIDTH bound to: 4 - type: integer 
+	Parameter DW bound to: 3 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'up_xfer_status__parameterized0' (23#1) [d:/work/radar_course/lesson_15/vivado/fmcomms1/fmcomms1.srcs/sources_1/bd/system/ipshared/common/up_xfer_status.v:40]
+INFO: [Synth 8-6157] synthesizing module 'up_clock_mon' [d:/work/radar_course/lesson_15/vivado/fmcomms1/fmcomms1.srcs/sources_1/bd/system/ipshared/common/up_clock_mon.v:40]
+INFO: [Synth 8-6155] done synthesizing module 'up_clock_mon' (24#1) [d:/work/radar_course/lesson_15/vivado/fmcomms1/fmcomms1.srcs/sources_1/bd/system/ipshared/common/up_clock_mon.v:40]
+WARNING: [Synth 8-5788] Register up_adc_sync_reg in module up_adc_common is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [d:/work/radar_course/lesson_15/vivado/fmcomms1/fmcomms1.srcs/sources_1/bd/system/ipshared/common/up_adc_common.v:236]
+INFO: [Synth 8-6155] done synthesizing module 'up_adc_common' (25#1) [d:/work/radar_course/lesson_15/vivado/fmcomms1/fmcomms1.srcs/sources_1/bd/system/ipshared/common/up_adc_common.v:40]
+INFO: [Synth 8-6157] synthesizing module 'up_delay_cntrl' [d:/work/radar_course/lesson_15/vivado/fmcomms1/fmcomms1.srcs/sources_1/bd/system/ipshared/common/up_delay_cntrl.v:40]
+	Parameter DATA_WIDTH bound to: 15 - type: integer 
+	Parameter BASE_ADDRESS bound to: 6'b000010 
+INFO: [Synth 8-6155] done synthesizing module 'up_delay_cntrl' (26#1) [d:/work/radar_course/lesson_15/vivado/fmcomms1/fmcomms1.srcs/sources_1/bd/system/ipshared/common/up_delay_cntrl.v:40]
+INFO: [Synth 8-6157] synthesizing module 'up_axi' [d:/work/radar_course/lesson_15/vivado/fmcomms1/fmcomms1.srcs/sources_1/bd/system/ipshared/common/up_axi.v:42]
+	Parameter ADDRESS_WIDTH bound to: 14 - type: integer 
+	Parameter AW bound to: 13 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'up_axi' (27#1) [d:/work/radar_course/lesson_15/vivado/fmcomms1/fmcomms1.srcs/sources_1/bd/system/ipshared/common/up_axi.v:42]
+INFO: [Synth 8-6155] done synthesizing module 'axi_ad9643' (28#1) [d:/work/radar_course/lesson_15/vivado/fmcomms1/fmcomms1.srcs/sources_1/bd/system/ipshared/8b67/axi_ad9643.v:40]
+INFO: [Synth 8-6155] done synthesizing module 'system_axi_ad9643_0_0' (29#1) [d:/work/radar_course/lesson_15/vivado/fmcomms1/fmcomms1.srcs/sources_1/bd/system/ip/system_axi_ad9643_0_0/synth/system_axi_ad9643_0_0.v:56]
+WARNING: [Synth 8-3331] design up_axi has unconnected port up_axi_awaddr[31]
+WARNING: [Synth 8-3331] design up_axi has unconnected port up_axi_awaddr[30]
+WARNING: [Synth 8-3331] design up_axi has unconnected port up_axi_awaddr[29]
+WARNING: [Synth 8-3331] design up_axi has unconnected port up_axi_awaddr[28]
+WARNING: [Synth 8-3331] design up_axi has unconnected port up_axi_awaddr[27]
+WARNING: [Synth 8-3331] design up_axi has unconnected port up_axi_awaddr[26]
+WARNING: [Synth 8-3331] design up_axi has unconnected port up_axi_awaddr[25]
+WARNING: [Synth 8-3331] design up_axi has unconnected port up_axi_awaddr[24]
+WARNING: [Synth 8-3331] design up_axi has unconnected port up_axi_awaddr[23]
+WARNING: [Synth 8-3331] design up_axi has unconnected port up_axi_awaddr[22]
+WARNING: [Synth 8-3331] design up_axi has unconnected port up_axi_awaddr[21]
+WARNING: [Synth 8-3331] design up_axi has unconnected port up_axi_awaddr[20]
+WARNING: [Synth 8-3331] design up_axi has unconnected port up_axi_awaddr[19]
+WARNING: [Synth 8-3331] design up_axi has unconnected port up_axi_awaddr[18]
+WARNING: [Synth 8-3331] design up_axi has unconnected port up_axi_awaddr[17]
+WARNING: [Synth 8-3331] design up_axi has unconnected port up_axi_awaddr[16]
+WARNING: [Synth 8-3331] design up_axi has unconnected port up_axi_awaddr[1]
+WARNING: [Synth 8-3331] design up_axi has unconnected port up_axi_awaddr[0]
+WARNING: [Synth 8-3331] design up_axi has unconnected port up_axi_wstrb[3]
+WARNING: [Synth 8-3331] design up_axi has unconnected port up_axi_wstrb[2]
+WARNING: [Synth 8-3331] design up_axi has unconnected port up_axi_wstrb[1]
+WARNING: [Synth 8-3331] design up_axi has unconnected port up_axi_wstrb[0]
+WARNING: [Synth 8-3331] design up_axi has unconnected port up_axi_araddr[31]
+WARNING: [Synth 8-3331] design up_axi has unconnected port up_axi_araddr[30]
+WARNING: [Synth 8-3331] design up_axi has unconnected port up_axi_araddr[29]
+WARNING: [Synth 8-3331] design up_axi has unconnected port up_axi_araddr[28]
+WARNING: [Synth 8-3331] design up_axi has unconnected port up_axi_araddr[27]
+WARNING: [Synth 8-3331] design up_axi has unconnected port up_axi_araddr[26]
+WARNING: [Synth 8-3331] design up_axi has unconnected port up_axi_araddr[25]
+WARNING: [Synth 8-3331] design up_axi has unconnected port up_axi_araddr[24]
+WARNING: [Synth 8-3331] design up_axi has unconnected port up_axi_araddr[23]
+WARNING: [Synth 8-3331] design up_axi has unconnected port up_axi_araddr[22]
+WARNING: [Synth 8-3331] design up_axi has unconnected port up_axi_araddr[21]
+WARNING: [Synth 8-3331] design up_axi has unconnected port up_axi_araddr[20]
+WARNING: [Synth 8-3331] design up_axi has unconnected port up_axi_araddr[19]
+WARNING: [Synth 8-3331] design up_axi has unconnected port up_axi_araddr[18]
+WARNING: [Synth 8-3331] design up_axi has unconnected port up_axi_araddr[17]
+WARNING: [Synth 8-3331] design up_axi has unconnected port up_axi_araddr[16]
+WARNING: [Synth 8-3331] design up_axi has unconnected port up_axi_araddr[1]
+WARNING: [Synth 8-3331] design up_axi has unconnected port up_axi_araddr[0]
+WARNING: [Synth 8-3331] design up_delay_cntrl has unconnected port up_wdata[31]
+WARNING: [Synth 8-3331] design up_delay_cntrl has unconnected port up_wdata[30]
+WARNING: [Synth 8-3331] design up_delay_cntrl has unconnected port up_wdata[29]
+WARNING: [Synth 8-3331] design up_delay_cntrl has unconnected port up_wdata[28]
+WARNING: [Synth 8-3331] design up_delay_cntrl has unconnected port up_wdata[27]
+WARNING: [Synth 8-3331] design up_delay_cntrl has unconnected port up_wdata[26]
+WARNING: [Synth 8-3331] design up_delay_cntrl has unconnected port up_wdata[25]
+WARNING: [Synth 8-3331] design up_delay_cntrl has unconnected port up_wdata[24]
+WARNING: [Synth 8-3331] design up_delay_cntrl has unconnected port up_wdata[23]
+WARNING: [Synth 8-3331] design up_delay_cntrl has unconnected port up_wdata[22]
+WARNING: [Synth 8-3331] design up_delay_cntrl has unconnected port up_wdata[21]
+WARNING: [Synth 8-3331] design up_delay_cntrl has unconnected port up_wdata[20]
+WARNING: [Synth 8-3331] design up_delay_cntrl has unconnected port up_wdata[19]
+WARNING: [Synth 8-3331] design up_delay_cntrl has unconnected port up_wdata[18]
+WARNING: [Synth 8-3331] design up_delay_cntrl has unconnected port up_wdata[17]
+WARNING: [Synth 8-3331] design up_delay_cntrl has unconnected port up_wdata[16]
+WARNING: [Synth 8-3331] design up_delay_cntrl has unconnected port up_wdata[15]
+WARNING: [Synth 8-3331] design up_delay_cntrl has unconnected port up_wdata[14]
+WARNING: [Synth 8-3331] design up_delay_cntrl has unconnected port up_wdata[13]
+WARNING: [Synth 8-3331] design up_delay_cntrl has unconnected port up_wdata[12]
+WARNING: [Synth 8-3331] design up_delay_cntrl has unconnected port up_wdata[11]
+WARNING: [Synth 8-3331] design up_delay_cntrl has unconnected port up_wdata[10]
+WARNING: [Synth 8-3331] design up_delay_cntrl has unconnected port up_wdata[9]
+WARNING: [Synth 8-3331] design up_delay_cntrl has unconnected port up_wdata[8]
+WARNING: [Synth 8-3331] design up_delay_cntrl has unconnected port up_wdata[7]
+WARNING: [Synth 8-3331] design up_delay_cntrl has unconnected port up_wdata[6]
+WARNING: [Synth 8-3331] design up_delay_cntrl has unconnected port up_wdata[5]
+WARNING: [Synth 8-3331] design ad_lvds_in has unconnected port delay_clk
+WARNING: [Synth 8-3331] design ad_lvds_in has unconnected port delay_rst
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 863.609 ; gain = 247.191
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 863.609 ; gain = 247.191
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 863.609 ; gain = 247.191
+---------------------------------------------------------------------------------
+INFO: [Netlist 29-17] Analyzing 52 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [D:/work/radar_course/lesson_15/vivado/fmcomms1/fmcomms1.runs/system_axi_ad9643_0_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [D:/work/radar_course/lesson_15/vivado/fmcomms1/fmcomms1.runs/system_axi_ad9643_0_0_synth_1/dont_touch.xdc]
+Parsing XDC File [d:/work/radar_course/lesson_15/vivado/fmcomms1/fmcomms1.srcs/sources_1/bd/system/ip/common/ad_axi_ip_constr.xdc] for cell 'inst'
+Finished Parsing XDC File [d:/work/radar_course/lesson_15/vivado/fmcomms1/fmcomms1.srcs/sources_1/bd/system/ip/common/ad_axi_ip_constr.xdc] for cell 'inst'
+Parsing XDC File [d:/work/radar_course/lesson_15/vivado/fmcomms1/fmcomms1.srcs/sources_1/bd/system/ip/system_axi_ad9643_0_0/axi_ad9643_constr.xdc] for cell 'inst'
+Finished Parsing XDC File [d:/work/radar_course/lesson_15/vivado/fmcomms1/fmcomms1.srcs/sources_1/bd/system/ip/system_axi_ad9643_0_0/axi_ad9643_constr.xdc] for cell 'inst'
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 947.805 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 5 instances were transformed.
+  DSP48E => DSP48E1: 4 instances
+  IBUFGDS => IBUFDS: 1 instances
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.207 . Memory (MB): peak = 951.969 ; gain = 4.164
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:22 ; elapsed = 00:00:22 . Memory (MB): peak = 951.969 ; gain = 335.551
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z045ffg900-2
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:22 ; elapsed = 00:00:22 . Memory (MB): peak = 951.969 ; gain = 335.551
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for inst. (constraint file  D:/work/radar_course/lesson_15/vivado/fmcomms1/fmcomms1.runs/system_axi_ad9643_0_0_synth_1/dont_touch.xdc, line 9).
+Applied set_property SHREG_EXTRACT = no for inst/i_channel_0/i_up_adc_channel/i_xfer_cntrl/up_xfer_state_m1_reg. (constraint file  d:/work/radar_course/lesson_15/vivado/fmcomms1/fmcomms1.srcs/sources_1/bd/system/ip/common/ad_axi_ip_constr.xdc, line 2).
+Applied set_property SHREG_EXTRACT = no for inst/i_channel_0/i_up_adc_channel/i_xfer_cntrl/up_xfer_state_m2_reg. (constraint file  d:/work/radar_course/lesson_15/vivado/fmcomms1/fmcomms1.srcs/sources_1/bd/system/ip/common/ad_axi_ip_constr.xdc, line 2).
+Applied set_property SHREG_EXTRACT = no for inst/i_channel_0/i_up_adc_channel/i_xfer_cntrl/up_xfer_state_reg. (constraint file  d:/work/radar_course/lesson_15/vivado/fmcomms1/fmcomms1.srcs/sources_1/bd/system/ip/common/ad_axi_ip_constr.xdc, line 2).
+Applied set_property SHREG_EXTRACT = no for inst/i_channel_1/i_up_adc_channel/i_xfer_cntrl/up_xfer_state_m1_reg. (constraint file  d:/work/radar_course/lesson_15/vivado/fmcomms1/fmcomms1.srcs/sources_1/bd/system/ip/common/ad_axi_ip_constr.xdc, line 2).
+Applied set_property SHREG_EXTRACT = no for inst/i_channel_1/i_up_adc_channel/i_xfer_cntrl/up_xfer_state_m2_reg. (constraint file  d:/work/radar_course/lesson_15/vivado/fmcomms1/fmcomms1.srcs/sources_1/bd/system/ip/common/ad_axi_ip_constr.xdc, line 2).
+Applied set_property SHREG_EXTRACT = no for inst/i_channel_1/i_up_adc_channel/i_xfer_cntrl/up_xfer_state_reg. (constraint file  d:/work/radar_course/lesson_15/vivado/fmcomms1/fmcomms1.srcs/sources_1/bd/system/ip/common/ad_axi_ip_constr.xdc, line 2).
+Applied set_property SHREG_EXTRACT = no for inst/i_up_adc_common/i_xfer_cntrl/up_xfer_state_m1_reg. (constraint file  d:/work/radar_course/lesson_15/vivado/fmcomms1/fmcomms1.srcs/sources_1/bd/system/ip/common/ad_axi_ip_constr.xdc, line 2).
+Applied set_property SHREG_EXTRACT = no for inst/i_up_adc_common/i_xfer_cntrl/up_xfer_state_m2_reg. (constraint file  d:/work/radar_course/lesson_15/vivado/fmcomms1/fmcomms1.srcs/sources_1/bd/system/ip/common/ad_axi_ip_constr.xdc, line 2).
+Applied set_property SHREG_EXTRACT = no for inst/i_up_adc_common/i_xfer_cntrl/up_xfer_state_reg. (constraint file  d:/work/radar_course/lesson_15/vivado/fmcomms1/fmcomms1.srcs/sources_1/bd/system/ip/common/ad_axi_ip_constr.xdc, line 2).
+Applied set_property SHREG_EXTRACT = no for inst/i_channel_0/i_up_adc_channel/i_xfer_cntrl/d_xfer_toggle_m1_reg. (constraint file  d:/work/radar_course/lesson_15/vivado/fmcomms1/fmcomms1.srcs/sources_1/bd/system/ip/common/ad_axi_ip_constr.xdc, line 3).
+Applied set_property SHREG_EXTRACT = no for inst/i_channel_0/i_up_adc_channel/i_xfer_cntrl/d_xfer_toggle_m2_reg. (constraint file  d:/work/radar_course/lesson_15/vivado/fmcomms1/fmcomms1.srcs/sources_1/bd/system/ip/common/ad_axi_ip_constr.xdc, line 3).
+Applied set_property SHREG_EXTRACT = no for inst/i_channel_0/i_up_adc_channel/i_xfer_cntrl/d_xfer_toggle_m3_reg. (constraint file  d:/work/radar_course/lesson_15/vivado/fmcomms1/fmcomms1.srcs/sources_1/bd/system/ip/common/ad_axi_ip_constr.xdc, line 3).
+Applied set_property SHREG_EXTRACT = no for inst/i_channel_0/i_up_adc_channel/i_xfer_cntrl/d_xfer_toggle_reg. (constraint file  d:/work/radar_course/lesson_15/vivado/fmcomms1/fmcomms1.srcs/sources_1/bd/system/ip/common/ad_axi_ip_constr.xdc, line 3).
+Applied set_property SHREG_EXTRACT = no for inst/i_channel_0/i_up_adc_channel/i_xfer_cntrl/d_xfer_toggle_s_i. (constraint file  d:/work/radar_course/lesson_15/vivado/fmcomms1/fmcomms1.srcs/sources_1/bd/system/ip/common/ad_axi_ip_constr.xdc, line 3).
+Applied set_property SHREG_EXTRACT = no for inst/i_channel_0/i_up_adc_channel/i_xfer_status/d_xfer_toggle0_i. (constraint file  d:/work/radar_course/lesson_15/vivado/fmcomms1/fmcomms1.srcs/sources_1/bd/system/ip/common/ad_axi_ip_constr.xdc, line 3).
+Applied set_property SHREG_EXTRACT = no for inst/i_channel_0/i_up_adc_channel/i_xfer_status/d_xfer_toggle0_i__0. (constraint file  d:/work/radar_course/lesson_15/vivado/fmcomms1/fmcomms1.srcs/sources_1/bd/system/ip/common/ad_axi_ip_constr.xdc, line 3).
+Applied set_property SHREG_EXTRACT = no for inst/i_channel_0/i_up_adc_channel/i_xfer_status/d_xfer_toggle1_i. (constraint file  d:/work/radar_course/lesson_15/vivado/fmcomms1/fmcomms1.srcs/sources_1/bd/system/ip/common/ad_axi_ip_constr.xdc, line 3).
+Applied set_property SHREG_EXTRACT = no for inst/i_channel_0/i_up_adc_channel/i_xfer_status/d_xfer_toggle1_i__0. (constraint file  d:/work/radar_course/lesson_15/vivado/fmcomms1/fmcomms1.srcs/sources_1/bd/system/ip/common/ad_axi_ip_constr.xdc, line 3).
+Applied set_property SHREG_EXTRACT = no for inst/i_channel_0/i_up_adc_channel/i_xfer_status/d_xfer_toggle_reg. (constraint file  d:/work/radar_course/lesson_15/vivado/fmcomms1/fmcomms1.srcs/sources_1/bd/system/ip/common/ad_axi_ip_constr.xdc, line 3).
+Applied set_property SHREG_EXTRACT = no for inst/i_channel_1/i_up_adc_channel/i_xfer_cntrl/d_xfer_toggle_m1_reg. (constraint file  d:/work/radar_course/lesson_15/vivado/fmcomms1/fmcomms1.srcs/sources_1/bd/system/ip/common/ad_axi_ip_constr.xdc, line 3).
+Applied set_property SHREG_EXTRACT = no for inst/i_channel_1/i_up_adc_channel/i_xfer_cntrl/d_xfer_toggle_m2_reg. (constraint file  d:/work/radar_course/lesson_15/vivado/fmcomms1/fmcomms1.srcs/sources_1/bd/system/ip/common/ad_axi_ip_constr.xdc, line 3).
+Applied set_property SHREG_EXTRACT = no for inst/i_channel_1/i_up_adc_channel/i_xfer_cntrl/d_xfer_toggle_m3_reg. (constraint file  d:/work/radar_course/lesson_15/vivado/fmcomms1/fmcomms1.srcs/sources_1/bd/system/ip/common/ad_axi_ip_constr.xdc, line 3).
+Applied set_property SHREG_EXTRACT = no for inst/i_channel_1/i_up_adc_channel/i_xfer_cntrl/d_xfer_toggle_reg. (constraint file  d:/work/radar_course/lesson_15/vivado/fmcomms1/fmcomms1.srcs/sources_1/bd/system/ip/common/ad_axi_ip_constr.xdc, line 3).
+Applied set_property SHREG_EXTRACT = no for inst/i_channel_1/i_up_adc_channel/i_xfer_cntrl/d_xfer_toggle_s_i. (constraint file  d:/work/radar_course/lesson_15/vivado/fmcomms1/fmcomms1.srcs/sources_1/bd/system/ip/common/ad_axi_ip_constr.xdc, line 3).
+Applied set_property SHREG_EXTRACT = no for inst/i_channel_1/i_up_adc_channel/i_xfer_status/d_xfer_toggle0_i. (constraint file  d:/work/radar_course/lesson_15/vivado/fmcomms1/fmcomms1.srcs/sources_1/bd/system/ip/common/ad_axi_ip_constr.xdc, line 3).
+Applied set_property SHREG_EXTRACT = no for inst/i_channel_1/i_up_adc_channel/i_xfer_status/d_xfer_toggle0_i__0. (constraint file  d:/work/radar_course/lesson_15/vivado/fmcomms1/fmcomms1.srcs/sources_1/bd/system/ip/common/ad_axi_ip_constr.xdc, line 3).
+Applied set_property SHREG_EXTRACT = no for inst/i_channel_1/i_up_adc_channel/i_xfer_status/d_xfer_toggle1_i. (constraint file  d:/work/radar_course/lesson_15/vivado/fmcomms1/fmcomms1.srcs/sources_1/bd/system/ip/common/ad_axi_ip_constr.xdc, line 3).
+Applied set_property SHREG_EXTRACT = no for inst/i_channel_1/i_up_adc_channel/i_xfer_status/d_xfer_toggle1_i__0. (constraint file  d:/work/radar_course/lesson_15/vivado/fmcomms1/fmcomms1.srcs/sources_1/bd/system/ip/common/ad_axi_ip_constr.xdc, line 3).
+Applied set_property SHREG_EXTRACT = no for inst/i_channel_1/i_up_adc_channel/i_xfer_status/d_xfer_toggle_reg. (constraint file  d:/work/radar_course/lesson_15/vivado/fmcomms1/fmcomms1.srcs/sources_1/bd/system/ip/common/ad_axi_ip_constr.xdc, line 3).
+Applied set_property SHREG_EXTRACT = no for inst/i_up_adc_common/i_xfer_cntrl/d_xfer_toggle_m1_reg. (constraint file  d:/work/radar_course/lesson_15/vivado/fmcomms1/fmcomms1.srcs/sources_1/bd/system/ip/common/ad_axi_ip_constr.xdc, line 3).
+Applied set_property SHREG_EXTRACT = no for inst/i_up_adc_common/i_xfer_cntrl/d_xfer_toggle_m2_reg. (constraint file  d:/work/radar_course/lesson_15/vivado/fmcomms1/fmcomms1.srcs/sources_1/bd/system/ip/common/ad_axi_ip_constr.xdc, line 3).
+Applied set_property SHREG_EXTRACT = no for inst/i_up_adc_common/i_xfer_cntrl/d_xfer_toggle_m3_reg. (constraint file  d:/work/radar_course/lesson_15/vivado/fmcomms1/fmcomms1.srcs/sources_1/bd/system/ip/common/ad_axi_ip_constr.xdc, line 3).
+Applied set_property SHREG_EXTRACT = no for inst/i_up_adc_common/i_xfer_cntrl/d_xfer_toggle_reg. (constraint file  d:/work/radar_course/lesson_15/vivado/fmcomms1/fmcomms1.srcs/sources_1/bd/system/ip/common/ad_axi_ip_constr.xdc, line 3).
+Applied set_property SHREG_EXTRACT = no for inst/i_up_adc_common/i_xfer_cntrl/d_xfer_toggle_s_i. (constraint file  d:/work/radar_course/lesson_15/vivado/fmcomms1/fmcomms1.srcs/sources_1/bd/system/ip/common/ad_axi_ip_constr.xdc, line 3).
+Applied set_property SHREG_EXTRACT = no for inst/i_up_adc_common/i_xfer_status/d_xfer_toggle0_i. (constraint file  d:/work/radar_course/lesson_15/vivado/fmcomms1/fmcomms1.srcs/sources_1/bd/system/ip/common/ad_axi_ip_constr.xdc, line 3).
+Applied set_property SHREG_EXTRACT = no for inst/i_up_adc_common/i_xfer_status/d_xfer_toggle0_i__0. (constraint file  d:/work/radar_course/lesson_15/vivado/fmcomms1/fmcomms1.srcs/sources_1/bd/system/ip/common/ad_axi_ip_constr.xdc, line 3).
+Applied set_property SHREG_EXTRACT = no for inst/i_up_adc_common/i_xfer_status/d_xfer_toggle1_i. (constraint file  d:/work/radar_course/lesson_15/vivado/fmcomms1/fmcomms1.srcs/sources_1/bd/system/ip/common/ad_axi_ip_constr.xdc, line 3).
+Applied set_property SHREG_EXTRACT = no for inst/i_up_adc_common/i_xfer_status/d_xfer_toggle1_i__0. (constraint file  d:/work/radar_course/lesson_15/vivado/fmcomms1/fmcomms1.srcs/sources_1/bd/system/ip/common/ad_axi_ip_constr.xdc, line 3).
+Applied set_property SHREG_EXTRACT = no for inst/i_up_adc_common/i_xfer_status/d_xfer_toggle_reg. (constraint file  d:/work/radar_course/lesson_15/vivado/fmcomms1/fmcomms1.srcs/sources_1/bd/system/ip/common/ad_axi_ip_constr.xdc, line 3).
+Applied set_property SHREG_EXTRACT = no for inst/i_channel_0/i_up_adc_channel/i_xfer_status/d_xfer_state_m1_reg. (constraint file  d:/work/radar_course/lesson_15/vivado/fmcomms1/fmcomms1.srcs/sources_1/bd/system/ip/common/ad_axi_ip_constr.xdc, line 4).
+Applied set_property SHREG_EXTRACT = no for inst/i_channel_0/i_up_adc_channel/i_xfer_status/d_xfer_state_m2_reg. (constraint file  d:/work/radar_course/lesson_15/vivado/fmcomms1/fmcomms1.srcs/sources_1/bd/system/ip/common/ad_axi_ip_constr.xdc, line 4).
+Applied set_property SHREG_EXTRACT = no for inst/i_channel_0/i_up_adc_channel/i_xfer_status/d_xfer_state_reg. (constraint file  d:/work/radar_course/lesson_15/vivado/fmcomms1/fmcomms1.srcs/sources_1/bd/system/ip/common/ad_axi_ip_constr.xdc, line 4).
+Applied set_property SHREG_EXTRACT = no for inst/i_channel_1/i_up_adc_channel/i_xfer_status/d_xfer_state_m1_reg. (constraint file  d:/work/radar_course/lesson_15/vivado/fmcomms1/fmcomms1.srcs/sources_1/bd/system/ip/common/ad_axi_ip_constr.xdc, line 4).
+Applied set_property SHREG_EXTRACT = no for inst/i_channel_1/i_up_adc_channel/i_xfer_status/d_xfer_state_m2_reg. (constraint file  d:/work/radar_course/lesson_15/vivado/fmcomms1/fmcomms1.srcs/sources_1/bd/system/ip/common/ad_axi_ip_constr.xdc, line 4).
+Applied set_property SHREG_EXTRACT = no for inst/i_channel_1/i_up_adc_channel/i_xfer_status/d_xfer_state_reg. (constraint file  d:/work/radar_course/lesson_15/vivado/fmcomms1/fmcomms1.srcs/sources_1/bd/system/ip/common/ad_axi_ip_constr.xdc, line 4).
+Applied set_property SHREG_EXTRACT = no for inst/i_up_adc_common/i_xfer_status/d_xfer_state_m1_reg. (constraint file  d:/work/radar_course/lesson_15/vivado/fmcomms1/fmcomms1.srcs/sources_1/bd/system/ip/common/ad_axi_ip_constr.xdc, line 4).
+Applied set_property SHREG_EXTRACT = no for inst/i_up_adc_common/i_xfer_status/d_xfer_state_m2_reg. (constraint file  d:/work/radar_course/lesson_15/vivado/fmcomms1/fmcomms1.srcs/sources_1/bd/system/ip/common/ad_axi_ip_constr.xdc, line 4).
+Applied set_property SHREG_EXTRACT = no for inst/i_up_adc_common/i_xfer_status/d_xfer_state_reg. (constraint file  d:/work/radar_course/lesson_15/vivado/fmcomms1/fmcomms1.srcs/sources_1/bd/system/ip/common/ad_axi_ip_constr.xdc, line 4).
+Applied set_property SHREG_EXTRACT = no for inst/i_channel_0/i_up_adc_channel/i_xfer_cntrl/up_xfer_toggle0_i. (constraint file  d:/work/radar_course/lesson_15/vivado/fmcomms1/fmcomms1.srcs/sources_1/bd/system/ip/common/ad_axi_ip_constr.xdc, line 5).
+Applied set_property SHREG_EXTRACT = no for inst/i_channel_0/i_up_adc_channel/i_xfer_cntrl/up_xfer_toggle0_i__0. (constraint file  d:/work/radar_course/lesson_15/vivado/fmcomms1/fmcomms1.srcs/sources_1/bd/system/ip/common/ad_axi_ip_constr.xdc, line 5).
+Applied set_property SHREG_EXTRACT = no for inst/i_channel_0/i_up_adc_channel/i_xfer_cntrl/up_xfer_toggle1_i. (constraint file  d:/work/radar_course/lesson_15/vivado/fmcomms1/fmcomms1.srcs/sources_1/bd/system/ip/common/ad_axi_ip_constr.xdc, line 5).
+Applied set_property SHREG_EXTRACT = no for inst/i_channel_0/i_up_adc_channel/i_xfer_cntrl/up_xfer_toggle1_i__0. (constraint file  d:/work/radar_course/lesson_15/vivado/fmcomms1/fmcomms1.srcs/sources_1/bd/system/ip/common/ad_axi_ip_constr.xdc, line 5).
+Applied set_property SHREG_EXTRACT = no for inst/i_channel_0/i_up_adc_channel/i_xfer_cntrl/up_xfer_toggle_reg. (constraint file  d:/work/radar_course/lesson_15/vivado/fmcomms1/fmcomms1.srcs/sources_1/bd/system/ip/common/ad_axi_ip_constr.xdc, line 5).
+Applied set_property SHREG_EXTRACT = no for inst/i_channel_0/i_up_adc_channel/i_xfer_status/up_xfer_toggle_m1_reg. (constraint file  d:/work/radar_course/lesson_15/vivado/fmcomms1/fmcomms1.srcs/sources_1/bd/system/ip/common/ad_axi_ip_constr.xdc, line 5).
+Applied set_property SHREG_EXTRACT = no for inst/i_channel_0/i_up_adc_channel/i_xfer_status/up_xfer_toggle_m2_reg. (constraint file  d:/work/radar_course/lesson_15/vivado/fmcomms1/fmcomms1.srcs/sources_1/bd/system/ip/common/ad_axi_ip_constr.xdc, line 5).
+Applied set_property SHREG_EXTRACT = no for inst/i_channel_0/i_up_adc_channel/i_xfer_status/up_xfer_toggle_m3_reg. (constraint file  d:/work/radar_course/lesson_15/vivado/fmcomms1/fmcomms1.srcs/sources_1/bd/system/ip/common/ad_axi_ip_constr.xdc, line 5).
+Applied set_property SHREG_EXTRACT = no for inst/i_channel_0/i_up_adc_channel/i_xfer_status/up_xfer_toggle_reg. (constraint file  d:/work/radar_course/lesson_15/vivado/fmcomms1/fmcomms1.srcs/sources_1/bd/system/ip/common/ad_axi_ip_constr.xdc, line 5).
+Applied set_property SHREG_EXTRACT = no for inst/i_channel_0/i_up_adc_channel/i_xfer_status/up_xfer_toggle_s_i. (constraint file  d:/work/radar_course/lesson_15/vivado/fmcomms1/fmcomms1.srcs/sources_1/bd/system/ip/common/ad_axi_ip_constr.xdc, line 5).
+Applied set_property SHREG_EXTRACT = no for inst/i_channel_1/i_up_adc_channel/i_xfer_cntrl/up_xfer_toggle0_i. (constraint file  d:/work/radar_course/lesson_15/vivado/fmcomms1/fmcomms1.srcs/sources_1/bd/system/ip/common/ad_axi_ip_constr.xdc, line 5).
+Applied set_property SHREG_EXTRACT = no for inst/i_channel_1/i_up_adc_channel/i_xfer_cntrl/up_xfer_toggle0_i__0. (constraint file  d:/work/radar_course/lesson_15/vivado/fmcomms1/fmcomms1.srcs/sources_1/bd/system/ip/common/ad_axi_ip_constr.xdc, line 5).
+Applied set_property SHREG_EXTRACT = no for inst/i_channel_1/i_up_adc_channel/i_xfer_cntrl/up_xfer_toggle1_i. (constraint file  d:/work/radar_course/lesson_15/vivado/fmcomms1/fmcomms1.srcs/sources_1/bd/system/ip/common/ad_axi_ip_constr.xdc, line 5).
+Applied set_property SHREG_EXTRACT = no for inst/i_channel_1/i_up_adc_channel/i_xfer_cntrl/up_xfer_toggle1_i__0. (constraint file  d:/work/radar_course/lesson_15/vivado/fmcomms1/fmcomms1.srcs/sources_1/bd/system/ip/common/ad_axi_ip_constr.xdc, line 5).
+Applied set_property SHREG_EXTRACT = no for inst/i_channel_1/i_up_adc_channel/i_xfer_cntrl/up_xfer_toggle_reg. (constraint file  d:/work/radar_course/lesson_15/vivado/fmcomms1/fmcomms1.srcs/sources_1/bd/system/ip/common/ad_axi_ip_constr.xdc, line 5).
+Applied set_property SHREG_EXTRACT = no for inst/i_channel_1/i_up_adc_channel/i_xfer_status/up_xfer_toggle_m1_reg. (constraint file  d:/work/radar_course/lesson_15/vivado/fmcomms1/fmcomms1.srcs/sources_1/bd/system/ip/common/ad_axi_ip_constr.xdc, line 5).
+Applied set_property SHREG_EXTRACT = no for inst/i_channel_1/i_up_adc_channel/i_xfer_status/up_xfer_toggle_m2_reg. (constraint file  d:/work/radar_course/lesson_15/vivado/fmcomms1/fmcomms1.srcs/sources_1/bd/system/ip/common/ad_axi_ip_constr.xdc, line 5).
+Applied set_property SHREG_EXTRACT = no for inst/i_channel_1/i_up_adc_channel/i_xfer_status/up_xfer_toggle_m3_reg. (constraint file  d:/work/radar_course/lesson_15/vivado/fmcomms1/fmcomms1.srcs/sources_1/bd/system/ip/common/ad_axi_ip_constr.xdc, line 5).
+Applied set_property SHREG_EXTRACT = no for inst/i_channel_1/i_up_adc_channel/i_xfer_status/up_xfer_toggle_reg. (constraint file  d:/work/radar_course/lesson_15/vivado/fmcomms1/fmcomms1.srcs/sources_1/bd/system/ip/common/ad_axi_ip_constr.xdc, line 5).
+Applied set_property SHREG_EXTRACT = no for inst/i_channel_1/i_up_adc_channel/i_xfer_status/up_xfer_toggle_s_i. (constraint file  d:/work/radar_course/lesson_15/vivado/fmcomms1/fmcomms1.srcs/sources_1/bd/system/ip/common/ad_axi_ip_constr.xdc, line 5).
+Applied set_property SHREG_EXTRACT = no for inst/i_up_adc_common/i_xfer_cntrl/up_xfer_toggle0_i. (constraint file  d:/work/radar_course/lesson_15/vivado/fmcomms1/fmcomms1.srcs/sources_1/bd/system/ip/common/ad_axi_ip_constr.xdc, line 5).
+Applied set_property SHREG_EXTRACT = no for inst/i_up_adc_common/i_xfer_cntrl/up_xfer_toggle0_i__0. (constraint file  d:/work/radar_course/lesson_15/vivado/fmcomms1/fmcomms1.srcs/sources_1/bd/system/ip/common/ad_axi_ip_constr.xdc, line 5).
+Applied set_property SHREG_EXTRACT = no for inst/i_up_adc_common/i_xfer_cntrl/up_xfer_toggle1_i. (constraint file  d:/work/radar_course/lesson_15/vivado/fmcomms1/fmcomms1.srcs/sources_1/bd/system/ip/common/ad_axi_ip_constr.xdc, line 5).
+Applied set_property SHREG_EXTRACT = no for inst/i_up_adc_common/i_xfer_cntrl/up_xfer_toggle1_i__0. (constraint file  d:/work/radar_course/lesson_15/vivado/fmcomms1/fmcomms1.srcs/sources_1/bd/system/ip/common/ad_axi_ip_constr.xdc, line 5).
+Applied set_property SHREG_EXTRACT = no for inst/i_up_adc_common/i_xfer_cntrl/up_xfer_toggle_reg. (constraint file  d:/work/radar_course/lesson_15/vivado/fmcomms1/fmcomms1.srcs/sources_1/bd/system/ip/common/ad_axi_ip_constr.xdc, line 5).
+Applied set_property SHREG_EXTRACT = no for inst/i_up_adc_common/i_xfer_status/up_xfer_toggle_m1_reg. (constraint file  d:/work/radar_course/lesson_15/vivado/fmcomms1/fmcomms1.srcs/sources_1/bd/system/ip/common/ad_axi_ip_constr.xdc, line 5).
+Applied set_property SHREG_EXTRACT = no for inst/i_up_adc_common/i_xfer_status/up_xfer_toggle_m2_reg. (constraint file  d:/work/radar_course/lesson_15/vivado/fmcomms1/fmcomms1.srcs/sources_1/bd/system/ip/common/ad_axi_ip_constr.xdc, line 5).
+Applied set_property SHREG_EXTRACT = no for inst/i_up_adc_common/i_xfer_status/up_xfer_toggle_m3_reg. (constraint file  d:/work/radar_course/lesson_15/vivado/fmcomms1/fmcomms1.srcs/sources_1/bd/system/ip/common/ad_axi_ip_constr.xdc, line 5).
+Applied set_property SHREG_EXTRACT = no for inst/i_up_adc_common/i_xfer_status/up_xfer_toggle_reg. (constraint file  d:/work/radar_course/lesson_15/vivado/fmcomms1/fmcomms1.srcs/sources_1/bd/system/ip/common/ad_axi_ip_constr.xdc, line 5).
+Applied set_property SHREG_EXTRACT = no for inst/i_up_adc_common/i_xfer_status/up_xfer_toggle_s_i. (constraint file  d:/work/radar_course/lesson_15/vivado/fmcomms1/fmcomms1.srcs/sources_1/bd/system/ip/common/ad_axi_ip_constr.xdc, line 5).
+Applied set_property SHREG_EXTRACT = no for inst/i_up_adc_common/i_clock_mon/up_count_toggle0_i. (constraint file  d:/work/radar_course/lesson_15/vivado/fmcomms1/fmcomms1.srcs/sources_1/bd/system/ip/common/ad_axi_ip_constr.xdc, line 6).
+Applied set_property SHREG_EXTRACT = no for inst/i_up_adc_common/i_clock_mon/up_count_toggle_i. (constraint file  d:/work/radar_course/lesson_15/vivado/fmcomms1/fmcomms1.srcs/sources_1/bd/system/ip/common/ad_axi_ip_constr.xdc, line 6).
+Applied set_property SHREG_EXTRACT = no for inst/i_up_adc_common/i_clock_mon/up_count_toggle_m1_reg. (constraint file  d:/work/radar_course/lesson_15/vivado/fmcomms1/fmcomms1.srcs/sources_1/bd/system/ip/common/ad_axi_ip_constr.xdc, line 6).
+Applied set_property SHREG_EXTRACT = no for inst/i_up_adc_common/i_clock_mon/up_count_toggle_m2_reg. (constraint file  d:/work/radar_course/lesson_15/vivado/fmcomms1/fmcomms1.srcs/sources_1/bd/system/ip/common/ad_axi_ip_constr.xdc, line 6).
+Applied set_property SHREG_EXTRACT = no for inst/i_up_adc_common/i_clock_mon/up_count_toggle_m3_reg. (constraint file  d:/work/radar_course/lesson_15/vivado/fmcomms1/fmcomms1.srcs/sources_1/bd/system/ip/common/ad_axi_ip_constr.xdc, line 6).
+Applied set_property SHREG_EXTRACT = no for inst/i_up_adc_common/i_clock_mon/up_count_toggle_reg. (constraint file  d:/work/radar_course/lesson_15/vivado/fmcomms1/fmcomms1.srcs/sources_1/bd/system/ip/common/ad_axi_ip_constr.xdc, line 6).
+Applied set_property SHREG_EXTRACT = no for inst/i_up_adc_common/i_clock_mon/up_count_toggle_s_i. (constraint file  d:/work/radar_course/lesson_15/vivado/fmcomms1/fmcomms1.srcs/sources_1/bd/system/ip/common/ad_axi_ip_constr.xdc, line 6).
+Applied set_property SHREG_EXTRACT = no for inst/i_up_adc_common/i_clock_mon/d_count_toggle0_i. (constraint file  d:/work/radar_course/lesson_15/vivado/fmcomms1/fmcomms1.srcs/sources_1/bd/system/ip/common/ad_axi_ip_constr.xdc, line 7).
+Applied set_property SHREG_EXTRACT = no for inst/i_up_adc_common/i_clock_mon/d_count_toggle_m1_reg. (constraint file  d:/work/radar_course/lesson_15/vivado/fmcomms1/fmcomms1.srcs/sources_1/bd/system/ip/common/ad_axi_ip_constr.xdc, line 7).
+Applied set_property SHREG_EXTRACT = no for inst/i_up_adc_common/i_clock_mon/d_count_toggle_m2_reg. (constraint file  d:/work/radar_course/lesson_15/vivado/fmcomms1/fmcomms1.srcs/sources_1/bd/system/ip/common/ad_axi_ip_constr.xdc, line 7).
+Applied set_property SHREG_EXTRACT = no for inst/i_up_adc_common/i_clock_mon/d_count_toggle_m3_reg. (constraint file  d:/work/radar_course/lesson_15/vivado/fmcomms1/fmcomms1.srcs/sources_1/bd/system/ip/common/ad_axi_ip_constr.xdc, line 7).
+Applied set_property SHREG_EXTRACT = no for inst/i_up_adc_common/i_clock_mon/d_count_toggle_reg. (constraint file  d:/work/radar_course/lesson_15/vivado/fmcomms1/fmcomms1.srcs/sources_1/bd/system/ip/common/ad_axi_ip_constr.xdc, line 7).
+Applied set_property SHREG_EXTRACT = no for inst/i_up_adc_common/i_clock_mon/d_count_toggle_s_i. (constraint file  d:/work/radar_course/lesson_15/vivado/fmcomms1/fmcomms1.srcs/sources_1/bd/system/ip/common/ad_axi_ip_constr.xdc, line 7).
+Applied set_property SHREG_EXTRACT = no for inst/i_delay_cntrl/i_delay_rst_reg/ad_rst_sync_m1_reg. (constraint file  d:/work/radar_course/lesson_15/vivado/fmcomms1/fmcomms1.srcs/sources_1/bd/system/ip/common/ad_axi_ip_constr.xdc, line 8).
+Applied set_property SHREG_EXTRACT = no for inst/i_delay_cntrl/i_delay_rst_reg/ad_rst_sync_reg. (constraint file  d:/work/radar_course/lesson_15/vivado/fmcomms1/fmcomms1.srcs/sources_1/bd/system/ip/common/ad_axi_ip_constr.xdc, line 8).
+Applied set_property SHREG_EXTRACT = no for inst/i_up_adc_common/i_core_rst_reg/ad_rst_sync_m1_reg. (constraint file  d:/work/radar_course/lesson_15/vivado/fmcomms1/fmcomms1.srcs/sources_1/bd/system/ip/common/ad_axi_ip_constr.xdc, line 8).
+Applied set_property SHREG_EXTRACT = no for inst/i_up_adc_common/i_core_rst_reg/ad_rst_sync_reg. (constraint file  d:/work/radar_course/lesson_15/vivado/fmcomms1/fmcomms1.srcs/sources_1/bd/system/ip/common/ad_axi_ip_constr.xdc, line 8).
+Applied set_property SHREG_EXTRACT = no for inst/i_up_adc_common/i_mmcm_rst_reg/ad_rst_sync_m1_reg. (constraint file  d:/work/radar_course/lesson_15/vivado/fmcomms1/fmcomms1.srcs/sources_1/bd/system/ip/common/ad_axi_ip_constr.xdc, line 8).
+Applied set_property SHREG_EXTRACT = no for inst/i_up_adc_common/i_mmcm_rst_reg/ad_rst_sync_reg. (constraint file  d:/work/radar_course/lesson_15/vivado/fmcomms1/fmcomms1.srcs/sources_1/bd/system/ip/common/ad_axi_ip_constr.xdc, line 8).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 951.969 ; gain = 335.551
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 951.969 ; gain = 335.551
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     30 Bit       Adders := 2     
+	   2 Input     16 Bit       Adders := 6     
+	   3 Input     16 Bit       Adders := 2     
+	   2 Input      6 Bit       Adders := 6     
+	   2 Input      4 Bit       Adders := 3     
+	   2 Input      3 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 126   
+	   3 Input      1 Bit         XORs := 22    
+	   4 Input      1 Bit         XORs := 2     
++---Registers : 
+	               78 Bit    Registers := 4     
+	               48 Bit    Registers := 4     
+	               36 Bit    Registers := 2     
+	               32 Bit    Registers := 14    
+	               30 Bit    Registers := 4     
+	               28 Bit    Registers := 2     
+	               17 Bit    Registers := 6     
+	               16 Bit    Registers := 44    
+	               14 Bit    Registers := 9     
+	               12 Bit    Registers := 1     
+	                8 Bit    Registers := 7     
+	                6 Bit    Registers := 6     
+	                5 Bit    Registers := 15    
+	                4 Bit    Registers := 14    
+	                3 Bit    Registers := 7     
+	                1 Bit    Registers := 200   
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 8     
+	  17 Input     32 Bit        Muxes := 1     
+	   2 Input     30 Bit        Muxes := 2     
+	   2 Input     24 Bit        Muxes := 2     
+	   2 Input     23 Bit        Muxes := 2     
+	   2 Input     16 Bit        Muxes := 8     
+	   2 Input     14 Bit        Muxes := 6     
+	  18 Input      5 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 5     
+	   3 Input      4 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 62    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module ad_datafmt 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     24 Bit        Muxes := 1     
+	   2 Input     14 Bit        Muxes := 1     
+Module ad_dcfilter 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     16 Bit       Adders := 1     
+	   3 Input     16 Bit       Adders := 1     
++---Registers : 
+	               48 Bit    Registers := 2     
+	               16 Bit    Registers := 5     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 1     
+Module ad_mul 
+Detailed RTL Component Info : 
++---Registers : 
+	               17 Bit    Registers := 3     
+Module ad_mul__parameterized0 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 3     
+Module ad_iqcor 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     30 Bit       Adders := 1     
++---Registers : 
+	               30 Bit    Registers := 1     
+	               16 Bit    Registers := 4     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 1     
+Module ad_pnmon 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
++---Registers : 
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module axi_ad9643_pnmon 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 55    
+	   3 Input      1 Bit         XORs := 11    
+	   4 Input      1 Bit         XORs := 1     
++---Registers : 
+	               30 Bit    Registers := 1     
+	               28 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     30 Bit        Muxes := 1     
+	   2 Input     23 Bit        Muxes := 1     
+Module up_xfer_cntrl__xdcDup__1 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      6 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 2     
++---Registers : 
+	               78 Bit    Registers := 2     
+	                6 Bit    Registers := 1     
+	                1 Bit    Registers := 9     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module up_xfer_status__xdcDup__1 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      6 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 2     
++---Registers : 
+	                6 Bit    Registers := 1     
+	                3 Bit    Registers := 3     
+	                1 Bit    Registers := 8     
++---Muxes : 
+	   2 Input      3 Bit        Muxes := 1     
+Module up_adc_channel 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     16 Bit       Adders := 2     
++---Registers : 
+	               32 Bit    Registers := 1     
+	               16 Bit    Registers := 8     
+	                8 Bit    Registers := 3     
+	                4 Bit    Registers := 4     
+	                1 Bit    Registers := 16    
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 2     
+	   2 Input      4 Bit        Muxes := 1     
+	   3 Input      4 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 6     
+Module ad_iqcor__parameterized0 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     30 Bit       Adders := 1     
++---Registers : 
+	               30 Bit    Registers := 1     
+	               16 Bit    Registers := 4     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 1     
+Module up_xfer_cntrl 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      6 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 2     
++---Registers : 
+	               78 Bit    Registers := 2     
+	                6 Bit    Registers := 1     
+	                1 Bit    Registers := 9     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module up_xfer_status 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      6 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 2     
++---Registers : 
+	                6 Bit    Registers := 1     
+	                3 Bit    Registers := 3     
+	                1 Bit    Registers := 8     
++---Muxes : 
+	   2 Input      3 Bit        Muxes := 1     
+Module up_adc_channel__parameterized0 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     16 Bit       Adders := 2     
++---Registers : 
+	               32 Bit    Registers := 1     
+	               16 Bit    Registers := 8     
+	                8 Bit    Registers := 3     
+	                4 Bit    Registers := 4     
+	                1 Bit    Registers := 16    
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 2     
+	   2 Input      4 Bit        Muxes := 1     
+	   3 Input      4 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 6     
+Module ad_lvds_in__parameterized0 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module ad_lvds_in 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module axi_ad9643_if 
+Detailed RTL Component Info : 
++---Registers : 
+	               14 Bit    Registers := 7     
+	                1 Bit    Registers := 8     
++---Muxes : 
+	   2 Input     14 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 2     
+Module ad_rst 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 3     
+Module ad_rst__xdcDup__2 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 3     
+Module up_xfer_cntrl__parameterized0 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      6 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 2     
++---Registers : 
+	               36 Bit    Registers := 2     
+	                6 Bit    Registers := 1     
+	                1 Bit    Registers := 9     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module up_xfer_status__parameterized0 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      6 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 2     
++---Registers : 
+	                6 Bit    Registers := 1     
+	                4 Bit    Registers := 3     
+	                1 Bit    Registers := 8     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 1     
+Module up_clock_mon 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 2     
++---Registers : 
+	               32 Bit    Registers := 2     
+	                1 Bit    Registers := 8     
+Module up_adc_common 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 4     
+	               16 Bit    Registers := 2     
+	               12 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                1 Bit    Registers := 16    
++---Muxes : 
+	  17 Input     32 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 2     
+	  18 Input      5 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 8     
+Module ad_rst__xdcDup__1 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 3     
+Module up_delay_cntrl 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+	                5 Bit    Registers := 15    
+	                1 Bit    Registers := 20    
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 22    
+Module up_axi 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 4     
+	               14 Bit    Registers := 2     
+	                4 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 12    
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+	   2 Input      4 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 13    
+Module axi_ad9643 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+	                1 Bit    Registers := 5     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 900 (col length:140)
+BRAMs: 1090 (col length: RAMB18 140 RAMB36 70)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+WARNING: [Synth 8-3936] Found unconnected internal register 'i_ad_iqcor/i_mul_i/ddata_out_reg' and it is trimmed from '17' to '16' bits. [d:/work/radar_course/lesson_15/vivado/fmcomms1/fmcomms1.srcs/sources_1/bd/system/ipshared/common/ad_mul.v:83]
+WARNING: [Synth 8-3936] Found unconnected internal register 'i_ad_iqcor/i_mul_i/p2_ddata_reg' and it is trimmed from '17' to '16' bits. [d:/work/radar_course/lesson_15/vivado/fmcomms1/fmcomms1.srcs/sources_1/bd/system/ipshared/common/ad_mul.v:82]
+WARNING: [Synth 8-3936] Found unconnected internal register 'i_ad_iqcor/i_mul_i/p1_ddata_reg' and it is trimmed from '17' to '16' bits. [d:/work/radar_course/lesson_15/vivado/fmcomms1/fmcomms1.srcs/sources_1/bd/system/ipshared/common/ad_mul.v:81]
+WARNING: [Synth 8-3331] design up_axi has unconnected port up_axi_awaddr[31]
+WARNING: [Synth 8-3331] design up_axi has unconnected port up_axi_awaddr[30]
+WARNING: [Synth 8-3331] design up_axi has unconnected port up_axi_awaddr[29]
+WARNING: [Synth 8-3331] design up_axi has unconnected port up_axi_awaddr[28]
+WARNING: [Synth 8-3331] design up_axi has unconnected port up_axi_awaddr[27]
+WARNING: [Synth 8-3331] design up_axi has unconnected port up_axi_awaddr[26]
+WARNING: [Synth 8-3331] design up_axi has unconnected port up_axi_awaddr[25]
+WARNING: [Synth 8-3331] design up_axi has unconnected port up_axi_awaddr[24]
+WARNING: [Synth 8-3331] design up_axi has unconnected port up_axi_awaddr[23]
+WARNING: [Synth 8-3331] design up_axi has unconnected port up_axi_awaddr[22]
+WARNING: [Synth 8-3331] design up_axi has unconnected port up_axi_awaddr[21]
+WARNING: [Synth 8-3331] design up_axi has unconnected port up_axi_awaddr[20]
+WARNING: [Synth 8-3331] design up_axi has unconnected port up_axi_awaddr[19]
+WARNING: [Synth 8-3331] design up_axi has unconnected port up_axi_awaddr[18]
+WARNING: [Synth 8-3331] design up_axi has unconnected port up_axi_awaddr[17]
+WARNING: [Synth 8-3331] design up_axi has unconnected port up_axi_awaddr[16]
+WARNING: [Synth 8-3331] design up_axi has unconnected port up_axi_awaddr[1]
+WARNING: [Synth 8-3331] design up_axi has unconnected port up_axi_awaddr[0]
+WARNING: [Synth 8-3331] design up_axi has unconnected port up_axi_wstrb[3]
+WARNING: [Synth 8-3331] design up_axi has unconnected port up_axi_wstrb[2]
+WARNING: [Synth 8-3331] design up_axi has unconnected port up_axi_wstrb[1]
+WARNING: [Synth 8-3331] design up_axi has unconnected port up_axi_wstrb[0]
+WARNING: [Synth 8-3331] design up_axi has unconnected port up_axi_araddr[31]
+WARNING: [Synth 8-3331] design up_axi has unconnected port up_axi_araddr[30]
+WARNING: [Synth 8-3331] design up_axi has unconnected port up_axi_araddr[29]
+WARNING: [Synth 8-3331] design up_axi has unconnected port up_axi_araddr[28]
+WARNING: [Synth 8-3331] design up_axi has unconnected port up_axi_araddr[27]
+WARNING: [Synth 8-3331] design up_axi has unconnected port up_axi_araddr[26]
+WARNING: [Synth 8-3331] design up_axi has unconnected port up_axi_araddr[25]
+WARNING: [Synth 8-3331] design up_axi has unconnected port up_axi_araddr[24]
+WARNING: [Synth 8-3331] design up_axi has unconnected port up_axi_araddr[23]
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3886] merging instance 'inst/i_channel_0/i_pnmon/adc_pn_data_in_reg[12]' (FD) to 'inst/i_channel_0/i_ad_datafmt/data_out_reg[12]'
+INFO: [Synth 8-3886] merging instance 'inst/i_channel_0/i_pnmon/adc_pn_data_in_reg[11]' (FD) to 'inst/i_channel_0/i_ad_datafmt/data_out_reg[11]'
+INFO: [Synth 8-3886] merging instance 'inst/i_channel_0/i_pnmon/adc_pn_data_in_reg[10]' (FD) to 'inst/i_channel_0/i_ad_datafmt/data_out_reg[10]'
+INFO: [Synth 8-3886] merging instance 'inst/i_channel_0/i_pnmon/adc_pn_data_in_reg[9]' (FD) to 'inst/i_channel_0/i_ad_datafmt/data_out_reg[9]'
+INFO: [Synth 8-3886] merging instance 'inst/i_channel_0/i_pnmon/adc_pn_data_in_reg[8]' (FD) to 'inst/i_channel_0/i_ad_datafmt/data_out_reg[8]'
+INFO: [Synth 8-3886] merging instance 'inst/i_channel_0/i_pnmon/adc_pn_data_in_reg[7]' (FD) to 'inst/i_channel_0/i_ad_datafmt/data_out_reg[7]'
+INFO: [Synth 8-3886] merging instance 'inst/i_channel_0/i_pnmon/adc_pn_data_in_reg[6]' (FD) to 'inst/i_channel_0/i_ad_datafmt/data_out_reg[6]'
+INFO: [Synth 8-3886] merging instance 'inst/i_channel_0/i_pnmon/adc_pn_data_in_reg[5]' (FD) to 'inst/i_channel_0/i_ad_datafmt/data_out_reg[5]'
+INFO: [Synth 8-3886] merging instance 'inst/i_channel_0/i_pnmon/adc_pn_data_in_reg[4]' (FD) to 'inst/i_channel_0/i_ad_datafmt/data_out_reg[4]'
+INFO: [Synth 8-3886] merging instance 'inst/i_channel_0/i_pnmon/adc_pn_data_in_reg[3]' (FD) to 'inst/i_channel_0/i_ad_datafmt/data_out_reg[3]'
+INFO: [Synth 8-3886] merging instance 'inst/i_channel_0/i_pnmon/adc_pn_data_in_reg[2]' (FD) to 'inst/i_channel_0/i_ad_datafmt/data_out_reg[2]'
+INFO: [Synth 8-3886] merging instance 'inst/i_channel_0/i_pnmon/adc_pn_data_in_reg[1]' (FD) to 'inst/i_channel_0/i_ad_datafmt/data_out_reg[1]'
+INFO: [Synth 8-3886] merging instance 'inst/i_channel_0/i_pnmon/adc_pn_data_in_reg[0]' (FD) to 'inst/i_channel_0/i_ad_datafmt/data_out_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/i_channel_1/i_pnmon/adc_pn_data_in_reg[12]' (FD) to 'inst/i_channel_1/i_ad_datafmt/data_out_reg[12]'
+INFO: [Synth 8-3886] merging instance 'inst/i_channel_1/i_pnmon/adc_pn_data_in_reg[11]' (FD) to 'inst/i_channel_1/i_ad_datafmt/data_out_reg[11]'
+INFO: [Synth 8-3886] merging instance 'inst/i_channel_1/i_pnmon/adc_pn_data_in_reg[10]' (FD) to 'inst/i_channel_1/i_ad_datafmt/data_out_reg[10]'
+INFO: [Synth 8-3886] merging instance 'inst/i_channel_1/i_pnmon/adc_pn_data_in_reg[9]' (FD) to 'inst/i_channel_1/i_ad_datafmt/data_out_reg[9]'
+INFO: [Synth 8-3886] merging instance 'inst/i_channel_1/i_pnmon/adc_pn_data_in_reg[8]' (FD) to 'inst/i_channel_1/i_ad_datafmt/data_out_reg[8]'
+INFO: [Synth 8-3886] merging instance 'inst/i_channel_1/i_pnmon/adc_pn_data_in_reg[7]' (FD) to 'inst/i_channel_1/i_ad_datafmt/data_out_reg[7]'
+INFO: [Synth 8-3886] merging instance 'inst/i_channel_1/i_pnmon/adc_pn_data_in_reg[6]' (FD) to 'inst/i_channel_1/i_ad_datafmt/data_out_reg[6]'
+INFO: [Synth 8-3886] merging instance 'inst/i_channel_1/i_pnmon/adc_pn_data_in_reg[5]' (FD) to 'inst/i_channel_1/i_ad_datafmt/data_out_reg[5]'
+INFO: [Synth 8-3886] merging instance 'inst/i_channel_1/i_pnmon/adc_pn_data_in_reg[4]' (FD) to 'inst/i_channel_1/i_ad_datafmt/data_out_reg[4]'
+INFO: [Synth 8-3886] merging instance 'inst/i_channel_1/i_pnmon/adc_pn_data_in_reg[3]' (FD) to 'inst/i_channel_1/i_ad_datafmt/data_out_reg[3]'
+INFO: [Synth 8-3886] merging instance 'inst/i_channel_1/i_pnmon/adc_pn_data_in_reg[2]' (FD) to 'inst/i_channel_1/i_ad_datafmt/data_out_reg[2]'
+INFO: [Synth 8-3886] merging instance 'inst/i_channel_1/i_pnmon/adc_pn_data_in_reg[1]' (FD) to 'inst/i_channel_1/i_ad_datafmt/data_out_reg[1]'
+INFO: [Synth 8-3886] merging instance 'inst/i_channel_1/i_pnmon/adc_pn_data_in_reg[0]' (FD) to 'inst/i_channel_1/i_ad_datafmt/data_out_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/i_channel_0/i_ad_datafmt/data_out_reg[14]' (FD) to 'inst/i_channel_0/i_ad_datafmt/data_out_reg[15]'
+INFO: [Synth 8-3886] merging instance 'inst/i_channel_1/i_ad_datafmt/data_out_reg[14]' (FD) to 'inst/i_channel_1/i_ad_datafmt/data_out_reg[15]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\i_up_adc_common/up_drp_rdata_hold_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\i_up_adc_common/up_drp_rdata_hold_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\i_up_adc_common/up_drp_rdata_hold_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\i_up_adc_common/up_drp_rdata_hold_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\i_up_adc_common/up_drp_rdata_hold_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\i_up_adc_common/up_drp_rdata_hold_reg[5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\i_up_adc_common/up_drp_rdata_hold_reg[6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\i_up_adc_common/up_drp_rdata_hold_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\i_up_adc_common/up_drp_rdata_hold_reg[8] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\i_up_adc_common/up_drp_rdata_hold_reg[9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\i_up_adc_common/up_drp_rdata_hold_reg[10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\i_up_adc_common/up_drp_rdata_hold_reg[11] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\i_up_adc_common/up_drp_rdata_hold_reg[12] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\i_up_adc_common/up_drp_rdata_hold_reg[13] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\i_up_adc_common/up_drp_rdata_hold_reg[14] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\i_up_adc_common/up_drp_rdata_hold_reg[15] )
+INFO: [Synth 8-3886] merging instance 'inst/i_delay_cntrl/up_rdata_reg[5]' (FDC) to 'inst/i_delay_cntrl/up_rdata_reg[6]'
+INFO: [Synth 8-3886] merging instance 'inst/i_delay_cntrl/up_rdata_reg[6]' (FDC) to 'inst/i_delay_cntrl/up_rdata_reg[7]'
+INFO: [Synth 8-3886] merging instance 'inst/i_delay_cntrl/up_rdata_reg[7]' (FDC) to 'inst/i_delay_cntrl/up_rdata_reg[8]'
+INFO: [Synth 8-3886] merging instance 'inst/i_delay_cntrl/up_rdata_reg[8]' (FDC) to 'inst/i_delay_cntrl/up_rdata_reg[9]'
+INFO: [Synth 8-3886] merging instance 'inst/i_delay_cntrl/up_rdata_reg[9]' (FDC) to 'inst/i_delay_cntrl/up_rdata_reg[10]'
+INFO: [Synth 8-3886] merging instance 'inst/i_delay_cntrl/up_rdata_reg[10]' (FDC) to 'inst/i_delay_cntrl/up_rdata_reg[11]'
+INFO: [Synth 8-3886] merging instance 'inst/i_delay_cntrl/up_rdata_reg[11]' (FDC) to 'inst/i_delay_cntrl/up_rdata_reg[12]'
+INFO: [Synth 8-3886] merging instance 'inst/i_delay_cntrl/up_rdata_reg[12]' (FDC) to 'inst/i_delay_cntrl/up_rdata_reg[13]'
+INFO: [Synth 8-3886] merging instance 'inst/i_delay_cntrl/up_rdata_reg[13]' (FDC) to 'inst/i_delay_cntrl/up_rdata_reg[14]'
+INFO: [Synth 8-3886] merging instance 'inst/i_delay_cntrl/up_rdata_reg[14]' (FDC) to 'inst/i_delay_cntrl/up_rdata_reg[15]'
+INFO: [Synth 8-3886] merging instance 'inst/i_delay_cntrl/up_rdata_reg[15]' (FDC) to 'inst/i_delay_cntrl/up_rdata_reg[16]'
+INFO: [Synth 8-3886] merging instance 'inst/i_delay_cntrl/up_rdata_reg[16]' (FDC) to 'inst/i_delay_cntrl/up_rdata_reg[17]'
+INFO: [Synth 8-3886] merging instance 'inst/i_delay_cntrl/up_rdata_reg[17]' (FDC) to 'inst/i_delay_cntrl/up_rdata_reg[18]'
+INFO: [Synth 8-3886] merging instance 'inst/i_delay_cntrl/up_rdata_reg[18]' (FDC) to 'inst/i_delay_cntrl/up_rdata_reg[19]'
+INFO: [Synth 8-3886] merging instance 'inst/i_delay_cntrl/up_rdata_reg[19]' (FDC) to 'inst/i_delay_cntrl/up_rdata_reg[20]'
+INFO: [Synth 8-3886] merging instance 'inst/i_delay_cntrl/up_rdata_reg[20]' (FDC) to 'inst/i_delay_cntrl/up_rdata_reg[21]'
+INFO: [Synth 8-3886] merging instance 'inst/i_delay_cntrl/up_rdata_reg[21]' (FDC) to 'inst/i_delay_cntrl/up_rdata_reg[22]'
+INFO: [Synth 8-3886] merging instance 'inst/i_delay_cntrl/up_rdata_reg[22]' (FDC) to 'inst/i_delay_cntrl/up_rdata_reg[23]'
+INFO: [Synth 8-3886] merging instance 'inst/i_delay_cntrl/up_rdata_reg[23]' (FDC) to 'inst/i_delay_cntrl/up_rdata_reg[24]'
+INFO: [Synth 8-3886] merging instance 'inst/i_delay_cntrl/up_rdata_reg[24]' (FDC) to 'inst/i_delay_cntrl/up_rdata_reg[25]'
+INFO: [Synth 8-3886] merging instance 'inst/i_delay_cntrl/up_rdata_reg[25]' (FDC) to 'inst/i_delay_cntrl/up_rdata_reg[26]'
+INFO: [Synth 8-3886] merging instance 'inst/i_delay_cntrl/up_rdata_reg[26]' (FDC) to 'inst/i_delay_cntrl/up_rdata_reg[27]'
+INFO: [Synth 8-3886] merging instance 'inst/i_delay_cntrl/up_rdata_reg[27]' (FDC) to 'inst/i_delay_cntrl/up_rdata_reg[28]'
+INFO: [Synth 8-3886] merging instance 'inst/i_delay_cntrl/up_rdata_reg[28]' (FDC) to 'inst/i_delay_cntrl/up_rdata_reg[29]'
+INFO: [Synth 8-3886] merging instance 'inst/i_delay_cntrl/up_rdata_reg[29]' (FDC) to 'inst/i_delay_cntrl/up_rdata_reg[30]'
+INFO: [Synth 8-3886] merging instance 'inst/i_delay_cntrl/up_rdata_reg[30]' (FDC) to 'inst/i_delay_cntrl/up_rdata_reg[31]'
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:36 ; elapsed = 00:00:38 . Memory (MB): peak = 951.969 ; gain = 335.551
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:58 ; elapsed = 00:00:59 . Memory (MB): peak = 1010.594 ; gain = 394.176
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:58 ; elapsed = 00:01:00 . Memory (MB): peak = 1012.926 ; gain = 396.508
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:00 ; elapsed = 00:01:01 . Memory (MB): peak = 1047.230 ; gain = 430.813
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:04 ; elapsed = 00:01:06 . Memory (MB): peak = 1051.723 ; gain = 435.305
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:04 ; elapsed = 00:01:06 . Memory (MB): peak = 1051.723 ; gain = 435.305
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:04 ; elapsed = 00:01:06 . Memory (MB): peak = 1051.723 ; gain = 435.305
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:04 ; elapsed = 00:01:06 . Memory (MB): peak = 1051.723 ; gain = 435.305
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:04 ; elapsed = 00:01:07 . Memory (MB): peak = 1051.723 ; gain = 435.305
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:04 ; elapsed = 00:01:07 . Memory (MB): peak = 1051.723 ; gain = 435.305
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Static Shift Register Report:
++------------+------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name | RTL Name                                 | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++------------+------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|axi_ad9643  | i_channel_0/i_ad_iqcor/p1_data_i_reg[15] | 4      | 16    | NO           | NO                 | YES               | 16     | 0       | 
+|axi_ad9643  | i_channel_1/i_ad_iqcor/p1_data_q_reg[15] | 4      | 16    | NO           | NO                 | YES               | 16     | 0       | 
++------------+------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |DSP48E        |         4|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+-----------+------+
+|      |Cell       |Count |
++------+-----------+------+
+|1     |DSP48E     |     1|
+|2     |DSP48E__1  |     1|
+|3     |DSP48E__2  |     1|
+|4     |DSP48E__3  |     1|
+|5     |BUFG       |     1|
+|6     |CARRY4     |    67|
+|7     |DSP48E1    |     2|
+|8     |IDDR       |    15|
+|9     |IDELAYCTRL |     1|
+|10    |IDELAYE2   |    15|
+|11    |LUT1       |    81|
+|12    |LUT2       |   187|
+|13    |LUT3       |   285|
+|14    |LUT4       |   134|
+|15    |LUT5       |   166|
+|16    |LUT6       |   282|
+|17    |MUXF7      |     6|
+|18    |SRL16E     |    32|
+|19    |FDCE       |  1254|
+|20    |FDPE       |     2|
+|21    |FDRE       |   845|
+|22    |FDSE       |     1|
+|23    |IBUFDS     |    15|
+|24    |IBUFGDS    |     1|
++------+-----------+------+
+
+Report Instance Areas: 
++------+--------------------------------+-----------------------------------+------+
+|      |Instance                        |Module                             |Cells |
++------+--------------------------------+-----------------------------------+------+
+|1     |top                             |                                   |  4008|
+|2     |  inst                          |axi_ad9643                         |  4008|
+|3     |    i_channel_0                 |axi_ad9643_channel                 |  1318|
+|4     |      i_ad_datafmt              |ad_datafmt_14                      |    38|
+|5     |      i_ad_dcfilter             |ad_dcfilter_15                     |   217|
+|6     |      i_ad_iqcor                |ad_iqcor                           |   458|
+|7     |        i_mul_i                 |ad_mul_18                          |   170|
+|8     |          i_mult_macro          |MULT_MACRO_21                      |   154|
+|9     |        i_mul_q                 |ad_mul__parameterized0_19          |   154|
+|10    |          i_mult_macro          |MULT_MACRO_20                      |   154|
+|11    |      i_pnmon                   |axi_ad9643_pnmon_16                |   142|
+|12    |        i_pnmon                 |ad_pnmon_17                        |    95|
+|13    |      i_up_adc_channel          |up_adc_channel                     |   463|
+|14    |        i_xfer_cntrl            |up_xfer_cntrl__xdcDup__1           |   176|
+|15    |        i_xfer_status           |up_xfer_status__xdcDup__1          |    38|
+|16    |    i_channel_1                 |axi_ad9643_channel__parameterized0 |  1315|
+|17    |      i_ad_datafmt              |ad_datafmt                         |    38|
+|18    |      i_ad_dcfilter             |ad_dcfilter                        |   217|
+|19    |      i_ad_iqcor                |ad_iqcor__parameterized0           |   458|
+|20    |        i_mul_i                 |ad_mul                             |   154|
+|21    |          i_mult_macro          |MULT_MACRO_13                      |   154|
+|22    |        i_mul_q                 |ad_mul__parameterized0             |   170|
+|23    |          i_mult_macro          |MULT_MACRO                         |   154|
+|24    |      i_pnmon                   |axi_ad9643_pnmon                   |   142|
+|25    |        i_pnmon                 |ad_pnmon                           |    95|
+|26    |      i_up_adc_channel          |up_adc_channel__parameterized0     |   460|
+|27    |        i_xfer_cntrl            |up_xfer_cntrl                      |   177|
+|28    |        i_xfer_status           |up_xfer_status                     |    38|
+|29    |    i_delay_cntrl               |up_delay_cntrl                     |   138|
+|30    |      i_delay_rst_reg           |ad_rst__xdcDup__1                  |     3|
+|31    |    i_if                        |axi_ad9643_if                      |   234|
+|32    |      \g_adc_if[0].i_adc_data   |ad_lvds_in                         |     9|
+|33    |      \g_adc_if[10].i_adc_data  |ad_lvds_in_0                       |     4|
+|34    |      \g_adc_if[11].i_adc_data  |ad_lvds_in_1                       |     4|
+|35    |      \g_adc_if[12].i_adc_data  |ad_lvds_in_2                       |     4|
+|36    |      \g_adc_if[13].i_adc_data  |ad_lvds_in_3                       |     4|
+|37    |      \g_adc_if[1].i_adc_data   |ad_lvds_in_4                       |     4|
+|38    |      \g_adc_if[2].i_adc_data   |ad_lvds_in_5                       |     4|
+|39    |      \g_adc_if[3].i_adc_data   |ad_lvds_in_6                       |     4|
+|40    |      \g_adc_if[4].i_adc_data   |ad_lvds_in_7                       |     4|
+|41    |      \g_adc_if[5].i_adc_data   |ad_lvds_in_8                       |     4|
+|42    |      \g_adc_if[6].i_adc_data   |ad_lvds_in_9                       |     4|
+|43    |      \g_adc_if[7].i_adc_data   |ad_lvds_in_10                      |     4|
+|44    |      \g_adc_if[8].i_adc_data   |ad_lvds_in_11                      |     4|
+|45    |      \g_adc_if[9].i_adc_data   |ad_lvds_in_12                      |     4|
+|46    |      i_adc_clk                 |ad_lvds_clk                        |     2|
+|47    |      i_adc_or                  |ad_lvds_in__parameterized0         |     5|
+|48    |    i_up_adc_common             |up_adc_common                      |   423|
+|49    |      i_clock_mon               |up_clock_mon                       |   177|
+|50    |      i_core_rst_reg            |ad_rst__xdcDup__2                  |     3|
+|51    |      i_xfer_cntrl              |up_xfer_cntrl__parameterized0      |    32|
+|52    |      i_xfer_status             |up_xfer_status__parameterized0     |    39|
+|53    |    i_up_axi                    |up_axi                             |   543|
++------+--------------------------------+-----------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:04 ; elapsed = 00:01:07 . Memory (MB): peak = 1051.723 ; gain = 435.305
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 70 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:49 ; elapsed = 00:01:01 . Memory (MB): peak = 1051.723 ; gain = 346.945
+Synthesis Optimization Complete : Time (s): cpu = 00:01:05 ; elapsed = 00:01:07 . Memory (MB): peak = 1051.723 ; gain = 435.305
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 125 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1051.723 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 5 instances were transformed.
+  DSP48E => DSP48E1: 4 instances
+  IBUFGDS => IBUFDS: 1 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+159 Infos, 108 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:16 ; elapsed = 00:01:19 . Memory (MB): peak = 1051.723 ; gain = 756.508
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1051.723 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'D:/work/radar_course/lesson_15/vivado/fmcomms1/fmcomms1.runs/system_axi_ad9643_0_0_synth_1/system_axi_ad9643_0_0.dcp' has been generated.
+WARNING: [Common 17-576] 'use_project_ipc' is deprecated. This option is deprecated and no longer used.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP system_axi_ad9643_0_0, cache-ID = 762b26fc13d96d8d
+INFO: [Coretcl 2-1174] Renamed 52 cell refs.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1051.723 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'D:/work/radar_course/lesson_15/vivado/fmcomms1/fmcomms1.runs/system_axi_ad9643_0_0_synth_1/system_axi_ad9643_0_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file system_axi_ad9643_0_0_utilization_synth.rpt -pb system_axi_ad9643_0_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue Jan 12 15:30:04 2021...

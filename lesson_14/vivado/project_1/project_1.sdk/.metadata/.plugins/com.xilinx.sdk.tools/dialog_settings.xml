@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item value="Local" key="system_top_hw_platform_0-target"/>
+	<item value="system_top_hw_platform_0" key="programflash.hwplatform"/>
+	<item value="Auto Detect" key="system_top_hw_platform_0-device"/>
+	<item value="" key="system_top_hw_platform_0-fsblFile"/>
+	<item value="" key="system_top_hw_platform_0-offSet"/>
+	<item value="qspi-x4-single" key="system_top_hw_platform_0-flashType"/>
+	<item value="false" key="system_top_hw_platform_0-blankCheck"/>
+	<item value="false" key="system_top_hw_platform_0-verifyFlash"/>
+	<item value="" key="system_top_hw_platform_0-imgFile"/>
+</section>

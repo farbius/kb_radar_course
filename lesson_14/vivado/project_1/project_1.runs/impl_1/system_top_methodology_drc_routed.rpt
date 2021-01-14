@@ -1,0 +1,437 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
+| Date         : Sun Jan 10 14:32:22 2021
+| Host         : LAPTOP-KSVOJTV9 running 64-bit major release  (build 9200)
+| Command      : report_methodology -file system_top_methodology_drc_routed.rpt -pb system_top_methodology_drc_routed.pb -rpx system_top_methodology_drc_routed.rpx
+| Design       : system_top
+| Device       : xc7z045ffg900-2
+| Speed File   : -2
+| Design State : Fully Routed
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Report Methodology
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+             Max violations: <unlimited>
+             Violations found: 79
++-----------+------------------+----------------------------------------------------+------------+
+| Rule      | Severity         | Description                                        | Violations |
++-----------+------------------+----------------------------------------------------+------------+
+| TIMING-4  | Critical Warning | Invalid primary clock redefinition on a clock tree | 1          |
+| TIMING-6  | Critical Warning | No common primary clock between related clocks     | 2          |
+| TIMING-7  | Critical Warning | No common node between related clocks              | 2          |
+| TIMING-27 | Critical Warning | Invalid primary clock on hierarchical pin          | 1          |
+| LUTAR-1   | Warning          | LUT drives async reset alert                       | 3          |
+| TIMING-9  | Warning          | Unknown CDC Logic                                  | 1          |
+| TIMING-10 | Warning          | Missing property on synchronizer                   | 1          |
+| TIMING-18 | Warning          | Missing input or output delay                      | 68         |
++-----------+------------------+----------------------------------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+TIMING-4#1 Critical Warning
+Invalid primary clock redefinition on a clock tree  
+Invalid clock redefinition on a clock tree. The primary clock i_system_wrapper/system_i/refclk_clkgen/inst/clk_in1 is defined downstream of clock clk_fpga_1 and overrides its insertion delay and/or waveform definition
+Related violations: <none>
+
+TIMING-6#1 Critical Warning
+No common primary clock between related clocks  
+The clocks clk_fpga_0 and adc_clk_in are related (timed together) but they have no common primary clock. The design could fail in hardware. To find a timing path between these clocks, run the following command: report_timing -from [get_clocks clk_fpga_0] -to [get_clocks adc_clk_in]
+Related violations: <none>
+
+TIMING-6#2 Critical Warning
+No common primary clock between related clocks  
+The clocks clk_fpga_0 and clk_fpga_1 are related (timed together) but they have no common primary clock. The design could fail in hardware. To find a timing path between these clocks, run the following command: report_timing -from [get_clocks clk_fpga_0] -to [get_clocks clk_fpga_1]
+Related violations: <none>
+
+TIMING-7#1 Critical Warning
+No common node between related clocks  
+The clocks clk_fpga_0 and adc_clk_in are related (timed together) but they have no common node. The design could fail in hardware. To find a timing path between these clocks, run the following command: report_timing -from [get_clocks clk_fpga_0] -to [get_clocks adc_clk_in]
+Related violations: <none>
+
+TIMING-7#2 Critical Warning
+No common node between related clocks  
+The clocks clk_fpga_0 and clk_fpga_1 are related (timed together) but they have no common node. The design could fail in hardware. To find a timing path between these clocks, run the following command: report_timing -from [get_clocks clk_fpga_0] -to [get_clocks clk_fpga_1]
+Related violations: <none>
+
+TIMING-27#1 Critical Warning
+Invalid primary clock on hierarchical pin  
+A primary clock i_system_wrapper/system_i/refclk_clkgen/inst/clk_in1 is created on an inappropriate internal pin i_system_wrapper/system_i/refclk_clkgen/inst/clk_in1. It is not recommended to create a primary clock on a hierarchical pin when its driver pin has a fanout connected to multiple clock pins
+Related violations: <none>
+
+LUTAR-1#1 Warning
+LUT drives async reset alert  
+LUT cell i_system_wrapper/system_i/axi_ad9122_0/inst/i_core/i_channel_0/i_up_dac_channel/i_xfer_cntrl/up_xfer_count[1]_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) i_system_wrapper/system_i/axi_ad9122_0/inst/i_up_axi/up_axi_arready_reg/CLR, i_system_wrapper/system_i/axi_ad9122_0/inst/i_up_axi/up_axi_awready_reg/CLR, i_system_wrapper/system_i/axi_ad9122_0/inst/i_up_axi/up_axi_bvalid_reg/CLR, i_system_wrapper/system_i/axi_ad9122_0/inst/i_up_axi/up_axi_rdata_reg[0]/CLR, i_system_wrapper/system_i/axi_ad9122_0/inst/i_up_axi/up_axi_rdata_reg[10]/CLR, i_system_wrapper/system_i/axi_ad9122_0/inst/i_up_axi/up_axi_rdata_reg[11]/CLR, i_system_wrapper/system_i/axi_ad9122_0/inst/i_up_axi/up_axi_rdata_reg[12]/CLR, i_system_wrapper/system_i/axi_ad9122_0/inst/i_up_axi/up_axi_rdata_reg[13]/CLR, i_system_wrapper/system_i/axi_ad9122_0/inst/i_up_axi/up_axi_rdata_reg[14]/CLR, i_system_wrapper/system_i/axi_ad9122_0/inst/i_up_axi/up_axi_rdata_reg[15]/CLR, i_system_wrapper/system_i/axi_ad9122_0/inst/i_up_axi/up_axi_rdata_reg[16]/CLR, i_system_wrapper/system_i/axi_ad9122_0/inst/i_up_axi/up_axi_rdata_reg[17]/CLR, i_system_wrapper/system_i/axi_ad9122_0/inst/i_up_axi/up_axi_rdata_reg[18]/CLR, i_system_wrapper/system_i/axi_ad9122_0/inst/i_up_axi/up_axi_rdata_reg[19]/CLR, i_system_wrapper/system_i/axi_ad9122_0/inst/i_up_axi/up_axi_rdata_reg[1]/CLR (the first 15 of 1224 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#2 Warning
+LUT drives async reset alert  
+LUT cell i_system_wrapper/system_i/axi_ad9643_0/inst/i_channel_1/i_up_adc_channel/i_xfer_cntrl/up_xfer_count[1]_i_1__0, with 2 or more inputs, drives asynchronous preset/clear pin(s) i_system_wrapper/system_i/axi_ad9643_0/inst/up_rack_reg/CLR, i_system_wrapper/system_i/axi_ad9643_0/inst/up_rdata_reg[0]/CLR, i_system_wrapper/system_i/axi_ad9643_0/inst/up_rdata_reg[10]/CLR, i_system_wrapper/system_i/axi_ad9643_0/inst/up_rdata_reg[11]/CLR, i_system_wrapper/system_i/axi_ad9643_0/inst/up_rdata_reg[12]/CLR, i_system_wrapper/system_i/axi_ad9643_0/inst/up_rdata_reg[13]/CLR, i_system_wrapper/system_i/axi_ad9643_0/inst/up_rdata_reg[14]/CLR, i_system_wrapper/system_i/axi_ad9643_0/inst/up_rdata_reg[15]/CLR, i_system_wrapper/system_i/axi_ad9643_0/inst/up_rdata_reg[16]/CLR, i_system_wrapper/system_i/axi_ad9643_0/inst/up_rdata_reg[17]/CLR, i_system_wrapper/system_i/axi_ad9643_0/inst/up_rdata_reg[18]/CLR, i_system_wrapper/system_i/axi_ad9643_0/inst/up_rdata_reg[19]/CLR, i_system_wrapper/system_i/axi_ad9643_0/inst/up_rdata_reg[1]/CLR, i_system_wrapper/system_i/axi_ad9643_0/inst/up_rdata_reg[20]/CLR, i_system_wrapper/system_i/axi_ad9643_0/inst/up_rdata_reg[21]/CLR (the first 15 of 1041 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#3 Warning
+LUT drives async reset alert  
+LUT cell i_system_wrapper/system_i/util_ad9643_adc_fifo/inst/dout_ovf_int_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) i_system_wrapper/system_i/util_ad9643_adc_fifo/inst/dout_waddr_rel_reg[0]/CLR, i_system_wrapper/system_i/util_ad9643_adc_fifo/inst/dout_waddr_rel_reg[1]/CLR, i_system_wrapper/system_i/util_ad9643_adc_fifo/inst/dout_waddr_rel_reg[2]/CLR, i_system_wrapper/system_i/util_ad9643_adc_fifo/inst/dout_waddr_rel_reg[3]/CLR, i_system_wrapper/system_i/util_ad9643_adc_fifo/inst/dout_waddr_rel_t_m_reg[0]/CLR, i_system_wrapper/system_i/util_ad9643_adc_fifo/inst/dout_waddr_rel_t_m_reg[1]/CLR, i_system_wrapper/system_i/util_ad9643_adc_fifo/inst/dout_waddr_rel_t_m_reg[2]/CLR, i_system_wrapper/system_i/util_ad9643_adc_fifo/inst/dout_ovf_int_reg/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+TIMING-9#1 Warning
+Unknown CDC Logic  
+One or more asynchronous Clock Domain Crossing has been detected between 2 clock domains through a set_false_path or a set_clock_groups or set_max_delay -datapath_only constraint but no double-registers logic synchronizer has been found on the side of the capture clock. It is recommended to run report_cdc for a complete and detailed CDC coverage. Please consider using XPM_CDC to avoid Critical severities
+Related violations: <none>
+
+TIMING-10#1 Warning
+Missing property on synchronizer  
+One or more logic synchronizer has been detected between 2 clock domains but the synchronizer does not have the property ASYNC_REG defined on one or both registers. It is recommended to run report_cdc for a complete and detailed CDC coverage
+Related violations: <none>
+
+TIMING-18#1 Warning
+Missing input or output delay  
+An input delay is missing on adc_data_in_n[0] relative to clock(s) adc_clk_in
+Related violations: <none>
+
+TIMING-18#2 Warning
+Missing input or output delay  
+An input delay is missing on adc_data_in_n[10] relative to clock(s) adc_clk_in
+Related violations: <none>
+
+TIMING-18#3 Warning
+Missing input or output delay  
+An input delay is missing on adc_data_in_n[11] relative to clock(s) adc_clk_in
+Related violations: <none>
+
+TIMING-18#4 Warning
+Missing input or output delay  
+An input delay is missing on adc_data_in_n[12] relative to clock(s) adc_clk_in
+Related violations: <none>
+
+TIMING-18#5 Warning
+Missing input or output delay  
+An input delay is missing on adc_data_in_n[13] relative to clock(s) adc_clk_in
+Related violations: <none>
+
+TIMING-18#6 Warning
+Missing input or output delay  
+An input delay is missing on adc_data_in_n[1] relative to clock(s) adc_clk_in
+Related violations: <none>
+
+TIMING-18#7 Warning
+Missing input or output delay  
+An input delay is missing on adc_data_in_n[2] relative to clock(s) adc_clk_in
+Related violations: <none>
+
+TIMING-18#8 Warning
+Missing input or output delay  
+An input delay is missing on adc_data_in_n[3] relative to clock(s) adc_clk_in
+Related violations: <none>
+
+TIMING-18#9 Warning
+Missing input or output delay  
+An input delay is missing on adc_data_in_n[4] relative to clock(s) adc_clk_in
+Related violations: <none>
+
+TIMING-18#10 Warning
+Missing input or output delay  
+An input delay is missing on adc_data_in_n[5] relative to clock(s) adc_clk_in
+Related violations: <none>
+
+TIMING-18#11 Warning
+Missing input or output delay  
+An input delay is missing on adc_data_in_n[6] relative to clock(s) adc_clk_in
+Related violations: <none>
+
+TIMING-18#12 Warning
+Missing input or output delay  
+An input delay is missing on adc_data_in_n[7] relative to clock(s) adc_clk_in
+Related violations: <none>
+
+TIMING-18#13 Warning
+Missing input or output delay  
+An input delay is missing on adc_data_in_n[8] relative to clock(s) adc_clk_in
+Related violations: <none>
+
+TIMING-18#14 Warning
+Missing input or output delay  
+An input delay is missing on adc_data_in_n[9] relative to clock(s) adc_clk_in
+Related violations: <none>
+
+TIMING-18#15 Warning
+Missing input or output delay  
+An input delay is missing on adc_data_in_p[0] relative to clock(s) adc_clk_in
+Related violations: <none>
+
+TIMING-18#16 Warning
+Missing input or output delay  
+An input delay is missing on adc_data_in_p[10] relative to clock(s) adc_clk_in
+Related violations: <none>
+
+TIMING-18#17 Warning
+Missing input or output delay  
+An input delay is missing on adc_data_in_p[11] relative to clock(s) adc_clk_in
+Related violations: <none>
+
+TIMING-18#18 Warning
+Missing input or output delay  
+An input delay is missing on adc_data_in_p[12] relative to clock(s) adc_clk_in
+Related violations: <none>
+
+TIMING-18#19 Warning
+Missing input or output delay  
+An input delay is missing on adc_data_in_p[13] relative to clock(s) adc_clk_in
+Related violations: <none>
+
+TIMING-18#20 Warning
+Missing input or output delay  
+An input delay is missing on adc_data_in_p[1] relative to clock(s) adc_clk_in
+Related violations: <none>
+
+TIMING-18#21 Warning
+Missing input or output delay  
+An input delay is missing on adc_data_in_p[2] relative to clock(s) adc_clk_in
+Related violations: <none>
+
+TIMING-18#22 Warning
+Missing input or output delay  
+An input delay is missing on adc_data_in_p[3] relative to clock(s) adc_clk_in
+Related violations: <none>
+
+TIMING-18#23 Warning
+Missing input or output delay  
+An input delay is missing on adc_data_in_p[4] relative to clock(s) adc_clk_in
+Related violations: <none>
+
+TIMING-18#24 Warning
+Missing input or output delay  
+An input delay is missing on adc_data_in_p[5] relative to clock(s) adc_clk_in
+Related violations: <none>
+
+TIMING-18#25 Warning
+Missing input or output delay  
+An input delay is missing on adc_data_in_p[6] relative to clock(s) adc_clk_in
+Related violations: <none>
+
+TIMING-18#26 Warning
+Missing input or output delay  
+An input delay is missing on adc_data_in_p[7] relative to clock(s) adc_clk_in
+Related violations: <none>
+
+TIMING-18#27 Warning
+Missing input or output delay  
+An input delay is missing on adc_data_in_p[8] relative to clock(s) adc_clk_in
+Related violations: <none>
+
+TIMING-18#28 Warning
+Missing input or output delay  
+An input delay is missing on adc_data_in_p[9] relative to clock(s) adc_clk_in
+Related violations: <none>
+
+TIMING-18#29 Warning
+Missing input or output delay  
+An input delay is missing on adc_or_in_n relative to clock(s) adc_clk_in
+Related violations: <none>
+
+TIMING-18#30 Warning
+Missing input or output delay  
+An input delay is missing on adc_or_in_p relative to clock(s) adc_clk_in
+Related violations: <none>
+
+TIMING-18#31 Warning
+Missing input or output delay  
+An input delay is missing on iic_scl relative to clock(s) clk_fpga_0
+Related violations: <none>
+
+TIMING-18#32 Warning
+Missing input or output delay  
+An input delay is missing on iic_sda relative to clock(s) clk_fpga_0
+Related violations: <none>
+
+TIMING-18#33 Warning
+Missing input or output delay  
+An output delay is missing on dac_clk_out_n relative to clock(s) dac_clk_in
+Related violations: <none>
+
+TIMING-18#34 Warning
+Missing input or output delay  
+An output delay is missing on dac_clk_out_p relative to clock(s) dac_clk_in
+Related violations: <none>
+
+TIMING-18#35 Warning
+Missing input or output delay  
+An output delay is missing on dac_data_out_n[0] relative to clock(s) dac_clk_in
+Related violations: <none>
+
+TIMING-18#36 Warning
+Missing input or output delay  
+An output delay is missing on dac_data_out_n[10] relative to clock(s) dac_clk_in
+Related violations: <none>
+
+TIMING-18#37 Warning
+Missing input or output delay  
+An output delay is missing on dac_data_out_n[11] relative to clock(s) dac_clk_in
+Related violations: <none>
+
+TIMING-18#38 Warning
+Missing input or output delay  
+An output delay is missing on dac_data_out_n[12] relative to clock(s) dac_clk_in
+Related violations: <none>
+
+TIMING-18#39 Warning
+Missing input or output delay  
+An output delay is missing on dac_data_out_n[13] relative to clock(s) dac_clk_in
+Related violations: <none>
+
+TIMING-18#40 Warning
+Missing input or output delay  
+An output delay is missing on dac_data_out_n[14] relative to clock(s) dac_clk_in
+Related violations: <none>
+
+TIMING-18#41 Warning
+Missing input or output delay  
+An output delay is missing on dac_data_out_n[15] relative to clock(s) dac_clk_in
+Related violations: <none>
+
+TIMING-18#42 Warning
+Missing input or output delay  
+An output delay is missing on dac_data_out_n[1] relative to clock(s) dac_clk_in
+Related violations: <none>
+
+TIMING-18#43 Warning
+Missing input or output delay  
+An output delay is missing on dac_data_out_n[2] relative to clock(s) dac_clk_in
+Related violations: <none>
+
+TIMING-18#44 Warning
+Missing input or output delay  
+An output delay is missing on dac_data_out_n[3] relative to clock(s) dac_clk_in
+Related violations: <none>
+
+TIMING-18#45 Warning
+Missing input or output delay  
+An output delay is missing on dac_data_out_n[4] relative to clock(s) dac_clk_in
+Related violations: <none>
+
+TIMING-18#46 Warning
+Missing input or output delay  
+An output delay is missing on dac_data_out_n[5] relative to clock(s) dac_clk_in
+Related violations: <none>
+
+TIMING-18#47 Warning
+Missing input or output delay  
+An output delay is missing on dac_data_out_n[6] relative to clock(s) dac_clk_in
+Related violations: <none>
+
+TIMING-18#48 Warning
+Missing input or output delay  
+An output delay is missing on dac_data_out_n[7] relative to clock(s) dac_clk_in
+Related violations: <none>
+
+TIMING-18#49 Warning
+Missing input or output delay  
+An output delay is missing on dac_data_out_n[8] relative to clock(s) dac_clk_in
+Related violations: <none>
+
+TIMING-18#50 Warning
+Missing input or output delay  
+An output delay is missing on dac_data_out_n[9] relative to clock(s) dac_clk_in
+Related violations: <none>
+
+TIMING-18#51 Warning
+Missing input or output delay  
+An output delay is missing on dac_data_out_p[0] relative to clock(s) dac_clk_in
+Related violations: <none>
+
+TIMING-18#52 Warning
+Missing input or output delay  
+An output delay is missing on dac_data_out_p[10] relative to clock(s) dac_clk_in
+Related violations: <none>
+
+TIMING-18#53 Warning
+Missing input or output delay  
+An output delay is missing on dac_data_out_p[11] relative to clock(s) dac_clk_in
+Related violations: <none>
+
+TIMING-18#54 Warning
+Missing input or output delay  
+An output delay is missing on dac_data_out_p[12] relative to clock(s) dac_clk_in
+Related violations: <none>
+
+TIMING-18#55 Warning
+Missing input or output delay  
+An output delay is missing on dac_data_out_p[13] relative to clock(s) dac_clk_in
+Related violations: <none>
+
+TIMING-18#56 Warning
+Missing input or output delay  
+An output delay is missing on dac_data_out_p[14] relative to clock(s) dac_clk_in
+Related violations: <none>
+
+TIMING-18#57 Warning
+Missing input or output delay  
+An output delay is missing on dac_data_out_p[15] relative to clock(s) dac_clk_in
+Related violations: <none>
+
+TIMING-18#58 Warning
+Missing input or output delay  
+An output delay is missing on dac_data_out_p[1] relative to clock(s) dac_clk_in
+Related violations: <none>
+
+TIMING-18#59 Warning
+Missing input or output delay  
+An output delay is missing on dac_data_out_p[2] relative to clock(s) dac_clk_in
+Related violations: <none>
+
+TIMING-18#60 Warning
+Missing input or output delay  
+An output delay is missing on dac_data_out_p[3] relative to clock(s) dac_clk_in
+Related violations: <none>
+
+TIMING-18#61 Warning
+Missing input or output delay  
+An output delay is missing on dac_data_out_p[4] relative to clock(s) dac_clk_in
+Related violations: <none>
+
+TIMING-18#62 Warning
+Missing input or output delay  
+An output delay is missing on dac_data_out_p[5] relative to clock(s) dac_clk_in
+Related violations: <none>
+
+TIMING-18#63 Warning
+Missing input or output delay  
+An output delay is missing on dac_data_out_p[6] relative to clock(s) dac_clk_in
+Related violations: <none>
+
+TIMING-18#64 Warning
+Missing input or output delay  
+An output delay is missing on dac_data_out_p[7] relative to clock(s) dac_clk_in
+Related violations: <none>
+
+TIMING-18#65 Warning
+Missing input or output delay  
+An output delay is missing on dac_data_out_p[8] relative to clock(s) dac_clk_in
+Related violations: <none>
+
+TIMING-18#66 Warning
+Missing input or output delay  
+An output delay is missing on dac_data_out_p[9] relative to clock(s) dac_clk_in
+Related violations: <none>
+
+TIMING-18#67 Warning
+Missing input or output delay  
+An output delay is missing on dac_frame_out_n relative to clock(s) dac_clk_in
+Related violations: <none>
+
+TIMING-18#68 Warning
+Missing input or output delay  
+An output delay is missing on dac_frame_out_p relative to clock(s) dac_clk_in
+Related violations: <none>
+
+

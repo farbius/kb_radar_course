@@ -1,0 +1,52 @@
++--------------------------+--------------------------+----------------------------------------------------------------------------------------------------------+
+|       Launch Clock       |      Capture Clock       |                                                 Pin                                                      |
++--------------------------+--------------------------+----------------------------------------------------------------------------------------------------------+
+|               clk_fpga_0 |               adc_clk_in |                                     i_system_wrapper/system_i/s_axi_modulator_0/inst/i0/counter_reg[10]/D|
+|               clk_fpga_0 |               adc_clk_in |                                     i_system_wrapper/system_i/s_axi_modulator_0/inst/i0/counter_reg[12]/D|
+|               clk_fpga_0 |               adc_clk_in |                                      i_system_wrapper/system_i/s_axi_modulator_0/inst/i0/counter_reg[7]/D|
+|               clk_fpga_0 |               adc_clk_in |                                     i_system_wrapper/system_i/s_axi_modulator_0/inst/i0/counter_reg[14]/D|
+|               clk_fpga_0 |               adc_clk_in |                                      i_system_wrapper/system_i/s_axi_modulator_0/inst/i0/counter_reg[2]/D|
+|               clk_fpga_0 |               adc_clk_in |                                      i_system_wrapper/system_i/s_axi_modulator_0/inst/i0/counter_reg[3]/D|
+|               clk_fpga_0 |               adc_clk_in |                                      i_system_wrapper/system_i/s_axi_modulator_0/inst/i0/counter_reg[0]/D|
+|               clk_fpga_0 |               adc_clk_in |                                      i_system_wrapper/system_i/s_axi_modulator_0/inst/i0/counter_reg[1]/D|
+|               clk_fpga_0 |               adc_clk_in |                                     i_system_wrapper/system_i/s_axi_modulator_0/inst/i0/counter_reg[15]/D|
+|               clk_fpga_0 |               adc_clk_in |                                     i_system_wrapper/system_i/s_axi_modulator_0/inst/i0/counter_reg[13]/D|
+|               clk_fpga_0 |               adc_clk_in |                                      i_system_wrapper/system_i/s_axi_modulator_0/inst/i0/counter_reg[6]/D|
+|               clk_fpga_0 |               adc_clk_in |                                     i_system_wrapper/system_i/s_axi_modulator_0/inst/i0/counter_reg[11]/D|
+|               clk_fpga_0 |               adc_clk_in |                                      i_system_wrapper/system_i/s_axi_modulator_0/inst/i0/counter_reg[4]/D|
+|               clk_fpga_0 |               adc_clk_in |                                      i_system_wrapper/system_i/s_axi_modulator_0/inst/i0/counter_reg[9]/D|
+|               clk_fpga_0 |               adc_clk_in |                                      i_system_wrapper/system_i/s_axi_modulator_0/inst/i0/counter_reg[8]/D|
+|               clk_fpga_0 |               adc_clk_in |                                      i_system_wrapper/system_i/s_axi_modulator_0/inst/i0/counter_reg[5]/D|
+|               clk_fpga_0 |               adc_clk_in |                                     i_system_wrapper/system_i/s_axi_modulator_0/inst/i0/d_dat_1_reg[14]/D|
+|               clk_fpga_0 |               adc_clk_in |                                      i_system_wrapper/system_i/s_axi_modulator_0/inst/i0/d_dat_1_reg[8]/D|
+|               clk_fpga_0 |               adc_clk_in |                                     i_system_wrapper/system_i/s_axi_modulator_0/inst/i0/d_dat_1_reg[15]/D|
+|               clk_fpga_0 |               adc_clk_in |                                      i_system_wrapper/system_i/s_axi_modulator_0/inst/i0/d_dat_1_reg[9]/D|
+|               clk_fpga_0 |               adc_clk_in |                                      i_system_wrapper/system_i/s_axi_modulator_0/inst/i0/d_dat_1_reg[4]/D|
+|               clk_fpga_0 |               adc_clk_in |                                      i_system_wrapper/system_i/s_axi_modulator_0/inst/i0/d_dat_1_reg[5]/D|
+|               clk_fpga_0 |               adc_clk_in |                                     i_system_wrapper/system_i/s_axi_modulator_0/inst/i0/d_dat_0_reg[10]/D|
+|               clk_fpga_0 |               adc_clk_in |                                     i_system_wrapper/system_i/s_axi_modulator_0/inst/i0/d_dat_0_reg[12]/D|
+|               clk_fpga_0 |               adc_clk_in |                                     i_system_wrapper/system_i/s_axi_modulator_0/inst/i0/d_dat_0_reg[11]/D|
+|               clk_fpga_0 |               adc_clk_in |                                      i_system_wrapper/system_i/s_axi_modulator_0/inst/i0/d_dat_0_reg[0]/D|
+|               clk_fpga_0 |               adc_clk_in |                                     i_system_wrapper/system_i/s_axi_modulator_0/inst/i0/d_dat_0_reg[13]/D|
+|               clk_fpga_0 |               adc_clk_in |                                     i_system_wrapper/system_i/s_axi_modulator_0/inst/i0/d_dat_1_reg[10]/D|
+|               clk_fpga_0 |               adc_clk_in |                                      i_system_wrapper/system_i/s_axi_modulator_0/inst/i0/d_dat_1_reg[0]/D|
+|               clk_fpga_0 |               adc_clk_in |                                      i_system_wrapper/system_i/s_axi_modulator_0/inst/i0/d_dat_0_reg[4]/D|
+|               clk_fpga_0 |               adc_clk_in |                                     i_system_wrapper/system_i/s_axi_modulator_0/inst/i0/d_dat_1_reg[12]/D|
+|               clk_fpga_0 |               adc_clk_in |                                      i_system_wrapper/system_i/s_axi_modulator_0/inst/i0/d_dat_0_reg[1]/D|
+|               clk_fpga_0 |               adc_clk_in |                                     i_system_wrapper/system_i/s_axi_modulator_0/inst/i0/d_dat_1_reg[11]/D|
+|               clk_fpga_0 |               adc_clk_in |                                      i_system_wrapper/system_i/s_axi_modulator_0/inst/i0/d_dat_1_reg[1]/D|
+|               clk_fpga_0 |               adc_clk_in |                                     i_system_wrapper/system_i/s_axi_modulator_0/inst/i0/d_dat_1_reg[13]/D|
+|               clk_fpga_0 |               adc_clk_in |                                      i_system_wrapper/system_i/s_axi_modulator_0/inst/i0/d_dat_0_reg[5]/D|
+|               clk_fpga_0 |               adc_clk_in |                                      i_system_wrapper/system_i/s_axi_modulator_0/inst/i0/d_dat_0_reg[2]/D|
+|               clk_fpga_0 |               adc_clk_in |                                      i_system_wrapper/system_i/s_axi_modulator_0/inst/i0/d_dat_1_reg[6]/D|
+|               clk_fpga_0 |               adc_clk_in |                                      i_system_wrapper/system_i/s_axi_modulator_0/inst/i0/d_dat_1_reg[2]/D|
+|               clk_fpga_0 |               adc_clk_in |                                      i_system_wrapper/system_i/s_axi_modulator_0/inst/i0/d_dat_1_reg[3]/D|
+|               clk_fpga_0 |               adc_clk_in |                                      i_system_wrapper/system_i/s_axi_modulator_0/inst/i0/d_dat_0_reg[3]/D|
+|               clk_fpga_0 |               adc_clk_in |                                      i_system_wrapper/system_i/s_axi_modulator_0/inst/i0/d_dat_1_reg[7]/D|
+|               clk_fpga_0 |               adc_clk_in |                                      i_system_wrapper/system_i/s_axi_modulator_0/inst/i0/d_dat_0_reg[8]/D|
+|               clk_fpga_0 |               adc_clk_in |                                      i_system_wrapper/system_i/s_axi_modulator_0/inst/i0/d_dat_0_reg[6]/D|
+|               clk_fpga_0 |               adc_clk_in |                                     i_system_wrapper/system_i/s_axi_modulator_0/inst/i0/d_dat_0_reg[14]/D|
+|               clk_fpga_0 |               adc_clk_in |                                      i_system_wrapper/system_i/s_axi_modulator_0/inst/i0/d_dat_0_reg[7]/D|
+|               clk_fpga_0 |               adc_clk_in |                                     i_system_wrapper/system_i/s_axi_modulator_0/inst/i0/d_dat_0_reg[15]/D|
+|               clk_fpga_0 |               adc_clk_in |                                      i_system_wrapper/system_i/s_axi_modulator_0/inst/i0/d_dat_0_reg[9]/D|
++--------------------------+--------------------------+----------------------------------------------------------------------------------------------------------+

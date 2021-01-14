@@ -1,0 +1,480 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Tue Jan 12 15:26:29 2021
+# Process ID: 312
+# Current directory: D:/work/radar_course/lesson_15/vivado/fmcomms1/fmcomms1.runs/system_util_wfifo_0_0_synth_1
+# Command line: vivado.exe -log system_util_wfifo_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source system_util_wfifo_0_0.tcl
+# Log file: D:/work/radar_course/lesson_15/vivado/fmcomms1/fmcomms1.runs/system_util_wfifo_0_0_synth_1/system_util_wfifo_0_0.vds
+# Journal file: D:/work/radar_course/lesson_15/vivado/fmcomms1/fmcomms1.runs/system_util_wfifo_0_0_synth_1\vivado.jou
+#-----------------------------------------------------------
+source system_util_wfifo_0_0.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/work/radar_course/lesson_15/vivado/sources/ip_cores'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.1/data/ip'.
+Command: synth_design -top system_util_wfifo_0_0 -part xc7z045ffg900-2 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z045'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z045'
+INFO: [Device 21-403] Loading part xc7z045ffg900-2
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 4636 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 794.027 ; gain = 177.070
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'system_util_wfifo_0_0' [d:/work/radar_course/lesson_15/vivado/fmcomms1/fmcomms1.srcs/sources_1/bd/system/ip/system_util_wfifo_0_0/synth/system_util_wfifo_0_0.v:56]
+INFO: [Synth 8-6157] synthesizing module 'util_wfifo' [d:/work/radar_course/lesson_15/vivado/fmcomms1/fmcomms1.srcs/sources_1/bd/system/ipshared/1117/util_wfifo.v:44]
+	Parameter NUM_OF_CHANNELS bound to: 2 - type: integer 
+	Parameter DIN_DATA_WIDTH bound to: 16 - type: integer 
+	Parameter DOUT_DATA_WIDTH bound to: 64 - type: integer 
+	Parameter DIN_ADDRESS_WIDTH bound to: 4 - type: integer 
+	Parameter M_MEM_RATIO bound to: 4 - type: integer 
+	Parameter ADDRESS_WIDTH bound to: 4 - type: integer 
+	Parameter DATA_WIDTH bound to: 128 - type: integer 
+	Parameter T_DIN_DATA_WIDTH bound to: 128 - type: integer 
+	Parameter T_DOUT_DATA_WIDTH bound to: 512 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'ad_mem' [d:/work/radar_course/lesson_15/vivado/fmcomms1/fmcomms1.srcs/sources_1/bd/system/ipshared/common/ad_mem.v:42]
+	Parameter DATA_WIDTH bound to: 128 - type: integer 
+	Parameter ADDRESS_WIDTH bound to: 4 - type: integer 
+	Parameter DW bound to: 127 - type: integer 
+	Parameter AW bound to: 3 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'ad_mem' (1#1) [d:/work/radar_course/lesson_15/vivado/fmcomms1/fmcomms1.srcs/sources_1/bd/system/ipshared/common/ad_mem.v:42]
+INFO: [Synth 8-6155] done synthesizing module 'util_wfifo' (2#1) [d:/work/radar_course/lesson_15/vivado/fmcomms1/fmcomms1.srcs/sources_1/bd/system/ipshared/1117/util_wfifo.v:44]
+INFO: [Synth 8-6155] done synthesizing module 'system_util_wfifo_0_0' (3#1) [d:/work/radar_course/lesson_15/vivado/fmcomms1/fmcomms1.srcs/sources_1/bd/system/ip/system_util_wfifo_0_0/synth/system_util_wfifo_0_0.v:56]
+WARNING: [Synth 8-3331] design util_wfifo has unconnected port din_valid_2
+WARNING: [Synth 8-3331] design util_wfifo has unconnected port din_data_2[15]
+WARNING: [Synth 8-3331] design util_wfifo has unconnected port din_data_2[14]
+WARNING: [Synth 8-3331] design util_wfifo has unconnected port din_data_2[13]
+WARNING: [Synth 8-3331] design util_wfifo has unconnected port din_data_2[12]
+WARNING: [Synth 8-3331] design util_wfifo has unconnected port din_data_2[11]
+WARNING: [Synth 8-3331] design util_wfifo has unconnected port din_data_2[10]
+WARNING: [Synth 8-3331] design util_wfifo has unconnected port din_data_2[9]
+WARNING: [Synth 8-3331] design util_wfifo has unconnected port din_data_2[8]
+WARNING: [Synth 8-3331] design util_wfifo has unconnected port din_data_2[7]
+WARNING: [Synth 8-3331] design util_wfifo has unconnected port din_data_2[6]
+WARNING: [Synth 8-3331] design util_wfifo has unconnected port din_data_2[5]
+WARNING: [Synth 8-3331] design util_wfifo has unconnected port din_data_2[4]
+WARNING: [Synth 8-3331] design util_wfifo has unconnected port din_data_2[3]
+WARNING: [Synth 8-3331] design util_wfifo has unconnected port din_data_2[2]
+WARNING: [Synth 8-3331] design util_wfifo has unconnected port din_data_2[1]
+WARNING: [Synth 8-3331] design util_wfifo has unconnected port din_data_2[0]
+WARNING: [Synth 8-3331] design util_wfifo has unconnected port din_valid_3
+WARNING: [Synth 8-3331] design util_wfifo has unconnected port din_data_3[15]
+WARNING: [Synth 8-3331] design util_wfifo has unconnected port din_data_3[14]
+WARNING: [Synth 8-3331] design util_wfifo has unconnected port din_data_3[13]
+WARNING: [Synth 8-3331] design util_wfifo has unconnected port din_data_3[12]
+WARNING: [Synth 8-3331] design util_wfifo has unconnected port din_data_3[11]
+WARNING: [Synth 8-3331] design util_wfifo has unconnected port din_data_3[10]
+WARNING: [Synth 8-3331] design util_wfifo has unconnected port din_data_3[9]
+WARNING: [Synth 8-3331] design util_wfifo has unconnected port din_data_3[8]
+WARNING: [Synth 8-3331] design util_wfifo has unconnected port din_data_3[7]
+WARNING: [Synth 8-3331] design util_wfifo has unconnected port din_data_3[6]
+WARNING: [Synth 8-3331] design util_wfifo has unconnected port din_data_3[5]
+WARNING: [Synth 8-3331] design util_wfifo has unconnected port din_data_3[4]
+WARNING: [Synth 8-3331] design util_wfifo has unconnected port din_data_3[3]
+WARNING: [Synth 8-3331] design util_wfifo has unconnected port din_data_3[2]
+WARNING: [Synth 8-3331] design util_wfifo has unconnected port din_data_3[1]
+WARNING: [Synth 8-3331] design util_wfifo has unconnected port din_data_3[0]
+WARNING: [Synth 8-3331] design util_wfifo has unconnected port din_valid_4
+WARNING: [Synth 8-3331] design util_wfifo has unconnected port din_data_4[15]
+WARNING: [Synth 8-3331] design util_wfifo has unconnected port din_data_4[14]
+WARNING: [Synth 8-3331] design util_wfifo has unconnected port din_data_4[13]
+WARNING: [Synth 8-3331] design util_wfifo has unconnected port din_data_4[12]
+WARNING: [Synth 8-3331] design util_wfifo has unconnected port din_data_4[11]
+WARNING: [Synth 8-3331] design util_wfifo has unconnected port din_data_4[10]
+WARNING: [Synth 8-3331] design util_wfifo has unconnected port din_data_4[9]
+WARNING: [Synth 8-3331] design util_wfifo has unconnected port din_data_4[8]
+WARNING: [Synth 8-3331] design util_wfifo has unconnected port din_data_4[7]
+WARNING: [Synth 8-3331] design util_wfifo has unconnected port din_data_4[6]
+WARNING: [Synth 8-3331] design util_wfifo has unconnected port din_data_4[5]
+WARNING: [Synth 8-3331] design util_wfifo has unconnected port din_data_4[4]
+WARNING: [Synth 8-3331] design util_wfifo has unconnected port din_data_4[3]
+WARNING: [Synth 8-3331] design util_wfifo has unconnected port din_data_4[2]
+WARNING: [Synth 8-3331] design util_wfifo has unconnected port din_data_4[1]
+WARNING: [Synth 8-3331] design util_wfifo has unconnected port din_data_4[0]
+WARNING: [Synth 8-3331] design util_wfifo has unconnected port din_valid_5
+WARNING: [Synth 8-3331] design util_wfifo has unconnected port din_data_5[15]
+WARNING: [Synth 8-3331] design util_wfifo has unconnected port din_data_5[14]
+WARNING: [Synth 8-3331] design util_wfifo has unconnected port din_data_5[13]
+WARNING: [Synth 8-3331] design util_wfifo has unconnected port din_data_5[12]
+WARNING: [Synth 8-3331] design util_wfifo has unconnected port din_data_5[11]
+WARNING: [Synth 8-3331] design util_wfifo has unconnected port din_data_5[10]
+WARNING: [Synth 8-3331] design util_wfifo has unconnected port din_data_5[9]
+WARNING: [Synth 8-3331] design util_wfifo has unconnected port din_data_5[8]
+WARNING: [Synth 8-3331] design util_wfifo has unconnected port din_data_5[7]
+WARNING: [Synth 8-3331] design util_wfifo has unconnected port din_data_5[6]
+WARNING: [Synth 8-3331] design util_wfifo has unconnected port din_data_5[5]
+WARNING: [Synth 8-3331] design util_wfifo has unconnected port din_data_5[4]
+WARNING: [Synth 8-3331] design util_wfifo has unconnected port din_data_5[3]
+WARNING: [Synth 8-3331] design util_wfifo has unconnected port din_data_5[2]
+WARNING: [Synth 8-3331] design util_wfifo has unconnected port din_data_5[1]
+WARNING: [Synth 8-3331] design util_wfifo has unconnected port din_data_5[0]
+WARNING: [Synth 8-3331] design util_wfifo has unconnected port din_valid_6
+WARNING: [Synth 8-3331] design util_wfifo has unconnected port din_data_6[15]
+WARNING: [Synth 8-3331] design util_wfifo has unconnected port din_data_6[14]
+WARNING: [Synth 8-3331] design util_wfifo has unconnected port din_data_6[13]
+WARNING: [Synth 8-3331] design util_wfifo has unconnected port din_data_6[12]
+WARNING: [Synth 8-3331] design util_wfifo has unconnected port din_data_6[11]
+WARNING: [Synth 8-3331] design util_wfifo has unconnected port din_data_6[10]
+WARNING: [Synth 8-3331] design util_wfifo has unconnected port din_data_6[9]
+WARNING: [Synth 8-3331] design util_wfifo has unconnected port din_data_6[8]
+WARNING: [Synth 8-3331] design util_wfifo has unconnected port din_data_6[7]
+WARNING: [Synth 8-3331] design util_wfifo has unconnected port din_data_6[6]
+WARNING: [Synth 8-3331] design util_wfifo has unconnected port din_data_6[5]
+WARNING: [Synth 8-3331] design util_wfifo has unconnected port din_data_6[4]
+WARNING: [Synth 8-3331] design util_wfifo has unconnected port din_data_6[3]
+WARNING: [Synth 8-3331] design util_wfifo has unconnected port din_data_6[2]
+WARNING: [Synth 8-3331] design util_wfifo has unconnected port din_data_6[1]
+WARNING: [Synth 8-3331] design util_wfifo has unconnected port din_data_6[0]
+WARNING: [Synth 8-3331] design util_wfifo has unconnected port din_valid_7
+WARNING: [Synth 8-3331] design util_wfifo has unconnected port din_data_7[15]
+WARNING: [Synth 8-3331] design util_wfifo has unconnected port din_data_7[14]
+WARNING: [Synth 8-3331] design util_wfifo has unconnected port din_data_7[13]
+WARNING: [Synth 8-3331] design util_wfifo has unconnected port din_data_7[12]
+WARNING: [Synth 8-3331] design util_wfifo has unconnected port din_data_7[11]
+WARNING: [Synth 8-3331] design util_wfifo has unconnected port din_data_7[10]
+WARNING: [Synth 8-3331] design util_wfifo has unconnected port din_data_7[9]
+WARNING: [Synth 8-3331] design util_wfifo has unconnected port din_data_7[8]
+WARNING: [Synth 8-3331] design util_wfifo has unconnected port din_data_7[7]
+WARNING: [Synth 8-3331] design util_wfifo has unconnected port din_data_7[6]
+WARNING: [Synth 8-3331] design util_wfifo has unconnected port din_data_7[5]
+WARNING: [Synth 8-3331] design util_wfifo has unconnected port din_data_7[4]
+WARNING: [Synth 8-3331] design util_wfifo has unconnected port din_data_7[3]
+WARNING: [Synth 8-3331] design util_wfifo has unconnected port din_data_7[2]
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 862.438 ; gain = 245.480
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 862.438 ; gain = 245.480
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 862.438 ; gain = 245.480
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [D:/work/radar_course/lesson_15/vivado/fmcomms1/fmcomms1.runs/system_util_wfifo_0_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [D:/work/radar_course/lesson_15/vivado/fmcomms1/fmcomms1.runs/system_util_wfifo_0_0_synth_1/dont_touch.xdc]
+Parsing XDC File [d:/work/radar_course/lesson_15/vivado/fmcomms1/fmcomms1.srcs/sources_1/bd/system/ip/system_util_wfifo_0_0/util_wfifo_constr.xdc] for cell 'inst'
+Finished Parsing XDC File [d:/work/radar_course/lesson_15/vivado/fmcomms1/fmcomms1.srcs/sources_1/bd/system/ip/system_util_wfifo_0_0/util_wfifo_constr.xdc] for cell 'inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [d:/work/radar_course/lesson_15/vivado/fmcomms1/fmcomms1.srcs/sources_1/bd/system/ip/system_util_wfifo_0_0/util_wfifo_constr.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/system_util_wfifo_0_0_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/system_util_wfifo_0_0_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 967.969 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.063 . Memory (MB): peak = 971.316 ; gain = 3.348
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 971.316 ; gain = 354.359
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z045ffg900-2
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 971.316 ; gain = 354.359
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for inst. (constraint file  D:/work/radar_course/lesson_15/vivado/fmcomms1/fmcomms1.runs/system_util_wfifo_0_0_synth_1/dont_touch.xdc, line 9).
+Applied set_property SHREG_EXTRACT = NO for inst/din_ovf_m_reg. (constraint file  d:/work/radar_course/lesson_15/vivado/fmcomms1/fmcomms1.srcs/sources_1/bd/system/ip/system_util_wfifo_0_0/util_wfifo_constr.xdc, line 2).
+Applied set_property SHREG_EXTRACT = NO for inst/din_ovf_m_reg. (constraint file  d:/work/radar_course/lesson_15/vivado/fmcomms1/fmcomms1.srcs/sources_1/bd/system/ip/system_util_wfifo_0_0/util_wfifo_constr.xdc, line 2).
+Applied set_property SHREG_EXTRACT = NO for inst/din_ovf_m_reg. (constraint file  d:/work/radar_course/lesson_15/vivado/fmcomms1/fmcomms1.srcs/sources_1/bd/system/ip/system_util_wfifo_0_0/util_wfifo_constr.xdc, line 2).
+Applied set_property SHREG_EXTRACT = NO for inst/dout_waddr_rel_t_m_reg. (constraint file  d:/work/radar_course/lesson_15/vivado/fmcomms1/fmcomms1.srcs/sources_1/bd/system/ip/system_util_wfifo_0_0/util_wfifo_constr.xdc, line 3).
+Applied set_property SHREG_EXTRACT = NO for inst/dout_waddr_rel_t_m_reg. (constraint file  d:/work/radar_course/lesson_15/vivado/fmcomms1/fmcomms1.srcs/sources_1/bd/system/ip/system_util_wfifo_0_0/util_wfifo_constr.xdc, line 3).
+Applied set_property SHREG_EXTRACT = NO for inst/dout_waddr_rel_t_m_reg. (constraint file  d:/work/radar_course/lesson_15/vivado/fmcomms1/fmcomms1.srcs/sources_1/bd/system/ip/system_util_wfifo_0_0/util_wfifo_constr.xdc, line 3).
+Applied set_property SHREG_EXTRACT = NO for inst/dout_enable_m_reg. (constraint file  d:/work/radar_course/lesson_15/vivado/fmcomms1/fmcomms1.srcs/sources_1/bd/system/ip/system_util_wfifo_0_0/util_wfifo_constr.xdc, line 4).
+Applied set_property SHREG_EXTRACT = NO for inst/dout_enable_m_reg. (constraint file  d:/work/radar_course/lesson_15/vivado/fmcomms1/fmcomms1.srcs/sources_1/bd/system/ip/system_util_wfifo_0_0/util_wfifo_constr.xdc, line 4).
+Applied set_property SHREG_EXTRACT = NO for inst/dout_enable_m_reg. (constraint file  d:/work/radar_course/lesson_15/vivado/fmcomms1/fmcomms1.srcs/sources_1/bd/system/ip/system_util_wfifo_0_0/util_wfifo_constr.xdc, line 4).
+Applied set_property SHREG_EXTRACT = NO for inst/dout_enable_m_reg. (constraint file  d:/work/radar_course/lesson_15/vivado/fmcomms1/fmcomms1.srcs/sources_1/bd/system/ip/system_util_wfifo_0_0/util_wfifo_constr.xdc, line 4).
+Applied set_property SHREG_EXTRACT = NO for inst/dout_enable_m_reg. (constraint file  d:/work/radar_course/lesson_15/vivado/fmcomms1/fmcomms1.srcs/sources_1/bd/system/ip/system_util_wfifo_0_0/util_wfifo_constr.xdc, line 4).
+Applied set_property SHREG_EXTRACT = NO for inst/dout_enable_m_reg. (constraint file  d:/work/radar_course/lesson_15/vivado/fmcomms1/fmcomms1.srcs/sources_1/bd/system/ip/system_util_wfifo_0_0/util_wfifo_constr.xdc, line 4).
+Applied set_property SHREG_EXTRACT = NO for inst/dout_enable_m_reg. (constraint file  d:/work/radar_course/lesson_15/vivado/fmcomms1/fmcomms1.srcs/sources_1/bd/system/ip/system_util_wfifo_0_0/util_wfifo_constr.xdc, line 4).
+Applied set_property SHREG_EXTRACT = NO for inst/dout_enable_m_reg. (constraint file  d:/work/radar_course/lesson_15/vivado/fmcomms1/fmcomms1.srcs/sources_1/bd/system/ip/system_util_wfifo_0_0/util_wfifo_constr.xdc, line 4).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 971.316 ; gain = 354.359
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 971.316 ; gain = 354.359
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 2     
+	   2 Input      3 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
++---Registers : 
+	              128 Bit    Registers := 2     
+	               64 Bit    Registers := 2     
+	                8 Bit    Registers := 3     
+	                4 Bit    Registers := 4     
+	                3 Bit    Registers := 3     
+	                1 Bit    Registers := 6     
++---RAMs : 
+	               2K Bit         RAMs := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module ad_mem 
+Detailed RTL Component Info : 
++---Registers : 
+	              128 Bit    Registers := 1     
++---RAMs : 
+	               2K Bit         RAMs := 1     
+Module util_wfifo 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 2     
+	   2 Input      3 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
++---Registers : 
+	              128 Bit    Registers := 1     
+	               64 Bit    Registers := 2     
+	                8 Bit    Registers := 3     
+	                4 Bit    Registers := 4     
+	                3 Bit    Registers := 3     
+	                1 Bit    Registers := 6     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 900 (col length:140)
+BRAMs: 1090 (col length: RAMB18 140 RAMB36 70)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 971.316 ; gain = 354.359
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Preliminary Mapping  Report (see note below)
++------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name | RTL Object | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|ad_mem:     | m_ram_reg  | 16 x 128(NO_CHANGE)    | W |   | 16 x 128(WRITE_FIRST)  |   | R | Port A and B     | 0      | 2      | 
++------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+Note: The table above is a preliminary report that shows the Block RAMs at the current stage of the synthesis flow. Some Block RAMs may be reimplemented as non Block RAM primitives later in the synthesis flow. Multiple instantiated Block RAMs are reported only once. 
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:34 ; elapsed = 00:00:36 . Memory (MB): peak = 971.316 ; gain = 354.359
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:34 ; elapsed = 00:00:36 . Memory (MB): peak = 971.316 ; gain = 354.359
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Final Mapping  Report
++------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name | RTL Object | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|ad_mem:     | m_ram_reg  | 16 x 128(NO_CHANGE)    | W |   | 16 x 128(WRITE_FIRST)  |   | R | Port A and B     | 0      | 2      | 
++------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:34 ; elapsed = 00:00:36 . Memory (MB): peak = 978.992 ; gain = 362.035
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:38 ; elapsed = 00:00:40 . Memory (MB): peak = 986.406 ; gain = 369.449
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:38 ; elapsed = 00:00:40 . Memory (MB): peak = 986.406 ; gain = 369.449
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:38 ; elapsed = 00:00:40 . Memory (MB): peak = 986.406 ; gain = 369.449
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:38 ; elapsed = 00:00:40 . Memory (MB): peak = 986.406 ; gain = 369.449
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:38 ; elapsed = 00:00:40 . Memory (MB): peak = 986.406 ; gain = 369.449
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:38 ; elapsed = 00:00:40 . Memory (MB): peak = 986.406 ; gain = 369.449
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----------+------+
+|      |Cell       |Count |
++------+-----------+------+
+|1     |LUT1       |     4|
+|2     |LUT2       |     5|
+|3     |LUT3       |     5|
+|4     |LUT4       |     5|
+|5     |LUT6       |     1|
+|6     |RAMB36E1_1 |     2|
+|7     |FDCE       |    23|
+|8     |FDPE       |     1|
+|9     |FDRE       |   158|
++------+-----------+------+
+
+Report Instance Areas: 
++------+----------+-----------+------+
+|      |Instance  |Module     |Cells |
++------+----------+-----------+------+
+|1     |top       |           |   204|
+|2     |  inst    |util_wfifo |   204|
+|3     |    i_mem |ad_mem     |     2|
++------+----------+-----------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:38 ; elapsed = 00:00:40 . Memory (MB): peak = 986.406 ; gain = 369.449
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 102 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:25 ; elapsed = 00:00:35 . Memory (MB): peak = 986.406 ; gain = 260.570
+Synthesis Optimization Complete : Time (s): cpu = 00:00:38 ; elapsed = 00:00:40 . Memory (MB): peak = 986.406 ; gain = 369.449
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 2 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1006.844 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+22 Infos, 100 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:48 ; elapsed = 00:00:51 . Memory (MB): peak = 1006.844 ; gain = 713.191
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1006.844 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'D:/work/radar_course/lesson_15/vivado/fmcomms1/fmcomms1.runs/system_util_wfifo_0_0_synth_1/system_util_wfifo_0_0.dcp' has been generated.
+WARNING: [Common 17-576] 'use_project_ipc' is deprecated. This option is deprecated and no longer used.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP system_util_wfifo_0_0, cache-ID = 472378d5c3494ccc
+INFO: [Coretcl 2-1174] Renamed 2 cell refs.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1006.844 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'D:/work/radar_course/lesson_15/vivado/fmcomms1/fmcomms1.runs/system_util_wfifo_0_0_synth_1/system_util_wfifo_0_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file system_util_wfifo_0_0_utilization_synth.rpt -pb system_util_wfifo_0_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue Jan 12 15:27:28 2021...

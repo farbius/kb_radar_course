@@ -1,0 +1,10 @@
++--------------------------+--------------------------+----------------------------------------------------------------------------------------------------------+
+|       Launch Clock       |      Capture Clock       |                                                 Pin                                                      |
++--------------------------+--------------------------+----------------------------------------------------------------------------------------------------------+
+|               clk_fpga_0 |               adc_clk_in |                                       i_system_wrapper/system_i/util_ad9643_adc_fifo/inst/dout_rd_d_reg/D|
+|               clk_fpga_0 |               adc_clk_in |                                         i_system_wrapper/system_i/util_ad9643_adc_fifo/inst/dout_rd_reg/D|
+|               clk_fpga_0 |               adc_clk_in |                                   i_system_wrapper/system_i/util_ad9643_adc_fifo/inst/dout_raddr_reg[0]/R|
+|               clk_fpga_0 |               adc_clk_in |                                   i_system_wrapper/system_i/util_ad9643_adc_fifo/inst/dout_raddr_reg[1]/R|
+|               clk_fpga_0 |               adc_clk_in |                                   i_system_wrapper/system_i/util_ad9643_adc_fifo/inst/dout_raddr_reg[2]/R|
+|               clk_fpga_0 |               adc_clk_in |                                   i_system_wrapper/system_i/util_ad9643_adc_fifo/inst/dout_raddr_reg[3]/R|
++--------------------------+--------------------------+----------------------------------------------------------------------------------------------------------+
